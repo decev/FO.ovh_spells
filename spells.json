@@ -1,4 +1,6 @@
 {
+	"spell": [
+{
 	"name": "Drain Life",
 	"level": 1,
 	"school": "N",
@@ -71,5 +73,7 @@
 	],
 	"miscTags": [
 		"HL"
+	]
+}
 	]
 }
