@@ -190,6 +190,187 @@
 			]
 		}
 	]
+},
+{
+	"name": "Soulburn",
+	"level": 1,
+	"school": "V",
+	"time": [
+		{
+			"number": 1,
+			"unit": "action"
+		}
+	],
+	"range": {
+		"type": "point",
+		"distance": {
+			"type": "feet",
+			"amount": 90
+		}
+	},
+	"duration": [
+		{
+			"type": "timed",
+			"duration": {
+				"type": "minute",
+				"amount": 1,
+				"upTo": true
+			},
+			"concentration": true
+		}
+	],
+	"classes": {
+		"fromClassList": [
+			{
+				"name": "Warlock (reworked)",
+				"source": "Farover"
+			}
+		]
+	},
+	"entries": [
+		"You ignite the soul of a creature within range, and the combustion wreathes the target in flames. The target must make a Dexterity saving throw. On a failed save, it takes {@damage 2d6} fire damage, or half as much on a successful one. On a failed save, the target also burns for the spell's duration.",
+		"At the end of each of its turns, the burning target must repeat the Dexterity saving throw. It takes {@damage 1d4} fire damage on a failed save, and the effect ends on a successful one.",
+		"Any other creature that moves within 5 feet of a burning target or starts it's turn there must also make a Dexterity saving throw. On a failed save, the creature also catches fire and is subjected to the spells burn effect."
+	],
+	"source": "Farover",
+	"components": {
+		"v": true,
+		"s": true,
+		"m": "a pinch of sulfur"
+	},
+	"entriesHigherLevel": [
+		{
+			"name": "At Higher Levels",
+			"entries": [
+				"When you cast this spell using a spell slot of 2nd level or higher, both the initial damage increases by {@scaledamage 1d6|1-9|1d6}, and the burn damage increases by {@scaledamage 1d4|1-9|1d4} for each slot level above 1st."
+			]
+		}
+	],
+	"damageInflict": [
+		"fire"
+	],
+	"savingThrow": [
+		"dexterity"
+	]
+},
+{
+	"name": "Dark Bargain",
+	"level": 2,
+	"school": "A",
+	"time": [
+		{
+			"number": 1,
+			"unit": "reaction",
+			"condition": "which you take when you are hit by a damaging attack"
+		}
+	],
+	"range": {
+		"type": "point",
+		"distance": {
+			"type": "self"
+		}
+	},
+	"duration": [
+		{
+			"type": "timed",
+			"duration": {
+				"type": "round",
+				"amount": 1
+			}
+		}
+	],
+	"classes": {
+		"fromClassList": [
+			{
+				"name": "Warlock (reworked)",
+				"source": "Farover"
+			}
+		]
+	},
+	"entries": [
+		"A sinister shield of dark magic surrounds you when you are hit by an attack. When the shield appears, it has {@dice 2d6} hit points. Whenever you take damage, the shield takes the damage instead, and the shield has resistance to all damage. If damage reduces the shield to 0 hit points, you take any remaining damage.",
+		"At the start of your next turn, the shield dissipates, and you immediately suffer the same damage the shield took earlier."
+	],
+	"source": "Farover",
+	"components": {
+		"s": true
+	},
+	"entriesHigherLevel": [
+		{
+			"name": "At Higher Levels",
+			"entries": [
+				"When you cast this spell using a spell slot of 3rd level or higher, the shields hit points increases by {@dice 1d6} for each slot level above 2nd."
+			]
+		}
+	],
+	"miscTags": [
+		"THP"
+	]
+},
+{
+	"name": "Devouring Plague",
+	"level": 2,
+	"school": "N",
+	"time": [
+		{
+			"number": 1,
+			"unit": "bonus"
+		}
+	],
+	"range": {
+		"type": "point",
+		"distance": {
+			"type": "feet",
+			"amount": 60
+		}
+	},
+	"duration": [
+		{
+			"type": "timed",
+			"duration": {
+				"type": "minute",
+				"amount": 1,
+				"upTo": true
+			},
+			"concentration": true
+		}
+	],
+	"classes": {
+		"fromClassList": [
+			{
+				"name": "Warlock (reworked)",
+				"source": "Farover"
+			}
+		]
+	},
+	"entries": [
+		"You attempt to afflict a disease upon a creature that you can see within range which slowly eats away at it's body, and transfers some of that creatures life to you. The target must make a Constitution saving throw. On a successful save, the target is unaffected and the spell ends.",
+		"On a failed save, a plague begins to rapidly eat away at the flesh of the target. Once per turn, the plague deals {@damage 1d4} necrotic damage to the target when you hit it with an attack. If the {@damage 1d4} deals damage below the maximum die amount, you also heal yourself for an amount equal to the missing amount on the die.",
+		"If the target drops to 0 hit points before this spell ends, you can use a bonus action on a following turn of yours to attempt to afflict the disease on to a new creature."
+	],
+	"source": "Farover",
+	"components": {
+		"v": true,
+		"s": true,
+		"m": "the tail of a rat"
+	},
+	"entriesHigherLevel": [
+		{
+			"name": "At Higher Levels",
+			"entries": [
+				"When you cast this spell using a spell slot of 3rd level or higher, the die used for the spell increases in size by one for each slot level above 2nd, up to a {@dice d10} at 5th level."
+			]
+		}
+	],
+	"damageInflict": [
+		"necrotic"
+	],
+	"savingThrow": [
+		"constitution"
+	],
+	"areaTags": [
+		"ST"
+	]
 }
 	]
 }
