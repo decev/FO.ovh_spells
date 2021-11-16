@@ -122,66 +122,89 @@
 	]
 },
 {
-	"name": "Death Coil",
-	"source": "Farover",
-	"level": 1,
-	"school": "N",
-	"time": [
-		{
-			"number": 1,
-			"unit": "action"
-		}
-	],
-	"range": {
-		"type": "point",
-		"distance": {
-			"type": "feet",
-			"amount": 60
-		}
+	"siteVersion": "1.142.0",
+	"_meta": {
+		"sources": [
+			{
+				"json": "Farover",
+				"abbreviation": "FO",
+				"full": "Farover",
+				"url": "",
+				"authors": [],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1637070485,
+		"dateLastModified": 1637070485
 	},
-	"components": {
-		"v": true,
-		"s": true
-	},
-	"duration": [
+	"spell": [
 		{
-			"type": "instant"
-		}
-	],
-	"entries": [
-		"A horrifying visage of dark energy is unleashed from your hand at a creature in range. The creature must make a Wisdom saving throw.",
-		"On a failed save, the creature takes {@damage 2d8} necrotic damage, and is forced to immediately use its reaction, if available, to flee as far as its speed allows in a direction indicated by the first of the {@dice d8}'s rolled (1 is up, and subsequent numbers go clockwise.) The creature doesn't move into obviously dangerous ground, such as a fire or a pit.",
-		"On a successful save, the target takes half as much damage and doesn't have to move."
-	],
-	"entriesHigherLevel": [
-		{
-			"name": "At Higher Levels",
+			"name": "Death Coil",
+			"source": "Farover",
+			"level": 1,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
 			"entries": [
-				"When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@scaledamage 2d8|1-9|1d8} for each slot level above 1st."
+				"A horrifying visage of dark energy is unleashed from your hand at a creature in range. The creature must make a Wisdom saving throw.",
+				"On a failed save, the creature takes {@damage 2d8} necrotic damage, and is forced to immediately use its reaction, if available, to flee as far as its speed allows in a direction indicated by the first of the {@dice d8}'s rolled (1 is up, and subsequent numbers go clockwise.) The creature doesn't move into obviously dangerous ground, such as a fire or a pit.",
+				"On a successful save, the target takes half as much damage and doesn't have to move."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@scaledamage 2d8|1-9|1d8} for each slot level above 1st."
+					]
+				}
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Warlock (reworked)",
+						"source": "Farover"
+					}
+				]
+			},
+			"eldritchInvocations": [
+				{
+					"name": "Kiss of Mephistopheles",
+					"source": "UAWarlockAndWizard"
+				}
+			],
+			"hasFluffImages": true,
+			"damageInflict": [
+				"necrotic"
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"miscTags": [
+				"FMV"
 			]
 		}
-	],
-	"areaTags": [
-		"ST"
-	],
-	"classes": {
-		"fromClassList": [
-			{
-				"name": "Warlock (reworked)",
-				"source": "Farover"
-			}
-		]
-	],
-	"hasFluffImages": true,
-	"damageInflict": [
-		"necrotic"
-	],
-	"savingThrow": [
-		"wisdom"
-	],
-	"miscTags": [
-		"FMV"
-	]
-}
 	]
 }
