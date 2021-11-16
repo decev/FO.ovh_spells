@@ -371,6 +371,388 @@
 	"areaTags": [
 		"ST"
 	]
+},
+{
+	"name": "Wave of Terror",
+	"level": 2,
+	"school": "I",
+	"time": [
+		{
+			"number": 1,
+			"unit": "action"
+		}
+	],
+	"range": {
+		"type": "cone",
+		"distance": {
+			"type": "feet",
+			"amount": 15
+		}
+	},
+	"duration": [
+		{
+			"type": "instant"
+		}
+	],
+	"classes": {
+		"fromClassList": [
+			{
+				"name": "Warlock (reworked)",
+				"source": "Farover"
+			}
+		]
+	},
+	"entries": [
+		"As you hold your hands with thumbs touching and fingers spread, a shroud of darkness covers the area affected by the spell, as wailing voices and faces with expressions of terror accompany the dark magic. Each creature in a 15-foot cone must make a Wisdom saving throw.",
+		"On a failed save, a creature takes {@damage 1d8} psychic damage and becomes {@condition frightened} of you. The creature can repeat the saving throw at the end of each of it's turns.",
+		"On a successful save, the creature takes half as much damage and is not {@condition frightened}."
+	],
+	"source": "Farover",
+	"components": {
+		"v": true,
+		"s": true,
+		"m": "a black feather"
+	},
+	"conditionInflict": [
+		"frightened"
+	],
+	"entriesHigherLevel": [
+		{
+			"name": "At Higher Levels",
+			"entries": [
+				"When you cast this spell using a spell slot of 3rd level or higher, the damage increases by {@dice 1d8} for each slot level above 1st."
+			]
+		}
+	],
+	"damageInflict": [
+		"psychic"
+	],
+	"savingThrow": [
+		"wisdom"
+	],
+	"areaTags": [
+		"N"
+	]
+},
+{
+	"name": "Aegis of Shadows",
+	"level": 3,
+	"school": "A",
+	"time": [
+		{
+			"number": 1,
+			"unit": "action"
+		}
+	],
+	"range": {
+		"type": "point",
+		"distance": {
+			"type": "self"
+		}
+	},
+	"duration": [
+		{
+			"type": "timed",
+			"duration": {
+				"type": "hour",
+				"amount": 1
+			}
+		}
+	],
+	"classes": {
+		"fromClassList": [
+			{
+				"name": "Warlock (reworked)",
+				"source": "Farover"
+			}
+		]
+	},
+	"entries": [
+		"A protective aura of shadows forms around you, and stays with you until the spell ends. You gain {@dice 6d6} temporary hit points. While you have these temporary hit points and the spell is active, you have advantage on Constitution saving throws."
+	],
+	"source": "Farover",
+	"components": {
+		"v": true,
+		"s": true,
+		"m": "a handful of ash"
+	},
+	"entriesHigherLevel": [
+		{
+			"name": "At Higher Levels",
+			"entries": [
+				"When you cast this spell using a spell slot of 4th level or higher, the amount of temporary hit points is increased by {@dice 2d6} for each slot level above 3rd."
+			]
+		}
+	],
+	"miscTags": [
+		"THP"
+	]
+},
+{
+	"name": "Cloak of Flies",
+	"level": 3,
+	"school": "C",
+	"time": [
+		{
+			"number": 1,
+			"unit": "bonus"
+		}
+	],
+	"range": {
+		"type": "point",
+		"distance": {
+			"type": "feet",
+			"amount": 30
+		}
+	},
+	"duration": [
+		{
+			"type": "timed",
+			"duration": {
+				"type": "hour",
+				"amount": 8
+			}
+		}
+	],
+	"classes": {
+		"fromClassList": [
+			{
+				"name": "Warlock (reworked)",
+				"source": "Farover"
+			}
+		]
+	},
+	"entries": [
+		"As a bonus action, you endow a willing creature with a surrounding magical aura that looks like buzzing flies. The aura extends 5 feet from the target in every direction, but not through total cover. The aura lasts for the duration of the spell, or until the affected target is {@condition incapacitated}. You can dismiss the spell at any time as a bonus action.",
+		"The aura grants the target advantage on Charisma (Intimidation) checks but disadvantage on all other Charisma checks. Any other creature that starts its turn in the aura takes {@damage 2d4} poison damage."
+	],
+	"source": "Farover",
+	"components": {
+		"v": true,
+		"s": true,
+		"m": "the wing of a fly"
+	},
+	"conditionInflict": [
+		"incapacitated"
+	],
+	"entriesHigherLevel": [
+		{
+			"name": "At Higher Levels",
+			"entries": [
+				"When you cast this spell using a spell slot of 4th level or higher, the poison damage increases by {@dice 1d4} for each slot level above 3rd."
+			]
+		}
+	],
+	"damageInflict": [
+		"poison"
+	],
+	"abilityCheck": [
+		"charisma"
+	],
+	"areaTags": [
+		"ST"
+	]
+},
+{
+	"name": "Magic Reprisal",
+	"level": 3,
+	"school": "A",
+	"time": [
+		{
+			"number": 1,
+			"unit": "reaction",
+			"condition": "which you take when you are hit by a damaging spell or magical effect"
+		}
+	],
+	"range": {
+		"type": "point",
+		"distance": {
+			"type": "feet",
+			"amount": 60
+		}
+	},
+	"duration": [
+		{
+			"type": "instant"
+		}
+	],
+	"classes": {
+		"fromClassList": [
+			{
+				"name": "Warlock (reworked)",
+				"source": "Farover"
+			}
+		]
+	},
+	"entries": [
+		"The spell absorbs some of the incoming magic, and uses it to retaliate against an enemy. When you cast this spell, you have resistance against the triggering damage type until the start of your next turn. As part of the reaction, you also return some of the resisted magic against the enemy, or redirect it against another enemy within 60 feet. The target must make a Dexterity saving throw, taking {@damage 3d6} damage of the triggering type on a failed save, or half as much on a successful one."
+	],
+	"source": "Farover",
+	"components": {
+		"v": true,
+		"s": true
+	},
+	"entriesHigherLevel": [
+		{
+			"name": "At Higher Levels",
+			"entries": [
+				"When you cast this spell using a spell slot of 4th level or higher, the damage increases by {@dice 1d6} for each slot level above 3rd."
+			]
+		}
+	],
+	"savingThrow": [
+		"dexterity"
+	],
+	"areaTags": [
+		"ST"
+	]
+},
+{
+	"name": "Curse of Exhaustion",
+	"level": 4,
+	"school": "N",
+	"time": [
+		{
+			"number": 1,
+			"unit": "action"
+		}
+	],
+	"range": {
+		"type": "point",
+		"distance": {
+			"type": "feet",
+			"amount": 30
+		}
+	},
+	"duration": [
+		{
+			"type": "instant"
+		}
+	],
+	"classes": {
+		"fromClassList": [
+			{
+				"name": "Warlock (reworked)",
+				"source": "Farover"
+			}
+		]
+	},
+	"entries": [
+		"You place a curse on a creature that you can see within range. At the beginning of each of the creatures turns, it must make a Constitution saving throw. On a failed save, the creature suffers one stack of {@condition exhaustion}. On a successful save, the curse ends, and all stacks of {@condition exhaustion} caused by this spell are removed.",
+		"A Remove Curse cast on the target ends this spell."
+	],
+	"source": "Farover",
+	"components": {
+		"v": true,
+		"s": true
+	},
+	"conditionInflict": [
+		"exhaustion"
+	],
+	"savingThrow": [
+		"constitution"
+	],
+	"areaTags": [
+		"ST"
+	]
+},
+{
+	"name": "Howl of Terror",
+	"level": 4,
+	"school": "E",
+	"time": [
+		{
+			"number": 1,
+			"unit": "action"
+		}
+	],
+	"range": {
+		"type": "radius",
+		"distance": {
+			"type": "feet",
+			"amount": 20
+		}
+	},
+	"duration": [
+		{
+			"type": "instant"
+		}
+	],
+	"classes": {
+		"fromClassList": [
+			{
+				"name": "Warlock (reworked)",
+				"source": "Farover"
+			}
+		]
+	},
+	"entries": [
+		"You let loose a terrifying howl which affects every creature within 20 feet that can hear you. Each creature must make a Wisdom saving throw. A target automatically succeeds on this saving throw if it can't be {@condition frightened}.",
+		"On a successful save, the creature shrugs off the effect, but it's speed is reduced by 10 feet until the end of it's next turn.",
+		"On a failed save, the creature is {@condition frightened} of you, and must immediately use its reaction, if available, to move as far as its speed allows away from you. The creature doesn't move into obviously dangerous ground, such as a fire or a pit. A {@condition frightened} creature can repeat the saving throw at the end of it's turns. If a creature fails the saving throw by 10 or more, it also drops {@condition prone} after using it's reaction to move away from you."
+	],
+	"source": "Farover",
+	"components": {
+		"v": true
+	},
+	"conditionInflict": [
+		"frightened"
+	],
+	"savingThrow": [
+		"wisdom"
+	]
+},
+{
+	"name": "Summon Nightmare",
+	"level": 5,
+	"school": "C",
+	"time": [
+		{
+			"number": 1,
+			"unit": "minute"
+		}
+	],
+	"range": {
+		"type": "point",
+		"distance": {
+			"type": "feet",
+			"amount": 10
+		}
+	},
+	"duration": [
+		{
+			"type": "timed",
+			"duration": {
+				"type": "hour",
+				"amount": 1
+			}
+		}
+	],
+	"classes": {
+		"fromClassList": [
+			{
+				"name": "Warlock (reworked)",
+				"source": "Farover"
+			}
+		]
+	},
+	"entries": [
+		"In a cloud of roiling smoke, a black nightmare horse appears from the shadow plane with its mane, tail, and hooves wreathed in flame. For the duration of the spell, you can ride the steed, and it will follow your verbal orders and directions. The creature uses the statistics for a Nightmare, but without the Ethereal Stride action.",
+		"While riding the Nightmare, you can use the Nightmare's speed to move on your own turn. The Nightmare can not move on its own, and does not have its own turns, but it can use its Hooves action immediately after your turn.",
+		"When the spell ends, the Nightmare immediately disappears, vanishing in a cloud of brimstone. The spell ends if you use an action to dismiss it, or if the Nightmare falls to 0 hit points."
+	],
+	"source": "Farover",
+	"components": {
+		"v": true,
+		"s": true,
+		"m": {
+			"text": "the hoof of a pegasus worth at least 50 gp",
+			"cost": 5000
+		}
+	},
+	"miscTags": [
+		"SMN"
+	]
 }
 	]
 }
