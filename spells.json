@@ -1291,6 +1291,259 @@
 	"areaTags": [
 		"ST"
 	]
+},
+{
+	"name": "Ice Block",
+	"level": 4,
+	"school": "A",
+	"time": [
+		{
+			"number": 1,
+			"unit": "reaction",
+			"condition": "which you take when you are hit with a damaging attack"
+		}
+	],
+	"range": {
+		"type": "point",
+		"distance": {
+			"type": "self"
+		}
+	},
+	"duration": [
+		{
+			"type": "timed",
+			"duration": {
+				"type": "round",
+				"amount": 1
+			}
+		}
+	],
+	"classes": {
+		"fromClassList": [
+			{
+				"name": "Sorcerer",
+				"source": "PHB"
+			},
+			{
+				"name": "Wizard",
+				"source": "PHB"
+			}
+		]
+	},
+	"entries": [
+		"You immediately encase yourself in a large block of ice, blocking any incoming damage that isn't psychic damage. You remain in this block of ice until the end of your next turn, when the ice melts away. While in this state, you are {@condition incapacitated} and {@condition restrained}, but you are also immune to all damage and effects, with the exception of psychic damage. Spells and effects that only rely on vision or hearing will still affect you."
+	],
+	"source": "Farover",
+	"components": {
+		"v": true,
+		"s": true
+	}
+},
+{
+	"name": "Identify Curse",
+	"level": 3,
+	"school": "D",
+	"time": [
+		{
+			"number": 1,
+			"unit": "minute"
+		}
+	],
+	"range": {
+		"type": "point",
+		"distance": {
+			"type": "feet",
+			"amount": 5
+		}
+	},
+	"duration": [
+		{
+			"type": "instant"
+		}
+	],
+	"classes": {
+		"fromClassList": [
+			{
+				"name": "Cleric",
+				"source": "PHB"
+			},
+			{
+				"name": "Druid",
+				"source": "PHB"
+			},
+			{
+				"name": "Paladin",
+				"source": "PHB"
+			}
+		]
+	},
+	"entries": [
+		"This spell can identify the properties of any curse afflicting any creature or item."
+	],
+	"source": "Farover",
+	"components": {
+		"v": true,
+		"s": true,
+		"m": "a piece of ginger"
+	},
+	"meta": {
+		"ritual": true
+	}
+},
+{
+	"name": "Remove Greater Curse",
+	"level": 5,
+	"school": "A",
+	"time": [
+		{
+			"number": 1,
+			"unit": "action"
+		}
+	],
+	"range": {
+		"type": "point",
+		"distance": {
+			"type": "feet",
+			"amount": 5
+		}
+	},
+	"duration": [
+		{
+			"type": "instant"
+		}
+	],
+	"classes": {
+		"fromClassList": [
+			{
+				"name": "Cleric",
+				"source": "PHB"
+			},
+			{
+				"name": "Paladin",
+				"source": "PHB"
+			}
+		]
+	},
+	"entries": [
+		"This spell removes any and all curses afflicting any creature or item."
+	],
+	"source": "Farover",
+	"components": {
+		"v": true,
+		"s": true,
+		"m": {
+			"text": "a flask of Holy Water worth 25gp, which the spell consumes",
+			"consumed": true,
+			"cost": 2500
+		}
+	}
+},
+{
+	"name": "Rune of Power",
+	"level": 2,
+	"school": "V",
+	"time": [
+		{
+			"number": 1,
+			"unit": "action"
+		}
+	],
+	"range": {
+		"type": "point",
+		"distance": {
+			"type": "self"
+		}
+	},
+	"duration": [
+		{
+			"type": "timed",
+			"duration": {
+				"type": "minute",
+				"amount": 1,
+				"upTo": true
+			},
+			"concentration": true
+		}
+	],
+	"classes": {
+		"fromClassList": [
+			{
+				"name": "Wizard",
+				"source": "PHB"
+			}
+		]
+	},
+	"entries": [
+		"You draw a magical rune of power on the ground under you with an area of one square, occupying enough space for one creature of size Medium or smaller. While standing inside the rune and maintaining concentration, all damaging spells you cast are automatically cast at one spell level higher."
+	],
+	"source": "Farover",
+	"components": {
+		"v": true,
+		"s": true,
+		"m": "ink or chalk"
+	}
+},
+{
+	"name": "Time Pool",
+	"level": 6,
+	"school": "D",
+	"time": [
+		{
+			"number": 1,
+			"unit": "minute"
+		}
+	],
+	"range": {
+		"type": "point",
+		"distance": {
+			"type": "touch"
+		}
+	},
+	"duration": [
+		{
+			"type": "timed",
+			"duration": {
+				"type": "minute",
+				"amount": 10
+			}
+		}
+	],
+	"classes": {
+		"fromClassList": [
+			{
+				"name": "Cleric",
+				"source": "PHB"
+			},
+			{
+				"name": "Druid",
+				"source": "PHB"
+			},
+			{
+				"name": "Wizard",
+				"source": "PHB"
+			}
+		]
+	},
+	"entries": [
+		"This spell allows the caster to cause a mirror, a pool of water, or any other reflective surface to reveal a specific event from the past. The image provides a perfectly clear picture with normal sounds, as if the caster were present at the scene. The image continues for the duration of the spell.",
+		"The spell's success is not automatic. The caster must know the general nature of the event he wishes to view (i.e., \"Show me the murder of King Thamak\"). The caster's base chance of viewing the desired scene is 50%, modified as follows, to a maximum of 90%:",
+		"Add 20% if the caster has successfully used time pool to observe the same event before.",
+		"Only one of the following may apply:",
+		"Add 20% if the event is one in which the caster participated.",
+		"Add 10% if the caster is well informed about the event.",
+		"Add 5% if the caster is slightly informed about the event.",
+		"Time pool will not reveal images from other planes of existence. The caster cannot communicate or otherwise interact with the time pool image. Spells cannot be cast into the time pool. If the casting of the spell fails, the image on the reflective surface will simply fizzle out."
+	],
+	"source": "Farover",
+	"components": {
+		"v": true,
+		"s": true,
+		"m": {
+			"text": "a pinch of powdered quartz worth 200gp, which the spell consumes",
+			"consumed": true,
+			"cost": 200000
+		}
+	}
 }
 	]
 }
