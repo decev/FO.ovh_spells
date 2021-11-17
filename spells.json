@@ -753,6 +753,544 @@
 	"miscTags": [
 		"SMN"
 	]
+},
+{
+	"name": "Havoc Blast",
+	"level": 1,
+	"school": "V",
+	"time": [
+		{
+			"number": 1,
+			"unit": "action"
+		}
+	],
+	"range": {
+		"type": "point",
+		"distance": {
+			"type": "feet",
+			"amount": 90
+		}
+	},
+	"duration": [
+		{
+			"type": "instant"
+		}
+	],
+	"classes": {
+		"fromClassList": [
+			{
+				"name": "Warlock (reworked)",
+				"source": "Farover"
+			}
+		]
+	},
+	"entries": [
+		"You unleash a large, devastating blast of chaotic energy at a creature that you can see within range. Make a ranged spell attack against the target, and declare either fire or necrotic damage. If the attack hits, the creature takes {@damage 3d8} damage of the type you chose. This spell scores a critical hit on a roll of 19 or 20."
+	],
+	"source": "Farover",
+	"subschools": [
+		"Dread"
+	],
+	"components": {
+		"v": true,
+		"s": true,
+		"m": "a soul shard, which the spell consumes"
+	},
+	"damageInflict": [
+		"fire",
+		"necrotic"
+	],
+	"spellAttack": [
+		"R"
+	],
+	"areaTags": [
+		"ST"
+	]
+},
+{
+	"name": "Soulshatter",
+	"level": 1,
+	"school": "V",
+	"time": [
+		{
+			"number": 1,
+			"unit": "action"
+		}
+	],
+	"range": {
+		"type": "point",
+		"distance": {
+			"type": "touch"
+		}
+	},
+	"duration": [
+		{
+			"type": "instant"
+		}
+	],
+	"classes": {
+		"fromClassList": [
+			{
+				"name": "Warlock (reworked)",
+				"source": "Farover"
+			}
+		]
+	},
+	"entries": [
+		"You load the soul shard used for the spell with arcane magic, and thrust it to cause an explosion on impact. Make a melee spell attack against a creature you can reach. On a hit, the target takes {@damage 4d6} force damage, and is pushed back 10 feet if it is a Large or smaller creature."
+	],
+	"source": "Farover",
+	"subschools": [
+		"dread"
+	],
+	"components": {
+		"v": true,
+		"s": true,
+		"m": "a soul shard, which the spell consumes"
+	},
+	"damageInflict": [
+		"force"
+	],
+	"spellAttack": [
+		"M"
+	],
+	"areaTags": [
+		"ST"
+	],
+	"miscTags": [
+		"FMV"
+	]
+},
+{
+	"name": "Incineration",
+	"level": 2,
+	"school": "V",
+	"time": [
+		{
+			"number": 1,
+			"unit": "action"
+		}
+	],
+	"range": {
+		"type": "line",
+		"distance": {
+			"type": "feet",
+			"amount": 60
+		}
+	},
+	"duration": [
+		{
+			"type": "instant"
+		}
+	],
+	"classes": {
+		"fromClassList": [
+			{
+				"name": "Warlock (reworked)",
+				"source": "Farover"
+			}
+		]
+	},
+	"entries": [
+		"A line of roaring flame 60 feet long and 5 feet wide originating from you is unleashed from the ground in a direction you choose. Each creature in the line must make a Dexterity saving throw. A creature takes {@damage 3d10} fire damage on a failed save, or half as much damage on a successful one."
+	],
+	"source": "Farover",
+	"subschools": [
+		"dread"
+	],
+	"components": {
+		"v": true,
+		"s": true,
+		"m": "a soul shard, which the spell consumes"
+	},
+	"damageInflict": [
+		"fire"
+	],
+	"savingThrow": [
+		"dexterity"
+	],
+	"areaTags": [
+		"L"
+	]
+},
+{
+	"name": "Ray of Demise",
+	"level": 2,
+	"school": "N",
+	"time": [
+		{
+			"number": 1,
+			"unit": "action"
+		}
+	],
+	"range": {
+		"type": "point",
+		"distance": {
+			"type": "feet",
+			"amount": 90
+		}
+	},
+	"duration": [
+		{
+			"type": "instant"
+		}
+	],
+	"classes": {
+		"fromClassList": [
+			{
+				"name": "Warlock (reworked)",
+				"source": "Farover"
+			}
+		]
+	},
+	"entries": [
+		"A beam of shadow extends from your hand and connects to a creature within range. Through the beam you deliver three pulses of necrotic energy at the target. Make a ranged spell attack for each pulse. On a hit, the target takes {@damage 2d8} necrotic damage."
+	],
+	"source": "Farover",
+	"subschools": [
+		"dread"
+	],
+	"components": {
+		"v": true,
+		"s": true,
+		"m": "a soul shard, which the spell consumes"
+	},
+	"damageInflict": [
+		"necrotic"
+	],
+	"spellAttack": [
+		"R"
+	]
+},
+{
+	"name": "Channel Hellfire",
+	"level": 3,
+	"school": "V",
+	"time": [
+		{
+			"number": 1,
+			"unit": "action"
+		}
+	],
+	"range": {
+		"type": "point",
+		"distance": {
+			"type": "feet",
+			"amount": 90
+		}
+	},
+	"duration": [
+		{
+			"type": "timed",
+			"duration": {
+				"type": "minute",
+				"amount": 1,
+				"upTo": true
+			},
+			"concentration": true
+		}
+	],
+	"classes": {
+		"fromClassList": [
+			{
+				"name": "Warlock (reworked)",
+				"source": "Farover"
+			}
+		]
+	},
+	"entries": [
+		"A blast of multiple dark, hellish bolts of flame shoot out of your hand towards a designated creature within range, creating a stream of bolts. The target creature must make a Dexterity saving throw, taking {@dice 4d6} fire and {@damage 4d6} necrotic damage on a failed save, or half as much damage on a successful one.",
+		"On each of your following turns for the duration of the spell, you can use a bonus action to continue shooting bolts at the target through the stream with a bonus action. The bolts fired on subsequent turns with a bonus action deal {@damage 3d6} fire or necrotic damage, with the same Dexterity saving throw.",
+		"The spell ends if you do not continue it each turn with a bonus action. The spell also ends if the target dies, if it is ever outside the spell's range, or if it has total cover from you."
+	],
+	"source": "Farover",
+	"subschools": [
+		"dread"
+	],
+	"components": {
+		"v": true,
+		"s": true,
+		"m": "a soul shard, which the spell consumes"
+	},
+	"damageInflict": [
+		"fire",
+		"necrotic"
+	],
+	"savingThrow": [
+		"dexterity"
+	]
+},
+{
+	"name": "Curse of Doom",
+	"level": 3,
+	"school": "N",
+	"time": [
+		{
+			"number": 1,
+			"unit": "action"
+		}
+	],
+	"range": {
+		"type": "point",
+		"distance": {
+			"type": "feet",
+			"amount": 60
+		}
+	},
+	"duration": [
+		{
+			"type": "instant"
+		}
+	],
+	"classes": {
+		"fromClassList": [
+			{
+				"name": "Warlock (reworked)",
+				"source": "Farover"
+			}
+		]
+	},
+	"entries": [
+		"You attempt to place a powerful curse on a creature that you can see within range. The target must make a Wisdom saving throw. On a failed save, the creature is cursed with impending doom. Once the target creature has had two turns after being cursed, at the end of the second turn the creature takes {@damage 11d6} necrotic damage, and the curse ends.",
+		"A Remove Curse cast on the target ends this spell."
+	],
+	"source": "Farover",
+	"subschools": [
+		"dread"
+	],
+	"components": {
+		"v": true,
+		"s": true,
+		"m": "a soul shard, which the spell consumes"
+	},
+	"damageInflict": [
+		"necrotic"
+	],
+	"savingThrow": [
+		"wisdom"
+	],
+	"areaTags": [
+		"ST"
+	]
+},
+{
+	"name": "Cataclysm",
+	"level": 4,
+	"school": "C",
+	"time": [
+		{
+			"number": 1,
+			"unit": "action"
+		}
+	],
+	"range": {
+		"type": "point",
+		"distance": {
+			"type": "feet",
+			"amount": 120
+		}
+	},
+	"duration": [
+		{
+			"type": "instant"
+		}
+	],
+	"classes": {
+		"fromClassList": [
+			{
+				"name": "Warlock (reworked)",
+				"source": "Farover"
+			}
+		]
+	},
+	"entries": [
+		"You create a storm of fire and destruction in an area, which is momentarily bombarded by molten stones and flames. Each creature in a 20-foot-radius, 40-foot-high cylinder centered on a point you choose must make a Dexterity saving throw. A creature takes {@damage 3d10} fire damage and {@damage 3d10} bludgeoning damage on a failed save, or half as much damage on a successful one."
+	],
+	"source": "Farover",
+	"subschools": [
+		"dread"
+	],
+	"components": {
+		"v": true,
+		"s": true,
+		"m": "a soul shard, which the spell consumes"
+	},
+	"damageInflict": [
+		"bludgeoning",
+		"fire"
+	],
+	"savingThrow": [
+		"dexterity"
+	],
+	"areaTags": [
+		"Y"
+	]
+},
+{
+	"name": "Impending Flame",
+	"level": 4,
+	"school": "V",
+	"time": [
+		{
+			"number": 1,
+			"unit": "action"
+		}
+	],
+	"range": {
+		"type": "point",
+		"distance": {
+			"type": "feet",
+			"amount": 120
+		}
+	},
+	"duration": [
+		{
+			"type": "instant"
+		}
+	],
+	"classes": {
+		"fromClassList": [
+			{
+				"name": "Warlock (reworked)",
+				"source": "Farover"
+			}
+		]
+	},
+	"entries": [
+		"You unleash a small blast of fire which increases in size as it flies toward a creature of your choice within range. The target must make a Dexterity saving throw. On a failed save, the target takes {@damage 9d6} fire damage, which is increased by {@dice 1d6} for every 30 feet between you and the target of the spell, up to {@dice 4d6} more at exactly 120 feet. On a successful save, the target takes half as much damage."
+	],
+	"source": "Farover",
+	"subschools": [
+		"dread"
+	],
+	"components": {
+		"v": true,
+		"s": true,
+		"m": "a soul shard, which the spell consumes"
+	},
+	"damageInflict": [
+		"fire"
+	],
+	"savingThrow": [
+		"dexterity"
+	],
+	"areaTags": [
+		"ST"
+	]
+},
+{
+	"name": "Cascading Soul Strike",
+	"level": 5,
+	"school": "T",
+	"time": [
+		{
+			"number": 1,
+			"unit": "action"
+		}
+	],
+	"range": {
+		"type": "point",
+		"distance": {
+			"type": "feet",
+			"amount": 90
+		}
+	},
+	"duration": [
+		{
+			"type": "instant"
+		}
+	],
+	"classes": {
+		"fromClassList": [
+			{
+				"name": "Warlock (reworked)",
+				"source": "Farover"
+			}
+		]
+	},
+	"entries": [
+		"You harness the power of the soul shard used for the casting of this spell, and transform it into a dark, ethereal weapon which you propel at a target within range. The target must make a Wisdom saving throw as the ethereal weapon rips into the creatures body, ravaging it's mind.",
+		"On a failed save, the target takes {@damage 8d8} psychic damage, and the ethereal weapon can cascade onward to a new target of your choice within 30 feet of the original target. On a successful save, the target takes half as much damage, and the weapon does not fly on to attack a new target. If the creature dies from the damage, the weapon can attack a new target regardless of the result of the saving throw.",
+		"Each time the weapon flies to attack a new target after the original, the effect of the attack is the same, but the amount of dice rolled for the psychic damage is halved each time. The weapon created by the spell can attack the same creature multiple times, and it can attack up to four times, after which the spell ends."
+	],
+	"source": "Farover",
+	"subschools": [
+		"dread"
+	],
+	"components": {
+		"v": true,
+		"s": true,
+		"m": "a soul shard, which the spell consumes"
+	},
+	"damageInflict": [
+		"psychic"
+	],
+	"savingThrow": [
+		"wisdom"
+	],
+	"areaTags": [
+		"MT"
+	]
+},
+{
+	"name": "Curse of Agony",
+	"level": 5,
+	"school": "N",
+	"time": [
+		{
+			"number": 1,
+			"unit": "action"
+		}
+	],
+	"range": {
+		"type": "point",
+		"distance": {
+			"type": "feet",
+			"amount": 60
+		}
+	},
+	"duration": [
+		{
+			"type": "timed",
+			"duration": {
+				"type": "round",
+				"amount": 5,
+				"upTo": true
+			},
+			"concentration": true
+		}
+	],
+	"classes": {
+		"fromClassList": [
+			{
+				"name": "Warlock (reworked)",
+				"source": "Farover"
+			}
+		]
+	},
+	"entries": [
+		"You attempt to place a powerful curse on a creature that you can see within range. The target must make a Wisdom saving throw. On a successful save, the spell ends. On a failed save, the target is cursed with excruciating pain, taking {@damage 1d8} necrotic damage, which increases over time. As long as you maintain concentration on the spell, the target creature automatically suffers damage at the end of each of its turns. The damage of the curse increases by {@dice 1d8} every time the target suffers damage after the first time.",
+		"The curse can last for a maximum of 5 rounds, and deal damage 5 times, after which it ends. If the target of the curse dies before the 5 rounds have passed, you can use your action on your turn to attempt to continue the curse on a different target. The new target must make the same saving throw, and on a failed save, the curse and it's progression is moved to the new target, dealing it's damage and maintaining it's damage progression on the new target.",
+		"A Remove Curse cast on the target ends this spell."
+	],
+	"source": "Farover",
+	"subschools": [
+		"dread"
+	],
+	"components": {
+		"v": true,
+		"s": true,
+		"m": "a soul shard, which the spell consumes"
+	},
+	"damageInflict": [
+		"necrotic"
+	],
+	"savingThrow": [
+		"wisdom"
+	],
+	"areaTags": [
+		"ST"
+	]
 }
 	]
 }
