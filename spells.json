@@ -1544,6 +1544,617 @@
 			"cost": 200000
 		}
 	}
+},
+{
+	"name": "Random Causality",
+	"level": 3,
+	"school": "T",
+	"time": [
+		{
+			"number": 1,
+			"unit": "action"
+		}
+	],
+	"range": {
+		"type": "point",
+		"distance": {
+			"type": "feet",
+			"amount": 60
+		}
+	},
+	"duration": [
+		{
+			"type": "timed",
+			"duration": {
+				"type": "minute",
+				"amount": 1,
+				"upTo": true
+			},
+			"concentration": true
+		}
+	],
+	"classes": {
+		"fromClassList": [
+			{
+				"name": "Bard",
+				"source": "PHB"
+			},
+			{
+				"name": "Wizard",
+				"source": "PHB"
+			}
+		]
+	},
+	"entries": [
+		"This spell creates a rift in the nature of cause and effect. The target of the spell must make a Wisdom saving throw. On a failed save, the spell is cast upon an opponent's weapon. When the weapon is used, it hits and causes damage normally, but the damage is not applied to the creature struck by the weapon. Instead, the person wielding the weapon or one of his companions suffers the damage. When this effect happens, the target can repeat the saving throw, ending the effect on a successful one. If the weapon misses its target on any round, no damage is caused in that round.",
+		"Using a die roll, the DM randomly determines the victim of the damage. The DM selects a die with a value nearest the number of eligible creatures (the wielder of the weapon and his companions). If the number of creatures does not equate to highest value of a die, the wielder of the enchanted weapon takes the extra chances to be hit. For example, if a goblin wields a sword affected by this spell, he and his six companions are eligible to receive the damage. The DM rolls {@dice 1d8}. On a roll of 1-6, one of the goblin's companions suffers the damage; on a roll of 7 or 8, the goblin with the affected weapon suffers the damage.",
+		"If the wielder of the weapon changes weapons while the spell is in effect, the discarded weapon remains enchanted."
+	],
+	"source": "Farover",
+	"components": {
+		"v": true,
+		"s": true,
+		"m": "a bronze die"
+	},
+	"savingThrow": [
+		"wisdom"
+	]
+},
+{
+	"name": "Miscast Magic",
+	"level": 3,
+	"school": "E",
+	"time": [
+		{
+			"number": 1,
+			"unit": "action"
+		}
+	],
+	"range": {
+		"type": "point",
+		"distance": {
+			"type": "feet",
+			"amount": 120
+		}
+	},
+	"duration": [
+		{
+			"type": "timed",
+			"duration": {
+				"type": "minute",
+				"amount": 10,
+				"upTo": true
+			},
+			"concentration": true
+		}
+	],
+	"classes": {
+		"fromClassList": [
+			{
+				"name": "Bard",
+				"source": "PHB"
+			},
+			{
+				"name": "Sorcerer",
+				"source": "PHB"
+			},
+			{
+				"name": "Wizard",
+				"source": "PHB"
+			}
+		]
+	},
+	"entries": [
+		"Miscast magic can be cast on any spellcaster. The target spellcaster must make a Wisdom saving throw. On a fail, it causes the next spell cast by the affected spellcaster to be chosen randomly from their prepared spells of the same or lower level. Thus, if a spellcaster affected by miscast magic had four 1st-level spells prepared (mage armor, feather fall, jump, and sleep) and they attempted to cast the sleep spell, the DM would determine the resulting spell randomly from the spellcasters four prepared spells. The spellcaster would only have a 25% chance of casting the sleep spell. Only spells currently prepared are eligible to be exchanged with the desired spell. If a spellcaster had only one spell prepared, the miscast magic would have no effect and the spellcasters spell would be cast normally.",
+		"The miscast spell operates normally. If a spellcaster tried to feather fall a companion but a web spell resulted, the companion would be targeted by the webs and subject to all resulting effects. If the target of the spell were in range of the feather fall spell but not in range of the web, the spell would be lost in a fizzle of energy. If a spell such as Sending was the intended spell to be cast on a target hundreds of miles away, the Sending spell would be lost in a fizzle of energy, unless the random result spell would have an equal or greater range and could be cast on a target in the same way Sending could.",
+		"The spellcaster who casts the spell performs the proper components of the spell they wish to cast, but they do not discover the altered results until the wrong spell takes effect. The spellcaster will also discover that, if either the intended spell or the resulting spell required consumable material components, they will both be consumed."
+	],
+	"source": "Farover",
+	"components": {
+		"v": true,
+		"s": true
+	},
+	"savingThrow": [
+		"wisdom"
+	]
+},
+{
+	"name": "Summon Creature",
+	"level": 4,
+	"school": "C",
+	"time": [
+		{
+			"number": 1,
+			"unit": "minute"
+		}
+	],
+	"range": {
+		"type": "point",
+		"distance": {
+			"type": "feet",
+			"amount": 10
+		}
+	},
+	"duration": [
+		{
+			"type": "timed",
+			"duration": {
+				"type": "hour",
+				"amount": 1,
+				"upTo": true
+			},
+			"concentration": true
+		}
+	],
+	"classes": {
+		"fromClassList": [
+			{
+				"name": "Warlock (reworked)",
+				"source": "Farover"
+			},
+			{
+				"name": "Wizard",
+				"source": "PHB"
+			}
+		]
+	},
+	"entries": [
+		"The caster speaks the words to the spell while holding the essence of the creature in their primary hand. The essence bursts into flame, which the caster then reaches through to pull out an individual of that type who is then bound to the caster's will. Casters cannot summon specific individuals with this spell, and mindless/soulless creatures cannot be bound (jellies, undead, etc.). This spell does not bring any weapons, armor, or equipment that the creature wasn't already wearing.",
+		"The caster must physically touch the creature when it pulls it through the flame, but the creature does not appear held in the caster's hand. Instead it appears wherever desired within 10 feet of the caster.",
+		"Creatures that cannot understand the caster will simply attack whoever the caster indicates at the time of the summon and cannot be called off once sent to attack. Creatures that can understand the caster will obey verbal commands to the best of their ability, but will not be self destructive. A goblin might be ordered to charge a dragon, but it will not throw itself off a cliff.",
+		"The creature, upon being summoned, will make a check to burst the casters dominance on them. The creature rolls a Wisdom saving throw, and the caster rolls a saving throw based on their spellcasting ability stat. The difference in the CR of the creature and the level of the caster gives an advantage in the roll to the one who is higher. Whichever one is higher, the CR of the creature or the level of the caster, gives that character a +5 to it's saving throw for every CR/level that it is higher than the opposing character. If the creature meets or beats the caster, the creature is free. Natural 1's and 20's have no effect on this roll.",
+		"If the creature successfully bursts the spell, it becomes free willed and usually very angry at the summoner, who it will probably try to destroy.",
+		"Creatures that are bound may be dismissed and hence un-summoned with a gesture and a sound using a bonus action."
+	],
+	"source": "Farover",
+	"components": {
+		"v": true,
+		"s": true,
+		"m": "bone, tooth or nail of the type of creature to be summoned"
+	},
+	"miscTags": [
+		"SMN"
+	]
+},
+{
+	"name": "Enchant Item",
+	"level": 3,
+	"school": "E",
+	"time": [
+		{
+			"number": 1,
+			"unit": "minute"
+		}
+	],
+	"range": {
+		"type": "point",
+		"distance": {
+			"type": "touch"
+		}
+	},
+	"duration": [
+		{
+			"type": "special"
+		}
+	],
+	"classes": {
+		"fromClassList": [
+			{
+				"name": "Wizard",
+				"source": "PHB"
+			}
+		]
+	},
+	"entries": [
+		"This spell can either enchant a non-magical item into a magical item of common quality, or move an enchantment from one magical item of uncommon or lower quality into a non-magical item.",
+		"Creating a magical item from a non-magical item: The item being created can be an item in an official sourcebook, or a custom one of similar strength/usefulness, but either way the enchantment is done at the DM's discretion.",
+		"Moving an enchantment to a non-magical item: The item being created can be one with the same enchantment as the original item (for example moving a +1 enchantment from a longsword to a greataxe), or it can change to a different enchantment of similar strength when moving it (for example making Goggles of Night out of a Cloak of the Manta Ray), but either way the enchantment is done at the DM's discretion."
+	],
+	"source": "Farover",
+	"components": {
+		"v": true,
+		"s": true,
+		"m": {
+			"text": "the item(s) being enchanted and 200 gold, which the spell consumes",
+			"consumed": true,
+			"cost": 200000
+		}
+	},
+	"meta": {
+		"ritual": true
+	}
+},
+{
+	"name": "Enchant Greater Item",
+	"level": 5,
+	"school": "E",
+	"time": [
+		{
+			"number": 10,
+			"unit": "minute"
+		}
+	],
+	"range": {
+		"type": "point",
+		"distance": {
+			"type": "touch"
+		}
+	},
+	"duration": [
+		{
+			"type": "special"
+		}
+	],
+	"classes": {
+		"fromClassList": [
+			{
+				"name": "Wizard",
+				"source": "PHB"
+			}
+		]
+	},
+	"entries": [
+		"This spell can either enchant a non-magical item into a magical item of uncommon quality, or move an enchantment from one magical item of rare or lower quality into a non-magical item.",
+		"Creating a magical item from a non-magical item: The item being created can be an item in an official sourcebook, or a custom one of similar strength/usefulness, but either way the enchantment is done at the DM's discretion.",
+		"Moving an enchantment to a non-magical item: The item being created can be one with the same enchantment as the original item (for example moving a +2 enchantment from a longsword to a greataxe), or it can change to a different enchantment of similar strength when moving it (for example making an Amulet of Health out of a pair of Boots of Speed), but either way the enchantment is done at the DM's discretion."
+	],
+	"source": "Farover",
+	"components": {
+		"v": true,
+		"s": true,
+		"m": {
+			"text": "the item(s) being enchanted and 1000 gold, which the spell consumes",
+			"consumed": true,
+			"cost": 1000000
+		}
+	},
+	"meta": {
+		"ritual": true
+	}
+},
+{
+	"name": "Malakai's Teleportation Circle",
+	"level": 5,
+	"school": "C",
+	"time": [
+		{
+			"number": 1,
+			"unit": "minute"
+		}
+	],
+	"range": {
+		"type": "point",
+		"distance": {
+			"type": "touch"
+		}
+	},
+	"duration": [
+		{
+			"type": "instant"
+		}
+	],
+	"classes": {
+		"fromClassList": [
+			{
+				"name": "Warlock (reworked)",
+				"source": "Farover"
+			},
+			{
+				"name": "Wizard",
+				"source": "PHB"
+			}
+		]
+	},
+	"entries": [
+		"This spell has two uses; the first to construct a magical teleportation circle for the purposes of the spell and the second to activate a teleportation circle and teleport the contents of one circle to another and vice-versa.",
+		"In order to construct a circle the caster must carve out an intricate circle of at least 5 feet in diameter, this takes 1 day for every 20 feet circumference of the circle. Then chunks of silver, costing 100gp per 1 foot diameter of the circle, must be placed at points along the circle. Upon completion of casting the spell the silver melts to form the in-laid silver circle. A 5 foot diameter circle can fit one Medium creature in it, a 10 foot circle two, and a 15 foot circle four. When casting the spell in this way the wizard must designate a keyword to act as this circles name.",
+		"The second use of the spell allows the contents of the current circle to switch with the contents of any of the other circles for which the caster knows the keyword. If a circle is broken by anything at the time of casting the contents of that circle are teleported to a random location. It is imperative the caster ensures his circle is unbroken before casting.",
+		"If more than one magic circle has the same keyword then there is an equal chance of switching with either even if they were created by different casters."
+	],
+	"source": "Farover",
+	"components": {
+		"v": true,
+		"s": true,
+		"m": {
+			"text": "special"
+		}
+	}
+},
+{
+	"name": "Battlefate",
+	"level": 1,
+	"school": "T",
+	"time": [
+		{
+			"number": 1,
+			"unit": "bonus"
+		}
+	],
+	"range": {
+		"type": "point",
+		"distance": {
+			"type": "feet",
+			"amount": 60
+		}
+	},
+	"duration": [
+		{
+			"type": "timed",
+			"duration": {
+				"type": "minute",
+				"amount": 1,
+				"upTo": true
+			},
+			"concentration": true
+		}
+	],
+	"classes": {
+		"fromClassList": [
+			{
+				"name": "Cleric",
+				"source": "PHB"
+			}
+		]
+	},
+	"entries": [
+		"This spell alters probability to favor one character or creature locked in battle. The spell provides a combat benefit for the duration of the spell, which is a +2 to the affected stat. When the spell is cast on a target, roll a {@dice 1d4}. The result of the die indicates the resulting combat benefit as follows:",
+		"1: Bonus to AC",
+		"2: Bonus to Saving throws",
+		"3: Bonus to Attack rolls",
+		"4: Bonus to Damage rolls",
+		"For the duration of the spell, you can reroll the {@dice 1d4} on your turn as a bonus action to attempt to change the combat benefit to another."
+	],
+	"source": "Farover",
+	"components": {
+		"v": true,
+		"s": true,
+		"m": "a gold coin"
+	},
+	"entriesHigherLevel": [
+		{
+			"name": "At Higher Levels",
+			"entries": [
+				"If you cast this spell using a spell slot of 3rd level or higher, the bonus is a +3. If you use a spell slot of 5th level or higher, the bonus is a +4. If you use a spell slot of 7th level or higher, the bonus is a +5. If you use a spell slot of 9th level, the bonus is a +6."
+			]
+		}
+	]
+},
+{
+	"name": "Blessed Watchfulness",
+	"level": 1,
+	"school": "T",
+	"time": [
+		{
+			"number": 1,
+			"unit": "action"
+		}
+	],
+	"range": {
+		"type": "point",
+		"distance": {
+			"type": "touch"
+		}
+	},
+	"duration": [
+		{
+			"type": "timed",
+			"duration": {
+				"type": "hour",
+				"amount": 8
+			}
+		}
+	],
+	"classes": {
+		"fromClassList": [
+			{
+				"name": "Cleric",
+				"source": "PHB"
+			}
+		]
+	},
+	"entries": [
+		"By casting this spell, the cleric confers exceptional powers of observation and alertness to one creature for the duration of the spell. While blessed watchfulness is in effect, the designated sentinel remains alert, awake and vigilant for the 8 hour duration of the spell. For the duration of the spell, the target cannot fall asleep, and it does not need to sleep.",
+		"The target creature also gains advantage to saving throws against the first time they are affected by any spell or effect that would lower their guard or force them to abandon their watch, including charm, fear, or similar mind-affecting spells.",
+		"Once the spell is cast, the day and night cycle the target was on is also delayed by one day, meaning the target delays the need or want for sleep until the time at which it would sleep on the day after.",
+		"A creature can not benefit from Blessed Watchfulness again until it has finished at least one nights rest."
+	],
+	"source": "Farover",
+	"components": {
+		"v": true,
+		"s": true
+	}
+},
+{
+	"name": "Endure Cold/Heat",
+	"level": 1,
+	"school": "A",
+	"time": [
+		{
+			"number": 1,
+			"unit": "action"
+		}
+	],
+	"range": {
+		"type": "point",
+		"distance": {
+			"type": "touch"
+		}
+	},
+	"duration": [
+		{
+			"type": "timed",
+			"duration": {
+				"type": "hour",
+				"amount": 8
+			}
+		}
+	],
+	"classes": {
+		"fromClassList": [
+			{
+				"name": "Cleric",
+				"source": "PHB"
+			},
+			{
+				"name": "Druid",
+				"source": "PHB"
+			},
+			{
+				"name": "Wizard",
+				"source": "PHB"
+			}
+		]
+	},
+	"entries": [
+		"The creature receiving this spell is protected from normal extremes of cold or heat (depending on which application the priest selects at the time of casting). The creature can stand unprotected in temperatures as low as -30 C°, or as high as 50 C° (depending on application) with no ill effect. Temperatures beyond these limits inflict 1 point of damage per hour of exposure for every degree beyond the limit. The spell is immediately cancelled if the recipient is affected by any non-normal heat or cold, such as magic, breath weapons, and so on. The cancellation occurs regardless of the application and regardless of whether a heat or cold effect hits the character (for example, an endure cold spell is cancelled by magical heat or fire as well as by magical cold).",
+		"The recipient of the spell does not suffer the first 10 points of damage (before any applicable saving throws) from the heat or cold during the round in which the spell is broken."
+	],
+	"source": "Farover",
+	"components": {
+		"v": true,
+		"s": true
+	},
+	"entriesHigherLevel": [
+		{
+			"name": "At Higher Levels",
+			"entries": [
+				"When you cast this spell using a spell slot of 2nd-level or higher, the amount of damage mitigated is increased by 5 points, and the duration of the spell is increased by 4 hours for each slot above 1st."
+			]
+		}
+	]
+},
+{
+	"name": "Know Age/Time",
+	"level": 1,
+	"school": "D",
+	"time": [
+		{
+			"number": 1,
+			"unit": "action"
+		}
+	],
+	"range": {
+		"type": "point",
+		"distance": {
+			"type": "feet",
+			"amount": 30
+		}
+	},
+	"duration": [
+		{
+			"type": "instant"
+		}
+	],
+	"classes": {
+		"fromClassList": [
+			{
+				"name": "Cleric",
+				"source": "PHB"
+			}
+		]
+	},
+	"entries": [
+		"This spell enables the caster to know one of two things. The caster can instantly know the age of any single person, creature, or object on which they concentrate within range, to the nearest year. Alternatively, the caster can instantly know the precise time of day to the nearest minute, including the current hour, day, month, and year."
+	],
+	"source": "Farover",
+	"components": {
+		"v": true,
+		"s": true
+	}
+},
+{
+	"name": "Sacred Guardian",
+	"level": 1,
+	"school": "E",
+	"time": [
+		{
+			"number": 1,
+			"unit": "action"
+		}
+	],
+	"range": {
+		"type": "point",
+		"distance": {
+			"type": "touch"
+		}
+	},
+	"duration": [
+		{
+			"type": "timed",
+			"duration": {
+				"type": "day",
+				"amount": 1
+			}
+		}
+	],
+	"classes": {
+		"fromClassList": [
+			{
+				"name": "Cleric",
+				"source": "PHB"
+			}
+		]
+	},
+	"entries": [
+		"By use of this spell, a cleric becomes instantly aware when the recipient of the spell is in danger, regardless of the distance between the priest and the recipient. The recipient may be on a different plane of existence than the cleric. When this spell is cast by a cleric of at least 3rd level, they receive a mental image of the endangered person's situation. At no time, however, does the cleric know the person's location through the use of this spell."
+	],
+	"source": "Farover",
+	"components": {
+		"v": true,
+		"s": true,
+		"m": "a rose petal that has been kissed by the spell recipient"
+	},
+	"entriesHigherLevel": [
+		{
+			"name": "At Higher Levels",
+			"entries": [
+				"When you cast this spell using a spell slot of 2nd-level or higher, the spell lasts 1 day longer for each slot above 1st."
+			]
+		}
+	]
+},
+{
+	"name": "Thought Capture",
+	"level": 1,
+	"school": "D",
+	"time": [
+		{
+			"number": 1,
+			"unit": "action"
+		}
+	],
+	"range": {
+		"type": "point",
+		"distance": {
+			"type": "feet",
+			"amount": 30
+		}
+	},
+	"duration": [
+		{
+			"type": "instant"
+		}
+	],
+	"classes": {
+		"fromClassList": [
+			{
+				"name": "Cleric",
+				"source": "PHB"
+			}
+		]
+	},
+	"entries": [
+		"This spell makes the clerics brain something of a magnet that attracts thought objects in close proximity. The cleric can sense strong thoughts and emotions and can sometimes even see momentary visions of creatures who died or suffered some powerful emotion in the immediate vicinity. Thought objects are always attracted to the cleric in the order of the strongest (those attached to powerful emotions or significant events) to the weakest.",
+		"Thus, if several thought objects share the same vicinity, the cleric will perceive information about the most interesting or significant event. The cleric might pick up images of a battle from the point of view of a warrior who died there, or he might gain information about the victor of the battle.",
+		"The DM dictates the information provided to the cleric, and thus can use this spell to provide players with important background information or can add texture to a campaign world. The information provided might be highly cryptic or symbolic, perhaps in the form of a rhyme or riddle.",
+		"The cleric gains one thought object per casting of the spell. The spell may be cast a number of times in the same locale, with the cleric gaining a different thought object with each casting. A locale contains a finite number of thoughts, however, and once the cleric has gained all of them (per the DM), the spell will fail in that locale."
+	],
+	"source": "Farover",
+	"components": {
+		"v": true,
+		"s": true,
+		"m": "a braided strand of hair"
+	}
 }
 	]
 }
