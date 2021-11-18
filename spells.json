@@ -2155,6 +2155,1250 @@
 		"s": true,
 		"m": "a braided strand of hair"
 	}
+},
+{
+	"name": "Chant",
+	"level": 2,
+	"school": "E",
+	"time": [
+		{
+			"number": 1,
+			"unit": "action"
+		}
+	],
+	"range": {
+		"type": "radius",
+		"distance": {
+			"type": "feet",
+			"amount": 30
+		}
+	},
+	"duration": [
+		{
+			"type": "timed",
+			"duration": {
+				"type": "minute",
+				"amount": 1,
+				"upTo": true
+			}
+		}
+	],
+	"classes": {
+		"fromClassList": [
+			{
+				"name": "Cleric",
+				"source": "PHB"
+			}
+		]
+	},
+	"entries": [
+		"By means of the chant spell, the cleric brings special favor upon themself and their party, and causes harm to their enemies. When the Chant spell is active, all attack rolls and saving throws made by those in the area of effect who are friendly to the cleric gain a {@dice d4} bonus, while those of the clerics enemies suffer a {@dice d4} penalty.",
+		"This bonus/penalty continues as long as the caster continues to chant the mystic syllables and remains stationary. However, while chanting, the cleric must spend time continuing the chant each turn, meaning the cleric can only use either an action or a bonus action, but not both.",
+		"A Silence spell, or any effect that would even momentarily restrict the cleric's voice from being heard also ends the spell."
+	],
+	"source": "Farover",
+	"components": {
+		"v": true,
+		"s": true,
+		"m": "a holy symbol"
+	},
+	"entriesHigherLevel": [
+		{
+			"name": "At Higher Levels",
+			"entries": [
+				"When you cast this spell using a spell slot of 3rd level or higher, the radius of the spell is increased by 10 feet for each slot level above 2nd."
+			]
+		}
+	]
+},
+{
+	"name": "Hesitation",
+	"level": 2,
+	"school": "E",
+	"time": [
+		{
+			"number": 1,
+			"unit": "action"
+		}
+	],
+	"range": {
+		"type": "point",
+		"distance": {
+			"type": "feet",
+			"amount": 90
+		}
+	},
+	"duration": [
+		{
+			"type": "instant"
+		}
+	],
+	"classes": {
+		"fromClassList": [
+			{
+				"name": "Cleric",
+				"source": "PHB"
+			},
+			{
+				"name": "Wizard",
+				"source": "PHB"
+			}
+		]
+	},
+	"entries": [
+		"Creatures affected by this spell hesitate before executing their intended actions. Each creature of the casters choice in a 20-foot radius sphere centered on a point within range must make a Wisdom saving throw. On a failed save, the spell causes them to modify their next initiative roll by -10, and on a successful save by -5. The initiative modifier occurs in the round following the round in which Hesitation is cast."
+	],
+	"source": "Farover",
+	"components": {
+		"v": true,
+		"s": true,
+		"m": "a fragment of a turtle's shell"
+	},
+	"entriesHigherLevel": [
+		{
+			"name": "At Higher Levels",
+			"entries": [
+				"When you cast this spell using a spell slot of 3rd level or higher, the initiative modifier is reduced by an additional -2 on a failed save, and -1 on a successful save for each slot level above 2nd."
+			]
+		}
+	]
+},
+{
+	"name": "Guarding Haze",
+	"level": 2,
+	"school": "C",
+	"time": [
+		{
+			"number": 1,
+			"unit": "minute"
+		}
+	],
+	"range": {
+		"type": "point",
+		"distance": {
+			"type": "feet",
+			"amount": 30
+		}
+	},
+	"duration": [
+		{
+			"type": "timed",
+			"duration": {
+				"type": "hour",
+				"amount": 8
+			}
+		}
+	],
+	"classes": {
+		"fromClassList": [
+			{
+				"name": "Cleric",
+				"source": "PHB"
+			}
+		]
+	},
+	"entries": [
+		"The cleric conjures an insubstantial haze brought forth by the spells casting at a point within range. The spell creates a thin haze at the edges of a 20-foot radius centered on that point. Any creature not indicated by the cleric at the time of the spells casting that comes into contact with the haze is affected by the spell. Any creature entering the guarded area must make a Wisdom saving throw. On a failed save, the creature is {@condition paralyzed} for 1 minute. At the end of each of its turns, the creature can make another Wisdom saving throw. On a success, the spell ends.",
+		"A successful saving throw indicates that the subject creature was unaffected by the haze, and the spell remains in place. As soon as a subject creature is successfully {@condition paralyzed} by the haze, the paralysis takes effect and the spell dissipates. The spell also dissipates if no intruder is struck by the haze for 8 hours after the spell is cast.",
+		"Any creature approaching the area affected by the haze may be able to detect its presence with a successful Perception check against your spell save DC, before coming close enough to be affected."
+	],
+	"source": "Farover",
+	"components": {
+		"v": true,
+		"s": true,
+		"m": "a holy symbol"
+	},
+	"conditionInflict": [
+		"paralyzed"
+	]
+},
+{
+	"name": "Withdraw",
+	"level": 2,
+	"school": "A",
+	"time": [
+		{
+			"number": 1,
+			"unit": "action"
+		}
+	],
+	"range": {
+		"type": "point",
+		"distance": {
+			"type": "self"
+		}
+	},
+	"duration": [
+		{
+			"type": "special"
+		}
+	],
+	"classes": {
+		"fromClassList": [
+			{
+				"name": "Wizard",
+				"source": "PHB"
+			}
+		]
+	},
+	"entries": [
+		"By means of a withdraw spell, the cleric in effect alters the flow of time with regard to themself. While but one round of time passes for those not affected by the spell when it is cast, the cleric is able to spend two additional rounds on the turn the cleric casts Withdraw, in contemplation.",
+		"Although the cleric is only able to spend two rounds during the spell, time flows much slower for the cleric during Withdraw, allowing the player one minute of real time per round withdrawn to ponder some problem or question. No discussion with other players is permitted.",
+		"While affected by the Withdraw spell, the caster can use only the following spells: any divination spell or any curing or healing spell, the latter on the cleric themself only. The casting of any of these spells in a different fashion (for example, a Cure Wounds spell bestowed upon a companion) fails. Similarly, the withdrawn caster cannot move, become {@condition invisible}, or engage in actions other than thinking, reading, and the like."
+	],
+	"source": "Farover",
+	"components": {
+		"v": true,
+		"s": true
+	},
+	"entriesHigherLevel": [
+		{
+			"name": "At Higher Levels",
+			"entries": [
+				"When you cast this spell using a spell slot of 3rd level or higher, the amount of additional rounds afforded to you is increased by one for each slot level above 2nd."
+			]
+		}
+	]
+},
+{
+	"name": "Accelerate Healing",
+	"level": 3,
+	"school": "T",
+	"time": [
+		{
+			"number": 1,
+			"unit": "action"
+		}
+	],
+	"range": {
+		"type": "point",
+		"distance": {
+			"type": "touch"
+		}
+	},
+	"duration": [
+		{
+			"type": "special"
+		}
+	],
+	"classes": {
+		"fromClassList": [
+			{
+				"name": "Cleric",
+				"source": "PHB"
+			}
+		]
+	},
+	"entries": [
+		"This spell enables the affected creature to experience improved natural healing. A character who has this spell cast on them by a cleric regains twice the amount of hit points from their expended hit dice for {@dice 2d4} days."
+	],
+	"source": "Farover",
+	"components": {
+		"v": true,
+		"s": true
+	},
+	"entriesHigherLevel": [
+		{
+			"name": "At Higher Levels",
+			"entries": [
+				"If you cast this spell using a spell slot of 5th level, the duration of the spell is increased to {@dice 3d4} days. At 7th level, this becomes {@dice 4d4}, and at 9th level {@dice 5d4}."
+			]
+		}
+	],
+	"miscTags": [
+		"HL"
+	]
+},
+{
+	"name": "Continual Light",
+	"level": 3,
+	"school": "V",
+	"time": [
+		{
+			"number": 1,
+			"unit": "action"
+		}
+	],
+	"range": {
+		"type": "special"
+	},
+	"duration": [
+		{
+			"type": "permanent",
+			"ends": [
+				"dispel"
+			]
+		}
+	],
+	"classes": {
+		"fromClassList": [
+			{
+				"name": "Bard",
+				"source": "PHB"
+			},
+			{
+				"name": "Cleric",
+				"source": "PHB"
+			},
+			{
+				"name": "Wizard",
+				"source": "PHB"
+			}
+		]
+	},
+	"entries": [
+		"This spell is similar to the Light spell, except that it lasts until it is dispelled. The spell causes the targeted point, object, or creature to shed bright light in a 30-foot radius and dim light for an additional 30 feet. The light is as bright as daylight, and cancels even magical darkness in its area. Completely covering the source of the light with something opaque blocks the light. The spell blinds a creature if it is successfully cast upon the creature's visual organs. Continual Light can can be cast in two different ways:",
+		"You can cast the spell at a point, object, or creature you can see within 60 feet. If you target a hostile creature, or an object worn by a hostile creature, that creature must succeed on a Dexterity saving throw to avoid the spell. You can also cast the spell more precisely with a range of touch, allowing you to target a specific part of a creature."
+	],
+	"source": "Farover",
+	"components": {
+		"v": true,
+		"s": true,
+		"m": {
+			"text": "gold dust worth 80 gp, which the spell consumes",
+			"consumed": true,
+			"cost": 80000
+		}
+	},
+	"meta": {
+		"ritual": true
+	}
+},
+{
+	"name": "Phase Shift",
+	"level": 3,
+	"school": "T",
+	"time": [
+		{
+			"number": 1,
+			"unit": "action"
+		}
+	],
+	"range": {
+		"type": "point",
+		"distance": {
+			"type": "self"
+		}
+	},
+	"duration": [
+		{
+			"type": "timed",
+			"duration": {
+				"type": "minute",
+				"amount": 1,
+				"upTo": true
+			},
+			"concentration": true
+		}
+	],
+	"classes": {
+		"fromClassList": [
+			{
+				"name": "Cleric",
+				"source": "PHB"
+			},
+			{
+				"name": "Sorcerer",
+				"source": "PHB"
+			},
+			{
+				"name": "Warlock",
+				"source": "PHB"
+			},
+			{
+				"name": "Wizard",
+				"source": "PHB"
+			}
+		]
+	},
+	"entries": [
+		"With this spell, the caster shifts their body slightly on to the ethereal plane for the duration of the spell. While in this state, most of the casters body physically remains on the material plane, but on the material plane the caster is seen as an ethereal form of themself.",
+		"During this time, the caster can see both the material and ethereal planes, and can interact with both planes as well. The caster also takes 3 less damage from all sources, can not be perceived by divination spells, and can move through solid objects on the material plane by spending 3 feet of movement for every 1 foot moved.",
+		"When either the spell or the casters turn while the spell is active ends, and the caster occupies the same spot as a solid object or creature, they are immediately shunted to the nearest unoccupied space that they can occupy and suffer force damage equal to twice the number of feet they are moved."
+	],
+	"source": "Farover",
+	"components": {
+		"v": true,
+		"s": true
+	},
+	"entriesHigherLevel": [
+		{
+			"name": "At Higher Levels",
+			"entries": [
+				"When you cast this spell using a spell slot of 4th level, the duration of the spell is increased to 10 minutes. At 5th level, this becomes 1 hour, at 6th level 8 hours, at 7th level 1 day, and at 9th level 7 days."
+			]
+		}
+	]
+},
+{
+	"name": "Memory Read",
+	"level": 3,
+	"school": "D",
+	"time": [
+		{
+			"number": 1,
+			"unit": "action"
+		}
+	],
+	"range": {
+		"type": "point",
+		"distance": {
+			"type": "feet",
+			"amount": 10
+		}
+	},
+	"duration": [
+		{
+			"type": "special"
+		}
+	],
+	"classes": {
+		"fromClassList": [
+			{
+				"name": "Bard",
+				"source": "PHB"
+			},
+			{
+				"name": "Cleric",
+				"source": "PHB"
+			},
+			{
+				"name": "Wizard",
+				"source": "PHB"
+			}
+		]
+	},
+	"entries": [
+		"This spell allows the caster to read the memory of a single subject. The caster experiences the memory with the same intensity as the subject. The time required to view a memory is 1/50 of the time that the actual event lasted. Thus, the caster can view the memory of an event that lasted for 5 minutes in roughly one round. When cast at 3rd level, the spell allows the caster to view a memory lasting up to 5 minutes in length, or one round in real time. The subject experiences the memory at the same time the caster reads it.",
+		"The subject must have an Intelligence score of 5 or more and must remain within range of the caster throughout the time it takes to read the desired memory. Casters can cast this spell on {@condition unconscious}, sleeping, held, or {@condition paralyzed} creatures. The subject receives a Wisdom saving throw when the caster casts the spell (this saving throw is allowed even if the subject is asleep or otherwise unaware of the attempt). The target has advantage on the saving throw if it is engaged in combat with the caster or its allies.",
+		"In addition, if the memory that the caster wants to view concerns something the subject wants to keep secret, or is something that the subject is trying to suppress, the subject receives a +5 bonus to the saving throw. If the memory the caster wishes to view is more than six months old, the subject receives a second saving throw, with bonuses depending on the age of the memory as follows:",
+		"Age of Memory Bonus: 1 to 4 years +2, 5 years or more +5. If the subject succeeds either of these saving throws, the spell fails.",
+		"This spell creates a mental drain on the caster, causing them to temporarily have their hit point maximum lowered by {@dice 3d4} hit points, increasing by {@dice 1d4} for every spell slot level above 3rd. This cumulative reduction lasts until the caster completes a short rest."
+	],
+	"source": "Farover",
+	"components": {
+		"v": true,
+		"s": true,
+		"m": "a small piece of linen cloth"
+	},
+	"entriesHigherLevel": [
+		{
+			"name": "At Higher Levels",
+			"entries": [
+				"If you cast this spell using a spell slot of 4th level or higher, the length of the memory viewed can be up to 30 minutes. If you use a spell slot of 5th level or higher, the length can be up to 1 hour. If you use a spell slot of 7th level or higher, the length can be up to 3 hours. If you use a 9th level spell slot, the length can be up to 8 hours."
+			]
+		}
+	]
+},
+{
+	"name": "Rigid Thinking",
+	"level": 3,
+	"school": "E",
+	"time": [
+		{
+			"number": 1,
+			"unit": "action"
+		}
+	],
+	"range": {
+		"type": "point",
+		"distance": {
+			"type": "feet",
+			"amount": 120
+		}
+	},
+	"duration": [
+		{
+			"type": "timed",
+			"duration": {
+				"type": "minute",
+				"amount": 1,
+				"upTo": true
+			},
+			"concentration": true
+		}
+	],
+	"classes": {
+		"fromClassList": [
+			{
+				"name": "Cleric",
+				"source": "PHB"
+			},
+			{
+				"name": "Wizard",
+				"source": "PHB"
+			}
+		]
+	},
+	"entries": [
+		"Rigid Thinking can be cast only upon a creature with an Intelligence score of 3 or higher. The target creature must succeed on a Wisdom saving throw, or be subjected to the following effect.",
+		"A creature affected by Rigid Thinking is incapable of performing any action other than the activity they are involved in when the spell takes effect. The creature's mind simply cannot decide on another course of action--it becomes frozen into a single thought and cannot change even if new circumstances would suggest otherwise. Thus, a fighter fighting a kobold will ignore the arrival of a beholder, and a rogue picking a lock will pay no heed to the arrival of three guards.",
+		"An affected creature will not continue to fire their bow at a dragon if they run out of arrows, but will choose another means of attacking the dragon to the exclusion of all other activities.",
+		"A spellcaster in the process of casting a spell when Rigid Thinking takes effect will attempt to repeat the spell at the same target if possible, and if they don't have the resources to do so, they will then attempt to continue working towards their goal with other appropriate means.",
+		"An affected creature can repeat the saving throw at the end of its turns to end the spell. Otherwise, the spell expires when the target accomplishes their goal (i.e., the kobold is killed or the lock is opened) or when the spells duration ends."
+	],
+	"source": "Farover",
+	"components": {
+		"v": true,
+		"s": true
+	}
+},
+{
+	"name": "Lesser Telepathy",
+	"level": 3,
+	"school": "V",
+	"time": [
+		{
+			"number": 1,
+			"unit": "action"
+		}
+	],
+	"range": {
+		"type": "point",
+		"distance": {
+			"type": "feet",
+			"amount": 120
+		}
+	},
+	"duration": [
+		{
+			"type": "timed",
+			"duration": {
+				"type": "minute",
+				"amount": 1
+			}
+		}
+	],
+	"classes": {
+		"fromClassList": [
+			{
+				"name": "Cleric",
+				"source": "PHB"
+			},
+			{
+				"name": "Wizard",
+				"source": "PHB"
+			}
+		]
+	},
+	"entries": [
+		"You create a telepathic link between yourself and a creature within range with an Intelligence score of at least 5. If the creature is unwilling, it can make a Wisdom saving throw to resist the effect.",
+		"Until the spell ends, you and the target can can communicate silently and rapidly. Telepathy does not give either participant access to the other's thoughts, memories, or emotions. Participants can only \"hear\" the thoughts that the other participant actively \"sends.\" Mind-to-mind communication is approximately four times faster than verbal communication. The level of complexity that can be communicated is only that which can be expressed through language. Gestures, expressions, and body language cannot be conveyed."
+	],
+	"source": "Farover",
+	"components": {
+		"v": true,
+		"s": true,
+		"m": "a small book with numerological markings"
+	}
+},
+{
+	"name": "Strength of One",
+	"level": 3,
+	"school": "T",
+	"time": [
+		{
+			"number": 1,
+			"unit": "minute"
+		}
+	],
+	"range": {
+		"type": "point",
+		"distance": {
+			"type": "touch"
+		}
+	},
+	"duration": [
+		{
+			"type": "timed",
+			"duration": {
+				"type": "hour",
+				"amount": 1
+			}
+		}
+	],
+	"classes": {
+		"fromClassList": [
+			{
+				"name": "Cleric",
+				"source": "PHB"
+			},
+			{
+				"name": "Paladin",
+				"source": "PHB"
+			}
+		]
+	},
+	"entries": [
+		"When casting this spell, the caster imbues up to two creatures out of a group of three (unincluding the caster) with a temporary Strength score equal to that of the strongest creature in the group. The caster can also be the one whos Strength score is shared if it possesses the highest score, but can still only affect two creatures. To be affected by the spell, all creatures must touch the hand of the caster at the time of casting. Only humanoid creatures of size Medium or lower may be affected.",
+		"Upon completion of the spell, all affected characters gain a Strength score equal to the Strength score of the creature with the highest score in the group. Any magical bonuses affecting the creature who's Strength is shared are not added; only the the natural Strength is conferred on the group.",
+		"This bonus supercedes any magical or other bonus an affected character would gain from a different source.",
+		"The spell ends if either the Strength sharing creature or the caster are {@condition incapacitated} or killed before the duration expires. The bonus and duration are not affected if a different member of the group is {@condition incapacitated} or killed within the duration of the spell."
+	],
+	"source": "Farover",
+	"components": {
+		"v": true,
+		"s": true
+	},
+	"entriesHigherLevel": [
+		{
+			"name": "At Higher Levels",
+			"entries": [
+				"When you cast this spell using a spell slot of 4th level or higher, the number of creatures that can benefit from the spell is increased by one for each level above 3rd."
+			]
+		}
+	]
+},
+{
+	"name": "Tree",
+	"level": 3,
+	"school": "T",
+	"time": [
+		{
+			"number": 1,
+			"unit": "action"
+		}
+	],
+	"range": {
+		"type": "point",
+		"distance": {
+			"type": "self"
+		}
+	},
+	"duration": [
+		{
+			"type": "timed",
+			"duration": {
+				"type": "minute",
+				"amount": 10,
+				"upTo": true
+			}
+		}
+	],
+	"classes": {
+		"fromClassList": [
+			{
+				"name": "Cleric",
+				"source": "PHB"
+			},
+			{
+				"name": "Druid",
+				"source": "PHB"
+			}
+		]
+	},
+	"entries": [
+		"By means of this spell, the caster is able to assume the form of a small living tree or shrub or that of a large dead tree trunk with only a few limbs. Although the closest inspection cannot reveal that this plant is actually a person, and for all normal tests he is, in fact, a tree or shrub, the caster is able to observe all that goes on around them just as if they were in normal form. The Armor Class and hit points of the plant are those of the caster. The caster can remove the spell at any time, instantly changing from plant to his normal form and having full capability for any action normally possible (including spellcasting). Note that all clothing and gear worn or carried change with the caster."
+	],
+	"source": "Farover",
+	"components": {
+		"v": true,
+		"s": true,
+		"m": "a twig from a tree"
+	},
+	"entriesHigherLevel": [
+		{
+			"name": "At Higher Levels",
+			"entries": [
+				"If you cast this spell using a spell slot of 4th level or higher, the duration is up to 1 hour. If you use a spell slot of 5th level or higher, the duration is up to 8 hours. If you use a spell slot of 6th level or higher, the duration is up to 24 hours. If you use a 7th level spell slot, the duration is up to 1 week. If you use an 8th level spell slot, the duration is up to 1 month. If you use a 9th level spell slot, the duration is up to 1 year."
+			]
+		}
+	]
+},
+{
+	"name": "Unfailing Premonition",
+	"level": 3,
+	"school": "D",
+	"time": [
+		{
+			"number": 1,
+			"unit": "action"
+		}
+	],
+	"range": {
+		"type": "point",
+		"distance": {
+			"type": "self"
+		}
+	},
+	"duration": [
+		{
+			"type": "timed",
+			"duration": {
+				"type": "minute",
+				"amount": 10
+			}
+		}
+	],
+	"classes": {
+		"fromClassList": [
+			{
+				"name": "Cleric",
+				"source": "PHB"
+			}
+		]
+	},
+	"entries": [
+		"By anticipating possible futures and outcomes of the caster's actions, this spell provides the character with a temporary sixth sense or feel for danger. The spell operates on a subconscious level, and for 10 minutes after casting the spell, the caster receives strong intuitive impulses when they contemplate courses of action that may bring immediate physical injury or harm to them. In addition, the caster has advantage on Dexterity saving throws for the duration of the spell.",
+		"For example, if the cleric was about to open a trapped chest, the unfailing premonition would create a flash of insight or a gut feeling telling them that they shouldn't do so.",
+		"Similarly, opening a door that leads into the lair of a ferocious troll may also trigger the spell's warning. Threatening a NPC who is likely to respond by drawing a weapon and attacking the PC would create a warning, but threatening a NPC who will get even with the cleric in an hour or two will not trigger the premonition."
+	],
+	"source": "Farover",
+	"components": {
+		"v": true,
+		"s": true
+	},
+	"entriesHigherLevel": [
+		{
+			"name": "At Higher Levels",
+			"entries": [
+				"When you cast this spell using a spell slot of 4th level or higher, the duration of the spell is increased by 10 minutes for each level above 3rd."
+			]
+		}
+	]
+},
+{
+	"name": "Weather Prediction",
+	"level": 3,
+	"school": "D",
+	"time": [
+		{
+			"number": 1,
+			"unit": "minute"
+		}
+	],
+	"range": {
+		"type": "point",
+		"distance": {
+			"type": "self"
+		}
+	},
+	"duration": [
+		{
+			"type": "instant"
+		}
+	],
+	"classes": {
+		"fromClassList": [
+			{
+				"name": "Cleric",
+				"source": "PHB"
+			},
+			{
+				"name": "Druid",
+				"source": "PHB"
+			}
+		]
+	},
+	"entries": [
+		"By casting this spell, the caster can predict the weather conditions at the current location for the next 24 hours. The caster becomes aware of the prevailing conditions, trends, and weather systems that may affect the current location.",
+		"Temperature, wind speed, cloud cover, and precipitation can all be predicted with 95% accuracy for the next day. Magical or supernatural phenomena cannot be predicted. Casters of powers concerned with weather may use this spell to determine the best time for certain ceremonies or observances. Other casters can find weather prediction useful for planning journeys or selecting campsites."
+	],
+	"source": "Farover",
+	"components": {
+		"v": true,
+		"s": true
+	},
+	"meta": {
+		"ritual": true
+	}
+},
+{
+	"name": "Control Temperature",
+	"level": 4,
+	"school": "T",
+	"time": [
+		{
+			"number": 1,
+			"unit": "action"
+		}
+	],
+	"range": {
+		"type": "radius",
+		"distance": {
+			"type": "feet",
+			"amount": 10
+		}
+	},
+	"duration": [
+		{
+			"type": "timed",
+			"duration": {
+				"type": "hour",
+				"amount": 1
+			}
+		}
+	],
+	"classes": {
+		"fromClassList": [
+			{
+				"name": "Cleric",
+				"source": "PHB"
+			},
+			{
+				"name": "Druid",
+				"source": "PHB"
+			},
+			{
+				"name": "Wizard",
+				"source": "PHB"
+			}
+		]
+	},
+	"entries": [
+		"When this spell is cast, the temperature in the area surrounding the caster can be altered by 100 C°, either upward or downward. The spell can be used to ensure the comfort of the caster and those accompanying in extreme weather conditions. The party could stand about in shirt sleeves during the worst blizzard (although it would be raining on them) or make ice for their drinks during a scorching heat wave.",
+		"The spell also provides protection from intense normal and magical attacks. If the extreme of temperature is beyond what could be affected by the spell (a searing blast of a fireball or the icy chill of a white dragon), the spell reduces the damage caused by up to 40 points individually for every creature inside the area of the spell. Normal saving throws are still allowed, and the reduction is taken before the saving throw is made. Once struck by such an attack, the spell immediately ends."
+	],
+	"source": "Farover",
+	"components": {
+		"v": true,
+		"s": true,
+		"m": "a pair of raspberry leaves"
+	},
+	"entriesHigherLevel": [
+		{
+			"name": "At Higher Levels",
+			"entries": [
+				"When you cast this spell using a spell slot of 5th level or higher, the amount of damage points the spell can mitigate is increased by 5 for each level above 4th."
+			]
+		}
+	]
+},
+{
+	"name": "Dimensional Anchor",
+	"level": 4,
+	"school": "C",
+	"time": [
+		{
+			"number": 1,
+			"unit": "action"
+		}
+	],
+	"range": {
+		"type": "point",
+		"distance": {
+			"type": "feet",
+			"amount": 60
+		}
+	},
+	"duration": [
+		{
+			"type": "timed",
+			"duration": {
+				"type": "minute",
+				"amount": 1,
+				"upTo": true
+			},
+			"concentration": true
+		}
+	],
+	"classes": {
+		"fromClassList": [
+			{
+				"name": "Bard",
+				"source": "PHB"
+			},
+			{
+				"name": "Cleric",
+				"source": "PHB"
+			},
+			{
+				"name": "Sorcerer",
+				"source": "PHB"
+			},
+			{
+				"name": "Wizard",
+				"source": "PHB"
+			}
+		]
+	},
+	"entries": [
+		"When you cast this spell, a green ray springs from your outstretched hand and it unerringly strikes a creature within line of sight and the range of the spell. The target must make a Charisma saving throw. On a failed save, the spell covers the subject with a shimmering emerald field that tethers the subject to that physical location for the duration of the spell.",
+		"The spell has two effects. Firstly, it completely blocks bodily extradimensional travel. Forms of movement barred by the dimensional anchor include blinking, dimension door, etherealness, gate, misty step, plane shift, and other similar teleportation or psionic abilities.",
+		"Secondly, the spell tethers the target to the location it is in. If by any means the target moves over 20 feet away from the location where it was subjected to the spell, it is immediately pulled back to that location by the green tethers of the spell."
+	],
+	"source": "Farover",
+	"components": {
+		"v": true,
+		"s": true
+	}
+},
+{
+	"name": "Inverted Ethics",
+	"level": 4,
+	"school": "E",
+	"time": [
+		{
+			"number": 1,
+			"unit": "action"
+		}
+	],
+	"range": {
+		"type": "point",
+		"distance": {
+			"type": "feet",
+			"amount": 120
+		}
+	},
+	"duration": [
+		{
+			"type": "timed",
+			"duration": {
+				"type": "minute",
+				"amount": 10
+			}
+		}
+	],
+	"classes": {
+		"fromClassList": [
+			{
+				"name": "Bard",
+				"source": "PHB"
+			},
+			{
+				"name": "Cleric",
+				"source": "PHB"
+			}
+		]
+	},
+	"entries": [
+		"This spell reverses the ethics of a person or group of people. Each creature in a 20-foot-radius sphere centered on a point you choose within range must succeed on a Wisdom saving throw when you cast this spell or be affected by it.",
+		"While under the influence of this spell, a creature behaves in a manner opposite to the way they normally would behave. Thus, a shopkeeper influenced by inverted ethics will think it perfectly normal for someone to pick up an item from the shop and walk out the door without paying for it. If someone tried to pay for an item, the shopkeeper would be insulted. If the spell is cast on a shopper in a store, they would find it natural to steal the item, thinking that they are behaving in a proper way. If the spell is cast on a professed thief, they will no longer steal, choosing to pay for the goods instead.",
+		"Inverted ethics does not cause a creature to actively commit evil deeds (or good deeds). Thus, an affected creature will not go on a shoplifting rampage; it will steal only as the opportunity presents itself."
+	],
+	"source": "Farover",
+	"components": {
+		"v": true,
+		"s": true,
+		"m": "a miniature golden balance"
+	}
+},
+{
+	"name": "Spell Immunity",
+	"level": 4,
+	"school": "A",
+	"time": [
+		{
+			"number": 1,
+			"unit": "action"
+		}
+	],
+	"range": {
+		"type": "point",
+		"distance": {
+			"type": "touch"
+		}
+	},
+	"duration": [
+		{
+			"type": "timed",
+			"duration": {
+				"type": "hour",
+				"amount": 1
+			}
+		}
+	],
+	"classes": {
+		"fromClassList": [
+			{
+				"name": "Cleric",
+				"source": "PHB"
+			}
+		]
+	},
+	"entries": [
+		"By means of this spell, the cleric renders a creature touched immune to the effects of a specified spell of 4th level or lower for the duration. It can protect against spells, spell-like effects of magical items, and innate spellcasting abilities of creatures. It does not protect against breath weapons or gaze attacks of any type.",
+		"The spell has a few additional limitations. Firstly, the caster must have directly experienced the effect of the specified spell. For example, if the caster has been attacked by a fireball spell at some time, the caster can use the spell immunity spell to provide protection from a fireball. Secondly, only a particular spell can be protected against, not a certain school of spells or a group of spells that are similar in effect; thus, a creature given immunity to the lightning bolt spell is still vulnerable to a shocking grasp spell."
+	],
+	"source": "Farover",
+	"components": {
+		"v": true,
+		"s": true,
+		"m": {
+			"text": "emerald dust worth 50 gp, which the spell consumes",
+			"consumed": true,
+			"cost": 50000
+		}
+	}
+},
+{
+	"name": "Unfailing Endurance",
+	"level": 4,
+	"school": "N",
+	"time": [
+		{
+			"number": 1,
+			"unit": "action"
+		}
+	],
+	"range": {
+		"type": "point",
+		"distance": {
+			"type": "touch"
+		}
+	},
+	"duration": [
+		{
+			"type": "timed",
+			"duration": {
+				"type": "day",
+				"amount": 3
+			}
+		}
+	],
+	"classes": {
+		"fromClassList": [
+			{
+				"name": "Cleric",
+				"source": "PHB"
+			},
+			{
+				"name": "Warlock (reworked)",
+				"source": "Farover"
+			}
+		]
+	},
+	"entries": [
+		"This spell, refered to by some as \"magic meth\", enhances the natural hardiness and stamina of the affected creatures by rendering them virtually immune to fatigue or {@condition exhaustion}, for a time. During the casting of the spell, the caster must touch each creature to be affected, and the spell can affect up to 5 creatures.",
+		"While under the spells influence, an affected creature does not need to sleep, nor do they suffer any negative effects from not sleeping. In addition, affected creatures can also force march for an additional amount of hours a day equal to their Constitution modifier, before they have to start rolling Constitution saving throws to prevent {@condition exhaustion}.",
+		"While the spell is in effect, affected creatures do not suffer the negative effects of {@condition exhaustion}, but they must keep track of the amount of {@condition exhaustion} they would accrue during that time otherwise. Once the spell ends, affected creatures immediately suffer half (rounded down) the amount of {@condition exhaustion} stacks that they would have accrued during the duration of the spell."
+	],
+	"source": "Farover",
+	"components": {
+		"v": true,
+		"s": true
+	},
+	"entriesHigherLevel": [
+		{
+			"name": "At Higher Levels",
+			"entries": [
+				"When you cast this spell using a spell slot of 5th level or higher, the duration of the spell is increased by 1 day for each level above 4th."
+			]
+		}
+	]
+},
+{
+	"name": "Othertime",
+	"level": 5,
+	"school": "T",
+	"time": [
+		{
+			"number": 1,
+			"unit": "action"
+		}
+	],
+	"range": {
+		"type": "point",
+		"distance": {
+			"type": "self"
+		}
+	},
+	"duration": [
+		{
+			"type": "special"
+		}
+	],
+	"classes": {
+		"fromClassList": [
+			{
+				"name": "Cleric",
+				"source": "PHB"
+			}
+		]
+	},
+	"entries": [
+		"When a cleric enters Othertime, they step into a different reality in which the world around is frozen at a moment in the future. Until time catches up, the cleric may move about unhindered and observe their surroundings; no force known can detect their presence or harm them in the alternate reality, although they in turn cannot affect any creature or object in the physical world. To the clerics companions or enemies in real time, the cleric appears to simply vanish altogether, only to reappear at some later point.",
+		"The amount of time the cleric can travel into the future for is up to 1 minute. The duration chosen by the cleric governs the length of the Othertime; if the cleric decides that the spell will last 2 rounds, then they are instantly transported to that point in time, surrounded by the frozen still-life of the world as it will appear 2 rounds after the cleric cast Othertime. The caster then has 2 rounds to themself to take any actions, although they cannot affect the real world by any physical, magical, or mental means. While the caster is in the Othertime, they are completely unaware of the intervening events.",
+		"If the cleric uses this time to study a battle and position themself for an attack, they gain a +10 bonus to their next initiative roll on the round after they emerge from Othertime."
+	],
+	"source": "Farover",
+	"components": {
+		"v": true,
+		"s": true,
+		"m": {
+			"text": "an hourglass filled with rare salts, worth at least 100 gp",
+			"cost": 100000
+		}
+	},
+	"entriesHigherLevel": [
+		{
+			"name": "At Higher Levels",
+			"entries": [
+				"When you cast this spell using a spell slot of 6th level, the duration of the spell is increased to up to 10 minutes. At 7th level, the duration becomes up to 1 hour. At 8th level it becomes up to 8 hours, and at 9th level up to 24 hours."
+			]
+		}
+	]
+},
+{
+	"name": "Memory Wrack",
+	"level": 5,
+	"school": "E",
+	"time": [
+		{
+			"number": 1,
+			"unit": "action"
+		}
+	],
+	"range": {
+		"type": "point",
+		"distance": {
+			"type": "feet",
+			"amount": 30
+		}
+	},
+	"duration": [
+		{
+			"type": "timed",
+			"duration": {
+				"type": "minute",
+				"amount": 10,
+				"upTo": true
+			},
+			"concentration": true
+		}
+	],
+	"classes": {
+		"fromClassList": [
+			{
+				"name": "Cleric",
+				"source": "PHB"
+			},
+			{
+				"name": "Wizard",
+				"source": "PHB"
+			}
+		]
+	},
+	"entries": [
+		"This spell \"disconnects\" the subject's short-term and long-term memory. When affected by this spell, the target must make a Wisdom saving throw. On a failed save, the target is incapable of storing information in long-term memory for the duration of the spell.",
+		"Every moment is virtually an independent event for the target; it can remember recent events, thoughts, and sensations for no more than one round. Memories of events that happened before the onset of the spell are not affected at all; these are safely stored in long-term memory.",
+		"While the spell is active, the subjected target is forced to concentrate, as if on a spell, to be able to act. Spellcasters already concentrating on a spell when Memory Wrack takes effect are forced to drop that spell, and they can not cast a concentration spell for the duration of Memory Wrack's effect.",
+		"If the target takes damage and is forced to make a Constitution saving throw to maintain concentration, on a failed save the target is {@condition stunned} until the end of their next turn, at which point they can repeat the Wisdom saving throw to attempt to end Memory Wrack.",
+		"When the spell ends, the target remembers nothing that happened while the spell was in effect."
+	],
+	"source": "Farover",
+	"components": {
+		"v": true,
+		"s": true,
+		"m": {
+			"text": "a ruby worth at least 100 gp",
+			"consumed": true,
+			"cost": 100000
+		}
+	},
+	"conditionInflict": [
+		"stunned"
+	],
+	"entriesHigherLevel": [
+		{
+			"name": "At Higher Levels",
+			"entries": [
+				"When you cast this spell using a spell slot of 7th level or higher, the spells duration remains the same, but no longer requires concentration."
+			]
+		}
+	]
+},
+{
+	"name": "Shrieking Walls",
+	"level": 5,
+	"school": "E",
+	"time": [
+		{
+			"number": 1,
+			"unit": "action"
+		}
+	],
+	"range": {
+		"type": "cube",
+		"distance": {
+			"type": "feet",
+			"amount": 20
+		}
+	},
+	"duration": [
+		{
+			"type": "timed",
+			"duration": {
+				"type": "day",
+				"amount": 7
+			}
+		}
+	],
+	"classes": {
+		"fromClassList": [
+			{
+				"name": "Cleric",
+				"source": "PHB"
+			},
+			{
+				"name": "Wizard",
+				"source": "PHB"
+			}
+		]
+	},
+	"entries": [
+		"This spell enchants any single room no larger than the area of effect. When any creature larger than a normal rat (larger than one-half cubic foot or weighing more than three pounds) enters the room, shrill shrieks begin to emanate from the walls. The shrieks persist for {@dice 1d4 + 1} rounds. The walls do not undergo any physical change. The shrieks can be heard only by creatures inside the room. Creatures hearing the shrieks experience no ill effects on the first round, allowing them time to leave the room or cover their ears. Creatures who remain in the room during the second or subsequent rounds of the shrieks who have not protected their hearing are penalized as follows:",
+		"Creatures whose levels are greater than the level of the caster must succeed on a Constitution saving throw, or be {@condition stunned} for {@dice 1d6} rounds. A creature that succeeds on this saving throw is immune to the effects of the spell for 1 minute.",
+		"Creatures whose levels are less than or equal to the level of the caster become {@condition deafened} for {@dice 1d6} hours, and {@condition stunned} for {@dice 1d6} rounds. Spellcasters {@condition deafened} by this effect have a 20% chance of miscasting any spell with a verbal component.",
+		"The effect of the spell persists for the duration of the spell no matter how many times the effect is triggered."
+	],
+	"source": "Farover",
+	"components": {
+		"v": true,
+		"s": true,
+		"m": "a small golden bell"
+	},
+	"conditionInflict": [
+		"stunned"
+	],
+	"entriesHigherLevel": [
+		{
+			"name": "At Higher Levels",
+			"entries": [
+				"When you cast this spell using a spell slot of 6th level, the duration becomes 14 days. With a spell slot of 7th level, it becomes 1 month. With a spell slot of 8th level, it becomes 1 year, and with a spell slot of 9th level, the spell lasts until it is dispelled."
+			]
+		}
+	]
+},
+{
+	"name": "Thoughtwave",
+	"level": 5,
+	"school": "D",
+	"time": [
+		{
+			"number": 1,
+			"unit": "action"
+		}
+	],
+	"range": {
+		"type": "point",
+		"distance": {
+			"type": "plane"
+		}
+	},
+	"duration": [
+		{
+			"type": "instant"
+		}
+	],
+	"classes": {
+		"fromClassList": [
+			{
+				"name": "Cleric",
+				"source": "PHB"
+			}
+		]
+	},
+	"entries": [
+		"Thoughtwave allows the cleric to send a short but powerful message to one or more specific individuals anywhere on the same plane of existence, informing them of the casters situation and general location. The spell instantly generates a powerful mental impulse indicative of the caster's general mental state--anger, fear, pain, despair, etc., in addition to a message up to twenty-five words in length.",
+		"The caster can designate as many as ten people to receive this message, provided they can all be specifically named or grouped in a general category. If more than ten individuals are in a designated group, those closest to the source will receive the impulse.",
+		"Creatures receiving the impulse automatically know who sent it (even if they have never met the cleric before) and gain a clear indication of the mood and situation of the caster. Recipients also intuitively know the general source of the spell, although they are unable to pinpoint rooms, dungeon levels, or landmarks."
+	],
+	"source": "Farover",
+	"components": {
+		"v": true,
+		"s": true
+	}
 }
 	]
 }
