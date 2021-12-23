@@ -510,8 +510,10 @@
 			"type": "timed",
 			"duration": {
 				"type": "hour",
-				"amount": 8
-			}
+				"amount": 8,
+				"upTo": true
+			},
+			"concentration": true
 		}
 	],
 	"classes": {
