@@ -404,7 +404,7 @@
 	},
 	"entries": [
 		"As you hold your hands with thumbs touching and fingers spread, a shroud of darkness covers the area affected by the spell, as wailing voices and faces with expressions of terror accompany the dark magic. Each creature in a 15-foot cone must make a Wisdom saving throw.",
-		"On a failed save, a creature takes {@damage 1d8} psychic damage and becomes {@condition frightened} of you. The creature can repeat the saving throw at the end of each of it's turns.",
+		"On a failed save, a creature takes {@damage 1d8} psychic damage and becomes {@condition frightened} of you. The creature can repeat the saving throw at the end of each of it's turns, ending the effect on a success.",
 		"On a successful save, the creature takes half as much damage and is not {@condition frightened}."
 	],
 	"source": "Farover",
@@ -691,7 +691,7 @@
 	"entries": [
 		"You let loose a terrifying howl which affects every creature within 20 feet that can hear you. Each creature must make a Wisdom saving throw. A target automatically succeeds on this saving throw if it can't be {@condition frightened}.",
 		"On a successful save, the creature shrugs off the effect, but it's speed is reduced by 10 feet until the end of it's next turn.",
-		"On a failed save, the creature is {@condition frightened} of you, and must immediately use its reaction, if available, to move as far as its speed allows away from you. The creature doesn't move into obviously dangerous ground, such as a fire or a pit. A {@condition frightened} creature can repeat the saving throw at the end of it's turns. If a creature fails the saving throw by 10 or more, it also drops {@condition prone} after using it's reaction to move away from you."
+		"On a failed save, the creature becomes {@condition frightened} of you, and must immediately use its reaction, if available, to move as far as its speed allows away from you. The creature doesn't move into obviously dangerous ground, such as a fire or a pit. A {@condition frightened} creature can repeat the saving throw at the end of it's turns, ending the effect on a success. If a creature fails the saving throw by 10 or more, it also drops {@condition prone} after using it's reaction to move away from you."
 	],
 	"source": "Farover",
 	"components": {
@@ -3401,6 +3401,82 @@
 		"v": true,
 		"s": true
 	}
+},
+{
+	"name": "Essence Abduction",
+	"source": "Farover",
+	"basicRules": true,
+	"level": 3,
+	"school": "N",
+	"time": [
+		{
+			"number": 1,
+			"unit": "action"
+		}
+	],
+	"range": {
+		"type": "line",
+		"distance": {
+			"type": "feet",
+			"amount": 30
+		}
+	},
+	"components": {
+		"v": true,
+		"s": true,
+		"m": "a drop of blood"
+	},
+	"duration": [
+		{
+			"type": "timed",
+			"duration": {
+				"type": "round",
+				"amount": 1,
+				"upTo": true
+			},
+			"concentration": true
+		}
+	],
+	"entries": [
+		"A cloud of life draining necrotic energy the size of one square emanates from you towards a direction, travelling in a 5 foot wide line up to 30 feet away, striking all creatures in its path. Each creature affected must make a Dexterity saving throw. Creatures who fail the saving throw take {@damage 2d8} necrotic damage, or half as much on a successful one.",
+		"After traveling, the cloud persists at its destination until the beginning of your next turn. During this time, any creature that comes into contact with the cloud is subjected to its effect.",
+		"At the beginning of your next turn, the cloud travels back to you in a 5 foot wide line, as long as you are within 60 feet of it at the time, striking all creatures in its path once again. The cloud can not move through impassable terrain. If the cloud returns to you, you regain {@dice 2d4} hit points for each unique creature the spell damaged."
+	],
+	"entriesHigherLevel": [
+		{
+			"name": "At Higher Levels",
+			"entries": [
+				"When you cast this spell using a spell slot of 4th level or higher, the damage increases by {@dice 1d8}, and the healing increases by {@dice 1d4} for each slot level above 3rd."
+			]
+		}
+	],
+	"damageInflict": [
+		"necrotic"
+	],
+	"savingThrow": [
+		"dexterity"
+	],
+	"areaTags": [
+		"L"
+	],
+	"classes": {
+		"fromClassList": [
+			{
+				"name": "Warlock (reworked)",
+				"source": "Farover"
+			}
+		]
+	},
+	"eldritchInvocations": [
+		{
+			"name": "Kiss of Mephistopheles",
+			"source": "UAWarlockAndWizard"
+		}
+	],
+	"hasFluffImages": true,
+	"miscTags": [
+		"HL"
+	]
 }
 	]
 }
