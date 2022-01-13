@@ -807,6 +807,14 @@
 	],
 	"areaTags": [
 		"ST"
+	],
+	"entriesHigherLevel": [
+		{
+			"name": "At Higher Levels",
+			"entries": [
+				"When you cast this spell as a Warlock with access to higher level spells than 1st level, the damage of the spell is increased by {@dice 1d8} and the critical hit range is lowered by 1 for each spell level above 1st."
+			]
+		}
 	]
 },
 {
@@ -861,6 +869,14 @@
 	],
 	"miscTags": [
 		"FMV"
+	],
+	"entriesHigherLevel": [
+		{
+			"name": "At Higher Levels",
+			"entries": [
+				"When you cast this spell as a Warlock with access to higher level spells than 1st level, the damage of the spell is increased by {@dice 1d6} and the push back distance is increased by 5 feet for each spell level above 1st."
+			]
+		}
 	]
 },
 {
@@ -894,7 +910,7 @@
 		]
 	},
 	"entries": [
-		"A line of roaring flame 60 feet long and 5 feet wide originating from you is unleashed from the ground in a direction you choose. Each creature in the line must make a Dexterity saving throw. A creature takes {@damage 3d10} fire damage on a failed save, or half as much damage on a successful one."
+		"A line of roaring flame 60 feet long and 5 feet wide originating from you is unleashed from the ground in a direction you choose. Each creature in the line must make a Dexterity saving throw. A creature takes {@damage 5d6} fire damage on a failed save, or half as much damage on a successful one."
 	],
 	"source": "Farover",
 	"subschools": [
@@ -913,12 +929,22 @@
 	],
 	"areaTags": [
 		"L"
+	],
+	"entriesHigherLevel": [
+		{
+			"name": "At Higher Levels",
+			"entries": [
+				"When you cast this spell as a Warlock with access to higher level spells than 2nd level, the damage of the spell is increased by {@dice 1d6} and the width of the line is increased by 5 feet for each spell level above 2nd."
+			]
+		}
 	]
 },
 {
-	"name": "Ray of Demise",
+	"name": "Malignant Missile",
+	"source": "Farover",
+	"page": 169,
 	"level": 2,
-	"school": "N",
+	"school": "C",
 	"time": [
 		{
 			"number": 1,
@@ -932,10 +958,53 @@
 			"amount": 90
 		}
 	},
+	"components": {
+		"v": true,
+		"s": true,
+		"m": "a soul shard, which the spell consumes"
+	},
 	"duration": [
 		{
 			"type": "instant"
 		}
+	],
+	"entries": [
+		"You conjure an array of missiles made of necrotic energy around you, and lock on to a single target within range for a barrage. The missiles are then unleashed at the target one by one, continuing to shoot for as long as they hit.",
+		"The target must make a Dexterity saving throw for each individual missile except the first one, which automatically hits. After the first missile, the target ends the spell on the first successful save made against any of the subsequent missiles.",
+		"The first missile deals {@damage 3d8} necrotic damage, the second one deals {@damage 3d6} necrotic damage, and so on with each missile reducing in die size by one until the last missile which deals {@damage 3d2} necrotic damage."
+	],
+	"scalingLevelDice": [
+		{
+			"label": "necrotic damage",
+			"scaling": {
+				"1": "1d8",
+				"5": "2d8",
+				"11": "3d8",
+				"17": "4d8"
+			}
+		},
+		{
+			"label": "necrotic damage to wounded creature",
+			"scaling": {
+				"1": "1d12",
+				"5": "2d12",
+				"11": "3d12",
+				"17": "4d12"
+			}
+		}
+	],
+	"damageInflict": [
+		"necrotic"
+	],
+	"savingThrow": [
+		"wisdom"
+	],
+	"miscTags": [
+		"SCL",
+		"SGT"
+	],
+	"areaTags": [
+		"ST"
 	],
 	"classes": {
 		"fromClassList": [
@@ -945,23 +1014,16 @@
 			}
 		]
 	},
-	"entries": [
-		"A beam of shadow extends from your hand and connects to a creature within range. Through the beam you deliver three pulses of necrotic energy at the target. Make a ranged spell attack for each pulse. On a hit, the target takes {@damage 2d8} necrotic damage."
-	],
-	"source": "Farover",
 	"subschools": [
 		"dread"
 	],
-	"components": {
-		"v": true,
-		"s": true,
-		"m": "a soul shard, which the spell consumes"
-	},
-	"damageInflict": [
-		"necrotic"
-	],
-	"spellAttack": [
-		"R"
+	"entriesHigherLevel": [
+		{
+			"name": "At Higher Levels",
+			"entries": [
+				"When you cast this spell as a Warlock with access to higher level spells than 2nd level, one additional missile of a higher die size is conjured for 3rd and 4th spell levels. At 3rd level, a {@dice 3d10} is conjured. At 4th level, a {@dice 3d12} is conjured. At 5th level and above, one additional missile after the first one is an automatic hit for each spell level above 4th."
+			]
+		}
 	]
 },
 {
@@ -1001,8 +1063,8 @@
 		]
 	},
 	"entries": [
-		"A blast of multiple dark, hellish bolts of flame shoot out of your hand towards a designated creature within range, creating a stream of bolts. The target creature must make a Dexterity saving throw, taking {@dice 4d6} fire and {@damage 4d6} necrotic damage on a failed save, or half as much damage on a successful one.",
-		"On each of your following turns for the duration of the spell, you can use a bonus action to continue shooting bolts at the target through the stream with a bonus action. The bolts fired on subsequent turns with a bonus action deal {@damage 3d6} fire or necrotic damage, with the same Dexterity saving throw.",
+		"A blast of multiple dark, hellish bolts of flame shoot out of your hand towards a designated creature within range, creating a stream of bolts. The target creature must make a Dexterity saving throw, taking {@damage 8d6} fire damage on a failed save, or half as much damage on a successful one.",
+		"On each of your following turns for the duration of the spell, you can use a bonus action to continue shooting bolts at the target through the stream with a bonus action. The bolts fired on subsequent turns with a bonus action deal {@damage 3d6} fire damage, with the same Dexterity saving throw.",
 		"The spell ends if you do not continue it each turn with a bonus action. The spell also ends if the target dies, if it is ever outside the spell's range, or if it has total cover from you."
 	],
 	"source": "Farover",
@@ -1020,6 +1082,14 @@
 	],
 	"savingThrow": [
 		"dexterity"
+	],
+	"entriesHigherLevel": [
+		{
+			"name": "At Higher Levels",
+			"entries": [
+				"When you cast this spell as a Warlock with access to higher level spells than 3rd level, both the initial damage and the subsequent damage of the spell is increased by {@dice 1d6} for each spell level above 3rd."
+			]
+		}
 	]
 },
 {
@@ -1073,6 +1143,14 @@
 	],
 	"areaTags": [
 		"ST"
+	],
+	"entriesHigherLevel": [
+		{
+			"name": "At Higher Levels",
+			"entries": [
+				"When you cast this spell as a Warlock with access to higher level spells than 3rd level, the damage of the spell is increased by {@dice 1d6} and the range of the spell is increased by 20 feet for each spell level above 3rd."
+			]
+		}
 	]
 },
 {
@@ -1106,7 +1184,7 @@
 		]
 	},
 	"entries": [
-		"You create a storm of fire and destruction in an area, which is momentarily bombarded by molten stones and flames. Each creature in a 20-foot-radius, 40-foot-high cylinder centered on a point you choose must make a Dexterity saving throw. A creature takes {@damage 3d10} fire damage and {@damage 3d10} bludgeoning damage on a failed save, or half as much damage on a successful one."
+		"You create a storm of fire and destruction in an area, which is momentarily bombarded by molten stones and flames. Each creature in a 20-foot-radius, 40-foot-high cylinder centered on a point you choose must make a Dexterity saving throw. A creature takes {@damage 5d6} fire damage and {@damage 5d6} bludgeoning damage on a failed save, or half as much damage on a successful one."
 	],
 	"source": "Farover",
 	"subschools": [
@@ -1126,6 +1204,14 @@
 	],
 	"areaTags": [
 		"Y"
+	],
+	"entriesHigherLevel": [
+		{
+			"name": "At Higher Levels",
+			"entries": [
+				"When you cast this spell as a Warlock with access to higher level spells than 4th level, both the fire and bludgeoning damage is increased by {@dice 1d6}, the radius of the cylinder is increased by 5 feet, and the height of the cylinder is increased by 10 feet for each spell level above 4th."
+			]
+		}
 	]
 },
 {
@@ -1178,6 +1264,14 @@
 	],
 	"areaTags": [
 		"ST"
+	],
+	"entriesHigherLevel": [
+		{
+			"name": "At Higher Levels",
+			"entries": [
+				"When you cast this spell as a Warlock with access to higher level spells than 4th level, the range of the spell is increased by 30 feet for each spell level above 4th, thus also increasing the maximum damage of the spell by {@dice 1d6}."
+			]
+		}
 	]
 },
 {
@@ -1213,7 +1307,7 @@
 	"entries": [
 		"You harness the power of the soul shard used for the casting of this spell, and transform it into a dark, ethereal weapon which you propel at a target within range. The target must make a Wisdom saving throw as the ethereal weapon rips into the creatures body, ravaging it's mind.",
 		"On a failed save, the target takes {@damage 8d8} psychic damage, and the ethereal weapon can cascade onward to a new target of your choice within 30 feet of the original target. On a successful save, the target takes half as much damage, and the weapon does not fly on to attack a new target. If the creature dies from the damage, the weapon can attack a new target regardless of the result of the saving throw.",
-		"Each time the weapon flies to attack a new target after the original, the effect of the attack is the same, but the amount of dice rolled for the psychic damage is halved each time. The weapon created by the spell can attack the same creature multiple times, and it can attack up to four times, after which the spell ends."
+		"Each time the weapon flies to attack a new target after the original, the effect of the attack is the same, but the amount of dice rolled for the psychic damage is halved each time (rounded down). The weapon created by the spell can attack the same creature multiple times, and it can keep making attacks as long as it has dice remaining to deal damage with."
 	],
 	"source": "Farover",
 	"subschools": [
@@ -1232,6 +1326,14 @@
 	],
 	"areaTags": [
 		"MT"
+	],
+	"entriesHigherLevel": [
+		{
+			"name": "At Higher Levels",
+			"entries": [
+				"When you cast this spell as a Warlock with access to higher level spells than 5th level, the initial damage of the ethereal weapon is increased by {@dice 1d8} and the range of the cascading hits is increased by 10 feet for each spell level above 5th."
+			]
+		}
 	]
 },
 {
@@ -1292,6 +1394,14 @@
 	],
 	"areaTags": [
 		"ST"
+	],
+	"entriesHigherLevel": [
+		{
+			"name": "At Higher Levels",
+			"entries": [
+				"When you cast this spell as a Warlock with access to higher level spells than 5th level, the duration of the spell is increased by 1 round for each spell level above 5th."
+			]
+		}
 	]
 },
 {
