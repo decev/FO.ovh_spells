@@ -468,7 +468,7 @@
 		]
 	},
 	"entries": [
-		"A protective aura of shadows forms around you, and stays with you until the spell ends. You gain {@dice 6d6} temporary hit points. While you have these temporary hit points and the spell is active, you have advantage on Constitution saving throws."
+		"A protective aura of shadows forms around you, and stays with you until the spell ends. You gain {@dice 5d6} temporary hit points. While you have these temporary hit points and the spell is active, you have advantage on Constitution saving throws."
 	],
 	"source": "Farover",
 	"components": {
@@ -2061,11 +2061,15 @@
 			{
 				"name": "Cleric",
 				"source": "PHB"
+			},
+			{
+				"name": "Ranger (Revised)",
+				"source": "PHB"
 			}
 		]
 	},
 	"entries": [
-		"By casting this spell, the cleric confers exceptional powers of observation and alertness to one creature for the duration of the spell. While blessed watchfulness is in effect, the designated sentinel remains alert, awake and vigilant for the 8 hour duration of the spell. For the duration of the spell, the target cannot fall asleep, and it does not need to sleep.",
+		"By casting this spell, the caster confers exceptional powers of observation and alertness to one creature for the duration of the spell. While blessed watchfulness is in effect, the designated sentinel remains alert, awake and vigilant for the 8 hour duration of the spell. For the duration of the spell, the target cannot fall asleep, and it does not need to sleep.",
 		"The target creature also gains advantage to saving throws against the first time they are affected by any spell or effect that would lower their guard or force them to abandon their watch, including charm, fear, or similar mind-affecting spells.",
 		"Once the spell is cast, the day and night cycle the target was on is also delayed by one day, meaning the target delays the need or want for sleep until the time at which it would sleep on the day after.",
 		"A creature can not benefit from Blessed Watchfulness again until it has finished at least one nights rest."
@@ -2109,6 +2113,10 @@
 			},
 			{
 				"name": "Druid",
+				"source": "PHB"
+			},
+			{
+				"name": "Ranger (Revised)",
 				"source": "PHB"
 			},
 			{
@@ -2947,12 +2955,16 @@
 			{
 				"name": "Cleric",
 				"source": "PHB"
+			},
+			{
+				"name": "Ranger (Revised)",
+				"source": "PHB"
 			}
 		]
 	},
 	"entries": [
 		"By anticipating possible futures and outcomes of the caster's actions, this spell provides the character with a temporary sixth sense or feel for danger. The spell operates on a subconscious level, and for 10 minutes after casting the spell, the caster receives strong intuitive impulses when they contemplate courses of action that may bring immediate physical injury or harm to them. In addition, the caster has advantage on Dexterity saving throws for the duration of the spell.",
-		"For example, if the cleric was about to open a trapped chest, the unfailing premonition would create a flash of insight or a gut feeling telling them that they shouldn't do so.",
+		"For example, if the caster was about to open a trapped chest, the unfailing premonition would create a flash of insight or a gut feeling telling them that they shouldn't do so.",
 		"Similarly, opening a door that leads into the lair of a ferocious troll may also trigger the spell's warning. Threatening a NPC who is likely to respond by drawing a weapon and attacking the PC would create a warning, but threatening a NPC who will get even with the cleric in an hour or two will not trigger the premonition."
 	],
 	"source": "Farover",
@@ -2998,6 +3010,10 @@
 			},
 			{
 				"name": "Druid",
+				"source": "PHB"
+			},
+			{
+				"name": "Ranger (Revised)",
 				"source": "PHB"
 			}
 		]
@@ -3515,6 +3531,7 @@
 {
 	"name": "Age Creature",
 	"source": "Farover",
+	"basicRules": true,
 	"level": 6,
 	"school": "T",
 	"time": [
@@ -3533,7 +3550,8 @@
 		"v": true,
 		"s": true,
 		"m": {
-			"text": "a pinch of powdered ruby worth at least 10gp",
+			"text": "a pinch of powdered ruby worth at least 10gp, which the spell consumes",
+			"consume": true,
 			"cost": 1000
 		}
 	},
@@ -3548,10 +3566,13 @@
 		"Nonmagical monsters can be affected by age creature. The DM determines a monster's current age and natural life span based on the DM's own judgment or information. An aged monster abides by the same stages of aging as humanoid creatures, and thus suffers the same changes to stats.",
 		"The reverse of this spell, restore youth, permanently restores age that has been lost as a result of magic (such as an age creature spell). Restore youth reduces the age of the targeted creature by up to 12 years. Subjects who's youth is restored regain any lost ability scores. A subject cannot become younger than their actual age as a result of this spell."
 	],
-	"miscTags": [
-		"SGT",
-		"PRM",
-		"TP"
+	"entriesHigherLevel": [
+		{
+			"name": "At Higher Levels",
+			"entries": [
+				"When you cast this spell using a spell slot of 7th level or higher, the amount of years the spell ages or restores youth is increased by 4 for each slot level above 6th."
+			]
+		}
 	],
 	"classes": {
 		"fromClassList": [
@@ -3561,19 +3582,15 @@
 			}
 		]
 	},
-	"entriesHigherLevel": [
+	"eldritchInvocations": [
 		{
-			"name": "At Higher Levels",
-			"entries": [
-				"When you cast this spell using a spell slot of 7th level or higher, the amount of years the spell ages or restores youth is increased by 4 for each slot level above 6th."
-			]
+			"name": "Kiss of Mephistopheles",
+			"source": "UAWarlockAndWizard"
 		}
 	],
+	"hasFluffImages": true,
 	"savingThrow": [
 		"wisdom"
-	],
-	"areaTags": [
-		"ST"
 	]
 },
 {
@@ -3754,8 +3771,8 @@
 		}
 	],
 	"entries": [
-		"This potent defense spell surrounds the caster in a chaotic maelstrom of energy and demimatter that blocks or deflects many attacks. The entropy shield extends to 5 feet in all directions from the caster's body. The warping effect of the field causes all melee attacks within it against the caster to be made at disadvantage. In addition, non-magical missiles or hurled weapons targeted at the caster miss automatically as the entropy shield deflects them. Magical missile attacks are made at disadvantage.",
-		"Even spells can be deflected. Against spells or effects that produce energy, gas, or other physical attack forms (fireball, lightning bolt, cloudkill, and other such spells) the entropy shield provides a chance that the attack simply does not affect the protected caster. If you are subjected to this kind of spell and it allows you to make a saving throw to take only half damage, you instead take no damage if you succeed on the saving throw.",
+		"This potent defense spell surrounds the caster in a chaotic maelstrom of energy and demimatter that blocks or deflects many attacks. The entropy shield extends to 5 feet in all directions from the caster's body. The warping effect of the field causes all melee attacks within it against the caster to be made at disadvantage. In addition, non-magical ranged attacks targeted at the caster miss automatically as the entropy shield deflects them. Magical ranged attacks and ranged spell attacks are made at disadvantage.",
+		"Even spells can be deflected. Against damaging spells or effects that produce energy, gas, or other physical attack forms (fireball, lightning bolt, cloudkill, and other such spells) the entropy shield provides a chance that the attack simply does not affect the protected caster. If you are subjected to this kind of spell and it allows you to make a saving throw to take only half damage, you instead take no damage if you succeed on the saving throw.",
 		"Any spell or effect that does not create matter or energy to harm or hinder the victim can pass through the entropy shield normally, so mind-based attacks and magical effects such as petrification, paralyzation, enfeeblement, or polymorph (to name a few) can still affect the caster."
 	],
 	"damageInflict": [
@@ -3923,6 +3940,381 @@
 	"hasFluffImages": true,
 	"damageInflict": [
 		"force"
+	]
+},
+{
+	"name": "Minor Barrier",
+	"source": "Farover",
+	"level": 1,
+	"school": "A",
+	"time": [
+		{
+			"number": 1,
+			"unit": "bonus"
+		}
+	],
+	"range": {
+		"type": "point",
+		"distance": {
+			"type": "self"
+		}
+	},
+	"components": {
+		"v": true,
+		"s": true
+	},
+	"duration": [
+		{
+			"type": "timed",
+			"duration": {
+				"type": "round",
+				"amount": 1
+			}
+		}
+	],
+	"entries": [
+		"You quickly wave your extended hand in the air in front of you, creating a small magical barrier. Until the beginning of your next turn, the first time you are hit with a ranged or melee weapon attack, the damage is reduced by {@dice 1d8}."
+	],
+	"classes": {
+		"fromClassList": [
+			{
+				"name": "Sorcerer",
+				"source": "PHB"
+			},
+			{
+				"name": "Wizard",
+				"source": "PHB"
+			}
+		]
+	},
+	"entriesHigherLevel": [
+		{
+			"name": "At Higher Levels",
+			"entries": [
+				"When you cast this spell using a spell slot of 2nd level or higher, the amount of damage reduced by the spell is increased by {@dice 1d8} for each slot level above 1st."
+			]
+		}
+	]
+},
+{
+	"name": "Murdock's Feathery Flyer",
+	"source": "Farover",
+	"level": 1,
+	"school": "T",
+	"time": [
+		{
+			"number": 1,
+			"unit": "action"
+		}
+	],
+	"range": {
+		"type": "point",
+		"distance": {
+			"type": "self"
+		}
+	},
+	"components": {
+		"v": true,
+		"s": true,
+		"m": "the feather of an eagle"
+	},
+	"duration": [
+		{
+			"type": "timed",
+			"duration": {
+				"type": "minute",
+				"amount": 1,
+				"upTo": true
+			},
+			"concentration": true
+		}
+	],
+	"entries": [
+		"Upon casting this spell, a feathery membrane grows under the wizards arms, extending along their sides all the way to the feet. The membrane appears to merge with the caster's skin and clothing.",
+		"Once cast, the spell must be activated on the same round by jumping from elevation, or it ends. For the duration of the spell, the caster can glide through the air with a movement speed of 50 after jumping from a point of elevation. For each foot of elevation, the caster can glide five feet horizontally. While gliding, the caster can not make weapon attacks or perform somatic components for spells.",
+		"While gliding, the caster must continuously keep gliding, which means the caster must use all of their remaining movement speed on their turn to glide. For every 5 feet of movement left un-glided, the caster then falls that amount of feet towards the ground at the end of the turn. Once the caster has landed on the ground for the first time after activating the spell, the spell ends.",
+		"If the caster of the spell attempts to glide while encumbered, they plummet towards the earth upon takeoff."
+	],
+	"classes": {
+		"fromClassList": [
+			{
+				"name": "Wizard",
+				"source": "PHB"
+			}
+		]
+	}
+},
+{
+	"name": "Irritation",
+	"source": "Farover",
+	"level": 2,
+	"school": "T",
+	"time": [
+		{
+			"number": 1,
+			"unit": "action"
+		}
+	],
+	"range": {
+		"type": "point",
+		"distance": {
+			"type": "feet",
+			"amount": 90
+		}
+	},
+	"components": {
+		"v": true,
+		"s": true,
+		"m": "a leaf from poison ivy, oak, or sumac"
+	},
+	"duration": [
+		{
+			"type": "timed",
+			"duration": {
+				"type": "minute",
+				"amount": 1,
+				"upTo": true
+			},
+			"concentration": true
+		}
+	],
+	"entries": [
+		"An irritation spell affects the epidermis of a targeted creature. Creatures with no visible skin or a hide which is very thick (such as buffalo, elephants, scaled creatures, etc.) are not affected.",
+		"Choose one creature that you can see within range to make a Constitution saving throw. If it fails, the target begins to feel an itching sensation on a portion of its body at which the spell was cast. On each of the creatures turns thereafter, it must use either its action or all of its movement to scratch vehemently at the itch, which causes a stacking -2 penalty to the targets AC. If for any reason the target is unable to scratch the itch (such as being bound in rope), the target does not suffer the penalty to its AC, but simply does nothing on its turn and spends it writhing in irritation.",
+		"At the end of each of its turns, the target can make a Constitution saving throw. On a success, the spell ends, and the targets AC is restored to normal."
+	],
+	"classes": {
+		"fromClassList": [
+			{
+				"name": "Bard",
+				"source": "PHB"
+			},
+			{
+				"name": "Druid",
+				"source": "PHB"
+			},
+			{
+				"name": "Wizard",
+				"source": "PHB"
+			}
+		]
+	},
+	"savingThrow": [
+		"constitution"
+	]
+},
+{
+	"name": "Spectral Hand",
+	"source": "Farover",
+	"level": 2,
+	"school": "C",
+	"time": [
+		{
+			"number": 1,
+			"unit": "action"
+		}
+	],
+	"range": {
+		"type": "point",
+		"distance": {
+			"type": "feet",
+			"amount": 60
+		}
+	},
+	"components": {
+		"v": true,
+		"s": true
+	},
+	"duration": [
+		{
+			"type": "timed",
+			"duration": {
+				"type": "minute",
+				"amount": 1,
+				"upTo": true
+			},
+			"concentration": true
+		}
+	],
+	"entries": [
+		"This spell causes a glowing hand to materialize within range, and move and act as the caster desires. When casting the spell, the caster can have an item as an optional material component for the spell, which causes it to teleport into the conjured hand when the spell is cast. You can dismiss the hand as an action. If the hand is ever more than 60 feet away from you, it vanishes.",
+		"While the spell remains active, the wizard can use a bonus action on their turn to cause the hand to either move up to 30 feet, execute an action similar to the Mage Hand spell, or attack either unarmed or with an equipped weapon. The hand uses the wizards proficiencies and stats for attacks, and it can only hold weapons that can be held in one hand.",
+		"In addition, any spell with a range of touch of 3rd level or lower that is subsequently cast by the wizard can be delivered by the spectral hand as long as the hand is within 5 feet of the target and is not holding anything."
+	],
+	"classes": {
+		"fromClassList": [
+			{
+				"name": "Wizard",
+				"source": "PHB"
+			}
+		]
+	},
+	"entriesHigherLevel": [
+		{
+			"name": "At Higher Levels",
+			"entries": [
+				"When you cast this spell using a spell slot of 3rd level or higher, the level of touch spells the hand can deliver is increased by one for each slot level above 2nd."
+			]
+		}
+	]
+},
+{
+	"name": "Weather Invocation",
+	"source": "Farover",
+	"level": 4,
+	"school": "V",
+	"time": [
+		{
+			"number": 1,
+			"unit": "action"
+		}
+	],
+	"range": {
+		"type": "special"
+	},
+	"components": {
+		"v": true,
+		"s": true,
+		"m": "a pinch of solidified mercury"
+	},
+	"duration": [
+		{
+			"type": "special"
+		}
+	],
+	"entries": [
+		"By means of the weather invocation spell, the druid harnesses the natural potency of the current form of weather presiding in the area. Depending on the current weather, the spell takes on different forms as explained below, but if non of the mentioned weather phenomena are present, the spell has no effect. If multiple weather phenomena are present, the caster can choose which one to invoke.",
+		"Sunny. If the current weather is a mostly clear sky with sun, the caster can draw in solar energy with an action. After doing so, the caster must concentrate on weather invocation for one round (3 points). If the caster concentrates on the spell until their next turn, the caster can then unleash a devastating solar beam as an action in a 60 foot long and 10 foot wide line. Each creature in the line must make a Dexterity saving throw. A creature takes {@damage 8d8} radiant damage on a failed save, or half as much damage on a successful one.",
+		"Rain/Snow. If the current weather is raining or snowing, the caster can cause the amount of precipitation to massively increase and pelt foes. Each creature of the casters choice that they can see within 120 feet must make a Dexterity saving throw. On a failed save, a creature takes {@damage 5d6} cold damage and is knocked {@condition prone}. On a successful save, a creature takes half as much damage and isn't knocked {@condition prone}.",
+		"Fog. If the current weather is foggy, the caster can cause the prevalent moisture in the air to thicken and prevent movement and vision. Each creature of the casters choice that the caster can see within 120 feet must make a Constitution saving throw. On a failed save, they are {@condition blinded} and their movement speed is halved until the end of their next turn.",
+		"Thunderstorm. If the current weather is a thunderstorm, the caster can call down electricity in the air into a single, potent bolt of lightning at an area. Each creature within 120 feet in a cylinder that is 300 feet tall and has a 10-foot radius must make a Dexterity saving throw. A bolt of lightning strikes that location, dealing {@damage 5d12} lightning damage on a failed save, and half as much on a successful one."
+	],
+	"classes": {
+		"fromClassList": [
+			{
+				"name": "Druid",
+				"source": "PHB"
+			}
+		]
+	},
+	"conditionInflict": [
+		"prone"
+	],
+	"damageInflict": [
+		"cold",
+		"lightning",
+		"radiant"
+	]
+},
+{
+	"name": "Fool's Speech",
+	"source": "Farover",
+	"level": 2,
+	"school": "E",
+	"time": [
+		{
+			"number": 1,
+			"unit": "action"
+		}
+	],
+	"range": {
+		"type": "point",
+		"distance": {
+			"type": "touch"
+		}
+	},
+	"components": {
+		"v": true,
+		"s": true,
+		"m": "a small whistle made of bone"
+	},
+	"duration": [
+		{
+			"type": "timed",
+			"duration": {
+				"type": "hour",
+				"amount": 1
+			}
+		}
+	],
+	"entries": [
+		"With this spell, the wizard empowers themself and others of their choosing with the ability to speak a secret language incomprehensible to others. Creatures designated to speak the language must be touching each other when the spell is cast.",
+		"Once cast, the characters can choose to speak normally or in their secret tongue. They can speak and understand this mysterious language fluently.",
+		"Fool's speech is not recognizable as any known languages, nor does it remotely sound like any language, but is it comprehendable by someone under the effects of a spell such as Tongues or Comprehend Languages."
+	],
+	"classes": {
+		"fromClassList": [
+			{
+				"name": "Bard",
+				"source": "PHB"
+			},
+			{
+				"name": "Wizard",
+				"source": "PHB"
+			}
+		]
+	},
+	"entriesHigherLevel": [
+		{
+			"name": "At Higher Levels",
+			"entries": [
+				"When you cast this spell using a spell slot of 4th level, the duration becomes 8 hours. At 6th level, the duration becomes 24 hours, and at 8th level it becomes 3 days. Using a spell slot of 5th level or higher makes the language of the spell incomprehensible to any other spell that divines languages, such as Tongues or Comprehend Languages."
+			]
+		}
+	]
+},
+{
+	"name": "Force Grip",
+	"source": "Farover",
+	"level": 6,
+	"school": "V",
+	"time": [
+		{
+			"number": 1,
+			"unit": "action"
+		}
+	],
+	"range": {
+		"type": "point",
+		"distance": {
+			"type": "feet",
+			"amount": 60
+		}
+	},
+	"components": {
+		"v": true,
+		"s": true
+	},
+	"duration": [
+		{
+			"type": "timed",
+			"duration": {
+				"type": "minute",
+				"amount": 1,
+				"upTo": true
+			},
+			"concentration": true
+		}
+	],
+	"entries": [
+		"By employing a form of telekinesis, you reach out with your hand in a grip-like gesture and attempt to strangle a creature within range that is no larger than one size larger than you. Creatures that do not need to breathe oxygen are unaffected.",
+		"The target must succeed on a Constitution saving throw. On a failed save, the target is {@condition incapacitated}, its speed becomes 0, and it begins suffocating, as per the suffocating rules.",
+		"As long as the spell remains active, the target must repeat the saving throw at the end of its turn, ending the effect on a successful save. For the spell to remain active, you must maintain concentration and keep one free hand employed in the strangulation the entire time. Each time the target fails the saving throw at the end of its turn counts the end of one round towards the amount of time it can hold its breath while suffocating."
+	],
+	"classes": {
+		"fromClassList": [
+			{
+				"name": "Sorcerer",
+				"source": "PHB"
+			},
+			{
+				"name": "Wizard",
+				"source": "PHB"
+			}
+		]
+	},
+	"conditionInflict": [
+		"incapacitated"
 	]
 },
 {
