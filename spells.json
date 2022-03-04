@@ -970,7 +970,7 @@
 	],
 	"entries": [
 		"You conjure an array of missiles made of necrotic energy around you, and lock on to a single target within range for a barrage. The missiles are then unleashed at the target one by one, continuing to shoot for as long as they hit.",
-		"The target must make a Dexterity saving throw for each individual missile except the first one, which automatically hits. After the first missile, the target ends the spell on the first successful save made against any of the subsequent missiles.",
+		"The target must make a Wisdom saving throw for each individual missile except the first one, which automatically hits. After the first missile, the target ends the spell on the first successful save made against any of the subsequent missiles.",
 		"The first missile deals {@damage 3d8} necrotic damage, the second one deals {@damage 3d6} necrotic damage, and so on with each missile reducing in die size by one until the last missile which deals {@damage 3d2} necrotic damage."
 	],
 	"scalingLevelDice": [
@@ -3691,10 +3691,10 @@
 	],
 	"entries": [
 		"This spell allows the caster to temporarily convince themself that certain objects within the area of effect, or as many as four creatures within range do not actually exist. While disbelief remains in effect, these objects or creatures cannot harm or hinder the caster. The caster can pass through them as if they did not exist and takes no damage from their attacks or actions. However, since these objects or creatures temporarily do not exist for the caster, the caster can take no actions against them, or harm them in any way.",
-		"The caster can attempt to disbelieve as many as four creatures within 60 feet of their position at the time of casting. Alternatively, the caster can disbelieve any or all inanimate objects in a 30 foot cube. This cube must be centered on a point no more than 60 feet from the caster. These two options are mutually exclusive; the priest can disbelieve only creatures or objects, not a combination of both.",
+		"The caster can attempt to disbelieve as many as four creatures within 60 feet of their position at the time of casting. Alternatively, the caster can disbelieve any or all inanimate objects in a 30 foot cube. This cube must be centered on a point no more than 60 feet from the caster. These two options are mutually exclusive; the caster can disbelieve only creatures or objects, not a combination of both.",
 		"Disbelieving a creature includes all gear, equipment, or treasure carried or worn by that creature; it does not include other objects that come into contact with that creature, such as walls, doors, chairs, etc.",
 		"Disbelief is not automatic; it requires an extreme effort. To successfully disbelieve, the caster must fail an Intelligence saving throw contested by the casters own spell save DC. A failed save means the caster has disbelieved; a successful save means that the spell has failed and the caster has not convinced themself of the creatures' or objects' non-existence.",
-		"While this spell is in effect, the DM or player must record any damage suffered by the caster from disbelieved creatures. When the spell ends, the caster must make a Wisdom saving throw contested by the casters own spell save DC. If the saving throw is successful, the caster suffers only one-fourth of any damage inflicted by the creatures during the spell. If the caster fails the saving throw, they suffer half of any damage inflicted."
+		"While this spell is in effect, the DM or player must record any damage suffered by the caster from disbelieved creatures. When the spell ends, the caster must make a saving throw of their own spellcasting ability stat, contested by the casters own spell save DC. If the saving throw is successful, the caster suffers only one-fourth of any damage inflicted by the creatures during the spell. If the caster fails the saving throw, they suffer half of any damage inflicted."
 	],
 	"entriesHigherLevel": [
 		{
