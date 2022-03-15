@@ -1801,28 +1801,31 @@
 	"classes": {
 		"fromClassList": [
 			{
-				"name": "Warlock (reworked)",
-				"source": "Farover"
+				"name": "Wizard",
+				"source": "PHB"
 			},
 			{
-				"name": "Wizard",
+				"name": "Warlock",
 				"source": "PHB"
 			}
 		]
 	},
 	"entries": [
-		"The caster speaks the words to the spell while holding the essence of the creature in their primary hand. The essence bursts into flame, which the caster then reaches through to pull out an individual of that type who is then bound to the caster's will. Casters cannot summon specific individuals with this spell, and mindless/soulless creatures cannot be bound (jellies, undead, etc.). This spell does not bring any weapons, armor, or equipment that the creature wasn't already wearing.",
+		"The caster speaks the words to the spell while holding the remains of the creature in their primary hand. The remains burst into flame, which the caster then reaches through to pull out an individual of that type who is then bound to the caster's will. Casters cannot summon specific individuals with this spell, and mindless/soulless creatures cannot be bound (oozes, undead, etc.). This spell does not bring any weapons, armor, or equipment that the creature wasn't already wearing.",
 		"The caster must physically touch the creature when it pulls it through the flame, but the creature does not appear held in the caster's hand. Instead it appears wherever desired within 10 feet of the caster.",
 		"Creatures that cannot understand the caster will simply attack whoever the caster indicates at the time of the summon and cannot be called off once sent to attack. Creatures that can understand the caster will obey verbal commands to the best of their ability, but will not be self destructive. A goblin might be ordered to charge a dragon, but it will not throw itself off a cliff.",
-		"The creature, upon being summoned, will make a check to burst the casters dominance on them. The creature rolls a Wisdom saving throw, and the caster rolls a saving throw based on their spellcasting ability stat. The difference in the CR of the creature and the level of the caster gives an advantage in the roll to the one who is higher. Whichever one is higher, the CR of the creature or the level of the caster, gives that character a +5 to it's saving throw for every CR/level that it is higher than the opposing character. If the creature meets or beats the caster, the creature is free. Natural 1's and 20's have no effect on this roll.",
-		"If the creature successfully bursts the spell, it becomes free willed and usually very angry at the summoner, who it will probably try to destroy.",
-		"Creatures that are bound may be dismissed and hence un-summoned with a gesture and a sound using a bonus action."
+		"The creature, upon being summoned, will make a check to burst the casters dominance on them. By default, the creature rolls a {@dice d100}, and the caster rolls a contested ability check based on their spellcasting ability. If the CR of the creature being summoned is less than the level of the caster, the die size the creature rolls for the check decreases by 20 for every whole CR the creature is lower. The lowest die a creature can roll for the check is a {@dice d10}, at 5 CR or more below. If the creature meets or beats the caster, the creature is freed.",
+		"If the creature successfully bursts the spell, it becomes free willed and remains at the location until the one hour spell duration is up, after which it is un-summoned. In this case the creature usually becomes very angry at the summoner, who it will probably try to destroy.",
+		"Once either the 1 hour spell duration ends, the casters concentration is broken, or if the caster uses a bonus action during the spell, the summoned creature is un-summoned, ending the spell."
 	],
 	"source": "Farover",
 	"components": {
 		"v": true,
 		"s": true,
-		"m": "bone, tooth or nail of the type of creature to be summoned"
+		"m": {
+			"text": "a bone, tooth or other remains of the type of creature to be summoned, which the spell consumes",
+			"consume": true
+		}
 	},
 	"miscTags": [
 		"SMN"
