@@ -2012,7 +2012,7 @@
 			"level": 2,
 			"school": "C",
 			"subschools": [
-				"dread"
+				"Dread"
 			],
 			"time": [
 				{
@@ -11113,6 +11113,596 @@
 					}
 				]
 			}
+		},
+		{
+			"name": "Havoc Blast",
+			"source": "Farover",
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a soul shard, which the spell consumes",
+					"consume": true
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You unleash a large, devastating blast of chaotic energy at a creature that you can see within range. Make a ranged spell attack against the target, and declare either fire or necrotic damage. If the attack hits, the creature takes {@damage 3d8} damage of the type you chose. This spell scores a critical hit on a roll of 19 or 20."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell as a Warlock with access to higher level spells than 1st level, the damage of the spell is increased by {@dice 1d8} and the critical hit range is lowered by 1 for each spell level above 1st."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Warlock (reworked)",
+						"source": "Farover"
+					}
+				]
+			},
+			"subschools": [
+				"Dread"
+			],
+			"damageInflict": [
+				"fire",
+				"necrotic"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"areaTags": [
+				"ST"
+			]
+		},
+		{
+			"name": "Soulshatter",
+			"source": "Farover",
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a soul shard, which the spell consumes",
+					"consume": true
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You load the soul shard used for the spell with arcane magic, and thrust it to cause an explosion on impact. Make a melee spell attack against a creature you can reach. On a hit, the target takes {@damage 4d6} force damage, and is pushed back 10 feet if it is a Large or smaller creature."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell as a Warlock with access to higher level spells than 1st level, the damage of the spell is increased by {@dice 1d6} and the push back distance is increased by 5 feet for each spell level above 1st."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Warlock (reworked)",
+						"source": "Farover"
+					}
+				]
+			},
+			"subschools": [
+				"Dread"
+			],
+			"damageInflict": [
+				"force"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"FMV"
+			],
+			"spellAttack": [
+				"M"
+			]
+		},
+		{
+			"name": "Incineration",
+			"source": "Farover",
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "line",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a soul shard, which the spell consumes",
+					"consume": true
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"A line of roaring flame 60 feet long and 5 feet wide originating from you is unleashed from the ground in a direction you choose. Each creature in the line must make a Dexterity saving throw. A creature takes {@damage 5d6} fire damage on a failed save, or half as much damage on a successful one."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell as a Warlock with access to higher level spells than 2nd level, the damage of the spell is increased by {@dice 1d6} and the width of the line is increased by 5 feet for each spell level above 2nd."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Warlock (reworked)",
+						"source": "Farover"
+					}
+				]
+			},
+			"subschools": [
+				"Dread"
+			],
+			"damageInflict": [
+				"fire"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"areaTags": [
+				"L"
+			]
+		},
+		{
+			"name": "Channel Hellfire",
+			"source": "Farover",
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a soul shard, which the spell consumes",
+					"consume": true
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"A blast of multiple dark, hellish bolts of flame shoot out of your hand towards a designated creature within range, creating a stream of bolts. The target creature must make a Dexterity saving throw, taking {@damage 8d6} fire damage on a failed save, or half as much damage on a successful one.",
+				"On each of your following turns for the duration of the spell, you can use a bonus action to continue shooting bolts at the target through the stream with a bonus action. The bolts fired on subsequent turns with a bonus action deal {@damage 3d6} fire damage, with the same Dexterity saving throw.",
+				"The spell ends if you do not continue it each turn with a bonus action. The spell also ends if the target dies, if it is ever outside the spell's range, or if it has total cover from you."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell as a Warlock with access to higher level spells than 3rd level, both the initial damage and the subsequent damage of the spell is increased by {@dice 1d6} for each spell level above 3rd."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Warlock (reworked)",
+						"source": "Farover"
+					}
+				]
+			},
+			"subschools": [
+				"Dread"
+			],
+			"damageInflict": [
+				"fire"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"areaTags": [
+				"ST"
+			]
+		},
+		{
+			"name": "Curse of Doom",
+			"source": "Farover",
+			"level": 3,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a soul shard, which the spell consumes",
+					"consume": true
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You attempt to place a powerful curse on a creature that you can see within range. The target must make a Wisdom saving throw. On a failed save, the creature is cursed with impending doom. Once the target creature has had two turns after being cursed, at the end of the second turn the creature takes {@damage 11d6} necrotic damage, and the curse ends.",
+				"A {@spell Remove Curse|farover} cast on the target harmlessly ends this spell."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell as a Warlock with access to higher level spells than 3rd level, the damage of the spell is increased by {@dice 1d6} and the range of the spell is increased by 20 feet for each spell level above 3rd."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Warlock (reworked)",
+						"source": "Farover"
+					}
+				]
+			},
+			"subschools": [
+				"Dread"
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"damageInflict": [
+				"necrotic"
+			]
+		},
+		{
+			"name": "Cataclysm",
+			"source": "Farover",
+			"level": 4,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a soul shard, which the spell consumes",
+					"consume": true
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You create a storm of fire and destruction in an area, which is momentarily bombarded by molten stones and flames. Each creature in a 20-foot-radius, 40-foot-high cylinder centered on a point you choose must make a Dexterity saving throw. A creature takes {@damage 5d6} fire damage and {@damage 5d6} bludgeoning damage on a failed save, or half as much damage on a successful one."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell as a Warlock with access to higher level spells than 4th level, both the fire and bludgeoning damage is increased by {@dice 1d6}, the radius of the cylinder is increased by 5 feet, and the height of the cylinder is increased by 10 feet for each spell level above 4th."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Warlock (reworked)",
+						"source": "Farover"
+					}
+				]
+			},
+			"subschools": [
+				"Dread"
+			],
+			"areaTags": [
+				"Y"
+			],
+			"damageInflict": [
+				"bludgeoning",
+				"fire"
+			],
+			"savingThrow": [
+				"dexterity"
+			]
+		},
+		{
+			"name": "Impending Flame",
+			"source": "Farover",
+			"level": 4,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a soul shard, which the spell consumes",
+					"consume": true
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You unleash a small blast of fire which increases in size as it flies toward a creature of your choice within range. The target must make a Dexterity saving throw. On a failed save, the target takes {@damage 9d6} fire damage, which is increased by {@dice 1d6} for every 30 feet between you and the target of the spell, up to {@dice 4d6} more at exactly 120 feet. On a successful save, the target takes half as much damage."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell as a Warlock with access to higher level spells than 4th level, the range of the spell is increased by 30 feet for each spell level above 4th, thus also increasing the maximum damage of the spell by {@dice 1d6}."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Warlock (reworked)",
+						"source": "Farover"
+					}
+				]
+			},
+			"subschools": [
+				"Dread"
+			],
+			"damageInflict": [
+				"fire"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"areaTags": [
+				"ST"
+			]
+		},
+		{
+			"name": "Cascading Soul Strike",
+			"source": "Farover",
+			"level": 5,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a soul shard, which the spell consumes",
+					"consume": true
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You harness the power of the soul shard used for the casting of this spell, and transform it into a dark, ethereal weapon which you propel at a target within range. The target must make a Wisdom saving throw as the ethereal weapon rips into the creatures body, ravaging it's mind.",
+				"On a failed save, the target takes {@damage 8d8} psychic damage, and the ethereal weapon can cascade onward to a new target of your choice within 30 feet of the original target. On a successful save, the target takes half as much damage, and the weapon does not fly on to attack a new target. If the creature dies from the damage, the weapon can attack a new target regardless of the result of the saving throw.",
+				"Each time the weapon flies to attack a new target after the original, the effect of the attack is the same, but the amount of dice rolled for the psychic damage is halved each time (rounded down). The weapon created by the spell can attack the same creature multiple times, and it can keep making attacks as long as it has dice remaining to deal damage with."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell as a Warlock with access to higher level spells than 5th level, the initial damage of the ethereal weapon is increased by {@dice 1d8} and the range of the cascading hits is increased by 10 feet for each spell level above 5th."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Warlock (reworked)",
+						"source": "Farover"
+					}
+				]
+			},
+			"subschools": [
+				"Dread"
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"areaTags": [
+				"MT"
+			],
+			"damageInflict": [
+				"psychic"
+			]
+		},
+		{
+			"name": "Curse of Agony",
+			"source": "Farover",
+			"level": 5,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a soul shard, which the spell consumes",
+					"consume": true
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 5,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You attempt to place a powerful curse on a creature that you can see within range. The target must make a Wisdom saving throw. On a successful save, the spell ends. On a failed save, the target is cursed with excruciating pain, taking {@damage 1d8} necrotic damage, which increases over time. As long as you maintain concentration on the spell, the target creature automatically suffers damage at the end of each of its turns. The damage of the curse increases by {@dice 1d8} every time the target suffers damage after the first time.",
+				"The curse can last for a maximum of 5 rounds, and deal damage 5 times, after which it ends. If the target of the curse dies before the 5 rounds have passed, you can use your action on your turn to attempt to continue the curse on a different target. The new target must make the same saving throw, and on a failed save, the curse and it's progression is moved to the new target, dealing it's damage and maintaining it's damage progression on the new target.",
+				"A {@spell Remove Curse|farover} cast on the target ends this spell."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell as a Warlock with access to higher level spells than 5th level, the duration of the spell is increased by 1 round for each spell level above 5th."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Warlock (reworked)",
+						"source": "Farover"
+					}
+				]
+			},
+			"subschools": [
+				"Dread"
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"damageInflict": [
+				"necrotic"
+			],
+			"areaTags": [
+				"ST"
+			]
 		}
 	],
 	"condition": [
@@ -11768,6 +12358,10 @@
 		{
 			"name": "Farover Armor and Shields",
 			"source": "Farover",
+			"intro": [
+				"While a character is wearing {@bold {@italic medium armor}}, bludgeoning, piercing, and slashing damage they take is reduced by {@bold 1}.",
+				"While a character is wearing {@bold {@italic heavy armor}}, bludgeoning, piercing, and slashing damage they take is reduced by {@bold 2}."
+			],
 			"colLabels": [
 				"Armor",
 				"Cost",
@@ -12166,10 +12760,10 @@
 			"startingEquipment": {
 				"additionalFromBackground": true,
 				"default": [
-					"(a) {@item chain shirt|PHB} or (b) {@item leather armor|PHB}",
-					"(a) two light {@filter martial weapon|items|source=phb|category=basic|type=martial weapon} or (b) two {@filter simple weapons|items|source=phb|category=basic|type=simple weapon}",
+					"(a) {@table farover armor and shields|farover|chain shirt} or (b) {@table farover armor and shields|farover|leather armor}",
+					"(a) two {@table farover weapons|farover|light weapons} or (b) two {@table farover weapons|farover|simple weapons}",
 					"(a) a {@item dungeoneer's pack|PHB} or (b) an {@item explorer's pack|PHB}",
-                    "a {@item longbow|PHB}, a {@item quiver|PHB}, and {@item arrows (20)|PHB|20 arrows}"
+                    "a {@table farover weapons|farover|longbow}, a {@item quiver|PHB}, and {@item arrows (20)|PHB|20 arrows}"
 				],
                 "goldAlternative": "{@dice 5d4 * 10|5d4 * 10|Starting Gold}",
 				"defaultData": [
