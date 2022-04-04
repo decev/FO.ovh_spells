@@ -11,6 +11,7 @@
 				"convertedBy": [
 					"Decev"
 				],
+				"color": "c17024",
 				"version": "1.0",
 				"url": "https://homebrewery.naturalcrit.com/share/12nNe-kY0Es1g7nB0rlUkoB7Wm8BtEeOcKgaQAxZ27oMA"
 			}
@@ -574,7 +575,7 @@
                     "rows": [
                         [
                             "1st",
-                            "{@spell frost fingers|idrotf}"
+                            "{@spell frost fingers|farover}"
                         ],
                         [
                             "3rd",
