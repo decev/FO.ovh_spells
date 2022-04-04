@@ -11,7 +11,7 @@
 				"convertedBy": [
 					"Decev"
 				],
-				"color": "c17024",
+				"color": "55cd97",
 				"version": "1.0",
 				"url": "https://homebrewery.naturalcrit.com/share/12nNe-kY0Es1g7nB0rlUkoB7Wm8BtEeOcKgaQAxZ27oMA"
 			}
@@ -12971,7 +12971,7 @@
 			"name": "Brace",
 			"source": "Farover",
 			"featureType": [
-				"WP"
+				"Weapon Property"
 			],
 			"entries": [
 				"As a bonus action, you can ready an attack. Choose a creature you can see that is at least 20 feet away from you. If that creature moves within your weapon's reach on its next turn, you can make a melee attack against it with your braced weapon as a reaction. You can't use this ability if the creature used the Disengage action before moving."
@@ -12981,7 +12981,7 @@
 			"name": "Bleed",
 			"source": "Farover",
 			"featureType": [
-				"WP"
+				"Weapon Property"
 			],
 			"entries": [
 				"Critical hits scored deal extra damage at the start of the creature's next turn equal to the modifier of the ability score used to make the attack."
@@ -12991,7 +12991,7 @@
 			"name": "Cleave",
 			"source": "Farover",
 			"featureType": [
-				"WP"
+				"Weapon Property"
 			],
 			"entries": [
 				"When you reduce a creature to 0 hit points, any excess damage can carry over to another creature within your reach, if the original attack roll hits them."
@@ -13001,7 +13001,7 @@
 			"name": "Nonlethal",
 			"source": "Farover",
 			"featureType": [
-				"WP"
+				"Weapon Property"
 			],
 			"entries": [
 				"You can cause a target to fall unconscious with a melee attack if you choose to, instead of it outright dying or bleeding out."
@@ -13011,7 +13011,7 @@
 			"name": "Parry",
 			"source": "Farover",
 			"featureType": [
-				"WP"
+				"Weapon Property"
 			],
 			"entries": [
 				"As a reaction to being hit by a melee attack with a weapon, you can reduce Bludgeoning, Piercing or Slashing damage taken by your proficiency bonus."
@@ -13021,7 +13021,7 @@
 			"name": "Seize",
 			"source": "Farover",
 			"featureType": [
-				"WP"
+				"Weapon Property"
 			],
 			"entries": [
 				"Immediately after you hit a creature, you can attempt to grapple it with the weapon as a bonus action. If you grapple a creature with a Seize weapon, you can't make attacks with the weapon, and you must keep a hand on it to keep the creature grappled. The grappled creature can make a contested Athletics or Acrobatics check to free itself."
@@ -13031,7 +13031,7 @@
 			"name": "Sunder",
 			"source": "Farover",
 			"featureType": [
-				"WP"
+				"Weapon Property"
 			],
 			"entries": [
 				"When you roll a 20 on your attack roll against a creature, you roll an additional effect from the {@table sunder table|farover}."
@@ -13041,7 +13041,7 @@
 			"name": "Wallop",
 			"source": "Farover",
 			"featureType": [
-				"WP"
+				"Weapon Property"
 			],
 			"entries": [
 				"When you roll a 20 on your attack roll against a size Large or smaller creature, the target must succeed on a Constitution saving throw or be stunned until the end of their next turn, or until they take any damage. DC = 10 + your proficiency bonus."
@@ -13051,7 +13051,7 @@
 			"name": "Bola",
 			"source": "Farover",
 			"featureType": [
-				"SP"
+				"Special Weapon Property"
 			],
 			"entries": [
 				"A Large or smaller creature hit by a bola is knocked prone and grappled by it until it is freed. A bola has no effect on creatures that are formless, or creatures that are Huge or larger. A creature can use its action to free itself or another creature within its reach. Dealing 5 slashing damage to the bola (AC 10) also frees the creature without harming it, ending the effect and destroying the net."
@@ -13061,7 +13061,7 @@
 			"name": "Dagger",
 			"source": "Farover",
 			"featureType": [
-				"SP"
+				"Special Weapon Property"
 			],
 			"entries": [
 				"Daggers deal double damage to unconscious creatures."
@@ -13071,7 +13071,7 @@
 			"name": "Flail/Heavy Flail",
 			"source": "Farover",
 			"featureType": [
-				"SP"
+				"Special Weapon Property"
 			],
 			"entries": [
 				"You can make a grapple attack with a flail in your hand. If you grapple a creature with a flail, you can't make attacks with it, and you must keep a hand on the flail to keep the creature grappled. As usual, the grappled creature can make a contested Athletics or Acrobatics check to free themselves."
@@ -13081,7 +13081,7 @@
 			"name": "Greatbow",
 			"source": "Farover",
 			"featureType": [
-				"SP"
+				"Special Weapon Property"
 			],
 			"entries": [
 				"Greatbows take both great strength and accuracy to wield effectively. The arrows shot from the greatbow are powerful, but the bow itself is so large, that it is impractical. Greatbows use your Strength modifier for attack rolls, and attack rolls with the greatbow are made at disadvantage. Greatbows use both your Strength and Dexterity modifier for damage rolls.",
@@ -13092,7 +13092,7 @@
 			"name": "Lance",
 			"source": "Farover",
 			"featureType": [
-				"SP"
+				"Special Weapon Property"
 			],
 			"entries": [
 				"You have disadvantage when you use a lance to attack a target within 5 feet of you. Also, a lance requires two hands to wield when you aren't mounted."
@@ -13102,7 +13102,7 @@
 			"name": "Net",
 			"source": "Farover",
 			"featureType": [
-				"SP"
+				"Special Weapon Property"
 			],
 			"entries": [
 				"A Large or smaller creature hit by a net is restrained until it is freed. A net has no effect on creatures that are formless, or creatures that are Huge or larger. A creature can use its action to make a DC 10 Strength check, freeing itself or another creature within its reach on a success. Dealing 5 slashing damage to the net (AC 10) also frees the creature without harming it, ending the effect and destroying the net."
@@ -13112,7 +13112,7 @@
 			"name": "Trident",
 			"source": "Farover",
 			"featureType": [
-				"SP"
+				"Special Weapon Property"
 			],
 			"entries": [
 				"As a bonus action after you successfully hit a creature with a trident, you can make shove attack. This shove attack can only be used to move the target 5 feet."
@@ -13122,7 +13122,7 @@
 			"name": "Light Shield",
 			"source": "Farover",
 			"featureType": [
-				"SP"
+				"Special Weapon Property"
 			],
 			"entries": [
 				"{@bold {@italic Block}}. When another creature hits you with a melee attack, you can use your reaction to raise your light shield and add +3 to your AC against that attack.",
@@ -13133,7 +13133,7 @@
 			"name": "Heavy Shield",
 			"source": "Farover",
 			"featureType": [
-				"SP"
+				"Special Weapon Property"
 			],
 			"entries": [
 				"{@bold {@italic Block}}. When another creature hits either you or an ally of yours within 5 ft. of you with either a melee attack or a ranged weapon attack, you can use your reaction to raise your heavy shield and add +2 to either your AC or your ally's AC against that attack."
