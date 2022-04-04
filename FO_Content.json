@@ -12700,6 +12700,474 @@
 			]
 		}
 	],
+	"monster": [
+		{
+			"name": "Summoned Imp",
+			"source": "Farover",
+			"size": [
+				"T"
+			],
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"devil"
+				]
+			},
+			"alignment": [
+				{
+					"special": "lawful evil"
+				}
+			],
+			"ac": [
+				{
+					"special": "11 + your proficiency bonus"
+				}
+			],
+			"hp": {
+				"special": "3 + (3 x your level)"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 6,
+			"dex": 12,
+			"con": 11,
+			"int": 16,
+			"wis": 12,
+			"cha": 14,
+			"skill": {
+				"stealth": "+5"
+			},
+			"passive": 11,
+			"languages": [
+				"Infernal"
+			],
+			"action": [
+				{
+					"name": "Fire Bolt",
+					"entries": [
+						"{@atk rs} your spell attack modifier to hit, range 90 ft., one creature. {@h}({@dice 1d4} + your proficiency bonus, {@dice 2d4} at 11th level, {@dice 3d4} at 18th level) fire damage."
+					]
+				},
+				{
+					"name": "Invisibility",
+					"entries": [
+						"The imp magically turns {@condition invisible} until it attacks, or until its concentration ends (as if concentrating on a spell). Any equipment the imp wears or carries is {@condition invisible} with it."
+					]
+				}
+			],
+			"languageTags": [
+				"I"
+			],
+			"damageTags": [
+				"F"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"tokenUrl": "https://i.imgur.com/B5Gy6Kx.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://cdn.gamer-network.net/2019/metabomb/flame-imp.jpg"
+						}
+					}
+				]
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"SD"
+			],
+			"immune": [
+				"fire",
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"trait": [
+				{
+					"name": "Bound in Servitude",
+					"entries": [
+						"The imp is a native of the plane of shadow, and has been summoned from that plane against it's will to serve a master. The summoning creates a binding contract, where the imp must obey the commands of it's master, or turn to ash and die."
+					]
+				},
+				{
+					"name": "Vulnerable Contract",
+					"entries": [
+						"If the imp is banished, the contract between the imp and it's master immediately ends, and the imp is sent back to the plane of shadow."
+					]
+				}
+			],
+			"conditionInflict": [
+				"invisible"
+			]
+		},
+		{
+			"name": "Summoned Hell Hound",
+			"source": "Farover",
+			"size": [
+				"M"
+			],
+			"type": "fiend",
+			"alignment": [
+				{
+					"special": "lawful evil"
+				}
+			],
+			"ac": [
+				{
+					"special": "13 + your proficiency bonus"
+				}
+			],
+			"hp": {
+				"special": "15 + (3 x your level)"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 17,
+			"dex": 12,
+			"con": 14,
+			"int": 6,
+			"wis": 12,
+			"cha": 10,
+			"skill": {
+				"stealth": "+3",
+				"athletics": "+5"
+			},
+			"passive": 11,
+			"languages": [
+				"understands Infernal but can't speak it"
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} your spell attack modifier to hit, reach 5 ft., one target. {@h}({@dice 2d6} + your proficiency bonus, {@dice 3d6} at 18th level) piercing damage."
+					]
+				},
+				{
+					"name": "Fire Breath",
+					"entries": [
+						"The hell hound exhales fire in a 15-foot cone. Each creature in that area must make a (your spell save DC) Dexterity saving throw, taking 11 ({@damage 3d6}) fire damage ({@dice 5d6} at 18th level) on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"languageTags": [
+				"CS",
+				"I"
+			],
+			"damageTags": [
+				"F"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"tokenUrl": "https://i.imgur.com/0eQVLFN.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://cdn.inprnt.com/thumbs/27/92/279239bf34404676c912809c5b4b61d8.jpg?response-cache-control=max-age=2628000"
+						}
+					}
+				]
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"immune": [
+				"fire"
+			],
+			"trait": [
+				{
+					"name": "Bound in Servitude",
+					"entries": [
+						"The hell hound is a native of the plane of shadow, and has been summoned from that plane against it's will to serve a master. The summoning creates a binding contract, where the hell hound must obey the commands of it's master, or turn to ash and die."
+					]
+				},
+				{
+					"name": "Vulnerable Contract",
+					"entries": [
+						"If the hell hound is banished, the contract between the hell hound and it's master immediately ends, and the hell hound is sent back to the plane of shadow."
+					]
+				},
+				{
+					"name": "Magic Weapons",
+					"entries": [
+						"The hell hound's weapon attacks are magical."
+					]
+				}
+			],
+			"traitTags": [
+				"Magic Weapons"
+			],
+			"miscTags": [
+				"MW",
+				"AOE"
+			],
+			"actionTags": [
+				"Breath Weapon"
+			]
+		},
+		{
+			"name": "Summoned Quasit",
+			"source": "Farover",
+			"size": [
+				"T"
+			],
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"demon"
+				]
+			},
+			"alignment": [
+				{
+					"special": "lawful evil"
+				}
+			],
+			"ac": [
+				{
+					"special": "12 + your proficiency bonus"
+				}
+			],
+			"hp": {
+				"special": "9 + (3 x your level)"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 5,
+			"dex": 17,
+			"con": 10,
+			"int": 7,
+			"wis": 10,
+			"cha": 10,
+			"skill": {
+				"stealth": "+5"
+			},
+			"passive": 10,
+			"languages": [
+				"Abyssal"
+			],
+			"action": [
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} your spell attack modifier to hit, reach 5 ft., one target. {@h}({@dice 1d4} + your proficiency bonus, {@dice 2d4} at 11th level, {@dice 3d4} at 18th level) slashing damage."
+					]
+				},
+				{
+					"name": "Invisibility",
+					"entries": [
+						"The quasit magically turns {@condition invisible} until it attacks, or until its concentration ends (as if concentrating on a spell). Any equipment the quasit wears or carries is {@condition invisible} with it."
+					]
+				}
+			],
+			"languageTags": [
+				"AB"
+			],
+			"damageTags": [
+				"F"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"tokenUrl": "https://5e.tools/img/MM/Quasit.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5e.tools/img/bestiary/MM/Quasit.jpg"
+						}
+					}
+				]
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"SD"
+			],
+			"immune": [
+				"fire",
+				"poison"
+			],
+			"trait": [
+				{
+					"name": "Bound in Servitude",
+					"entries": [
+						"The quasit is a native of the plane of shadow, and has been summoned from that plane against it's will to serve a master. The summoning creates a binding contract, where the quasit must obey the commands of it's master, or turn to ash and die."
+					]
+				},
+				{
+					"name": "Vulnerable Contract",
+					"entries": [
+						"If the quasit is banished, the contract between the quasit and it's master immediately ends, and the quasit is sent back to the plane of shadow."
+					]
+				},
+				{
+					"name": "Magic Weapons",
+					"entries": [
+						"The quasit's weapon attacks are magical."
+					]
+				}
+			],
+			"traitTags": [
+				"Magic Weapons"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"conditionInflict": [
+				"invisible"
+			]
+		},
+		{
+			"name": "Summoned Armanite",
+			"source": "Farover",
+			"size": [
+				"L"
+			],
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"demon"
+				]
+			},
+			"alignment": [
+				{
+					"special": "lawful evil"
+				}
+			],
+			"ac": [
+				{
+					"special": "14 + your proficiency bonus"
+				}
+			],
+			"hp": {
+				"special": "24 + (3 x your level)"
+			},
+			"speed": {
+				"walk": 60
+			},
+			"str": 21,
+			"dex": 18,
+			"con": 21,
+			"int": 8,
+			"wis": 12,
+			"cha": 13,
+			"skill": {
+				"athletics": "+8"
+			},
+			"passive": 11,
+			"languages": [
+				"Abyssal"
+			],
+			"action": [
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} your spell attack modifier to hit, reach 5 ft., one target. {@h}({@dice 2d10} + your proficiency bonus) slashing damage."
+					]
+				},
+				{
+					"name": "Serrated Tail",
+					"entries": [
+						"{@atk mw} your spell attack modifier to hit, reach 10 ft., one target. {@h}({@dice 3d6} + your proficiency bonus) slashing damage."
+					]
+				},
+				{
+					"name": "Lightning Lance",
+					"entries": [
+						"The armanite looses a bolt of lightning in a line 60 feet long and 10 feet wide. Each creature in the line must make a (your spell save DC) Dexterity saving throw, taking 18 ({@damage 5d6}) lightning damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"languageTags": [
+				"AB"
+			],
+			"damageTags": [
+				"L"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"tokenUrl": "https://5e.tools/img/MPMM/Armanite.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/lrcziKy.png"
+						}
+					}
+				]
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"SD"
+			],
+			"immune": [
+				"fire",
+				"lightning",
+				"poison"
+			],
+			"trait": [
+				{
+					"name": "Bound in Servitude",
+					"entries": [
+						"The armanite is a native of the plane of shadow, and has been summoned from that plane against it's will to serve a master. The summoning creates a binding contract, where the armanite must obey the commands of it's master, or turn to ash and die."
+					]
+				},
+				{
+					"name": "Vulnerable Contract",
+					"entries": [
+						"If the armanite is banished, the contract between the armanite and it's master immediately ends, and the armanite is sent back to the plane of shadow."
+					]
+				},
+				{
+					"name": "Magic Weapons",
+					"entries": [
+						"The armanite's weapon attacks are magical."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The armanite has advantage on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"traitTags": [
+				"Magic Resistance",
+				"Magic Weapons"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionImmune": [
+				"poisoned"
+			]
+		}
+	],
 	"class": [
 		{
 			"name": "Ranger (reworked)",
