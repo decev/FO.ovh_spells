@@ -12764,7 +12764,7 @@
 			],
 			"hasFluff": true,
 			"hasFluffImages": true,
-			"tokenUrl": "https://i.imgur.com/B5Gy6Kx.png",
+			"tokenUrl": "https://i.imgur.com/y1SjrxR.png",
 			"fluff": {
 				"images": [
 					{
@@ -13527,6 +13527,322 @@
                 "Ability Score Improvement|Ranger (reworked)|Farover|19",
                 "Foe Slayer|Ranger (reworked)|Farover|20"
             ]
+        },
+		{
+			"name": "Warlock (reworked)",
+			"source": "Farover",
+            "fluff": [
+				{
+					"name": "The Warlock",
+					"source": "Farover",
+					"entries": [
+						"The warlock is a practitioner of necromancy, demonic summoning, and the dark side of arcane magic. Warlocks are often ambitious and selfish individuals who covet power and dominance, with little regard for the lives of others or the costs involved. Some warlocks tend to work together for greater ends, often forming cults, and other warlocks are more independent, prefering to unravel the mysteries of forbidden magics themselves. Regardless of affiliation, warlocks are more often than not feared by the general populace, and in some societies even forbidden from entering. This often leads to warlocks hiding their identities, and disguising themselves as common travelers or sages to gain entry into towns and cities, especially since warlocks are usually hated among clerics and paladins."
+					],
+					"type": "section"
+				}
+			],
+			"hd": {
+				"number": 1,
+				"faces": 8
+			},
+			"proficiency": [
+				"con",
+				"int"
+			],
+			"startingProficiencies": {
+				"armor": [
+					"none"
+				],
+				"weapons": [
+					"{@table farover weapons|farover|daggers}",
+					"{@table farover weapons|farover|darts}",
+					"{@table farover weapons|farover|slings}",
+					"{@table farover weapons|farover|quarterstaffs}",
+					"{@table farover weapons|farover|light crossbows}"
+				],
+				"tools": [
+					"none"
+				],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"arcana",
+								"deception",
+								"history",
+								"intimidation",
+								"investigation",
+								"nature",
+                                "religion"
+							],
+							"count": 2
+						}
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) a {@table farover weapons|farover|light crossbow} and {@item Crossbow Bolts (20)|PHB|20 bolts} or (b) any {@table farover weapons|farover|simple weapon}",
+					"(a) {@item component pouch|PHB} or (b) {@item arcane focus|PHB}",
+					"(a) a {@item scholar's pack|PHB} or (b) an {@item dungeoneer's pack|PHB}"
+				],
+                "goldAlternative": "{@dice 3d4 * 10|3d4 * 10|Starting Gold}",
+				"defaultData": [
+					{
+						"a": [
+							"light crossbow|phb",
+							"crossbow bolts (20)|phb"
+						],
+						"b": [
+							{
+								"equipmentType": "weaponSimple",
+								"quantity": 1
+							}
+						]
+					},
+					{
+						"a": [
+							"component pouch|phb"
+						],
+						"b": [
+							"arcane focus|phb"
+						]
+                    },
+					{
+						"a": [
+							"scholar's pack|phb"
+						],
+						"b": [
+							"dungeoneer's pack|phb"
+						]
+                    }
+				]
+			},
+			"multiclassing": {
+				"requirements": {
+							"int": 13
+				}
+			},
+            "classTableGroups": [
+				{
+                    "colLabels": [
+                        "Cantrips Known",
+                        "Dread Spells",
+                        "Spells Known",
+                        "Spell Slots",
+                        "Slot Level",
+                        "Soul Shards"
+                    ],
+                    "colStyles": [
+                        "text-center col-1",
+                        "text-center col-3",
+                        "text-center col-2",
+                        "text-center col-2",
+                        "text-center col-2",
+                        "text-center col-3"
+                    ],
+                    "rows": [
+                        [
+                            "2",
+                            "\u2014",
+                            "3",
+                            "1",
+                            "1st",
+                            "\u2014"
+                        ],
+                        [
+                            "2",
+                            "1",
+                            "4",
+                            "1",
+                            "1st",
+                            "1"
+                        ],
+                        [
+                            "2",
+                            "1",
+                            "5",
+                            "2",
+                            "2nd",
+                            "1"
+                        ],
+                        [
+                            "3",
+                            "2",
+                            "6",
+                            "2",
+                            "2nd",
+                            "1"
+                        ],
+                        [
+                            "3",
+                            "2",
+                            "7",
+                            "2",
+                            "3rd",
+                            "1"
+                        ],
+                        [
+                            "3",
+                            "3",
+                            "8",
+                            "2",
+                            "3rd",
+                            "1"
+                        ],
+                        [
+                            "3",
+                            "3",
+                            "9",
+                            "2",
+                            "4th",
+                            "1"
+                        ],
+                        [
+                            "3",
+                            "4",
+                            "10",
+                            "2",
+                            "4th",
+                            "2"
+                        ],
+                        [
+                            "3",
+                            "4",
+                            "11",
+                            "2",
+                            "5th",
+                            "2"
+                        ],
+                        [
+                            "4",
+                            "5",
+                            "12",
+                            "2",
+                            "5th",
+                            "2"
+                        ],
+                        [
+                            "4",
+                            "5",
+                            "13",
+                            "3",
+                            "5th",
+                            "2"
+                        ],
+                        [
+                            "4",
+                            "6",
+                            "14",
+                            "3",
+                            "5th",
+                            "2"
+                        ],
+                        [
+                            "4",
+                            "6",
+                            "15",
+                            "3",
+                            "5th",
+                            "2"
+                        ],
+                        [
+                            "4",
+                            "7",
+                            "16",
+                            "3",
+                            "5th",
+                            "3"
+                        ],
+                        [
+                            "4",
+                            "7",
+                            "17",
+                            "3",
+                            "5th",
+                            "3"
+                        ],
+                        [
+                            "4",
+                            "8",
+                            "18",
+                            "4",
+                            "5th",
+                            "3"
+                        ],
+                        [
+                            "4",
+                            "8",
+                            "19",
+                            "4",
+                            "5th",
+                            "3"
+                        ],
+                        [
+                            "4",
+                            "9",
+                            "20",
+                            "4",
+                            "5th",
+                            "3"
+                        ],
+                        [
+                            "4",
+                            "9",
+                            "21",
+                            "4",
+                            "5th",
+                            "3"
+                        ],
+                        [
+                            "4",
+                            "10",
+                            "22",
+                            "4",
+                            "5th",
+                            "4"
+                        ]
+                    ]
+                }
+            ],
+            "classFeatures": [
+                "Spellcasting|Warlock (reworked)|Farover|1",
+                "Demonic Fortitude|Warlock (reworked)|Farover|1",
+				{
+					"classFeature": "Cult Pledge|Warlock (reworked)|Farover|2",
+					"gainSubclassFeature": true
+				},
+                "Soul Shards|Warlock (reworked)|Farover|2",
+                "Life Tap|Warlock (reworked)|Farover|3",
+                "Ability Score Improvement|Warlock (reworked)|Farover|4",
+				"Demonic Summoning|Warlock (reworked)|Farover|5",
+				{
+					"classFeature": "Cult Pledge Feature|Warlock (reworked)|Farover|6",
+					"gainSubclassFeature": true
+				},
+                "Soulstones|Warlock (reworked)|Farover|7",
+                "Ability Score Improvement|Warlock (reworked)|Farover|8",
+                "Ritual of Summoning|Warlock (reworked)|Farover|9",
+				{
+					"classFeature": "Cult Pledge Feature|Warlock (reworked)|Farover|10",
+					"gainSubclassFeature": true
+				},
+                "Improved Demonic Summoning|Warlock (reworked)|Farover|11",
+                "Versatile Shards (6th Level)|Warlock (reworked)|Farover|11",
+                "Ability Score Improvement|Warlock (reworked)|Farover|12",
+                "Versatile Shards (7th Level)|Warlock (reworked)|Farover|13",
+				{
+					"classFeature": "Cult Pledge Feature|Warlock (reworked)|Farover|14",
+					"gainSubclassFeature": true
+				},
+                "Versatile Shards (8th Level)|Warlock (reworked)|Farover|15",
+                "Ability Score Improvement|Warlock (reworked)|Farover|16",
+                "Versatile Shards (9th Level)|Warlock (reworked)|Farover|17",
+                "Greater Demonic Summoning|Warlock (reworked)|Farover|18",
+                "Ability Score Improvement|Warlock (reworked)|Farover|19",
+                "Eldritch Master|Warlock (reworked)|Farover|20"
+            ]
         }
     ],
 	"classFeature": [
@@ -13874,6 +14190,345 @@
             "entries": [
                 "At 20th level, you become an unparalleled hunter. When you roll initiative at the beginning of combat and have no uses of Hunter's Mark left, you regain one use.",
                 "Additionally, once on each of your turns, you can add your Wisdom modifier to the attack roll or the damage roll of an attack you make. You can choose to use this feature before or after the roll, but before any effects of the roll are applied."
+            ]
+		},
+		{
+			"name": "Spellcasting",
+			"source": "Farover",
+			"className": "Warlock (reworked)",
+			"classSource": "Farover",
+			"level": 1,
+            "entries": [
+                "You have studied and learned to manipulate the forces of arcane magic to grant you power and dominance.",
+                {
+					"type": "entries",
+					"name": "Cantrips",
+					"entries": [
+                        "You know two cantrips of your choice from the warlock {@filter spell list|spells|class=warlock;warlock (FO)}. You learn additional warlock cantrips of your choice at higher levels, as shown in the Cantrips Known column of the warlock table."
+					]
+				},
+                {
+					"type": "entries",
+					"name": "Spell Slots",
+					"entries": [
+						"The warlock table shows how many spell slots you have to cast your warlock spells of 1st through 5th level. The table also shows what the level of those slots is; all of your spell slots are the same level. To cast one of your warlock spells of 1st level or higher, you must expend a spell slot. You regain all expended spell slots when you finish a short or long rest.",
+                        "For example, when you are 5th level, you have two 3rd-level spell slots. To cast the 1st-level spell {@spell Cause Fear|xge}, you must spend one of those slots, and you cast it as a 3rd-level spell."
+					]
+				},
+                {
+					"type": "entries",
+					"name": "Spells Known of 1st Level and Higher",
+					"entries": [
+						"At 1st level, you know three 1st spells of your choice from the warlock {@filter spell list|spells|class=warlock;warlock (FO)}, and you learn an additional warlock spell of your choice at each level after that.",
+						"The Spells Known column of the warlock table shows when you learn more warlock spells of your choice of 1st level and higher. A spell you choose to learn must be of a level no higher than what's shown in the table's Slot Level column for your level.",
+						"In addition, at 2nd level you learn one additional special warlock spell called a {@filter Dread Spell|spells|subschool=Dread}. You learn one new dread spell every even level you gain in the warlock class, as shown in the Dread Spells Known column of the warlock table.",
+                        {
+							"type": "list",
+							"items": [
+								"Dread spells are cast with {@classFeature Soul Shards|Warlock (reworked)|farover|2} instead of spell slots, and dread spells are always cast at the highest possible level.",
+								"A dread spell you learn must be of a level equal to what's shown in the table's Slot Level column for your level."
+							]
+						},
+						"When you reach 6th level, for example, you learn a new warlock spell, which can be 1st, 2nd, or 3rd level, and you also learn one new dread spell, which can be 1st, 2nd, or 3rd level."
+					]
+				},
+                {
+					"type": "entries",
+					"name": "Spellcasting Ability",
+					"entries": [
+						"Intelligence is your spellcasting ability for your warlock spells, so you use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a warlock spell you cast and when making an attack roll with one.",
+                        {
+							"type": "abilityDc",
+							"name": "Spell",
+							"attributes": [
+								"int"
+							]
+						},
+						{
+							"type": "abilityAttackMod",
+							"name": "Spell",
+							"attributes": [
+								"int"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Ritual Casting",
+					"entries": [
+                        "You can cast any warlock spell as a ritual if that spell has the ritual tag."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting Focus",
+					"entries": [
+                        "You can use an arcane focus or a component pouch as a spellcasting focus for your warlock spells."
+					]
+				}
+            ]
+        },
+        {
+			"name": "Demonic Fortitude",
+			"source": "Farover",
+			"className": "Warlock (reworked)",
+			"classSource": "Farover",
+			"level": 1,
+            "entries": [
+				"At 1st level, the interior of your body adapts some fiendish characteristics, making your body more resilient. While you are wearing no armor and not wielding a shield, your AC equals 13 + your Constitution modifier.",
+                "In addition, when you willingly inflict damage to yourself with a warlock class feature, you do not have to make a Constitution saving throw to maintain concentration on a spell."
+            ]
+		},
+		{
+			"name": "Soul Shards",
+			"source": "Farover",
+			"className": "Warlock (reworked)",
+			"classSource": "Farover",
+			"level": 2,
+            "entries": [
+				"At 2nd level, your intricate knowledge of life, death and souls has granted you the ability to harvest fragments of souls from the enemies that you slay. Soul shards are physical objects that you carry, resembling small, whitish pink crystals.",
+                "Once per day, when a creature you can see and have damaged within one round of combat dies, you can use your reaction to harvest a fragment of the soul from the creature, creating a soul shard. You can also do this later with an action within 5 feet and 1 hour of the creature dying, before it's soul parts ways with it's body. Creatures that are either undead, constructs, or have a CR of 0 do not give soul shards.",
+				"In addition to this, you also gain one soul shard every short rest, and all soul shards up to your total maximum on a long rest.",
+				"You can store a maximum amount of soul shards as indicated on the warlock table.",
+				"You can use one soul shard for one of the following two effects:",
+				{
+					"type": "list",
+					"items": [
+						"You can use a soul shard to cast certain powerful warlock spells called {@filter dread spells|spells|subschool=Dread}. Dread spells are spells that can be cast only with soul shards.",
+						"You can use a soul shard to summon a fiend to serve you with your {@classFeature Demonic Summoning|Warlock (reworked)|farover|5} feature."
+					]
+				},
+				"When you use a soul shard, you suffer {@dice 1d6} {@bold unmitigatable force damage} per level of the spell cast."
+            ]
+		},
+        {
+			"name": "Cult Pledge",
+			"source": "Farover",
+			"className": "Warlock (reworked)",
+			"classSource": "Farover",
+			"level": 2,
+            "entries": [
+                "At 2nd level, you align yourself with one of the secret, widespread cults specializing in a certain dark practice. Your choice grants you features at 2nd level and again at 6th, 10th, and 14th level."
+            ]
+		},
+        {
+			"name": "Life Tap",
+			"source": "Farover",
+			"className": "Warlock (reworked)",
+			"classSource": "Farover",
+			"level": 3,
+            "entries": [
+                "Starting at 3rd level, you can sacrifice some of your health for spell slots. With a bonus action and by harnessing your own life energy, you can sacrifice an amount of hit points equal to {@bold 2 x your warlock level}, and use it to recover one expended warlock spell slot.",
+				"You can use this feature an amount of times equal to your Intelligence modifier, and you regain all expended uses when you finish a long rest."
+            ]
+		},
+        {
+			"name": "Ability Score Improvement",
+			"source": "Farover",
+			"className": "Warlock (reworked)",
+			"classSource": "Farover",
+			"level": 4,
+            "entries": [
+                "When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+            ]
+		},
+        {
+			"name": "Demonic Summoning",
+			"source": "Farover",
+			"className": "Warlock (reworked)",
+			"classSource": "Farover",
+			"level": 5,
+            "entries": [
+                "At 5th level, your knowledge grants you insight on how to interact with the plane of shadow, and summon a fiend from it to your plane of existence. By spending a Soul Shard and 10 minutes casting a ritual, you can force a fiend to be summoned within 10 feet of you, and bind it to serve you under the threat of death. The fiend summoned will arrive against it's will, but will follow your commands in hopes of either being released, or falling in battle, which would both return it to the plane of shadow. Disobeying your commands would cause the fiend to turn to dust, and truly die.",
+                "You can issue commands telepathically to your summoned fiend, and in general interact with it only while you are within 100 feet of it. Even if you and your summon don't share a language, it will understand simple commands from you. Your summon can not communicate information back to you unless it shares a language with you. If it does not have any active commands, it will simply return to you. In combat your summon takes it's turn immediately after yours, and will act based on your commands. If your summon is beyond 100 feet of you, it will still follow your last command to the best of it's ability, and in combat it will otherwise simply take the dodge action.",
+                "You can release your summon at any time back to the plane of shadow as an action. You can also dismiss your summon into a pocket dimension as an action, where it will await your summon. Retrieving your summon from the pocket dimension requires a 10 minute ritual.",
+                "If your summoned fiend is killed, any excess damage is carried over to you. Your summon does not recover any hit points by itself. If you fall unconscious, your summon is sent to the pocket dimension. If you die, your summon is released. You can only have one summon active at a time.",
+                "Your summoned fiends use {@filter different stat blocks|bestiary|search=summoned}, unlike their normal counterparts.",
+                "At 5th level, you can summon an {@creature Summoned Imp|farover|Imp}. Summoning an Imp is considered a 1st level spell for the purpose of Soul Shard damage. At 11th and at 18th level, you gain a new summon."
+            ]
+		},
+        {
+			"name": "Cult Pledge Feature",
+			"source": "Farover",
+			"className": "Warlock (reworked)",
+			"classSource": "Farover",
+			"level": 6,
+            "entries": [
+				"At 6th level, you gain a feature granted by your cult pledge."
+            ]
+		},
+        {
+			"name": "Soulstones",
+			"source": "Farover",
+			"className": "Warlock (reworked)",
+			"classSource": "Farover",
+			"level": 7,
+            "entries": [
+				"At 7th level, you learn how to contort your acquired soul shards into a new form, called Soulstones. Creating a soulstone costs one soul shard, takes 1 minute, and is considered a 3rd level spell for the purpose of soul shard damage. You can only have one soulstone at a time. Making a new soulstone requires the previous soulstone to be destroyed. The soulstone weighs 1 lb., is the size of a fist, is immune to poison and psychic damage, has 10 hit points, and has 10 AC. A soulstone effect is a shared effect between two willing creatures, one of which can be the warlock.",
+                "A soulstone can be used to link two willing creatures together in {@bold one} of two ways:",
+                {
+					"type": "list",
+					"items": [
+						"{@bold {@italic Soul Bond}}: The warlock can power the soulstone and create a bond between the souls of two characters, giving the soulstone to one of them to keep. While bonded, whenever one of the two characters suffer damage, they only suffer half of that damage, and the other bonded character suffers the rest. The effect has no maximum range, and affects the characters as long as they are both on the same plane of existence.",
+						"{@bold {@italic Soul Revive}}: The warlock can power the soulstone and connect the life force of two characters together, giving the soulstone to one of them to keep. When either of the two characters would then fall below 1 hit point from damage, the soulstone causes that character to mitigate any of the excess damage suffered beyond 1 hit point, at the cost of the other connected characters hit points. The effect converts an amount of hit points equal to how many points of damage is mitigated, but it can not bring the hit points of the character whos hit points are converted below 1. When this effect happens, the soulstone breaks and is destroyed."
+					]
+				},
+                "Both effects persist until the soulstone is destroyed, or if the soulstone is not in possession of one of the two characters. If a soulstone is not in possession of one of the two characters, the soulstone decays and is destroyed."
+            ]
+		},
+        {
+			"name": "Ability Score Improvement",
+			"source": "Farover",
+			"className": "Warlock (reworked)",
+			"classSource": "Farover",
+			"level": 8,
+            "entries": [
+                "When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+            ]
+		},
+        {
+			"name": "Ritual of Summoning",
+			"source": "Farover",
+			"className": "Warlock (reworked)",
+			"classSource": "Farover",
+			"level": 9,
+            "entries": [
+                "At 9th level, your extended knowledge of the planes of existence grants you the ability to summon willing creatures to you if they are on the same plane as you.",
+				"By spending 10 minutes casting a ritual with the aid of at least two other characters, you can summon a willing creature to your location if you are both on the same plane of existence. When the ritual is completed, the creature being summoned feels a pull in their gut, signaling teleportation. The character being summoned has the option of declining the summon by resisting against it.",
+                "You can use this feature twice, and you regain all expended uses when you finish a long rest."
+            ]
+		},
+        {
+			"name": "Cult Pledge Feature",
+			"source": "Farover",
+			"className": "Warlock (reworked)",
+			"classSource": "Farover",
+			"level": 10,
+            "entries": [
+				"At 10th level, you gain a feature granted by your cult pledge."
+            ]
+		},
+        {
+			"name": "Versatile Shards (6th Level)",
+			"source": "Farover",
+			"className": "Warlock (reworked)",
+			"classSource": "Farover",
+			"level": 11,
+            "entries": [
+				"At 11th level, you learn how to utilize your soul shards even further.",
+                "You can now use a soul shard to cast a normal 6th level warlock spell once without expending a spell slot, and without suffering any soul shard damage.",
+                "At higher levels, you gain the ability to cast higher level spells in this way as well: one 7th-level spell at 13th level, one 8th-level spell at 15th level, and one 9th-level spell at 17th level.",
+                "You can use your soul shards to cast the spells from each of these features only once, but you can use a higher level versatile shard use to cast a lower level versatile shard spell as well.",
+                "You regain all uses of these features on a long rest."
+            ]
+		},
+        {
+			"name": "Improved Demonic Summoning",
+			"source": "Farover",
+			"className": "Warlock (reworked)",
+			"classSource": "Farover",
+			"level": 11,
+            "entries": [
+				"At 11th level, you can now summon a {@creature Summoned Hell Hound|farover|Hell Hound} with your Demonic Summoning. Summoning a Hell Hound is considered a 3rd level spell for the purpose of Soul Shard damage."
+            ]
+		},
+        {
+			"name": "Ability Score Improvement",
+			"source": "Farover",
+			"className": "Warlock (reworked)",
+			"classSource": "Farover",
+			"level": 12,
+            "entries": [
+                "When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+            ]
+		},
+        {
+			"name": "Versatile Shards (7th Level)",
+			"source": "Farover",
+			"className": "Warlock (reworked)",
+			"classSource": "Farover",
+			"level": 13,
+            "entries": [
+                "At 13th level, you can now use a soul shard to cast a normal 7th level warlock spell, without suffering any soul shard damage.",
+				"You can use this feature once, and you must finish a long rest before you can do so again."
+            ]
+		},
+        {
+			"name": "Cult Pledge Feature",
+			"source": "Farover",
+			"className": "Warlock (reworked)",
+			"classSource": "Farover",
+			"level": 14,
+            "entries": [
+				"At 14th level, you gain a feature granted by your cult pledge."
+            ]
+		},
+        {
+			"name": "Versatile Shards (8th Level)",
+			"source": "Farover",
+			"className": "Warlock (reworked)",
+			"classSource": "Farover",
+			"level": 15,
+            "entries": [
+                "At 15th level, you can now use a soul shard to cast a normal 8th level warlock spell, without suffering any soul shard damage.",
+				"You can use this feature once, and you must finish a long rest before you can do so again."
+            ]
+		},
+        {
+			"name": "Ability Score Improvement",
+			"source": "Farover",
+			"className": "Warlock (reworked)",
+			"classSource": "Farover",
+			"level": 16,
+            "entries": [
+                "When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+            ]
+		},
+        {
+			"name": "Versatile Shards (9th Level)",
+			"source": "Farover",
+			"className": "Warlock (reworked)",
+			"classSource": "Farover",
+			"level": 17,
+            "entries": [
+                "At 17th level, you can now use a soul shard to cast a normal 9th level warlock spell, without suffering any soul shard damage.",
+				"You can use this feature once, and you must finish a long rest before you can do so again."
+            ]
+		},
+        {
+			"name": "Greater Demonic Summoning",
+			"source": "Farover",
+			"className": "Warlock (reworked)",
+			"classSource": "Farover",
+			"level": 18,
+            "entries": [
+				"At 18th level, you can now summon a {@creature Summoned Armanite|farover|Armanite} with your Demonic Summoning. Summoning an Armanite is considered a 5th level spell for the purpose of Soul Shard damage."
+            ]
+		},
+        {
+			"name": "Ability Score Improvement",
+			"source": "Farover",
+			"className": "Warlock (reworked)",
+			"classSource": "Farover",
+			"level": 19,
+            "entries": [
+                "When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+            ]
+		},
+        {
+			"name": "Eldritch Master",
+			"source": "Farover",
+			"className": "Warlock (reworked)",
+			"classSource": "Farover",
+			"level": 20,
+            "entries": [
+				"At 20th level, you can now harvest an unlimited amount of soul shards each day."
             ]
 		}
     ]
