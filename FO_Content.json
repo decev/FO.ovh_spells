@@ -169,6 +169,54 @@
 				"Countershot|Ranger (reworked)|Farover|Monster Slayer|Farover|11",
 				"Slayer's Riposte|Ranger (reworked)|Farover|Monster Slayer|Farover|15"
 			]
+		},
+		{
+			"name": "Cult of Demonology",
+			"source": "Farover",
+			"className": "Warlock (reworked)",
+			"classSource": "Farover",
+			"shortName": "Demonology",
+			"subclassFeatures": [
+				"Cult of Demonology|Warlock (reworked)|Farover|Demonology|Farover|2",
+				"Expanded Spell List|Warlock (reworked)|Farover|Demonology|Farover|2",
+				"Summon Gloombat|Warlock (reworked)|Farover|Demonology|Farover|2",
+				"Insidious Command|Warlock (reworked)|Farover|Demonology|Farover|2",
+				"Demonic Empowerment|Warlock (reworked)|Farover|Demonology|Farover|6",
+                "Summon Quasit|Warlock (reworked)|Farover|Demonology|Farover|6",
+				"Improved Banishment|Warlock (reworked)|Farover|Demonology|Farover|10",
+				"Master Subjugator|Warlock (reworked)|Farover|Demonology|Farover|14"
+			]
+		},
+		{
+			"name": "Cult of Destruction",
+			"source": "Farover",
+			"className": "Warlock (reworked)",
+			"classSource": "Farover",
+			"shortName": "Destruction",
+			"subclassFeatures": [
+				"Cult of Destruction|Warlock (reworked)|Farover|Destruction|Farover|2",
+				"Expanded Spell List|Warlock (reworked)|Farover|Destruction|Farover|2",
+				"Soul Control|Warlock (reworked)|Farover|Destruction|Farover|2",
+				"Exploding Destruction|Warlock (reworked)|Farover|Destruction|Farover|6",
+                "Harvesting Capability|Warlock (reworked)|Farover|Destruction|Farover|10",
+				"Ruinous Blasts|Warlock (reworked)|Farover|Destruction|Farover|14"
+			]
+		},
+		{
+			"name": "Cult of Necromancy",
+			"source": "Farover",
+			"className": "Warlock (reworked)",
+			"classSource": "Farover",
+			"shortName": "Necromancy",
+			"subclassFeatures": [
+				"Cult of Necromancy|Warlock (reworked)|Farover|Necromancy|Farover|2",
+				"Expanded Spell List|Warlock (reworked)|Farover|Necromancy|Farover|2",
+				"Life Harvester|Warlock (reworked)|Farover|Necromancy|Farover|2",
+                "Corpse Explosion|Warlock (reworked)|Farover|Necromancy|Farover|2",
+				"Necrotic Fortification|Warlock (reworked)|Farover|Necromancy|Farover|6",
+                "Army of the Dead|Warlock (reworked)|Farover|Necromancy|Farover|10",
+				"Undying|Warlock (reworked)|Farover|Necromancy|Farover|14"
+			]
 		}
 	],
 	"subclassFeature": [
@@ -1146,6 +1194,397 @@
 			"level": 15,
 			"entries": [
 				"At 15th level, you gain the ability to counterattack when your prey tries to sabotage you. If the target of your Hunter's Mark forces you to make a saving throw, you can use your reaction to make one weapon attack against the target. You make this attack immediately before making the saving throw. If your attack hits, your save automatically succeeds, in addition to the attack's normal effects."
+			]
+		},
+		{
+			"name": "Cult of Demonology",
+			"source": "Farover",
+			"className": "Warlock (reworked)",
+			"classSource": "Farover",
+			"subclassSource": "Farover",
+			"subclassShortName": "Demonology",
+			"level": 2,
+			"entries": [
+				"The cult of demonology specializes in knowledge and mastery over fiends, demons and devils. They study the ways of summoning from the shadow plane, and subjugation on the material plane."
+			]
+		},
+        {
+			"name": "Expanded Spell List",
+			"source": "Farover",
+			"className": "Warlock (reworked)",
+			"classSource": "Farover",
+			"subclassSource": "Farover",
+			"subclassShortName": "Demonology",
+			"level": 2,
+			"entries": [
+				"The cult of demonology lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.",
+                {
+                    "type": "table",
+                    "caption": "Demonology Expanded Spells",
+                    "colLabels": [
+                        "Spell Level",
+                        "Spells"
+                    ],
+                    "colStyles": [
+                        "col-3 text-center",
+                        "col-9"
+                    ],
+                    "rows": [
+                        [
+                            "1st",
+                            "{@spell bane}, {@spell heroism}"
+                        ],
+                        [
+                            "2nd",
+                            "{@spell crown of madness}, {@spell dragon's breath|xge}"
+                        ],
+                        [
+                            "3rd",
+                            "{@spell bestow curse}, {@spell protection from energy}"
+                        ],
+                        [
+                            "4th",
+                            "{@spell compulsion}, {@spell dominate beast}"
+                        ],
+                        [
+                            "5th",
+                            "{@spell contagion}, {@spell dominate person}"
+                        ]
+                    ]
+                }
+			]
+		},
+        {
+			"name": "Summon Gloombat",
+			"source": "Farover",
+			"className": "Warlock (reworked)",
+			"classSource": "Farover",
+			"subclassSource": "Farover",
+			"subclassShortName": "Demonology",
+			"level": 2,
+			"entries": [
+				"Beginning when you choose this cult at 2nd level, you learn how to summon a meager fiend called a {@creature summoned gloombat|farover|Gloombat} into your service. The summoning of the Gloombat works as a part of your warlock {@classFeature Demonic Summoning|Warlock (reworked)|farover|5} feature, and the Gloombat is considered a 0th level spell for the purpose of soul shard damage. The Gloombat is a small, nearly mindless fiend which can not communicate in any way, but will follow your orders as best it can. The Gloombat can't attack, but it can take other actions as normal. You do not suffer any excess damage when your Gloombat dies."
+			]
+		},
+        {
+			"name": "Insidious Command",
+			"source": "Farover",
+			"className": "Warlock (reworked)",
+			"classSource": "Farover",
+			"subclassSource": "Farover",
+			"subclassShortName": "Demonology",
+			"level": 2,
+			"entries": [
+				"Beginning when you choose this cult at 2nd level, you gain the following features for your {@classFeature Demonic Summoning|Warlock (reworked)|farover|5} feature:","Beginning when you choose this cult at 2nd level, you learn how to summon a meager fiend called a {@creature summoned gloombat|farover|Gloombat} into your service. The summoning of the Gloombat works as a part of your warlock {@classFeature Demonic Summoning|Warlock (reworked)|farover|5} feature, and the Gloombat is considered a 0th level spell for the purpose of soul shard damage. The Gloombat is a small, nearly mindless fiend which can not communicate in any way, but will follow your orders as best it can. The Gloombat can't attack, but it can take other actions as normal. You do not suffer any excess damage when your Gloombat dies.",
+                {
+					"type": "list",
+					"items": [
+						"Summoning and re-summoning a fiend for you is now an action, instead of a 10 minute ritual.",
+						"When you cast a spell with either a range of touch, or a melee spell attack, your summon can deliver the spell as if it had cast the spell, and you can can also cast these spells on your summon from range as long as you are within 100 feet and in line of sight to it.",
+                        "As a bonus action, you can funnel health between you and your summon, as long as you are within line of sight and 100 feet of each other. You can cause either yourself or your summon to suffer up to {@dice 1d4} necrotic damage for each level you have in the warlock class, and you can decide how many dice you roll for the effect. If you funnel health to yourself from your summon, you restore hit points equal to half of the damage dealt. If you funnel health to your summon from yourself, your summon restores hit points equal to twice the damage dealt."
+					]
+				}
+			]
+		},
+        {
+			"name": "Demonic Empowerment",
+			"source": "Farover",
+			"className": "Warlock (reworked)",
+			"classSource": "Farover",
+			"subclassSource": "Farover",
+			"subclassShortName": "Demonology",
+			"level": 6,
+			"entries": [
+				"Starting at 6th level, when your summon is within 30 feet and in line of sight, you can expend a warlock spell slot as an action to temporarily empower your summon.",
+                "When initially casting the empowerment, you can choose to teleport and switch places with your summon. Your summon also gains {@dice 1d6} temporary hit points for every level of the spell slot used for the empowerment.",
+                "While maintaining concentration for the duration of the empowerment, which lasts for up to 1 minute, your summon adds one additional die to all of it's damage rolls, and it can attack twice, instead of once, whenever it takes the Attack action on its turn."
+			]
+		},
+        {
+			"name": "Summon Quasit",
+			"source": "Farover",
+			"className": "Warlock (reworked)",
+			"classSource": "Farover",
+			"subclassSource": "Farover",
+			"subclassShortName": "Demonology",
+			"level": 6,
+			"entries": [
+				"Starting at 6th level, you can summon a {@creature summoned quasit|farover|Quasit} with your Demonic Summoning feature. Summoning a Quasit is considered a 1st level spell for the purpose of Soul Shard damage."
+			]
+		},
+        {
+			"name": "Improved Banishment",
+			"source": "Farover",
+			"className": "Warlock (reworked)",
+			"classSource": "Farover",
+			"subclassSource": "Farover",
+			"subclassShortName": "Demonology",
+			"level": 10,
+			"entries": [
+				"At 10th level, you learn the spell {@spell Banishment} if you do not already know it. If you already know the spell, you can learn another warlock spell instead, but regardless this spell does not count towards your maximum spells known.",
+                "You can cast Banishment once per long rest without expending a spell slot, and you can also cast it using soul shards.",
+                "Your Banishment is also stronger against fiends. If you successfully banish a fiend with a CR of at most half your level (rounded down) with the spell, the spells duration becomes instantaneous, and the banished fiend does not return."
+			]
+		},
+        {
+			"name": "Master Subjugator",
+			"source": "Farover",
+			"className": "Warlock (reworked)",
+			"classSource": "Farover",
+			"subclassSource": "Farover",
+			"subclassShortName": "Demonology",
+			"level": 14,
+			"entries": [
+				"Starting at 14th level, you can attempt to subjugate any fiend, devil or demon you encounter into your service with the {@classFeature Demonic Summoning|Warlock (reworked)|farover|5} ability, replacing any current summon you may have. Attempting to subjugate a demon with this feature costs a soul shard, and is considered a 5th level spell for the purpose of soul shard damage.",
+                "While the target fiend is within 60 feet of you, as an action, you can force it to make a Wisdom saving throw against your spell save DC. On a failed save, a link of dark, magical chains surrounds the fiends body, attempting to subjugate it. If the target succeeds on three of these saves, it is released from any chains and is immune to this ability for 24 hours. If the target fails three of these saves, the three links of chains bind the fiend into your control.",
+                "While in your control, the subjugated fiend will make a Wisdom saving throw at disadvantage after every hour since it was subjugated. On a successful save, the fiend is released.",
+                "The subjugated fiend will be under your control, similarly to the Demonic Summoning feature, but with the following changes:",
+                {
+					"type": "list",
+					"items": [
+						"You must maintain concentration (5 points) for this feature to remain active.",
+						"The subjugated fiend can not be sent to a pocket dimension.",
+                        "Releasing the subjugated fiend only releases it from your control. If a fiend has been successfully subjugated by you within the last 24 hours, it has advantage on any saving throws against new applications of this feature."
+					]
+				}
+			]
+		},
+        {
+			"name": "Cult of Destruction",
+			"source": "Farover",
+			"className": "Warlock (reworked)",
+			"classSource": "Farover",
+			"subclassSource": "Farover",
+			"subclassShortName": "Destruction",
+			"level": 2,
+			"entries": [
+                "The cult of destruction specializes in mastery over the destructive forces of arcane magic, powerful spells, and the potency of soul shards."
+			]
+		},
+        {
+			"name": "Expanded Spell List",
+			"source": "Farover",
+			"className": "Warlock (reworked)",
+			"classSource": "Farover",
+			"subclassSource": "Farover",
+			"subclassShortName": "Destruction",
+			"level": 2,
+            "entries": [
+                "The cult of destruction lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.",
+                {
+                    "type": "table",
+                    "caption": "Destruction Expanded Spells",
+                    "colLabels": [
+                        "Spell Level",
+                        "Spells"
+                    ],
+                    "colStyles": [
+                        "col-3 text-center",
+                        "col-9"
+                    ],
+                    "rows": [
+                        [
+                            "1st",
+                            "{@spell burning hands}, {@spell chaos bolt|farover}"
+                        ],
+                        [
+                            "2nd",
+                            "{@spell flaming sphere}, {@spell heat metal|farover}"
+                        ],
+                        [
+                            "3rd",
+                            "{@spell sleet storm}, {@spell stinking cloud}"
+                        ],
+                        [
+                            "4th",
+                            "{@spell fire shield}, {@spell wall of fire}"
+                        ],
+                        [
+                            "5th",
+                            "{@spell bigby's hand}, {@spell immolation|xge}"
+                        ]
+                    ]
+                }
+			]
+		},
+        {
+			"name": "Soul Control",
+			"source": "Farover",
+			"className": "Warlock (reworked)",
+			"classSource": "Farover",
+			"subclassSource": "Farover",
+			"subclassShortName": "Destruction",
+			"level": 2,
+			"entries": [
+                "Beginning when you choose this cult at 2nd level, each time you take force damage from a soul shard, the damage is reduced by 3. At 8th level, the damage reduced becomes 6, and at 14th level it becomes 9.",
+                "In addition, whenever you deal damage to a creature with a damaging cantrip, you can choose to spend a soul shard to add to the damage roll. When you add a soul shard to a damaging cantrip in this way, the target of your cantrip suffers the soul shard damage, instead of you. The extra damage dealt by this soul shard is determined by what level spells you currently have access to."
+			]
+		},
+        {
+			"name": "Exploding Destruction",
+			"source": "Farover",
+			"className": "Warlock (reworked)",
+			"classSource": "Farover",
+			"subclassSource": "Farover",
+			"subclassShortName": "Destruction",
+			"level": 6,
+			"entries": [
+                "Starting at 6th level, your dread spells and soul control cantrips explode with destructive energy when they deal damage.",
+                "Whenever you deal damage with a dread spell or soul control cantrip to a target, you can choose to have the spell explode, in which case each other creature within 10 feet of the damaged target or targets suffer damage of the spells type equal to your spellcasting modifier.",
+                "A spell which deals damage multiple times can only explode once, and this feature can only affect a creature once per turn."
+			]
+		},
+        {
+			"name": "Harvesting Capability",
+			"source": "Farover",
+			"className": "Warlock (reworked)",
+			"classSource": "Farover",
+			"subclassSource": "Farover",
+			"subclassShortName": "Destruction",
+			"level": 10,
+			"entries": [
+                "Starting at 10th level, you can now harvest two soul shards from enemies you kill each day, instead of one. You still gain only one soul shard on a short rest."
+			]
+		},
+        {
+			"name": "Ruinous Blasts",
+			"source": "Farover",
+			"className": "Warlock (reworked)",
+			"classSource": "Farover",
+			"subclassSource": "Farover",
+			"subclassShortName": "Destruction",
+			"level": 14,
+			"entries": [
+                "Starting at 14th level, your dread spells become so destructive that they destroy the environment around their impact.",
+                "When you successfully deal damage to a creature with any of your targeted dread spells, the first 10 feet of movement that the creature spends on it's next turn is considered difficult terrain.",
+                "In addition, your dread spells that target an area turn that area into difficult terrain until the start of your next turn."
+			]
+		},
+        {
+			"name": "Cult of Necromancy",
+			"source": "Farover",
+			"className": "Warlock (reworked)",
+			"classSource": "Farover",
+			"subclassSource": "Farover",
+			"subclassShortName": "Necromancy",
+			"level": 2,
+			"entries": [
+                "The cult of necromancy focuses on the cosmic forces of life, death, and undeath. Necromancers are obsessed with harnessing the power to steal the life force of other creatures for their own gain and survival, and turning it into magic they can manipulate."
+			]
+		},
+        {
+			"name": "Expanded Spell List",
+			"source": "Farover",
+			"className": "Warlock (reworked)",
+			"classSource": "Farover",
+			"subclassSource": "Farover",
+			"subclassShortName": "Necromancy",
+			"level": 2,
+            "entries": [
+                "The cult of necromancy lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.",
+                {
+                    "type": "table",
+                    "caption": "Necromancy Expanded Spells",
+                    "colLabels": [
+                        "Spell Level",
+                        "Spells"
+                    ],
+                    "colStyles": [
+                        "col-3 text-center",
+                        "col-9"
+                    ],
+                    "rows": [
+                        [
+                            "1st",
+                            "{@spell ray of sickness|farover}, {@spell silent image}"
+                        ],
+                        [
+                            "2nd",
+                            "{@spell blur}, {@spell phantasmal force}"
+                        ],
+                        [
+                            "3rd",
+                            "{@spell animate dead}, {@spell speak with dead}"
+                        ],
+                        [
+                            "4th",
+                            "{@spell death ward}, {@spell phantasmal killer}"
+                        ],
+                        [
+                            "5th",
+                            "{@spell antilife shell}, {@spell insect plague}"
+                        ]
+                    ]
+                }
+			]
+		},
+        {
+			"name": "Life Harvester",
+			"source": "Farover",
+			"className": "Warlock (reworked)",
+			"classSource": "Farover",
+			"subclassSource": "Farover",
+			"subclassShortName": "Necromancy",
+			"level": 2,
+			"entries": [
+                "Beginning when you choose this cult at 2nd level, you gain the ability to reap life energy from creatures you kill with your spells. Once per turn when you kill one or more creatures with any spell of 1st level or higher, you regain hit points equal to twice the spell's level. You don't gain this benefit for killing constructs or undead. You can only regain as many hit points as the target creatures maximum hit points are."
+			]
+		},
+        {
+			"name": "Corpse Explosion",
+			"source": "Farover",
+			"className": "Warlock (reworked)",
+			"classSource": "Farover",
+			"subclassSource": "Farover",
+			"subclassShortName": "Necromancy",
+			"level": 2,
+			"entries": [
+                "Beginning when you choose this cult at 2nd level, you can cause the corpses of deceased creatures to partly explode, shooting out flesh, bones and organs at all targets next to the corpse. This ability does not work on constructs.",
+                "If a corpse is within line of sight and 60 feet of you, you can cause a corpse to explode either as an action or a reaction. You can use this ability as an action on your turn, or as a reaction immediately after a creature dies outside of your turn.",
+                "Each creature within 5 feet of the exploding corpse must make a Dexterity saving throw against your warlock spell save DC. On a failed save, the affected targets take {@dice 1d10} force damage, or half as much damage on a successful one.",
+                "The damage of this ability increases to {@dice 2d10} at 5th level, {@dice 3d10} at 11th level, and {@dice 4d10} at 17th level."
+			]
+		},
+        {
+			"name": "Necrotic Fortification",
+			"source": "Farover",
+			"className": "Warlock (reworked)",
+			"classSource": "Farover",
+			"subclassSource": "Farover",
+			"subclassShortName": "Necromancy",
+			"level": 6,
+			"entries": [
+                "Starting at 6th level, your powers of self sustenance grant you the ability to replenish your life force to a higher degree than normal.",
+                "Whenever you heal yourself with a spell or feature that grants you hit points exceeding your total hit point maximum, the overhealing is converted into temporary hit points. The amount of temporary hit points gained from this feature can only give you at most an amount equal to what your warlock level is.",
+                "The temporary hit points gained from Necrotic Fortification stacks with any existing temporary hit points you have from this source, or any other source, but only up to the earlier mentioned limit.",
+                "If you have an amount of temporary hit points below your warlock level, and you gain temporary hit points from Necrotic Fortification, you can only gain an amount of them that brings you equal to your warlock level. If you have temporary hit points exceeding your warlock level, you do not gain any temporary hit points from this feature."
+			]
+		},
+        {
+			"name": "Army of the Dead",
+			"source": "Farover",
+			"className": "Warlock (reworked)",
+			"classSource": "Farover",
+			"subclassSource": "Farover",
+			"subclassShortName": "Necromancy",
+			"level": 10,
+			"entries": [
+                "At 10th level, you learn the {@spell Danse Macabre|xge} spell if you do not already know it. If you already know the spell, you can learn another warlock spell instead, but regardless this spell does not count towards your maximum spells known.",
+                "You can use this feature to cast Danse Macabre once per long rest without expending a spell slot, and you can also cast the spell using soul shards."
+			]
+		},
+        {
+			"name": "Undying",
+			"source": "Farover",
+			"className": "Warlock (reworked)",
+			"classSource": "Farover",
+			"subclassSource": "Farover",
+			"subclassShortName": "Necromancy",
+			"level": 14,
+			"entries": [
+                "Starting at 14th level, your necromantic powers can raise those that are at deaths door.",
+                "Whenever you are reduced to below 0 hit points, each successful death saving throw you make is treated as a natural 20.",
+                "In addition, whenever a creature within 30 feet of you rolls a successful death saving throw, you can use your reaction to cause that death saving throw to be treated as a natural 20."
 			]
 		}
 	],
