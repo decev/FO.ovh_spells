@@ -12764,7 +12764,7 @@
 			],
 			"hasFluff": true,
 			"hasFluffImages": true,
-			"tokenUrl": "https://i.imgur.com/y1SjrxR.png",
+			"tokenUrl": "https://i.imgur.com/Wr2y6G1.png",
 			"fluff": {
 				"images": [
 					{
@@ -13165,6 +13165,76 @@
 			],
 			"conditionImmune": [
 				"poisoned"
+			]
+		},
+		{
+			"name": "Summoned Gloombat",
+			"source": "Farover",
+			"size": [
+				"T"
+			],
+			"type": "fiend",
+			"alignment": [
+				{
+					"special": "lawful evil"
+				}
+			],
+			"ac": [
+				{
+					"special": "11"
+				}
+			],
+			"hp": {
+				"special": "3 x your level"
+			},
+			"speed": {
+				"walk": 5,
+				"fly": 60,
+				"canHover": false
+			},
+			"str": 3,
+			"dex": 13,
+			"con": 8,
+			"int": 2,
+			"wis": 12,
+			"cha": 7,
+			"skill": {
+				"stealth": "+3"
+			},
+			"passive": 11,
+			"damageTags": [
+				"F"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"tokenUrl": "https://i.imgur.com/3DgmEPD.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://static.tvtropes.org/pmwiki/pub/images/bat_out_of_hell.jpg"
+						}
+					}
+				]
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"SD"
+			],
+			"trait": [
+				{
+					"name": "Flyby",
+					"entries": [
+						"The gloombat doesn't provoke opportunity attacks when it flies out of an enemy's reach."
+					]
+				}
+			],
+			"traitTags": [
+				"Flyby"
 			]
 		}
 	],
@@ -14309,7 +14379,8 @@
 			"classSource": "Farover",
 			"level": 2,
             "entries": [
-                "At 2nd level, you align yourself with one of the secret, widespread cults specializing in a certain dark practice. Your choice grants you features at 2nd level and again at 6th, 10th, and 14th level."
+                "At 2nd level, you align yourself with one of the secret, widespread cults specializing in a certain dark practice. Your choice grants you features at 2nd level and again at 6th, 10th, and 14th level.",
+				"Different warlocks choose different dark arts to follow and practice. All of these arts are practiced by a widespread, specialized cult that shares it's secrets with it's members. The cult pledge you choose to follow reflects your approach."
             ]
 		},
         {
