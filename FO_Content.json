@@ -1599,7 +1599,7 @@
 	"feat": [
 		{
 			"name": "Armor Expert",
-			"source": "FO",
+			"source": "Farover",
 			"prerequisite": [
 				{
 					"ability": [
@@ -1626,7 +1626,7 @@
 		},
 		{
 			"name": "Crafty Duelist",
-			"source": "FO",
+			"source": "Farover",
 			"prerequisite": [
 				{
 					"ability": [
@@ -1653,7 +1653,7 @@
 		},
 		{
 			"name": "Feisty Combatant",
-			"source": "FO",
+			"source": "Farover",
 			"ability": [
 				{
 					"cha": 1
@@ -1671,7 +1671,7 @@
 		},
 		{
 			"name": "Insightful Precision",
-			"source": "FO",
+			"source": "Farover",
 			"ability": [
 				{
 					"choose": {
@@ -1695,7 +1695,7 @@
 		},
 		{
 			"name": "Oracle",
-			"source": "FO",
+			"source": "Farover",
 			"ability": [
 				{
 					"choose": {
@@ -1719,7 +1719,7 @@
 		},
 		{
 			"name": "Powerful Attacks",
-			"source": "FO",
+			"source": "Farover",
 			"entries": [
 				"Extensive weapons training has given you great physical power, granting you the following benefits:",
 				{
@@ -1733,7 +1733,7 @@
 		},
 		{
 			"name": "Restful Sleeper",
-			"source": "FO",
+			"source": "Farover",
 			"ability": [
 				{
 					"con": 1
@@ -1751,7 +1751,7 @@
 		},
         {
 			"name": "Thick Build",
-			"source": "FO",
+			"source": "Farover",
 			"prerequisite": [
 				{
 					"ability": [
@@ -1778,7 +1778,7 @@
 		},
 		{
 			"name": "Unspoken",
-			"source": "FO",
+			"source": "Farover",
 			"ability": [
 				{
 					"choose": {
@@ -1805,7 +1805,7 @@
 	"race": [
 		{
 			"name": "Stormborn",
-			"source": "FO",
+			"source": "Farover",
 			"size": [
 				"M"
 			],
@@ -13144,6 +13144,429 @@
 			],
 			"entries": [
 				"{@bold {@italic Block}}. When another creature hits either you or an ally of yours within 5 ft. of you with either a melee attack or a ranged weapon attack, you can use your reaction to raise your heavy shield and add +2 to either your AC or your ally's AC against that attack."
+			]
+		},
+		{
+			"name": "Barrier",
+			"source": "Farover",
+			"featureType": [
+				"SS"
+			],
+			"entries": [
+				"As a bonus action, or as a reaction when you are hit by a weapon attack, you draw the sign of Barrier with your fingers in the air, and a protective shield of static energy appears around you. Until the start of your next turn, the shield grants you resistance against the first time you take bludgeoning, piercing, or slashing damage.",
+				"{@bold {@italic Enhanced Barrier}}. When you cast the enhanced version of this sign, the barrier also reduces the damage you take the first time you take bludgeoning, piercing, or slashing damage by an amount equal to your proficiency modifier.",
+				"{@bold {@italic Superior Barrier}}. When you cast the superior version of this sign, the barrier lasts until the beginning of your next turn, granting resistance and damage reduction against all bludgeoning, piercing, and slashing damage until then."
+			]
+		},
+		{
+			"name": "Blast",
+			"source": "Farover",
+			"featureType": [
+				"SS"
+			],
+			"entries": [
+				"As a bonus action, you extend your hand outwards, arranging your fingers in the formation of Blast, and unleash a telekinetic shockwave. You can choose to attempt to knock creatures prone, or push them away. Each creature in a 15-foot cone must succeed on a Strength saving throw. On a failed save, they are either pushed back 10 feet, or knocked prone.",
+				"{@bold {@italic Enhanced Blast}}. When you cast the enhanced version of this sign, creatures who fail the saving throw are subjected to both of the effects of the sign, knocking them prone and pushing them back.",
+				"{@bold {@italic Superior Blast}}. When you cast the superior version of this sign, the area of the sign becomes a radius centered on you with the same range, instead of a cone. You can also designate any number of creatures you can see to be unaffected by it. In addition, any creature hit by your blast suffers force damage equal to twice your Wisdom modifier."
+			]
+		},
+		{
+			"name": "Hone",
+			"source": "Farover",
+			"featureType": [
+				"SS"
+			],
+			"entries": [
+				"As a bonus action, you draw the sign of Hone on the hilt or guard of your weapon, and magically empower your next attack. Until the start of your next turn, you have advantage on your next weapon attack.",
+				"{@bold {@italic Enhanced Hone}}. When you cast the enhanced version of this sign, your next weapon attack until the start of your next turn will be made at advantage, and it can also hit one additional creature of your choice within your reach and within 5 feet of the primary target at disadvantage.",
+				"{@bold {@italic Superior Hone}}. When you cast the superior version of this sign, all of your weapon attacks will be made at advantage until the start of your next turn, and your next weapon attack can also hit one additional creature of your choice within your reach and within 10 feet of the primary target at disadvantage."
+			]
+		},
+		{
+			"name": "Ignite",
+			"source": "Farover",
+			"featureType": [
+				"SS"
+			],
+			"entries": [
+				"As a bonus action, you extend your hand outwards, arranging your fingers in the formation of Ignite, and unleash a gush of flames. Each creature in a 15-foot cone must make a Dexterity saving throw, or take {@dice 1d6} fire damage. The damage of this sign increases by {@dice 1d6} when you reach 5th, 9th, 13th, and 17th level.",
+				"{@bold {@italic Enhanced Ignite}}. When you cast the enhanced version of this sign, the affected targets also take half as much damage on a successful save.",
+				"{@bold {@italic Superior Ignite}}. When you cast the superior version of this sign, the sign becomes a concentration spell, and you can keep casting the sign as a bonus action for as long as you maintain concentration on the sign."
+			]
+		},
+		{
+			"name": "Manipulate",
+			"source": "Farover",
+			"featureType": [
+				"SS"
+			],
+			"entries": [
+				"As a bonus action, you draw the sign of Manipulate in the air, and magically influence the mind of a creature by speaking to it. A creature that is immune to being charmed is not affected by this sign. This sign can be cast one of two ways:",
+				{
+					"type": "list",
+					"items": [
+						"You attempt to muddle the mind of one creature that can hear you and you can see within 60 feet. The target must make a Wisdom saving throw. On a failed save, it has disadvantage on the next attack roll it makes before the end of its next turn.",
+						"You attempt to beguile a creature that can hear you and you can see within 30 feet. The target must make a Wisdom saving throw. On a failed save, for 1 minute, you have advantage on all Charisma checks directed at the creature as long as it isn't hostile toward you."
+					]
+				},
+				"{@bold {@italic Enhanced Manipulate}}. When you cast the enhanced version of this sign, both of the two uses gain additional effects:",
+				{
+					"type": "list",
+					"items": [
+						"When you attempt to muddle the mind of a creature, you can target one additional creature that can hear you and you can see within 60 feet.",
+						"When you successfully beguile a creature, it also has disadvantage on any Wisdom based skill checks or Wisdom saving throws it makes for the duration, as long as it isn't hostile toward you."
+					]
+				},
+				"{@bold {@italic Superior Manipulate}}. When you cast the superior version of this sign, both of the two uses gain additional effects, in addition to the effects granted by the enhanced version:",
+				{
+					"type": "list",
+					"items": [
+						"When you successfully muddle the mind of a creature or creatures, you can also force one creature to use it's reaction to take one attack at a target of your choice that is in its range. The disadvantage to the targets next attack roll is not applied to this attack.",
+						"When you beguile a creature, this sign becomes a concentration spell, and it lasts for 10 minutes, but the sign can not be used on a target if it is hostile toward you, or if you or creatures that are friendly to you are fighting it. When initially casting the sign on a target successfully, you can issue a verbal command to the target, which it will follow to the best of it's ability on it's next turn. You can keep issuing commands to the target for the duration of the spell with your actions, but before each command after the initial one, the target will repeat the saving throw, ending the effect on a successful one."
+					]
+				}
+			]
+		},
+		{
+			"name": "Ring",
+			"source": "Farover",
+			"featureType": [
+				"SS"
+			],
+			"entries": [
+				"As a bonus action, you draw a magical ring on the ground with a 15-foot radius centered on you. The ring lasts until the start of your next turn. For the duration of the sign, the area inside the ring is considered difficult terrain for your enemies.",
+				"In addition, enemies that start their turn or enter the ring later on for the first time must make a Wisdom saving throw. On a failed save, they cannot take reactions and invisible creatures are revealed. Leaving the area of the ring ends all of these effects, but re-entering it resumes them. On a successful save, a creature is unaffected by these two effects from this casting of ring.",
+				"{@bold {@italic Enhanced Ring}}. When you cast the enhanced version of this sign, the first ranged attack made against you or an ally inside the ring is made at disadvantage.",
+				"{@bold {@italic Superior Ring}}. When you cast the superior version of this sign, this sign becomes a concentration spell, and lasts for as long as you maintain concentration. In addition, all ranged attacks made against you or an ally inside the ring are made at disadvantage for the duration of the sign."
+			]
+		},
+		{
+			"name": "Expediate",
+			"source": "Farover",
+			"featureType": [
+				"SS"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 17,
+						"subclass": {
+							"name": "School of the Griffin"
+						}
+					}
+				}
+			],
+			"entries": [
+				"This sign costs {@bold 10} vigor points.",
+				"As a bonus action, you draw the sign of Expediate in the air, magically hastening your reflexes and movements for a moment.",
+				"This sign lasts for 10 minutes. The next time you roll initiative, you roll twice, making the second roll with a -10 modifier. You can take your turn twice on this round."
+			]
+		},
+		{
+			"name": "Blizzard",
+			"source": "Farover",
+			"featureType": [
+				"SP"
+			],
+			"entries": [
+				"Whenever an enemy that you have damaged within one round dies, your movement speed is increased by 10 feet until the end of your next turn. This effect can stack up to three times. This potion lasts for 8 hours.",
+				"Drinking this potion increases your toxicity by {@bold 1}."
+			]
+		},
+		{
+			"name": "Cat",
+			"source": "Farover",
+			"featureType": [
+				"SP"
+			],
+			"entries": [
+				"Your Darkvison is increased out to a range of 120 feet, and you have a bonus of +5 to your Stealth checks. This potion lasts for 8 hours.",
+				"Drinking this potion increases your toxicity by {@bold 1}."
+			]
+		},
+		{
+			"name": "Whale",
+			"source": "Farover",
+			"featureType": [
+				"SP"
+			],
+			"entries": [
+				"You can breathe underwater, and you have a swimming speed of 40 feet. This potion lasts for 1 hour.",
+				"Drinking this potion increases your toxicity by {@bold 1}."
+			]
+		},
+		{
+			"name": "Bull",
+			"source": "Farover",
+			"featureType": [
+				"SP"
+			],
+			"entries": [
+				"You have advantage on Strength checks, and your carrying capacity is doubled. This potion lasts for 8 hours.",
+				"Drinking this potion increases your toxicity by {@bold 2}."
+			]
+		},
+		{
+			"name": "Oriole",
+			"source": "Farover",
+			"featureType": [
+				"SP"
+			],
+			"entries": [
+				"You gain resistance to poison damage. If you already have resistance to poison damage, the potion grants you immunity instead. This potion lasts for 1 hour.",
+				"Drinking this potion increases your toxicity by {@bold 2}."
+			]
+		},
+		{
+			"name": "Swallow",
+			"source": "Farover",
+			"featureType": [
+				"SP"
+			],
+			"entries": [
+				"You regain {@dice 2d4+2} hit points. This increases by {@dice 1d4} at 6th, 9th, 12th, 15th, and 18th levels.",
+				"Drinking this potion increases your toxicity by {@bold 2}."
+			]
+		},
+		{
+			"name": "Tiger",
+			"source": "Farover",
+			"featureType": [
+				"SP"
+			],
+			"entries": [
+				"You have advantage on initiative rolls. This potion lasts for 8 hours.",
+				"Drinking this potion increases your toxicity by {@bold 2}."
+			]
+		},
+		{
+			"name": "Black Blood",
+			"source": "Farover",
+			"featureType": [
+				"SP"
+			],
+			"entries": [
+				"Whenever you are hit by a melee attack, the attacking target takes {@dice 1d4} poison damage. This increases to {@dice 1d6} at 8th level, {@dice 1d8} at 13th level, and {@dice 1d10} at 18th level. This potion lasts for 1 hour.",
+				"Drinking this potion increases your toxicity by {@bold 2}."
+			]
+		},
+		{
+			"name": "Owl",
+			"source": "Farover",
+			"featureType": [
+				"SP"
+			],
+			"entries": [
+				"You regain 4 vigor points.",
+				"Drinking this potion increases your toxicity by {@bold 3}."
+			]
+		},
+		{
+			"name": "Thunderbolt",
+			"source": "Farover",
+			"featureType": [
+				"SP"
+			],
+			"entries": [
+				"Your weapon attacks deal an additional {@bold 1d4} thunder damage. This is increased to {@bold 1d6} at 9th level, and {@bold 1d8} at 16th level. This potion lasts for 1 minute.",
+				"Drinking this potion increases your toxicity by {@bold 3}."
+			]
+		},
+		{
+			"name": "Alluring",
+			"source": "Farover",
+			"featureType": [
+				"SM"
+			],
+			"entries": [
+				"You have advantage on Charisma ability checks and saving throws. While this mutagen is active your toxicity is increased by {@bold 3}.",
+				"{@bold {@italic Side Effect}}. You have disadvantage on Intelligence ability checks and saving throws."
+			]
+		},
+		{
+			"name": "Conversant",
+			"source": "Farover",
+			"featureType": [
+				"SM"
+			],
+			"entries": [
+				"You have advantage on Intelligence ability checks and saving throws. While this mutagen is active your toxicity is increased by {@bold 3}.",
+				"{@bold {@italic Side Effect}}. You have disadvantage on Charisma ability checks and saving throws."
+			]
+		},
+		{
+			"name": "Sagacious",
+			"source": "Farover",
+			"featureType": [
+				"SM"
+			],
+			"entries": [
+				"You have advantage on Wisdom ability checks and saving throws. While this mutagen is active your toxicity is increased by {@bold 3}.",
+				"{@bold {@italic Side Effect}}. You have disadvantage on initiative rolls."
+			]
+		},
+		{
+			"name": "Impermeable",
+			"source": "Farover",
+			"featureType": [
+				"SM"
+			],
+			"entries": [
+				"You gain resistance to piercing damage. While this mutagen is active your toxicity is increased by {@bold 4}.",
+				"{@bold {@italic Side Effect}}. You gain vulnerability to slashing damage."
+			]
+		},
+		{
+			"name": "Mighty",
+			"source": "Farover",
+			"featureType": [
+				"SM"
+			],
+			"entries": [
+				"You have advantage on Constitution saving throws. While this mutagen is active your toxicity is increased by {@bold 4}.",
+				"{@bold {@italic Side Effect}}. Your movement speed is decreased by 10 feet."
+			]
+		},
+		{
+			"name": "Precision",
+			"source": "Farover",
+			"featureType": [
+				"SM"
+			],
+			"entries": [
+				"Your weapon attacks score a critical hit on a roll of 19 or 20. While this mutagen is active your toxicity is increased by {@bold 4}.",
+				"{@bold {@italic Side Effect}}. You have disadvantage on Constitution checks and saving throws."
+			]
+		},
+		{
+			"name": "Shielded",
+			"source": "Farover",
+			"featureType": [
+				"SM"
+			],
+			"entries": [
+				"You gain resistance to slashing damage. While this mutagen is active your toxicity is increased by {@bold 4}.",
+				"{@bold {@italic Side Effect}}. You gain vulnerability to bludgeoning damage."
+			]
+		},
+		{
+			"name": "Swift",
+			"source": "Farover",
+			"featureType": [
+				"SM"
+			],
+			"entries": [
+				"Your movement speed is increased by 10 feet. While this mutagen is active your toxicity is increased by {@bold 4}.",
+				"{@bold {@italic Side Effect}}. You have disadvantage on Strength ability checks and saving throws."
+			]
+		},
+		{
+			"name": "Unbreakable",
+			"source": "Farover",
+			"featureType": [
+				"SM"
+			],
+			"entries": [
+				"You gain resistance to bludgeoning damage. While this mutagen is active your toxicity is increased by {@bold 4}.",
+				"{@bold {@italic Side Effect}}. You gain vulnerability to piercing damage."
+			]
+		},
+		{
+			"name": "Wise",
+			"source": "Farover",
+			"featureType": [
+				"SM"
+			],
+			"entries": [
+				"Your Wisdom score increases by 3, as does your Wisdom maximum. While this mutagen is active your toxicity is increased by {@bold 4}.",
+				"{@bold {@italic Side Effect}}. You have disadvantage on Death saving throws."
+			]
+		},
+		{
+			"name": "Double-Edge",
+			"source": "Farover",
+			"featureType": [
+				"SM"
+			],
+			"entries": [
+				"Your gain a +3 to damage rolls with your weapons. While this mutagen is active your toxicity is increased by {@bold 5}.",
+				"{@bold {@italic Side Effect}}. Your Armor Class is decreased by 2."
+			]
+		},
+		{
+			"name": "Embers",
+			"source": "Farover",
+			"featureType": [
+				"SM"
+			],
+			"entries": [
+				"You gain resistance to fire damage. While this mutagen is active your toxicity is increased by {@bold 5}.",
+				"{@bold {@italic Side Effect}}. You gain vulnerability to cold damage."
+			]
+		},
+		{
+			"name": "Gelid",
+			"source": "Farover",
+			"featureType": [
+				"SM"
+			],
+			"entries": [
+				"You gain resistance to cold damage. While this mutagen is active your toxicity is increased by {@bold 5}.",
+				"{@bold {@italic Side Effect}}. You gain vulnerability to fire damage."
+			]
+		},
+		{
+			"name": "Reconstruction",
+			"source": "Farover",
+			"featureType": [
+				"SM"
+			],
+			"entries": [
+				"While you are {@condition wounded|farover}, but not below 1 hit point, you recover hit points equal to 6 + your Constitution modifier at the start of each of your turns. While this mutagen is active your toxicity is increased by {@bold 5}.",
+				"{@bold {@italic Side Effect}}. While you are {@condition wounded|farover}, attack rolls against you have advantage."
+			]
+		},
+		{
+			"name": "Celerity",
+			"source": "Farover",
+			"featureType": [
+				"SM"
+			],
+			"entries": [
+				"Your Dexterity score increases by 3, as does your Dexterity maximum. While this mutagen is active your toxicity is increased by {@bold 6}.",
+				"{@bold {@italic Side Effect}}. You have disadvantage on Wisdom ability checks and saving throws."
+			]
+		},
+		{
+			"name": "Potency",
+			"source": "Farover",
+			"featureType": [
+				"SM"
+			],
+			"entries": [
+				"Your Strength score increases by 3, as does you Strength maximum. While this mutagen is active your toxicity is increased by {@bold 6}.",
+				"{@bold {@italic Side Effect}}. You have disadvantage on Dexterity ability checks and saving throws."
+			]
+		},
+		{
+			"name": "Cruelty",
+			"source": "Farover",
+			"featureType": [
+				"SM"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 13,
+						"subclass": {
+							"name": "School of the Bear"
+						}
+					}
+				}
+			],
+			"entries": [
+				"When you use the Attack action, you can make an additional weapon attack as a bonus action. While this mutagen is active your toxicity is increased by {@bold 7}.",
+				"{@bold {@italic Side Effect}}. You have disadvantage on Intelligence and Wisdom saving throws."
 			]
 		}
 	],
