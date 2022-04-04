@@ -13368,8 +13368,8 @@
 				"SP"
 			],
 			"entries": [
-				"Your weapon attacks deal an additional {@bold 1d4} thunder damage. This is increased to {@bold 1d6} at 9th level, and {@bold 1d8} at 16th level. This potion lasts for 1 minute.",
-				"Drinking this potion increases your toxicity by {@bold 3}."
+				"Your weapon attacks deal an additional {@dice 1d4} thunder damage. This is increased to {@dice 1d6} at 9th level, and {@dice 1d8} at 16th level. This potion lasts for 1 minute.",
+				"Drinking this potion increases your toxicity by {@dice 3}."
 			]
 		},
 		{
@@ -14819,12 +14819,12 @@
 			"classSource": "Farover",
 			"level": 2,
             "entries": [
-                "By the time you reach 2nd level, you have learned to use the magical essence of nature to cast spells, much as a druid does. See chapter 10 of the PHB for the general rules of spellcasting, and page 8 for the ranger {@link spell list|https://5e.tools/spells.html#flstclass:ranger=1,,flstclass:ranger(reworked)=2}.",
+                "By the time you reach 2nd level, you have learned to use the magical essence of nature to cast spells, much as a druid does. See chapter 10 of the PHB for the general rules of spellcasting, and page 8 for the ranger {@filter spell list|spells|class=ranger;ranger (FO)}.",
                 {
 					"type": "entries",
 					"name": "Spell Slots",
 					"entries": [
-						"The Ranger table shows how many spell slots you have to cast your {@link ranger spells|https://5e.tools/spells.html#flstclass:ranger=1,,flstclass:ranger(reworked)=2} of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.",
+						"The Ranger table shows how many spell slots you have to cast your {@filter ranger spells|spells|class=ranger;ranger (FO)} of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.",
                         "For example, if you know the 1st-level spell {@spell animal friendship} and have a 1st-level and a 2nd-level spell slot available, you can cast {@spell animal friendship} using either slot."
 					]
 				},
@@ -14832,7 +14832,7 @@
 					"type": "entries",
 					"name": "Spells Known of 1st Level and Higher",
 					"entries": [
-						"You know three 1st-level spells of your choice from the ranger {@link spell list|https://5e.tools/spells.html#flstclass:ranger=1,,flstclass:ranger(reworked)=2}.",
+						"You know three 1st-level spells of your choice from the ranger {@filter spell list|spells|class=ranger;ranger (FO)}.",
                         "The Spells Known column of the Ranger table shows when you learn more ranger spells of your choice. Each of these spells must be of a level for which you have spell slots. For instance, when you reach 5th level in this class, you can learn one new spell of 1st or 2nd level."
 					]
 				},
@@ -15161,11 +15161,11 @@
 					"entries": [
 						"At 1st level, you know three 1st spells of your choice from the warlock {@filter spell list|spells|class=warlock;warlock (FO)}, and you learn an additional warlock spell of your choice at each level after that.",
 						"The Spells Known column of the warlock table shows when you learn more warlock spells of your choice of 1st level and higher. A spell you choose to learn must be of a level no higher than what's shown in the table's Slot Level column for your level.",
-						"In addition, at 2nd level you learn one additional special warlock spell called a {@filter Dread Spell|spells|subschool=Dread}. You learn one new dread spell every even level you gain in the warlock class, as shown in the Dread Spells Known column of the warlock table.",
+						"In addition, at 2nd level you learn one additional special warlock spell called a {@filter dread spell|spells|subschool=Dread}. You learn one new dread spell every even level you gain in the warlock class, as shown in the Dread Spells Known column of the warlock table.",
                         {
 							"type": "list",
 							"items": [
-								"Dread spells are cast with {@classFeature Soul Shards|Warlock (reworked)|farover|2} instead of spell slots, and dread spells are always cast at the highest possible level.",
+								"Dread spells are cast with {@classFeature soul shards|Warlock (reworked)|farover|2} instead of spell slots, and dread spells are always cast at the highest possible level.",
 								"A dread spell you learn must be of a level equal to what's shown in the table's Slot Level column for your level."
 							]
 						},
@@ -15236,7 +15236,7 @@
 					"type": "list",
 					"items": [
 						"You can use a soul shard to cast certain powerful warlock spells called {@filter dread spells|spells|subschool=Dread}. Dread spells are spells that can be cast only with soul shards.",
-						"You can use a soul shard to summon a fiend to serve you with your {@classFeature Demonic Summoning|Warlock (reworked)|farover|5} feature."
+						"You can use a soul shard to summon a fiend to serve you with your {@classFeature demonic summoning|Warlock (reworked)|farover|5} feature."
 					]
 				},
 				"When you use a soul shard, you suffer {@dice 1d6} {@bold unmitigatable force damage} per level of the spell cast."
@@ -15287,7 +15287,7 @@
                 "You can release your summon at any time back to the plane of shadow as an action. You can also dismiss your summon into a pocket dimension as an action, where it will await your summon. Retrieving your summon from the pocket dimension requires a 10 minute ritual.",
                 "If your summoned fiend is killed, any excess damage is carried over to you. Your summon does not recover any hit points by itself. If you fall unconscious, your summon is sent to the pocket dimension. If you die, your summon is released. You can only have one summon active at a time.",
                 "Your summoned fiends use {@filter different stat blocks|bestiary|search=summoned}, unlike their normal counterparts.",
-                "At 5th level, you can summon an {@creature Summoned Imp|farover|Imp}. Summoning an Imp is considered a 1st level spell for the purpose of Soul Shard damage. At 11th and at 18th level, you gain a new summon."
+                "At 5th level, you can summon an {@creature Summoned imp|farover|imp}. Summoning an Imp is considered a 1st level spell for the purpose of Soul Shard damage. At 11th and at 18th level, you gain a new summon."
             ]
 		},
         {
@@ -15373,7 +15373,7 @@
 			"classSource": "Farover",
 			"level": 11,
             "entries": [
-				"At 11th level, you can now summon a {@creature Summoned Hell Hound|farover|Hell Hound} with your Demonic Summoning. Summoning a Hell Hound is considered a 3rd level spell for the purpose of Soul Shard damage."
+				"At 11th level, you can now summon a {@creature Summoned hell hound|farover|hell hound} with your Demonic Summoning. Summoning a Hell Hound is considered a 3rd level spell for the purpose of Soul Shard damage."
             ]
 		},
         {
@@ -15448,7 +15448,7 @@
 			"classSource": "Farover",
 			"level": 18,
             "entries": [
-				"At 18th level, you can now summon a {@creature Summoned Armanite|farover|Armanite} with your Demonic Summoning. Summoning an Armanite is considered a 5th level spell for the purpose of Soul Shard damage."
+				"At 18th level, you can now summon a {@creature Summoned Armanite|farover|armanite} with your Demonic Summoning. Summoning an Armanite is considered a 5th level spell for the purpose of Soul Shard damage."
             ]
 		},
         {
