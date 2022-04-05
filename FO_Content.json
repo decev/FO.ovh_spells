@@ -9801,7 +9801,7 @@
 				{
 					"name": "At Higher Levels",
 					"entries": [
-						"When you cast this spell using a spell slot of of 3rd level or higher, the spell can suppress an {@spell arcane lock} if the knock is cast at an equal or higher level.",
+						"When you cast this spell using a spell slot of of 3rd level or higher, the spell can suppress an {@spell arcane lock|farover} if the knock is cast at an equal or higher level.",
 						"When you cast this spell using a spell slot of at least 4th level, the spell can unlock medium locks. When you cast this spell using a spell slot of at least 6th level, the spell can unlock hard locks. When you cast this spell using a spell slot of at least 8th level, the spell can unlock \"unbreakable\" locks."
 					]
 				}
@@ -12624,10 +12624,10 @@
                 "Venerable (average)"
 			],
 			"colStyles": [
-				"text-center col-1",
-				"text-center col-4",
-                "text-center col-4",
-                "text-center col-3"
+				"text-center col-3",
+				"text-center col-2",
+                "text-center col-2",
+                "text-center col-2"
 			],
 			"rows": [
 				[
@@ -12829,7 +12829,7 @@
 				],
 				[
 					"Greatclub",
-					"2 2p",
+					"2 sp",
                     "{@dice 1d10} bludgeoning",
                     "10 lb.",
                     "Huge",
