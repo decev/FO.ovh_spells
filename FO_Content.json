@@ -1863,7 +1863,7 @@
 					"type": "list",
 					"items": [
 						"When another creature hits you with either a melee weapon attack, or a ranged weapon attack with a physical arrow or bolt, you can use your reaction, expending {@bold 1} vigor point, to use your melee weapon to parry the incoming attack, adding +2 to your AC against that attack.",
-						"When another creature misses you with a melee attack with a weapon, you can use your reaction, expending {@bold 1} vigor point, to attempt to disarm the creature. Make a melee weapon attack, contested by the target's Strength (Athletics) check or Dexterity (Acrobatics) check. If you win, the target drops the weapon it missed you with.",
+						"When another creature misses you with a melee attack with a weapon, you can use your reaction, expending {@bold 1} vigor point, to attempt to disarm the creature. Make a melee weapon attack, contested by the target's {@skill Athletics} check or {@skill Acrobatics} check. If you win, the target drops the weapon it missed you with.",
                         "You can use a bonus action on your turn, expending {@bold 2} vigor points, to make a ranged attack with either a weapon that has the thrown property, or a hand crossbow. You can draw the weapon as part of making this attack."
 					]
 				}
@@ -1995,7 +1995,7 @@
 			"subclassShortName": "Viper",
 			"level": 13,
 			"entries": [
-				"At 13th level, you can craft one free weapon oil of any kind as a part of your {@classFeature slayer alchemy|Slayer|farover|3} feature during a short rest. This oil does not count towards your total craftable items.",
+				"At 13th level, you can craft one free {@variantrule weapon oils|farover} of any kind as a part of your {@classFeature slayer alchemy|Slayer|farover|3} feature during a short rest. This oil does not count towards your total craftable items.",
 				"When you apply the oil to a weapon of yours, it lasts indefinitely, or until you coat the weapon with a different oil or poison. This feature can only be active on one weapon at a time; coating an additional weapon with a weapon oil works as normal.",
 				"In addition, when a creature makes a saving throw against any consumable poison directly administered or applied by you, the creature makes the saving throw at disadvantage."
 			]
@@ -12585,6 +12585,16 @@
 				}
 			],
 			"source": "Farover"
+		}
+	],
+	"variantrule": [
+		{
+			"name": "Weapon Oils",
+			"source": "Farover",
+			"entries": [
+				"Weapon oils are specialized chemical compounds that are effective against different types of creatures. One oil exists for every creature type (humanoid, beast, dragon, etc.), and they all have the same effect on their target. Weapon oil vials can be bought in most major towns/cities, and they cost 40g per dose, weigh 1 lb, and they last for either 5 successful weapon attacks or 24 hours, dealing 1d4 extra damage to the type of creature its meant for. Coating a weapon in oil is an action.",
+				"Characters with a proficiency with the {@item Poisoner's Kit|phb} can craft weapon oils for a cheaper price."
+			]
 		}
 	],
 	"item": [
