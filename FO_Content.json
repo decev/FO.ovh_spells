@@ -12168,6 +12168,19 @@
 			"source": "Farover"
 		}
 	],
+	"item": [
+		{
+			"name": "Slayer Medallion",
+			"weight": 1,
+			"wondrous": true,
+			"tier": "minor",
+			"source": "Farover",
+			"entries": [
+				"A slayer medallion is a magical silver amulet shaped like the symbol of the school a slayer belongs to.",
+				"A slayer medallion serves as the spellcasting focus that slayers use for {@filter signs|optionalfeatures|feature type=ss}."
+			]
+		}
+	],
 	"table": [
 		{
 			"name": "Aging Effects",
