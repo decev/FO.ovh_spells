@@ -225,6 +225,64 @@
                 "Army of the Dead|Warlock (reworked)|Farover|Necromancy|Farover|10",
 				"Undying|Warlock (reworked)|Farover|Necromancy|Farover|14"
 			]
+		},
+		{
+			"name": "School of the Manticore",
+			"source": "Farover",
+			"className": "Slayer",
+			"classSource": "Farover",
+			"shortName": "Manticore",
+			"subclassFeatures": [
+				"School of the Manticore|Slayer|Farover|Manticore|Farover|3",
+				"Heightened Tolerance|Slayer|Farover|Manticore|Farover|3",
+				"Venomous Blades|Slayer|Farover|Manticore|Farover|9",
+                "Undying Mutant|Slayer|Farover|Manticore|Farover|13",
+				"Mutated Deviant|Slayer|Farover|Manticore|Farover|17"
+			]
+		},
+		{
+			"name": "School of the Griffon",
+			"source": "Farover",
+			"className": "Slayer",
+			"classSource": "Farover",
+			"shortName": "Griffon",
+			"subclassFeatures": [
+				"School of the Griffon|Slayer|Farover|Griffon|Farover|3",
+				"Arcane Repertoire|Slayer|Farover|Griffon|Farover|3",
+				"Improved Sign Magic|Slayer|Farover|Griffon|Farover|9",
+                "Supercharge|Slayer|Farover|Griffon|Farover|13",
+				"Hastened Reflexes|Slayer|Farover|Griffon|Farover|17"
+			]
+		},
+		{
+			"name": "School of the Bear",
+			"source": "Farover",
+			"className": "Slayer",
+			"classSource": "Farover",
+			"shortName": "Bear",
+			"subclassFeatures": [
+				"School of the Bear|Slayer|Farover|Bear|Farover|3",
+				"Bonus Proficiencies|Slayer|Farover|Bear|Farover|3",
+				"Martial Reflexes|Slayer|Farover|Bear|Farover|3",
+				"Sharpened Technique|Slayer|Farover|Bear|Farover|9",
+                "Cruel Onslaught|Slayer|Farover|Bear|Farover|13",
+				"Devastating Strikes|Slayer|Farover|Bear|Farover|17"
+			]
+		},
+		{
+			"name": "School of the Viper",
+			"source": "Farover",
+			"className": "Slayer",
+			"classSource": "Farover",
+			"shortName": "Viper",
+			"subclassFeatures": [
+				"School of the Viper|Slayer|Farover|Viper|Farover|3",
+				"Twin Fangs Fighting Style|Slayer|Farover|Viper|Farover|3",
+				"Improved Twin Fangs|Slayer|Farover|Viper|Farover|9",
+				"Viper's Mark|Slayer|Farover|Viper|Farover|9",
+                "Premeditated Murder|Slayer|Farover|Viper|Farover|13",
+				"Assiduous Duelist|Slayer|Farover|Viper|Farover|17"
+			]
 		}
 	],
 	"subclassFeature": [
@@ -1593,6 +1651,367 @@
                 "Starting at 14th level, your necromantic powers can raise those that are at deaths door.",
                 "Whenever you are reduced to below 0 hit points, each successful death saving throw you make is treated as a natural 20.",
                 "In addition, whenever a creature within 30 feet of you rolls a successful death saving throw, you can use your reaction to cause that death saving throw to be treated as a natural 20."
+			]
+		},
+		{
+			"name": "School of the Manticore",
+			"source": "Farover",
+			"className": "Slayer",
+			"classSource": "Farover",
+			"subclassSource": "Farover",
+			"subclassShortName": "Manticore",
+			"level": 3,
+			"entries": [
+                "The school of the manticore focuses on the utilization and improvement of the products of slayer alchemy, as well as their improved toxicity levels. The manticore schools members find that success in combat and hunting comes from good preparation with the right consumables for the job."
+			]
+		},
+		{
+			"name": "Heightened Tolerance",
+			"source": "Farover",
+			"className": "Slayer",
+			"classSource": "Farover",
+			"subclassSource": "Farover",
+			"subclassShortName": "Manticore",
+			"level": 3,
+			"entries": [
+                "Starting at 3rd level when you choose this subclass, your body has developed and mutated to such an extent that it surpasses even normal slayer levels of tolerance towards toxicity. Your toxicity limit is increased by 2, and you learn one additional Slayer Alchemy formula.",
+				"You can now also consume products of your Slayer Alchemy feature even if they would bring you over your toxicity limit, at the cost of being increasingly vulnerable to damage.",
+				"When you consume slayer alchemy items exceeding your toxicity limit, each point you exceed your toxicity limit with causes you to take 1 additional damage each time you suffer damage from any source. You can not exceed your toxicity limit by more than what your current slayer level is at the time. If and when your toxicity level goes down, your damage vulnerability also decreases accordingly."
+			]
+		},
+		{
+			"name": "Venomous Blades",
+			"source": "Farover",
+			"className": "Slayer",
+			"classSource": "Farover",
+			"subclassSource": "Farover",
+			"subclassShortName": "Manticore",
+			"level": 9,
+			"entries": [
+                "Starting at 9th level, your toxicity makes even your weapons venomous. When you are at or above your toxicity limit, your weapon attacks deal an additional {@dice 1d6} poison damage."
+			]
+		},
+		{
+			"name": "Undying Mutant",
+			"source": "Farover",
+			"className": "Slayer",
+			"classSource": "Farover",
+			"subclassSource": "Farover",
+			"subclassShortName": "Manticore",
+			"level": 13,
+			"entries": [
+                "Starting at 13th level, your venomous blood can fortify you even against lethal damage. When you suffer damage that would reduce you to below 1 hit point, the toxicity in your veins can rush through and cauterize the wound.",
+				"If you choose to, your current toxicity level at the time can negate damage that would bring you below 1 hit point, so that every 1 toxicity prevents 1 damage, up to a maximum amount equal to your current toxicity level. Each point of toxicity that prevents damage when this happens is then lost. If you have any active mutagens when this occurs, and the toxicity you lose would bring you below what is currently being caused by a mutagen, then the effects of that mutagen ends.",
+				"Once you use this feature, it can not be used again until you finish a long rest."
+			]
+		},
+		{
+			"name": "Mutated Deviant",
+			"source": "Farover",
+			"className": "Slayer",
+			"classSource": "Farover",
+			"subclassSource": "Farover",
+			"subclassShortName": "Manticore",
+			"level": 17,
+			"entries": [
+                "At 17th level, your body becomes so malleable that you can permanently alter yourself for the better.",
+				"Choose one slayer {@filter mutagen|optionalfeatures|feature type=sm} that you have access to. You gain the effects of that mutagen permanently, without the toxicity cost or the negative side effects."
+			]
+		},
+		{
+			"name": "School of the Griffon",
+			"source": "Farover",
+			"className": "Slayer",
+			"classSource": "Farover",
+			"subclassSource": "Farover",
+			"subclassShortName": "Griffon",
+			"level": 3,
+			"entries": [
+				"The school of the griffon specializes in the use and mastery of signs and other magic. Although slayers typically only use very basic arcane magic, the griffon school's members train to further their abilities beyond just that."
+			]
+		},
+		{
+			"name": "Arcane Repertoire",
+			"source": "Farover",
+			"className": "Slayer",
+			"classSource": "Farover",
+			"subclassSource": "Farover",
+			"subclassShortName": "Griffon",
+			"level": 3,
+			"entries": [
+                "Starting at 3rd level when you choose this subclass, your education in the arcane arts grants you an increased arsenal of low level magic. If any spells require a spell save DC or spell attack rolls, Wisdom is your spellcasting modifier.",
+				"From now on, whenever you would learn a new sign, you can choose to learn certain spells instead. You can learn cantrips and 1st-level spells at 3rd level, 2nd-level spells at 5th level, and 3rd-level spells at 9th level. You can use your slayer medallion as a spellcasting focus for these spells.",
+				"Casting a cantrip costs no vigor points, a 1st-level spell costs 3 vigor points, a 2nd-level spell costs 5 vigor points, and a 3rd-level spell costs 8 vigor points. These spells can be cast at higher levels.",
+				"When you choose this subclass, you learn two additional signs or spells, and your maximum vigor points is increased by 3.",
+				"You also now learn one additional sign or spell each time you gain a level in this class all the way up to level 20, instead of the normal every other level up to level 10.",
+				{
+                    "type": "table",
+                    "caption": "School of the Griffon Spells",
+                    "colLabels": [
+                        "Spell Level",
+                        "Spells"
+                    ],
+                    "colStyles": [
+                        "col-3 text-center",
+                        "col-9"
+                    ],
+                    "rows": [
+                        [
+                            "Cantrip",
+                            "{@spell acid splash}, {@spell create bonfire|xge}, {@spell poison spray}, {@spell produce flame}, {@spell sword burst|tce}, {@spell thorn whip}"
+                        ],
+                        [
+                            "1st",
+                            "{@spell absorb elements|farover}, {@spell burning rush|farover}, {@spell charm person}, {@spell color spray}, {@spell command}, {@spell ensnaring strike}, {@spell faerie fire}, {@spell searing smite}, {@spell snare|xge}, {@spell thunderous smite}, {@spell zephyr strike|xge}"
+                        ],
+                        [
+                            "2nd",
+                            "{@spell calm emotions}, {@spell cordon of arrows|farover}, {@spell earthbind|xge}, {@spell enthrall}, {@spell hold person|farover}, {@spell magic weapon}, {@spell pass without trace}, {@spell pyrotechnics|xge}, {@spell see invisibility}, {@spell spider climb}, {@spell suggestion}"
+                        ],
+                        [
+                            "3rd",
+                            "{@spell dispel magic|farover}, {@spell elemental weapon}, {@spell enemies abound|xge}, {@spell fear}, {@spell glyph of warding}, {@spell identify curse|farover}, {@spell magic circle}, {@spell remove curse|farover}, {@spell wind wall}"
+                        ]
+                    ]
+                }
+			]
+		},
+		{
+			"name": "Improved Sign Magic",
+			"source": "Farover",
+			"className": "Slayer",
+			"classSource": "Farover",
+			"subclassSource": "Farover",
+			"subclassShortName": "Griffon",
+			"level": 9,
+			"entries": [
+				"Starting at 9th level, all of your {@filter signs|optionalfeatures|feature type=ss}, and each of their versions become more potent:",
+				"{@bold {@italic Barrier.}} Now also grants resistance to acid, force, thunder, and lightning damage as well.",
+				"{@bold {@italic Blast.}} The range of the sign is increased by 15 feet, and the pushback distance is increased by 5 feet.",
+				"{@bold {@italic Hone.}} The reach of your honed weapon attacks is increased by 5 feet.",
+				"{@bold {@italic Ignite.}} The flames now spread around corners, so that affected creatures do not benefit from 1/2 or 3/4 cover.",
+				"{@bold {@italic Manipulate.}} The range of the sign is increased by 30 feet.",
+				"{@bold {@italic Ring.}} The radius of the ring is increased by 5 feet."
+			]
+		},
+		{
+			"name": "Supercharge",
+			"source": "Farover",
+			"className": "Slayer",
+			"classSource": "Farover",
+			"subclassSource": "Farover",
+			"subclassShortName": "Griffon",
+			"level": 13,
+			"entries": [
+				"Starting at 13th level, you can now cast the basic versions of your basic signs without expending any vigor points.",
+				"In addition, you can now supercharge all of your signs to deal extra damage by spending additional vigor points when casting a sign. When casting any sign, you can spend up to 5 additional vigor points to supercharge the sign. Each additional vigor point used gives the sign {@dice 1d6} extra damage. The supercharged sign deals this damage when varying circumstances are met, based on the sign:",
+				"{@bold {@italic Barrier.}} When a creatures attack is resisted by the barrier for the first time for that enemy, they must make a Constitution saving throw, suffering the supercharge damage on a failed save, and half as much on a success. The damage is thunder damage.",
+				"{@bold {@italic Blast.}} When a creature makes a saving throw against your blast, they suffer the additional supercharge damage on a failed save, and half as much on a success. The damage is force damage.",
+				"{@bold {@italic Hone.}} If a weapon attack affected by your Hone hits a target, they suffer the additional supercharge damage, which is determined by the weapons damage type.",
+				"{@bold {@italic Ignite.}} The supercharge damage of ignite, which is fire, is added to the damage roll for the sign.",
+				"{@bold {@italic Manipulate.}} When a creature fails the saving throw against your manipulate, they suffer the additional supercharge damage, which is psychic damage.",
+				"{@bold {@italic Ring.}} When an enemy fails the saving throw against your ring, they suffer the supercharge damage, which is lightning damage."
+			]
+		},
+		{
+			"name": "Hastened Reflexes",
+			"source": "Farover",
+			"className": "Slayer",
+			"classSource": "Farover",
+			"subclassSource": "Farover",
+			"subclassShortName": "Griffon",
+			"level": 17,
+			"entries": [
+				"At 17th level, you learn a new unique sign, called {@optfeature Expediate|farover}. This sign does not count toward your total Signs Known. The Expediate sign only has a basic version, and always costs 10 vigor points, not benefiting from your Supercharge feature."
+			]
+		},
+		{
+			"name": "School of the Bear",
+			"source": "Farover",
+			"className": "Slayer",
+			"classSource": "Farover",
+			"subclassSource": "Farover",
+			"subclassShortName": "Bear",
+			"level": 3,
+			"entries": [
+				"The school of the bear is the school that prefers a more practical and straightforward approach in combat, focusing on martial ability and skill."
+			]
+		},
+		{
+			"name": "Bonus Proficiencies",
+			"source": "Farover",
+			"className": "Slayer",
+			"classSource": "Farover",
+			"subclassSource": "Farover",
+			"subclassShortName": "Bear",
+			"level": 3,
+			"entries": [
+				"When you select the School of the Bear at 3rd level, you gain proficiency with all weapons that have the Thrown property."
+			]
+		},
+		{
+			"name": "Martial Reflexes",
+			"source": "Farover",
+			"className": "Slayer",
+			"classSource": "Farover",
+			"subclassSource": "Farover",
+			"subclassShortName": "Bear",
+			"level": 3,
+			"entries": [
+				"Starting at 3rd level when you choose this subclass, your extensive training in melee combat allows you to utilize your reflexes to perform new feats. You can expend vigor points for one of the following effects:",
+				{
+					"type": "list",
+					"items": [
+						"When another creature hits you with either a melee weapon attack, or a ranged weapon attack with a physical arrow or bolt, you can use your reaction, expending {@bold 1} vigor point, to use your melee weapon to parry the incoming attack, adding +2 to your AC against that attack.",
+						"When another creature misses you with a melee attack with a weapon, you can use your reaction, expending {@bold 1} vigor point, to attempt to disarm the creature. Make a melee weapon attack, contested by the target's Strength (Athletics) check or Dexterity (Acrobatics) check. If you win, the target drops the weapon it missed you with.",
+                        "You can use a bonus action on your turn, expending {@bold 2} vigor points, to make a ranged attack with either a weapon that has the thrown property, or a hand crossbow. You can draw the weapon as part of making this attack."
+					]
+				}
+			]
+		},
+		{
+			"name": "Sharpened Technique",
+			"source": "Farover",
+			"className": "Slayer",
+			"classSource": "Farover",
+			"subclassSource": "Farover",
+			"subclassShortName": "Bear",
+			"level": 9,
+			"entries": [
+				"Starting at 9th level, each version of the {@optfeature Hone|farover} sign is now a free action for you, instead of a bonus action. You can only cast Hone once per turn. The vigor point costs of the sign remain the same."
+			]
+		},
+		{
+			"name": "Cruel Onslaught",
+			"source": "Farover",
+			"className": "Slayer",
+			"classSource": "Farover",
+			"subclassSource": "Farover",
+			"subclassShortName": "Bear",
+			"level": 13,
+			"entries": [
+				"Starting at 13th level, you learn the formula for the {@optfeature Cruelty|farover|Cruelty mutagen}. This formula does not count towards your total Slayer Alchemy formulae known."
+			]
+		},
+		{
+			"name": "Devastating Strikes",
+			"source": "Farover",
+			"className": "Slayer",
+			"classSource": "Farover",
+			"subclassSource": "Farover",
+			"subclassShortName": "Bear",
+			"level": 17,
+			"entries": [
+				"Starting at 17th level, you learn a new devastating attack action option based on your fighting style. Using this special attack takes up your entire action.",
+				{
+					"type": "entries",
+					"name": "Hemorrhage",
+					"entries": [
+						"If you have selected the Deftness {@classFeature fighting style|Slayer|farover|1}, you learn this attack option.",
+                        "You make a well placed weapon attack with advantage at a weak spot of your target. If the attack hits, the weapons damage dice is doubled, and the target will bleed for {@dice 1d4} rounds, taking an additional {@dice 1d8} damage at the start of each of it's turns for the duration."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Rend",
+					"entries": [
+						"If you have selected the Great Weapon Fighting {@classFeature fighting style|Slayer|farover|1}, you learn this attack option.",
+                        "You make a powerful attack with advantage, bringing your weapon down from great height. If the attack hits, the weapons damage dice is doubled, and the target takes additional weapon damage equal to twice the amount by how much the attack roll passed the targets armor class."
+					]
+				}
+			]
+		},
+		{
+			"name": "School of the Viper",
+			"source": "Farover",
+			"className": "Slayer",
+			"classSource": "Farover",
+			"subclassSource": "Farover",
+			"subclassShortName": "Viper",
+			"level": 3,
+			"entries": [
+				"The school of the viper is a less known school of slayers, who specialize specifically on stealth and assassination, often times taking on contracts for humanoids rather than monsters. Slayers from the school of the viper typically dual wield smaller weapons called the twin fangs, as opposed to the traditional single two-handed weapon."
+			]
+		},
+		{
+			"name": "Twin Fangs Fighting Style",
+			"source": "Farover",
+			"className": "Slayer",
+			"classSource": "Farover",
+			"subclassSource": "Farover",
+			"subclassShortName": "Viper",
+			"level": 3,
+			"entries": [
+				"Starting at 3rd level when you select this subclass, your intensive training in the quick and unpredictable fighting style of the viper slayers begins to yield results, granting you the benefits of this exceptional fighting style:",
+				{
+					"type": "list",
+					"items": [
+						"When you engage in two-weapon fighting, you can make your off-hand attack as a part of the same action as your main-hand attack(s), instead of with a bonus action as usual.",
+						"You can use two-weapon fighting even when the one-handed melee weapons you are wielding aren't light.",
+                        "You can perform the somatic components of your slayer signs even while wielding a weapon in the same hand."
+					]
+				}
+			]
+		},
+		{
+			"name": "Improved Twin Fangs",
+			"source": "Farover",
+			"className": "Slayer",
+			"classSource": "Farover",
+			"subclassSource": "Farover",
+			"subclassShortName": "Viper",
+			"level": 9,
+			"entries": [
+				"Starting at 9th level, when you engage in the twin fangs fighting style, you can add your ability modifier to the damage of your off-hand attack."
+			]
+		},
+		{
+			"name": "Viper's Mark",
+			"source": "Farover",
+			"className": "Slayer",
+			"classSource": "Farover",
+			"subclassSource": "Farover",
+			"subclassShortName": "Viper",
+			"level": 9,
+			"entries": [
+				"At 9th level, you can silently mark a target for death as your designated prey. As a bonus action, choose one creature you can see within 120 feet of you. The target is marked for 1 minute. The mark ends early if the target dies, you die, or you are incapacitated. Until the mark ends, you gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"Your movement speed is doubled and your jump distance is tripled for the duration, as long as you are moving towards your marked target.",
+						"The first time you attack the target on your turn after marking it, you have advantage on attack rolls on that turn against the marked target.",
+                        "Once per turn for the duration, you can deal an extra {@dice 1d8} poison damage to the marked target with a weapon attack."
+					]
+				},
+				"Once you use this feature, you can't use it again until you finish a short or long rest."
+			]
+		},
+		{
+			"name": "Premeditated Murder",
+			"source": "Farover",
+			"className": "Slayer",
+			"classSource": "Farover",
+			"subclassSource": "Farover",
+			"subclassShortName": "Viper",
+			"level": 13,
+			"entries": [
+				"At 13th level, you can craft one free weapon oil of any kind as a part of your {@classFeature slayer alchemy|Slayer|farover|3} feature during a short rest. This oil does not count towards your total craftable items.",
+				"When you apply the oil to a weapon of yours, it lasts indefinitely, or until you coat the weapon with a different oil or poison. This feature can only be active on one weapon at a time; coating an additional weapon with a weapon oil works as normal.",
+				"In addition, when a creature makes a saving throw against any consumable poison directly administered or applied by you, the creature makes the saving throw at disadvantage."
+			]
+		},
+		{
+			"name": "Assiduous Duelist",
+			"source": "Farover",
+			"className": "Slayer",
+			"classSource": "Farover",
+			"subclassSource": "Farover",
+			"subclassShortName": "Viper",
+			"level": 17,
+			"entries": [
+				"At 17th level, your keenly developed viper's mark reaches its full potential.",
+				"If the marked target hits you with an attack roll, you can use your reaction to roll a d6. On a 4 or higher, the attack instead misses you, regardless of its roll.",
+				"In addition, when your marked target dies, you can apply the mark to a different creature you can see within 60 feet of you, provided you aren't incapacitated."
 			]
 		}
 	],
