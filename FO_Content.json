@@ -1995,7 +1995,7 @@
 			"subclassShortName": "Viper",
 			"level": 13,
 			"entries": [
-				"At 13th level, you can craft one free {@variantrule weapon oils|farover} of any kind as a part of your {@classFeature slayer alchemy|Slayer|farover|3} feature during a short rest. This oil does not count towards your total craftable items.",
+				"At 13th level, you can craft one free {@variantrule weapon oils|farover|weapon oil} of any kind as a part of your {@classFeature slayer alchemy|Slayer|farover|3} feature during a short rest. This oil does not count towards your total craftable items.",
 				"When you apply the oil to a weapon of yours, it lasts indefinitely, or until you coat the weapon with a different oil or poison. This feature can only be active on one weapon at a time; coating an additional weapon with a weapon oil works as normal.",
 				"In addition, when a creature makes a saving throw against any consumable poison directly administered or applied by you, the creature makes the saving throw at disadvantage."
 			]
@@ -9313,7 +9313,7 @@
 			],
 			"entries": [
 				"You touch a closed door, window, gate, chest, or other entryway, and it becomes locked for the duration. The arcane lock serves as a \"Hard Lock\" for the purposes of lockpicking. You and the creatures you designate when you cast this spell can open the object normally. You can also set a password that, when spoken within 5 feet of the object, suppresses this spell for 1 minute.",
-				"Casting a {@spell knock} spell on the object suppresses {@spell arcane lock} for 10 minutes."
+				"Casting a {@spell knock|farover} spell on the object suppresses {@spell arcane lock|farover} for 10 minutes."
 			],
 			"classes": {
 				"fromClassList": [
@@ -9327,7 +9327,7 @@
 				{
 					"name": "At Higher Levels",
 					"entries": [
-						"When you cast this spell using a spell slot of at least 4th level, the arcane lock serves as an \"Unbreakable Lock\" for the purpose of lockpicking. When you cast this spell using a spell slot of 3rd level or higher, the arcane lock is immune to a {@spell knock} spell if the arcane lock was cast with a higher level spell slot than the {@spell knock}."
+						"When you cast this spell using a spell slot of at least 4th level, the arcane lock serves as an \"Unbreakable Lock\" for the purpose of lockpicking. When you cast this spell using a spell slot of 3rd level or higher, the arcane lock is immune to a {@spell knock|farover} spell if the arcane lock was cast with a higher level spell slot than the {@spell knock|farover}."
 					]
 				}
 			]
@@ -9768,7 +9768,7 @@
 			"entries": [
 				"Choose an object that you can see within range. The object can be a door, a box, a {@item chest|phb}, a set of {@item manacles|phb}, a padlock, or another object that contains a mundane or magical means that prevents access. The lock must be the quality of an \"Easy Lock\" when it comes to lockpicking.",
 				"A target that is held shut by a easy lock or that is stuck or barred becomes unlocked, unstuck, or unbarred. If the object has multiple locks, only one of them is unlocked.",
-				"If you choose a target that is held shut with an {@spell arcane lock} spell cast at equal or lower level than the knock, the {@spell arcane lock} is suppressed for 10 minutes, during which time the target can be opened and shut normally.",
+				"If you choose a target that is held shut with an {@spell arcane lock|farover} spell cast at equal or lower level than the knock, the {@spell arcane lock|farover} is suppressed for 10 minutes, during which time the target can be opened and shut normally.",
 				"When you cast the spell, a loud knock, audible from as far away as 300 feet, emanates from the target object."
 			],
 			"miscTags": [
