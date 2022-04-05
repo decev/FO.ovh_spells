@@ -12172,8 +12172,8 @@
 		{
 			"name": "Slayer Medallion",
 			"weight": 1,
-			"wondrous": true,
-			"tier": "minor",
+			"wondrous": false,
+			"type": "spellcasting focus",
 			"source": "Farover",
 			"entries": [
 				"A slayer medallion is a magical silver amulet shaped like the symbol of the school a slayer belongs to.",
