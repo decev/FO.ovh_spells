@@ -13412,6 +13412,181 @@
                     "15 lb."
 				]
             ]
+		},
+		{
+			"name": "Spell Concentration Points",
+			"source": "DDHQP",
+			"caption": "100 Quirks and Peculiarities",
+			"colLabels": [
+				"Concentration Points",
+				"Spell"
+			],
+			"colStyles": [
+				"text-align-left",
+				"text-align-left"
+			],
+			"rows": [
+				[
+					"{@bold Cantrips}",
+					""
+				],
+				[
+					"0",
+					"{@spell dancing lights}"
+				],
+				[
+					"0",
+					"{@spell friends}"
+				],
+				[
+					"1",
+					"{@spell create bonfire|xge}"
+				],
+				[
+					"1",
+					"{@spell guidance}"
+				],
+				[
+					"1",
+					"{@spell resistance}"
+				],
+				[
+					"1",
+					"{@spell true strike}"
+				],
+				[
+					"{@bold 1st Level Spells}",
+					""
+				],
+				[
+					"0",
+					"{@spell beast bond|xge}"
+				],
+				[
+					"0",
+					"{@spell detect evil and good}"
+				],
+				[
+					"0",
+					"{@spell detect magic|farover}"
+				],
+				[
+					"0",
+					"{@spell detect poison and disease}"
+				],
+				[
+					"1",
+					"{@spell bane}"
+				],
+				[
+					"1",
+					"{@spell battlefate|farover}"
+				],
+				[
+					"1",
+					"{@spell compelled duel}"
+				],
+				[
+					"1",
+					"{@spell divine favor}"
+				],
+				[
+					"1",
+					"{@spell Expeditious Retreat}"
+				],
+				[
+					"1",
+					"{@spell faerie fire}"
+				],
+				[
+					"1",
+					"{@spell fog cloud}"
+				],
+				[
+					"1",
+					"{@spell heroism}"
+				],
+				[
+					"1",
+					"{@spell protection from evil and good}"
+				],
+				[
+					"1",
+					"{@spell shield of fate}"
+				],
+				[
+					"1",
+					"{@spell silent image}"
+				],
+				[
+					"1",
+					"{@spell witch bolt|farover}"
+				],
+				[
+					"2",
+					"{@spell bless}"
+				],
+				[
+					"2",
+					"{@spell cause fear|xge}"
+				],
+				[
+					"2",
+					"{@spell drain life|farover}"
+				],
+				[
+					"2",
+					"{@spell ensnaring strike}"
+				],
+				[
+					"2",
+					"{@spell entangle}"
+				],
+				[
+					"2",
+					"{@spell hail of thorns}"
+				],
+				[
+					"2",
+					"{@spell searing smite}"
+				],
+				[
+					"2",
+					"{@spell soulburn|farover}"
+				],
+				[
+					"2",
+					"{@spell tasha's caustic brew|tce}"
+				],
+				[
+					"2",
+					"{@spell tasha's hideous laughter}"
+				],
+				[
+					"2",
+					"{@spell thunderous smite}"
+				],
+				[
+					"2",
+					"{@spell wrathful smite}"
+				],
+				[
+					"2",
+					"{@spell zephyr strike|xge}"
+				],
+				[
+					"{@bold 2nd Level Spells}",
+					""
+				],
+				[
+					"0",
+					"{@spell beast sense}"
+				],
+				[
+					"0",
+					"{@spell detect thoughts}"
+				]
+			]
 		}
 	],
     "optionalfeature": [
@@ -14006,6 +14181,11 @@
 				{
 					"level": {
 						"level": 13,
+						"class": {
+							"name": "Slayer",
+							"source": "Farover",
+							"visible": true
+						},
 						"subclass": {
 							"name": "Bear",
 							"source": "Farover",
