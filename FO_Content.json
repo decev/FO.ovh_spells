@@ -13692,7 +13692,9 @@
 					"level": {
 						"level": 17,
 						"subclass": {
-							"name": "School of the Griffin"
+							"name": "Griffon",
+							"source": "Farover",
+							"visible": true
 						}
 					}
 				}
@@ -14000,7 +14002,9 @@
 					"level": {
 						"level": 13,
 						"subclass": {
-							"name": "School of the Bear"
+							"name": "Bear",
+							"source": "Farover",
+							"visible": true
 						}
 					}
 				}
