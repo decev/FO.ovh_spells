@@ -13691,6 +13691,11 @@
 				{
 					"level": {
 						"level": 17,
+						"class": {
+							"name": "Slayer",
+							"source": "Farover",
+							"visible": true
+						},
 						"subclass": {
 							"name": "Griffon",
 							"source": "Farover",
