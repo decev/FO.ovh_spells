@@ -13584,6 +13584,170 @@
 				[
 					"0",
 					"{@spell detect thoughts}"
+				],
+				[
+					"0",
+					"{@spell flame blade}"
+				],
+				[
+					"0",
+					"{@spell locate object}"
+				],
+				[
+					"0",
+					"{@spell shadow blade|xge}"
+				],
+				[
+					"0",
+					"{@spell skywrite|xge}"
+				],
+				[
+					"0",
+					"{@spell suggestion}"
+				],
+				[
+					"0",
+					"{@spell wristpocket|egw}"
+				],
+				[
+					"1",
+					"{@spell alter self}"
+				],
+				[
+					"1",
+					"{@spell barkskin|farover}"
+				],
+				[
+					"1",
+					"{@spell calm emotions}"
+				],
+				[
+					"1",
+					"{@spell cloud of daggers}"
+				],
+				[
+					"1",
+					"{@spell darkness}"
+				],
+				[
+					"1",
+					"{@spell enhance ability}"
+				],
+				[
+					"1",
+					"{@spell enlarge/reduce}"
+				],
+				[
+					"1",
+					"{@spell levitate}"
+				],
+				[
+					"1",
+					"{@spell magic weapon}"
+				],
+				[
+					"1",
+					"{@spell mind spike|xge}"
+				],
+				[
+					"1",
+					"{@spell spectral hand|farover}"
+				],
+				[
+					"1",
+					"{@spell spider climb}"
+				],
+				[
+					"1",
+					"{@spell spike growth}"
+				],
+				[
+					"1",
+					"{@spell warding wind|xge}"
+				],
+				[
+					"2",
+					"{@spell blur}"
+				],
+				[
+					"2",
+					"{@spell branding smite}"
+				],
+				[
+					"2",
+					"{@spell crown of madness}"
+				],
+				[
+					"2",
+					"{@spell devouring plague|farover}"
+				],
+				[
+					"2",
+					"{@spell dragon's breath|xge}"
+				],
+				[
+					"2",
+					"{@spell dust devil|xge}"
+				],
+				[
+					"2",
+					"{@spell earthbind|xge}"
+				],
+				[
+					"2",
+					"{@spell flaming sphere}"
+				],
+				[
+					"2",
+					"{@spell gust of wind}"
+				],
+				[
+					"2",
+					"{@spell healing spirit|farover}"
+				],
+				[
+					"2",
+					"{@spell heat metal|farover}"
+				],
+				[
+					"2",
+					"{@spell hold person|farover}"
+				],
+				[
+					"2",
+					"{@spell invisibility|farover}"
+				],
+				[
+					"2",
+					"{@spell Maximilian's Earthen Grasp|xge}"
+				],
+				[
+					"2",
+					"{@spell moonbeam}"
+				],
+				[
+					"2",
+					"{@spell pass without trace}"
+				],
+				[
+					"2",
+					"{@spell phantasmal force}"
+				],
+				[
+					"2",
+					"{@spell ray of enfeeblement}"
+				],
+				[
+					"2",
+					"{@spell rune of power|farover}"
+				],
+				[
+					"2",
+					"{@spell silence|farover}"
+				],
+				[
+					"2",
+					"{@spell web}"
 				]
 			]
 		}
