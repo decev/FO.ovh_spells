@@ -13415,15 +13415,14 @@
 		},
 		{
 			"name": "Spell Concentration Points",
-			"source": "DDHQP",
-			"caption": "100 Quirks and Peculiarities",
+			"source": "Farover",
 			"colLabels": [
 				"Concentration Points",
 				"Spell"
 			],
 			"colStyles": [
-				"text-align-left",
-				"text-align-left"
+				"col-1 text-center",
+				"col-1 text-left"
 			],
 			"rows": [
 				[
