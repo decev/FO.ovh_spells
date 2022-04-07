@@ -13747,6 +13747,510 @@
 				[
 					"2",
 					"{@spell web}"
+				],
+				[
+					"{@bold 3rd Level Spells}",
+					""
+				],
+				[
+					"0",
+					"{@spell clairvoyance}"
+				],
+				[
+					"2",
+					"{@spell cloak of flies|farover}"
+				],
+				[
+					"2",
+					"{@spell creeping shadow|farover}"
+				],
+				[
+					"2",
+					"{@spell elemental weapon}"
+				],
+				[
+					"2",
+					"{@spell gaseous form}"
+				],
+				[
+					"2",
+					"{@spell hunger of hadar}"
+				],
+				[
+					"2",
+					"{@spell intellect fortress|tce}"
+				],
+				[
+					"2",
+					"{@spell major image}"
+				],
+				[
+					"2",
+					"{@spell melf's minute meteors|xge}"
+				],
+				[
+					"2",
+					"{@spell miscast magic|farover}"
+				],
+				[
+					"2",
+					"{@spell phase shift|farover}"
+				],
+				[
+					"2",
+					"{@spell protection from energy}"
+				],
+				[
+					"2",
+					"{@spell summon lesser demons|xge}"
+				],
+				[
+					"2",
+					"{@spell wall of sand|xge}"
+				],
+				[
+					"2",
+					"{@spell wall of water|xge}"
+				],
+				[
+					"2",
+					"{@spell wind wall}"
+				],
+				[
+					"3",
+					"{@spell ashardalon's stride|ftd}"
+				],
+				[
+					"3",
+					"{@spell aura of vitality}"
+				],
+				[
+					"3",
+					"{@spell beacon of hope}"
+				],
+				[
+					"3",
+					"{@spell bestow curse}"
+				],
+				[
+					"3",
+					"{@spell blinding smite}"
+				],
+				[
+					"3",
+					"{@spell call lightning}"
+				],
+				[
+					"3",
+					"{@spell conjure animals}"
+				],
+				[
+					"3",
+					"{@spell cursader's mantle}"
+				],
+				[
+					"3",
+					"{@spell enemies abound|xge}"
+				],
+				[
+					"3",
+					"{@spell fear}"
+				],
+				[
+					"3",
+					"{@spell flame arrows|xge}"
+				],
+				[
+					"3",
+					"{@spell fly}"
+				],
+				[
+					"3",
+					"{@spell hypnotic pattern|farover}"
+				],
+				[
+					"3",
+					"{@spell lightning arrow}"
+				],
+				[
+					"3",
+					"{@spell random causality|farover}"
+				],
+				[
+					"3",
+					"{@spell rigid thinking|farover}"
+				],
+				[
+					"3",
+					"{@spell sleet storm}"
+				],
+				[
+					"3",
+					"{@spell slow|farover}"
+				],
+				[
+					"3",
+					"{@spell spirit guardians}"
+				],
+				[
+					"3",
+					"{@spell stinking cloud}"
+				],
+				[
+					"3",
+					"{@spell vampiric touch}"
+				],
+				[
+					"",
+					"{@bold 4th Level Spells"
+				],
+				[
+					"0",
+					"{@spell arcane eye}"
+				],
+				[
+					"0",
+					"{@spell locate creature}"
+				],
+				[
+					"2",
+					"{@spell conjure minor elementals}"
+				],
+				[
+					"2",
+					"{@spell conjure woodland beings}"
+				],
+				[
+					"2",
+					"{@spell giant insect}"
+				],
+				[
+					"2",
+					"{@spell stoneskin|farover}"
+				],
+				[
+					"2",
+					"{@spell summon greater demon|xge}"
+				],
+				[
+					"3",
+					"{@spell aura of life}"
+				],
+				[
+					"3",
+					"{@spell aura of purity}"
+				],
+				[
+					"3",
+					"{@spell banishment}"
+				],
+				[
+					"3",
+					"{@spell compulsion}"
+				],
+				[
+					"3",
+					"{@spell confusion}"
+				],
+				[
+					"3",
+					"{@spell control water}"
+				],
+				[
+					"3",
+					"{@spell dimensional anchor|farover}"
+				],
+				[
+					"3",
+					"{@spell dominate beast}"
+				],
+				[
+					"3",
+					"{@spell elemental bane|xge}"
+				],
+				[
+					"3",
+					"{@spell evard's black tentacles|farover}"
+				],
+				[
+					"3",
+					"{@spell grasping vine}"
+				],
+				[
+					"3",
+					"{@spell greater invisibility|farover}"
+				],
+				[
+					"3",
+					"{@spell guardian of nature|xge}"
+				],
+				[
+					"3",
+					"{@spell haste|farover}"
+				],
+				[
+					"3",
+					"{@spell otiluke's resilient sphere}"
+				],
+				[
+					"3",
+					"{@spell phantasmal killer}"
+				],
+				[
+					"3",
+					"{@spell polymorph|farover}"
+				],
+				[
+					"3",
+					"{@spell shadow of moil|xge}"
+				],
+				[
+					"3",
+					"{@spell sickening radiance|xge}"
+				],
+				[
+					"3",
+					"{@spell staggering smite}"
+				],
+				[
+					"3",
+					"{@spell storm sphere|xge}"
+				],
+				[
+					"3",
+					"{@spell summon creature|farover}"
+				],
+				[
+					"3",
+					"{@spell wall of fire}"
+				],
+				[
+					"3",
+					"{@spell watery sphere|xge}"
+				],
+				[
+					"",
+					"{@bold 5th Level Spells}"
+				],
+				[
+					"0",
+					"{@spell Modify Memory}"
+				],
+				[
+					"0",
+					"{@spell scrying|farover}"
+				],
+				[
+					"0",
+					"{@spell skill empowerment|xge}"
+				],
+				[
+					"3",
+					"{@spell antilife shell}"
+				],
+				[
+					"3",
+					"{@spell circle of power}"
+				],
+				[
+					"3",
+					"{@spell conjure elemental}"
+				],
+				[
+					"3",
+					"{@spell control winds|xge}"
+				],
+				[
+					"3",
+					"{@spell danse macabre|xge}"
+				],
+				[
+					"3",
+					"{@spell infernal calling|xge}"
+				],
+				[
+					"3",
+					"{@spell mislead}"
+				],
+				[
+					"3",
+					"{@spell tree stride}"
+				],
+				[
+					"3",
+					"{@spell wall of force}"
+				],
+				[
+					"3",
+					"{@spell wall of stone}"
+				],
+				[
+					"4",
+					"{@spell banishing smite}"
+				],
+				[
+					"4",
+					"{@spell bigby's hand}"
+				],
+				[
+					"4",
+					"{@spell cloudkill}"
+				],
+				[
+					"4",
+					"{@spell dawn|xge}"
+				],
+				[
+					"4",
+					"{@spell dispel evil and good}"
+				],
+				[
+					"4",
+					"{@spell dominate person}"
+				],
+				[
+					"4",
+					"{@spell enervation|xge}"
+				],
+				[
+					"4",
+					"{@spell far step|xge}"
+				],
+				[
+					"4",
+					"{@spell hold monster}"
+				],
+				[
+					"4",
+					"{@spell holy weapon|xge}"
+				],
+				[
+					"4",
+					"{@spell immolation|xge}"
+				],
+				[
+					"4",
+					"{@spell insect plague}"
+				],
+				[
+					"4",
+					"{@spell maelstrom|xge}"
+				],
+				[
+					"4",
+					"{@spell memory wrack|farover}"
+				],
+				[
+					"4",
+					"{@spell swift quiver}"
+				],
+				[
+					"4",
+					"{@spell telekinesis}"
+				],
+				[
+					"4",
+					"{@spell wall of light|xge}"
+				],
+				[
+					"4",
+					"{@spell wrath of nature|xge}"
+				],
+				[
+					"",
+					"{@bold 6th Level Spells"
+				],
+				[
+					"0",
+					"{@spell find the path}"
+				],
+				[
+					"0",
+					"{@spell move earth}"
+				],
+				[
+					"3",
+					"{@spell arcane gate}"
+				],
+				[
+					"3",
+					"{@spell blade barrier}"
+				],
+				[
+					"3",
+					"{@spell conjure fey}"
+				],
+				[
+					"3",
+					"{@spell physical mirror|farover}"
+				],
+				[
+					"3",
+					"{@spell primordial ward|xge}"
+				],
+				[
+					"4",
+					"{@spell disbelief|farover}"
+				],
+				[
+					"4",
+					"{@spell entropy shield|farover}"
+				],
+				[
+					"4",
+					"{@spell eyebite}"
+				],
+				[
+					"4",
+					"{@spell flesh to stone}"
+				],
+				[
+					"4",
+					"{@spell force grip|farover}"
+				],
+				[
+					"4",
+					"{@spell globe of invulnerability}"
+				],
+				[
+					"4",
+					"{@spell investiture of flame|xge}"
+				],
+				[
+					"4",
+					"{@spell investiture of ice|xge}"
+				],
+				[
+					"4",
+					"{@spell investiture of stone|xge}"
+				],
+				[
+					"4",
+					"{@spell investiture of wind|xge}"
+				],
+				[
+					"4",
+					"{@spell mental prison|xge}"
+				],
+				[
+					"4",
+					"{@spell otto's irresistible dance}"
+				],
+				[
+					"4",
+					"{@spell sunbeam}"
+				],
+				[
+					"4",
+					"{@spell tenser's transformation|xge}"
+				],
+				[
+					"4",
+					"{@spell wall of ice}"
+				],
+				[
+					"4",
+					"{@spell wall of thorns}"
 				]
 			]
 		}
