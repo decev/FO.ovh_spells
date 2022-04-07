@@ -16379,18 +16379,6 @@
         }
     ],
 	"classFeature": [
-		{
-			"name": "Vanish",
-			"source": "Farover",
-			"className": "Rogue",
-			"classSource": "PHB",
-			"level": 5,
-            "entries": [
-                "At 5th level, you can vanish from sight as a bonus action. You disappear in a brief puff of smoke, disengaging and becoming invisible for a short time. This invisibility lasts until you attack, take any damage, or until the end of your next turn.",
-                "If this invisibility lasts until the beginning of your next turn, your first attack on that turn will be considered a surprise attack against any creature unaware of your location, even in the midst of combat.",
-				"At 5th level, you can use this feature once. At 10th level you can do so twice, and at 15th level three times. You regain expended uses when you finish a short or long rest."
-			]
-		},
         {
 			"name": "Favored Enemy",
 			"source": "Farover",
