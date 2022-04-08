@@ -10310,8 +10310,8 @@
 				}
 			],
 			"entries": [
-				"Choose one creature, object, or magical effect within range. Make an ability check using your spellcasting ability. The DC equals 5 + the spell's level + the either the target creature's level if cast on a creature, or the spellcaster's level if cast on an object. ",
-				"On a successful check, the spell or magical effect ends."
+				"Choose one creature, object, or magical effect within range. Make an ability check using your spellcasting ability. The DC equals 5 + a spell's level + either the target creature's level if cast on a creature affected by magic, or the spellcaster's level if cast on a magical object. ",
+				"Depending on the DC (or DC's if multiple magical effects are present) of the target, any spells or magical effects that the ability check succeeds against end."
 			],
 			"areaTags": [
 				"ST"
