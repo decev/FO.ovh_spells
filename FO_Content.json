@@ -6075,7 +6075,7 @@
 			"name": "Devouring Plague",
 			"source": "Farover",
 			"page": 0,
-			"level": 2,
+			"level": 1,
 			"school": "N",
 			"time": [
 				{
@@ -6107,7 +6107,7 @@
 			],
 			"entries": [
 				"You attempt to afflict a disease upon a creature that you can see within range which slowly eats away at it's body, and transfers some of that creatures life to you. The target must make a Constitution saving throw. On a successful save, the target is unaffected and the spell ends.",
-				"On a failed save, a plague begins to rapidly eat away at the flesh of the target. Once per turn, the plague deals {@damage 1d4} necrotic damage to the target when you hit it with an attack. If the {@damage 1d4} deals damage below the maximum die amount, you also heal yourself for an amount equal to the missing amount on the die.",
+				"On a failed save, a plague begins to rapidly eat away at the flesh of the target. Once per turn, the plague deals {@damage 1d4} necrotic damage to the target when you hit it with an attack. If the die deals damage below the maximum amount, you also heal yourself for an amount equal to the missing amount on the die.",
 				"If the target drops to 0 hit points before this spell ends, you can use a bonus action on a following turn of yours to attempt to afflict the disease on to a new creature."
 			],
 			"entriesHigherLevel": [
@@ -6115,7 +6115,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"When you cast this spell using a spell slot of 3rd level or higher, the die used for the spell increases in size by one for each slot level above 2nd, up to a {@dice d12} at 6th level."
+						"When you cast this spell using a spell slot of 2nd level or higher, the die used for the spell increases in size by one for each slot level above 1st, up to a {@dice d12} at 5th level."
 					]
 				}
 			],
@@ -6409,7 +6409,7 @@
 				}
 			],
 			"entries": [
-				"You place a curse on a creature that you can see within range. At the beginning of each of the creatures turns, it must make a Constitution saving throw. On a failed save, the creature suffers {@damage 1d12} necrotic damage and one stack of {@condition exhaustion}. On a successful save, the curse ends, and all stacks of {@condition exhaustion} caused by this spell are removed.",
+				"You place a curse on a creature that you can see within range. At the beginning of each of the creatures turns, it must make a Constitution saving throw. On a failed save, the creature suffers {@damage 1d12} necrotic damage and one level of {@condition exhaustion}. On a successful save, the curse ends, and all levels of {@condition exhaustion} caused by this spell are removed.",
 				"A Remove Curse cast on the target ends this spell."
 			],
 			"damageInflict": [
@@ -6518,7 +6518,7 @@
 				}
 			],
 			"entries": [
-				"In a cloud of roiling smoke, a black nightmare horse appears from the shadow plane with its mane, tail, and hooves wreathed in flame. For the duration of the spell, you can ride the steed, and it will follow your verbal orders and directions. The creature uses the statistics for a Nightmare, but without the Ethereal Stride action.",
+				"In a cloud of roiling smoke, a black nightmare horse appears from the shadow plane with its mane, tail, and hooves wreathed in flame. For the duration of the spell, you can ride the steed, and it will follow your verbal orders and directions. The creature uses the statistics of a {@creature Nightmare}, but without the Ethereal Stride action.",
 				"While riding the Nightmare, you can use the Nightmare's speed to move on your own turn. The Nightmare can not move on its own, and does not have its own turns, but it can use its Hooves action immediately after your turn.",
 				"When the spell ends, the Nightmare immediately disappears, vanishing in a cloud of brimstone. The spell ends if you use an action to dismiss it, or if the Nightmare falls to 0 hit points."
 			],
@@ -12011,7 +12011,7 @@
 				{
 					"name": "At Higher Levels",
 					"entries": [
-						"When you cast this spell as a Warlock with access to higher level spells than 1st level, the damage of the spell is increased by {@dice 1d8} and the critical hit range is lowered by 1 for each spell level above 1st."
+						"When you cast this spell as a Warlock with access to higher level spells than 1st level, the damage of the spell is increased by {@dice 1d8} for each spell level above 1st."
 					]
 				}
 			],
@@ -12561,6 +12561,189 @@
 			],
 			"areaTags": [
 				"ST"
+			]
+		},
+		{
+			"name": "Drain Magic",
+			"level": 2,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Warlock (reworked)",
+						"source": "Farover"
+					}
+				]
+			},
+			"entries": [
+				"By magically reaching out for the mind of a creature in range, you attempt to drain the creatures spellcasting capabilities and augment your own through a tether of dark magic. The target must make an Intelligence saving throw. On a successful save the spell ends. On a failed save, it takes {@damage 1d6} psychic damage.",
+				"Additionally on a failed save, the target loses one prepared spell of up to 2nd level that it currently has the capability to cast, or if the target does not prepare spells, it simply loses the ability to cast the spell until it finishes a short rest. The spell is randomly chosen, but highest level spells are always selected.",
+				"If the target uses a spellcasting resource, such as spell slots, it is also drained of a corresponding amount of its spellcasting resource, which is then transferred to you in the form of an equal level and amount of spell slots, but only if you are below your maximum amount. Drain magic can not grant you a spell slot above a level which you can cast. If it would do so, it instead gives you a spell slot of the highest level you can cast which you are missing.",
+				"On each of your turns for the duration, you can use your action to repeat the saving throw and, on a failed save, the effect on the target creature as long as you are within range and line of sight when doing so. If you do not spend an action continuing this spell every turn, it ends. The spell also ends if the target is ever outside the spells range or if it has total cover from you."
+			],
+			"source": "Farover",
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a pinch of mercury worth at least 25gp",
+					"cost": 2500
+				}
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the damage increases by {@dice 1d6}, and the level of spells that can be affected on the target increases by one for each slot level above 2nd."
+					]
+				}
+			],
+			"damageInflict": [
+				"psychic"
+			],
+			"savingThrow": [
+				"intelligence"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"SGT"
+			]
+		},
+		{
+			"name": "Pyroclasm",
+			"level": 1,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "sphere",
+				"distance": {
+					"type": "feet",
+					"amount": 10
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Warlock (reworked)",
+						"source": "Farover"
+					}
+				]
+			},
+			"entries": [
+				"A ring of scorching flames ignite from the ground within 10 feet around you. Each creature within the area excluding you must make a Dexterity saving throw. Creatures who fail the saving throw take {@dice 3d6} fire damage, or half as much on a success.",
+				"Embers of the flames linger in the area for one round after the casting of the spell. Creatures excluding you who failed the saving throw take an additional {@dice 1d8} fire damage if they end their turn in the area. Creatures who enter the area after the casting of the spell and end their turn there must succeed on a Dexterity saving throw or suffer the same damage."
+			],
+			"source": "Farover",
+			"subschools": [
+				"Dread"
+			],
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a soul shard, which the spell consumes",
+					"consume": true
+				}
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell as a Warlock with access to higher level spells than 1st level, the initial damage is increased by {@dice 1d6}, the lingering damage is increased by {@dice 1d8}, and the radius of the spell is increased by 5 feet for each spell level above 1st."
+					]
+				}
+			]
+		},
+		{
+			"name": "Soul Tendrils",
+			"level": 2,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Warlock (reworked)",
+						"source": "Farover"
+					}
+				]
+			},
+			"entries": [
+				"You conjure three ethereal tendrils which appear from the ground in a 15-foot square at a point you choose within range. Each tentacle spawns in an unoccupied square, and is the size of one medium creature.",
+				"Each of the tendrils can then make one melee attack at a target within 5 feet, using your spell attack modifier. The tentacles deal {@damage 2d6} bludgeoning damage on a hit, and they disappear once they have attacked."
+			],
+			"source": "Farover",
+			"subschools": [
+				"Dread"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell as a Warlock with access to higher level spells than 2nd level, you conjure one additional tendril, and the size of the square they can appear in is increased by 5 feet for each spell level above 2nd."
+					]
+				}
+			],
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"spellAttack": [
+				"M"
+			],
+			"areaTags": [
+				"Q"
 			]
 		}
 	],
@@ -13676,6 +13859,10 @@
 				[
 					"2",
 					"{@spell dragon's breath|xge}"
+				],
+				[
+					"2",
+					"{@spell drain magic|farover}"
 				],
 				[
 					"2",
