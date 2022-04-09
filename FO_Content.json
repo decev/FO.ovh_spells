@@ -1482,7 +1482,7 @@
 			"subclassShortName": "Destruction",
 			"level": 2,
 			"entries": [
-                "Beginning when you choose this cult at 2nd level, each time you take force damage from a soul shard, the damage is reduced by 3. At 8th level, the damage reduced becomes 6, and at 14th level it becomes 9.",
+                "Beginning when you choose this cult at 2nd level, each time you take force damage from a soul shard, the damage is reduced by 2 x the spell's level, to a minimum of 1 damage taken.",
                 "In addition, whenever you deal damage to a creature with a damaging cantrip, you can choose to spend a soul shard to add to the damage roll. When you add a soul shard to a damaging cantrip in this way, the target of your cantrip suffers the soul shard damage, instead of you. The extra damage dealt by this soul shard is determined by what level spells you currently have access to."
 			]
 		},
@@ -1593,7 +1593,7 @@
 			"subclassShortName": "Necromancy",
 			"level": 2,
 			"entries": [
-                "Beginning when you choose this cult at 2nd level, you gain the ability to reap life energy from creatures you kill with your spells. Once per turn when you kill one or more creatures with any spell of 1st level or higher, you regain hit points equal to twice the spell's level. You don't gain this benefit for killing constructs or undead. You can only regain as many hit points as the target creatures maximum hit points are."
+                "Beginning when you choose this cult at 2nd level, you gain the ability to reap life energy from creatures you kill or have damaged on the same round they die on with your spells. Once per turn when you do so, you regain hit points equal to twice the spell's level that you cast. You don't gain this benefit for killing constructs or undead. You can only regain as many hit points as the target creatures maximum hit points are."
 			]
 		},
         {
@@ -5869,7 +5869,7 @@
 				"type": "point",
 				"distance": {
 					"type": "feet",
-					"amount": 60
+					"amount": 90
 				}
 			},
 			"components": {
@@ -15043,6 +15043,33 @@
 			"entries": [
 				"When you use the Attack action, you can make an additional weapon attack as a bonus action. While this mutagen is active your toxicity is increased by {@bold 7}.",
 				"{@bold {@italic Side Effect}}. You have disadvantage on Intelligence and Wisdom saving throws."
+			]
+		}
+	],
+	"action": [
+		{
+			"source": "Farover",
+			"name": "Charge",
+			"entries": [
+				"A character can use the special charge action on its turn by spending both its action and its bonus action. When you charge, your movement speed is doubled during your turn, and at the end of the charge, you can make one weapon attack at the target you charge at.",
+				"You can only charge when certain conditions are met. When you charge, you must pick a creature that you can see as the target of the charge. You must then use your movement so that you move at least 20 feet in a straight line before you reach the target creature, and you must end your turn in the closest square to you that is within your weapon's reach of the target. Once you arrive in that square, you can make one weapon attack at the target.",
+				"Charging is not possible if any difficult terrain or obstacles are in the path of your 20 foot straight movement."
+			],
+			"time": [
+				"1 action and 1 bonus action"
+			]
+		},
+		{
+			"source": "Farover",
+			"name": "5-foot Step",
+			"entries": [
+				"By spending your bonus action and all of your movement on your turn, you can move 5 feet in any direction without provoking any opportunity attacks."
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus action"
+				}
 			]
 		}
 	],
