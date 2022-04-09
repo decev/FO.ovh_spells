@@ -3710,9 +3710,9 @@
 				}
 			],
 			"entries": [
-				"Miscast magic can be cast on any spellcaster. The target spellcaster must make a Wisdom saving throw. On a fail, it causes the next spell cast by the affected spellcaster to be chosen randomly from their prepared spells of the same or lower level. Thus, if a spellcaster affected by miscast magic had four 1st-level spells prepared (mage armor, feather fall, jump, and sleep) and they attempted to cast the sleep spell, the DM would determine the resulting spell randomly from the spellcasters four prepared spells. The spellcaster would only have a 25% chance of casting the sleep spell. Only spells currently prepared are eligible to be exchanged with the desired spell. If a spellcaster had only one spell prepared, the miscast magic would have no effect and the spellcasters spell would be cast normally.",
-				"The miscast spell operates normally. If a spellcaster tried to feather fall a companion but a web spell resulted, the companion would be targeted by the webs and subject to all resulting effects. If the target of the spell were in range of the feather fall spell but not in range of the web, the spell would be lost in a fizzle of energy. If a spell such as Sending was the intended spell to be cast on a target hundreds of miles away, the Sending spell would be lost in a fizzle of energy, unless the random result spell would have an equal or greater range and could be cast on a target in the same way Sending could.",
-				"The spellcaster who casts the spell performs the proper components of the spell they wish to cast, but they do not discover the altered results until the wrong spell takes effect. The spellcaster will also discover that, if either the intended spell or the resulting spell required consumable material components, they will both be consumed."
+				"Miscast magic can be cast on any spellcaster. The target spellcaster must make a Wisdom saving throw. On a fail, it causes the spells cast by the affected spellcaster to be chosen randomly from their prepared spells of the same or lower level. Thus, if a spellcaster affected by miscast magic had four 1st-level spells prepared ({@spell mage armor}, {@spell feather fall}, {@spell jump|farover}, and {@spell magic missile}) and they attempted to cast the {@spell magic missile} spell, the DM would determine the resulting spell randomly from the spellcasters four prepared spells. The spellcaster would only have a 25% chance of casting the {@spell magic missile} spell. Only spells currently prepared are eligible to be exchanged with the desired spell. If a spellcaster had only one spell prepared, the miscast magic would have no effect and the spellcasters spell would be cast normally. If the spell is cast on a spellcaster that doesn't prepare spells, the spell is chosen from amongst all the spells that the spellcaster currently could cast.",
+				"The miscast spell operates normally. If a spellcaster tried to {@spell feather fall} a companion but a {@spell web} spell resulted, the companion would be targeted by the webs and subject to all resulting effects. If the target of the spell were in range of the {@spell feather fall} spell but not in range of the web, the spell would be lost in a fizzle of energy. If a spell such as {@spell sending} was the intended spell to be cast on a target hundreds of miles away, the {@spell sending} spell would be lost in a fizzle of energy, unless the random result spell would have an equal or greater range and could be cast on a target in the same way {@spell sending} could.",
+				"The spellcaster who casts the spell performs the proper components of the spell they wish to cast, but they do not discover the altered results until the wrong spell takes effect. The spellcaster will also discover that, if either the intended spell or the resulting spell required consumable material components, they will both be consumed. Once an affected spellcaster casts a random spell, they can repeat the Wisdom saving throw to attempt to end the effect."
 			],
 			"savingThrow": [
 				"wisdom"
@@ -12011,7 +12011,7 @@
 				{
 					"name": "At Higher Levels",
 					"entries": [
-						"When you cast this spell as a Warlock with access to higher level spells than 1st level, the damage of the spell is increased by {@dice 1d8} for each spell level above 1st."
+						"When you cast this spell as a Warlock with access to higher level spells than 1st level, the damage of the spell is increased by {@dice 1d8} and the range of the spell is increased by 10 feet for each spell level above 1st."
 					]
 				}
 			],
@@ -12268,14 +12268,14 @@
 				}
 			],
 			"entries": [
-				"You attempt to place a powerful curse on a creature that you can see within range. The target must make a Wisdom saving throw. On a failed save, the creature is cursed with impending doom. Once the target creature has had two turns after being cursed, at the end of the second turn the creature takes {@damage 11d6} necrotic damage, and the curse ends.",
+				"You attempt to place a powerful curse on a creature that you can see within range. The target must make a Wisdom saving throw. On a failed save, the creature is cursed with impending doom. Once the target creature has had two turns after being cursed, at the end of the second turn the creature takes {@damage 7d10} necrotic damage, and the curse ends.",
 				"A {@spell Remove Curse|farover} cast on the target harmlessly ends this spell."
 			],
 			"entriesHigherLevel": [
 				{
 					"name": "At Higher Levels",
 					"entries": [
-						"When you cast this spell as a Warlock with access to higher level spells than 3rd level, the damage of the spell is increased by {@dice 1d6} and the range of the spell is increased by 20 feet for each spell level above 3rd."
+						"When you cast this spell as a Warlock with access to higher level spells than 3rd level, the damage of the spell is increased by {@dice 1d10} for each spell level above 3rd."
 					]
 				}
 			],
@@ -12721,7 +12721,7 @@
 				]
 			},
 			"entries": [
-				"You conjure three ethereal tendrils which appear from the ground in a 15-foot square at a point you choose within range. Each tentacle spawns in an unoccupied square, and is the size of one medium creature.",
+				"You conjure three ethereal tendrils which appear from the ground inside a 15-foot square at a point you choose within range. Each tentacle spawns in an unoccupied square, and is the size of one medium creature.",
 				"Each of the tendrils can then make one melee attack at a target within 5 feet, using your spell attack modifier. The tentacles deal {@damage 2d6} bludgeoning damage on a hit, and they disappear once they have attacked."
 			],
 			"source": "Farover",
@@ -13970,10 +13970,6 @@
 				],
 				[
 					"2",
-					"{@spell miscast magic|farover}"
-				],
-				[
-					"2",
 					"{@spell phase shift|farover}"
 				],
 				[
@@ -14051,6 +14047,10 @@
 				[
 					"3",
 					"{@spell lightning arrow}"
+				],
+				[
+					"3",
+					"{@spell miscast magic|farover}"
 				],
 				[
 					"3",
