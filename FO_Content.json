@@ -14443,7 +14443,7 @@
 				"WP"
 			],
 			"entries": [
-				"As a bonus action, you can ready an attack. Choose a creature you can see that is at least 20 feet away from you. If that creature moves within your weapon's reach on its next turn, you can make a melee attack against it with your braced weapon as a reaction. You can't use this ability if the creature used the Disengage action before moving."
+				"As a bonus action, you can ready an attack. Choose a creature you can see that is at least 20 feet away from you. If that creature moves within your weapon's reach on its next turn, you can make a melee attack against it with your braced weapon as a reaction. You can't use this ability if the creature used the {@action Disengage|phb} action before moving."
 			]
 		},
 		{
@@ -15052,7 +15052,7 @@
 			"name": "Charge",
 			"entries": [
 				"A character can use the special charge action on its turn by spending both its action and its bonus action. When you charge, your movement speed is doubled during your turn, and at the end of the charge, you can make one weapon attack at the target you charge at.",
-				"You can only charge when certain conditions are met. When you charge, you must pick a creature that you can see as the target of the charge. You must then use your movement so that you move at least 20 feet in a straight line before you reach the target creature, and you must end your turn in the closest square to you that is within your weapon's reach of the target. Once you arrive in that square, you can make one weapon attack at the target.",
+				"You can only charge when certain conditions are met. When you charge, you must pick a creature that you can see as the target of the charge. You must then use your movement so that you move at least 20 feet in a straight line right before you reach the target creature, and you must end your turn in the closest square to you that is within your weapon's reach of the target. Once you arrive in that square, you can make one weapon attack at the target.",
 				"Charging is not possible if any difficult terrain or obstacles are in the path of your 20 foot straight movement."
 			],
 			"time": [
