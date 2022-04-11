@@ -12177,7 +12177,7 @@
 				}
 			],
 			"entries": [
-				"A blast of multiple dark, hellish bolts of flame shoot out of your hand towards a designated creature within range, creating a stream of bolts. The target creature must make a Dexterity saving throw, taking {@damage 8d6} fire damage on a failed save, or half as much damage on a successful one.",
+				"A blast of multiple dark, hellish bolts of flame shoot out of your hand towards a designated creature within range, creating a stream of bolts. The target creature must make a Dexterity saving throw, taking {@damage 7d6} fire damage on a failed save, or half as much damage on a successful one.",
 				"On each of your following turns for the duration of the spell, you can use a bonus action to continue shooting bolts at the target through the stream with a bonus action. The bolts fired on subsequent turns with a bonus action deal {@damage 3d6} fire damage, with the same Dexterity saving throw.",
 				"The spell ends if you do not continue it each turn with a bonus action. The spell also ends if the target dies, if it is ever outside the spell's range, or if it has total cover from you."
 			],
@@ -12242,7 +12242,7 @@
 				}
 			],
 			"entries": [
-				"You attempt to place a powerful curse on a creature that you can see within range. The target must make a Wisdom saving throw. On a failed save, the creature is cursed with impending doom. Once the target creature has had two turns after being cursed, at the end of the second turn the creature takes {@damage 7d10} necrotic damage, and the curse ends.",
+				"You attempt to place a powerful curse on a creature that you can see within range. The target must make a Wisdom saving throw. On a failed save, the creature is cursed with impending doom. Once the target creature has had two turns after being cursed, at the end of the second turn the creature takes {@damage 6d10} necrotic damage, and the curse ends.",
 				"A {@spell Remove Curse|farover} cast on the target harmlessly ends this spell."
 			],
 			"entriesHigherLevel": [
@@ -12306,7 +12306,7 @@
 				}
 			],
 			"entries": [
-				"You create a storm of fire and destruction in an area, which is momentarily bombarded by molten stones and flames. Each creature in a 20-foot-radius, 40-foot-high cylinder centered on a point you choose must make a Dexterity saving throw. A creature takes {@damage 5d6} fire damage and {@damage 5d6} bludgeoning damage on a failed save, or half as much damage on a successful one."
+				"You create a storm of fire and destruction in an area, which is momentarily bombarded by molten stones and flames. Each creature in a 20-foot-radius, 40-foot-high cylinder centered on a point you choose must make a Dexterity saving throw. A creature takes {@damage 5d6} fire damage and {@damage 4d6} bludgeoning damage on a failed save, or half as much damage on a successful one."
 			],
 			"entriesHigherLevel": [
 				{
@@ -12370,7 +12370,7 @@
 				}
 			],
 			"entries": [
-				"You unleash a small blast of fire which increases in size as it flies toward a creature of your choice within range. The target must make a Dexterity saving throw. On a failed save, the target takes {@damage 9d6} fire damage, which is increased by {@dice 1d6} for every 30 feet between you and the target of the spell, up to {@dice 4d6} more at exactly 120 feet. On a successful save, the target takes half as much damage."
+				"You unleash a small blast of fire which increases in size as it flies toward a creature of your choice within range. The target must make a Dexterity saving throw. On a failed save, the target takes {@damage 8d6} fire damage, which is increased by {@dice 1d6} for every 30 feet between you and the target of the spell, up to {@dice 4d6} more at exactly 120 feet. On a successful save, the target takes half as much damage."
 			],
 			"entriesHigherLevel": [
 				{
