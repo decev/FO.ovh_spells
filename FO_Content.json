@@ -13094,7 +13094,7 @@
                     "{@dice 1d6} piercing",
                     "3 lb.",
                     "Large",
-                    "{@optfeature Brace|farover}, Versatile (d8)",
+                    "{@optfeature Brace|farover}, Thrown, Versatile (d8)",
                     "30/60/90"
 				],
                 [
@@ -13175,7 +13175,7 @@
                     "{@dice 2d4} slashing",
                     "2 lb.",
                     "Large",
-                    "\u2014",
+                    "{@optfeature Cleave|farover}",
                     "\u2014"
 				],
                 [
@@ -13247,7 +13247,7 @@
                     "{@dice 1d12} piercing",
                     "6 lb.",
                     "Huge",
-                    "Reach, {@optfeature Lance|farover|Special}, Two-Handed",
+                    "{@optfeature Charging|farover}, Reach, {@optfeature Lance|farover|Special}, Two-Handed",
                     "\u2014"
 				],
                 [
@@ -13292,7 +13292,7 @@
                     "{@dice 2d4} piercing",
                     "13 lb.",
                     "Huge",
-                    "{@optfeature Brace|farover}, Reach, Two-Handed",
+                    "{@optfeature Brace|farover}, {@optfeature Charging|farover}, Reach, Two-Handed",
                     "\u2014"
 				],
                 [
@@ -13346,7 +13346,7 @@
                     "{@dice 1d6} piercing",
                     "4 lb.",
                     "Large",
-                    "{@optfeature Seize|farover}, {@optfeature Trident|farover|Special}, Versatile (d8)",
+                    "{@optfeature Brace|farover}, {@optfeature Charging|farover}, {@optfeature Seize|farover}, Versatile (d8)",
                     "\u2014"
 				],
                 [
@@ -14547,6 +14547,16 @@
 				"When you roll a 20 on your attack roll against a size Large or smaller creature, the target must succeed on a Constitution saving throw or be stunned until the end of their next turn, or until they take any damage. DC = 10 + your proficiency bonus."
 			]
 		},
+		{
+			"name": "Charging",
+			"source": "Farover",
+			"featureType": [
+				"WP"
+			],
+			"entries": [
+				"When you take the {@action Charge|farover} action on your turn with a Charging weapon, the attack roll is made at advantage."
+			]
+		},
         {
 			"name": "Bola",
 			"source": "Farover",
@@ -14606,16 +14616,6 @@
 			],
 			"entries": [
 				"A Large or smaller creature hit by a net is restrained until it is freed. A net has no effect on creatures that are formless, or creatures that are Huge or larger. A creature can use its action to make a DC 10 Strength check, freeing itself or another creature within its reach on a success. Dealing 5 slashing damage to the net (AC 10) also frees the creature without harming it, ending the effect and destroying the net."
-			]
-		},
-        {
-			"name": "Trident",
-			"source": "Farover",
-			"featureType": [
-				"SWP"
-			],
-			"entries": [
-				"As a bonus action after you successfully hit a creature with a trident, you can make shove attack. This shove attack can only be used to move the target 5 feet."
 			]
 		},
 		{
