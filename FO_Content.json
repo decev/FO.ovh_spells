@@ -12716,7 +12716,15 @@
 			],
 			"areaTags": [
 				"Q"
-			]
+			],
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a soul shard, which the spell consumes",
+					"consume": true
+				}
+			}
 		},
 		{
 			"name": "Vortex Warp",
