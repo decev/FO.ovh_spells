@@ -12176,7 +12176,7 @@
 			],
 			"entries": [
 				"A blast of multiple dark, hellish bolts of flame shoot out of your hand towards a designated creature within range, creating a stream of bolts. The target creature must make a Dexterity saving throw, taking {@damage 7d6} fire damage on a failed save, or half as much damage on a successful one.",
-				"On each of your following turns for the duration of the spell, you can use a bonus action to continue shooting bolts at the target through the stream with a bonus action. The bolts fired on subsequent turns with a bonus action deal {@damage 3d6} fire damage, with the same Dexterity saving throw.",
+				"On each of your following turns for the duration of the spell, you can use a bonus action to continue shooting bolts at the target through the stream with a bonus action. The bolts fired on subsequent turns with a bonus action deal {@damage 2d6} fire damage, with the same Dexterity saving throw.",
 				"The spell ends if you do not continue it each turn with a bonus action. The spell also ends if the target dies, if it is ever outside the spell's range, or if it has total cover from you."
 			],
 			"entriesHigherLevel": [
