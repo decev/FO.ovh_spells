@@ -3523,7 +3523,7 @@
 			"time": [
 				{
 					"number": 1,
-					"unit": "action"
+					"unit": "bonus action"
 				}
 			],
 			"range": {
@@ -4955,8 +4955,10 @@
 					"type": "timed",
 					"duration": {
 						"type": "minute",
-						"amount": 10
-					}
+						"amount": 10,
+						"upTo": true
+					},
+					"concentration": true
 				}
 			],
 			"entries": [
@@ -5138,8 +5140,8 @@
 			],
 			"entries": [
 				"When you cast this spell, a green ray springs from your outstretched hand and it unerringly strikes a creature within line of sight and the range of the spell. The target must make a Charisma saving throw. On a failed save, the spell covers the subject with a shimmering emerald field that tethers the subject to that physical location for the duration of the spell.",
-				"The spell has two effects. Firstly, it completely blocks bodily extradimensional travel. Forms of movement barred by the dimensional anchor include blinking, dimension door, etherealness, gate, misty step, plane shift, and other similar teleportation or psionic abilities.",
-				"Secondly, the spell tethers the target to the location it is in. If by any means the target moves over 20 feet away from the location where it was subjected to the spell, it is then pulled back to that location by the green tethers of the spell at the end of the turn on which is moved."
+				"The spell has two effects. Firstly, it completely blocks bodily extradimensional travel. Forms of movement barred by the dimensional anchor include {@spell blink|phb|blinking}, {@spell dimension door}, {@spell etherealness}, {@spell gate}, {@spell misty step}, {@spell plane shift}, and any other similar teleportation or psionic abilities.",
+				"Secondly, the spell tethers the target to the location it is in. If by any means the target moves over 30 feet away from the location where it was subjected to the spell, it is then pulled back to that location by the green tethers of the spell at the end of the turn on which is moved. When this effect occurs, the target can repeat the Charisma saving throw, ending the spell on a successful save."
 			],
 			"savingThrow": [
 				"charisma"
@@ -5592,10 +5594,10 @@
 				}
 			],
 			"entries": [
-				"This spell causes the casters shadow to elongate, stretching away from their body at a rate of up to 30 feet per round, up to a maximum distance of 120 feet away. When creeping shadow is cast, and on each of the casters turns afterwards, the shadow stretches in a direction designated by the caster. The shadow can only travel on a physical surface, but it can move up walls and other structures and objects.",
+				"This spell causes the casters shadow to elongate, stretching away from their body at a rate of up to 30 feet per round, up to a maximum distance of 120 feet away. When creeping shadow is cast, and on each of the casters turns afterwards, the shadow stretches in a direction designated by the caster. The shadow can only travel on a physical surface, but it can move up walls and other structures and objects. ",
 				"Creeping shadow can not be cast in darkness; at the very least dim light is required. The shadow itself makes no sound, and is generally difficult to spot. The shadow can also move through a space as narrow as 1 inch wide without squeezing. A small and medium sized caster creates a 5-foot wide shadow.",
-				"The shadow can not physically touch, pick up, or attack creatures or objects. The shadow can be attacked, but only by spells, magical effects, and magical weapons. The shadow has an AC equal to the caster, and if the shadow is attacked, the caster loses hit points.",
-				"While the spell is active, the caster can see, hear, and speak through the shadow. Wherever the shadow stretches, it creates difficult terrain for anyone standing in its area. At any point while the spell is active, the caster can use a bonus action to seep down into their shadow, and reappear at any point along the elongated shadow, teleporting to that location and rising up from the ground the shadow is covering. Teleporting in this way ends the spell."
+				"The shadow can not physically touch, pick up, or attack creatures or objects. The shadow can be attacked, but only by spells, magical effects, and magical weapons. The shadow has an AC equal to the caster, and if the shadow is damaged, the caster must make Constitution saving throws to maintain concentration on the spell, even though no damage is applied.",
+				"While the spell is active, the caster can see, hear, and speak through the shadow. Wherever the shadow stretches, it creates difficult terrain for anyone standing in its area. At any point while the spell is active, the caster can use a bonus action to seep down into their shadow, and reappear at any point along the elongated shadow, teleporting to that location and rising up from the ground the shadow is covering in an unoccupied square. Teleporting in this way ends the spell."
 			],
 			"classes": {
 				"fromClassList": [
@@ -13974,6 +13976,10 @@
 				[
 					"0",
 					"{@spell clairvoyance}"
+				],
+				[
+					"1",
+					"{@spell unfailing premonition|farover}"
 				],
 				[
 					"2",
