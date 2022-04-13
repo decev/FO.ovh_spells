@@ -4098,8 +4098,8 @@
 				{
 					"type": "timed",
 					"duration": {
-						"type": "day",
-						"amount": 1
+						"type": "hour",
+						"amount": 24
 					}
 				}
 			],
@@ -4197,16 +4197,16 @@
 					"type": "timed",
 					"duration": {
 						"type": "minute",
-						"amount": 1
+						"amount": 1,
+						"upTo": true
 					},
-					"concentration": true,
-					"upTo": true
+					"concentration": true
 				}
 			],
 			"entries": [
 				"By means of the chant spell, the cleric brings special favor upon themself and their party, and causes harm to their enemies. When the Chant spell is active, all attack rolls and saving throws made by those in the area of effect who are friendly to the cleric gain a {@dice d4} bonus, while those of the clerics enemies suffer a {@dice d4} penalty.",
-				"This bonus/penalty continues as long as the caster continues to chant the mystic syllables and remains stationary. However, while chanting, the cleric must spend time continuing the chant each turn, meaning the cleric can only use either an action or a bonus action, but not both.",
-				"A Silence spell, or any effect that would even momentarily restrict the cleric's voice from being heard also ends the spell."
+				"This bonus/penalty continues as long as the caster continues to chant the mystic syllables. This means that while chanting, the cleric must spend time continuing the chant each turn, meaning the cleric can only use either an action or a bonus action, but not both.",
+				"A {@spell Silence} spell, or any effect that would even momentarily restrict the cleric's voice from being heard also ends the spell."
 			],
 			"entriesHigherLevel": [
 				{
@@ -13888,6 +13888,10 @@
 				[
 					"2",
 					"{@spell branding smite}"
+				],
+				[
+					"2",
+					"{@spell chant|farover}"
 				],
 				[
 					"2",
