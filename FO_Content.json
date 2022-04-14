@@ -1329,7 +1329,7 @@
 			"subclassShortName": "Demonology",
 			"level": 2,
 			"entries": [
-				"Beginning when you choose this cult at 2nd level, you learn how to summon a meager fiend called a {@creature summoned gloombat|farover|Gloombat} into your service. The summoning of the Gloombat works as a part of your warlock {@classFeature Demonic Summoning|Warlock (reworked)|farover|5} feature, and the Gloombat is considered a 0th level spell for the purpose of soul shard damage. The Gloombat is a small, nearly mindless fiend which can not communicate in any way, but will follow your orders as best it can. The Gloombat can't attack, but it can take other actions as normal. You do not suffer any excess damage when your Gloombat dies."
+				"Beginning when you choose this cult at 2nd level, you learn how to summon a meager fiend called a {@creature summoned gloombat|farover|Gloombat} into your service. The summoning of the gloombat works as a part of your warlock {@classFeature Demonic Summoning|Warlock (reworked)|farover|5} feature, and the gloombat is considered a 0th level spell for the purpose of soul shard damage. The gloombat is a small, nearly mindless fiend which can not communicate in any way, but will follow your orders as best it can. The gloombat can't attack in any way, but it can take other actions as normal. You do not suffer any excess damage when your gloombat dies."
 			]
 		},
         {
@@ -1341,7 +1341,7 @@
 			"subclassShortName": "Demonology",
 			"level": 2,
 			"entries": [
-				"Beginning when you choose this cult at 2nd level, you gain the following features for your {@classFeature Demonic Summoning|Warlock (reworked)|farover|5} feature:","Beginning when you choose this cult at 2nd level, you learn how to summon a meager fiend called a {@creature summoned gloombat|farover|Gloombat} into your service. The summoning of the Gloombat works as a part of your warlock {@classFeature Demonic Summoning|Warlock (reworked)|farover|5} feature, and the Gloombat is considered a 0th level spell for the purpose of soul shard damage. The Gloombat is a small, nearly mindless fiend which can not communicate in any way, but will follow your orders as best it can. The Gloombat can't attack, but it can take other actions as normal. You do not suffer any excess damage when your Gloombat dies.",
+				"Beginning when you choose this cult at 2nd level, you gain the following features for your {@classFeature Demonic Summoning|Warlock (reworked)|farover|5} feature:",
                 {
 					"type": "list",
 					"items": [
