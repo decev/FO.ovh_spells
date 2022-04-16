@@ -10213,7 +10213,8 @@
 				}
 			],
 			"entries": [
-				"You attempt to interrupt a creature in the process of casting a spell. Make an ability check using your spellcasting ability. The DC equals 5 + the target spellcaster's level + the spell's level. On a success, the creature's spell fails and has no effect."
+				"You attempt to interrupt a creature in the process of casting a spell. Make an ability check using your spellcasting ability. The base DC equals 10 + the spell's level. Additionally, the difference between your level and the target creature's level is applied to the DC, which can raise or lower the DC, depending on the difference.",
+				"On a success, the creature's spell fails and has no effect."
 			],
 			"classes": {
 				"fromClassList": [
@@ -10239,16 +10240,6 @@
 						"subclass": {
 							"name": "Redemption",
 							"source": "XGE"
-						}
-					},
-					{
-						"class": {
-							"name": "Paladin",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Watchers",
-							"source": "TCE"
 						}
 					}
 				]
@@ -10284,7 +10275,8 @@
 				}
 			],
 			"entries": [
-				"Choose one creature, object, or magical effect within range. Make an ability check using your spellcasting ability. The DC equals 5 + a spell's level + either the target creature's level if cast on a creature affected by magic, or the spellcaster's level if cast on a magical object. ",
+				"Choose one creature, object, or magical effect within range. Make an ability check using your spellcasting ability. The base DC equals 10 + a spell's level. ",
+				"Additionally, the difference between your level and either the target creature's level (if cast on a creature affected by a spell) or the spellcaster's level (if cast on a magical effect or object), is applied to the DC, which can raise or lower the DC, depending on the difference.",
 				"Depending on the DC (or DC's if multiple magical effects are present) of the target, any spells or magical effects that the ability check succeeds against end."
 			],
 			"areaTags": [
@@ -10324,42 +10316,12 @@
 				"fromSubclass": [
 					{
 						"class": {
-							"name": "Cleric",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Arcana",
-							"source": "SCAG"
-						}
-					},
-					{
-						"class": {
-							"name": "Cleric",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Trickery",
-							"source": "PHB"
-						}
-					},
-					{
-						"class": {
 							"name": "Paladin",
 							"source": "PHB"
 						},
 						"subclass": {
 							"name": "Devotion",
 							"source": "PHB"
-						}
-					},
-					{
-						"class": {
-							"name": "Sorcerer",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Clockwork Soul",
-							"source": "TCE"
 						}
 					}
 				]
