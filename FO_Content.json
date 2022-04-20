@@ -5714,7 +5714,7 @@
 			"entries": [
 				"This spell affects the duration of certain other spells, making the duration permanent. The wizard casts the desired spell, and then follows it with the permanency spell. Permanency can not be cast on creatures, it can only be cast on items, objects, or areas no larger than 10 cubic feet. Permanency cast on items or objects only impart the magical effects to those touching, holding, or wearing the item or object, while permanency cast on areas affects everyone and everything in the area.",
 				"Permanency can only make certain spells permanent. Firstly, the spell being made permanent must have a duration of at least 1 minute. Secondly, the spell must be one that does not require a direct interaction between two or more creatures. Thirdly, the spell can not be one which normally ends once triggered or when a certain condition is met (excluding concentration). If a spell seems ambiguous when it comes to meeting these requirements, the DM has the final say on if it can be made permanent.",
-				"When cast at 5th level, only 1st level spells can be made permanent. Platinum dust is the material component for the spell, and the amount of platinum dust needed increases when the spell is cast at higher levels. The amount of gold needed in platinum dust equals that of 10 times what is needed for a spell scroll of equal level.",
+				"When cast at 5th level, only 1st level spells can be made permanent. Platinum dust is the material component for the spell, and the amount of platinum dust needed increases when the spell is cast at higher levels. The amount of gold needed in platinum dust equals that of {@variantrule spell scrolls|farover|10 times what is needed for a spell scroll of equal level}.",
 				"Permanency is vulnerable to anti-magic effects, and the dispel magic spell. When a dispel magic is cast on an object affected by permanency, the combined spell levels of the permanency spell and the spell made permanent are added to the DC, as is the spellcasters level at the time of the casting of permanency."
 			],
 			"entriesHigherLevel": [
@@ -12773,6 +12773,79 @@
 			"entries": [
 				"Weapon oils are specialized chemical compounds that are effective against different types of creatures. One oil exists for every creature type (humanoid, beast, dragon, etc.), and they all have the same effect on their target. Weapon oil vials can be bought in most major towns/cities, and they cost 40g per dose, weigh 1 lb, and they last for either 5 successful weapon attacks or 24 hours, dealing 1d4 extra damage to the type of creature its meant for. Coating a weapon in oil is an action.",
 				"Characters with a proficiency with the {@item Poisoner's Kit|phb} can craft weapon oils for a cheaper price."
+			]
+		},
+		{
+			"name": "Spell Scrolls",
+			"source": "Farover",
+			"entries": [
+				"Any character can attempt to use a spell scroll. A class with current access to the spell in the scroll can use the scroll without any skill checks.",
+				"If the scroll is of a spell of a higher level than what the spellcaster can cast, or if the spell is one that the spellcaster's class doesn't have access to, they must make an ability check using their spellcasting ability with their proficiency modifier added against the DC.",
+				"Non-spellcasting characters can attempt to use a scroll with a flat Intelligence check against the DC.",
+				"If a character uses or fails to use a spell scroll, they can not use one again for 1 hour, and the scroll is consumed. A character can only have the effects of one scroll active at a time.",
+				"Spell scrolls use the spell save DC's and modifiers of the character who created the scroll. Learning spells from a spell scroll is not possible.",
+				"{@bold {@italic Making Spell Scrolls.}} Scribing a spell scroll requires that spell to be prepared, and proficiency in {@skill Arcana}. Any full spellcaster meeting these requirements can scribe spell scrolls. Doing so takes {@dice 1d4} days per spell level.",
+				{
+                    "type": "table",
+                    "caption": "Crafting Spell Scrolls",
+                    "colLabels": [
+                        "Spell Level",
+                        "Gold Cost",
+						"DC To Use"
+                    ],
+                    "colStyles": [
+                        "col-3",
+                        "col-3",
+						"col-3"
+                    ],
+                    "rows": [
+                        [
+                            "1st",
+                            "50 gp",
+							"9"
+                        ],
+                        [
+                            "2nd",
+                            "100 gp",
+							"11"
+                        ],
+                        [
+                            "3rd",
+                            "200 gp",
+							"13"
+                        ],
+                        [
+                            "4th",
+                            "325 gp",
+							"15"
+                        ],
+                        [
+                            "5th",
+                            "500 gp",
+							"17"
+                        ],
+						[
+                            "6th",
+                            "750 gp",
+							"19"
+                        ],
+						[
+                            "7th",
+                            "1100 gp",
+							"21"
+                        ],
+						[
+                            "8th",
+                            "1600 gp",
+							"23"
+                        ],
+						[
+                            "9th",
+                            "2400 gp",
+							"25"
+                        ]
+                    ]
+                }
 			]
 		}
 	],
