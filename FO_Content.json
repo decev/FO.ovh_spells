@@ -12779,7 +12779,7 @@
 			"name": "Spell Scrolls",
 			"source": "Farover",
 			"entries": [
-				"Any character can attempt to use a spell scroll. A class with current access to the spell in the scroll can use the scroll without any skill checks.",
+				"Any character can attempt to use a spell scroll. Using a spell scrolls is always an action, regardless of the spell. A class with current access to the spell in the scroll can use the scroll without any skill checks.",
 				"If the scroll is of a spell of a higher level than what the spellcaster can cast, or if the spell is one that the spellcaster's class doesn't have access to, they must make an ability check using their spellcasting ability with their proficiency modifier added against the DC.",
 				"Non-spellcasting characters can attempt to use a scroll with a flat Intelligence check against the DC.",
 				"If a character uses or fails to use a spell scroll, they can not use one again for 1 hour, and the scroll is consumed. A character can only have the effects of one scroll active at a time.",
