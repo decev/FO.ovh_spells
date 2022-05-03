@@ -40,6 +40,36 @@
 			]
 		},
 		{
+			"name": "Time Domain",
+			"source": "Farover",
+			"className": "Cleric",
+			"classSource": "PHB",
+			"shortName": "Time",
+			"subclassFeatures": [
+				"Time Domain|Cleric||Time|Farover|1",
+				"Scholar of Fate|Cleric||Time|Farover|1",
+				"Channel Divinity: Delay Time|Cleric||Time|Farover|2",
+				"Channel Divinity: Assign Fate|Cleric||Time|Farover|6",
+				"Blessed Strikes|Cleric||Time|Farover|8",
+				"Predestined Purpose|Cleric||Time|Farover|17"
+			]
+		},
+		{
+			"name": "Spirit Domain",
+			"source": "Farover",
+			"className": "Cleric",
+			"classSource": "PHB",
+			"shortName": "Spirit",
+			"subclassFeatures": [
+				"Spirit Domain|Cleric||Spirit|Farover|1",
+				"Moonlit Pilgrim|Cleric||Spirit|Farover|1",
+				"Channel Divinity: Spirit Sanctuary|Cleric||Spirit|Farover|2",
+				"Channel Divinity: Soul Tear|Cleric||Spirit|Farover|6",
+				"Blessed Strikes|Cleric||Spirit|Farover|8",
+				"Shroud of Spirits|Cleric||Spirit|Farover|17"
+			]
+		},
+		{
 			"name": "Shadow Master",
 			"source": "Farover",
 			"className": "Rogue",
@@ -2012,6 +2042,181 @@
 				"At 17th level, your keenly developed viper's mark reaches its full potential.",
 				"If the marked target hits you with an attack roll, you can use your reaction to roll a d6. On a 4 or higher, the attack instead misses you, regardless of its roll.",
 				"In addition, when your marked target dies, you can apply the mark to a different creature you can see within 60 feet of you, provided you aren't incapacitated."
+			]
+		},
+		{
+			"name": "Spirit Domain",
+			"source": "Farover",
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassSource": "Farover",
+			"subclassShortName": "Spirit",
+			"level": 1,
+			"entries": [
+				"Gods of spirits, such as Felumbra, govern the souls that power all mortal creatures. Embodied as the moon in the sky, newly born creatures are imbued with a part of the moon which is their soul, and when they pass away the soul returns to the moon.",
+				"Clerics of the spirit domain manipulate spirits and vital life force, and they project powerful boons to assist their allies in realizing their ideals."
+			]
+		},
+		{
+			"name": "Moonlit Pilgrim",
+			"source": "Farover",
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassSource": "Farover",
+			"subclassShortName": "Spirit",
+			"level": 1,
+			"entries": [
+				"At 1st level, you can see in moonlight that would normally be considered dim light as if it was bright light. You can share this vision to any other creature you touch, for as long as you keep touching them.",
+				"You also innately know how long it is until dusk and dawn, and you are also always aware of the current lunar phase."
+			]
+		},
+		{
+			"name": "Channel Divinity: Spirit Sanctuary",
+			"source": "Farover",
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassSource": "Farover",
+			"subclassShortName": "Spirit",
+			"level": 2,
+			"entries": [
+				"At 2nd level, you can use your Channel Divinity to create a field of protective spirits for you and your allies.",
+				"As an action, you present your holy symbol, and a 20-foot radius sphere of moonlight appears at a point you can see within 60 feet. The sphere lasts for 1 minute, or until you are incapacitated or die. Whenever a creature (including you) ends its turn in the sphere, you can grant that creature one of these benefits:",
+				{
+					"type": "list",
+					"items": [
+						"You grant it temporary hit points equal to your cleric level.",
+                        "You end one effect on it causing it to be {@condition charmed} or {@condition frightened}."
+					]
+				}
+			]
+		},
+		{
+			"name": "Channel Divinity: Soul Tear",
+			"source": "Farover",
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassSource": "Farover",
+			"subclassShortName": "Spirit",
+			"level": 6,
+			"entries": [
+				"Starting at 6th level, you can use your Channel Divinity to momentarily force the soul out of an enemy creature.",
+				"As an action, an enemy you can see within 30 feet of you must make a Wisdom saving throw. On a failed save, its soul is ripped out of its body to an unoccupied location of your choice within 30 feet of both the target and you. Constructs, fiends, and undead are unaffected. The soul is the same size as the target, and it occupies an equally large area. If no unoccupied space large enough is available, the ability fails. The spirit remains for 1 minute, but the target can repeat the saving throw at the end of each of its turns, ending the effect on a success and returning the spirit to its body.",
+				"The spirit uses the same statistics as the target creature, and for most intents and purposes is a duplicate of the target creature, although it does not have its own turn, and it can not take any actions. The other difference is that the spirit does not have its own hit points, but rather is linked to the hit points of the creature it was ripped from. When the spirit would take damage, the original creature takes the damage instead. Both the spirit and the original creature can thus be damaged, but the original creature takes the damage for both."
+			]
+		},
+		{
+			"name": "Blessed Strikes",
+			"source": "Farover",
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassSource": "Farover",
+			"subclassShortName": "Spirit",
+			"level": 8,
+			"entries": [
+				"Starting at 8th level, you are blessed with divine might in battle. When a creature takes damage from one of your cantrips or weapon attacks, you can also deal {@dice 1d8} radiant damage to that creature. Once you deal this damage, you can't use this feature again until the start of your next turn."
+			]
+		},
+		{
+			"name": "Shroud of Spirits",
+			"source": "Farover",
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassSource": "Farover",
+			"subclassShortName": "Spirit",
+			"level": 17,
+			"entries": [
+				"At 17th level, the spiritual magic of your Spirit Sanctuary gains additional benefits:",
+				{
+					"type": "list",
+					"items": [
+						"Temporary hit points granted to a creature equals {@dice 1d10} plus your cleric level.",
+                        "You can also end of effect on a creature causing it to be {@condition paralyzed}."
+					]
+				}
+			]
+		},
+		{
+			"name": "Time Domain",
+			"source": "Farover",
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassSource": "Farover",
+			"subclassShortName": "Time",
+			"level": 1,
+			"entries": [
+				"Clerics who are a part of the time domain serve gods who control the flow of time and the fate of events and creatures in the planes of existence. Gods of fate and time, such as Tempos, cause the changing of seasons, and imbues creatures with a sense of purpose. Clerics of the time domain thus follow and spread these ideals in their ways and teachings, imparting meaning and regularity to followers of the faith."
+			]
+		},
+		{
+			"name": "Scholar of Fate",
+			"source": "Farover",
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassSource": "Farover",
+			"subclassShortName": "Time",
+			"level": 1,
+			"entries": [
+				"At 1st level, you are astutely aware of ongoing events which grants you advantage on initiative rolls.",
+				"You also gain proficiency in the {@skill History} and {@skill Religion} skills."
+			]
+		},
+		{
+			"name": "Channel Divinity: Delay Time",
+			"source": "Farover",
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassSource": "Farover",
+			"subclassShortName": "Time",
+			"level": 2,
+			"entries": [
+				"Starting at 2nd level, you can use your Channel Divinity to momentarily alter the flow of time for yourself and act faster than normally possible.",
+				"On your turn, you can use your Channel Divinity to take one additional action. You can use this additional action to do anything you normally could except cast a spell of 1st-level or higher with a casting time of 1 action. You may use it to cast a second spell on your turn if that spell has a casting time of 1 bonus action, or if it's a cantrip.",
+				"You can only use this feature once per turn."
+			]
+		},
+		{
+			"name": "Channel Divinity: Assign Fate",
+			"source": "Farover",
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassSource": "Farover",
+			"subclassShortName": "Time",
+			"level": 6,
+			"entries": [
+				"At 6th level, you can use your Channel Divinity to determine a creatures upcoming fate in battle. You can either assign a fortuitous fate to an ally, or an unfortunate one to an enemy.",
+				{
+					"type": "list",
+					"items": [
+						"{@bold {@italic Fortuitous Fate}} When you heal yourself or another creature with a spell of 1st-level or higher on your turn, you can use your Channel Divinity as a bonus action to grant that creature advantage on all of its ability checks and attack rolls it makes until the end of its next turn.",
+                        "{@bold {@italic Unfortunate Fate}} When you damage an enemy creature with a spell of 1st-level or higher on your turn, you can use your Channel Divinity as a bonus action to cause that creature to have disadvantage on all of its ability checks and attack rolls it makes until the end of its next turn."
+					]
+				}
+			]
+		},
+		{
+			"name": "Blessed Strikes",
+			"source": "Farover",
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassSource": "Farover",
+			"subclassShortName": "Time",
+			"level": 8,
+			"entries": [
+				"Starting at 8th level, you are blessed with divine might in battle. When a creature takes damage from one of your cantrips or weapon attacks, you can also deal {@dice 1d8} radiant damage to that creature. Once you deal this damage, you can't use this feature again until the start of your next turn."
+			]
+		},
+		{
+			"name": "Predestined Purpose",
+			"source": "Farover",
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassSource": "Farover",
+			"subclassShortName": "Time",
+			"level": 17,
+			"entries": [
+				"At 17th level, you gain access to the {@spell Time Stop} and {@spell Foresight} spells. Your body also ceases to age, which means you do not suffer the {@table aging effects|farover|negative effects of old age}, and you can not die of old age.",
+				"Additionally, when a creature you can see makes an attack roll against you, you can use your reaction to force the creature to make a Wisdom saving throw against your spell save DC. On a failed save, the attack misses.",
+				"You can use this feature a number of times equal to your Wisdom modifier (a minimum of once). You regain all expended uses when you finish a long rest."
 			]
 		}
 	],
@@ -12779,7 +12984,7 @@
 			"name": "Spell Scrolls",
 			"source": "Farover",
 			"entries": [
-				"Any character can attempt to use a spell scroll. Using a spell scrolls is always an action, regardless of the spell. A class with current access to the spell in the scroll can use the scroll without any skill checks.",
+				"Any character can attempt to use a spell scroll. Using a spell scroll is always an action, regardless of the spell. A class with current access to the spell in the scroll can use the scroll without any skill checks.",
 				"If the scroll is of a spell of a higher level than what the spellcaster can cast, or if the spell is one that the spellcaster's class doesn't have access to, they must make an ability check using their spellcasting ability with their proficiency modifier added against the DC.",
 				"Non-spellcasting characters can attempt to use a scroll with a flat Intelligence check against the DC.",
 				"If a character uses or fails to use a spell scroll, they can not use one again for 1 hour, and the scroll is consumed. A character can only have the effects of one scroll active at a time.",
@@ -15136,7 +15341,7 @@
 			"source": "Farover",
 			"name": "Charge",
 			"entries": [
-				"A character can use the special charge action on its turn by spending both its action and its bonus action. When you charge, your movement speed is doubled during your turn, and at the end of the charge, you can make one weapon attack at the target you charge at.",
+				"A character can use the special charge action on its turn by spending both its action and its bonus action. When you charge, your movement speed is doubled during your turn, and at the end of the charge, you can make one melee weapon attack at the target you charge at.",
 				"You can only charge when certain conditions are met. When you charge, you must pick a creature that you can see as the target of the charge. You must then use your movement so that you move at least 20 feet in a straight line right before you reach the target creature, and you must end your turn in the closest square to you that is within your weapon's reach of the target. Once you arrive in that square, you can make one weapon attack at the target.",
 				"Charging is not possible if any difficult terrain or obstacles are in the path of your 20 foot straight movement."
 			],
