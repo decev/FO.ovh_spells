@@ -2187,8 +2187,8 @@
 				{
 					"type": "list",
 					"items": [
-						"{@bold {@italic Fortuitous Fate}} When you heal yourself or another creature with a spell of 1st-level or higher on your turn, you can use your Channel Divinity as a bonus action to grant that creature advantage on all of its ability checks and attack rolls it makes until the end of its next turn.",
-                        "{@bold {@italic Unfortunate Fate}} When you damage an enemy creature with a spell of 1st-level or higher on your turn, you can use your Channel Divinity as a bonus action to cause that creature to have disadvantage on all of its ability checks and attack rolls it makes until the end of its next turn."
+						"{@bold {@italic Fortuitous Fate.}} When you heal yourself or another creature with a spell of 1st-level or higher on your turn, you can use your Channel Divinity as a bonus action to grant that creature advantage on all of its ability checks and attack rolls it makes until the end of its next turn.",
+                        "{@bold {@italic Unfortunate Fate.}} When you damage an enemy creature with a spell of 1st-level or higher on your turn, you can use your Channel Divinity as a bonus action to cause that creature to have disadvantage on all of its ability checks and attack rolls it makes until the end of its next turn."
 					]
 				}
 			]
