@@ -5917,10 +5917,10 @@
 				}
 			],
 			"entries": [
-				"This spell affects the duration of certain other spells, making the duration permanent. The wizard casts the desired spell, and then follows it with the permanency spell. Permanency can not be cast on creatures, it can only be cast on items, objects, or areas no larger than 10 cubic feet. Permanency cast on items or objects only impart the magical effects to those touching, holding, or wearing the item or object, while permanency cast on areas affects everyone and everything in the area.",
+				"This spell affects the duration of certain other spells, making the duration permanent. The wizard casts the desired spell, and then follows it with the permanency spell. Permanency can not be cast on creatures, it can only be cast on items, objects, or areas no larger than 125 cubic feet which can be shaped in any way (an area can be as thin as 1 inch high, and 1500 feet long and wide). Permanency cast on items or objects only impart the magical effects to those touching, holding, or wearing the item or object, while permanency cast on areas affects everyone and everything in the area.",
 				"Permanency can only make certain spells permanent. Firstly, the spell being made permanent must have a duration of at least 1 minute. Secondly, the spell must be one that does not require a direct interaction between two or more creatures. Thirdly, the spell can not be one which normally ends once triggered or when a certain condition is met (excluding concentration). If a spell seems ambiguous when it comes to meeting these requirements, the DM has the final say on if it can be made permanent.",
 				"When cast at 5th level, only 1st level spells can be made permanent. Platinum dust is the material component for the spell, and the amount of platinum dust needed increases when the spell is cast at higher levels. The amount of gold needed in platinum dust equals that of {@variantrule spell scrolls|farover|10 times what is needed for a spell scroll of equal level}.",
-				"Permanency is vulnerable to anti-magic effects, and the dispel magic spell. When a dispel magic is cast on an object affected by permanency, the combined spell levels of the permanency spell and the spell made permanent are added to the DC, as is the spellcasters level at the time of the casting of permanency."
+				"Permanency is vulnerable to anti-magic effects, and the {@spell dispel magic|farover} spell. When a dispel magic is cast on an object affected by permanency, the combined spell levels of the permanency spell and the spell made permanent are added to the DC, as is the spellcasters level at the time of the casting of permanency."
 			],
 			"entriesHigherLevel": [
 				{
@@ -5939,6 +5939,67 @@
 					}
 				]
 			}
+		},
+		{
+			"name": "Sending",
+			"source": "Farover",
+			"page": 274,
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "unlimited"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a short piece of fine copper wire"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You send a short message of twenty-five words or less to a creature with which you are familiar. The creature hears the message in its mind, recognizes you as the sender if it knows you, and can answer in a like manner immediately. The spell enables creatures with Intelligence scores of at least 1 to understand the meaning of your message.",
+				"You can send the message across any distance and even to other planes of existence, but if the target is on a different plane than you, there is a {@chance 5|||Message lost!|Message arrives} chance that the message doesn't arrive."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, the amount of words that can be sent in the message is doubled for each slot level above 3rd, up to a maximum of 1600 words at 9th level."
+					]
+				}
+			]
 		},
 		{
 			"name": "Burning Rush",
