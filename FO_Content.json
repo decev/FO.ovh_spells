@@ -4389,7 +4389,7 @@
 				"type": "radius",
 				"distance": {
 					"type": "feet",
-					"amount": 30
+					"amount": 20
 				}
 			},
 			"components": {
@@ -5502,7 +5502,7 @@
 					"type": "timed",
 					"duration": {
 						"type": "day",
-						"amount": 3
+						"amount": 1
 					}
 				}
 			],
