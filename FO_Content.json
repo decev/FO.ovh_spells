@@ -1976,9 +1976,10 @@
 				{
 					"type": "list",
 					"items": [
-						"When you engage in two-weapon fighting, you can make your off-hand attack as a part of the same action as your main-hand attack(s), instead of with a bonus action as usual.",
-						"You can use two-weapon fighting even when the one-handed melee weapons you are wielding aren't light.",
-                        "You can perform the somatic components of your slayer signs even while wielding a weapon in the same hand."
+						"When you engage in two-weapon fighting, you can make your off-hand attack as a part of the same action as your main-hand attack, instead of with a bonus action as usual.",
+                        "You can perform the somatic components of your slayer signs even while wielding a weapon in the same hand.",
+						"When you attack a creature that is considered surprised, you can expend 1 vigor point to deal an additional {@dice 2d4} weapon damage to the target.",
+						"You gain proficiency in the {@skill Stealth} skill if you don't already have it."
 					]
 				}
 			]
