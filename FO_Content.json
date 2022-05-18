@@ -15423,6 +15423,18 @@
 					"unit": "bonus action"
 				}
 			]
+		},
+		{
+			"source": "Farover",
+			"name": "Somersault",
+			"entries": [
+				"When falling from a distance of at least 10 feet on your turn into an unoccupied square, you can use half of your movement when you hit the ground to perform a somersault, which can reduce the falling damage you would take. Doing so costs an amount of movement equal to half your speed. For example, if your speed is 30 feet, you must spend 15 feet of movement to somersault once you hit the ground. Therefore, you can't somersault if you don't have 15 feet of movement left. When you somersault, you must also move 5 feet into an unoccupied square as you roll.",
+				"When performing a somersault, make a Dexterity ({@skill Acrobatics}) check. The amount rolled is the amount of feet you can subtract from your total fallen height for the purpose of determining falling damage.",
+				"A character must be proficient in Dexterity ({@skill Acrobatics}) to perform a somersault, and they can not be wearing medium or heavy armor."
+			],
+			"time": [
+				"Half movement"
+			]
 		}
 	],
 	"monster": [
