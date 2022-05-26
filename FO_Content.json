@@ -5502,8 +5502,8 @@
 				{
 					"type": "timed",
 					"duration": {
-						"type": "day",
-						"amount": 1
+						"type": "hour",
+						"amount": 24
 					}
 				}
 			],
@@ -13015,6 +13015,869 @@
 					}
 				]
 			}
+		},
+		{
+			"name": "Air Wave",
+			"source": "Farover",
+			"page": 0,
+			"level": 1,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"m": "a melee weapon worth at least 1 sp"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"Your deft weapon swing sends a wave of cutting air to assault a creature within range. Make a melee weapon attack against the target. If you are wielding one weapon in each hand, your attack deals an additional {@damage 1d6} damage. Regardless of the weapon you are wielding, your attack deals slashing damage."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the spells range is increased by 30 feet for each slot level above 1st."
+					]
+				}
+			],
+			"damageInflict": [
+				"slashing"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Arcane Blast",
+			"source": "Farover",
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You invoke the surrounding forces of magic and loudly call the words to this spell, bringing forth a blast of pure arcane energy. Before casting this spell, you can decide to expend up to two additional spell slots of 3rd level or higher to increase the damage of the spell.",
+				"Roll a {@dice 4d6} + {@bold your spellcasting modifier x 3}. Each additional spell slot you decide to expend for the spell adds an additional {@dice 2d6} to the roll, up to a maximum of {@dice 8d6}. The target of the spell must make a contested Dexterity saving throw. If the target fails the save, they take an amount of force damage equal to the difference between their failed save and what they needed to succeed. If a target is under a condition that causes them to automatically fail Dexterity saving throws, their contested save is considered a flat 5."
+			],
+			"damageInflict": [
+				"force"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Blood-Writ Bargain",
+			"source": "Farover",
+			"level": 3,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a drop of blood from both participants"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "day",
+						"amount": 10
+					}
+				}
+			],
+			"entries": [
+				"This spell creates a pact which is enforced by celestial or fiendish forces. You and another willing creature commit to a mutual agreement, clearly declaring your parts of the agreement during the casting.",
+				"Until the spell ends, if for any reason either participant breaks the agreement or fails to uphold their part of the bargain, beings of celestial or fiendish origin appear within unoccupied spaces as close as possible to the participant who broke the bargain. The beings are hostile to the deal-breaking participant and attempt to kill them, as well as any creatures that defend them. When the deal-breaking participant is killed, or the spell’s duration ends, the beings disappear in a flash of smoke.",
+				"The appearing creatures can be celestial or fiendish, depending on the caster who cast the spell. The DM chooses the exact {@filter creatures|bestiary|challenge rating=[&0;&6]|type=fiend;celestial} summoned (such as a {@creature vrock} or three {@creature pegasus|mm|pegasi}). There may be any number of beings, but their combined CR can’t exceed 6."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, the combined CR of the summoned beings increases by 2 and the duration increases by 10 days for each slot level above 3rd."
+					]
+				}
+			],
+			"miscTags": [
+				"SMN"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock (reworked)",
+						"source": "Farover"
+					}
+				]
+			}
+		},
+		{
+			"name": "Calculated Retribution",
+			"source": "Farover",
+			"level": 1,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a spike or nail"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You surround yourself with a dampening magical field and collect the energy of a foe’s attack to use against them. When you take damage from a weapon attack, you can choose to end the spell to halve the attack’s damage against you, gaining a retribution charge that lasts until the end of your next turn. By expending the retribution charge when you hit with a melee attack, you deal an additional {@damage 2d8} force damage."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"You may use your reaction to halve the damage of an attack against you up to a number of times equal to the level of the spell slot used, gaining a retribution charge each time that lasts until 1 round after the spell ends."
+					]
+				}
+			],
+			"damageInflict": [
+				"force"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Darklight",
+			"source": "Farover",
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a torch coated with pitch"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 8
+					}
+				}
+			],
+			"entries": [
+				"You create an enchanted flame that surrounds your hand and produces no heat, but sheds bright light in a 20-foot radius around you and dim light for an additional 20 feet. Only you and up to 6 creatures of your choice can see this light."
+			],
+			"miscTags": [
+				"LGT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Deadweight",
+			"source": "Farover",
+			"level": 2,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"The target object’s weight is greatly increased. Any creature holding the object must succeed on a Strength saving throw or drop it. A creature which doesn’t drop the object has disadvantage on attack rolls until the start of your next turn as it figures out the object’s new balance.",
+				"Creatures that attempt to push, drag, or lift the object must succeed on a Strength check against your spell save DC to do so."
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"abilityCheck": [
+				"strength"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Detect Divination",
+			"source": "Farover",
+			"level": 4,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a small piece of mirror and a miniature brass hearing trumpet"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"By means of this spell, you immediately become aware of any outside divination attempt to observe you or anyone else within the range of the spell. Any activity of the following spells is revealed to you: {@spell arcane eye}, {@spell clairvoyance}, {@spell locate animals or plants}, {@spell locate creature}, {@spell locate object}, or {@spell scrying|farover}. The spell also reveals the use of {@item crystal ball|dmg|crystal balls} or other magical scrying devices, provided their target is within the area of effect of the spell. Since the spell is centered on the caster, it moves with you, enabling you to \"sweep\" areas for the duration of the spell.",
+				"When a divination attempt by any of the listed spells is detected, the diviner must immediately make an Intelligence saving throw. On a fail, the identity and general location of the diviner immediately becomes known to you. The general location is a direction and significant landmark close to the diviner. Thus, you might learn, \"The wizard Sniggel spies on us from east, under the stairs\", or, \"You are watched by Asquil in the city of Samarquol.\""
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Earth Barrier",
+			"source": "Farover",
+			"level": 1,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "which you take when you are targeted with a ranged attack."
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"Choose an unoccupied square between you and the source of the attack which triggers the spell. You call forth a pillar of earth or stone from the ground that is 3 feet in diameter and 20 feet tall. The pillar has AC 10 and 10 hit points, and it provides you with 3/4 cover while it remains in between you and a ranged attack."
+			],
+			"miscTags": [
+				"MAC"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Lemure Transformation",
+			"source": "Farover",
+			"level": 2,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"Your body melts into a humanoid-shaped mass of liquid flesh. Each creature within 5 feet of you that can see the transformation must make a Wisdom saving throw. On a failure, the creature can’t take reactions and is {@condition frightened} of you until the start of its next turn.",
+				"Until the end of your turn, your speed becomes 20 feet, you can’t speak, and you can move through spaces as narrow as 1 inch wide without squeezing. You revert to your normal form at the end of your turn."
+			],
+			"conditionInflict": [
+				"frightened"
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock (reworked)",
+						"source": "Farover"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Mental Grip",
+			"source": "Farover",
+			"level": 2,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a rusted manacle"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You conjure extensions of your own mental fortitude to keep your foes at bay. For the spells duration, you can use an action to attempt to grapple a creature within range by forcing it to make either a Strength ({@skill Athletics}) or Dexterity ({@skill Acrobatics}) check against your spell save DC. You can only hold one creature in a grapple with this spell at a time.",
+				"On its turn, a target {@condition grappled} in this way can use an action to attempt to escape the grapple by making a check against your spell save DC. Successful escape attempts do not break your concentration on the spell."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, you can hold a grapple on one additional creature at a time for each slot level above 2nd."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Poison Skin",
+			"source": "Farover",
+			"level": 3,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a handful of frog spawn"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"The target of the spell becomes poisonous to the touch. Until the spell ends, whenever a creature damages the target with a melee weapon attack, the creature must make a Constitution saving throw. On a failed save, the creature becomes {@condition poisoned} and takes {@damage 1d6} poison damage. A {@condition poisoned} creature can make a Constitution saving throw at the end of each of its turns, ending the effect on itself on a success, but taking the {@damage 1d6} poison damage again on a fail.",
+				"The target of the spell also becomes bright and multicolored like a poisonous dart frog, giving it disadvantage on Dexterity ({@skill Stealth}) checks."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, the damage is increased by {@dice 1d6} for each slot level above 3rd."
+					]
+				}
+			],
+			"damageInflict": [
+				"poison"
+			],
+			"conditionInflict": [
+				"poisoned"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Seed Bomb",
+			"source": "Farover",
+			"level": 2,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "a tumbleweed, pinecone, or sunflower head"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"Up to four seeds appear in your hand and are infused with magic for the duration. As an action, a creature can throw one of these seeds at a point up to 60 feet away. Each creature within 5 feet of that point must make a Dexterity saving throw or take {@damage 4d6} piercing damage. Depending on the material component used, a seed bomb also causes one of the following additional effects:",
+				"{@bold {@italic Pinecone}}. Seed shrapnel explodes outward. A creature in the area of the exploding seed bomb makes a Constitution saving throw or it is {@condition blinded} until the end of its next turn.",
+				"{@bold {@italic Sunflower}}. Seeds enlarge into a blanket of pointy needles. The area affected by the exploding seed bomb becomes difficult terrain for the next minute.",
+				"{@bold {@italic Tumbleweed}}. The weeds unravel to latch around creatures. A creature in the area of the exploding seed bomb makes a Dexterity saving throw or it becomes {@condition grappled} until the end of its next turn."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the damage is increased by {@dice 1d6} for each slot level above 2nd."
+					]
+				}
+			],
+			"damageInflict": [
+				"piercing"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Shattering Barrage",
+			"source": "Farover",
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a handful of clean sand"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You create three orbs of jagged broken glass and hurl them at targets within range. You can hurl them at one target or several.",
+				"Make a ranged spell attack for each orb. On a hit, the target takes {@damage 2d4} slashing damage and the shards of broken glass remain suspended in midair, filling the area they occupy (or 5 feet of the space they occupy if the creature is Large-sized or larger) with shards of suspended broken glass. Whenever a creature enters an area of broken glass for the first time or starts its turn there, it must succeed on a Dexterity saving throw or take {@damage 2d4} slashing damage. The shards of broken glass dissolve into harmless wisps of sand and blow away after 1 minute."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, you create one additional orb for each slot level above 2nd."
+					]
+				}
+			],
+			"damageInflict": [
+				"slashing"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Venomous Succor",
+			"source": "Farover",
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You cause a searing poison to burn quickly through a willing target’s wounds, dealing {@damage 1d6} poison damage. The target then regains {@dice 2d4} hit points at the start of each of its turns for the next {@dice 1d4 + 1} rounds."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, the initial damage increases by {@dice 1d6} and target regains an additional {@dice 1d4} hit points for each slot level above 3rd."
+					]
+				}
+			],
+			"damageInflict": [
+				"poison"
+			],
+			"miscTags": [
+				"HL"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Wizard Sight",
+			"source": "Farover",
+			"level": 3,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"Upon casting this spell, your eyes glow blue and you are able to see the magical auras of spellcasters and enchanted objects within 60 feet of you. This means wizard sight grants you the features of the {@spell detect magic} spell, but it also has additional features.",
+				"While wizard sight is in effect, you are able to see if someone is a spellcaster and whether that person is able to cast divine or arcane magic (or both). You are also able to sense if a person is a specialist in a certain wizard spell school, and you can also sense if a spellcaster has the capability of casting spells that are of a higher, equal, or lower level than what you can cast."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Wormway",
+			"source": "Farover",
+			"level": 6,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "miles",
+					"amount": 150
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You call a Gargantuan monstrosity from the depths of the world to carry you and up to 50 of your allies across great distances. When you cast this spell, the nearest {@creature purple worm} within 150 miles is {@condition charmed} by you and begins moving toward a point on the ground that you can see. If there are no purple worms within range, the spell fails. The earth rumbles slightly as it approaches and breaks through the surface. Any creatures within 20 feet of that point must make a Dexterity saving throw or be knocked {@condition prone} and pushed 10 feet away from it.",
+				"Upon emerging, the purple worm lays down before you and opens its maw. Targets can climb inside where they are enclosed in an impervious hemispherical dome of force.",
+				"Once targets are loaded into the purple worm, nothing—-not physical objects, energy, or other spell effects-—can pass through the barrier, in or out, though targets in the sphere can breathe there. The hemisphere is immune to all damage, and creatures and objects inside can’t be damaged by attacks or effects originating from outside, nor can a target inside the hemisphere damage anything outside it. The atmosphere inside the dome is comfortable and dry regardless of conditions outside it.",
+				"The purple worm waits until you give it a mental command to depart, at which point it dives back into the ground and travels, without need for rest or food, as directly as possible while avoiding obstacles to a destination known to you. It travels 150 miles (240 kilometers) per day.",
+				"When the purple worm reaches its destination it surfaces, the dome vanishes, and it disgorges the targets in its mouth before diving back into the depths again.",
+				"The purple worm remains {@condition charmed} by you until it has delivered you to your destination and returned to the depths, or until it is attacked at which point the charm ends, it vomits its targets in the nearest unoccupied space as soon as possible, and then retreats to safety."
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"miscTags": [
+				"SMN"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock (reworked)",
+						"source": "Farover"
+					}
+				]
+			}
 		}
 	],
 	"condition": [
@@ -14045,6 +14908,10 @@
 				],
 				[
 					"2",
+					"{@spell calculated retribution|farover}"
+				],
+				[
+					"2",
 					"{@spell cause fear|xge}"
 				],
 				[
@@ -14249,6 +15116,10 @@
 				],
 				[
 					"2",
+					"{@spell mental grip|farover}"
+				],
+				[
+					"2",
 					"{@spell moonbeam}"
 				],
 				[
@@ -14286,6 +15157,10 @@
 				[
 					"1",
 					"{@spell unfailing premonition|farover}"
+				],
+				[
+					"1",
+					"{@spell wizard sight|farover}"
 				],
 				[
 					"2",
@@ -14405,6 +15280,10 @@
 				],
 				[
 					"3",
+					"{@spell poison skin|farover}"
+				],
+				[
+					"3",
 					"{@spell random causality|farover}"
 				],
 				[
@@ -14438,6 +15317,10 @@
 				[
 					"0",
 					"{@spell arcane eye}"
+				],
+				[
+					"0",
+					"{@spell detect divination|farover}"
 				],
 				[
 					"0",
