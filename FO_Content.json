@@ -1376,7 +1376,7 @@
 					"type": "list",
 					"items": [
 						"Summoning and re-summoning a fiend for you is now an action, instead of a 10 minute ritual.",
-						"When you cast a spell with either a range of touch, or a melee spell attack, your summon can deliver the spell as if it had cast the spell, and you can can also cast these spells on your summon from range as long as you are within 100 feet and in line of sight to it.",
+						"When you cast a spell with either a range of touch, or a melee spell attack, your summon can spend its reaction to deliver the spell as if it had cast the spell, and you can can also cast these spells on your summon from range as long as you are within 100 feet and in line of sight to it.",
                         "As a bonus action, you can funnel health between you and your summon, as long as you are within line of sight and 100 feet of each other. You can cause either yourself or your summon to suffer up to {@dice 1d4} necrotic damage for each level you have in the warlock class, and you can decide how many dice you roll for the effect. If you funnel health to yourself from your summon, you restore hit points equal to half of the damage dealt. If you funnel health to your summon from yourself, your summon restores hit points equal to twice the damage dealt."
 					]
 				}
