@@ -13098,8 +13098,9 @@
 				}
 			],
 			"entries": [
-				"You invoke the surrounding forces of magic and loudly call the words to this spell, bringing forth a blast of pure arcane energy. Before casting this spell, you can decide to expend up to two additional spell slots of 3rd level or higher to increase the damage of the spell.",
-				"Roll a {@dice 4d6} + {@bold your spellcasting modifier x 3}. Each additional spell slot you decide to expend for the spell adds an additional {@dice 2d6} to the roll, up to a maximum of {@dice 8d6}. The target of the spell must make a contested Dexterity saving throw. If the target fails the save, they take an amount of force damage equal to the difference between their failed save and what they needed to succeed. If a target is under a condition that causes them to automatically fail Dexterity saving throws, their contested save is considered a flat 5."
+				"You invoke the surrounding forces of magic and loudly call the words to this spell, bringing forth a blast of pure arcane energy. Before casting this spell, you can decide to expend up to two additional spell slots of 3rd level or higher (for a maximum of 3 spell slots) to increase the damage of the spell.",
+				"Roll {@dice 6d8} dice. Each additional spell slot you decide to expend for the spell adds an additional {@dice 2d8} to the roll, up to a maximum of {@dice 10d8}. The target of the spell must make a contested Dexterity saving throw against the amount rolled.",
+				"If the target fails the save, they take an amount of force damage equal to the difference between their failed save and what they needed to succeed. If a target is under a condition that causes them to automatically fail Dexterity saving throws, their contested save is considered a flat 5."
 			],
 			"damageInflict": [
 				"force"
@@ -13875,6 +13876,48 @@
 					{
 						"name": "Warlock (reworked)",
 						"source": "Farover"
+					}
+				]
+			}
+		},
+		{
+			"name": "Mass Dispel",
+			"source": "Farover",
+			"level": 6,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a small shard of coal"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"A burst of antimagic explodes in a 20-foot-radius sphere at a point you choose within range, affecting each creature, object, and magical effect of your choosing.",
+				"Make an ability check using your spellcasting ability. The base DC equals 10 + a spell's level. Additionally, the difference between your level and either a target creature's level (if cast on a creature affected by a spell) or the spellcaster's level (if cast on a magical effect or object), is applied to the DC, which can raise or lower the DC, depending on the difference.",
+				"Depending on the DC's of the affected targets, any spells or magical effects that the ability check succeeds against end."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
 					}
 				]
 			}
