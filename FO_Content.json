@@ -9445,6 +9445,81 @@
 			}
 		},
 		{
+			"name": "Mirror Image",
+			"source": "Farover",
+			"page": 260,
+			"level": 2,
+			"school": "I",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"Two illusory duplicates of yourself appear around you in your space. Until the spell ends, the duplicates move with you and mimic your actions, shifting position so it's impossible to track which image is real. You can use your action to dismiss the illusory duplicates.",
+				"Each time a creature targets you with an attack during the spell's duration, roll a die in size equal to you plus your current amount of duplicates, to determine whether the attack instead hits one of your duplicates. For example, if you have two duplicates, you must roll a {@dice 1d3}.",
+				"If you roll a 1 on the die, the attack targets you as normal. On any other result, it targets a duplicate, and that duplicate is destroyed. The spell ends when all duplicates are destroyed. If you are affected by a damaging spell or attack that targets an area while Mirror Image is active, all of your duplicates are destroyed and the spell ends.",
+				"A creature is unaffected by this spell if it can't see, if it relies on senses other than sight, such as blindsight, or if it can perceive illusions as false, as with {@sense truesight}."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock (reworked)",
+						"source": "Farover"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Druid",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Land",
+							"source": "PHB",
+							"subSubclass": "Coast"
+						}
+					}
+				]
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the amount of duplicates the spell creates is increased by one for each slot level above 2nd."
+					]
+				}
+			]
+		},
+		{
 			"name": "Shield",
 			"source": "Farover",
 			"page": 275,
