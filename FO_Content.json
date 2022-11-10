@@ -1769,11 +1769,11 @@
 			"subclassShortName": "Griffon",
 			"level": 3,
 			"entries": [
-                "Starting at 3rd level when you choose this subclass, your education in the arcane arts grants you an increased arsenal of low level magic. If any spells require a spell save DC or spell attack rolls, Wisdom is your spellcasting modifier.",
-				"From now on, whenever you would learn a new sign, you can choose to learn certain spells instead. You can learn cantrips and 1st-level spells at 3rd level, 2nd-level spells at 5th level, and 3rd-level spells at 9th level. You can use your slayer medallion as a spellcasting focus for these spells.",
-				"Casting a cantrip costs no vigor points, a 1st-level spell costs 3 vigor points, a 2nd-level spell costs 5 vigor points, and a 3rd-level spell costs 8 vigor points. These spells can be cast at higher levels.",
-				"When you choose this subclass, you learn two additional signs or spells, and your maximum vigor points is increased by 3.",
-				"You also now learn one additional sign or spell each time you gain a level in this class all the way up to level 20, instead of the normal every other level up to level 10.",
+                "Starting at 3rd level when you choose this subclass, your education in the arcane arts grants you an increased arsenal of low level magic. If any spells require a spell save DC or spell attack rolls, Wisdom is your spellcasting modifier. You can use your slayer medallion as a spellcasting focus for these spells.",
+				"You can learn cantrips and 1st-level spells at 3rd level, 2nd-level spells at 5th level, and 3rd-level spells at 9th level.",
+				"Casting a cantrip costs no vigor points, a 1st-level spell costs 3 vigor points, a 2nd-level spell costs 5 vigor points, and a 3rd-level spell costs 8 vigor points. These spells can be upcast to higher levels.",
+				"When you choose this subclass, you learn one additional sign or cantrip, and one spell. Your maximum vigor points are also increased by 3.",
+				"You also now learn one additional spell each time you gain a level in this class, and each time you would learn a sign, you can choose to learn a cantrip instead. You also continue learning signs or cantrips past 10th level as well, learning one every even level.",
 				{
                     "type": "table",
                     "caption": "School of the Griffon Spells",
@@ -1894,7 +1894,7 @@
 					"items": [
 						"When another creature hits you with either a melee weapon attack, or a ranged weapon attack with a physical arrow or bolt, you can use your reaction, expending {@bold 1} vigor point, to use your melee weapon to parry the incoming attack, adding +2 to your AC against that attack.",
 						"When another creature misses you with a melee attack with a weapon, you can use your reaction, expending {@bold 1} vigor point, to attempt to disarm the creature. Make a melee weapon attack, contested by the target's {@skill Athletics} check or {@skill Acrobatics} check. If you win, the target drops the weapon it missed you with.",
-                        "You can use a bonus action on your turn, expending {@bold 2} vigor points, to make a ranged attack with either a weapon that has the thrown property, or a hand crossbow. You can draw the weapon as part of making this attack."
+                        "You can use a bonus action on your turn, expending {@bold 2} vigor points, to make a ranged attack with either a weapon that has the thrown property, or a hand crossbow. You can draw the weapon as part of making this attack, and you do not have disadvantage on this attack caused by being within 5 feet of a hostile creature."
 					]
 				}
 			]
@@ -16005,7 +16005,7 @@
 			"entries": [
 				"As a bonus action, you extend your hand outwards, arranging your fingers in the formation of Ignite, and unleash a gush of flames. Each creature in a 15-foot cone must make a Dexterity saving throw, or take {@dice 1d6} fire damage. The damage of this sign increases by {@dice 1d6} when you reach 5th, 9th, 13th, and 17th level.",
 				"{@bold {@italic Enhanced Ignite}}. When you cast the enhanced version of this sign, the affected targets also take half as much damage on a successful save.",
-				"{@bold {@italic Superior Ignite}}. When you cast the superior version of this sign, the sign becomes a concentration spell, and you can keep casting the sign as a bonus action for as long as you maintain concentration on the sign."
+				"{@bold {@italic Superior Ignite}}. When you cast the superior version of this sign, the sign deals maximum damage, instead of rolling."
 			]
 		},
 		{
@@ -16035,7 +16035,7 @@
 				{
 					"type": "list",
 					"items": [
-						"When you successfully muddle the mind of a creature or creatures, you can also force one creature to use it's reaction to take one attack at a target of your choice that is in its range. The disadvantage to the targets next attack roll is not applied to this attack.",
+						"When you successfully muddle the mind of a creature or creatures, you can also force one creature to use it's reaction to take one attack at a target of your choice that is within its range. The disadvantage to the targets next attack roll is not applied to this attack.",
 						"When you beguile a creature, this sign becomes a concentration spell, and it lasts for 10 minutes, but the sign can not be used on a target if it is hostile toward you, or if you or creatures that are friendly to you are fighting it. When initially casting the sign on a target successfully, you can issue a verbal command to the target, which it will follow to the best of it's ability on it's next turn. You can keep issuing commands to the target for the duration of the spell with your actions, but before each command after the initial one, the target will repeat the saving throw, ending the effect on a successful one."
 					]
 				}
@@ -16048,10 +16048,11 @@
 				"SS"
 			],
 			"entries": [
-				"As a bonus action, you draw a magical ring on the ground with a 15-foot radius centered on you. The ring lasts until the start of your next turn. For the duration of the sign, the area inside the ring is considered difficult terrain for your enemies.",
-				"In addition, enemies that start their turn or enter the ring later on for the first time must make a Wisdom saving throw. On a failed save, they cannot take reactions and invisible creatures are revealed. Leaving the area of the ring ends all of these effects, but re-entering it resumes them. On a successful save, a creature is unaffected by these two effects from this casting of ring.",
-				"{@bold {@italic Enhanced Ring}}. When you cast the enhanced version of this sign, the first ranged attack made against you or an ally inside the ring is made at disadvantage.",
-				"{@bold {@italic Superior Ring}}. When you cast the superior version of this sign, this sign becomes a concentration spell, and lasts for as long as you maintain concentration. In addition, all ranged attacks made against you or an ally inside the ring are made at disadvantage for the duration of the sign."
+				"As a bonus action, you draw a magical ring on the ground with a 15-foot radius centered on you. The ring lasts until the start of your next turn.",
+				"For the duration of the sign, the area inside the ring is considered difficult terrain for your enemies, and all invisible creatures are revealed while they are inside.",
+				"In addition, enemies inside the ring when it is cast, and those that enter the ring later on for the first time must make a Wisdom saving throw. On a failed save, they cannot take reactions while in the ring. Leaving the area of the ring ends this effect, but re-entering it resumes them. On a successful save, a creature is unaffected by this effect from this casting of ring.",
+				"{@bold {@italic Enhanced Ring}}. When you cast the enhanced version of this sign, ranged attacks made from outside the ring against you are made at disadvantage.",
+				"{@bold {@italic Superior Ring}}. When you cast the superior version of this sign, the sign lasts for as long as you remain inside it. In addition, ranged attacks made from outside the ring against you or any of your allies inside are made at disadvantage."
 			]
 		},
 		{
@@ -16343,7 +16344,7 @@
 				"SM"
 			],
 			"entries": [
-				"While you are {@condition wounded|farover}, but not below 1 hit point, you recover hit points equal to 6 + your Constitution modifier at the start of each of your turns. While this mutagen is active your toxicity is increased by {@bold 5}.",
+				"While you are {@condition wounded|farover}, but not below 1 hit point, you recover hit points equal to 6 + your Constitution modifier at the start of each of your turns. While this mutagen is active your toxicity is increased by {@bold 4}.",
 				"Once consumed, this mutagen can not be flushed out of your system, which means it lasts until you finish a long rest.",
 				"{@bold {@italic Side Effect}}. While you are {@condition wounded|farover}, attack rolls against you have advantage."
 			]
@@ -16355,7 +16356,7 @@
 				"SM"
 			],
 			"entries": [
-				"Your Dexterity score increases by 3, as does your Dexterity maximum. While this mutagen is active your toxicity is increased by {@bold 6}.",
+				"Your Dexterity score increases by 2, as does your Dexterity maximum. While this mutagen is active your toxicity is increased by {@bold 6}.",
 				"{@bold {@italic Side Effect}}. You have disadvantage on Wisdom ability checks and saving throws."
 			]
 		},
@@ -16366,7 +16367,7 @@
 				"SM"
 			],
 			"entries": [
-				"Your Strength score increases by 3, as does you Strength maximum. While this mutagen is active your toxicity is increased by {@bold 6}.",
+				"Your Strength score increases by 2, as does you Strength maximum. While this mutagen is active your toxicity is increased by {@bold 6}.",
 				"{@bold {@italic Side Effect}}. You have disadvantage on Dexterity ability checks and saving throws."
 			]
 		},
@@ -17818,97 +17819,97 @@
                             "3",
                             "8",
                             "8",
-                            "5"
+                            "6"
                         ],
                         [
                             "3",
                             "9",
                             "9",
-                            "6"
+                            "8"
                         ],
                         [
                             "4",
                             "10",
                             "9",
-                            "7"
+                            "10"
                         ],
                         [
                             "4",
                             "11",
                             "10",
-                            "8"
+                            "12"
                         ],
                         [
                             "5",
                             "12",
                             "10",
-                            "9"
+                            "14"
                         ],
                         [
                             "5",
                             "13",
                             "11",
-                            "10"
+                            "16"
                         ],
                         [
                             "6",
                             "14",
                             "11",
-                            "11"
+                            "18"
                         ],
                         [
                             "6",
                             "15",
                             "12",
-                            "12"
+                            "20"
                         ],
                         [
                             "6",
                             "16",
                             "12",
-                            "13"
+                            "22"
                         ],
                         [
                             "6",
                             "17",
                             "13",
-                            "14"
+                            "24"
                         ],
                         [
                             "6",
                             "18",
                             "13",
-                            "15"
+                            "26"
                         ],
                         [
                             "6",
                             "19",
                             "14",
-                            "16"
+                            "28"
                         ],
                         [
                             "6",
                             "20",
                             "14",
-                            "17"
+                            "30"
                         ],
                         [
                             "6",
                             "21",
                             "15",
-                            "18"
+                            "32"
                         ],
                         [
                             "6",
                             "24",
                             "17",
-                            "19"
+                            "34"
                         ],
                         [
                             "6",
                             "25",
                             "18",
-                            "20"
+                            "36"
                         ],
                         [
                             "6",
