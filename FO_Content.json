@@ -16344,8 +16344,7 @@
 				"SM"
 			],
 			"entries": [
-				"While you are {@condition wounded|farover}, but not below 1 hit point, you recover hit points equal to 6 + your Constitution modifier at the start of each of your turns. While this mutagen is active your toxicity is increased by {@bold 4}.",
-				"Once consumed, this mutagen can not be flushed out of your system, which means it lasts until you finish a long rest.",
+				"While you are {@condition wounded|farover}, you can use an action to spend one Hit Die to heal yourself. While this mutagen is active your toxicity is increased by {@bold 4}.",
 				"{@bold {@italic Side Effect}}. While you are {@condition wounded|farover}, attack rolls against you have advantage."
 			]
 		},
