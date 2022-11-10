@@ -16146,7 +16146,7 @@
 				"SP"
 			],
 			"entries": [
-				"You regain {@dice 2d4+2} hit points. This increases by {@dice 1d4} at 6th, 9th, 12th, 15th, and 18th levels.",
+				"You regain {@dice 2d4+2} hit points. This increases by {@dice 1d4+1} at 8th, 13th, and 18th levels.",
 				"Drinking this potion increases your toxicity by {@bold 2}."
 			]
 		},
@@ -16173,6 +16173,17 @@
 			]
 		},
 		{
+			"name": "Full Moon",
+			"source": "Farover",
+			"featureType": [
+				"SP"
+			],
+			"entries": [
+				"You gain {@dice 1d6+3} temporary hit points. This is increased by {@dice 1d6} at 8th, 13th, and 18th levels. This potion lasts for 1 hour.",
+				"Drinking this potion increases your toxicity by {@bold 3}."
+			]
+		},
+		{
 			"name": "Owl",
 			"source": "Farover",
 			"featureType": [
@@ -16190,7 +16201,7 @@
 				"SP"
 			],
 			"entries": [
-				"Your weapon attacks deal an additional {@dice 1d4} thunder damage. This is increased to {@dice 1d6} at 9th level, and {@dice 1d8} at 16th level. This potion lasts for 1 minute.",
+				"Your weapon attacks deal an additional {@dice 1d4} thunder damage. This is increased to {@dice 1d6} at 13th level. This potion lasts for 1 minute.",
 				"Drinking this potion increases your toxicity by {@dice 3}."
 			]
 		},
