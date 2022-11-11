@@ -1788,19 +1788,19 @@
                     "rows": [
                         [
                             "Cantrip",
-                            "{@spell acid splash}, {@spell create bonfire|xge}, {@spell poison spray}, {@spell produce flame}, {@spell sword burst|tce}, {@spell thorn whip}"
+                            "{@spell acid splash}, {@spell control flames|xge}, {@spell create bonfire|xge}, {@spell lightning lure|tce}, {@spell poison spray}, {@spell produce flame}, {@spell shocking grasp}, {@spell sword burst|tce}, {@spell thorn whip}"
                         ],
                         [
                             "1st",
-                            "{@spell absorb elements|farover}, {@spell burning rush|farover}, {@spell charm person}, {@spell color spray}, {@spell command}, {@spell ensnaring strike}, {@spell faerie fire}, {@spell searing smite}, {@spell snare|xge}, {@spell thunderous smite}, {@spell zephyr strike|xge}"
+                            "{@spell absorb elements|farover}, {@spell air wave|farover}, {@spell burning rush|farover}, {@spell charm person}, {@spell color spray}, {@spell command}, {@spell compelled duel}, {@spell earth tremor|farover}, {@spell ensnaring strike}, {@spell faerie fire}, {@spell searing smite}, {@spell snare|xge}, {@spell thunderous smite}"
                         ],
                         [
                             "2nd",
-                            "{@spell calm emotions}, {@spell cordon of arrows|farover}, {@spell earthbind|xge}, {@spell enthrall}, {@spell hold person|farover}, {@spell magic weapon}, {@spell pass without trace}, {@spell pyrotechnics|xge}, {@spell see invisibility}, {@spell spider climb}, {@spell suggestion}"
+                            "{@spell calm emotions}, {@spell cordon of arrows|farover}, {@spell darkvision}, {@spell enfeebling strike|farover}, {@spell enthrall}, {@spell find traps}, {@spell magic weapon}, {@spell pass without trace}, {@spell pyrotechnics|xge}, {@spell see invisibility}, {@spell spider climb}, {@spell suggestion}, {@spell warding wind|xge}"
                         ],
                         [
                             "3rd",
-                            "{@spell dispel magic|farover}, {@spell elemental weapon}, {@spell enemies abound|xge}, {@spell fear}, {@spell glyph of warding}, {@spell identify curse|farover}, {@spell magic circle}, {@spell remove curse|farover}, {@spell wind wall}"
+                            "{@spell ashardalon's stride|ftd}, {@spell cloak of flies|farover}, {@spell darklight}, {@spell elemental weapon}, {@spell enemies abound|xge}, {@spell glyph of warding}, {@spell identify curse|farover}, {@spell magic circle}, {@spell poison skin|farover}, {@spell remove curse|farover}, {@spell wind wall}"
                         ]
                     ]
                 }
