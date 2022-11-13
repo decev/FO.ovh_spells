@@ -1800,7 +1800,7 @@
                         ],
                         [
                             "3rd",
-                            "{@spell ashardalon's stride|ftd}, {@spell cloak of flies|farover}, {@spell darklight}, {@spell elemental weapon}, {@spell enemies abound|xge}, {@spell glyph of warding}, {@spell identify curse|farover}, {@spell magic circle}, {@spell poison skin|farover}, {@spell remove curse|farover}, {@spell wind wall}"
+                            "{@spell ashardalon's stride|ftd}, {@spell cloak of flies|farover}, {@spell darklight|farover}, {@spell elemental weapon}, {@spell enemies abound|xge}, {@spell glyph of warding}, {@spell identify curse|farover}, {@spell magic circle}, {@spell poison skin|farover}, {@spell remove curse|farover}, {@spell wind wall}"
                         ]
                     ]
                 }
@@ -16256,7 +16256,7 @@
 				"SM"
 			],
 			"entries": [
-				"You have advantage on Constitution saving throws. While this mutagen is active your toxicity is increased by {@bold 4}.",
+				"You have advantage on Constitution ability checks and saving throws. While this mutagen is active your toxicity is increased by {@bold 4}.",
 				"{@bold {@italic Side Effect}}. Your movement speed is decreased by 10 feet."
 			]
 		},
@@ -18751,7 +18751,7 @@
 			"level": 3,
             "entries": [
                 "Starting at 3rd level, you learn how to craft {@filter special consumable items|optionalfeatures|feature type=sp;sm} with your {@item Alchemist's Supplies|phb} made specifically for slayers. These potent consumables are poisonous for normal humanoids, but your mutations allow your body to digest them only at the cost of some side effects. If a non-slayer consumes a product of slayer alchemy, the item's effects are not applied, but they must succeed on a DC 18 Constitution saving throw, or be poisoned until they finish a long rest.",
-                "At 3rd level, you can craft both {@filter potions|optionalfeatures|feature type=sp} and {@filter mutagens|optionalfeatures|feature type=sm}, and you know the formulae to create four potions and/or mutagens. You learn one additional formula each time you gain a level in this class.",
+                "At 3rd level, you can craft both {@filter potions|optionalfeatures|feature type=sp} and {@filter mutagens|optionalfeatures|feature type=sm}, and you know the formulae to create four potions and/or mutagens. You learn two additional formulae each time you gain a level in this class.",
                 "Crafting your consumable items with your Slayer Alchemy is done when you finish a short or long rest. Each item crafted takes 1 minute. You can create a number of items up to an amount equal to your {@bold {@italic Wisdom modifier + your proficiency bonus}}. You can craft multiples of one kind of item. Unconsumed items created by your slayer alchemy only last until you finish your next short rest, after which they lose their potency and become inert, which means unused items must be remade each short rest if they are to be used.",
                 "{@bold {@italic Potions.}} Slayer {@filter potions|optionalfeatures|feature type=sp} can be consumed with a bonus action, and they last for varied amounts of time.",
                 "{@bold {@italic Mutagens.}} Slayer {@filter mutagens|optionalfeatures|feature type=sm} can be consmued with an action, and they last until you finish a long rest. You gain toxicity when you consume a mutagen, and toxicity gained from a mutagen can not be lost by resting while the mutagen remains active. While one or more mutagens are affecting you, you can use an action to focus and flush them from your system, ending the effects and side effects of all mutagens. Toxicity from mutagens is not removed when doing so.",
