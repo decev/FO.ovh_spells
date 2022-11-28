@@ -1513,7 +1513,7 @@
 			"level": 2,
 			"entries": [
                 "Beginning when you choose this cult at 2nd level, each time you take force damage from a soul shard, the damage is reduced by 2 x the spell's level, to a minimum of 1 damage taken.",
-                "In addition, whenever you deal damage to a creature with a damaging cantrip, you can choose to spend a soul shard to add to the damage roll. When you add a soul shard to a damaging cantrip in this way, the target of your cantrip suffers the soul shard damage, instead of you. The extra damage dealt by this soul shard is determined by what level spells you currently have access to."
+                "In addition, whenever you deal damage to a creature with a damaging cantrip, you can choose to spend a soul shard to add to the damage roll. When you add a soul shard to a damaging cantrip in this way, you don't take the soul shard damage, but instead the target of the cantrip takes twice the amount of dice rolled for the soul shard damage normally. The amount of soul shard damage is determined by the highest level of spells you currently have access to, and the type of damage is determined by the cantrip."
 			]
 		},
         {
