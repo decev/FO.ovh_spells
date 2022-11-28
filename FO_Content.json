@@ -1376,8 +1376,8 @@
 					"type": "list",
 					"items": [
 						"Summoning and re-summoning a fiend for you is now an action, instead of a 10 minute ritual.",
-						"When you cast a spell with either a range of touch, or a melee spell attack, your summon can spend its reaction to deliver the spell as if it had cast the spell, and you can can also cast these spells on your summon from range as long as you are within 100 feet and in line of sight to it.",
-                        "As a bonus action, you can funnel health between you and your summon, as long as you are within line of sight and 100 feet of each other. You can cause either yourself or your summon to suffer up to {@dice 1d4} necrotic damage for each level you have in the warlock class, and you can decide how many dice you roll for the effect. If you funnel health to yourself from your summon, you restore hit points equal to half of the damage dealt. If you funnel health to your summon from yourself, your summon restores hit points equal to twice the damage dealt."
+						"When you cast a spell with either a range of touch, or a melee spell attack, your summon can spend its reaction to deliver the spell as if it had cast the spell, and you can can also cast these spells on your summon from range as long as you are within 100 feet and you can see it.",
+                        "Once per short rest, you can transfer health from your summon to you as a bonus action. You must be within 100 feet and you must see your summon to do this. Your summon loses half of its current hit points, and you then regain a number of hit points equal to this."
 					]
 				}
 			]
@@ -1623,7 +1623,7 @@
 			"subclassShortName": "Necromancy",
 			"level": 2,
 			"entries": [
-                "Beginning when you choose this cult at 2nd level, you gain the ability to reap life energy from creatures you kill or have damaged on the same round they die on with your spells. Once per turn when you do so, you regain hit points equal to twice the spell's level that you cast. You don't gain this benefit for killing constructs or undead. You can only regain as many hit points as the target creatures maximum hit points are."
+                "Beginning when you choose this cult at 2nd level, you gain the ability to reap life energy from creatures you kill or have damaged on the same round they die on with your spells. Once per turn when you do so, you regain hit points equal to three times the spell's level that you cast. You don't gain this benefit for killing constructs or undead. You can only regain as many hit points as the target creatures maximum hit points are."
 			]
 		},
         {
@@ -7202,6 +7202,10 @@
 					{
 						"name": "Wizard",
 						"source": "PHB"
+					},
+					{
+						"name": "Warlock (reworked)",
+						"source": "farover"
 					}
 				]
 			}
@@ -16495,7 +16499,7 @@
 				{
 					"name": "Fire Bolt",
 					"entries": [
-						"{@atk rs} your spell attack modifier to hit, range 90 ft., one creature. {@h}({@dice 1d4} + your proficiency bonus, {@dice 2d4} at 11th level, {@dice 3d4} at 18th level) fire damage."
+						"{@atk rs} your spell attack modifier to hit, range 90 ft., one creature. {@h}({@dice 1d4} + your spellcasting modifier, {@dice 2d4} at 11th level, {@dice 3d4} at 18th level) fire damage."
 					]
 				},
 				{
@@ -16597,7 +16601,7 @@
 				{
 					"name": "Bite",
 					"entries": [
-						"{@atk mw} your spell attack modifier to hit, reach 5 ft., one target. {@h}({@dice 2d6} + your proficiency bonus, {@dice 3d6} at 18th level) piercing damage."
+						"{@atk mw} your spell attack modifier to hit, reach 5 ft., one target. {@h}({@dice 2d6} + your spellcasting modifier, {@dice 3d6} at 18th level) piercing damage."
 					]
 				},
 				{
@@ -16694,7 +16698,7 @@
 				"special": "9 + (3 x your level)"
 			},
 			"speed": {
-				"walk": 30
+				"walk": 40
 			},
 			"str": 5,
 			"dex": 17,
@@ -16713,7 +16717,7 @@
 				{
 					"name": "Claw",
 					"entries": [
-						"{@atk mw} your spell attack modifier to hit, reach 5 ft., one target. {@h}({@dice 1d4} + your proficiency bonus, {@dice 2d4} at 11th level, {@dice 3d4} at 18th level) slashing damage."
+						"{@atk mw} your spell attack modifier to hit, reach 5 ft., one target. {@h}({@dice 1d4} + your spellcasting modifier, {@dice 2d4} at 11th level, {@dice 3d4} at 18th level) slashing damage."
 					]
 				},
 				{
@@ -16831,13 +16835,13 @@
 				{
 					"name": "Claw",
 					"entries": [
-						"{@atk mw} your spell attack modifier to hit, reach 5 ft., one target. {@h}({@dice 2d10} + your proficiency bonus) slashing damage."
+						"{@atk mw} your spell attack modifier to hit, reach 5 ft., one target. {@h}({@dice 2d10} + your spellcasting modifier) slashing damage."
 					]
 				},
 				{
 					"name": "Serrated Tail",
 					"entries": [
-						"{@atk mw} your spell attack modifier to hit, reach 10 ft., one target. {@h}({@dice 3d6} + your proficiency bonus) slashing damage."
+						"{@atk mw} your spell attack modifier to hit, reach 10 ft., one target. {@h}({@dice 3d6} + your spellcasting modifier) slashing damage."
 					]
 				},
 				{
@@ -18422,7 +18426,7 @@
 						"You can use a soul shard to summon a fiend to serve you with your {@classFeature demonic summoning|Warlock (reworked)|farover|5} feature."
 					]
 				},
-				"When you use a soul shard, you suffer {@dice 1d6} {@bold unmitigatable force damage} per level of the spell cast."
+				"When you use a soul shard, you suffer {@dice 1d4} {@bold unmitigatable force damage} per level of the spell cast."
             ]
 		},
         {
@@ -18443,7 +18447,7 @@
 			"classSource": "Farover",
 			"level": 3,
             "entries": [
-                "Starting at 3rd level, you can sacrifice some of your health for spell slots. With a bonus action and by harnessing your own life energy, you can sacrifice an amount of hit points equal to {@bold 2 x your warlock level}, and use it to recover one expended warlock spell slot.",
+                "Starting at 3rd level, you can sacrifice some of your health for spell slots. With a bonus action and by harnessing your own life energy, you can sacrifice an amount of hit points {@bold equal to your warlock level}, and use it to recover one expended warlock spell slot.",
 				"You can use this feature an amount of times equal to your Intelligence modifier, and you regain all expended uses when you finish a long rest."
             ]
 		},
@@ -18466,9 +18470,9 @@
 			"level": 5,
             "entries": [
                 "At 5th level, your knowledge grants you insight on how to interact with the plane of shadow, and summon a fiend from it to your plane of existence. By spending a Soul Shard and 10 minutes casting a ritual, you can force a fiend to be summoned within 10 feet of you, and bind it to serve you under the threat of death. The fiend summoned will arrive against it's will, but will follow your commands in hopes of either being released, or falling in battle, which would both return it to the plane of shadow. Disobeying your commands would cause the fiend to turn to dust, and truly die.",
-                "You can issue commands telepathically to your summoned fiend, and in general interact with it only while you are within 100 feet of it. Even if you and your summon don't share a language, it will understand simple commands from you. Your summon can not communicate information back to you unless it shares a language with you. If it does not have any active commands, it will simply return to you. In combat your summon takes it's turn immediately after yours, and will act based on your commands. If your summon is beyond 100 feet of you, it will still follow your last command to the best of it's ability, and in combat it will otherwise simply take the dodge action.",
+                "You can issue commands telepathically to your summoned fiend, and in general interact with it only while you are within 500 feet of it. Even if you and your summon don't share a language, it will understand simple commands from you. Your summon can not communicate information back to you unless it shares a language with you. If it does not have any active commands, it will simply return to you. In combat your summon takes it's turn immediately after yours, and will act based on your commands. If your summon is beyond 500 feet of you, it will still follow your last command to the best of it's ability, and in combat it will otherwise simply take the dodge action.",
                 "You can release your summon at any time back to the plane of shadow as an action. You can also dismiss your summon into a pocket dimension as an action, where it will await your summon. Retrieving your summon from the pocket dimension requires a 10 minute ritual.",
-                "If your summoned fiend is killed, any excess damage is carried over to you. Your summon does not recover any hit points by itself. If you fall unconscious, your summon is sent to the pocket dimension. If you die, your summon is released. You can only have one summon active at a time.",
+                "Your summon does not recover any hit points by itself. If you fall unconscious, your summon is sent to the pocket dimension. If you die, your summon is released. You can only have one summon active at a time.",
                 "Your summoned fiends use {@filter different stat blocks|bestiary|search=summoned}, unlike their normal counterparts.",
                 "At 5th level, you can summon an {@creature Summoned imp|farover|imp}. Summoning an Imp is considered a 1st level spell for the purpose of Soul Shard damage. At 11th and at 18th level, you gain a new summon."
             ]
