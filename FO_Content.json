@@ -7275,28 +7275,6 @@
 						"name": "Warlock (reworked)",
 						"source": "Farover"
 					}
-				],
-				"fromSubclass": [
-					{
-						"class": {
-							"name": "Paladin",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Redemption (UA)",
-							"source": "UAATrioOfSubclasses"
-						}
-					},
-					{
-						"class": {
-							"name": "Paladin",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Redemption",
-							"source": "XGE"
-						}
-					}
 				]
 			}
 		},
@@ -7382,119 +7360,6 @@
 						"name": "Wizard",
 						"source": "PHB"
 					}
-				],
-				"fromSubclass": [
-					{
-						"class": {
-							"name": "Cleric",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Death",
-							"source": "DMG"
-						}
-					},
-					{
-						"class": {
-							"name": "Cleric",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Grave (UA)",
-							"source": "UAClericDivineDomains"
-						}
-					},
-					{
-						"class": {
-							"name": "Cleric",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Grave",
-							"source": "XGE"
-						}
-					},
-					{
-						"class": {
-							"name": "Druid",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Land",
-							"source": "PHB",
-							"subSubclass": "Desert"
-						}
-					},
-					{
-						"class": {
-							"name": "Paladin",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Oathbreaker",
-							"source": "DMG"
-						}
-					},
-					{
-						"class": {
-							"name": "Paladin",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Conquest (UA)",
-							"source": "UAPaladin"
-						}
-					},
-					{
-						"class": {
-							"name": "Artificer (Revisited)",
-							"source": "UAArtificerRevisited"
-						},
-						"subclass": {
-							"name": "Alchemist",
-							"source": "UAArtificerRevisited"
-						}
-					},
-					{
-						"class": {
-							"name": "Druid",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Spores (UA)",
-							"source": "UAThreeSubclasses"
-						}
-					},
-					{
-						"class": {
-							"name": "Druid",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Spores",
-							"source": "TCE"
-						}
-					},
-					{
-						"class": {
-							"name": "Artificer",
-							"source": "TCE"
-						},
-						"subclass": {
-							"name": "Alchemist",
-							"source": "TCE"
-						}
-					},
-					{
-						"class": {
-							"name": "Druid",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Land",
-							"source": "PHB"
-						}
-					}
 				]
 			}
 		},
@@ -7560,28 +7425,6 @@
 					{
 						"name": "Warlock (reworked)",
 						"source": "Farover"
-					}
-				],
-				"fromSubclass": [
-					{
-						"class": {
-							"name": "Wizard",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Chronurgy",
-							"source": "EGW"
-						}
-					},
-					{
-						"class": {
-							"name": "Wizard",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Graviturgy",
-							"source": "EGW"
-						}
 					}
 				]
 			}
@@ -7667,28 +7510,6 @@
 					{
 						"name": "Warlock (reworked)",
 						"source": "Farover"
-					}
-				],
-				"fromSubclass": [
-					{
-						"class": {
-							"name": "Cleric",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Arcana",
-							"source": "SCAG"
-						}
-					},
-					{
-						"class": {
-							"name": "Paladin",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Watchers",
-							"source": "TCE"
-						}
 					}
 				]
 			},
@@ -7783,78 +7604,6 @@
 					{
 						"name": "Warlock (reworked)",
 						"source": "Farover"
-					}
-				],
-				"fromSubclass": [
-					{
-						"class": {
-							"name": "Cleric",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Death",
-							"source": "DMG"
-						}
-					},
-					{
-						"class": {
-							"name": "Warlock",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Undying",
-							"source": "SCAG"
-						}
-					},
-					{
-						"class": {
-							"name": "Cleric",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Grave (UA)",
-							"source": "UAClericDivineDomains"
-						}
-					},
-					{
-						"class": {
-							"name": "Warlock",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Raven Queen (UA)",
-							"source": "UAWarlockAndWizard"
-						}
-					},
-					{
-						"class": {
-							"name": "Cleric",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Grave",
-							"source": "XGE"
-						}
-					},
-					{
-						"class": {
-							"name": "Warlock",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Undead (UA)",
-							"source": "UA2020SubclassesPt4"
-						}
-					},
-					{
-						"class": {
-							"name": "Warlock",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Undead",
-							"source": "VRGR"
-						}
 					}
 				]
 			},
@@ -8047,29 +7796,6 @@
 					{
 						"name": "Warlock (reworked)",
 						"source": "Farover"
-					}
-				],
-				"fromSubclass": [
-					{
-						"class": {
-							"name": "Druid",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Land",
-							"source": "PHB",
-							"subSubclass": "Desert"
-						}
-					},
-					{
-						"class": {
-							"name": "Monk",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Shadow",
-							"source": "PHB"
-						}
 					}
 				]
 			}
@@ -9034,48 +8760,6 @@
 						"name": "Cleric",
 						"source": "PHB"
 					}
-				],
-				"fromSubclass": [
-					{
-						"class": {
-							"name": "Cleric",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Solidarity (PSA)",
-							"source": "PSA"
-						}
-					},
-					{
-						"class": {
-							"name": "Paladin",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Glory",
-							"source": "TCE"
-						}
-					},
-					{
-						"class": {
-							"name": "Paladin",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Heroism (UA)",
-							"source": "UABardAndPaladin"
-						}
-					},
-					{
-						"class": {
-							"name": "Druid",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Stars",
-							"source": "TCE"
-						}
-					}
 				]
 			}
 		},
@@ -9211,28 +8895,6 @@
 						"name": "Wizard",
 						"source": "PHB"
 					}
-				],
-				"fromSubclass": [
-					{
-						"class": {
-							"name": "Cleric",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Knowledge",
-							"source": "PHB"
-						}
-					},
-					{
-						"class": {
-							"name": "Cleric",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Knowledge (PSA)",
-							"source": "PSA"
-						}
-					}
 				]
 			},
 			"entriesHigherLevel": [
@@ -9297,18 +8959,6 @@
 					{
 						"name": "Cleric",
 						"source": "PHB"
-					}
-				],
-				"fromSubclass": [
-					{
-						"class": {
-							"name": "Paladin",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Oathbreaker",
-							"source": "DMG"
-						}
 					}
 				]
 			}
@@ -9433,18 +9083,6 @@
 						"name": "Wizard",
 						"source": "PHB"
 					}
-				],
-				"fromSubclass": [
-					{
-						"class": {
-							"name": "Cleric",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Death",
-							"source": "DMG"
-						}
-					}
 				]
 			}
 		},
@@ -9498,19 +9136,6 @@
 					{
 						"name": "Wizard",
 						"source": "PHB"
-					}
-				],
-				"fromSubclass": [
-					{
-						"class": {
-							"name": "Druid",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Land",
-							"source": "PHB",
-							"subSubclass": "Coast"
-						}
 					}
 				]
 			},
@@ -9571,18 +9196,6 @@
 					{
 						"name": "Wizard",
 						"source": "PHB"
-					}
-				],
-				"fromSubclass": [
-					{
-						"class": {
-							"name": "Paladin",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Redemption (UA)",
-							"source": "UAATrioOfSubclasses"
-						}
 					}
 				]
 			},
@@ -9703,39 +9316,6 @@
 					{
 						"name": "Ranger",
 						"source": "PHB"
-					}
-				],
-				"fromSubclass": [
-					{
-						"class": {
-							"name": "Cleric",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Nature",
-							"source": "PHB"
-						}
-					},
-					{
-						"class": {
-							"name": "Druid",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Land",
-							"source": "PHB",
-							"subSubclass": "Forest"
-						}
-					},
-					{
-						"class": {
-							"name": "Druid",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Land",
-							"source": "PHB"
-						}
 					}
 				]
 			},
@@ -9981,79 +9561,6 @@
 						"name": "Wizard",
 						"source": "PHB"
 					}
-				],
-				"fromSubclass": [
-					{
-						"class": {
-							"name": "Druid",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Land",
-							"source": "PHB",
-							"subSubclass": "Arctic"
-						}
-					},
-					{
-						"class": {
-							"name": "Paladin",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Vengeance",
-							"source": "PHB"
-						}
-					},
-					{
-						"class": {
-							"name": "Paladin",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Conquest",
-							"source": "XGE"
-						}
-					},
-					{
-						"class": {
-							"name": "Paladin",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Redemption",
-							"source": "XGE"
-						}
-					},
-					{
-						"class": {
-							"name": "Cleric",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Order",
-							"source": "TCE"
-						}
-					},
-					{
-						"class": {
-							"name": "Druid",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Land",
-							"source": "PHB"
-						}
-					},
-					{
-						"class": {
-							"name": "Monk",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Four Elements",
-							"source": "PHB"
-						}
-					}
 				]
 			}
 		},
@@ -10189,29 +9696,6 @@
 					{
 						"name": "Wizard",
 						"source": "PHB"
-					}
-				],
-				"fromSubclass": [
-					{
-						"class": {
-							"name": "Druid",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Land",
-							"source": "PHB",
-							"subSubclass": "Grassland"
-						}
-					},
-					{
-						"class": {
-							"name": "Druid",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Land",
-							"source": "PHB"
-						}
 					}
 				]
 			}
@@ -10427,38 +9911,6 @@
 						"name": "Cleric",
 						"source": "PHB"
 					}
-				],
-				"fromSubclass": [
-					{
-						"class": {
-							"name": "Cleric",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Life",
-							"source": "PHB"
-						}
-					},
-					{
-						"class": {
-							"name": "Cleric",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "War",
-							"source": "PHB"
-						}
-					},
-					{
-						"class": {
-							"name": "Paladin",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Conquest",
-							"source": "XGE"
-						}
-					}
 				]
 			}
 		},
@@ -10576,18 +10028,6 @@
 						"name": "Wizard",
 						"source": "PHB"
 					}
-				],
-				"fromSubclass": [
-					{
-						"class": {
-							"name": "Paladin",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Redemption",
-							"source": "XGE"
-						}
-					}
 				]
 			}
 		},
@@ -10658,18 +10098,6 @@
 						"name": "Wizard",
 						"source": "PHB"
 					}
-				],
-				"fromSubclass": [
-					{
-						"class": {
-							"name": "Paladin",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Devotion",
-							"source": "PHB"
-						}
-					}
 				]
 			}
 		},
@@ -10733,18 +10161,6 @@
 					{
 						"name": "Wizard",
 						"source": "PHB"
-					}
-				],
-				"fromSubclass": [
-					{
-						"class": {
-							"name": "Monk",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Four Elements",
-							"source": "PHB"
-						}
 					}
 				]
 			},
@@ -10811,49 +10227,6 @@
 						"name": "Wizard",
 						"source": "PHB"
 					}
-				],
-				"fromSubclass": [
-					{
-						"class": {
-							"name": "Druid",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Land",
-							"source": "PHB",
-							"subSubclass": "Grassland"
-						}
-					},
-					{
-						"class": {
-							"name": "Paladin",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Vengeance",
-							"source": "PHB"
-						}
-					},
-					{
-						"class": {
-							"name": "Paladin",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Glory",
-							"source": "TCE"
-						}
-					},
-					{
-						"class": {
-							"name": "Druid",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Land",
-							"source": "PHB"
-						}
-					}
 				]
 			}
 		},
@@ -10910,18 +10283,6 @@
 					{
 						"name": "Wizard",
 						"source": "PHB"
-					}
-				],
-				"fromSubclass": [
-					{
-						"class": {
-							"name": "Cleric",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Twilight",
-							"source": "TCE"
-						}
 					}
 				]
 			}
@@ -10981,28 +10342,6 @@
 					{
 						"name": "Wizard",
 						"source": "PHB"
-					}
-				],
-				"fromSubclass": [
-					{
-						"class": {
-							"name": "Cleric",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Knowledge",
-							"source": "PHB"
-						}
-					},
-					{
-						"class": {
-							"name": "Paladin",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Watchers",
-							"source": "TCE"
-						}
 					}
 				]
 			}
@@ -11173,39 +10512,6 @@
 						"name": "Wizard",
 						"source": "PHB"
 					}
-				],
-				"fromSubclass": [
-					{
-						"class": {
-							"name": "Druid",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Land",
-							"source": "PHB",
-							"subSubclass": "Arctic"
-						}
-					},
-					{
-						"class": {
-							"name": "Cleric",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Order",
-							"source": "TCE"
-						}
-					},
-					{
-						"class": {
-							"name": "Druid",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Land",
-							"source": "PHB"
-						}
-					}
 				]
 			},
 			"eldritchInvocations": [
@@ -11268,16 +10574,14 @@
 				"S"
 			],
 			"classes": {
-				"fromSubclass": [
+				"fromClassList": [
 					{
-						"class": {
-							"name": "Wizard",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Graviturgy",
-							"source": "EGW"
-						}
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
 					}
 				]
 			}
@@ -11337,49 +10641,6 @@
 					{
 						"name": "Wizard",
 						"source": "PHB"
-					}
-				],
-				"fromSubclass": [
-					{
-						"class": {
-							"name": "Druid",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Land",
-							"source": "PHB",
-							"subSubclass": "Underdark"
-						}
-					},
-					{
-						"class": {
-							"name": "Ranger",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Gloom Stalker",
-							"source": "XGE"
-						}
-					},
-					{
-						"class": {
-							"name": "Cleric",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Twilight",
-							"source": "TCE"
-						}
-					},
-					{
-						"class": {
-							"name": "Druid",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Land",
-							"source": "PHB"
-						}
 					}
 				]
 			}
@@ -11451,18 +10712,6 @@
 					{
 						"name": "Wizard",
 						"source": "PHB"
-					}
-				],
-				"fromSubclass": [
-					{
-						"class": {
-							"name": "Cleric",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Trickery",
-							"source": "PHB"
-						}
 					}
 				]
 			},
@@ -11539,79 +10788,6 @@
 					{
 						"name": "Wizard",
 						"source": "PHB"
-					}
-				],
-				"fromSubclass": [
-					{
-						"class": {
-							"name": "Cleric",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "War",
-							"source": "PHB"
-						}
-					},
-					{
-						"class": {
-							"name": "Druid",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Land",
-							"source": "PHB"
-						}
-					},
-					{
-						"class": {
-							"name": "Paladin",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Ancients",
-							"source": "PHB"
-						}
-					},
-					{
-						"class": {
-							"name": "Paladin",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Conquest",
-							"source": "XGE"
-						}
-					},
-					{
-						"class": {
-							"name": "Paladin",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Redemption",
-							"source": "XGE"
-						}
-					},
-					{
-						"class": {
-							"name": "Monk",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Four Elements",
-							"source": "PHB"
-						}
-					},
-					{
-						"class": {
-							"name": "Druid",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Land",
-							"source": "PHB",
-							"subSubclass": "Mountain"
-						}
 					}
 				]
 			}
@@ -11735,48 +10911,6 @@
 						"name": "Cleric",
 						"source": "PHB"
 					}
-				],
-				"fromSubclass": [
-					{
-						"class": {
-							"name": "Paladin",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Devotion",
-							"source": "PHB"
-						}
-					},
-					{
-						"class": {
-							"name": "Cleric",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Order (UA)",
-							"source": "UAOrderDomain"
-						}
-					},
-					{
-						"class": {
-							"name": "Cleric",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Order",
-							"source": "TCE"
-						}
-					},
-					{
-						"class": {
-							"name": "Paladin",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Glory",
-							"source": "TCE"
-						}
-					}
 				]
 			}
 		},
@@ -11897,18 +11031,6 @@
 					{
 						"name": "Druid",
 						"source": "PHB"
-					}
-				],
-				"fromSubclass": [
-					{
-						"class": {
-							"name": "Sorcerer",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Clockwork Soul",
-							"source": "TCE"
-						}
 					}
 				]
 			}
@@ -12032,80 +11154,6 @@
 						"name": "Wizard",
 						"source": "PHB"
 					}
-				],
-				"fromSubclass": [
-					{
-						"class": {
-							"name": "Cleric",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Knowledge",
-							"source": "PHB"
-						}
-					},
-					{
-						"class": {
-							"name": "Cleric",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Light",
-							"source": "PHB"
-						}
-					},
-					{
-						"class": {
-							"name": "Druid",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Land",
-							"source": "PHB",
-							"subSubclass": "Coast"
-						}
-					},
-					{
-						"class": {
-							"name": "Druid",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Land",
-							"source": "PHB",
-							"subSubclass": "Swamp"
-						}
-					},
-					{
-						"class": {
-							"name": "Paladin",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Vengeance",
-							"source": "PHB"
-						}
-					},
-					{
-						"class": {
-							"name": "Druid",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Land",
-							"source": "PHB"
-						}
-					},
-					{
-						"class": {
-							"name": "Paladin",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Watchers",
-							"source": "TCE"
-						}
-					}
 				]
 			}
 		},
@@ -12169,29 +11217,6 @@
 					{
 						"name": "Wizard",
 						"source": "PHB"
-					}
-				],
-				"fromSubclass": [
-					{
-						"class": {
-							"name": "Druid",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Land",
-							"source": "PHB",
-							"subSubclass": "Mountain"
-						}
-					},
-					{
-						"class": {
-							"name": "Druid",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Land",
-							"source": "PHB"
-						}
 					}
 				]
 			}
