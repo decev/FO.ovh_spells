@@ -24,6 +24,63 @@
 			"SM": "Slayer Mutagen"
 		}
 	},
+	"fileType": "content-blocklist",	
+	"blocklist": [
+		{
+			"displayName": "Abi-Dalzim's Horrid Wilting",
+			"hash": "abi-dalzim's%20horrid%20wilting_xge",
+			"category": "spell",
+			"source": "XGE"
+		},
+		{
+			"displayName": "Clone",
+			"hash": "clone_phb",
+			"category": "spell",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Detect Magic",
+			"hash": "detect%20magic_phb",
+			"category": "spell",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Evard's Black Tentacles",
+			"hash": "evard's%20black%20tentacles_phb",
+			"category": "spell",
+			"source": "PHB"
+		},
+		{
+			"displayName": "False Life",
+			"hash": "false%20life_phb",
+			"category": "spell",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Feign Death",
+			"hash": "feign%20death_phb",
+			"category": "spell",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Maze",
+			"hash": "maze_phb",
+			"category": "spell",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Symbol",
+			"hash": "symbol_phb",
+			"category": "spell",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Tenser's Floating Disk",
+			"hash": "tenser's%20floating%20disk_phb",
+			"category": "spell",
+			"source": "PHB"
+		}
+	],
 	"subclass": [
 		{
 			"name": "Path of the Titan",
