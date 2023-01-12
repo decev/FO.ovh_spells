@@ -8328,6 +8328,65 @@
 			}
 		},
 		{
+			"name": "Greater Mending",
+			"source": "Farover",
+			"level": 6,
+			"school": "T",
+			"time": [
+				{
+					"number": 10,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "ten meteorite stones set in a ring, and at least 100 gp which the spell consumes",
+					"consume": true,
+					"cost": 100
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"This spell can repair any damaged or broken non-organic object back to any state it was in before it was damaged to its current state. If an object has been damaged, changed, or broken down multiple times, the spell will revert its form antichronologically through all of its previous states all the way to its original form from when it was originally created. The caster can thus choose to end the spell when the desired state of the item is reached.",
+				"The item or object must be simple in construction, but it can be as large as 1000 cubic feet in area. The item or object can not be restored to anything it has not previously been, for example the spell can not create a fully built castle wall out of one which has never been more than under construction.",
+				"If parts of the object or item have been lost or destroyed, the spell creates the missing material, unless the missing material holds a gold value exceeding that of the material cost of the spell. If the spell would have to create material exceeding the material cost of the spell, an equivalent amount of additional gold must be provided by the caster to cast the spell."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			},
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"PRM"
+			]
+		},
+		{
 			"name": "Toll the Dead",
 			"source": "Farover",
 			"page": 169,
