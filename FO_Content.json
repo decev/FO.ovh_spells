@@ -13145,6 +13145,151 @@
 					}
 				]
 			}
+		},
+		{
+			"name": "Improved Blink",
+			"source": "Farover",
+			"level": 5,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"Upon casting this spell, you place yourself on the border of your current plane, and the ethereal plane. Similarly to the {@spell blink} spell, this spell allows you to vanish and appear in the Ethereal Plane, but by improved means.",
+				"While the spell is active, whenever you are hit by a damaging attack, you can use your reaction to snap your fingers and vanish from your current plane of existence, appearing in the Ethereal Plane and avoiding the damage completely. At the start of your next turn, and when the spell ends if you are on the Ethereal Plane, you return to an unoccupied space of your choice that you can see within 15 feet of the space you vanished from. If no unoccupied space is available within that range, you appear in the nearest unoccupied space (chosen at random if more than one space is equally near).",
+				"While on the Ethereal Plane, you have advantage on initiative rolls. You can also see and hear the plane you originated from, which is cast in shades of gray, but you can't see anything there more than 60 feet away. You can only affect and be affected by other creatures on the Ethereal Plane. Creatures that aren't there can't perceive you or interact with you, unless they have the ability to do so."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Audible Thoughts",
+			"source": "Farover",
+			"level": 3,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "a piece of copper wire"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"By a wave of your hand, you attempt to remove the separation of inner and voiced thoughts from a humanoids mind within range. The spell fails if the target does not speak any languages. The target must succeed on a Wisdom saving throw, or be affected by the spell for a minute, unless you stop concentrating on it early.",
+				"For the duration of the spell, the target's inner thoughts going through its mind are all audibly voiced by the target out loud. Mild thoughts and ideas might be spoken in a soft tone, and powerful or angry ones might even be shouted. The target does not realize that this is happening, even though it is clearly opening its mouth and speaking. From the target's perspective, nothing is out of the ordinary and it is keeping all of its inner thoughts to itself.",
+				"The target does not realize this change in its behavior, but other people obviously do. The target receives no additional saving throws to end the effect early, unless another person even indirectly informs the target of their odd behavior. If the target is made aware of their audible thoughts by you or a third party, it can begin to repeat the saving throw at the end of each of its turns to end the effect."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Rusting Grasp",
+			"source": "Farover",
+			"level": 5,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "an antenna from a rust monster"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"By casting this spell, the you gain the power to destroy non-magical ferrous metals and alloys by way of corrosion at a touch. Iron and iron-based alloys such as steel, meteoric iron, mithril, and adamantite are affected, but noble metals such as gold, silver, and copper are not subject to reduction through rusting.",
+				"To corrode a metal in this way, make a melee spell attack. Any non-magical ferrous metal item or object you touch with the attack roll is destroyed if the attack roll meets or beats its AC. The AC for different substances can be found in the {@link Statistics for Objects|https://5e.tools/objects.html#generic%20object_dmg} section of the SRD (iron and steel for example have an AC of 19)."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			}
 		}
 	],
 	"condition": [
