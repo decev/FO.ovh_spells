@@ -2370,7 +2370,7 @@
 				{
 					"type": "list",
 					"items": [
-						"When making an attack roll with either a Finesse or ranged weapon, you can choose to make an Insight check as a bonus action before the attack roll. If the attack then hits, the target suffers additional weapon damage based on the amount your Insight check passes the targets AC. Once you use this feature, you can't use it again until you finish a short or long rest."
+						"Before making an attack roll with either a Finesse or ranged weapon, you can choose to make an Insight check as a bonus action. If the Insight check passes the targets AC, the next Finesse or ranged weapon attack roll you make against the target on the same turn is made at advantage, and if the attack hits, the target also suffers additional weapon damage equal to half your Insight modifier (rounded down). Once you use this feature, you can't use it again until you finish a short or long rest."
 					]
 				}
 			]
