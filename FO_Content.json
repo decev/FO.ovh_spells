@@ -1989,12 +1989,11 @@
 			"subclassShortName": "Bear",
 			"level": 17,
 			"entries": [
-				"Starting at 17th level, you learn a new devastating attack action option based on your fighting style. Using this special attack takes up your entire action.",
+				"Starting at 17th level, you learn two new devastating attack action options. Using one of these special attacks takes up your entire action.",
 				{
 					"type": "entries",
 					"name": "Hemorrhage",
 					"entries": [
-						"If you have selected the Deftness {@classFeature fighting style|Slayer|farover|1}, you learn this attack option.",
                         "You make a well placed weapon attack with advantage at a weak spot of your target. If the attack hits, the weapons damage dice is doubled, and the target will bleed for {@dice 1d4} rounds, taking an additional {@dice 1d8} damage at the start of each of it's turns for the duration."
 					]
 				},
@@ -2002,7 +2001,6 @@
 					"type": "entries",
 					"name": "Rend",
 					"entries": [
-						"If you have selected the Great Weapon Fighting {@classFeature fighting style|Slayer|farover|1}, you learn this attack option.",
                         "You make a powerful attack with advantage, bringing your weapon down from great height. If the attack hits, the weapons damage dice is doubled, and the target takes additional weapon damage equal to twice the amount by how much the attack roll passed the targets armor class."
 					]
 				}
@@ -18092,7 +18090,7 @@
 			"classSource": "Farover",
 			"level": 7,
 			"entries": [
-				"Your inhuman senses and vast experience allows you to learn some features about your non-humanoid enemies. By observing a monster for at least 1 minute outside of combat, you learn information about its capabilities. You can only do this to a specific creature once a day. After 1 minute of successfully observing, roll 2d6, rerolling duplicates. The result of the dice indicates the information you are able to glean, as follows:",
+				"At 7th level, your inhuman senses and vast experience allows you to learn some features about your non-humanoid enemies. By observing a monster for at least 1 minute outside of combat, you learn information about its capabilities. You can only do this to a specific creature once a day. After 1 minute of successfully observing, roll 2d6, rerolling duplicates. The result of the dice indicates the information you are able to glean, as follows:",
 				{
 					"type": "list",
 					"items": [
@@ -18113,11 +18111,11 @@
 			"classSource": "Farover",
 			"level": 11,
             "entries": [
-                "At 7th level, your increased knowledge and developed mutations allow you to craft and digest incredibly poisonous Slayer Alchemy items called decoctions. Decoctions are made using the remains or the essence of monsters you slay as their main ingredient with your {@classFeature slayer alchemy|Slayer|farover|3} feature.",
+                "At 11th level, your increased knowledge and developed mutations allow you to craft and digest incredibly poisonous Slayer Alchemy items called decoctions. Decoctions are made using the remains or the essence of monsters you slay as their main ingredient with your {@classFeature slayer alchemy|Slayer|farover|3} feature.",
                 "When you slay a monster, you can spend 1 minute harvesting an ingredient from it's remains. Using your {@item Alchemist's Supplies|phb}, you can craft a decoction from this ingredient. This can be done as part of your normal {@classFeature slayer alchemy|Slayer|farover|3} short rest crafting, or separately.",
                 "When you craft a decoction, you decide which one attribute from the slain monster you wish to encapsulate in the decoction, which can be an {@bold ability score, natural AC, damage resistance, damage immunity, condition immunity, or sense.}",
-                "You can only have one decoction at a time. Harvesting the ingredient for a second decoction means you first have to consume or discard the first decoction. Decoctions are also unstable by nature, losing their potency over time and becoming inert if not used before you finish your next long rest (instead of the normal short or long rest for other Slayer Alchemy items).",
-                "You can consume a decoction as an action, and it's effects last for 1 minute. For the duration, you gain the attribute of the monster from which the decoction was made. Consuming a decoction increases your toxicity by 4."
+                "You can only have one decoction at a time. To harvest the ingredient for a second decoction means you have to consume or discard the first decoction.",
+                "You can consume a decoction as an action, and it's effects last for 1 minute. For the duration, you gain the attribute of the monster from which the decoction was made. Consuming a decoction increases your toxicity by 5."
 			]
 		},
         {
