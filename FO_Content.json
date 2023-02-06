@@ -17109,13 +17109,13 @@
                         ],
                         [
                             "2",
-                            "6",
+                            "8",
                             "\u2014",
                             "\u2014"
                         ],
                         [
                             "2",
-                            "7",
+                            "8",
                             "8",
                             "4"
                         ],
@@ -17133,91 +17133,91 @@
                         ],
                         [
                             "4",
-                            "10",
+                            "9",
                             "9",
                             "10"
                         ],
                         [
                             "4",
-                            "11",
+                            "10",
                             "10",
                             "12"
                         ],
                         [
                             "5",
-                            "12",
+                            "10",
                             "10",
                             "14"
                         ],
                         [
                             "5",
-                            "13",
+                            "11",
                             "11",
                             "16"
                         ],
                         [
                             "6",
-                            "14",
+                            "11",
                             "11",
                             "18"
                         ],
                         [
                             "6",
-                            "15",
+                            "12",
                             "12",
                             "20"
                         ],
                         [
                             "6",
-                            "16",
+                            "12",
                             "12",
                             "22"
                         ],
                         [
                             "6",
-                            "17",
+                            "13",
                             "13",
                             "24"
                         ],
                         [
                             "6",
-                            "18",
+                            "13",
                             "13",
                             "26"
                         ],
                         [
                             "6",
-                            "19",
+                            "14",
                             "14",
                             "28"
                         ],
                         [
                             "6",
-                            "20",
+                            "14",
                             "14",
                             "30"
                         ],
                         [
                             "6",
-                            "21",
+                            "15",
                             "15",
                             "32"
                         ],
                         [
                             "6",
-                            "24",
+                            "17",
                             "17",
                             "34"
                         ],
                         [
                             "6",
-                            "25",
+                            "18",
                             "18",
                             "36"
                         ],
                         [
                             "6",
-                            "26",
+                            "18",
                             "18",
                             "All"
                         ]
@@ -17226,7 +17226,6 @@
             ],
             "classFeatures": [
                 "Mutations|Slayer|Farover|1",
-                "Fighting Style|Slayer|Farover|1",
                 "Signs|Slayer|Farover|2",
                 {
 					"classFeature": "Slayer School|Slayer|Farover|3",
@@ -17237,14 +17236,14 @@
                 "Extra Attack|Slayer|Farover|5",
                 "Enhanced Signs|Slayer|Farover|6",
                 "Improved Mutations|Slayer|Farover|7",
-                "Decoctions|Slayer|Farover|7",
+                "Heightened Observation|Slayer|Farover|7",
                 "Ability Score Improvement|Slayer|Farover|8",
                 {
 					"classFeature": "Slayer School Feature|Slayer|Farover|9",
 					"gainSubclassFeature": true
 				},
                 "Superior Signs|Slayer|Farover|10",
-                "Fighting Style Refinement|Slayer|Farover|11",
+                "Decoctions|Slayer|Farover|11",
                 "Ability Score Improvement|Slayer|Farover|12",
                 {
 					"classFeature": "Slayer School Feature|Slayer|Farover|13",
@@ -17960,36 +17959,13 @@
                 {
 					"type": "list",
 					"items": [
+						"If you wield a weapon with the Versatile property, you also gain the Finesse property for that weapon.",
 						"You gain {@sense darkvision} out to a range of 60 feet.",
 						"You gain proficiency in {@skill Perception}, and you can sense creatures you can't see within 30 feet by smell. Sensing a creature by smell only informs you of the existence of the creature within 30 feet, but not it's exact location.",
                         "When making checks to track or recall general information about any non-humanoid creature, you have advantage on the roll."
 					]
 				},
                 "Your mutations will continue to develop, granting you additional benefits at 7th and 14th levels."
-			]
-		},
-        {
-			"name": "Fighting Style",
-			"source": "Farover",
-			"className": "Slayer",
-			"classSource": "Farover",
-			"level": 1,
-            "entries": [
-                "At 1st level, you adopt a particular style of fighting as your specialty. Choose one of the following options. Your skills in the fighting style of your choice will continue to improve, granting you a further benefit at 11th level.",
-                {
-					"type": "entries",
-					"name": "Deftness",
-					"entries": [
-                        "When you are wielding a weapon with the Versatile property, you also gain the Finesse property for that weapon."
-					]
-				},
-                {
-					"type": "entries",
-					"name": "Great Weapon Fighting",
-					"entries": [
-                        "When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit."
-					]
-				}
 			]
 		},
         {
@@ -18106,23 +18082,26 @@
 						"You gain expertise in the {@skill Perception} skill.",
                         "You no longer need to sleep normally, and you can instead meditate, remaining semiconscious. A nights rest which is normally 8 hours requires you to only meditate for 4 hours."
 					]
-				},
-                {
-					"type": "entries",
-					"name": "Heightened Observation",
-					"entries": [
-                        "Your inhuman senses and vast experience allows you to learn some features about your non-humanoid enemies. By observing a monster for at least 1 minute outside of combat, you learn information about its capabilities. You can only do this to a specific creature once a day. After 1 minute of successfully observing, roll 2d6, rerolling duplicates. The result of the dice indicates the information you are able to glean, as follows:",
-                        {
-                            "type": "list",
-                            "items": [
-                                "{@bold {@italic 1.}} Strength or Dexterity ability score, whichever is higher",
-                                "{@bold {@italic 2.}} Current hit points",
-                                "{@bold {@italic 3.}} Armor class",
-                                "{@bold {@italic 4.}} One resistance or immunity, if any exist",
-                                "{@bold {@italic 5.}} One vulnerability, if it exists",
-                                "{@bold {@italic 6.}} Charisma, Intelligence or Wisdom ability score, whichever is highest"
-                            ]
-                        }
+				}
+			]
+		},
+		{
+			"name": "Heightened Observation",
+			"source": "Farover",
+			"className": "Slayer",
+			"classSource": "Farover",
+			"level": 7,
+			"entries": [
+				"Your inhuman senses and vast experience allows you to learn some features about your non-humanoid enemies. By observing a monster for at least 1 minute outside of combat, you learn information about its capabilities. You can only do this to a specific creature once a day. After 1 minute of successfully observing, roll 2d6, rerolling duplicates. The result of the dice indicates the information you are able to glean, as follows:",
+				{
+					"type": "list",
+					"items": [
+						"{@bold {@italic 1.}} Strength or Dexterity ability score, whichever is higher",
+						"{@bold {@italic 2.}} Current hit points",
+						"{@bold {@italic 3.}} Armor class",
+						"{@bold {@italic 4.}} One resistance or immunity, if any exist",
+						"{@bold {@italic 5.}} One vulnerability, if it exists",
+						"{@bold {@italic 6.}} Charisma, Intelligence or Wisdom ability score, whichever is highest"
 					]
 				}
 			]
@@ -18132,7 +18111,7 @@
 			"source": "Farover",
 			"className": "Slayer",
 			"classSource": "Farover",
-			"level": 7,
+			"level": 11,
             "entries": [
                 "At 7th level, your increased knowledge and developed mutations allow you to craft and digest incredibly poisonous Slayer Alchemy items called decoctions. Decoctions are made using the remains or the essence of monsters you slay as their main ingredient with your {@classFeature slayer alchemy|Slayer|farover|3} feature.",
                 "When you slay a monster, you can spend 1 minute harvesting an ingredient from it's remains. Using your {@item Alchemist's Supplies|phb}, you can craft a decoction from this ingredient. This can be done as part of your normal {@classFeature slayer alchemy|Slayer|farover|3} short rest crafting, or separately.",
@@ -18170,30 +18149,6 @@
 			"level": 10,
             "entries": [
                 "Starting at 10th level, you unlock the ability to cast the strongest versions of your {@filter signs|optionalfeatures|feature type=ss}, called superior signs. Superior signs cost 5 vigor points."
-			]
-		},
-        {
-			"name": "Fighting Style Refinement",
-			"source": "Farover",
-			"className": "Slayer",
-			"classSource": "Farover",
-			"level": 11,
-            "entries": [
-                "At 11th level, the fighting style that you chose at 1st level has been refined to grant you further benefits. Your fighting style gains the following benefits:",
-                {
-					"type": "entries",
-					"name": "Deftness",
-					"entries": [
-                        "When you make damage rolls with a weapon which has the Versatile property, you can roll one of the damage dice twice, and use the higher of the two rolls."
-					]
-				},
-                {
-					"type": "entries",
-					"name": "Great Weapon Fighting",
-					"entries": [
-                        "When you are wielding a melee weapon with two hands, you gain a +1 bonus to damage rolls with that weapon. The weapon must have the two-handed or versatile property for you to gain this benefit."
-					]
-				}
 			]
 		},
         {
