@@ -1828,7 +1828,7 @@
 			"entries": [
                 "Starting at 3rd level when you choose this subclass, your education in the arcane arts grants you an increased arsenal of low level magic. If any spells require a spell save DC or spell attack rolls, Wisdom is your spellcasting modifier. You can use your slayer medallion as a spellcasting focus for these spells.",
 				"You can learn cantrips and 1st-level spells at 3rd level, 2nd-level spells at 5th level, and 3rd-level spells at 9th level.",
-				"Casting a cantrip costs no vigor points, a 1st-level spell costs 3 vigor points, a 2nd-level spell costs 5 vigor points, and a 3rd-level spell costs 8 vigor points. These spells can be upcast to higher levels.",
+				"Casting a cantrip costs no vigor points, a 1st-level spell costs 3 vigor points, a 2nd-level spell costs 4 vigor points, and a 3rd-level spell costs 6 vigor points. These spells can be upcast to higher levels.",
 				"When you choose this subclass, you learn one additional sign or cantrip, and one spell. Your maximum vigor points are also increased by 3.",
 				"You also now learn one additional spell each time you gain a level in this class, and each time you would learn a sign, you can choose to learn a cantrip instead. You also continue learning signs or cantrips past 10th level as well, learning one every even level.",
 				{
