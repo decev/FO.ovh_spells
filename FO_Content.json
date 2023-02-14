@@ -13480,6 +13480,70 @@
 					}
 				]
 			}
+		},
+		{
+			"name": "Thunder Mote",
+			"source": "Farover",
+			"level": 0,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You create a mote of latent magic to attach on to a creature within range. The target must succeed on a Wisdom saving throw or be affected by the spell. An affected creature can take an action to snuff out the mote. The mote harmlessly lasts for the duration of the spell, unless you use either a bonus action or reaction to cause it to explode, dealing {@damage 1d8} thunder damage to the target and removing the mote.",
+				"The spell creates additional motes when you reach 5th level (2 motes), 11th level (3 motes), and 17th level (4 motes). Multiple motes can be cast at one or multiple targets, with a separate saving throw for each one."
+			],
+			"areaTags": [
+				"ST",
+				"MT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			},
+			"damageInflict": [
+				"thunder"
+			],
+			"savingThrow": [
+				"wisdom"
+			]
 		}
 	],
 	"condition": [
