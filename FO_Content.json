@@ -6003,7 +6003,6 @@
 		{
 			"name": "Sending",
 			"source": "Farover",
-			"page": 274,
 			"level": 3,
 			"school": "V",
 			"time": [
@@ -6021,7 +6020,9 @@
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "a short piece of fine copper wire"
+				"m": {
+					"text": "a silver ingot worth at least 10 gp, which the spell consumes"
+				}
 			},
 			"duration": [
 				{
@@ -10693,10 +10694,6 @@
 			],
 			"classes": {
 				"fromClassList": [
-					{
-						"name": "Sorcerer",
-						"source": "PHB"
-					},
 					{
 						"name": "Wizard",
 						"source": "PHB"
