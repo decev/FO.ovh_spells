@@ -937,7 +937,7 @@
 			"level": 11,
 			"entries": [
 				"Starting at 11th level, your companion develops a taste for blood. When your companion takes the Attack action on its turn to attack a {@condition wounded|farover} target, or causes a target to be {@condition wounded|farover} with the attack, your companion can attack twice, instead of once.",
-                "In addition, your companion can now be a beast with a CR of at most 1/4."
+                "In addition, your companion can now be a beast with a flying speed and a CR of at most 1/2."
 			]
 		},
         {
@@ -9848,13 +9848,13 @@
 				}
 			],
 			"entries": [
-				"Up to six creatures of your choice that you can see within range each regain hit points equal to {@dice 2d4}. This spell has no effect on undead or constructs."
+				"Up to six creatures of your choice that you can see within range each regain hit points equal to {@dice 1d6} + your spellcasting ability modifier. This spell has no effect on undead or constructs."
 			],
 			"entriesHigherLevel": [
 				{
 					"name": "At Higher Levels",
 					"entries": [
-						"When you cast this spell using a spell slot of 3rd level or higher, the healing increases by {@scaledice 2d4|2-9|1d4} for each slot level above 2nd."
+						"When you cast this spell using a spell slot of 3rd level or higher, the healing increases by {@scaledice 1d6|2-9|1d6} for each slot level above 2nd."
 					]
 				}
 			],
@@ -13541,6 +13541,129 @@
 			"savingThrow": [
 				"wisdom"
 			]
+		},
+		{
+			"name": "Tasha's Caustic Brew",
+			"source": "Farover",
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "line",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a bit of rotten food"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"A stream of acid emanates from you in a line 30 feet long and 5 feet wide in a direction you choose. Each creature in the line must succeed on a Dexterity saving throw or be covered in acid for the spell's duration or until a creature uses its action to scrape or wash the acid off itself or another creature. A creature covered in the acid takes {@damage 2d4} acid damage at start of each of its turns."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@scaledamage 2d4|1-9|2d4} for each slot level above 1st."
+					]
+				}
+			],
+			"damageInflict": [
+				"acid"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Intellect Fortress",
+			"source": "Farover",
+			"level": 3,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"For the duration, you or one willing creature you can see within range has resistance to psychic damage, as well as advantage on Intelligence, Wisdom, and Charisma saving throws."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, you can target one additional creature for each slot level above 3rd. The creatures must be within 30 feet of each other when you target them."
+					]
+				}
+			],
+			"damageResist": [
+				"psychic"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"hasFluffImages": true,
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
 		}
 	],
 	"condition": [
