@@ -4631,7 +4631,7 @@
 			"entries": [
 				"By means of a withdraw spell, the cleric in effect alters the flow of time with regard to themself. While but one round of time passes for those not affected by the spell when it is cast, the cleric is able to spend two additional rounds on the turn the cleric casts Withdraw, in contemplation.",
 				"Although the cleric is only able to spend two rounds during the spell, time flows much slower for the cleric during Withdraw, allowing the player one minute of real time per round withdrawn to ponder some problem or question. No discussion with other players is permitted.",
-				"While affected by the Withdraw spell, the caster can use only the following spells: any divination spell or any curing or healing spell, the latter on the cleric themself only. The casting of any of these spells in a different fashion (for example, a Cure Wounds spell bestowed upon a companion) fails. Similarly, the withdrawn caster cannot move, become {@condition invisible}, or engage in actions other than thinking, reading, and the like."
+				"While affected by the Withdraw spell, the caster can use only the following spells: any divination spell or any curing or healing spell, the latter on the cleric themself only. The casting of any of these spells in a different fashion (for example, a {@spell Cure Wounds} spell bestowed upon a companion) fails. Similarly, the withdrawn caster cannot move, become {@condition invisible}, or engage in actions other than thinking, reading, and the like."
 			],
 			"entriesHigherLevel": [
 				{
@@ -5914,7 +5914,16 @@
 				}
 			],
 			"entries": [
-				"You touch a creature and mend them with a moderate amount of positive energy. You can reduce the target's {@condition exhaustion} level by one, or you can remove one effect causing a target to be {@condition frightened}."
+				"You touch a creature and mend them with a moderate amount of positive energy. You can grant the target one of the following effects:",
+						{
+			"type": "list",
+			"items": [
+				"Heal any broken bones, internal injuries, and lingering flesh wounds",
+				"Reduce the target's {@condition exhaustion} level by one",
+				"Remove one effect causing a target to be {@condition frightened}",
+				"Restore or heal one organ, such as an eye, finger, toe, ear, nose, or teeth. The spell cannot restore limbs, such as hands or legs."
+			]
+		}
 			],
 			"conditionInflict": [
 				"exhaustion",
@@ -11113,14 +11122,16 @@
 				}
 			],
 			"entries": [
-				"You imbue a creature you touch with positive energy to undo a debilitating effect. You can reduce the target's {@condition exhaustion} level by three, or end one of the following effects on the target:",
+				"You imbue a creature you touch with positive energy to undo a debilitating effect. You can reduce the target's {@condition exhaustion} level by three, or grant one of the following effects on the target:",
 				{
 					"type": "list",
 					"items": [
-						"One effect that {@condition charmed} or {@condition petrified} the target",
-						"One curse, including the target's attunement to a cursed magic item",
-						"Any reduction to one of the target's ability scores",
-						"One effect reducing the target's hit point maximum"
+						"End any reduction to one of the target's ability scores",
+						"End one curse, including the target's attunement to a cursed magic item",
+						"End one effect that {@condition charmed} or {@condition petrified} the target",
+						"End one effect reducing the target's hit point maximum",
+						"Heal any broken bones, internal injuries, and lingering flesh wounds",
+						"Restore any one severed body member, such as an arm, eye, hand, or leg."
 					]
 				}
 			],
