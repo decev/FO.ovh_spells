@@ -9447,7 +9447,16 @@
 					}
 				]
 			},
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the damage reduction increases by 1 for each slot level above 2nd."
+					]
+				}
+			]
 		},
 		{
 			"name": "Healing Spirit",
@@ -13708,7 +13717,7 @@
 				{
 					"type": "list",
 					"items": [
-						"end either one disease or one condition afflicting it. The condition can be {@condition blinded}, {@condition deafened}, {@condition paralyzed}, or {@condition poisoned}",
+						"End either one disease or one condition afflicting it. The condition can be {@condition blinded}, {@condition deafened}, {@condition paralyzed}, or {@condition poisoned}",
 						"Heal any broken bones, internal injuries, and lingering flesh wounds"
 					]
 				}
@@ -13778,6 +13787,17 @@
 			"entries": [
 				"Weapon oils are specialized chemical compounds that are effective against different types of creatures. One oil exists for every creature type (humanoid, beast, dragon, etc.), and they all have the same effect on their target. Weapon oil vials can be bought in most major towns/cities, and they cost 40g per dose, weigh 1 lb, and they last for either 5 successful weapon attacks or 24 hours, dealing 1d4 extra damage to the type of creature its meant for. Coating a weapon in oil is an action.",
 				"Characters with a proficiency with the {@item Poisoner's Kit|phb} can craft weapon oils for a cheaper price."
+			]
+		},
+		{
+			"name": "Negative Temporary Hit Points",
+			"source": "Farover",
+			"entries": [
+				"Some conditions and special abilities can confer negative temporary hit points to a creature. Negative Temporary hit points aren't actual hit points nor are they damage. They represent some lasting wound or a staggering hit.",
+				"When you have negative temporary hit points and receive healing or normal temporary hit points, the negative temporary hit points are lost first, and any leftover healing or points carries over to your normal hit points. For example, if you have -5 temporary hit points and you regain 8 hit points, you lose the negative temporary hit points and then heal 3 hit points. Alternatively if you have -5 temporary hit points and are given 5 temporary hit points you now would have 0 temporary hit points.",
+				"Because negative temporary hit points are separate from your actual hit points, they can be less than 0. A character can, therefore, be at 0 hit points and receive negative temporary hit points.",
+				"Negative temporary hit points can't be added together with other negative temporary hit points. If you have negative temporary hit points and receive more of them, you retain the lower amount. For example, if a spell grants you -12 temporary hit points when you already have -10, you now have -12, and not -22 or -10.",
+				"If you have 0 hit points, receiving negative temporary hit points can absorb healing directed at you while you're in that state, but only true healing that exceeds the amount will stabilize you. Unless a feature that grants you negative temporary hit points has a duration, they last until they're depleted or you finish a short or long rest."
 			]
 		},
 		{
