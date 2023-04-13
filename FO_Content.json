@@ -13784,10 +13784,16 @@
 		{
 			"name": "Cancer",
 			"entries": [
+				"Cancer is an almost incurable disease that can be contracted from heavy radiant damage, or simply from old age. The {@spell Wish} spell is the only known way to cure cancer.",
+				"Cancer has four stages, and when it first developes, it begins with the first stage.",
+				"After every year that passes since developing cancer, an affected character must succeed on a DC 20 Constitution saving throw, or the cancer develops to the next stage. Once the fourth stage has passed, the character dies.",
 				{
 					"type": "list",
 					"items": [
-						"This {@condition exhaustion} level can only be lost by removing the wounded condition, which is done by healing to at least 25% hit points."
+						"{@bold {@italic First Stage.}} During the first stage of cancer, you experience weight loss, skin irregularities, and coughing. Additionally, you have disadvantage on Constitution ability checks.",
+						"{@bold {@italic Second Stage.}} During the second stage, you experience yellowing of your skin and eyes, nausea, and vomiting. Additionally, you now permanently have one stack of {@condition exhaustion} that can not be removed.",
+						"{@bold {@italic Third Stage.}} During the third stage, you experience loss of appetite, persistent pain, and difficulty breathing. Additionally, you now permanently have two stacks of {@condition exhaustion} that can not be removed, and you suffer one additional damage from all sources.",
+						"{@bold {@italic Fourth Stage.}} During the fourth stage, you experience severe, persistent pain, seizures and convulsions, and significant fatigue. Additionally, you now permanently have three stacks of {@condition exhaustion} that can not be removed, and you are vulnerable to all damage."
 					]
 				}
 			],
