@@ -13780,6 +13780,20 @@
 			"source": "Farover"
 		}
 	],
+	"disease": [
+		{
+			"name": "Cancer",
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"This {@condition exhaustion} level can only be lost by removing the wounded condition, which is done by healing to at least 25% hit points."
+					]
+				}
+			],
+			"source": "Farover"
+		}
+	],
 	"variantrule": [
 		{
 			"name": "Weapon Oils",
