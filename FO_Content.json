@@ -14056,6 +14056,47 @@
 			]
 		},
 		{
+			"name": "Schizophrenic Behavior Table",
+			"source": "Farover",
+			"intro": [
+				"Bro you're crazy."
+			],
+			"colLabels": [
+				"d6 Result",
+				"Effect"
+			],
+			"colStyles": [
+				"col-1 text-center",
+				"col-11"
+			],
+			"rows": [
+				[
+					"1",
+					"If an ally of yours is unconscious, you will do everything in your power to preferably heal, or at least stabilize them. If they die, you will surely die too."
+				],
+				[
+					"2",
+					"If you have the capability of killing an enemy of yours, you will always do it. You take no prisoners nor leave any enemies alive. They will do the same to you given the chance."
+				],
+				[
+					"3",
+					"You will not step into any area with a large group of people, such as a tavern, marketplace, or busy town. They are all conspiring against you."
+				],
+				[
+					"4",
+					"You will not walk in front of anyone, nor stand with your back turned to anyone for more than a moment. If they want to kill you, you will want to at least see it coming."
+				],
+				[
+					"5",
+					"You will not tell any lies to anyone. The gods are always watching, ready to smite you."
+				],
+				[
+					"6",
+					"You will do whatever anyone tells you to do that isn't obviously self-destructive. Why would you not? They surely know something you don't."
+				]
+			]
+		},
+		{
 			"name": "Farover Weapons",
 			"source": "Farover",
 			"colLabels": [
