@@ -5903,10 +5903,10 @@
 				"v": true,
 				"s": true,
 				"m": {
-					"text": "diamond dust worth at least 30 gp, which the spell consumes",
-					"cost": 3000,
+					"text": "diamond dust worth at least 100 gp, which the spell consumes",
+					"cost": 10000,
 					"consume": true
-				}
+					}
 			},
 			"duration": [
 				{
@@ -5918,10 +5918,9 @@
 						{
 			"type": "list",
 			"items": [
-				"Heal any broken bones, internal injuries, and lingering flesh wounds",
-				"Reduce the target's {@condition exhaustion} level by one",
-				"Remove one effect causing a target to be {@condition frightened}",
-				"Restore or heal one organ, such as an eye, finger, toe, ear, nose, or teeth. The spell cannot restore limbs, such as hands or legs."
+				"Cure some form of lingering injury, as per the lingering injury table.",
+				"Reduce the target's {@condition exhaustion} level by three",
+				"Remove one effect causing a target to be {@condition charmed} or {@condition frightened}"
 			]
 		}
 			],
@@ -11120,8 +11119,8 @@
 				"v": true,
 				"s": true,
 				"m": {
-					"text": "diamond dust worth at least 100 gp, which the spell consumes",
-					"cost": 10000,
+					"text": "diamond dust worth at least 300 gp, which the spell consumes",
+					"cost": 30000,
 					"consume": true
 				}
 			},
@@ -11131,16 +11130,16 @@
 				}
 			],
 			"entries": [
-				"You imbue a creature you touch with positive energy to undo a debilitating effect. You can reduce the target's {@condition exhaustion} level by three, or grant one of the following effects on the target:",
+				"You imbue a creature you touch with positive energy to undo a debilitating effect. You can grant one of the following effects on the target:",
 				{
 					"type": "list",
 					"items": [
+						"Cure any form of lingering injury, as per the lingering injury table.",
 						"End any reduction to one of the target's ability scores",
 						"End one curse, including the target's attunement to a cursed magic item",
 						"End one effect that {@condition charmed} or {@condition petrified} the target",
 						"End one effect reducing the target's hit point maximum",
-						"Heal any broken bones, internal injuries, and lingering flesh wounds",
-						"Restore any one severed body member, such as an arm, eye, hand, or leg."
+						"Remove all levels of {@condition exhaustion} from the target"
 					]
 				}
 			],
@@ -13705,7 +13704,12 @@
 			},
 			"components": {
 				"v": true,
-				"s": true
+				"s": true,
+				"m": {
+					"text": "diamond dust worth at least 30 gp, which the spell consumes",
+					"cost": 3000,
+					"consume": true
+					}
 			},
 			"duration": [
 				{
@@ -13717,8 +13721,9 @@
 				{
 					"type": "list",
 					"items": [
+						"Cure some form of lingering injury, as per the lingering injury table.",
 						"End either one disease or one condition afflicting it. The condition can be {@condition blinded}, {@condition deafened}, {@condition paralyzed}, or {@condition poisoned}",
-						"Heal any broken bones, internal injuries, and lingering flesh wounds"
+						"Reduce the targets {@condition exhaustion} level by one."
 					]
 				}
 			],
@@ -13785,15 +13790,15 @@
 			"name": "Cancer",
 			"entries": [
 				"Cancer is an almost incurable disease that can be contracted from heavy radiant damage, or simply from old age. The {@spell Wish} spell is the only known way to cure cancer.",
-				"Cancer has four stages, and when it first developes, it begins with the first stage.",
+				"Cancer has four stages, and when it first developes, it begins with the first stage. A creature suffers the effects of its current stage, as well as all lower levels.",
 				"After every year that passes since developing cancer, an affected character must succeed on a DC 20 Constitution saving throw, or the cancer develops to the next stage. Once the fourth stage has passed, the character dies.",
 				{
 					"type": "list",
 					"items": [
-						"{@bold {@italic First Stage.}} During the first stage of cancer, you experience weight loss, skin irregularities, and coughing. Additionally, you have disadvantage on Constitution ability checks.",
-						"{@bold {@italic Second Stage.}} During the second stage, you experience yellowing of your skin and eyes, nausea, and vomiting. Additionally, you now permanently have one stack of {@condition exhaustion} that can not be removed.",
-						"{@bold {@italic Third Stage.}} During the third stage, you experience loss of appetite, persistent pain, and difficulty breathing. Additionally, you now permanently have two stacks of {@condition exhaustion} that can not be removed, and you suffer one additional damage from all sources.",
-						"{@bold {@italic Fourth Stage.}} During the fourth stage, you experience severe, persistent pain, seizures and convulsions, and significant fatigue. Additionally, you now permanently have three stacks of {@condition exhaustion} that can not be removed, and you are vulnerable to all damage."
+						"{@bold {@italic First Stage.}} During the first stage of cancer, you experience weight loss, skin irregularities, and coughing. Additionally, you have disadvantage on Constitution ability checks, and your movement speed is reduced by 5.",
+						"{@bold {@italic Second Stage.}} During the second stage, you experience yellowing of your skin and eyes, nausea, and vomiting. Additionally, you now permanently have one stack of {@condition exhaustion} that can not be removed, and all your attributes are lowered by 1.",
+						"{@bold {@italic Third Stage.}} During the third stage, you experience loss of appetite, persistent pain, and difficulty breathing. Additionally, you now permanently have two stacks of {@condition exhaustion} that can not be removed, and all your attributes are lowered by an additional 1.",
+						"{@bold {@italic Fourth Stage.}} During the fourth stage, you experience severe, persistent pain, seizures and convulsions, and significant fatigue. Additionally, you now permanently have three stacks of {@condition exhaustion} that can not be removed, and all your attributes are lowered by an additional 2."
 					]
 				}
 			],
