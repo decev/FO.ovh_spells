@@ -735,7 +735,7 @@
                         ],
                         [
                             "5th",
-                            "{@spell call lightning}"
+                            "{@spell thunder step|xge}"
                         ],
                         [
                             "7th",
@@ -2282,6 +2282,26 @@
 	],
 	"feat": [
 		{
+			"name": "Arcane Adept",
+			"source": "Farover",
+			"prerequisite": [
+				{
+					"spellcasting": true
+				}
+			],
+			"entries": [
+				"You have a natural talent for magic and have honed your abilities to a high degree. You gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"You gain proficiency in the {@skill Arcana} skill, or expertise if you already have proficiency in {@skill Arcana}.",
+						"Once per long rest, you can immediately regain one spell slot of your choice. The slot cannot be of the highest level you can cast.",
+						"Once per day, when you miss with a spell attack roll, you can choose to reroll it."
+					]
+				}
+			]
+		},
+		{
 			"name": "Armor Expert",
 			"source": "Farover",
 			"prerequisite": [
@@ -2304,6 +2324,38 @@
 					"type": "list",
 					"items": [
 						"Any armor you wear is less of a burden for you. While wearing a set of armor, you treat the armor as if it weighs less in pounds equal to your Strength score (to a minimum of 1 pound), for the purposes of carrying capacity."
+					]
+				}
+			]
+		},
+		{
+			"name": "Blood Magic",
+			"source": "Farover",
+			"prerequisite": [
+				{
+					"spellcasting": true
+				}
+			],
+			"entries": [
+				"You have learned the forbidden secrets of Blood Magic, invented long ago by the Necromancer Cult of the Warlocks. You gain the following benefit:",
+				{
+					"type": "list",
+					"items": [
+						"Instead of spending a spell slot to cast a spell, you can spend and cause yourself one of your hit die of damage per level of the spell. If you are multi-classed, you may chooose which hit die, but it must be from a spellcasting class. Wounding yourself counts as the somatic component of the spell you are casting, and you must be holding a weapon that deals slashing or piercing damage (unless you can readily cut yourself on something). If you have resistance to slashing or piercing damage, your resistance doesn't function against the damage you cause yourself when using Blood Magic."
+					]
+				}
+			]
+		},
+		{
+			"name": "Charger",
+			"source": "Farover",
+			"entries": [
+				"When you take the special {@action Charge|farover} action, you can do one of the following things:",
+				{
+					"type": "list",
+					"items": [
+						"Add an extra +10 to the damage of the charge attack.",
+						"Instead of making a melee weapon attack, you can attempt to shove the creature. If you do so, you can shove it 10 feet."
 					]
 				}
 			]
@@ -2336,6 +2388,24 @@
 			]
 		},
 		{
+			"name": "Enhanced Reflexes",
+			"source": "Farover",
+			"ability": [
+				{
+					"dex": 1
+				}
+			],
+			"entries": [
+				"Your reflexes are honed to a razor's edge. You gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"At the start of a combat, after all initiatives have been rolled but before anyone has acted, you may switch places in the initiative order with another creature that you can see, as long as that creature is not at the top of the initiative order. You may not use this feature again until you have completed a short or long rest."
+					]
+				}
+			]
+		},
+		{
 			"name": "Feisty Combatant",
 			"source": "Farover",
 			"ability": [
@@ -2349,6 +2419,20 @@
 					"type": "list",
 					"items": [
 						"As an action, you can attempt to taunt an enemy that can hear and understand you within 60 feet into attacking you. Make a Persuasion check, and the target must make a contested Wisdom saving throw. If you win, the target creature has disadvantage on attack rolls against any other creature than you until the end of its next turn."
+					]
+				}
+			]
+		},
+		{
+			"name": "Great Weapon Master",
+			"source": "Farover",
+			"entries": [
+				"You've learned to put the weight of a weapon to your advantage, letting its momentum empower your strikes. You gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"On your turn, when you score a natural 20 critical hit with a melee weapon or reduce a creature to 0 hit points with one, you can make one melee weapon attack as a bonus action.",
+						"Before you make a melee attack with a heavy weapon that you are proficient with, you can choose to take a -5 penalty to the attack roll. If the attack hits, you add +5 to the attack's damage."
 					]
 				}
 			]
@@ -2402,6 +2486,21 @@
 			]
 		},
 		{
+			"name": "Poisonous",
+			"source": "Farover",
+			"entries": [
+				"Something has inured you to poison, nay more than inured you. You are poison itself... You gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"You gain resistance to poison damage.",
+						"You have advantage on saving throws against poison.",
+						"As a bonus action, you may lick a weapon. For the next minute, that weapon does an additional point of poison damage whenever it deals damage. You may not lick another weapon until you have completed a short or long rest."
+					]
+				}
+			]
+		},
+		{
 			"name": "Powerful Attacks",
 			"source": "Farover",
 			"entries": [
@@ -2411,6 +2510,31 @@
 					"items": [
 						"When attacking with a weapon that has the versatile property in one hand, you may roll damage as if you were holding it in both hands.",
 						"You have advantage on Strength checks to maintain possession of your weapons against disarming effects."
+					]
+				}
+			]
+		},
+		{
+			"name": "Punisher",
+			"source": "Farover",
+			"ability": [
+				{
+					"str": 1
+				}
+			],
+			"entries": [
+				{
+					"type": "quote",
+					"entries": [
+						"There are worse things than dying, Bill. I wake up most mornings and I want it. I hope for it."
+					],
+					"by": "Frank Castle",
+					"from": "The Punisher"
+				},
+				{
+					"type": "list",
+					"items": [
+						"You can make one Opportunity Attack per round without using your reaction."
 					]
 				}
 			]
