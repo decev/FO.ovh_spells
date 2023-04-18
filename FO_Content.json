@@ -14114,6 +14114,36 @@
 				"A slayer medallion is a magical silver amulet shaped like the symbol of the school a slayer belongs to.",
 				"A slayer medallion serves as the spellcasting focus that slayers use for their {@filter signs|optionalfeatures|feature type=ss}."
 			]
+		},
+		{
+			"name": "Cottage",
+			"type": "other",
+			"value": "40000",
+			"wondrous": false,
+			"source": "Farover",
+			"entries": [
+				"A single-room wooden building, consisting of the most primitive construction of wood."
+			]
+		},
+		{
+			"name": "Small House",
+			"type": "other",
+			"value": "100000",
+			"wondrous": false,
+			"source": "Farover",
+			"entries": [
+				"A small wooden three-room house, or component of a larger building."
+			]
+		},
+		{
+			"name": "Large Building",
+			"type": "other",
+			"value": "150000",
+			"wondrous": false,
+			"source": "Farover",
+			"entries": [
+				"A wooden building, measuring 30 feet wide, 40 feet long, and two stories, suitable for a tavern or farmhouse."
+			]
 		}
 	],
 	"table": [
