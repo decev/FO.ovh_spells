@@ -14117,7 +14117,7 @@
 		},
 		{
 			"name": "Cottage",
-			"type": "other",
+			"type": "OTH",
 			"value": "40000",
 			"wondrous": false,
 			"source": "Farover",
@@ -14127,7 +14127,7 @@
 		},
 		{
 			"name": "Small House",
-			"type": "other",
+			"type": "OTH",
 			"value": "100000",
 			"wondrous": false,
 			"source": "Farover",
@@ -14137,7 +14137,7 @@
 		},
 		{
 			"name": "Large Building",
-			"type": "other",
+			"type": "OTH",
 			"value": "150000",
 			"wondrous": false,
 			"source": "Farover",
