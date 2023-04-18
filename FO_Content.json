@@ -1933,7 +1933,7 @@
 			"subclassShortName": "Bear",
 			"level": 3,
 			"entries": [
-				"When you select the School of the Bear at 3rd level, you gain proficiency with all weapons that have the Thrown property.",
+				"When you select the School of the Bear at 3rd level, you gain proficiency with {@table Farover Weapons|farover|Tactical Weapons} (Blowguns, Bolas, Hand Crossbows, and Nets).",
 				"In addition, when you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2."
 			]
 		},
@@ -2534,7 +2534,7 @@
 				{
 					"type": "list",
 					"items": [
-						"You can make one Opportunity Attack per round without using your reaction."
+						"You can make one {@action Opportunity Attack} per round without using your reaction."
 					]
 				}
 			]
@@ -2674,6 +2674,20 @@
 						"You can perform the somatic components of spells even when you have weapons or a shield in one or both hands."
 					]
 				}
+			]
+		},
+		{
+			"name": "Weapon Specialist",
+			"source": "Farover",
+			"entries": [
+				"Extensive training has granted you mastery with one type of weapon:",
+				{
+					"type": "list",
+					"items": [
+						"Choose one weapon with which you are proficient. You gain a +1 bonus on all attack rolls and a +1 bonus on all damage rolls you make with that weapon. You may choose to gain advantage on an attack roll you make with that weapon; you may not gain advantage from this feat again until you have completed a short or long rest."
+					]
+				},
+				"You can select this feat multiple times, and if you choose the same weapon, you are granted an extra use of this feature per short rest when giving yourself advantage on an attack roll you make with the specialized weapon."
 			]
 		}
 	],
@@ -17055,7 +17069,7 @@
 				],
 				"weapons": [
 					"simple",
-					"martial"
+					"any one martial category"
 				],
 				"tools": [
 					"none"
@@ -17727,8 +17741,7 @@
 				],
 				"weapons": [
 					"simple",
-					"martial melee weapons",
-                    "{@item hand crossbow|phb|hand crossbows}"
+					"any one martial category"
 				],
 				"tools": [
 					"{@item alchemist's supplies|phb} (only usable for your Slayer Alchemy feature)"
