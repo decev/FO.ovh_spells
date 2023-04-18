@@ -14118,6 +14118,7 @@
 		{
 			"name": "Cottage",
 			"type": "OTH",
+			"rarity": "none",
 			"value": "40000",
 			"source": "Farover",
 			"entries": [
@@ -14127,6 +14128,7 @@
 		{
 			"name": "Small House",
 			"type": "OTH",
+			"rarity": "none",
 			"value": "100000",
 			"source": "Farover",
 			"entries": [
@@ -14136,6 +14138,7 @@
 		{
 			"name": "Large Building",
 			"type": "OTH",
+			"rarity": "none",
 			"value": "150000",
 			"source": "Farover",
 			"entries": [
