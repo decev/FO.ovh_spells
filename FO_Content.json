@@ -17153,7 +17153,7 @@
 					],
 					"weapons": [
 						"simple",
-						"martial"
+						"any one martial category"
                     ],
 					"skills": [
                         {
@@ -17831,8 +17831,7 @@
 					],
 					"weapons": [
                         "simple",
-                        "martial melee weapons",
-                        "{@item hand crossbow|phb|hand crossbows}"
+                        "any one martial category"
                     ],
                     "tools": [
                         "{@item alchemist's supplies|phb} (only usable for your Slayer Alchemy feature)"
