@@ -14334,7 +14334,7 @@
 				"Cost",
 				"Damage",
 				"Weight",
-				"Bulk Size",
+				"Category",
 				"Properties",
 				"Range"
 			],
@@ -14362,7 +14362,7 @@
 					"1 sp",
                     "{@dice 1d4} bludgeoning",
                     "2 lb.",
-                    "Medium",
+                    "Simple",
                     "Light, {@optfeature Nonlethal|farover}, {@optfeature Wallop|farover}",
                     "\u2014"
 				],
@@ -14371,7 +14371,7 @@
 					"2 gp",
                     "{@dice 1d4} piercing",
                     "1 lb.",
-                    "Small",
+                    "Simple",
                     "Finesse, Light, {@optfeature Parry|farover}, {@optfeature Dagger|farover|Special}, Thrown",
                     "15/30/45"
 				],
@@ -14380,7 +14380,7 @@
 					"2 sp",
                     "{@dice 1d10} bludgeoning",
                     "10 lb.",
-                    "Huge",
+                    "Simple",
                     "{@optfeature Nonlethal|farover}, Two-Handed, {@optfeature Wallop|farover}",
                     "\u2014"
 				],
@@ -14389,7 +14389,7 @@
 					"5 gp",
                     "{@dice 1d6} slashing",
                     "2 lb.",
-                    "Medium",
+                    "Simple",
                     "{@optfeature Sunder|farover}, Thrown",
                     "20/40/60"
 				],
@@ -14398,7 +14398,7 @@
 					"5 sp",
                     "{@dice 1d6} piercing",
                     "2 lb.",
-                    "Medium",
+                    "Simple",
                     "Thrown",
                     "50/100/150"
 				],
@@ -14407,7 +14407,7 @@
 					"2 gp",
                     "{@dice 1d4} bludgeoning",
                     "2 lb.",
-                    "Medium",
+                    "Simple",
                     "Finesse, Light, Thrown, {@optfeature Wallop|farover}",
                     "20/40/60"
 				],
@@ -14416,7 +14416,7 @@
 					"2 gp",
                     "{@dice 1d6} bludgeoning",
                     "4 lb.",
-                    "Large",
+                    "Simple",
                     "{@optfeature Nonlethal|farover}, Reach, Versatile (d8)",
                     "\u2014"
 				],
@@ -14425,7 +14425,7 @@
 					"1 gp",
                     "{@dice 1d4} slashing",
                     "2 lb.",
-                    "Medium",
+                    "Simple",
                     "Finesse, Light, {@optfeature Seize|farover}",
                     "\u2014"
 				],
@@ -14434,7 +14434,7 @@
 					"1 gp",
                     "{@dice 1d6} piercing",
                     "3 lb.",
-                    "Large",
+                    "Simple",
                     "{@optfeature Brace|farover}, Thrown, Versatile (d8)",
                     "30/60/90"
 				],
@@ -14452,7 +14452,7 @@
 					"25 gp",
                     "{@dice 1d8} piercing",
                     "5 lb.",
-                    "Large",
+                    "Simple",
                     "Ammunition, Loading, Two-Handed",
                     "80/160/240"
 				],
@@ -14461,7 +14461,7 @@
 					"5 cp",
                     "{@dice 1d4} piercing",
                     "0.25 lb.",
-                    "\u2014",
+                    "Simple",
                     "Finesse, Thrown",
                     "30/60/90"
 				],
@@ -14470,7 +14470,7 @@
 					"25 gp",
                     "{@dice 1d6} piercing",
                     "2 lb.",
-                    "Large",
+                    "Simple",
                     "Ammunition, Two-Handed",
                     "80/160/240"
 				],
@@ -14479,7 +14479,7 @@
 					"1 sp",
                     "{@dice 1d4} bludgeoning",
                     "0.5 lb.",
-                    "Small",
+                    "Simple",
                     "Ammunition",
                     "40/80/120"
 				],
@@ -14497,17 +14497,17 @@
 					"10 gp",
                     "{@dice 1d8} slashing",
                     "4 lb.",
-                    "Large",
+                    "Adaptable",
                     "{@optfeature Sunder|farover}, Versatile (d10)",
                     "\u2014"
 				],
                 [
 					"Chain Sickle",
-					"1 gp",
-                    "{@dice 1d4} slashing",
+					"3 gp",
+                    "{@dice 1d6} slashing",
                     "1 lb.",
-                    "Medium",
-                    "Finesse, Reach, {@optfeature Seize|farover}, Versatile (d6)",
+                    "Deft",
+                    "Finesse, Reach, {@optfeature Seize|farover}, Versatile (d8)",
                     "\u2014"
 				],
                 [
@@ -14515,7 +14515,7 @@
 					"10 gp",
                     "{@dice 2d4} slashing",
                     "2 lb.",
-                    "Large",
+                    "One-Handed",
                     "{@optfeature Cleave|farover}",
                     "\u2014"
 				],
@@ -14524,7 +14524,7 @@
 					"10 gp",
                     "{@dice 1d8} bludgeoning",
                     "2 lb.",
-                    "Large",
+                    "One-Handed",
                     "{@optfeature Flail/Heavy Flail|farover|Special}, {@optfeature Wallop|farover}",
                     "\u2014"
 				],
@@ -14533,7 +14533,7 @@
 					"20 gp",
                     "{@dice 1d10} slashing",
                     "6 lb.",
-                    "Huge",
+                    "Polearm",
                     "{@optfeature Bleed|farover}, Heavy, Reach, Two-Handed",
                     "\u2014"
 				],
@@ -14542,7 +14542,7 @@
 					"30 gp",
                     "{@dice 1d12} slashing",
                     "7 lb.",
-                    "Huge",
+                    "Hefty",
                     "Heavy, {@optfeature Sunder|farover}, Two-Handed",
                     "\u2014"
 				],
@@ -14551,7 +14551,7 @@
 					"50 gp",
                     "{@dice 2d6} slashing",
                     "6 lb.",
-                    "Huge",
+                    "Hefty",
                     "{@optfeature Cleave|farover}, Heavy, Two-Handed",
                     "\u2014"
 				],
@@ -14560,7 +14560,7 @@
 					"20 gp",
                     "{@dice 1d10} slashing",
                     "6 lb.",
-                    "Huge",
+                    "Polearm",
                     "{@optfeature Brace|farover}, {@optfeature Cleave|farover}, Heavy, Reach, Two-Handed",
                     "\u2014"
 				],
@@ -14569,17 +14569,17 @@
 					"30 gp",
                     "{@dice 1d12} bludgeoning",
                     "9 lb.",
-                    "Huge",
+                    "Hefty",
                     "Heavy, {@optfeature Flail/Heavy Flail|farover|Special}, Two-Handed, {@optfeature Wallop|farover}",
                     "\u2014"
 				],
                 [
 					"Katana",
 					"20 gp",
-                    "{@dice 1d10} slashing",
+                    "{@dice 1d8} slashing",
                     "3 lb.",
-                    "Large",
-                    "{@optfeature Cleave|farover}, {@optfeature Parry|farover}, Two-Handed",
+                    "Adaptable",
+                    "{@optfeature Cleave|farover}, Versatile (d10)",
                     "\u2014"
 				],
                 [
@@ -14587,7 +14587,7 @@
 					"10 gp",
                     "{@dice 1d12} piercing",
                     "6 lb.",
-                    "Huge",
+                    "Polearm",
                     "{@optfeature Charging|farover}, Reach, {@optfeature Lance|farover|Special}, Two-Handed",
                     "\u2014"
 				],
@@ -14596,16 +14596,16 @@
 					"15 gp",
                     "{@dice 1d8} slashing",
                     "3 lb.",
-                    "Large",
+                    "Adaptable",
                     "{@optfeature Parry|farover}, Versatile (d10)",
                     "\u2014"
 				],
                 [
 					"Mace",
 					"5 gp",
-                    "{@dice 1d6} bludgeoning",
+                    "{@dice 1d8} bludgeoning",
                     "4 lb.",
-                    "Medium",
+                    "One-Handed",
                     "{@optfeature Sunder|farover}, {@optfeature Wallop|farover}",
                     "\u2014"
 				],
@@ -14614,17 +14614,26 @@
 					"10 gp",
                     "{@dice 2d6} bludgeoning",
                     "10 lb.",
-                    "Huge",
+                    "Hefty",
                     "Heavy, Two-Handed, {@optfeature Wallop|farover}",
                     "\u2014"
 				],
                 [
 					"Morningstar",
 					"15 gp",
-                    "{@dice 1d6} piercing",
+                    "{@dice 1d7} piercing",
                     "4 lb.",
-                    "Large",
+                    "One-Handed",
                     "{@optfeature Bleed|farover}",
+                    "\u2014"
+				],
+				[
+					"Nunchaku",
+					"3 gp",
+                    "{@dice 1d6} bludgeoning",
+                    "2 lb.",
+                    "Quick",
+                    "Finesse, Light, {@optfeature Nonlethal|farover}, Reach",
                     "\u2014"
 				],
                 [
@@ -14632,7 +14641,7 @@
 					"5 gp",
                     "{@dice 2d4} piercing",
                     "13 lb.",
-                    "Huge",
+                    "Polearm",
                     "{@optfeature Brace|farover}, {@optfeature Charging|farover}, Reach, Two-Handed",
                     "\u2014"
 				],
@@ -14641,7 +14650,7 @@
 					"25 gp",
                     "{@dice 1d8} piercing",
                     "2 lb.",
-                    "Medium",
+                    "Deft",
                     "Finesse, {@optfeature Parry|farover}",
                     "\u2014"
 				],
@@ -14650,16 +14659,16 @@
 					"25 gp",
                     "{@dice 1d8} slashing",
                     "3 lb.",
-                    "Large",
+                    "Deft",
                     "Finesse, {@optfeature Sunder|farover}",
                     "\u2014"
 				],
                 [
 					"Scimitar",
 					"25 gp",
-                    "{@dice 1d6} slashing",
+                    "{@dice 1d7} slashing",
                     "3 lb.",
-                    "Medium",
+                    "Deft",
                     "{@optfeature Bleed|farover}, Finesse",
                     "\u2014"
 				],
@@ -14668,7 +14677,7 @@
 					"10 gp",
                     "{@dice 1d6} slashing",
                     "2 lb.",
-                    "Medium",
+                    "Quick",
                     "Finesse, Light, {@optfeature Parry|farover}",
                     "\u2014"
 				],
@@ -14677,7 +14686,7 @@
 					"20 gp",
                     "{@dice 1d6} piercing",
                     "1 lb.",
-                    "Medium",
+                    "Quick",
                     "Finesse, Light, {@optfeature Sunder|farover}",
                     "\u2014"
 				],
@@ -14686,7 +14695,7 @@
 					"5 gp",
                     "{@dice 1d6} piercing",
                     "4 lb.",
-                    "Large",
+                    "Polearm",
                     "{@optfeature Brace|farover}, {@optfeature Charging|farover}, {@optfeature Seize|farover}, Versatile (d8)",
                     "\u2014"
 				],
@@ -14695,7 +14704,7 @@
 					"5 gp",
                     "{@dice 1d8} piercing",
                     "2 lb.",
-                    "Large",
+                    "Adaptable",
                     "{@optfeature Seize|farover}, Versatile (d10)",
                     "\u2014"
 				],
@@ -14704,7 +14713,7 @@
 					"15 gp",
                     "{@dice 1d8} bludgeoning",
                     "2 lb.",
-                    "Large",
+                    "Adaptable",
                     "Versatile (d10), {@optfeature Wallop|farover}",
                     "\u2014"
 				],
@@ -14713,8 +14722,8 @@
 					"2 gp",
                     "{@dice 1d4} slashing",
                     "3 lb.",
-                    "Small",
-                    "Finesse, Light, {@optfeature Nonlethal|farover}, Reach",
+                    "Quick",
+                    "Finesse, Light, {@optfeature Nonlethal|farover}, Reach, {@optfeature Seize|farover}",
                     "\u2014"
 				],
                 [
@@ -14729,18 +14738,18 @@
                 [
 					"Blowgun",
 					"10 gp",
-                    "1 piercing",
+                    "1d4 piercing",
                     "1 lb.",
-                    "Medium",
-                    "Ammunition, Loading",
-                    "40/80/120"
+                    "Tactical",
+                    "Ammunition, {@optfeature Blowgun|farover|Special}",
+                    "50/100/150"
 				],
                 [
 					"Bola",
 					"2 gp",
                     "\u2014",
                     "5 lb.",
-                    "Small",
+                    "Tactical",
                     "{@optfeature Bola|farover|Special}, Thrown",
                     "20/40/60"
 				],
@@ -14749,7 +14758,7 @@
 					"75 gp",
                     "{@dice 1d6} piercing",
                     "3 lb.",
-                    "Medium",
+                    "Tactical",
                     "Ammunition, Light, Loading",
                     "40/80/120"
 				],
@@ -14758,16 +14767,16 @@
 					"50 gp",
                     "{@dice 1d10} piercing",
                     "18 lb.",
-                    "Huge",
+                    "Long-Range",
                     "Ammunition, Heavy, Loading, Two-Handed",
                     "100/200/300"
 				],
                 [
 					"Greatbow",
 					"60 gp",
-                    "{@dice 1d8} piercing",
+                    "{@dice 1d10} piercing",
                     "6 lb.",
-                    "Huge",
+                    "Long-Range",
                     "Ammunition, Heavy, Loading, {@optfeature Greatbow|farover|Special}, Two-Handed",
                     "150/300/450"
 				],
@@ -14776,7 +14785,7 @@
 					"50 gp",
                     "{@dice 1d8} piercing",
                     "2 lb.",
-                    "Huge",
+                    "Long-Range",
                     "Ammunition, Heavy, Two-Handed",
                     "150/300/450"
 				],
@@ -14785,7 +14794,7 @@
 					"1 gp",
                     "\u2014",
                     "3 lb.",
-                    "Small",
+                    "Tactical",
                     "{@optfeature Net|farover|Special}, Thrown",
                     "10/20/30"
 				]
@@ -15924,6 +15933,16 @@
 			],
 			"entries": [
 				"When you take the {@action Charge|farover} action on your turn with a Charging weapon, the attack roll is made at advantage."
+			]
+		},
+		{
+			"name": "Blowgun",
+			"source": "Farover",
+			"featureType": [
+				"SWP"
+			],
+			"entries": [
+                "The damage of a blowgun depends on your exhalation power and lung capacity, meaning you can add your Constitution modifier to the damage rolls. Additionally, when you are hidden from a creature and you attack it with a blowgun, making the attack doesn’t reveal your position. Finally, when you hit with a blowgun with a dart that has poison applied to it, the target has disadvantage on saving throws against the poison."
 			]
 		},
         {
