@@ -14119,7 +14119,6 @@
 			"name": "Cottage",
 			"type": "OTH",
 			"value": "40000",
-			"wondrous": false,
 			"source": "Farover",
 			"entries": [
 				"A single-room wooden building, consisting of the most primitive construction of wood."
@@ -14129,7 +14128,6 @@
 			"name": "Small House",
 			"type": "OTH",
 			"value": "100000",
-			"wondrous": false,
 			"source": "Farover",
 			"entries": [
 				"A small wooden three-room house, or component of a larger building."
@@ -14139,7 +14137,6 @@
 			"name": "Large Building",
 			"type": "OTH",
 			"value": "150000",
-			"wondrous": false,
 			"source": "Farover",
 			"entries": [
 				"A wooden building, measuring 30 feet wide, 40 feet long, and two stories, suitable for a tavern or farmhouse."
