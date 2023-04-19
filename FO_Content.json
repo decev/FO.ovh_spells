@@ -365,7 +365,6 @@
 			"subclassFeatures": [
 				"School of the Viper|Slayer|Farover|Viper|Farover|3",
 				"Twin Fangs Fighting Style|Slayer|Farover|Viper|Farover|3",
-				"Improved Twin Fangs|Slayer|Farover|Viper|Farover|9",
 				"Viper's Mark|Slayer|Farover|Viper|Farover|9",
                 "Premeditated Murder|Slayer|Farover|Viper|Farover|13",
 				"Assiduous Duelist|Slayer|Farover|Viper|Farover|17"
@@ -2035,24 +2034,12 @@
 				{
 					"type": "list",
 					"items": [
-						"When you engage in two-weapon fighting, you can make your off-hand attack as a part of the same action as your main-hand attack, instead of with a bonus action as usual.",
+						"When you engage in two-weapon fighting, you can add your ability modifier to the damage of your off-hand attack.",
                         "You can perform the somatic components of your slayer signs even while wielding a weapon in the same hand.",
 						"When you attack a creature that is considered surprised, you can expend 1 vigor point to deal an additional {@dice 2d4} weapon damage to the target.",
 						"You gain proficiency in the {@skill Stealth} skill if you don't already have it."
 					]
 				}
-			]
-		},
-		{
-			"name": "Improved Twin Fangs",
-			"source": "Farover",
-			"className": "Slayer",
-			"classSource": "Farover",
-			"subclassSource": "Farover",
-			"subclassShortName": "Viper",
-			"level": 9,
-			"entries": [
-				"Starting at 9th level, when you engage in the twin fangs fighting style, you can add your ability modifier to the damage of your off-hand attack."
 			]
 		},
 		{
