@@ -322,8 +322,8 @@
 			"subclassFeatures": [
 				"School of the Manticore|Slayer|Farover|Manticore|Farover|3",
 				"Heightened Tolerance|Slayer|Farover|Manticore|Farover|3",
-				"Venomous Blades|Slayer|Farover|Manticore|Farover|9",
-                "Undying Mutant|Slayer|Farover|Manticore|Farover|13",
+				"Undying Mutant|Slayer|Farover|Manticore|Farover|9",
+                "Venomous Blades|Slayer|Farover|Manticore|Farover|13",
 				"Mutated Deviant|Slayer|Farover|Manticore|Farover|17"
 			]
 		},
@@ -1767,7 +1767,7 @@
 			]
 		},
 		{
-			"name": "Venomous Blades",
+			"name": "Undying Mutant",
 			"source": "Farover",
 			"className": "Slayer",
 			"classSource": "Farover",
@@ -1775,11 +1775,13 @@
 			"subclassShortName": "Manticore",
 			"level": 9,
 			"entries": [
-                "Starting at 9th level, your toxicity makes even your weapons venomous. When you are at or above your toxicity limit, your weapon attacks deal an additional {@dice 1d6} poison damage."
+                "Starting at 9th level, your venomous blood can fortify you even against lethal damage. When you suffer damage that would reduce you to below 1 hit point, the toxicity in your veins can rush through and cauterize the wound.",
+				"If you choose to, your current toxicity level at the time can negate damage that would bring you below 1 hit point, so that every 1 toxicity prevents 1 damage, up to a maximum amount equal to your current toxicity level. Each point of toxicity that prevents damage when this happens is then lost. If you have any active mutagens when this occurs, and the toxicity you lose would bring you below what is currently being caused by a mutagen, then the effects of that mutagen ends.",
+				"You can use this feature twice, and you regain all expended uses when you finish a long rest."
 			]
 		},
 		{
-			"name": "Undying Mutant",
+			"name": "Venomous Blades",
 			"source": "Farover",
 			"className": "Slayer",
 			"classSource": "Farover",
@@ -1787,9 +1789,7 @@
 			"subclassShortName": "Manticore",
 			"level": 13,
 			"entries": [
-                "Starting at 13th level, your venomous blood can fortify you even against lethal damage. When you suffer damage that would reduce you to below 1 hit point, the toxicity in your veins can rush through and cauterize the wound.",
-				"If you choose to, your current toxicity level at the time can negate damage that would bring you below 1 hit point, so that every 1 toxicity prevents 1 damage, up to a maximum amount equal to your current toxicity level. Each point of toxicity that prevents damage when this happens is then lost. If you have any active mutagens when this occurs, and the toxicity you lose would bring you below what is currently being caused by a mutagen, then the effects of that mutagen ends.",
-				"Once you use this feature, it can not be used again until you finish a long rest."
+                "Starting at 13th level, your toxicity makes even your weapons venomous. When you are at or above your toxicity limit, your weapon attacks deal an additional {@dice 1d6} poison damage."
 			]
 		},
 		{
@@ -14768,7 +14768,7 @@
                 [
 					"Blowgun",
 					"10 gp",
-                    "1d4 piercing",
+                    "{@dice 1d4} piercing",
                     "1 lb.",
                     "Tactical",
                     "Ammunition, {@optfeature Blowgun|farover|Special}",
