@@ -97,6 +97,50 @@
 			]
 		},
 		{
+			"name": "Affinity of the Moon",
+			"source": "Farover",
+			"className": "Druid (reworked)",
+			"classSource": "Farover",
+			"shortName": "Moon",
+			"subclassFeatures": [
+				"Affinity of the Moon|Druid (reworked)||Moon|Farover|3",
+				"Bestial Prowess|Druid (reworked)||Moon|Farover|3",
+				"Adaptive Recovery|Druid (reworked)||Moon|Farover|6",
+				"Elemental Strikes|Druid (reworked)||Moon|Farover|10",
+				"Apex Predator|Druid (reworked)||Moon|Farover|14"
+			]
+		},
+		{
+			"name": "Affinity of Dreams",
+			"source": "Farover",
+			"className": "Druid (reworked)",
+			"classSource": "Farover",
+			"shortName": "Dreams",
+			"subclassFeatures": [
+				"Affinity of Dreams|Druid (reworked)||Moon|Farover|3",
+				"Bloom of Spring|Druid (reworked)||Dreams|Farover|3",
+				"Growth of Summer|Druid (reworked)||Dreams|Farover|6",
+				"Hidden Paths|Druid (reworked)||Dreams|Farover|10",
+				"Purifying Magic|Druid (reworked)||Dreams|Farover|14"
+			]
+		},
+		{
+			"name": "Affinity of the Land",
+			"source": "Farover",
+			"className": "Druid (reworked)",
+			"classSource": "Farover",
+			"shortName": "Land",
+			"subclassFeatures": [
+				"Affinity of the Land|Druid (reworked)||Moon|Farover|3",
+				"Bonus Cantrip|Druid (reworked)||Land|Farover|3",
+				"Natural Recovery|Druid (reworked)||Land|Farover|3",
+				"Domain Spells|Druid (reworked)||Land|Farover|3",
+				"Magical Seedlings|Druid (reworked)||Land|Farover|6",
+				"Feywalker|Druid (reworked)||Land|Farover|10",
+				"Nature's Sanctuary|Druid (reworked)||Land|Farover|14"
+			]
+		},
+		{
 			"name": "Time Domain",
 			"source": "Farover",
 			"className": "Cleric",
@@ -372,6 +416,72 @@
 		}
 	],
 	"subclassFeature": [
+		{
+			"name": "Affinity of the Moon",
+			"source": "Farover",
+			"className": "Druid (reworked)",
+			"classSource": "Farover",
+			"subclassSource": "Farover",
+			"subclassShortName": "Moon",
+			"level": 3,
+			"entries": [
+				"Druids aligning with the Affinity of the Moon draw on the magic of the moon to transform themselves and to guard the wilds. They wander the deepest parts of the wilderness, where they might go for weeks on end before crossing paths with another person.",
+				"Changeable as the moon, a druid of this affinity might prowl as a great cat one moment, soar over the treetops as an eagle the next, and crash through the undergrowth in bear form to drive off a trespassing monster. The wild is in the druid’s blood."
+			]
+		},
+		{
+			"name": "Bestial Prowess",
+			"source": "Farover",
+			"className": "Druid (reworked)",
+			"classSource": "Farover",
+			"subclassSource": "Farover",
+			"subclassShortName": "Moon",
+			"level": 3,
+			"entries": [
+				"You gain the ability to transform between all of your different available {@classFeature Channel Nature|Druid (reworked)|Farover|1||Wild Shape} forms while the feature is active. The size of the form you chose initially stays the same. You can switch between your forms using a bonus action, without having to revert back to a humanoid first.",
+				"Additionally, you can use an unarmed strike as a bonus action while in a Wild Shape form. You can use either Strength or Dexterity for the attack and damage rolls, and the attack deals {@dice 1d2} + modifier damage."
+			]
+		},
+		{
+			"name": "Adaptive Recovery",
+			"source": "Farover",
+			"className": "Druid (reworked)",
+			"classSource": "Farover",
+			"subclassSource": "Farover",
+			"subclassShortName": "Moon",
+			"level": 6,
+			"entries": [
+				"Starting at 6th level, you can convert your magic to heal yourself even while transformed. While you are transformed by {@classFeature Channel Nature|Druid (reworked)|Farover|1||Wild Shape}, you can use a bonus action to expend one spell slot to regain {@dice 1d8} hit points per level of the spell slot expended."
+			]
+		},
+		{
+			"name": "Elemental Strikes",
+			"source": "Farover",
+			"className": "Druid (reworked)",
+			"classSource": "Farover",
+			"subclassSource": "Farover",
+			"subclassShortName": "Moon",
+			"level": 10,
+			"entries": [
+				"Starting at 10th level, elemental forces imbue your attacks. Whenever you initially spend a Channel Nature and transform into a {@classFeature Channel Nature|Druid (reworked)|Farover|1||Wild Shape} form, choose one of the following damage types: Acid, Cold, Fire, or Lightning.",
+				"While in the form, your melee attacks deal an additional {@dice 1d6} damage of the type you chose. Your form also displays signs of the chosen damage type. For example, if you choose fire, your fur might flicker with small, harmless embers. You choose the details."
+			]
+		},
+		{
+			"name": "Apex Predator",
+			"source": "Farover",
+			"className": "Druid (reworked)",
+			"classSource": "Farover",
+			"subclassSource": "Farover",
+			"subclassShortName": "Moon",
+			"level": 14,
+			"entries": [
+				"At 14th level, your types of {@classFeature Channel Nature|Druid (reworked)|Farover|1||Wild Shape} forms become their apex versions, and gain the following benefits:",
+				"{@bold {@italic Agile.}} Your Agile forms ignore difficult terrain, and you gain +2 to attack rolls and proficiency in Dexterity ability checks and saving throws while in the form.",
+				"{@bold {@italic Strong.}} Your Strong forms carrying capacity is doubled, and you gain +2 to damage rolls and proficiency in Strength ability checks and saving throws while in the form.",
+				"{@bold {@italic Tough.}} Your Tough forms can be size Huge, and you gain +1 AC and proficiency in Constitution ability checks and saving throws while in the form."
+			]
+		},
 		{
 			"name": "Path of the Titan",
 			"source": "Farover",
