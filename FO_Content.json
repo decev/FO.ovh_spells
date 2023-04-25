@@ -18946,9 +18946,808 @@
                 "Ability Score Improvement|Slayer|Farover|19",
                 "Master Slayer|Slayer|Farover|20"
             ]
+        },
+		{
+			"name": "Druid (reworked)",
+			"source": "Farover",
+            "fluff": [
+				{
+					"name": "The Druid",
+					"source": "Farover",
+					"entries": [
+                        "Druids belong to ancient orders that call on the forces of nature. Harnessing the magic of animals, plants, weather, and the four elements, druids can heal, transform themselves, and wield elemental destruction.",
+                        "Revering nature above all, individual druids gain their magic from a nature deity, from nature itself, or both, and they form circles with other druids in performing rites and rituals to mark the passage of the seasons and other natural cycles.",
+						"Druids master a very specific kind of magic, which is oriented toward nature and animals—the power of tooth and claw, of sun and moon, of fire and storm. Druids also gain the ability to take on animal forms, and some Druids focus on this practice, even to the point where they feel more natural in an animal form.",
+						"Druids are also concerned with the delicate ecological balance that sustains plant and animal life and with the need for people to live in harmony with nature, not in opposition to it. Druids are often found guarding sacred sites or watching over regions of unspoiled nature. But when a significant danger arises, threatening nature’s balance or the lands they protect, druids take a more active role as adventurers who combat the threat."
+					],
+					"type": "section"
+				}
+			],
+			"hd": {
+				"number": 1,
+				"faces": 8
+			},
+			"proficiency": [
+				"int",
+				"wis"
+			],
+			"startingProficiencies": {
+				"armor": [
+                    "light",
+					"shields"
+				],
+				"weapons": [
+					"simple"
+				],
+				"tools": [
+					"{@item herbalism kit|phb}"
+				],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"animal handling",
+								"insight",
+								"medicine",
+								"nature",
+								"perception",
+								"religion",
+                                "survival"
+							],
+							"count": 2
+						}
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) a {@table farover armor and shields|farover|shield} or (b) {@table farover armor and shields|farover|any simple weapon}",
+					"Any {@table farover armor and shields|farover|simple weapon}",
+					"{@table farover armor and shields|farover|Leather armor}, an {@item explorer's pack|PHB}, and a {@item druidic focus|PHB}"
+				],
+                "goldAlternative": "{@dice 2d4 * 10|2d4 * 10|Starting Gold}",
+				"defaultData": [
+					{
+						"a": [
+							"shield|phb"
+						],
+						"b": [
+							{
+								"equipmentType": "weaponSimple",
+								"quantity": 1
+							}
+						]
+					},
+					{
+						"a": [
+							{
+								"equipmentType": "weaponSimple",
+								"quantity": 1
+							}
+						]
+                    },
+					{
+						"a": [
+							"leather armor|phb"
+						]
+					},
+					{
+						"a": [
+							"explorer's pack|phb"
+						]
+					},
+					{
+						"a": [
+							"druidic focus|phb"
+						]
+					}
+				]
+			},
+			"multiclassing": {
+				"requirements": {
+							"wis": 13
+				},
+				"proficienciesGained": {
+					"armor": [
+						"light",
+						"shields"
+					],
+					"weapons": [
+                        "simple"
+                    ],
+                    "tools": [
+                        "{@item herbalism kit|phb}"
+                    ]
+				}
+			},
+            "classTableGroups": [
+				{
+                    "colLabels": [
+                        "Channel Nature",
+                        "Cantrips Known",
+                        "1st",
+                        "2nd",
+						"3rd",
+						"4th",
+						"5th",
+						"6th",
+						"7th",
+						"8th",
+						"9th"
+                    ],
+                    "colStyles": [
+                        "text-center col-1",
+                        "text-center col-1",
+                        "text-center col-1",
+						"text-center col-1",
+                        "text-center col-1",
+                        "text-center col-1",
+						"text-center col-1",
+                        "text-center col-1",
+                        "text-center col-1",
+						"text-center col-1",
+                        "text-center col-1"
+                    ],
+                    "rows": [
+                        [
+                            "2",
+                            "2",
+                            "2",
+							"\u2014",
+                            "\u2014",
+                            "\u2014",
+							"\u2014",
+                            "\u2014",
+                            "\u2014",
+							"\u2014",
+                            "\u2014"
+                        ],
+                        [
+                            "2",
+                            "2",
+                            "3",
+							"\u2014",
+                            "\u2014",
+                            "\u2014",
+							"\u2014",
+                            "\u2014",
+                            "\u2014",
+							"\u2014",
+                            "\u2014"
+                        ],
+                        [
+                            "2",
+                            "2",
+                            "4",
+							"2",
+                            "\u2014",
+                            "\u2014",
+							"\u2014",
+                            "\u2014",
+                            "\u2014",
+							"\u2014",
+                            "\u2014"
+                        ],
+                        [
+                            "2",
+                            "3",
+                            "4",
+							"3",
+                            "\u2014",
+                            "\u2014",
+							"\u2014",
+                            "\u2014",
+                            "\u2014",
+							"\u2014",
+                            "\u2014"
+                        ],
+                        [
+                            "3",
+                            "3",
+                            "4",
+							"3",
+                            "2",
+                            "\u2014",
+							"\u2014",
+                            "\u2014",
+                            "\u2014",
+							"\u2014",
+                            "\u2014"
+                        ],
+                        [
+                            "3",
+                            "3",
+                            "4",
+							"3",
+                            "3",
+                            "\u2014",
+							"\u2014",
+                            "\u2014",
+                            "\u2014",
+							"\u2014",
+                            "\u2014"
+                        ],
+                        [
+                            "3",
+                            "3",
+                            "4",
+							"3",
+                            "3",
+                            "1",
+							"\u2014",
+                            "\u2014",
+                            "\u2014",
+							"\u2014",
+                            "\u2014"
+                        ],
+                        [
+                            "3",
+                            "3",
+                            "4",
+							"3",
+                            "3",
+                            "2",
+							"\u2014",
+                            "\u2014",
+                            "\u2014",
+							"\u2014",
+                            "\u2014"
+                        ],
+                        [
+                            "3",
+                            "3",
+                            "4",
+							"3",
+                            "3",
+                            "3",
+							"1",
+                            "\u2014",
+                            "\u2014",
+							"\u2014",
+                            "\u2014"
+                        ],
+                        [
+                            "3",
+                            "4",
+                            "4",
+							"3",
+                            "3",
+                            "3",
+							"2",
+                            "\u2014",
+                            "\u2014",
+							"\u2014",
+                            "\u2014"
+                        ],
+                        [
+                            "4",
+                            "4",
+                            "4",
+							"3",
+                            "3",
+                            "3",
+							"2",
+                            "1",
+                            "\u2014",
+							"\u2014",
+                            "\u2014"
+                        ],
+                        [
+                            "4",
+                            "4",
+                            "4",
+							"3",
+                            "3",
+                            "3",
+							"2",
+                            "1",
+                            "\u2014",
+							"\u2014",
+                            "\u2014"
+                        ],
+                        [
+                            "4",
+                            "4",
+                            "4",
+							"3",
+                            "3",
+                            "3",
+							"2",
+                            "1",
+                            "1",
+							"\u2014",
+                            "\u2014"
+                        ],
+                        [
+                            "4",
+                            "4",
+                            "4",
+							"3",
+                            "3",
+                            "3",
+							"2",
+                            "1",
+                            "1",
+							"\u2014",
+                            "\u2014"
+                        ],
+                        [
+                            "4",
+                            "4",
+                            "4",
+							"3",
+                            "3",
+                            "3",
+							"2",
+                            "1",
+                            "1",
+							"1",
+                            "\u2014"
+                        ],
+                        [
+                            "4",
+                            "4",
+                            "4",
+							"3",
+                            "3",
+                            "3",
+							"2",
+                            "1",
+                            "1",
+							"1",
+                            "\u2014"
+                        ],
+                        [
+                            "5",
+                            "4",
+                            "4",
+							"3",
+                            "3",
+                            "3",
+							"2",
+                            "1",
+                            "1",
+							"1",
+                            "1"
+                        ],
+                        [
+                            "5",
+                            "4",
+                            "4",
+							"3",
+                            "3",
+                            "3",
+							"2",
+                            "1",
+                            "1",
+							"1",
+                            "1"
+                        ],
+                        [
+                            "5",
+                            "4",
+                            "4",
+							"3",
+                            "3",
+                            "3",
+							"2",
+                            "2",
+                            "1",
+							"1",
+                            "1"
+                        ],
+                        [
+                            "5",
+                            "4",
+                            "4",
+							"3",
+                            "3",
+                            "3",
+							"2",
+                            "2",
+                            "2",
+							"1",
+                            "1"
+                        ]
+                    ]
+                }
+            ],
+            "classFeatures": [
+                "Channel Nature|Druid (reworked)|Farover|1",
+				"Druidic|Druid (reworked)|Farover|1",
+				"Spellcasting|Druid (reworked)|Farover|1",
+				"Nature's Aid|Druid (reworked)|Farover|2",
+			    {
+					"classFeature": "Druidic Affinity|Druid (reworked)|Farover|3",
+					"gainSubclassFeature": true
+				},
+                "Ability Score Improvement|Druid (reworked)|Farover|4",
+				"Might of the Land|Druid (reworked)|Farover|5",
+				"Tiny Creature|Druid (reworked)|Farover|5",
+                {
+					"classFeature": "Druidic Affinity Feature|Druid (reworked)|Farover|6",
+					"gainSubclassFeature": true
+				},
+				"Aquatic Form|Druid (reworked)|Farover|7",
+				"Hybrid Form|Druid (reworked)|Farover|7",
+                "Ability Score Improvement|Druid (reworked)|Farover|8",
+				"Aerial Form|Druid (reworked)|Farover|9",
+				"Displacing Transformation|Druid (reworked)|Farover|9",
+                {
+					"classFeature": "Druidic Affinity Feature|Druid (reworked)|Farover|10",
+					"gainSubclassFeature": true
+				},
+				"Nature's Retribution|Druid (reworked)|Farover|11",
+				"Ability Score Improvement|Druid (reworked)|Farover|12",
+				"Beast Spells|Druid (reworked)|Farover|13",
+                {
+					"classFeature": "Druidic Affinity Feature|Druid (reworked)|Farover|14",
+					"gainSubclassFeature": true
+				},
+				"Harmonize with Nature|Druid (reworked)|Farover|15",
+				"Ability Score Improvement|Druid (reworked)|Farover|16",
+				"Elemental Destruction|Druid (reworked)|Farover|18",
+                "Ability Score Improvement|Druid (reworked)|Farover|19",
+                "Archdruid|Druid (reworked)|Farover|20"
+            ]
         }
     ],
 	"classFeature": [
+		{
+			"name": "Channel Nature",
+			"source": "Farover",
+			"className": "Druid (reworked)",
+			"classSource": "Farover",
+			"level": 1,
+            "entries": [
+				"The magic of nature infuses you. Tapping into that power, you can create various magical effects. You start with one such effect: Wild Shape, which is described below. Other druid features give additional Channel Nature effect options. Each time you use Channel Nature, you choose which effect to create from among those you have from this class.",
+                "You can use Channel Nature twice. You regain one expended use when you finish a short rest, and you regain all expended uses when you finish a long rest. You gain additional uses when you reach certain druid levels, as shown in the Channel Nature column of the druid table.",
+                "If a Channel Nature effect requires a saving throw, the DC equals your spellcasting Spell Save DC.",
+				{
+					"type": "entries",
+					"name": "Wild Shape",
+					"entries": [
+                        "As a bonus action, you transform into a form that you have learned for this feature. You start by knowing the {@link Beasts of the Land forms|https://5e.tools/bestiary.html#agile%20beast%20of%20the%20land_farover,fbsr:wild%20shapes}. Choose one of the stat blocks available to you for the wild shape. The magic of the wild shape lasts for up to an amount of hours equal to your druid level, during which you can revert out and in of the form you chose using a bonus action for as long as the effect remains active. The effect ends early if you fall unconscious, drop to 0 hit points, or die.",
+                        "While in a Wild Shape form, many of its game statistics replace yours, and your ability to handle objects is determined by the forms limbs, rather than your own. You retain your personality and memories, but lose the ability to speak. While transformed into the form, you have resistance to all types of damage, but you lose access to the following class features: {@classFeature Spellcasting|Druid (reworked)|Farover|1} (you can continue to concentrate on spells), and {@italic Channel Nature}.",
+                        "When you transform, you choose whether your equipment falls to the ground in your space or merges into your new form. Any unworn or unequipped equipment you have that merges with the form when you transform has no effect until you leave the form, and neither does any mundane armor, weapons, or worn equipment.",
+						"Magical armor, weapons, and other magical equipment you wear when you transform do retain all of their magical benefits, but not their mundane ones. For example, if you transform while wearing a set of +1 leather armor, you retain the magical +1 AC benefit, but not the AC of the leather armor itself. If you wield magical weapons, you can benefit from the magical property of one weapon when attacking in your wild shape form (if you’re wielding two weapons, you decide which one of the two to benefit from when you transform)."
+					]
+				}
+			]
+		},
+		{
+			"name": "Druidic",
+			"source": "Farover",
+			"className": "Druid (reworked)",
+			"classSource": "Farover",
+			"level": 1,
+            "entries": [
+                "You know Druidic, the secret language of druids. You can speak the language and use it to leave hidden messages. You and others who know this language automatically spot such a message. Others spot the message’s presence with a successful DC 15 Wisdom ({@skill Perception}) check but can’t decipher it without magic."
+			]
+		},
+		{
+			"name": "Spellcasting",
+			"source": "Farover",
+			"className": "Druid (reworked)",
+			"classSource": "Farover",
+			"level": 1,
+            "entries": [
+                "Drawing on the divine power of nature itself, you can cast spells to shape that power to your will. See {@link chapter 10|https://5e.tools/book.html#PHB,10} for the general rules of spellcasting and the {@link druid spell list here|https://5e.tools/spells.html#blankhash,flstclass:druid=1}.",
+                {
+					"type": "entries",
+					"name": "Cantrips",
+					"entries": [
+                        "At 1st level, you know two cantrips of your choice from the druid spell list. You learn additional druid cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Druid table."
+					]
+				},
+                {
+					"type": "entries",
+					"name": "Preparing and Casting Spells",
+					"entries": [
+						"{@bold {@italic Spell Slots.}} The Druid table shows how many spell slots you have to cast your druid spells of 1st level and higher. To cast one of these druid spells, you must expend a slot of the spell’s level or higher. You regain all expended spell slots when you finish a long rest.",
+                        "{@bold {@italic Prepared Spells.}} You prepare the list of druid spells that are available for you to cast, choosing from the druid spell list. The level and number of druid spells you can prepare is equal to your spell slots. For example, as a 4th-level druid, you can prepare four 1st-level spells and two 2nd-level spells.",
+						"You can also change your list of prepared spells when you finish a rest. Preparing a new list of druid spells requires time spent in prayer and meditation: at least 1 minute per spell level for each spell on your list."
+					]
+				},
+                {
+					"type": "entries",
+					"name": "Spellcasting Ability",
+					"entries": [
+						"Wisdom is your spellcasting ability for your druid spells, since your magic draws upon your devotion and attunement to nature. You use your Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a druid spell you cast and when making an attack roll with one.",
+                        {
+							"type": "abilityDc",
+							"name": "Spell",
+							"attributes": [
+								"wis"
+							]
+						},
+						{
+							"type": "abilityAttackMod",
+							"name": "Spell",
+							"attributes": [
+								"wis"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Ritual Casting",
+					"entries": [
+                        "You can cast a druid spell as a ritual if that spell has the ritual tag and you have the spell prepared."
+					]
+				},
+                {
+					"type": "entries",
+					"name": "Spellcasting Focus",
+					"entries": [
+                        "You can use a {@item druidic focus|phb} as a spellcasting focus for your druid spells."
+					]
+				}
+            ]
+        },
+		{
+			"name": "Nature's Aid",
+			"source": "Farover",
+			"className": "Druid (reworked)",
+			"classSource": "Farover",
+			"level": 2,
+            "entries": [
+                "At 2nd level, you learn two more ways to use your {@classFeature Channel Nature|Druid (reworked)|Farover|1} feature, as described below.",
+				{
+					"type": "entries",
+					"name": "Healing Blossoms",
+					"entries": [
+                        "As an action, you channel healing energy that appears as blooming flowers. Choose a point within 60 feet of you, and a surge of rejuvenating growth affects creatures there within a 10-foot radius. Roll a number of {@dice d4}‘s equal to your Wisdom modifier (minimum of one die). Up to 3 creatures of your choice in the area regain hit points equal to the rolled amount.",
+						"The size of the dice rolled for this feature increases to {@dice d6}‘s at 9th level, and {@dice d8}‘s at 16th level."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Nature Spirit",
+					"entries": [
+                        "As a free action, you summon an ethereal fey spirit to aid you for 1 minute. The spirit is untargetable and immune to all damage, and it hovers in the air for the duration, closely following you around. While the spirit is active, it can shoulder some of the burdens of your spellcasting by being able to concentrate on a spell on your behalf. This means that if you cast a {@condition concentration} spell while the spirit is active, the spell does not require concentration on it from you, and the spirit does it instead. You can also cast a second concentration spell while the spirit is already concentrating on one, and concentrate on the second spell yourself.",
+						"Your magic is closely linked with that of the fey spirit, meaning that upon taking damage, you must make Constitution saving throws on behalf of the spirit so it can maintain concentration, but you do so at advantage when you are not concentrating on a spell and only the spirit is. If both of you are concentrating on a spell, you roll normally, and on a failed save, both spells being concentrated on end.",
+						"After a minute has passed the fey spirit disappears, and any spell it was concentrating on ends, regardless of the spells duration.",
+						"While the nature spirit is active, you can not use your {@classFeature Wild Shape|Druid (reworked)|Farover|1} feature."
+					]
+				}
+			]
+		},
+		{
+			"name": "Druidic Affinity",
+			"source": "Farover",
+			"className": "Druid (reworked)",
+			"classSource": "Farover",
+			"level": 3,
+            "entries": [
+                "At 3rd level, your make your choice of which druidic specialization to assume in your efforts to preserve the balance of nature. Your choice grants you features again at 6th, 10th, and 14th level."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "Farover",
+			"className": "Druid (reworked)",
+			"classSource": "Farover",
+			"level": 4,
+            "entries": [
+                "When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Might of the Land",
+			"source": "Farover",
+			"className": "Druid (reworked)",
+			"classSource": "Farover",
+			"level": 5,
+            "entries": [
+                "Your connection to the land deepens at 5th level, empowering the {@link Beasts of the Land forms|https://5e.tools/bestiary.html#agile%20beast%20of%20the%20land_farover,fbsr:wild%20shapes} of your {@classFeature Wild Shape|Druid (reworked)|Farover|1} feature. You unlock the climbing speed and multiattack features of the forms."
+			]
+		},
+		{
+			"name": "Tiny Critter",
+			"source": "Farover",
+			"className": "Druid (reworked)",
+			"classSource": "Farover",
+			"level": 5,
+            "entries": [
+                "At 5th level, you gain the ability to become a Tiny creature. When you transform into a Wild Shape form, you can instead choose to use the stat block of {@link any beast that is size Tiny|https://5e.tools/bestiary.html#awakened%20rat_wdh,flstsource:idrotf=2,flopsource:extend,flsttype:beast=1,floptype:extend,flstsize:t=1,flopsize:extend}. You still use your own hit points and hit dice when in a tiny beast form."
+			]
+		},
+		{
+			"name": "Druidic Affinity Feature",
+			"source": "Farover",
+			"className": "Druid (reworked)",
+			"classSource": "Farover",
+			"level": 6,
+            "entries": [
+                "At 6th level, you gain a feature granted by your Druidic Affinity."
+			]
+		},
+		{
+			"name": "Aquatic Form",
+			"source": "Farover",
+			"className": "Druid (reworked)",
+			"classSource": "Farover",
+			"level": 7,
+            "entries": [
+                "At 7th level, you learn new types of forms for your {@classFeature Wild Shape|Druid (reworked)|Farover|1} feature, the {@link Creatures of the Sea|https://5e.tools/bestiary.html#agile%20beast%20of%20the%20land_farover,fbsr:wild%20shapes}."
+			]
+		},
+		{
+			"name": "Hybrid Form",
+			"source": "Farover",
+			"className": "Druid (reworked)",
+			"classSource": "Farover",
+			"level": 7,
+            "entries": [
+                "Once you reach 7th level, you learn to use your {@classFeature Channel Nature|Druid (reworked)|Farover|1} feature to assume a hybrid were-animal form.",
+				{
+					"type": "entries",
+					"name": "Hybrid Shape",
+					"entries": [
+                        "Similarly to your {@classFeature Wild Shape|Druid (reworked)|Farover|1}, you assume a half-humanoid, half-animal hybrid form. When assuming a hybrid form, you can choose any {@link wild shape statblock|https://5e.tools/bestiary.html#agile%20beast%20of%20the%20land_farover,fbsr:wild%20shapes} you have access to. Since you only partially transform into the animal, you can only receive some of the features of the stat block, which are the {@bold passive features, senses, and speeds}. You choose which of these features to gain. You do not gain resistance to all damage in the hybrid form.",
+						"By only partially transforming, you do not lose access to any of your other druid features like you normally do while in a wild shape form. You can decide if you lose access to your limbs or ability to speak.",
+						"As with wild shape, you choose the animal to base the transformation on, and it does not affect on the form’s capabilities. You can choose any appropriate animal to mimic, and which features of that animal you wish to visually adopt."
+					]
+				}
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "Farover",
+			"className": "Druid (reworked)",
+			"classSource": "Farover",
+			"level": 8,
+            "entries": [
+                "When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Aerial Form",
+			"source": "Farover",
+			"className": "Druid (reworked)",
+			"classSource": "Farover",
+			"level": 9,
+            "entries": [
+				"At 9th level, you learn new types of forms for your Wild Shape feature, the {@link Birds of the Sky|https://5e.tools/bestiary.html#agile%20beast%20of%20the%20land_farover,fbsr:wild%20shapes}."
+			]
+		},
+		{
+			"name": "Displacing Transformation",
+			"source": "Farover",
+			"className": "Druid (reworked)",
+			"classSource": "Farover",
+			"level": 9,
+            "entries": [
+				"Starting at 9th level, whenever you initially spend a {@classFeature Channel Nature|Druid (reworked)|Farover|1} to assume a Wild Shape form, you can choose to also teleport up to 30 feet away to an unoccupied space that you can see immediately before you transform.",
+				"Additonally, you can now also spend a Channel Nature to assume a Wild Shape form as a reaction, which you can take when you are hit with a damaging attack. You are granted your forms damage resistance against the attack, and you can also teleport as part of the reaction. If the teleportation brings you to a space where the attack could not hit you, you are unaffected by the attack.",
+				"You do not lose any other active Channel Nature effects when you transform as a reaction, but to keep those effects active, you can immediately transform out of the form after the attack as part of the same reaction. If you decide to stay in your form, any other active Channel Nature effects end."
+			]
+		},
+		{
+			"name": "Druidic Affinity Feature",
+			"source": "Farover",
+			"className": "Druid (reworked)",
+			"classSource": "Farover",
+			"level": 10,
+            "entries": [
+                "At 10th level, you gain a feature granted by your Druidic Affinity."
+			]
+		},
+		{
+			"name": "Nature's Retribution",
+			"source": "Farover",
+			"className": "Druid (reworked)",
+			"classSource": "Farover",
+			"level": 11,
+            "entries": [
+                "At 11th level, you learn a new way to use your {@classFeature Channel Nature|Druid (reworked)|Farover|1}, as described below.",
+				{
+					"type": "entries",
+					"name": "Force of Nature",
+					"entries": [
+                        "As an action, you harness the surrounding magic of nature and awaken vengeful treants to harm your enemies. The treants appear at unoccupied spaces of your choice you can see within 30 feet of you, and you summon an amount of them equal to half your proficiency bonus (rounded down). The treants will fight for you, attacking your designated enemies for up to 1 minute, or until they drop to 0 hit points. The treants use the {@creature awakened tree} stat block, but they are size Medium, have a speed of 30, and don’t have any resistances.",
+						"The treants take their turns as a group immediately after yours, and they will only fight your enemies. They will not perform any other actions, and if you have no enemies to fight, they will stand idly until a minute has passed and they disappear.",
+						"You can only have one use of this feature active at a time, and while the treants are active, you can not use your {@classFeature Wild Shape|Druid (reworked)|Farover|1} feature."
+					]
+				}
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "Farover",
+			"className": "Druid (reworked)",
+			"classSource": "Farover",
+			"level": 12,
+            "entries": [
+                "When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Beast Spells",
+			"source": "Farover",
+			"className": "Druid (reworked)",
+			"classSource": "Farover",
+			"level": 13,
+            "entries": [
+				"Beginning at 13th level, you can cast many of your druid spells in any shape you assume using Wild Shape. You can cast {@link spells with a range of Self or Touch|https://5e.tools/spells.html#flmtclasses:b1,flstclass:druid=1,flopclass:extend,flnhsubclass:druid=1,flopsubclass:extend,flstrange:self=1~touch=1~self%20(area)=1,floprange:extend}. You can perform the verbal and somatic components of such spells while in a wild shape and your wild shape itself acts as your spellcasting focus."
+			]
+		},
+		{
+			"name": "Druidic Affinity Feature",
+			"source": "Farover",
+			"className": "Druid (reworked)",
+			"classSource": "Farover",
+			"level": 14,
+            "entries": [
+                "At 14th level, you gain a feature granted by your Druidic Affinity."
+			]
+		},
+		{
+			"name": "Harmonize with Nature",
+			"source": "Farover",
+			"className": "Druid (reworked)",
+			"classSource": "Farover",
+			"level": 15,
+            "entries": [
+                "Starting at 15th level, during a short rest you may choose to meditate and harmonize with your surroundings. If you do, at the end of your rest you attune to the area in a 5-mile radius around you. You magically know what types of creatures are present in your attuned area, their approximate numbers, and if there are any magics disturbing the natural order in your attuned area. While in your attuned area, you have advantage on {@skill Nature}, {@skill Perception}, and {@skill Survival} checks, and {@sense blindsight} out to a range of 30 feet. Once attuned to an area, you remain attuned for the next 24 hours. You can only attune to one area at a time."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "Farover",
+			"className": "Druid (reworked)",
+			"classSource": "Farover",
+			"level": 16,
+            "entries": [
+                "When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Elemental Destruction",
+			"source": "Farover",
+			"className": "Druid (reworked)",
+			"classSource": "Farover",
+			"level": 16,
+            "entries": [
+                "At 18th level, you can turn nature in its rawest elements into deadly weapons no matter your form. Once each turn, you can use a bonus action to choose a target point within 30 feet and one of the following element options. If the element you choose is not present at or near the target point, any damage dealt by this feature is halved, you have disadvantage on your spell attack, and creatures have advantage on any saving throws made to resist it.",
+				"{@bold {@italic Air.}} Each creature within 20 feet of the point must make a Strength saving throw. On a failed save, a target takes bludgeoning damage equal to {@dice 3d8} + your Wisdom modifier and is flung up 20 feet away from the target point in a random direction (determined by the roll of the first {@dice d8}) and knocked prone.",
+				"If a thrown target strikes an object, such as a wall or floor, the target takes an additional {@dice 1d8} bludgeoning damage. If a target is thrown at another creature, that creature must succeed on a Dexterity saving throw or it also takes {@dice 1d8} bludgeoning damage and is knocked prone. If the saving throw is successful, the target takes half the bludgeoning damage and isn’t flung away or knocked prone.",
+				"{@bold {@italic Earth.}} Clumps of dirt and stone explode outward. Creatures within 10 feet of the point must make a Strength saving throw, or take {@dice 4d8} bludgeoning damage and are knocked prone. On a successful save a creature takes half damage is not knocked prone.",
+				"{@bold {@italic Fire.}} Flames roil outward in a burst of inferno. Creatures within 15 feet of the point must make a Dexterity saving throw, taking {@dice 6d6} fire damage on a failed save, or half as much on a successful one.",
+				"{@bold {@italic Ice.}} You condense and flash freeze the water from a vast area above you into a massive boulder to drop down with immense force. Make a ranged spell attack against a creature at least 30 feet below the target point. On a hit, the creature takes {@dice 4d6} bludgeoning damage and {@dice 4d6} cold damage.",
+				"{@bold {@italic Water.}} You create a 20-foot tall, 20-foot wide wave that travels 30 feet in one direction and then crashes down. Any Large or smaller creatures and objects in the wave’s path must make a Strength saving throw. On a failure, a creature takes {@dice 4d8} bludgeoning damage and is carried with the wave. A creature that succeeds on its saving throw takes no damage and is not moved.",
+				"{@bold {@italic Wood.}} Splinters appear and fling themselves into flesh and armor alike. Creatures within 20 feet of the point must make a Dexterity saving throw. On a failed save, a creature takes {@dice 4d6} piercing damage, or half as much on a success."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "Farover",
+			"className": "Druid (reworked)",
+			"classSource": "Farover",
+			"level": 19,
+            "entries": [
+                "When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Archdruid",
+			"source": "Farover",
+			"className": "Druid (reworked)",
+			"classSource": "Farover",
+			"level": 20,
+            "entries": [
+                "At 20th level, when you roll initiative at the beginning of combat and have no uses of {@classFeature Channel Nature|Druid (reworked)|Farover|1} left, you regain one use.",
+				"Additionally, you can ignore the verbal and somatic components of your druid spells, as well as any material components that lack a cost and aren’t consumed by a spell. You gain this benefit in both your normal shape and your beast shape from {@classFeature Wild Shape|Druid (reworked)|Farover|1}."
+			]
+		},
         {
 			"name": "Favored Enemy",
 			"source": "Farover",
