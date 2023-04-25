@@ -103,11 +103,11 @@
 			"classSource": "Farover",
 			"shortName": "Moon",
 			"subclassFeatures": [
-				"Affinity of the Moon|Druid (reworked)||Moon|Farover|3",
-				"Bestial Prowess|Druid (reworked)||Moon|Farover|3",
-				"Adaptive Recovery|Druid (reworked)||Moon|Farover|6",
-				"Elemental Strikes|Druid (reworked)||Moon|Farover|10",
-				"Apex Predator|Druid (reworked)||Moon|Farover|14"
+				"Affinity of the Moon|Druid (reworked)|Farover|Moon|Farover|3",
+				"Bestial Prowess|Druid (reworked)|Farover|Moon|Farover|3",
+				"Adaptive Recovery|Druid (reworked)|Farover|Moon|Farover|6",
+				"Elemental Strikes|Druid (reworked)|Farover|Moon|Farover|10",
+				"Apex Predator|Druid (reworked)|Farover|Moon|Farover|14"
 			]
 		},
 		{
@@ -117,11 +117,11 @@
 			"classSource": "Farover",
 			"shortName": "Dreams",
 			"subclassFeatures": [
-				"Affinity of Dreams|Druid (reworked)||Moon|Farover|3",
-				"Bloom of Spring|Druid (reworked)||Dreams|Farover|3",
-				"Growth of Summer|Druid (reworked)||Dreams|Farover|6",
-				"Hidden Paths|Druid (reworked)||Dreams|Farover|10",
-				"Purifying Magic|Druid (reworked)||Dreams|Farover|14"
+				"Affinity of Dreams|Druid (reworked)|Farover|Moon|Farover|3",
+				"Bloom of Spring|Druid (reworked)|Farover|Dreams|Farover|3",
+				"Growth of Summer|Druid (reworked)|Farover|Dreams|Farover|6",
+				"Hidden Paths|Druid (reworked)|Farover|Dreams|Farover|10",
+				"Purifying Magic|Druid (reworked)|Farover|Dreams|Farover|14"
 			]
 		},
 		{
@@ -131,13 +131,13 @@
 			"classSource": "Farover",
 			"shortName": "Land",
 			"subclassFeatures": [
-				"Affinity of the Land|Druid (reworked)||Moon|Farover|3",
-				"Bonus Cantrip|Druid (reworked)||Land|Farover|3",
-				"Natural Recovery|Druid (reworked)||Land|Farover|3",
-				"Domain Spells|Druid (reworked)||Land|Farover|3",
-				"Magical Seedlings|Druid (reworked)||Land|Farover|6",
-				"Feywalker|Druid (reworked)||Land|Farover|10",
-				"Nature's Sanctuary|Druid (reworked)||Land|Farover|14"
+				"Affinity of the Land|Druid (reworked)|Farover|Moon|Farover|3",
+				"Bonus Cantrip|Druid (reworked)|Farover|Land|Farover|3",
+				"Natural Recovery|Druid (reworked)|Farover|Land|Farover|3",
+				"Domain Spells|Druid (reworked)|Farover|Land|Farover|3",
+				"Magical Seedlings|Druid (reworked)|Farover|Land|Farover|6",
+				"Feywalker|Druid (reworked)|Farover|Land|Farover|10",
+				"Nature's Sanctuary|Druid (reworked)|Farover|Land|Farover|14"
 			]
 		},
 		{
