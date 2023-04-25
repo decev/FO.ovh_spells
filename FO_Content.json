@@ -111,6 +111,20 @@
 			]
 		},
 		{
+			"name": "Affinity of Dreams",
+			"source": "Farover",
+			"className": "Druid (reworked)",
+			"classSource": "Farover",
+			"shortName": "Dreams",
+			"subclassFeatures": [
+				"Affinity of Dreams|Druid (reworked)|Farover|Dreams|Farover|3",
+				"Bloom of Spring|Druid (reworked)|Farover|Dreams|Farover|3",
+				"Growth of Summer|Druid (reworked)|Farover|Dreams|Farover|6",
+				"Hidden Paths|Druid (reworked)|Farover|Dreams|Farover|10",
+				"Purifying Magic|Druid (reworked)|Farover|Dreams|Farover|14"
+			]
+		},
+		{
 			"name": "Time Domain",
 			"source": "Farover",
 			"className": "Cleric",
@@ -450,6 +464,72 @@
 				"{@bold {@italic Agile.}} Your Agile forms ignore difficult terrain, and you gain +2 to attack rolls and proficiency in Dexterity ability checks and saving throws while in the form.",
 				"{@bold {@italic Strong.}} Your Strong forms carrying capacity is doubled, and you gain +2 to damage rolls and proficiency in Strength ability checks and saving throws while in the form.",
 				"{@bold {@italic Tough.}} Your Tough forms can be size Huge, and you gain +1 AC and proficiency in Constitution ability checks and saving throws while in the form."
+			]
+		},
+		{
+			"name": "Affinity of Dreams",
+			"source": "Farover",
+			"className": "Druid (reworked)",
+			"classSource": "Farover",
+			"subclassSource": "Farover",
+			"subclassShortName": "Dreams",
+			"level": 3,
+			"entries": [
+				"Druids who align with the Affinity of Dreams often venture to and reside in regions that have strong ties to the Feywild and its dreamlike realms. The druids` guardianship of the natural world makes for a natural alliance between them and good-aligned fey. These druids seek to fill the world with dreamy wonder. Their magic mends wounds and brings joy to downcast hearts, and the realms they protect are gleaming, fruitful places, where dream and reality blur together and where the weary can find rest."
+			]
+		},
+		{
+			"name": "Bloom of Spring",
+			"source": "Farover",
+			"className": "Druid (reworked)",
+			"classSource": "Farover",
+			"subclassSource": "Farover",
+			"subclassShortName": "Dreams",
+			"level": 3,
+			"entries": [
+				"When you heal a creature with your {@classFeature Nature's Aid|Druid (reworked)|Farover|2||Healing Blossoms}, the creature also recovers hit points equal to half the rolled amount at the beginning of its next turn.",
+				"Additionally, you can use your Healing Blossoms feature as a {@status concentration} spell. If your Healing Blossoms affects a creature with no missing hit points, you can decide to delay the both the initial and secondary healing of the ability by holding onto it like you would a concentration spell* for up to 1 minute.",
+				"While you maintain concentration, whenever an affected creature takes any damage to fall below full hit points, Healing Blossoms triggers to heal that creature. Since the feature has an initial and secondary healing, both heals follow this rule, and if the initial heal doesn`t heal the creature to full hit points, the secondary heal then also triggers immediately after.",
+				"{@italic (*FO: Full concentration points)}"
+			]
+		},
+		{
+			"name": "Growth of Summer",
+			"source": "Farover",
+			"className": "Druid (reworked)",
+			"classSource": "Farover",
+			"subclassSource": "Farover",
+			"subclassShortName": "Dreams",
+			"level": 6,
+			"entries": [
+				"Starting at 6th level, you can spend spell slots to empower your {@classFeature Nature's Aid|Druid (reworked)|Farover|2||Healing Blossoms}. When using Healing Blossoms, you can expend one spell slot to grant the ability an additional {@dice 1d6} healing per slot level used.",
+				"In addition, you can call upon the forces of nature to protect you and your allies when you settle down for a rest. At the start of a short or long rest, you can touch a tree, shrub, or other similar plant in your vicinity to awaken. You can only do this if such plants are alive and present in your area.",
+				"Your DM chooses statistics appropriate for the awakened plant, such as the statistics for the {@link awakened shrub or tree|https://5e.tools/bestiary.html#awakened%20zurkhwood_oota,flstsource:idrotf=0,flopsource:extend,flsttype:plant=1,floptype:extend,fbsr:awakened}. The plant is controlled by the DM. The awakened plant can not move, but it will protect you and any designated allies for the duration of your short or long rest. At the end of the rest, the plant loses its magic, and returns to being a normal plant."
+			]
+		},
+		{
+			"name": "Hidden Paths",
+			"source": "Farover",
+			"className": "Druid (reworked)",
+			"classSource": "Farover",
+			"subclassSource": "Farover",
+			"subclassShortName": "Dreams",
+			"level": 10,
+			"entries": [
+				"Starting at 10th level, you can use the hidden, magical pathways that some fey use to traverse space in the blink of an eye. As a bonus action on your turn, you can teleport up to 60 feet to an unoccupied space you can see. Alternatively, you can use your action to teleport one willing creature you touch up to 30 feet to an unoccupied space you can see.",
+				"You can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain one use of it when you finish a short rest, and all uses of it when you finish a long rest."
+			]
+		},
+		{
+			"name": "Purifying Magic",
+			"source": "Farover",
+			"className": "Druid (reworked)",
+			"classSource": "Farover",
+			"subclassSource": "Farover",
+			"subclassShortName": "Dreams",
+			"level": 14,
+			"entries": [
+				"Starting at 14th level, whenever you cast a spell of 1st-level or higher on a target, you can end one disease, poison, or one of the following conditions affecting the creature: {@condition blinded}, {@condition deafened}, {@condition paralyzed}, or {@condition stunned}."
 			]
 		},
 		{
