@@ -134,6 +134,7 @@
 				"Affinity of the Land|Druid (reworked)|Farover|Land|Farover|3",
 				"Bonus Cantrip|Druid (reworked)|Farover|Land|Farover|3",
 				"Natural Recovery|Druid (reworked)|Farover|Land|Farover|3",
+				"Domain Spells|Druid (reworked)|Farover|Land|Farover|3",
 				"Magical Seedlings|Druid (reworked)|Farover|Land|Farover|6",
 				"Feywalker|Druid (reworked)|Farover|Land|Farover|10",
 				"Nature's Sanctuary|Druid (reworked)|Farover|Land|Farover|14"
@@ -583,6 +584,49 @@
 				"You can regain magical energy by sitting in meditation and communing with nature. During a short rest, you choose expended spell slots to recover. The spell slots can have a combined level that is equal to or less than half your druid level (rounded up), and none of the slots can be 6th level or higher. This recovery does not stack with any other rules or features that allows you to recover spell slots on short rests."
 			]
 		},
+		{
+            "name": "Domain Spells",
+            "source": "Farover",
+            "className": "Druid (reworked)",
+            "classSource": "Farover",
+            "subclassSource": "Farover",
+            "subclassShortName": "Land",
+            "level": 3,
+            "entries": [
+                "Your mystical connection to the land infuses you with the ability to cast certain spells. At 3rd, 5th, 7th, and 9th level you gain access to spells connected to the domain where your druidic circle is located. Choose the domain—arctic, coast, desert, forest, grassland, mountain, subterranean, or swamp—and consult the associated list of spells.",
+				"Once you gain access to a circle spell, you always have it prepared, and it doesn’t count against the number of spells you can prepare each day. Spell that don’t appear on the druid spell list are considered druid spells for you.",
+                {
+                    "type": "table",
+                    "caption": "Arctic",
+                    "colLabels": [
+                        "Druid Level",
+                        "Circle Spells"
+                    ],
+                    "colStyles": [
+                        "col-3 text-center",
+                        "col-9"
+                    ],
+                    "rows": [
+                        [
+                            "3rd",
+                            "{@spell Blindness/Deafness}, {@spell Snilloc's Snowball Swarm|farover}"
+                        ],
+                        [
+                            "5th",
+                            "{@spell Leomund's Tiny Hut|farover}, {@spell Slow|farover}"
+                        ],
+                        [
+                            "7th",
+                            "{@spell Ice Block|farover}, {@spell Fire Shield}"
+                        ],
+                        [
+                            "9th",
+                            "{@spell commune with nature}, {@spell cone of cold}"
+                        ]
+                    ]
+                }
+            ]
+        },
 		{
 			"name": "Magical Seedlings",
 			"source": "Farover",
