@@ -491,7 +491,7 @@
 			"subclassShortName": "Dreams",
 			"level": 3,
 			"entries": [
-				"Druids who align with the Affinity of Dreams often venture to and reside in regions that have strong ties to the Feywild and its dreamlike realms. The druids’ guardianship of the natural world makes for a natural alliance between them and good-aligned fey. These druids seek to fill the world with dreamy wonder. Their magic mends wounds and brings joy to downcast hearts, and the realms they protect are gleaming, fruitful places, where dream and reality blur together and where the weary can find rest."
+				"Druids who align with the Affinity of Dreams often venture to and reside in regions that have strong ties to the Feywild and its dreamlike realms. The druids` guardianship of the natural world makes for a natural alliance between them and good-aligned fey. These druids seek to fill the world with dreamy wonder. Their magic mends wounds and brings joy to downcast hearts, and the realms they protect are gleaming, fruitful places, where dream and reality blur together and where the weary can find rest."
 			]
 		},
 		{
@@ -505,7 +505,7 @@
 			"entries": [
 				"When you heal a creature with your {@classFeature Nature's Aid|Druid (reworked)|Farover|2||Healing Blossoms}, the creature also recovers hit points equal to half the rolled amount at the beginning of its next turn.",
 				"Additionally, you can use your Healing Blossoms feature as a {@status concentration} spell. If your Healing Blossoms affects a creature with no missing hit points, you can decide to delay the both the initial and secondary healing of the ability by holding onto it like you would a concentration spell* for up to 1 minute.",
-				"While you maintain concentration, whenever an affected creature takes any damage to fall below full hit points, Healing Blossoms triggers to heal that creature. Since the feature has an initial and secondary healing, both heals follow this rule, and if the initial heal doesn’t heal the creature to full hit points, the secondary heal then also triggers immediately after.",
+				"While you maintain concentration, whenever an affected creature takes any damage to fall below full hit points, Healing Blossoms triggers to heal that creature. Since the feature has an initial and secondary healing, both heals follow this rule, and if the initial heal doesn`t heal the creature to full hit points, the secondary heal then also triggers immediately after.",
 				"{@italic (*FO: Full concentration points)}"
 			]
 		},
@@ -569,7 +569,7 @@
 			"subclassShortName": "Land",
 			"level": 3,
 			"entries": [
-				"You learn one additional druid {@link cantrip|https://5e.tools/spells.html#control%20flames_xge,flstlevel:0=1,floplevel:extend,flmtclasses:b1,flstclass:druid=1,flopclass:extend} of your choice. This cantrip doesn’t count against the number of druid cantrips you know."
+				"You learn one additional druid {@link cantrip|https://5e.tools/spells.html#control%20flames_xge,flstlevel:0=1,floplevel:extend,flmtclasses:b1,flstclass:druid=1,flopclass:extend} of your choice. This cantrip doesn`t count against the number of druid cantrips you know."
 			]
 		},
 		{
