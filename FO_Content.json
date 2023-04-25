@@ -621,7 +621,37 @@
                         ],
                         [
                             "9th",
-                            "{@spell commune with nature}, {@spell cone of cold}"
+                            "{@spell Commune with Nature}, {@spell Cone of Cold}"
+                        ]
+                    ]
+                },
+				{
+                    "type": "table",
+                    "caption": "Coast",
+                    "colLabels": [
+                        "Druid Level",
+                        "Circle Spells"
+                    ],
+                    "colStyles": [
+                        "col-3 text-center",
+                        "col-9"
+                    ],
+                    "rows": [
+                        [
+                            "3rd",
+                            "{@spell Mirror Image|farover}, {@spell Misty Step}"
+                        ],
+                        [
+                            "5th",
+                            "{@spell Gaseous Form}, {@Thunder Step|xge}"
+                        ],
+                        [
+                            "7th",
+                            "{@spell Greater Invisibility|farover}, {@spell Storm Sphere|xge}"
+                        ],
+                        [
+                            "9th",
+                            "{@spell Mislead}, {@spell Rusting Grasp|farover}"
                         ]
                     ]
                 }
