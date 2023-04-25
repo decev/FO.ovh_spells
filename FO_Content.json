@@ -631,8 +631,8 @@
 						{
 							"source": "Farover",
 							"type": "table",
-							"caption": "Arctic",
-							"name": "Arctic",
+							"caption": "Coast",
+							"name": "Coast",
 							"colLabels": [
 								"Druid Level",
 								"Circle Spells"
@@ -640,27 +640,27 @@
 							"rows": [
 								[
 									"3rd",
-									"{@spell Blindness/Deafness}, {@spell Snilloc's Snowball Swarm|farover}"
+									"{@spell Mirror Image|farover}, {@spell Misty Step}"
 								],
 								[
 									"5th",
-									"{@spell Leomund's Tiny Hut|farover}, {@spell Slow|farover}"
+									"{@spell Gaseous Form}, {@Thunder Step|xge}"
 								],
 														[
 									"7th",
-									"{@spell Ice Block|farover}, {@spell Fire Shield}"
+									"{@spell Greater Invisibility|farover}, {@spell Storm Sphere|xge}"
 								],
 														[
 									"9th",
-									"{@spell Commune with Nature}, {@spell Cone of Cold}"
+									"{@spell Mislead}, {@spell Rusting Grasp|farover}"
 								]
 							]
 						},
 						{
 							"source": "Farover",
 							"type": "table",
-							"caption": "Arctic",
-							"name": "Arctic",
+							"caption": "Desert",
+							"name": "Desert",
 							"colLabels": [
 								"Druid Level",
 								"Circle Spells"
@@ -668,19 +668,159 @@
 							"rows": [
 								[
 									"3rd",
-									"{@spell Blindness/Deafness}, {@spell Snilloc's Snowball Swarm|farover}"
+									"{@spell Blur}, {@spell Silence|farover}"
 								],
 								[
 									"5th",
-									"{@spell Leomund's Tiny Hut|farover}, {@spell Slow|farover}"
+									"{@spell Ashardalon's Stride|ftd}, {@spell Wall of Sand|xge}"
 								],
 														[
 									"7th",
-									"{@spell Ice Block|farover}, {@spell Fire Shield}"
+									"{@spell Fire Shield}, {@spell Unfailing Endurance|farover}"
 								],
 														[
 									"9th",
-									"{@spell Commune with Nature}, {@spell Cone of Cold}"
+									"{@spell Control Winds|xge}, {@spell Dawn|xge}"
+								]
+							]
+						},
+						{
+							"source": "Farover",
+							"type": "table",
+							"caption": "Forest",
+							"name": "Forest",
+							"colLabels": [
+								"Druid Level",
+								"Circle Spells"
+							],
+							"rows": [
+								[
+									"3rd",
+									"{@spell Enfeebling Strike|farover}, {@spell Spider Climb}"
+								],
+								[
+									"5th",
+									"{@spell Create Food and Water}, {@spell Lightning Bolt|farover}"
+								],
+														[
+									"7th",
+									"{@spell Divination}, {@spell Fabricate}"
+								],
+														[
+									"9th",
+									"{@spell Skill Empowerment|xge}, {@spell Tree Stride}"
+								]
+							]
+						},
+						{
+							"source": "Farover",
+							"type": "table",
+							"caption": "Grassland",
+							"name": "Grassland",
+							"colLabels": [
+								"Druid Level",
+								"Circle Spells"
+							],
+							"rows": [
+								[
+									"3rd",
+									"{@spell Invisibility|farover}, {@spell Shattering Barrage|farover}"
+								],
+								[
+									"5th",
+									"{@spell Accelerate Healing|farover}, {@spell Catnap|farover}"
+								],
+														[
+									"7th",
+									"{@spell Haste|farover}, {@spell Spell Immunity|farover}"
+								],
+														[
+									"9th",
+									"{@spell Dream}, {@spell Insect Plague}"
+								]
+							]
+						},
+						{
+							"source": "Farover",
+							"type": "table",
+							"caption": "Mountain",
+							"name": "Mountain",
+							"colLabels": [
+								"Druid Level",
+								"Circle Spells"
+							],
+							"rows": [
+								[
+									"3rd",
+									"{@spell Levitate}, {@spell Maximilian's Earthen Grasp|xge}"
+								],
+								[
+									"5th",
+									"{@spell Melf's Minute Meteors|xge}, {@spell Strength of One|farover}"
+								],
+														[
+									"7th",
+									"{@spell Dimension Door}, {@spell Unfailing Endurance|farover}"
+								],
+														[
+									"9th",
+									"{@spell Passwall}, {@spell Wall of Stone}"
+								]
+							]
+						},
+						{
+							"source": "Farover",
+							"type": "table",
+							"caption": "Subterranean",
+							"name": "Subterranean",
+							"colLabels": [
+								"Druid Level",
+								"Circle Spells"
+							],
+							"rows": [
+								[
+									"3rd",
+									"{@spell Enlarge/Reduce}, {@spell Web}"
+								],
+								[
+									"5th",
+									"{@spell Creeping Shadow|farover}, {@spell Counterspell|farover}"
+								],
+														[
+									"7th",
+									"{@spell Greater Invisibility|farover}, {@spell Vitriolic Sphere|farover}"
+								],
+														[
+									"9th",
+									"{@spell Cloudkill}, {@spell Transmute Rock|xge}"
+								]
+							]
+						},
+						{
+							"source": "Farover",
+							"type": "table",
+							"caption": "Swamp",
+							"name": "Swamp",
+							"colLabels": [
+								"Druid Level",
+								"Circle Spells"
+							],
+							"rows": [
+								[
+									"3rd",
+									"{@spell Lemure Transformation|farover}, {@spell Melf's Acid Arrow}"
+								],
+								[
+									"5th",
+									"{@spell Cloak of Flies|farover}, {@spell Stinking Cloud}"
+								],
+														[
+									"7th",
+									"{@spell Howl of Terror|farover}, {@spell Vitriolic Sphere|farover}"
+								],
+														[
+									"9th",
+									"{@spell Creation}, {@spell Maelstrom|xge}"
 								]
 							]
 						}
