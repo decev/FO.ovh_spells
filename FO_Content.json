@@ -19510,7 +19510,7 @@
                         "As a free action, you summon an ethereal fey spirit to aid you for 1 minute. The spirit is untargetable and immune to all damage, and it hovers in the air for the duration, closely following you around. While the spirit is active, it can shoulder some of the burdens of your spellcasting by being able to concentrate on a spell on your behalf. This means that if you cast a {@condition concentration} spell while the spirit is active, the spell does not require concentration on it from you, and the spirit does it instead. You can also cast a second concentration spell while the spirit is already concentrating on one, and concentrate on the second spell yourself.",
 						"Your magic is closely linked with that of the fey spirit, meaning that upon taking damage, you must make Constitution saving throws on behalf of the spirit so it can maintain concentration, but you do so at advantage when you are not concentrating on a spell and only the spirit is. If both of you are concentrating on a spell, you roll normally, and on a failed save, both spells being concentrated on end.",
 						"After a minute has passed the fey spirit disappears, and any spell it was concentrating on ends, regardless of the spells duration.",
-						"While the nature spirit is active, you can not use your {@classFeature Wild Shape|Druid (reworked)|Farover|1} feature."
+						"While the nature spirit is active, you can not use your {@classFeature Channel Nature|Druid (reworked)|Farover|1||Wild Shape} feature."
 					]
 				}
 			]
@@ -19543,7 +19543,7 @@
 			"classSource": "Farover",
 			"level": 5,
             "entries": [
-                "Your connection to the land deepens at 5th level, empowering the {@link Beasts of the Land forms|https://5e.tools/bestiary.html#agile%20beast%20of%20the%20land_farover,fbsr:wild%20shapes} of your {@classFeature Wild Shape|Druid (reworked)|Farover|1} feature. You unlock the climbing speed and multiattack features of the forms."
+                "Your connection to the land deepens at 5th level, empowering the {@link Beasts of the Land forms|https://5e.tools/bestiary.html#agile%20beast%20of%20the%20land_farover,fbsr:wild%20shapes} of your {@classFeature Channel Nature|Druid (reworked)|Farover|1||Wild Shape} feature. You unlock the climbing speed and multiattack features of the forms."
 			]
 		},
 		{
@@ -19573,7 +19573,7 @@
 			"classSource": "Farover",
 			"level": 7,
             "entries": [
-                "At 7th level, you learn new types of forms for your {@classFeature Wild Shape|Druid (reworked)|Farover|1} feature, the {@link Creatures of the Sea|https://5e.tools/bestiary.html#agile%20beast%20of%20the%20land_farover,fbsr:wild%20shapes}."
+                "At 7th level, you learn new types of forms for your {@classFeature Channel Nature|Druid (reworked)|Farover|1||Wild Shape} feature, the {@link Creatures of the Sea|https://5e.tools/bestiary.html#agile%20beast%20of%20the%20land_farover,fbsr:wild%20shapes}."
 			]
 		},
 		{
@@ -19588,7 +19588,7 @@
 					"type": "entries",
 					"name": "Hybrid Shape",
 					"entries": [
-                        "Similarly to your {@classFeature Wild Shape|Druid (reworked)|Farover|1}, you assume a half-humanoid, half-animal hybrid form. When assuming a hybrid form, you can choose any {@link wild shape statblock|https://5e.tools/bestiary.html#agile%20beast%20of%20the%20land_farover,fbsr:wild%20shapes} you have access to. Since you only partially transform into the animal, you can only receive some of the features of the stat block, which are the {@bold passive features, senses, and speeds}. You choose which of these features to gain. You do not gain resistance to all damage in the hybrid form.",
+                        "Similarly to your {@classFeature Channel Nature|Druid (reworked)|Farover|1||Wild Shape}, you assume a half-humanoid, half-animal hybrid form. When assuming a hybrid form, you can choose any {@link wild shape statblock|https://5e.tools/bestiary.html#agile%20beast%20of%20the%20land_farover,fbsr:wild%20shapes} you have access to. Since you only partially transform into the animal, you can only receive some of the features of the stat block, which are the {@bold passive features, senses, and speeds}. You choose which of these features to gain. You do not gain resistance to all damage in the hybrid form.",
 						"By only partially transforming, you do not lose access to any of your other druid features like you normally do while in a wild shape form. You can decide if you lose access to your limbs or ability to speak.",
 						"As with wild shape, you choose the animal to base the transformation on, and it does not affect on the form’s capabilities. You can choose any appropriate animal to mimic, and which features of that animal you wish to visually adopt."
 					]
@@ -19652,7 +19652,7 @@
 					"entries": [
                         "As an action, you harness the surrounding magic of nature and awaken vengeful treants to harm your enemies. The treants appear at unoccupied spaces of your choice you can see within 30 feet of you, and you summon an amount of them equal to half your proficiency bonus (rounded down). The treants will fight for you, attacking your designated enemies for up to 1 minute, or until they drop to 0 hit points. The treants use the {@creature awakened tree} stat block, but they are size Medium, have a speed of 30, and don’t have any resistances.",
 						"The treants take their turns as a group immediately after yours, and they will only fight your enemies. They will not perform any other actions, and if you have no enemies to fight, they will stand idly until a minute has passed and they disappear.",
-						"You can only have one use of this feature active at a time, and while the treants are active, you can not use your {@classFeature Wild Shape|Druid (reworked)|Farover|1} feature."
+						"You can only have one use of this feature active at a time, and while the treants are active, you can not use your {@classFeature Channel Nature|Druid (reworked)|Farover|1||Wild Shape} feature."
 					]
 				}
 			]
@@ -19745,7 +19745,7 @@
 			"level": 20,
             "entries": [
                 "At 20th level, when you roll initiative at the beginning of combat and have no uses of {@classFeature Channel Nature|Druid (reworked)|Farover|1} left, you regain one use.",
-				"Additionally, you can ignore the verbal and somatic components of your druid spells, as well as any material components that lack a cost and aren’t consumed by a spell. You gain this benefit in both your normal shape and your beast shape from {@classFeature Wild Shape|Druid (reworked)|Farover|1}."
+				"Additionally, you can ignore the verbal and somatic components of your druid spells, as well as any material components that lack a cost and aren’t consumed by a spell. You gain this benefit in both your normal shape and your beast shape from {@classFeature Channel Nature|Druid (reworked)|Farover|1||Wild Shape}."
 			]
 		},
         {
