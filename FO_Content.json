@@ -133,7 +133,10 @@
 			"subclassFeatures": [
 				"Affinity of the Land|Druid (reworked)|Farover|Land|Farover|3",
 				"Bonus Cantrip|Druid (reworked)|Farover|Land|Farover|3",
-				"Natural Recovery|Druid (reworked)|Farover|Land|Farover|3"
+				"Natural Recovery|Druid (reworked)|Farover|Land|Farover|3",
+				"Magical Seedlings|Druid (reworked)|Farover|Land|Farover|6",
+				"Feywalker|Druid (reworked)|Farover|Land|Farover|10",
+				"Nature's Sanctuary|Druid (reworked)|Farover|Land|Farover|14"
 			]
 		},
 		{
@@ -578,6 +581,46 @@
 			"level": 3,
 			"entries": [
 				"You can regain magical energy by sitting in meditation and communing with nature. During a short rest, you choose expended spell slots to recover. The spell slots can have a combined level that is equal to or less than half your druid level (rounded up), and none of the slots can be 6th level or higher. This recovery does not stack with any other rules or features that allows you to recover spell slots on short rests."
+			]
+		},
+		{
+			"name": "Magical Seedlings",
+			"source": "Farover",
+			"className": "Druid (reworked)",
+			"classSource": "Farover",
+			"subclassSource": "Farover",
+			"subclassShortName": "Land",
+			"level": 6,
+			"entries": [
+				"At 6th level, you gain the ability to sow your spells into small seedlings. When you complete the casting of a spell, you can decide to hold its potential by planting it in the ground within 5 feet of you, and the spell sprouts as a small magical seedling. You must make all decisions regarding the spell at the time you cast it. The spell can not have a range of only self, nor can it affect only yourself.",
+				"Within the next 10 minutes, you can direct your sown spell to bloom and produce the spell’s effects as a reaction, as long as you can see it. The spell works normally, but its point of origin is the seedling, instead of you. You can have only have one sown spell at a time, and if you don’t trigger the spell within 10 minutes, it withers and the spell is lost. A creature can notice the clearly magical seedling with a successful {@skill Perception} check against your spell save DC."
+			]
+		},
+		{
+			"name": "Feywalker",
+			"source": "Farover",
+			"className": "Druid (reworked)",
+			"classSource": "Farover",
+			"subclassSource": "Farover",
+			"subclassShortName": "Land",
+			"level": 10,
+			"entries": [
+				"At 10th level, the magic of the Feywild grants you the ability to travel mentally or physically across great physical distances.",
+				"When you finish a short rest, you can cast one of the following spells, without expending a spell slot or requiring material components: {@spell Dream} (with you as the messenger), {@spell Scrying|farover}, or {@spell Malakai's Teleportation Circle|farover}.",
+				"This use of malakai’s teleportation circle is special. Rather than teleporting to a permanent teleportation circle, it instead teleports you and up to 8 willing creatures of your choosing in your vicinity to the last location where you finished a long rest on your current plane of existence. If you haven’t taken a long rest on your current plane, the spell fails but isn’t wasted.",
+				"Once you use this feature, you can’t use it again until you finish a long rest."
+			]
+		},
+		{
+			"name": "Nature's Sanctuary",
+			"source": "Farover",
+			"className": "Druid (reworked)",
+			"classSource": "Farover",
+			"subclassSource": "Farover",
+			"subclassShortName": "Land",
+			"level": 14,
+			"entries": [
+				"When you reach 14th level, creatures of the natural world sense your connection to nature and become hesitant to attack you. When a beast, elemental, fey, or plant creature attacks you, that creature must make a Wisdom saving throw against your druid spell save DC. On a failed save, the creature must choose a different target, or the attack automatically misses. On a successful save, the creature is immune to this effect for 24 hours."
 			]
 		},
 		{
