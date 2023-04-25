@@ -627,6 +627,34 @@
 									"{@spell Commune with Nature}, {@spell Cone of Cold}"
 								]
 							]
+						},
+						{
+							"source": "Farover",
+							"type": "table",
+							"caption": "Coast",
+							"name": "Coast",
+							"colLabels": [
+								"Druid Level",
+								"Circle Spells"
+							],
+							"rows": [
+								[
+									"3rd",
+									"{@spell Mirror Image|farover}, {@spell Misty Step}"
+								],
+								[
+									"5th",
+									"{@spell Gaseous Form}, {@Thunder Step|xge}"
+								],
+														[
+									"7th",
+									"{@spell Greater Invisibility|farover}, {@spell Storm Sphere|xge}"
+								],
+														[
+									"9th",
+									"{@spell Mislead}, {@spell Rusting Grasp|farover}"
+								]
+							]
 						}
 					]
 				}
