@@ -125,6 +125,18 @@
 			]
 		},
 		{
+			"name": "Affinity of the Land",
+			"source": "Farover",
+			"className": "Druid (reworked)",
+			"classSource": "Farover",
+			"shortName": "Land",
+			"subclassFeatures": [
+				"Affinity of the Land|Druid (reworked)|Farover|Land|Farover|3",
+				"Bonus Cantrip|Druid (reworked)|Farover|Land|Farover|3",
+				"Natural Recovery|Druid (reworked)|Farover|Land|Farover|3"
+			]
+		},
+		{
 			"name": "Time Domain",
 			"source": "Farover",
 			"className": "Cleric",
@@ -530,6 +542,42 @@
 			"level": 14,
 			"entries": [
 				"Starting at 14th level, whenever you cast a spell of 1st-level or higher on a target, you can end one disease, poison, or one of the following conditions affecting the creature: {@condition blinded}, {@condition deafened}, {@condition paralyzed}, or {@condition stunned}."
+			]
+		},
+		{
+			"name": "Affinity of the Land",
+			"source": "Farover",
+			"className": "Druid (reworked)",
+			"classSource": "Farover",
+			"subclassSource": "Farover",
+			"subclassShortName": "Land",
+			"level": 3,
+			"entries": [
+				"The Affinity of the Land covers the mystics and sages among druids who safeguard ancient knowledge and rites through a vast oral tradition. These druids meet within sacred circles of trees or standing stones to whisper primal secrets in Druidic. Through these secrets, druids of the land have developed a deep connection with the magic of nature."
+			]
+		},
+		{
+			"name": "Bonus Cantrip",
+			"source": "Farover",
+			"className": "Druid (reworked)",
+			"classSource": "Farover",
+			"subclassSource": "Farover",
+			"subclassShortName": "Land",
+			"level": 3,
+			"entries": [
+				"You learn one additional druid {@link cantrip|https://5e.tools/spells.html#control%20flames_xge,flstlevel:0=1,floplevel:extend,flmtclasses:b1,flstclass:druid=1,flopclass:extend} of your choice. This cantrip doesn`t count against the number of druid cantrips you know."
+			]
+		},
+		{
+			"name": "Natural Recovery",
+			"source": "Farover",
+			"className": "Druid (reworked)",
+			"classSource": "Farover",
+			"subclassSource": "Farover",
+			"subclassShortName": "Land",
+			"level": 3,
+			"entries": [
+				"You can regain magical energy by sitting in meditation and communing with nature. During a short rest, you choose expended spell slots to recover. The spell slots can have a combined level that is equal to or less than half your druid level (rounded up), and none of the slots can be 6th level or higher. This recovery does not stack with any other rules or features that allows you to recover spell slots on short rests."
 			]
 		},
 		{
