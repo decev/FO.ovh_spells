@@ -607,7 +607,7 @@
 							"name": "Arctic",
 							"colStyles": [
 								"col-3 text-left",
-								"col-6 text-center"
+								"col-3 text-left"
 							],
 							"colLabels": [
 								"Druid Level",
@@ -639,7 +639,7 @@
 							"name": "Coast",
 							"colStyles": [
 								"col-3 text-left",
-								"col-6 text-center"
+								"col-3 text-left"
 							],
 							"colLabels": [
 								"Druid Level",
@@ -671,7 +671,7 @@
 							"name": "Desert",
 							"colStyles": [
 								"col-3 text-left",
-								"col-6 text-center"
+								"col-3 text-left"
 							],
 							"colLabels": [
 								"Druid Level",
@@ -703,7 +703,7 @@
 							"name": "Forest",
 							"colStyles": [
 								"col-3 text-left",
-								"col-6 text-center"
+								"col-3 text-left"
 							],
 							"colLabels": [
 								"Druid Level",
@@ -735,7 +735,7 @@
 							"name": "Grassland",
 							"colStyles": [
 								"col-3 text-left",
-								"col-6 text-center"
+								"col-3 text-left"
 							],
 							"colLabels": [
 								"Druid Level",
@@ -767,7 +767,7 @@
 							"name": "Mountain",
 							"colStyles": [
 								"col-3 text-left",
-								"col-6 text-center"
+								"col-3 text-left"
 							],
 							"colLabels": [
 								"Druid Level",
@@ -799,7 +799,7 @@
 							"name": "Subterranean",
 							"colStyles": [
 								"col-3 text-left",
-								"col-6 text-center"
+								"col-3 text-left"
 							],
 							"colLabels": [
 								"Druid Level",
@@ -831,7 +831,7 @@
 							"name": "Swamp",
 							"colStyles": [
 								"col-3 text-left",
-								"col-6 text-center"
+								"col-3 text-left"
 							],
 							"colLabels": [
 								"Druid Level",
