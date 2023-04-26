@@ -605,6 +605,10 @@
 							"type": "table",
 							"caption": "Arctic",
 							"name": "Arctic",
+							"colStyles": [
+								"col-3 text-left",
+								"col-6 text-center"
+							],
 							"colLabels": [
 								"Druid Level",
 								"Circle Spells"
@@ -618,11 +622,11 @@
 									"5th",
 									"{@spell Leomund's Tiny Hut|farover}, {@spell Slow|farover}"
 								],
-														[
+								[
 									"7th",
 									"{@spell Ice Block|farover}, {@spell Fire Shield}"
 								],
-														[
+								[
 									"9th",
 									"{@spell Commune with Nature}, {@spell Cone of Cold}"
 								]
@@ -633,6 +637,10 @@
 							"type": "table",
 							"caption": "Coast",
 							"name": "Coast",
+							"colStyles": [
+								"col-3 text-left",
+								"col-6 text-center"
+							],
 							"colLabels": [
 								"Druid Level",
 								"Circle Spells"
@@ -646,11 +654,11 @@
 									"5th",
 									"{@spell Gaseous Form}, {@spell Thunder Step|xge}"
 								],
-														[
+								[
 									"7th",
 									"{@spell Greater Invisibility|farover}, {@spell Storm Sphere|xge}"
 								],
-														[
+								[
 									"9th",
 									"{@spell Mislead}, {@spell Rusting Grasp|farover}"
 								]
@@ -661,6 +669,10 @@
 							"type": "table",
 							"caption": "Desert",
 							"name": "Desert",
+							"colStyles": [
+								"col-3 text-left",
+								"col-6 text-center"
+							],
 							"colLabels": [
 								"Druid Level",
 								"Circle Spells"
@@ -674,11 +686,11 @@
 									"5th",
 									"{@spell Ashardalon's Stride|ftd}, {@spell Wall of Sand|xge}"
 								],
-														[
+								[
 									"7th",
 									"{@spell Fire Shield}, {@spell Unfailing Endurance|farover}"
 								],
-														[
+								[
 									"9th",
 									"{@spell Control Winds|xge}, {@spell Dawn|xge}"
 								]
@@ -689,6 +701,10 @@
 							"type": "table",
 							"caption": "Forest",
 							"name": "Forest",
+							"colStyles": [
+								"col-3 text-left",
+								"col-6 text-center"
+							],
 							"colLabels": [
 								"Druid Level",
 								"Circle Spells"
@@ -702,11 +718,11 @@
 									"5th",
 									"{@spell Create Food and Water}, {@spell Lightning Bolt|farover}"
 								],
-														[
+								[
 									"7th",
 									"{@spell Divination}, {@spell Fabricate}"
 								],
-														[
+								[
 									"9th",
 									"{@spell Skill Empowerment|xge}, {@spell Tree Stride}"
 								]
@@ -717,6 +733,10 @@
 							"type": "table",
 							"caption": "Grassland",
 							"name": "Grassland",
+							"colStyles": [
+								"col-3 text-left",
+								"col-6 text-center"
+							],
 							"colLabels": [
 								"Druid Level",
 								"Circle Spells"
@@ -730,11 +750,11 @@
 									"5th",
 									"{@spell Accelerate Healing|farover}, {@spell Catnap|farover}"
 								],
-														[
+								[
 									"7th",
 									"{@spell Haste|farover}, {@spell Spell Immunity|farover}"
 								],
-														[
+								[
 									"9th",
 									"{@spell Dream}, {@spell Insect Plague}"
 								]
@@ -745,6 +765,10 @@
 							"type": "table",
 							"caption": "Mountain",
 							"name": "Mountain",
+							"colStyles": [
+								"col-3 text-left",
+								"col-6 text-center"
+							],
 							"colLabels": [
 								"Druid Level",
 								"Circle Spells"
@@ -758,11 +782,11 @@
 									"5th",
 									"{@spell Melf's Minute Meteors|xge}, {@spell Strength of One|farover}"
 								],
-														[
+								[
 									"7th",
 									"{@spell Dimension Door}, {@spell Unfailing Endurance|farover}"
 								],
-														[
+								[
 									"9th",
 									"{@spell Passwall}, {@spell Wall of Stone}"
 								]
@@ -773,6 +797,10 @@
 							"type": "table",
 							"caption": "Subterranean",
 							"name": "Subterranean",
+							"colStyles": [
+								"col-3 text-left",
+								"col-6 text-center"
+							],
 							"colLabels": [
 								"Druid Level",
 								"Circle Spells"
@@ -786,11 +814,11 @@
 									"5th",
 									"{@spell Creeping Shadow|farover}, {@spell Counterspell|farover}"
 								],
-														[
+								[
 									"7th",
 									"{@spell Greater Invisibility|farover}, {@spell Vitriolic Sphere|farover}"
 								],
-														[
+								[
 									"9th",
 									"{@spell Cloudkill}, {@spell Transmute Rock|xge}"
 								]
@@ -801,6 +829,10 @@
 							"type": "table",
 							"caption": "Swamp",
 							"name": "Swamp",
+							"colStyles": [
+								"col-3 text-left",
+								"col-6 text-center"
+							],
 							"colLabels": [
 								"Druid Level",
 								"Circle Spells"
@@ -814,11 +846,11 @@
 									"5th",
 									"{@spell Cloak of Flies|farover}, {@spell Stinking Cloud}"
 								],
-														[
+								[
 									"7th",
 									"{@spell Howl of Terror|farover}, {@spell Vitriolic Sphere|farover}"
 								],
-														[
+								[
 									"9th",
 									"{@spell Creation}, {@spell Maelstrom|xge}"
 								]
