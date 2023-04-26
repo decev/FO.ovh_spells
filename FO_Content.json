@@ -17661,12 +17661,6 @@
 					"entries": [
 						"If you have not yet been hit by an attack this round, you can take the Dash or Disengage action as a bonus action this turn."
 					]
-				},
-				{
-					"name": "Used by:",
-					"entries": [
-						"The {@class druid} class feature {@classFeature Wild Shape|Druid||2}."
-					]
 				}
 			],
 			"traitTags": [
@@ -17690,6 +17684,12 @@
 					"name": "Multiattack (Requires 5th+ level)",
 					"entries": [
 						"You make two Ambush or Nimble Strike attacks."
+					]
+				},
+				{
+					"name": "Used By:",
+					"entries": [
+						"{@italic The {@class Druid (reworked)|farover|Druid (reworked)} class feature {@classFeature Channel Nature|Druid (reworked)|farover|1||Wild Shape}}."
 					]
 				}
 			],
@@ -17762,12 +17762,6 @@
 					"entries": [
 						"You add your Wisdom modifier to your Strength (Athletics) checks, as well as your Strength saving throws."
 					]
-				},
-				{
-					"name": "Used by:",
-					"entries": [
-						"The {@class druid} class feature {@classFeature Wild Shape|Druid||2}."
-					]
 				}
 			],
 			"traitTags": [
@@ -17791,6 +17785,12 @@
 					"name": "Multiattack (Requires 5th+ level)",
 					"entries": [
 						"You make two Powerful or Staggering Strike attacks."
+					]
+				},
+				{
+					"name": "Used By:",
+					"entries": [
+						"{@italic The {@class Druid (reworked)|farover|Druid (reworked)} class feature {@classFeature Channel Nature|Druid (reworked)|farover|1||Wild Shape}}."
 					]
 				}
 			],
@@ -17874,12 +17874,6 @@
 					"entries": [
 						"Due to your thick hide or scales, bludgeoning, piercing, and slashing damage that you take is reduced by an amount equal to your Constitution modifier, to a minimum of 1 damage. This reduction is applied before calculating resistance."
 					]
-				},
-				{
-					"name": "Used by:",
-					"entries": [
-						"The {@class druid} class feature {@classFeature Wild Shape|Druid||2}."
-					]
 				}
 			],
 			"traitTags": [
@@ -17903,6 +17897,12 @@
 					"name": "Multiattack (Requires 5th+ level)",
 					"entries": [
 						"You make two Fending Strike attacks."
+					]
+				},
+				{
+					"name": "Used By:",
+					"entries": [
+						"{@italic The {@class Druid (reworked)|farover|Druid (reworked)} class feature {@classFeature Channel Nature|Druid (reworked)|farover|1||Wild Shape}}."
 					]
 				}
 			],
@@ -17984,12 +17984,6 @@
 					]
 				},
 				{
-					"name": "Used by:",
-					"entries": [
-						"The {@class druid} class feature {@classFeature Wild Shape|Druid||2}."
-					]
-				},
-				{
 					"name": "Surge",
 					"entries": [
 						"When you move at least 20 feet into reach of another creature, and your movement speed is over twice as high as that creatures, you can add your Wisdom modifier to all your melee attack rolls against that creature this turn."
@@ -18024,6 +18018,12 @@
 					"name": "Nimble Strike",
 					"entries": [
 						"{@italic Melee Weapon Attack}: your Dexterity modifier + your proficiency bonus to hit, reach 5 ft., one target. {@bold Hit}: {@damage 1d10} + your Dexterity modifier Bludgeoning, Piercing, or Slashing damage."
+					]
+				},
+				{
+					"name": "Used By:",
+					"entries": [
+						"{@italic The {@class Druid (reworked)|farover|Druid (reworked)} class feature {@classFeature Channel Nature|Druid (reworked)|farover|1||Wild Shape}}."
 					]
 				}
 			],
@@ -18097,12 +18097,6 @@
 					]
 				},
 				{
-					"name": "Used by:",
-					"entries": [
-						"The {@class druid} class feature {@classFeature Wild Shape|Druid||2}."
-					]
-				},
-				{
 					"name": "Taste for Blood",
 					"entries": [
 						"You have advantage on melee attack rolls against any {@condition grappled} or {@condition wounded|farover} (below 25% hit points) creature."
@@ -18131,6 +18125,12 @@
 					"name": "Powerful Strike",
 					"entries": [
 						"{@italic Melee Weapon Attack}: your Strength modifier + your proficiency bonus to hit, reach 5 ft., one target. {@bold Hit}: {@damage 1d12} + your Strength modifier Bludgeoning, Piercing, or Slashing damage."
+					]
+				},
+				{
+					"name": "Used By:",
+					"entries": [
+						"{@italic The {@class Druid (reworked)|farover|Druid (reworked)} class feature {@classFeature Channel Nature|Druid (reworked)|farover|1||Wild Shape}}."
 					]
 				}
 			],
@@ -18207,12 +18207,6 @@
 					]
 				},
 				{
-					"name": "Used by:",
-					"entries": [
-						"The {@class druid} class feature {@classFeature Wild Shape|Druid||2}."
-					]
-				},
-				{
 					"name": "Implacable",
 					"entries": [
 						"If you fail a saving throw, you can choose to lose hit points equal to your druid level and reroll the saving throw. If you do so, you must use the new roll. You can only use this feature once per round."
@@ -18241,6 +18235,12 @@
 					"name": "Challenging Snarl",
 					"entries": [
 						"You let out a taunting sound at a creature within 60 feet. It must succeed on a Wisdom saving throw, or have disadvantage on any attack rolls it makes that aren’t against you until the end of its next turn."
+					]
+				},
+				{
+					"name": "Used By:",
+					"entries": [
+						"{@italic The {@class Druid (reworked)|farover|Druid (reworked)} class feature {@classFeature Channel Nature|Druid (reworked)|farover|1||Wild Shape}}."
 					]
 				}
 			],
@@ -18317,12 +18317,6 @@
 					]
 				},
 				{
-					"name": "Used by:",
-					"entries": [
-						"The {@class druid} class feature {@classFeature Wild Shape|Druid||2}."
-					]
-				},
-				{
 					"name": "Keen Senses",
 					"entries": [
 						"You have advantage on Wisdom (Perception) checks."
@@ -18352,6 +18346,12 @@
 					"name": "Blinding Strike",
 					"entries": [
 						"{@atk mw} your Dexterity modifier + your proficiency bonus to hit, reach 5 ft., one target. {@bold Hit}: {@damage 1d8} + your Dexterity modifier Bludgeoning, Piercing, or Slashing damage. On a hit, the target must succeed on a Constitution saving throw or be {@condition blinded} until the end of its next turn. On a critical hit, the target is {@condition blinded} without a saving throw."
+					]
+				},
+				{
+					"name": "Used By:",
+					"entries": [
+						"{@italic The {@class Druid (reworked)|farover|Druid (reworked)} class feature {@classFeature Channel Nature|Druid (reworked)|farover|1||Wild Shape}}."
 					]
 				}
 			],
@@ -18429,12 +18429,6 @@
 					]
 				},
 				{
-					"name": "Used by:",
-					"entries": [
-						"The {@class druid} class feature {@classFeature Wild Shape|Druid||2}."
-					]
-				},
-				{
 					"name": "Swoop",
 					"entries": [
 						"If you are flying and you move at least 30 feet straight toward an enemy, you can then add your Wisdom modifier to the next melee attack roll you make against that enemy on the same turn."
@@ -18464,6 +18458,12 @@
 					"name": "Wing Strike",
 					"entries": [
 						"You beat your wings powerfully. Each creature within 5 feet must make a Dexterity saving throw, taking {@damage 2d6} + your Strength modifier Bludgeoning damage on a failed save, or half as much on a success."
+					]
+				},
+				{
+					"name": "Used By:",
+					"entries": [
+						"{@italic The {@class Druid (reworked)|farover|Druid (reworked)} class feature {@classFeature Channel Nature|Druid (reworked)|farover|1||Wild Shape}}."
 					]
 				}
 			],
