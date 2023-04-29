@@ -606,8 +606,8 @@
 							"caption": "Arctic",
 							"name": "Arctic",
 							"colStyles": [
-								"col-3 text-left",
-								"col-3 text-left"
+								"col-2 text-left",
+								"col-12 text-left"
 							],
 							"colLabels": [
 								"Druid Level",
@@ -638,8 +638,8 @@
 							"caption": "Coast",
 							"name": "Coast",
 							"colStyles": [
-								"col-3 text-left",
-								"col-3 text-left"
+								"col-2 text-left",
+								"col-12 text-left"
 							],
 							"colLabels": [
 								"Druid Level",
@@ -670,8 +670,8 @@
 							"caption": "Desert",
 							"name": "Desert",
 							"colStyles": [
-								"col-3 text-left",
-								"col-3 text-left"
+								"col-2 text-left",
+								"col-12 text-left"
 							],
 							"colLabels": [
 								"Druid Level",
@@ -702,8 +702,8 @@
 							"caption": "Forest",
 							"name": "Forest",
 							"colStyles": [
-								"col-3 text-left",
-								"col-3 text-left"
+								"col-2 text-left",
+								"col-12 text-left"
 							],
 							"colLabels": [
 								"Druid Level",
@@ -734,8 +734,8 @@
 							"caption": "Grassland",
 							"name": "Grassland",
 							"colStyles": [
-								"col-3 text-left",
-								"col-3 text-left"
+								"col-2 text-left",
+								"col-12 text-left"
 							],
 							"colLabels": [
 								"Druid Level",
@@ -766,8 +766,8 @@
 							"caption": "Mountain",
 							"name": "Mountain",
 							"colStyles": [
-								"col-3 text-left",
-								"col-3 text-left"
+								"col-2 text-left",
+								"col-12 text-left"
 							],
 							"colLabels": [
 								"Druid Level",
@@ -798,8 +798,8 @@
 							"caption": "Subterranean",
 							"name": "Subterranean",
 							"colStyles": [
-								"col-3 text-left",
-								"col-3 text-left"
+								"col-2 text-left",
+								"col-12 text-left"
 							],
 							"colLabels": [
 								"Druid Level",
@@ -830,8 +830,8 @@
 							"caption": "Swamp",
 							"name": "Swamp",
 							"colStyles": [
-								"col-3 text-left",
-								"col-3 text-left"
+								"col-2 text-left",
+								"col-12 text-left"
 							],
 							"colLabels": [
 								"Druid Level",
