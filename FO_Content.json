@@ -14923,7 +14923,7 @@
 				[
 					"Greatclub",
 					"2 sp",
-                    "{@dice 1d10} bludgeoning",
+                    "{@dice 1d8} bludgeoning",
                     "10 lb.",
                     "Simple",
                     "{@optfeature Nonlethal|farover}, Two-Handed, {@optfeature Wallop|farover}",
@@ -15148,7 +15148,7 @@
                 [
 					"Mace",
 					"5 gp",
-                    "{@dice 1d8} bludgeoning",
+                    "{@dice 1d7} bludgeoning",
                     "4 lb.",
                     "One-Handed",
                     "{@optfeature Sunder|farover}, {@optfeature Wallop|farover}",
@@ -15166,7 +15166,7 @@
                 [
 					"Morningstar",
 					"15 gp",
-                    "{@dice 1d7} piercing",
+                    "{@dice 1d8} piercing",
                     "4 lb.",
                     "One-Handed",
                     "{@optfeature Bleed|farover}",
