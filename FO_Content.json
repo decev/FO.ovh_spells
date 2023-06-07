@@ -2876,6 +2876,19 @@
 			]
 		},
 		{
+			"name": "Counter Striker",
+			"source": "Farover",
+			"entries": [
+				"You have practiced dealing with spellcasters in the heat of battle, from which you have learned how to interrupt their process of spellcasting. You gain the following benefit:",
+				{
+					"type": "list",
+					"items": [
+						"When a creature within reach of a melee weapon you are holding casts a spell, you can use your reaction to make a melee weapon attack against that creature. This attack deals damage as normal, but it can also interrupt the spell from being cast. Make an ability check using the ability you used for the weapon attack roll. The base DC equals 10 + the spell's level. Additionally, the difference between your level and the target creature's level is applied to the DC, which can raise or lower the DC, depending on the difference. On a success, the creature's spell fails and has no effect."
+					]
+				}
+			]
+		},
+		{
 			"name": "Crafty Duelist",
 			"source": "Farover",
 			"prerequisite": [
