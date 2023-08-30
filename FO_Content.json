@@ -4516,7 +4516,7 @@
 			"name": "Rune of Power",
 			"source": "Farover",
 			"page": 0,
-			"level": 2,
+			"level": 1,
 			"school": "V",
 			"time": [
 				{
@@ -4546,7 +4546,7 @@
 				}
 			],
 			"entries": [
-				"You draw a magical rune of power on the ground under you with an area of one square, occupying enough space for one creature of size Medium or smaller. While standing inside the rune and maintaining concentration, all damaging spells you cast are automatically cast at one spell level higher."
+				"You draw a magical rune of power on the ground under you with an area of one square, occupying enough space for one creature of size Medium or smaller. When standing inside the rune and while maintaining concentration, all damaging spells you cast are automatically cast at one spell level higher."
 			],
 			"classes": {
 				"fromClassList": [
@@ -13063,9 +13063,9 @@
 				}
 			],
 			"entries": [
-				"You invoke the surrounding forces of magic and loudly call the words to this spell, bringing forth a blast of pure arcane energy. Before casting this spell, you can decide to expend up to two additional spell slots of 3rd level or higher (for a maximum of 3 spell slots) to increase the damage of the spell.",
-				"Roll {@dice 6d8} dice. Each additional spell slot you decide to expend for the spell adds an additional {@dice 2d8} to the roll, up to a maximum of {@dice 10d8}. The target of the spell must make a contested Dexterity saving throw against the amount rolled.",
-				"If the target fails the save, they take an amount of force damage equal to the difference between their failed save and what they needed to succeed. If a target is under a condition that causes them to automatically fail Dexterity saving throws, their contested save is considered a flat 5."
+				"You invoke the surrounding forces of magic and loudly call the words to this spell, unleashing forth a blast of pure arcane energy. Before casting this spell, you can decide to expend up to two additional spell slots of 3rd level or higher (for a maximum of 3 spell slots in total) to increase the damage of the spell.",
+				"Roll {@dice 6d10} dice. Each additional spell slot of 3rd level or higher you decide to expend for the spell adds an additional {@dice 1d10} to the roll, up to a maximum of {@dice 8d10} with 2 additional spell slots.",
+				"The blast hits a creature of your choice that you can see within range. The amount rolled by the dice determines how much force damage the blast deals, but it is reduced by an amount equal to the targets AC."
 			],
 			"damageInflict": [
 				"force"
@@ -14482,6 +14482,74 @@
 					{
 						"name": "Wizard",
 						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Plant Growth",
+			"source": "Farover",
+			"page": 266,
+			"level": 3,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				},
+				{
+					"number": 8,
+					"unit": "hour"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 150
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"This spell channels vitality into plants within a specific area. There are two possible uses for the spell, granting either immediate or long-term benefits.",
+				"If you cast this spell for 1 minute, choose a point within range. All normal plants in a 100-foot radius centered on that point become thick and overgrown. A creature moving through the area must spend 4 feet of movement for every 1 foot it moves.",
+				"You can exclude one or more areas of any size within the spell's area from being affected.",
+				"If you cast this spell over 8 hours, you enrich the land. All plants in a half-mile radius centered on a point within range become enriched for 1 year. The plants yield twice the normal amount of food when harvested."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Paladin",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Oath of the Ancients",
+							"shortName": "Ancients",
+							"source": "PHB"
+						}
 					}
 				]
 			}
