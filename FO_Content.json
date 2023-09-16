@@ -4231,7 +4231,7 @@
 			],
 			"entries": [
 				"This spell causes a glowing hand to materialize within range, and move and act as the caster desires. When casting the spell, the caster can have an item as an optional material component for the spell, which causes it to teleport into the conjured hand when the spell is cast. You can dismiss the hand as an action. If the hand is ever more than 60 feet away from you, it vanishes.",
-				"While the spell remains active, the wizard can use a bonus action on their turn to cause the hand to either move up to 30 feet, execute an action similar to the Mage Hand spell, or attack either unarmed or with an equipped weapon. The hand uses the wizards proficiencies and stats for attacks, and it can only hold weapons that can be held in one hand.",
+				"While the spell remains active, the caster can use a bonus action on their turn to cause the hand to either move up to 30 feet, execute an action similar to the {@spell Mage Hand} cantrip, attack either unarmed or with an equipped weapon, or throw an object it is capable of carrying up to 30 feet. The hand uses the casters proficiencies and stats for attacks, and it can only hold weapons and objects that weigh up to 10 pounds and can be held in one hand.",
 				"In addition, any spell with a range of touch of 3rd level or lower that is subsequently cast by the wizard can be delivered by the spectral hand as long as the hand is within 5 feet of the target and is not holding anything."
 			],
 			"entriesHigherLevel": [
@@ -15758,10 +15758,6 @@
 				],
 				[
 					"1",
-					"{@spell protection from evil and good}"
-				],
-				[
-					"1",
 					"{@spell shield of fate}"
 				],
 				[
@@ -15799,6 +15795,10 @@
 				[
 					"2",
 					"{@spell hail of thorns}"
+				],
+				[
+					"2",
+					"{@spell protection from evil and good}"
 				],
 				[
 					"2",
