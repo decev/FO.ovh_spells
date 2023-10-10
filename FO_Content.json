@@ -2124,7 +2124,8 @@
 			"level": 10,
 			"entries": [
                 "Beginning at 10th level, you can curse your foes to suffer the destruction you rain upon their allies.",
-				"As a bonus action, you can force a creature you can see within 120 feet to make a Wisdom saving throw. On a failed save, it is cursed with mayhem, causing the next dread spell you cast on the same turn that targets only one creature to be cast at the cursed creature as well."
+				"As a bonus action, you can force a creature you can see within 120 feet to make a Wisdom saving throw. On a failed save, it is cursed with mayhem, causing the next dread spell you cast on the same turn that targets only one creature to be cast at the cursed creature as well.",
+				"You can use this feature an amount of times equal to your Intelligence modifier. You regain all uses of it when you complete a short or long rest."
 			]
 		},
         {
