@@ -3902,36 +3902,15 @@
 				}
 			],
 			"entries": [
-				"You conjure an array of missiles made of necrotic energy around you, and lock on to a single target within range for a barrage. The missiles are then unleashed at the target one by one, continuing to shoot for as long as they hit.",
-				"The target must make a Wisdom saving throw for each individual missile except the first one, which automatically hits. After the first missile, the target ends the spell on the first successful save made against any of the subsequent missiles.",
-				"The first missile deals {@damage 3d8} necrotic damage, the second one deals {@damage 3d6} necrotic damage, and so on with each missile reducing in die size by one until the last missile which deals {@damage 3d2} necrotic damage."
+				"When you cast this spell, you begin launching consecutive dark missiles of necrotic energy at a target within range. The magic of the spell keeps shooting missiles for as long as they keep hitting the target.",
+				"The missiles deal {@dice 3d4} necrotic damage. The first missile you launch hits the target automatically. For the second missile, make a ranged spell attack. For the third missile and all subsequent ones after that, make a ranged spell attack at disadvantage. You can keep making spell attacks until you miss, after which the spell ends."
 			],
 			"entriesHigherLevel": [
 				{
 					"name": "At Higher Levels",
 					"entries": [
-						"When you cast this spell as a Warlock with access to higher level spells than 2nd level, one additional missile of a higher die size is conjured for 3rd and 4th spell levels. At 3rd level, a {@dice 3d10} is conjured. At 4th level, a {@dice 3d12} is conjured. At 5th level and above, one additional missile after the first one is an automatic hit for each spell level above 4th."
+						"When you cast this spell as a Warlock with access to higher level spells than 2nd level, the damage of the missiles is increased by 1d4 for each spell level above 2nd."
 					]
-				}
-			],
-			"scalingLevelDice": [
-				{
-					"label": "necrotic damage",
-					"scaling": {
-						"1": "1d8",
-						"5": "2d8",
-						"11": "3d8",
-						"17": "4d8"
-					}
-				},
-				{
-					"label": "necrotic damage to wounded creature",
-					"scaling": {
-						"1": "1d12",
-						"5": "2d12",
-						"11": "3d12",
-						"17": "4d12"
-					}
 				}
 			],
 			"damageInflict": [
@@ -6951,7 +6930,8 @@
 			],
 			"entries": [
 				"A horrifying visage of dark energy is unleashed from your hand at a creature in range. The creature must make a Wisdom saving throw.",
-				"On a failed save, the creature takes {@damage 2d8} necrotic damage, and is forced to immediately use its reaction, if available, to flee as far as its speed allows in a direction indicated by the first of the {@dice d8}'s rolled (1 is up, and subsequent numbers go clockwise.) The creature doesn't move into obviously dangerous ground, such as a fire or a pit.",
+				"On a failed save, the creature takes {@damage 1d8+1d6} necrotic damage, and is forced to immediately use its reaction, if available, to flee as far as its speed allows in a direction indicated by the {@dice d8} (1 is up, and subsequent numbers go clockwise.) The creature can not move into obviously dangerous ground, such as a fire or a pit.",
+				"If a creature fails the save by 10 or more, you can decide the direction it moves in.",
 				"On a successful save, the target takes half as much damage and doesn't have to move."
 			],
 			"entriesHigherLevel": [
@@ -6959,7 +6939,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@dice 1d8} for each slot level above 1st."
+						"When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@dice 1d6} for each slot level above 1st."
 					]
 				}
 			],
@@ -12436,14 +12416,14 @@
 				}
 			],
 			"entries": [
-				"You attempt to place a powerful curse on a creature that you can see within range. The target must make a Wisdom saving throw. On a failed save, the creature is cursed with impending doom. Once the target creature has had two turns after being cursed, at the end of the second turn the creature takes {@damage 6d10} necrotic damage, and the curse ends.",
+				"You attempt to place a powerful curse on a creature that you can see within range. The target must make a Wisdom saving throw. On a failed save, the creature is cursed with impending doom. Once the target creature has had two turns after being cursed, at the end of the second turn the creature takes {@damage 6d12} necrotic damage, and the curse ends.",
 				"A {@spell Remove Curse|farover} cast on the target harmlessly ends this spell."
 			],
 			"entriesHigherLevel": [
 				{
 					"name": "At Higher Levels",
 					"entries": [
-						"When you cast this spell as a Warlock with access to higher level spells than 3rd level, the damage of the spell is increased by {@dice 1d10} for each spell level above 3rd."
+						"When you cast this spell as a Warlock with access to higher level spells than 3rd level, the damage of the spell is increased by {@dice 1d12} for each spell level above 3rd."
 					]
 				}
 			],
@@ -14634,6 +14614,61 @@
 							"shortName": "Devotion",
 							"source": "PHB"
 						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Negative Energy Flood",
+			"source": "Farover",
+			"level": 5,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"m": "a broken bone and a square of black silk"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You send ribbons of negative energy at one creature you can see within range. Unless the target is undead, it must make a Constitution saving throw, taking {@damage 5d8} necrotic damage on a failed save, or half as much damage on a successful one. ",
+				"A target killed by this damage rises up as a {@creature husk zombie|egw} at the start of your next turn. The zombie takes its turn immediately after yours, and it obeys your verbal commands. Any humanoids the zombie slays with its {@italic Curse of the Husk} feature revive at the start of your next turn and obey your commands too. All zombies under your control with this spell remain in your control until the end of your next short or long rest, after which they crumble and die. Statistics for the {@creature husk zombie|egw} are in the EGW book.",
+				"Alternatively, if you target an undead with this spell, the target doesn't make a saving throw. Instead, roll {@dice 5d12}. The target gains half the total as temporary hit points."
+			],
+			"damageInflict": [
+				"necrotic"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"SGT",
+				"SMN",
+				"THP"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Warlock (reworked)",
+						"source": "Farover"
 					}
 				]
 			}
@@ -20799,7 +20834,7 @@
 					"type": "entries",
 					"name": "Spells Known of 1st Level and Higher",
 					"entries": [
-						"At 1st level, you know three 1st spells of your choice from the warlock {@filter spell list|spells|class=warlock;warlock (FO)}, and you learn an additional warlock spell of your choice at each level after that.",
+						"At 1st level, you know three 1st level spells of your choice from the warlock {@filter spell list|spells|class=warlock;warlock (FO)}, and you learn an additional warlock spell of your choice at each level after that.",
 						"The Spells Known column of the warlock table shows when you learn more warlock spells of your choice of 1st level and higher. A spell you choose to learn must be of a level no higher than what's shown in the table's Slot Level column for your level.",
 						"In addition, at 2nd level you learn one additional special warlock spell called a {@filter dread spell|spells|subschool=Dread}. You learn one new dread spell every even level you gain in the warlock class, as shown in the Dread Spells Known column of the warlock table.",
                         {
@@ -20867,19 +20902,17 @@
 			"classSource": "Farover",
 			"level": 2,
             "entries": [
-				"At 2nd level, your intricate knowledge of life, death and souls has granted you the ability to harvest fragments of souls from the enemies that you slay. Soul shards are physical objects that you carry, resembling small, whitish pink crystals.",
-                "Once per day, when a creature you can see and have damaged within one round of combat dies, you can use your reaction to harvest a fragment of the soul from the creature, creating a soul shard. You can also do this later with an action within 5 feet and 1 hour of the creature dying, before it's soul parts ways with it's body. Creatures that are either undead, constructs, or have a CR of 0 do not give soul shards.",
-				"In addition to this, you also gain one soul shard every short rest, and all soul shards up to your total maximum on a long rest.",
-				"You can store a maximum amount of soul shards as indicated on the warlock table.",
+				"At 2nd level, your intricate knowledge of life, death and souls has granted you the ability to harvest fragments of souls from the enemies that you slay. Soul shards are physical objects that you carry, resembling small, white crystals.",
+                "Once per short rest, when a creature you can see and have damaged within one round of combat dies, you can use your reaction to harvest a fragment of the soul from the creature, creating a soul shard. You can also do this later with an action within 5 feet and 1 hour of the creature dying, before it's soul parts ways with it's body. Creatures that are either constructs, undead, or have a CR of 0 can not give you soul shards.",
+				"In addition to this, you also gain one soul shard every short rest, and all soul shards up to your total maximum on a long rest. You can store a maximum amount of soul shards as indicated on the warlock table.",
 				"You can use one soul shard for one of the following two effects:",
 				{
 					"type": "list",
 					"items": [
-						"You can use a soul shard to cast certain powerful warlock spells called {@filter dread spells|spells|subschool=Dread}. Dread spells are spells that can be cast only with soul shards.",
+						"You can use a soul shard to cast certain powerful warlock spells called {@filter dread spells|spells|subschool=Dread}. Dread spells are spells that can be cast only with soul shards. When you cast a dread spell with a soul shard, you suffer {@dice 1d4} unmitigatable force damage per level of the spell cast.",
 						"You can use a soul shard to summon a fiend to serve you with your {@classFeature demonic summoning|Warlock (reworked)|farover|5} feature."
 					]
-				},
-				"When you use a soul shard, you suffer {@dice 1d4} {@bold unmitigatable force damage} per level of the spell cast."
+				}
             ]
 		},
         {
@@ -20927,7 +20960,7 @@
                 "You can release your summon at any time back to the plane of shadow as an action. You can also dismiss your summon into a pocket dimension as an action, where it will await your summon. Retrieving your summon from the pocket dimension requires a 10 minute ritual.",
                 "Your summon recovers all of its hit points when you complete a short rest. If you fall unconscious, your summon is sent to the pocket dimension. If you die, your summon is released. You can only have one summon active at a time.",
                 "Your summoned fiends use {@filter different stat blocks|bestiary|search=summoned}, unlike their normal counterparts.",
-                "At 5th level, you can summon an {@creature Summoned imp|farover|imp}. Summoning an Imp is considered a 1st level spell for the purpose of Soul Shard damage. At 11th and at 18th level, you gain a new summon."
+                "At 5th level, you can summon an {@creature Summoned imp|farover|imp}. At 11th and at 18th level, you gain a new summon."
             ]
 		},
         {
@@ -21013,7 +21046,7 @@
 			"classSource": "Farover",
 			"level": 11,
             "entries": [
-				"At 11th level, you can now summon a {@creature Summoned hell hound|farover|hell hound} with your Demonic Summoning. Summoning a Hell Hound is considered a 3rd level spell for the purpose of Soul Shard damage."
+				"At 11th level, you can now summon a {@creature Summoned hell hound|farover|hell hound} with your Demonic Summoning."
             ]
 		},
         {
@@ -21088,7 +21121,7 @@
 			"classSource": "Farover",
 			"level": 18,
             "entries": [
-				"At 18th level, you can now summon a {@creature Summoned Armanite|farover|armanite} with your Demonic Summoning. Summoning an Armanite is considered a 5th level spell for the purpose of Soul Shard damage."
+				"At 18th level, you can now summon a {@creature Summoned Armanite|farover|armanite} with your Demonic Summoning."
             ]
 		},
         {
@@ -21109,7 +21142,7 @@
 			"classSource": "Farover",
 			"level": 20,
             "entries": [
-				"At 20th level, you can now harvest an unlimited amount of soul shards each day."
+				"At 20th level, you can now harvest an unrestricted amount of soul shards."
             ]
 		},
 		{
