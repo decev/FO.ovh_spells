@@ -337,7 +337,7 @@
 				"Expanded Spell List|Warlock (reworked)|Farover|Destruction|Farover|2",
 				"Soul Control|Warlock (reworked)|Farover|Destruction|Farover|2",
 				"Exploding Destruction|Warlock (reworked)|Farover|Destruction|Farover|6",
-                "Harvesting Capability|Warlock (reworked)|Farover|Destruction|Farover|10",
+                "Curse of Mayhem|Warlock (reworked)|Farover|Destruction|Farover|10",
 				"Ruinous Blasts|Warlock (reworked)|Farover|Destruction|Farover|14"
 			]
 		},
@@ -1943,7 +1943,7 @@
 			"subclassShortName": "Demonology",
 			"level": 2,
 			"entries": [
-				"Beginning when you choose this cult at 2nd level, you learn how to summon a meager fiend called a {@creature summoned gloombat|farover|Gloombat} into your service. The summoning of the gloombat works as a part of your warlock {@classFeature Demonic Summoning|Warlock (reworked)|farover|5} feature, and the gloombat is considered a 0th level spell for the purpose of soul shard damage. The gloombat is a small, nearly mindless fiend which can not communicate in any way, but will follow your orders as best it can. The gloombat can't attack in any way, but it can take other actions as normal. You do not suffer any excess damage when your gloombat dies."
+				"Beginning when you choose this cult at 2nd level, you learn how to summon a meager fiend called a {@creature summoned gloombat|farover|Gloombat} into your service. The summoning of the gloombat works as a part of your warlock {@classFeature Demonic Summoning|Warlock (reworked)|farover|5} feature. The gloombat is a small, nearly mindless fiend which can not communicate in any way, but will follow your orders as best it can. The gloombat can't attack in any way, but it can take other actions as normal. You do not suffer any excess damage when your gloombat dies."
 			]
 		},
         {
@@ -1989,7 +1989,7 @@
 			"subclassShortName": "Demonology",
 			"level": 6,
 			"entries": [
-				"Starting at 6th level, you can summon a {@creature summoned quasit|farover|Quasit} with your Demonic Summoning feature. Summoning a Quasit is considered a 1st level spell for the purpose of Soul Shard damage."
+				"Starting at 6th level, you can summon a {@creature summoned quasit|farover|Quasit} with your Demonic Summoning feature."
 			]
 		},
         {
@@ -2015,16 +2015,16 @@
 			"subclassShortName": "Demonology",
 			"level": 14,
 			"entries": [
-				"Starting at 14th level, you can attempt to subjugate any fiend, devil or demon you encounter into your service with the {@classFeature Demonic Summoning|Warlock (reworked)|farover|5} ability, replacing any current summon you may have. Attempting to subjugate a demon with this feature costs a soul shard, and is considered a 5th level spell for the purpose of soul shard damage.",
-                "While the target fiend is within 60 feet of you, as an action, you can force it to make a Wisdom saving throw against your spell save DC. On a failed save, a link of dark, magical chains surrounds the fiends body, attempting to subjugate it. If the target succeeds on three of these saves, it is released from any chains and is immune to this ability for 24 hours. If the target fails three of these saves, the three links of chains bind the fiend into your control.",
-                "While in your control, the subjugated fiend will make a Wisdom saving throw at disadvantage after every hour since it was subjugated. On a successful save, the fiend is released.",
+				"Starting at 14th level, you can attempt to subjugate any fiend, devil or demon you encounter into your service with the Demonic Summoning ability, replacing any current summon you may have. Attempting to subjugate a fiend with this feature consumes a soul shard.",
+                "While the target fiend is within 60 feet of you, as an action, you can force it to make a Wisdom saving throw against your spell save DC. On a failed save, links of dark, magical chains begin surrounding the fiends body, attempting to subjugate it. After the initial failed saving throw, the fiend continues to make Wisdom saving throws at the beginning of each of its turns, as long as you spend an action each turn continuing to try and subjugate it. If the target fiend succeeds on three of these saves, it is released from any chains and is immune to this ability for 24 hours. If it fails three of these saves, three links of the dark chains bind the fiend into your control.",
+                "While in your control, the subjugated fiend will make a Wisdom saving throw at disadvantage after every hour since it was subjugated. On a successful save, it is released.",
                 "The subjugated fiend will be under your control, similarly to the Demonic Summoning feature, but with the following changes:",
                 {
 					"type": "list",
 					"items": [
 						"You must maintain concentration (5 points) for this feature to remain active.",
 						"The subjugated fiend can not be sent to a pocket dimension.",
-                        "Releasing the subjugated fiend only releases it from your control. If a fiend has been successfully subjugated by you within the last 24 hours, it has advantage on any saving throws against new applications of this feature."
+                        "Releasing the subjugated fiend only releases it from your control. If a fiend has been successfully subjugated by you within the last 24 hours, it has advantage on any saving throws against new applications of this feature made to subjugate it."
 					]
 				}
 			]
@@ -2097,7 +2097,7 @@
 			"level": 2,
 			"entries": [
                 "Beginning when you choose this cult at 2nd level, each time you take force damage from a soul shard, the damage is reduced by twice the spell's level, to a minimum of 1 damage taken.",
-                "In addition, whenever you deal damage to a creature with a damaging cantrip, you can choose to spend a soul shard to add to the damage roll. When you add a soul shard to a damaging cantrip in this way, you don't take the soul shard damage, but instead the target of the cantrip takes twice the amount of dice rolled for the soul shard damage normally. The amount of soul shard damage is determined by the highest level of spells you currently have access to, and the type of damage is determined by the cantrip."
+                "In addition, you can harvest two soul shards from enemies you kill each day, instead of one. You still gain only one soul shard whenever you complete a short rest."
 			]
 		},
         {
@@ -2110,12 +2110,12 @@
 			"level": 6,
 			"entries": [
                 "Starting at 6th level, your dread spells and soul control cantrips explode with destructive energy when they deal damage.",
-                "Whenever you deal damage with a dread spell or soul control cantrip to a target, you can choose to have the spell explode, in which case each other creature within 10 feet of the damaged target or targets suffer damage of the spells type equal to your spellcasting modifier.",
+                "Whenever you deal damage to a creature with a dread spell, you can choose to have the spell's damage explode in a 10-foot radius around the target, causing each other creature in the area to suffer damage of the spells type equal to your spellcasting modifier. If the dread spell deals multiple types of damage, you can decide which of its types the explosion deals.",
                 "A spell which deals damage multiple times can only explode once, and this feature can only affect a creature once per turn."
 			]
 		},
         {
-			"name": "Harvesting Capability",
+			"name": "Curse of Mayhem",
 			"source": "Farover",
 			"className": "Warlock (reworked)",
 			"classSource": "Farover",
@@ -2123,7 +2123,8 @@
 			"subclassShortName": "Destruction",
 			"level": 10,
 			"entries": [
-                "Starting at 10th level, you can now harvest two soul shards from enemies you kill each day, instead of one. You still gain only one soul shard on a short rest."
+                "Beginning at 10th level, you can curse your foes to suffer the destruction you rain upon their allies.",
+				"As a bonus action, you can force a creature you can see within 120 feet to make a Wisdom saving throw. On a failed save, it is cursed with mayhem, causing the next dread spell you cast on the same turn that targets only one creature to be cast at the cursed creature as well."
 			]
 		},
         {
@@ -2136,8 +2137,7 @@
 			"level": 14,
 			"entries": [
                 "Starting at 14th level, your dread spells become so destructive that they destroy the environment around their impact.",
-                "When you successfully deal damage to a creature with any of your targeted dread spells, the first 10 feet of movement that the creature spends on it's next turn is considered difficult terrain.",
-                "In addition, your dread spells that target an area turn that area into difficult terrain until the start of your next turn."
+                "When you deal damage in an area with any of your dread spells, or your dread spells explode with your Exploding Destruction feature, the affected areas become difficult terrain until cleared. Each 5-foot-square portion of an affected area requires at least 1 minute to clear by hand."
 			]
 		},
         {
@@ -2235,9 +2235,8 @@
 			"level": 6,
 			"entries": [
                 "Starting at 6th level, your powers of self sustenance grant you the ability to replenish your life force to a higher degree than normal.",
-                "Whenever you heal yourself with a spell or feature that grants you hit points exceeding your total hit point maximum, the overhealing is converted into temporary hit points. The amount of temporary hit points gained from this feature can only give you at most an amount equal to what your warlock level is.",
-                "The temporary hit points gained from Necrotic Fortification stacks with any existing temporary hit points you have from this source, or any other source, but only up to the earlier mentioned limit.",
-                "If you have an amount of temporary hit points below your warlock level, and you gain temporary hit points from Necrotic Fortification, you can only gain an amount of them that brings you equal to your warlock level. If you have temporary hit points exceeding your warlock level, you do not gain any temporary hit points from this feature."
+                "Whenever you heal yourself with a spell or feature that grants you hit points exceeding your total hit point maximum, you can convert the overhealed amount into temporary hit points. The amount of temporary hit points gained from this feature can only give you at most an amount equal to what your current warlock level is.",
+                "Unlike normal temporary hit points, temporary hit points granted to you from Necrotic Fortitude are added together to any existing temporary hit points you might have, but only up to the earlier mentioned limit of your current warlock level."
 			]
 		},
         {
@@ -2249,8 +2248,8 @@
 			"subclassShortName": "Necromancy",
 			"level": 10,
 			"entries": [
-                "At 10th level, you learn the {@spell Danse Macabre|xge} spell if you do not already know it. If you already know the spell, you can learn another warlock spell instead, but regardless this spell does not count towards your maximum spells known.",
-                "You can use this feature to cast Danse Macabre once per long rest without expending a spell slot, and you can also cast the spell using soul shards."
+                "At 10th level, you learn the {@spell Danse Macabre|xge} and {@spell Negative Energy Flood|farover} spells if you do not already know them. If you already know either of the spells, you can learn another warlock spell instead for both, but regardless these spells do not count towards your maximum spells known.",
+                "You can use this feature to cast both of the two spells once per long rest without expending a spell slot, and you can also cast these spells using soul shards."
 			]
 		},
         {
@@ -21033,10 +21032,8 @@
 			"level": 11,
             "entries": [
 				"At 11th level, you learn how to utilize your soul shards even further.",
-                "You can now use a soul shard to cast a normal 6th level warlock spell once without expending a spell slot, and without suffering any soul shard damage.",
-                "At higher levels, you gain the ability to cast higher level spells in this way as well: one 7th-level spell at 13th level, one 8th-level spell at 15th level, and one 9th-level spell at 17th level.",
-                "You can use your soul shards to cast the spells from each of these features only once, but you can use a higher level versatile shard use to cast a lower level versatile shard spell as well.",
-                "You regain all uses of these features on a long rest."
+                "You can now learn warlock spells of 6th level whenever you learn a new spell, including when you reach this level, and these spells can be cast by using your soul shards.",
+                "At higher levels, you gain the ability to cast higher level spells in this way as well: 7th-level spells at 13th level, 8th-level spells at 15th level, and 9th-level spells at 17th level."
             ]
 		},
         {
@@ -21067,8 +21064,7 @@
 			"classSource": "Farover",
 			"level": 13,
             "entries": [
-                "At 13th level, you can now use a soul shard to cast a normal 7th level warlock spell, without suffering any soul shard damage.",
-				"You can use this feature once, and you must finish a long rest before you can do so again."
+				"At 13th level, you can now learn warlock spells of 7th level whenever you learn a new spell, including when you reach this level, and these spells can be cast by using your soul shards."
             ]
 		},
         {
@@ -21088,8 +21084,7 @@
 			"classSource": "Farover",
 			"level": 15,
             "entries": [
-                "At 15th level, you can now use a soul shard to cast a normal 8th level warlock spell, without suffering any soul shard damage.",
-				"You can use this feature once, and you must finish a long rest before you can do so again."
+				"At 15th level, you can now learn warlock spells of 8th level whenever you learn a new spell, including when you reach this level, and these spells can be cast by using your soul shards."
             ]
 		},
         {
@@ -21110,8 +21105,7 @@
 			"classSource": "Farover",
 			"level": 17,
             "entries": [
-                "At 17th level, you can now use a soul shard to cast a normal 9th level warlock spell, without suffering any soul shard damage.",
-				"You can use this feature once, and you must finish a long rest before you can do so again."
+				"At 17th level, you can now learn warlock spells of 9th level whenever you learn a new spell, including when you reach this level, and these spells can be cast by using your soul shards."
             ]
 		},
         {
