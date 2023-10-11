@@ -2477,7 +2477,7 @@
 				{
 					"type": "list",
 					"items": [
-						"When another creature hits you with either a melee weapon attack, or a ranged weapon attack with a physical arrow or bolt, you can use your reaction, expending {@bold 1} vigor point, to use your melee weapon to parry the incoming attack, adding +2 to your AC against that attack.",
+						"When another creature hits you with either a melee or ranged weapon attack, you can use your reaction, expending 1 vigor point, to use your melee weapon to parry the incoming attack. You add +2 to your AC against that attack, potentially causing it to miss.",
 						"When another creature misses you with a melee attack with a weapon, you can use your reaction, expending {@bold 1} vigor point, to attempt to disarm the creature. Make a melee weapon attack, contested by the target's {@skill Athletics} check or {@skill Acrobatics} check. If you win, the target drops the weapon it missed you with.",
                         "You can use a bonus action on your turn, expending {@bold 2} vigor points, to make a ranged attack with either a weapon that has the thrown property, or a hand crossbow. You can draw the weapon as part of making this attack, and you do not have disadvantage on this attack caused by being within 5 feet of a hostile creature."
 					]
@@ -2524,7 +2524,7 @@
 					"name": "Hemorrhage",
 					"entries": [
 						"You can make this attack only if you are wielding a weapon with the Versatile property.",
-                        "You make a well placed weapon attack with advantage at a weak spot of your target. If the attack hits, the weapons damage dice is doubled, and the target will bleed for {@dice 1d4} rounds, taking an additional {@dice 1d8} damage at the start of each of it's turns for the duration."
+                        "You make a well placed weapon attack with advantage at a weak spot of your target. If the attack hits, the weapons damage dice is doubled, and the target will begin bleeding for {@dice 1d8} necrotic damage at the beginning of each of its turns. The effect will only end if the affected creature, or another within 5 feet of it uses an action to staunch the bleeding and end the effect."
 					]
 				},
 				{
@@ -16776,8 +16776,8 @@
 				"SS"
 			],
 			"entries": [
-				"As a bonus action, you extend your hand outwards, arranging your fingers in the formation of Blast, and unleash a telekinetic shockwave. You can choose to attempt to knock creatures prone, or push them away. Each creature in a 15-foot cone must succeed on a Strength saving throw. On a failed save, they are either pushed back 10 feet, or knocked prone.",
-				"{@bold {@italic Enhanced Blast}}. When you cast the enhanced version of this sign, creatures who fail the saving throw are subjected to both of the effects of the sign, knocking them prone and pushing them back.",
+				"As a bonus action, you extend your hand outwards, arranging your fingers in the formation of Blast, and unleash a telekinetic shockwave. You can choose to attempt to knock creatures prone, or push them away. Each creature in a 15-foot cone must succeed on a Strength saving throw. On a failed save, you can choose to have them either pushed back 10 feet, or knocked prone.",
+				"{@bold {@italic Enhanced Blast}}. When you cast the enhanced version of this sign, creatures who fail the saving throw are subjected to both effects of the sign, knocking them prone and pushing them back.",
 				"{@bold {@italic Superior Blast}}. When you cast the superior version of this sign, the area of the sign becomes a radius centered on you with the same range, instead of a cone. You can also designate any number of creatures you can see to be unaffected by it. In addition, any creature hit by your blast suffers force damage equal to twice your Wisdom modifier."
 			]
 		},
@@ -16789,8 +16789,8 @@
 			],
 			"entries": [
 				"As a bonus action, you draw the sign of Hone on the hilt or guard of your weapon, and magically empower your next attack. Until the start of your next turn, you have advantage on your next weapon attack.",
-				"{@bold {@italic Enhanced Hone}}. When you cast the enhanced version of this sign, your next weapon attack until the start of your next turn will be made at advantage, and it can also hit one additional creature of your choice within your reach and within 5 feet of the primary target at disadvantage.",
-				"{@bold {@italic Superior Hone}}. When you cast the superior version of this sign, all of your weapon attacks will be made at advantage until the start of your next turn, and your next weapon attack can also hit one additional creature of your choice within your reach and within 10 feet of the primary target at disadvantage."
+				"{@bold {@italic Enhanced Hone}}. When you cast the enhanced version of this sign, your next weapon attack until the start of your next turn will be made at advantage, and it can also hit one additional creature of your choice within your reach and within 10 feet of the primary target at disadvantage.",
+				"{@bold {@italic Superior Hone}}. When you cast the superior version of this sign, all of your weapon attacks will be made at advantage until the start of your next turn, and your next weapon attack can also hit one additional creature of your choice within your reach and within 10 feet of the primary target also at advantage."
 			]
 		},
 		{
@@ -16817,7 +16817,7 @@
 					"type": "list",
 					"items": [
 						"You attempt to muddle the mind of one creature that can hear you and you can see within 60 feet. The target must make a Wisdom saving throw. On a failed save, it has disadvantage on the next attack roll it makes before the end of its next turn.",
-						"You attempt to beguile a creature that can hear you and you can see within 30 feet. The target must make a Wisdom saving throw. On a failed save, for 1 minute, you have advantage on all Charisma checks directed at the creature as long as it isn't hostile toward you."
+						"You attempt to beguile a creature that can hear you and you can see within 30 feet. The target must make a Wisdom saving throw. On a failed save, for the next 10 minutes, you have advantage on all Charisma checks directed at the creature as long as it isn't hostile toward you."
 					]
 				},
 				"{@bold {@italic Enhanced Manipulate}}. When you cast the enhanced version of this sign, both of the two uses gain additional effects:",
@@ -16825,7 +16825,7 @@
 					"type": "list",
 					"items": [
 						"When you attempt to muddle the mind of a creature, you can target one additional creature that can hear you and you can see within 60 feet.",
-						"When you successfully beguile a creature, it also has disadvantage on any Wisdom based skill checks or Wisdom saving throws it makes for the duration, as long as it isn't hostile toward you."
+						"When you successfully beguile a creature, it also has disadvantage on any Wisdom checks and saving throws it makes for the duration, as long as it isn't hostile toward you."
 					]
 				},
 				"{@bold {@italic Superior Manipulate}}. When you cast the superior version of this sign, both of the two uses gain additional effects, in addition to the effects granted by the enhanced version:",
@@ -16833,7 +16833,7 @@
 					"type": "list",
 					"items": [
 						"When you successfully muddle the mind of a creature or creatures, you can also force one creature to use it's reaction to take one attack at a target of your choice that is within its range. The disadvantage to the targets next attack roll is not applied to this attack.",
-						"When you beguile a creature, this sign becomes a concentration spell, and it lasts for 10 minutes, but the sign can not be used on a target if it is hostile toward you, or if you or creatures that are friendly to you are fighting it. When initially casting the sign on a target successfully, you can issue a verbal command to the target, which it will follow to the best of it's ability on it's next turn. You can keep issuing commands to the target for the duration of the spell with your actions, but before each command after the initial one, the target will repeat the saving throw, ending the effect on a successful one."
+						"When you beguile a creature, the sign becomes a concentration spell, and it lasts for 1 hour, but the sign can not be used on a target if it is hostile toward you, or if you or creatures that are friendly to you are fighting it. When initially casting the sign on a target successfully, you can issue a verbal command to the target, which it will follow to the best of it's ability on it's next turn. You can keep issuing commands to the target for the duration of the spell with your actions, but before each command after the initial one, the target can repeat the saving throw, ending the effect on a successful one."
 					]
 				}
 			]
@@ -16847,9 +16847,9 @@
 			"entries": [
 				"As a bonus action, you draw a magical ring on the ground with a 15-foot radius centered on you. The ring lasts until the start of your next turn.",
 				"For the duration of the sign, the area inside the ring is considered difficult terrain for your enemies, and all invisible creatures are revealed while they are inside.",
-				"In addition, enemies inside the ring when it is cast, and those that enter the ring later on for the first time must make a Wisdom saving throw. On a failed save, they cannot take reactions while in the ring. Leaving the area of the ring ends this effect, but re-entering it resumes them. On a successful save, a creature is unaffected by this effect from this casting of ring.",
-				"{@bold {@italic Enhanced Ring}}. When you cast the enhanced version of this sign, ranged attacks made from outside the ring against you are made at disadvantage.",
-				"{@bold {@italic Superior Ring}}. When you cast the superior version of this sign, the sign lasts for as long as you remain inside it. In addition, ranged attacks made from outside the ring against you or any of your allies inside are made at disadvantage."
+				"In addition, enemies inside the ring when it is cast must make a Wisdom saving throw. On a failed save, they cannot take reactions while standing inside the ring. Leaving the area of the ring ends this effect, but re-entering it resumes them.",
+				"{@bold {@italic Enhanced Ring}}. When you cast the enhanced version of this sign, ranged attacks made from outside the ring against you or any of your allies inside are made at disadvantage.",
+				"{@bold {@italic Superior Ring}}. When you cast the superior version of this sign, the ring lasts for as long as you remain inside it."
 			]
 		},
 		{
@@ -17174,7 +17174,7 @@
 				"SM"
 			],
 			"entries": [
-				"Your Strength score increases by 2, as does you Strength maximum. While this mutagen is active your toxicity is increased by {@bold 6}.",
+				"Your Strength score increases by 2, as does your Strength maximum. While this mutagen is active your toxicity is increased by {@bold 6}.",
 				"{@bold {@italic Side Effect}}. You have disadvantage on Dexterity ability checks and saving throws."
 			]
 		},
@@ -21214,7 +21214,7 @@
             "entries": [
                 "Starting at 3rd level, you learn how to craft {@filter special consumable items|optionalfeatures|feature type=sp;sm} with your {@item Alchemist's Supplies|phb} made specifically for slayers. These potent consumables are poisonous for normal humanoids, but your mutations allow your body to digest them only at the cost of some side effects. If a non-slayer consumes a product of slayer alchemy, the item's effects are not applied, but they must succeed on a DC 18 Constitution saving throw, or be poisoned until they finish a long rest.",
                 "At 3rd level, you can craft both {@filter potions|optionalfeatures|feature type=sp} and {@filter mutagens|optionalfeatures|feature type=sm}, and you know the formulae to create four potions and/or mutagens. You learn two additional formulae each time you gain a level in this class.",
-                "Crafting your consumable items with your Slayer Alchemy is done when you finish a short or long rest. Each item crafted takes 1 minute. You can create a number of items up to an amount equal to your {@bold {@italic Wisdom modifier + your proficiency bonus}}. You can craft multiples of one kind of item. Unconsumed items created by your slayer alchemy only last until you finish your next short rest, after which they lose their potency and become inert, which means unused items must be remade each short rest if they are to be used.",
+                "Crafting your consumable items with your Slayer Alchemy is done when you finish a short or long rest. Each item crafted takes 1 minute. You can create a number of items up to an amount equal to your {@bold {@italic Wisdom modifier + your proficiency bonus}}. You can craft multiples of one kind of item. Unconsumed items created by your slayer alchemy only last until you finish your next short rest, after which they lose their potency and become inert, which means unused items must be remade each short rest.",
                 "{@bold {@italic Potions.}} Slayer {@filter potions|optionalfeatures|feature type=sp} can be consumed with a bonus action, and they last for varied amounts of time.",
                 "{@bold {@italic Mutagens.}} Slayer {@filter mutagens|optionalfeatures|feature type=sm} can be consmued with an action, and they last until you finish a long rest. You gain toxicity when you consume a mutagen, and toxicity gained from a mutagen can not be lost by resting while the mutagen remains active. While one or more mutagens are affecting you, you can use an action to focus and flush them from your system, ending the effects and side effects of all mutagens. Toxicity from mutagens is not removed when doing so.",
                 {
@@ -21306,10 +21306,10 @@
 			"level": 11,
             "entries": [
                 "At 11th level, your increased knowledge and developed mutations allow you to craft and digest incredibly poisonous Slayer Alchemy items called decoctions. Decoctions are made using the remains or the essence of monsters you slay as their main ingredient with your {@classFeature slayer alchemy|Slayer|farover|3} feature.",
-                "When you slay a monster, you can spend 1 minute harvesting an ingredient from it's remains. Using your {@item Alchemist's Supplies|phb}, you can craft a decoction from this ingredient. This can be done as part of your normal {@classFeature slayer alchemy|Slayer|farover|3} short rest crafting, or separately.",
+                "When you slay a monster, you can spend 1 minute harvesting an ingredient from it's remains. Using your {@item Alchemist's Supplies|phb}, you can craft a decoction from this ingredient. This is done as part of your normal {@classFeature slayer alchemy|Slayer|farover|3} crafting during a rest.",
                 "When you craft a decoction, you decide which one attribute from the slain monster you wish to encapsulate in the decoction, which can be {@bold an ability score, natural AC, damage resistance, damage immunity, condition immunity, or sense}. The attribute can be any specific one you are aware of, or a general one such as {@italic whatever is the creatures highest ability score}. Work with your DM to determine the attribute, since your DM might not reveal unknown attributes of a creature.",
                 "You can only have one decoction at a time. To harvest the ingredient for a second decoction means you have to consume or discard the first decoction.",
-                "You can consume a decoction as an action, and it's effects last for 1 minute. For the duration, you gain the attribute of the monster from which the decoction was made. Consuming a decoction increases your toxicity by 5."
+                "You can consume a decoction as an action, and it's effects last for 10 minutes. For the duration, you gain the attribute of the monster from which the decoction was made. Consuming a decoction increases your toxicity by 5."
 			]
 		},
         {
