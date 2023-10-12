@@ -2302,8 +2302,9 @@
 			"subclassShortName": "Manticore",
 			"level": 9,
 			"entries": [
-                "Starting at 9th level, your venomous blood can fortify you even against lethal damage. When you suffer damage that would reduce you to below 1 hit point, the toxicity in your veins can rush through and cauterize the wound.",
-				"If you choose to, your current toxicity level at the time can negate damage that would bring you below 1 hit point, so that every 1 toxicity prevents 1 damage, up to a maximum amount equal to your current toxicity level. Each point of toxicity that prevents damage when this happens is then lost. If you have any active mutagens when this occurs, and the toxicity you lose would bring you below what is currently being caused by a mutagen, then the effects of that mutagen ends.",
+                "Starting at 9th level, your venomous blood can fortify you even against lethal damage. When you suffer damage that would reduce you to below 1 hit point, the toxicity in your veins can rush through and cauterize the wound, if you choose to.",
+				"If you drop to 0 hit points and you use this feature, your current toxicity level is fully depleted, you lose any currently active {@classFeature slayer alchemy|Slayer|farover|3} effects, and you drop to 1 hit point instead.",
+				"In addition, each point of excess damage that would have brought you below 1 hit point is subtracted from the amount of toxicity points you had prior to using this feature, and you gain the sum of that calculation in the form of temporary hit points.",
 				"You can use this feature twice, and you regain all expended uses when you finish a long rest."
 			]
 		},
@@ -17152,8 +17153,8 @@
 				"SM"
 			],
 			"entries": [
-				"While you are {@condition wounded|farover}, you can use an action to spend one Hit Die to heal yourself. While this mutagen is active your toxicity is increased by {@bold 4}.",
-				"{@bold {@italic Side Effect}}. While you are {@condition wounded|farover}, attack rolls against you have advantage."
+				"While you are {@condition wounded|farover}, you regain hit points equal to your Constitution modifier every 1 hour, provided that you have at least 1 hit point. While this mutagen is active your toxicity is increased by {@bold 5}.",
+				"{@bold {@italic Side Effect}}. If you are {@condition wounded|farover} and you roll initiative to enter combat, you are automatically {@book surprised|PHB|9|Surprise} on your first turn of the combat."
 			]
 		},
 		{
@@ -19461,7 +19462,7 @@
 				]
 			},
 			"multiclassing": {
-                "requirementsSpecial": "When multiclassing into the slayer class, your character must endure a process of rigorous mutations which are extremely lethal. Roll {@dice 5d20} when multiclassing into the Slayer class. The result of the dice is the amount of unmitigatable poison damage you suffer.",
+                "requirementsSpecial": "When multiclassing into the slayer class, your character must endure a process of rigorous mutations which are extremely lethal. Roll {@dice 1d100} when multiclassing into the Slayer class. The result of the dice is the amount of poison damage you suffer. If you have resistance or immunity to poison damage when doing so, the multiclassing is unsuccessful.",
 				"requirements": {
                     "or": [
 						{
