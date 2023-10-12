@@ -20564,7 +20564,6 @@
 					"type": "list",
 					"items": [
 						"You have advantage on initiative rolls.",
-						"On your first turn during combat, you have advantage on attack rolls against creatures that have not yet acted.",
                         "Your group can't become lost except by magical means.",
                         "Even when you are engaged in another activity while traveling (such as navigating or tracking), you remain alert to danger.",
                         "If you are traveling alone, you can move stealthily at a normal pace.",
@@ -20606,19 +20605,19 @@
             "entries": [
                 "At 5th level, whenever you take the Attack action on your turn, you can attack twice, instead of once.",
                 "In addition, your expertise with missile weapons unlocks an advanced tier of shot options for you. Whenever you take the Attack action on your turn with a ranged weapon, you can make one special weapon attack, instead of attacking twice.",
-                "When making one of these special weapon attacks, any additional damage you might deal from spells, other features, or other sources as part of the attack can only apply to one creature hit. You have four choices of special attacks:",
+                "You know four special attacks:",
                 {
 					"type": "entries",
 					"name": "Curving Shot",
 					"entries": [
-                        "When making a curving shot, make an attack roll against a target you can see or at a square in a location you are aware of within range, regardless of cover. As long as there is a path for the projectile, and the target doesn't have full cover from all sides, your shot can travel around cover and hit your target. The range of your weapon for this shot is halved, as are any long range disadvantages that apply to your weapon. Your attack roll ignores any AC cover benefits that aren't full cover."
+                        "When making a curving shot, make an attack roll against a target you can see or at a square in a location you are aware of within range, regardless of cover. As long as there is a path for the projectile, and the target doesn't have full cover from all sides, your shot can travel around cover and hit your target. The range of your weapon for this shot is halved, as are any long range disadvantages that apply to your weapon. Your attack roll also ignores any AC cover benefits that aren't full cover."
 					]
 				},
                 {
 					"type": "entries",
 					"name": "Multi Shot",
 					"entries": [
-                        "When making a multi shot, you load your weapon with up to four ammunition for a single shot that can hit multiple enemies in front of you. Make an attack roll with your weapon as normal. The attack roll you make can hit up to four creatures of your choice inside a 40-foot cone originating from you, as long as they are not behind any cover at all, including that from other creatures. If a creature is behind any cover at all, the attack misses against that target."
+                        "When making a multi shot, you load your weapon with up to four ammunition for a single shot that can hit multiple enemies in front of you. Make an attack roll with your weapon as normal. The attack roll you make can hit up to four creatures of your choice inside a 40-foot cone originating from you, as long as they are not behind full cover, including that from other creatures. Some of your targets may have partial cover, which still applies to their AC against your attack."
 					]
 				},
                 {
@@ -20632,7 +20631,7 @@
 					"type": "entries",
 					"name": "Volley Shot",
 					"entries": [
-                        "When making a volley shot, you load your weapon with up to four ammunition for a volley strike from the sky within range. Make one weapon attack as normal. The range of your weapon for this shot is halved, as are any long range disadvantages that apply to your weapon. Your attack can then hit up to four targets within 5 feet of a point you shoot at."
+                        "When making a volley shot, you load your weapon with up to four ammunition for a volley strike from the sky within range. Make one weapon attack as normal. The range of your weapon for this shot is halved, as are any long range disadvantages that apply to your weapon. Your attack can then hit up to four targets within 10 feet of a point you shoot at."
 					]
 				}
             ]
@@ -20752,7 +20751,7 @@
 			"level": 14,
             "entries": [
                 "Starting at 14th level, you can spend 1 minute creating an effective camouflage for yourself. You must have access to fresh mud, dirt, plants, soot, and other naturally occurring materials with which to create your camouflage.",
-                "Once you are camouflaged in this way, you are practically invisible. As long as you don't take any damage and don't move more than 15 feet per round, you will remain invisible to others. Otherwise, this invisibility lasts until you finish a short rest. Any spells or effects that reveal invisible creatures will still reveal you."
+                "Once you are camouflaged in this way, you are practically invisible. As long as you don't take any damage and don't move more than half your speed per round, you will remain invisible to others. Otherwise, this invisibility lasts until you finish a short rest. Any spells or effects that reveal invisible creatures will still reveal you."
             ]
 		},
         {
