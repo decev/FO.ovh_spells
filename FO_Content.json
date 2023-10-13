@@ -3218,6 +3218,20 @@
 				},
 				"You can select this feat multiple times, and if you choose the same weapon, you are granted an extra use of this feature per short rest when giving yourself advantage on an attack roll you make with the specialized weapon."
 			]
+		},
+		{
+			"name": "Healer",
+			"source": "Farover",
+			"entries": [
+				"You are an able physician, allowing you to mend wounds quickly and get your allies back in the fight. You gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"When you use a {@item healer's kit} to stabilize a dying creature, that creature also regains 1 hit point.",
+						"As an action, you can spend two uses of a {@item healer's kit} to tend to a creature and restore hit points to it, equal to {@dice 1d6} + twice the creature's level. The creature can't regain hit points from this feat again until it finishes a long rest."
+					]
+				}
+			]
 		}
 	],
 	"race": [
