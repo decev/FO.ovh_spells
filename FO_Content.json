@@ -9562,16 +9562,111 @@
 			}
 		},
 		{
-			"name": "Healing Word",
-			"source": "Farover",
-			"page": 250,
-			"basicRules": true,
+			"name": "Snare",
+			"source": "",
 			"level": 1,
-			"school": "V",
+			"school": "A",
 			"time": [
 				{
 					"number": 1,
-					"unit": "bonus"
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "a coil of rope"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 24
+					}
+				}
+			],
+			"entries": [
+				"As you cast this spell, you use the rope to create a circle with a 5-foot radius on the ground or the floor. When you finish casting, the rope disappears and the circle becomes a magic trap.",
+				"This trap is nearly {@condition invisible}, requiring a successful Intelligence ({@skill Investigation}) check against your spell save DC to be discerned.",
+				"The trap triggers when a Small, Medium, or Large creature moves onto the ground or the floor in the spell's radius. That creature must succeed on a Dexterity saving throw or be magically hoisted into the air, leaving it hanging upside down 3 feet above the ground or the floor. The creature is {@condition restrained} there until the spell ends.",
+				"A {@condition restrained} creature can make a Dexterity saving throw at the end of each of its turns, ending the effect on itself on a success. Alternatively, the creature or someone else who can reach it can use an action to make an Intelligence ({@skill Arcana}) check against your spell save DC. On a success, the {@condition restrained} effect ends.",
+				"After the trap is triggered, the spell ends when no creature is {@condition restrained} by it."
+			],
+			"conditionInflict": [
+				"restrained"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"abilityCheck": [
+				"intelligence"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Eldritch Knight",
+							"shortName": "Eldritch Knight",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcane Trickster",
+							"shortName": "Arcane Trickster",
+							"source": "PHB"
+						}
+					}
+				]
+			},
+			"feats": [
+				{
+					"name": "Magic Initiate",
+					"source": "PHB"
+				}
+			]
+		},
+		{
+			"name": "Bless",
+			"source": "Farover",
+			"basicRules": true,
+			"level": 1,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
 				}
 			],
 			"range": {
@@ -9582,42 +9677,112 @@
 				}
 			},
 			"components": {
-				"v": true
+				"v": true,
+				"s": true,
+				"m": "a sprinkling of holy water"
 			},
 			"duration": [
 				{
-					"type": "instant"
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
 				}
 			],
 			"entries": [
-				"A creature of your choice that you can see within range regains hit points equal to {@dice 1d4} + your spellcasting ability modifier. This spell has no effect on undead or constructs."
+				"You bless up to three creatures of your choice within range. Choose either attack rolls or saving throws. Whenever a target makes either an attack roll or a saving throw before the spell ends, depending on which you chose, the target can roll a {@dice d4} and add the number rolled to the attack roll or saving throw."
 			],
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"When you cast this spell using a spell slot of 2nd level or higher, the healing increases by {@scaledice 1d4|1-9|1d4} for each slot level above 1st."
+						"When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st."
 					]
 				}
 			],
-			"affectsCreatureType": [
-				"aberration",
-				"beast",
-				"celestial",
-				"dragon",
-				"elemental",
-				"fey",
-				"fiend",
-				"giant",
-				"humanoid",
-				"monstrosity",
-				"ooze",
-				"plant"
+			"areaTags": [
+				"MT"
 			],
-			"miscTags": [
-				"HL",
-				"SGT"
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					}
+				]
+			},
+			"feats": [
+				{
+					"name": "Magic Initiate",
+					"source": "PHB"
+				}
+			]
+		},
+		{
+			"name": "Bestow Curse",
+			"source": "Farover",
+			"level": 3,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You target a creature, and that creature must succeed on a Wisdom saving throw or become cursed for the duration of the spell. When you cast this spell, choose the nature of the curse from the following options:",
+				{
+					"type": "list",
+					"items": [
+						"Choose one ability score. While cursed, the target has disadvantage on ability checks and saving throws made with that ability score.",
+						"While cursed, the target has disadvantage on attack rolls against you.",
+						"While the target is cursed, your attacks and spells deal an extra {@damage 1d8} necrotic damage to the target."
+					]
+				},
+				"A {@spell remove curse} spell ends this effect."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"If you cast this spell using a spell slot of 4th level or higher, the duration is {@status concentration}, up to 10 minutes. If you use a spell slot of 5th level or higher, the duration is 8 hours. If you use a spell slot of 7th level or higher, the duration is 24 hours. If you use a 9th level spell slot, the spell lasts until it is dispelled. Using a spell slot of 5th level or higher grants a duration that doesn't require {@status concentration}."
+					]
+				}
+			],
+			"damageInflict": [
+				"necrotic"
+			],
+			"savingThrow": [
+				"wisdom"
 			],
 			"areaTags": [
 				"ST"
@@ -9633,8 +9798,293 @@
 						"source": "PHB"
 					},
 					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Eldritch Knight",
+							"shortName": "Eldritch Knight",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcane Trickster",
+							"shortName": "Arcane Trickster",
+							"source": "PHB"
+						}
+					}
+				]
+			},
+			"optionalfeatures": [
+				{
+					"name": "Sign of Ill Omen",
+					"source": "PHB",
+					"featureType": [
+						"EI"
+					]
+				}
+			]
+		},
+		{
+			"name": "Conjure Animals",
+			"source": "Farover",
+			"level": 3,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You summon fey spirits that take the form of beasts and appear in unoccupied spaces that you can see within range. Choose one of the following options for what appears:",
+				{
+					"type": "list",
+					"items": [
+						"One {@filter beast of challenge rating 1 or lower|bestiary|challenge rating=[&0;&1]|type=beast|miscellaneous=!swarm}",
+						"Two {@filter beasts of challenge rating 1/2 or lower|bestiary|challenge rating=[&0;&1/2]|type=beast|miscellaneous=!swarm}"
+					]
+				},
+				"Each beast is also considered fey, and it disappears when it drops to 0 hit points or when the spell ends.",
+				"The summoned creatures are friendly to you and your companions. Roll initiative for the summoned creatures as a group, which has its own turns. They obey any verbal commands that you issue to them (no action required by you). If you don't issue any commands to them, they defend themselves from hostile creatures, but otherwise take no actions.",
+				"The DM has the creatures' statistics."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using certain higher-level spell slots, you choose one of the summoning options above, and more creatures appear: twice as many with a 5th-level slot, three times as many with a 7th-level slot, and four times as many with a 9th-level slot."
+					]
+				}
+			],
+			"miscTags": [
+				"SGT",
+				"SMN"
+			],
+			"classes": {
+				"fromClassList": [
+					{
 						"name": "Druid",
 						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Fear",
+			"source": "Farover",
+			"level": 3,
+			"school": "I",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "cone",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a white feather or the heart of a hen"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You project a phantasmal image of a creature's worst fears. Each creature in a 30-foot cone must succeed on a Wisdom saving throw or become {@condition frightened} for the duration.",
+				"While {@condition frightened} by this spell, a creature must take the {@action Dash} action and move away from you by the safest available route on each of its turns, unless there is nowhere to move. If the creature ends its turn in a location where it doesn't have line of sight to you, the creature can make a Wisdom saving throw. On a successful save, the spell ends for that creature."
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"areaTags": [
+				"N"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcane Trickster",
+							"shortName": "Arcane Trickster",
+							"source": "PHB"
+						}
+					}
+				]
+			},
+			"conditionInflict": [
+				"frightened"
+			]
+		},
+		{
+			"name": "Sleet Storm",
+			"source": "Farover",
+			"level": 3,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 150
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a pinch of dust and a few drops of water"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"Until the spell ends, freezing rain and sleet fall in a 20-foot-tall cylinder with a 20-foot radius centered on a point you choose within range. The area is {@quickref Vision and Light|PHB|2||heavily obscured}, and exposed flames in the area are doused.",
+				"The ground in the area is covered with slick ice, making it {@quickref difficult terrain||3}. When a creature enters the spell's area for the first time on a turn or starts its turn there, it must make a Dexterity saving throw. On a failed save, it falls {@condition prone}.",
+				"If a creature starts its turn in the spell's area and is {@status concentration||concentrating} on a spell, the creature must make a successful Constitution saving throw against your spell save DC or lose {@status concentration}."
+			],
+			"savingThrow": [
+				"dexterity",
+				"constitution"
+			],
+			"miscTags": [
+				"OBS"
+			],
+			"areaTags": [
+				"Y"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Tempest Domain",
+							"shortName": "Tempest",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Druid",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Circle of the Land",
+							"shortName": "Land",
+							"source": "PHB",
+							"subSubclass": "Arctic"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcane Trickster",
+							"shortName": "Arcane Trickster",
+							"source": "PHB"
+						}
 					}
 				]
 			}
