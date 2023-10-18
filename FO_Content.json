@@ -2320,7 +2320,7 @@
                         ],
                         [
                             "1st",
-                            "{@spell absorb elements|farover}, {@spell air wave|farover}, {@spell burning rush|farover}, {@spell charm person}, {@spell color spray}, {@spell command}, {@spell compelled duel}, {@spell earth tremor|farover}, {@spell ensnaring strike}, {@spell faerie fire}, {@spell searing smite}, {@spell snare|xge}, {@spell thunderous smite}"
+                            "{@spell absorb elements|farover}, {@spell air wave|farover}, {@spell burning rush|farover}, {@spell charm person}, {@spell color spray}, {@spell command}, {@spell compelled duel}, {@spell earth tremor|farover}, {@spell ensnaring strike}, {@spell faerie fire}, {@spell searing smite}, {@spell snare|farover}, {@spell thunderous smite}"
                         ],
                         [
                             "2nd",
@@ -9563,7 +9563,7 @@
 		},
 		{
 			"name": "Snare",
-			"source": "",
+			"source": "Farover",
 			"level": 1,
 			"school": "A",
 			"time": [
