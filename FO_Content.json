@@ -24,63 +24,6 @@
 			"SM": "Slayer Mutagen"
 		}
 	},
-	"fileType": "content-blocklist",	
-	"blocklist": [
-		{
-			"displayName": "Abi-Dalzim's Horrid Wilting",
-			"hash": "abi-dalzim's%20horrid%20wilting_xge",
-			"category": "spell",
-			"source": "XGE"
-		},
-		{
-			"displayName": "Clone",
-			"hash": "clone_phb",
-			"category": "spell",
-			"source": "PHB"
-		},
-		{
-			"displayName": "Detect Magic",
-			"hash": "detect%20magic_phb",
-			"category": "spell",
-			"source": "PHB"
-		},
-		{
-			"displayName": "Evard's Black Tentacles",
-			"hash": "evard's%20black%20tentacles_phb",
-			"category": "spell",
-			"source": "PHB"
-		},
-		{
-			"displayName": "False Life",
-			"hash": "false%20life_phb",
-			"category": "spell",
-			"source": "PHB"
-		},
-		{
-			"displayName": "Feign Death",
-			"hash": "feign%20death_phb",
-			"category": "spell",
-			"source": "PHB"
-		},
-		{
-			"displayName": "Maze",
-			"hash": "maze_phb",
-			"category": "spell",
-			"source": "PHB"
-		},
-		{
-			"displayName": "Symbol",
-			"hash": "symbol_phb",
-			"category": "spell",
-			"source": "PHB"
-		},
-		{
-			"displayName": "Tenser's Floating Disk",
-			"hash": "tenser's%20floating%20disk_phb",
-			"category": "spell",
-			"source": "PHB"
-		}
-	],
 	"subclass": [
 		{
 			"name": "Path of the Titan",
@@ -3227,8 +3170,8 @@
 				{
 					"type": "list",
 					"items": [
-						"When you use a {@item healer's kit} to stabilize a dying creature, that creature also regains 1 hit point.",
-						"As an action, you can spend two uses of a {@item healer's kit} to tend to a creature and restore hit points to it, equal to {@dice 1d6} + twice the creature's level. The creature can't regain hit points from this feat again until it finishes a long rest."
+						"When you use a {@item healer's kit|phb} to stabilize a dying creature, that creature also regains 1 hit point.",
+						"As an action, you can spend two uses of a {@item healer's kit|phb} to tend to a creature and restore hit points to it, equal to {@dice 1d6} + twice the creature's level. The creature can't regain hit points from this feat again until it finishes a long rest."
 					]
 				}
 			]
@@ -16758,7 +16701,7 @@
 				"SWP"
 			],
 			"entries": [
-				"{@bold {@italic Block}}. When another creature hits you with a melee attack, you can use your reaction to raise your light shield and add +3 to your AC against that attack.",
+				"{@bold {@italic Block}}. When another creature hits you with a melee or ranged weapon attack, you can use your reaction to raise your light shield and add +3 to your AC against that attack.",
 				"A light shield can be equipped or unequipped with a free item interaction, instead of an action."
 			]
 		},
@@ -16769,7 +16712,7 @@
 				"SWP"
 			],
 			"entries": [
-				"{@bold {@italic Block}}. When another creature hits either you or an ally of yours within 5 ft. of you with either a melee attack or a ranged weapon attack, you can use your reaction to raise your heavy shield and add +2 to either your AC or your ally's AC against that attack."
+				"{@bold {@italic Block}}. When another creature hits either you or an ally of yours within 5 ft. of you with either a melee or ranged weapon attack, you can use your reaction to raise your heavy shield and add +2 to either your AC or your ally's AC against that attack."
 			]
 		},
 		{
