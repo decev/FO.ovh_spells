@@ -1444,7 +1444,7 @@
 			"level": 3,
 			"entries": [
                 "At 3rd level, you have darkvision out to a range of 90 feet. If you already have darkvision, you increase its range by 30 feet.",
-                "You also learn additional spells at 3rd, 5th, 9th, 13th, and 15th level. Once you gain a deep stalker spell, it counts as a ranger spell for you but doesn't count against the number of rangers spells you know.",
+                "You also learn additional spells at 3rd, 5th, 9th, 13th, and 15th level. Once you gain a deep stalker spell, it counts as a ranger spell for you but doesn't count against the number of ranger spells you know.",
                 {
                     "type": "table",
                     "caption": "Deep Stalker Spells",
@@ -1803,7 +1803,7 @@
 			"subclassShortName": "Monster Slayer",
 			"level": 11,
 			"entries": [
-                "At 11th level, you gain the ability to thwart someone else's magic. When you see a creature casting a spell or teleporting within 60 feet of you, you can use your reaction to quickly attack it with a ranged weapon, attempting to magically foil it. Make either a Strength or Dexterity ability check. Depending on what your target is casting, the DC to interrupt it is 5 + the spellcasters level + the spells level. If you succeed on the skill check, the targets spell or teleport fails and is wasted.",
+                "At 11th level, you gain the ability to thwart someone else's magic. When you see a creature casting a spell or teleporting within 60 feet of you, you can use your reaction to quickly attack it with a ranged weapon, attempting to magically foil it. Make either a Strength or Dexterity ability check. Depending on what your target is casting, the DC to interrupt it is 5 + the spellcasters level + the spells level. If you succeed on the skill check, the target's spell or teleport fails and is wasted.",
 				"Once you use this feature, you can't use it again until you finish a short or long rest."
 			]
 		},
@@ -1920,7 +1920,7 @@
 			"entries": [
 				"Starting at 6th level, when your summon is within 30 feet and in line of sight, you can expend a warlock spell slot as an action to temporarily empower your summon.",
                 "When initially casting the empowerment, you can choose to teleport and switch places with your summon. Your summon also gains {@dice 1d6} temporary hit points for every level of the spell slot used for the empowerment.",
-                "While maintaining concentration for the duration of the empowerment, which lasts for up to 1 minute, your summon adds one additional die to all of it's damage rolls, and it can attack twice, instead of once, whenever it takes the Attack action on its turn."
+                "While maintaining concentration for the duration of the empowerment, which lasts for up to 1 minute, your summon adds one additional die to all of its damage rolls, and it can attack twice, instead of once, whenever it takes the Attack action on its turn."
 			]
 		},
         {
@@ -1946,7 +1946,7 @@
 			"entries": [
 				"At 10th level, you learn the spell {@spell Banishment} if you do not already know it. If you already know the spell, you can learn another warlock spell instead, but regardless this spell does not count towards your maximum spells known.",
                 "You can cast Banishment once per long rest without expending a spell slot, and you can also cast it using soul shards.",
-                "Your Banishment is also stronger against fiends. If you successfully banish a fiend with a CR of at most half your level (rounded down) with the spell, the spells duration becomes instantaneous, and the banished fiend does not return."
+                "Your Banishment is also stronger against fiends. If you successfully banish a fiend with a CR of at most half your level (rounded down) with the spell, the spell's duration becomes instantaneous, and the banished fiend does not return."
 			]
 		},
         {
@@ -2053,7 +2053,7 @@
 			"level": 6,
 			"entries": [
                 "Starting at 6th level, your dread spells and soul control cantrips explode with destructive energy when they deal damage.",
-                "Whenever you deal damage to a creature with a dread spell, you can choose to have the spell's damage explode in a 10-foot radius around the target, causing each other creature in the area to suffer damage of the spells type equal to your spellcasting modifier. If the dread spell deals multiple types of damage, you can decide which of its types the explosion deals.",
+                "Whenever you deal damage to a creature with a dread spell, you can choose to have the spell's damage explode in a 10-foot radius around the target, causing each other creature in the area to suffer damage of the spell's type equal to your spellcasting modifier. If the dread spell deals multiple types of damage, you can decide which of its types the explosion deals.",
                 "A spell which deals damage multiple times can only explode once, and this feature can only affect a creature once per turn."
 			]
 		},
@@ -2164,7 +2164,7 @@
 			"level": 2,
 			"entries": [
                 "Beginning when you choose this cult at 2nd level, you can cause the corpses of deceased creatures to partly explode, shooting out flesh, bones and organs at all targets next to the corpse. This ability does not work on constructs.",
-                "If a corpse is within line of sight and 60 feet of you, you can cause a corpse to explode either as an action or a reaction. You can use this ability as an action on your turn, or as a reaction immediately after a creature dies outside of your turn.",
+                "If a corpse is within line of sight and 60 feet from you, you can cause a corpse to explode either as an action or a reaction. You can use this ability as an action on your turn, or as a reaction immediately after a creature dies outside of your turn.",
                 "Each creature within 5 feet of the exploding corpse must make a Dexterity saving throw against your warlock spell save DC. On a failed save, the affected targets take {@dice 1d10} force damage, or half as much damage on a successful one.",
                 "The damage of this ability increases to {@dice 2d10} at 5th level, {@dice 3d10} at 11th level, and {@dice 4d10} at 17th level."
 			]
@@ -2205,7 +2205,7 @@
 			"subclassShortName": "Necromancy",
 			"level": 14,
 			"entries": [
-                "Starting at 14th level, your necromantic powers can raise those that are at deaths door.",
+                "Starting at 14th level, your necromantic powers can raise those that are at death's door.",
                 "Whenever you are reduced to below 0 hit points, each successful death saving throw you make is treated as a natural 20.",
                 "In addition, whenever a creature within 30 feet of you rolls a successful death saving throw, you can use your reaction to cause that death saving throw to be treated as a natural 20."
 			]
@@ -2219,7 +2219,7 @@
 			"subclassShortName": "Manticore",
 			"level": 3,
 			"entries": [
-                "The school of the manticore focuses on the utilization and improvement of the products of slayer alchemy, as well as their improved toxicity levels. The manticore schools members find that success in combat and hunting comes from good preparation with the right consumables for the job."
+                "The school of the manticore focuses on the utilization and improvement of the products of slayer alchemy, as well as their improved toxicity levels. The manticore school's members find that success in combat and hunting comes from good preparation with the right consumables for the job."
 			]
 		},
 		{
@@ -2363,7 +2363,7 @@
 			"entries": [
 				"Starting at 13th level, you can now cast the basic versions of your basic signs without expending any vigor points.",
 				"In addition, you can now supercharge all of your signs to deal extra damage by spending additional vigor points when casting a sign. When casting any sign, you can spend up to 5 additional vigor points to supercharge the sign. Each additional vigor point used gives the sign {@dice 1d6} extra damage. The supercharged sign deals this damage when varying circumstances are met, based on the sign:",
-				"{@bold {@italic Barrier.}} When a creatures attack is resisted by the barrier for the first time for that enemy, they must make a Constitution saving throw, suffering the supercharge damage on a failed save, and half as much on a success. The damage is thunder damage.",
+				"{@bold {@italic Barrier.}} When a creature's attack is resisted by the barrier for the first time for that enemy, they must make a Constitution saving throw, suffering the supercharge damage on a failed save, and half as much on a success. The damage is thunder damage.",
 				"{@bold {@italic Blast.}} When a creature makes a saving throw against your blast, they suffer the additional supercharge damage on a failed save, and half as much on a success. The damage is force damage.",
 				"{@bold {@italic Hone.}} If a weapon attack affected by your Hone hits a target, they suffer the additional supercharge damage, which is determined by the weapons damage type.",
 				"{@bold {@italic Ignite.}} The supercharge damage of ignite, which is fire, is added to the damage roll for the sign.",
@@ -2476,7 +2476,7 @@
 					"name": "Rend",
 					"entries": [
 						"You can make this attack only if you are wielding a weapon with the Heavy property.",
-                        "You make a powerful attack with advantage, bringing your weapon down from great height. If the attack hits, the weapons damage dice is doubled, and the target takes additional weapon damage equal to twice the amount by how much the attack roll passed the targets armor class."
+                        "You make a powerful attack with advantage, bringing your weapon down from great height. If the attack hits, the weapon's damage dice is doubled, and the target takes additional weapon damage equal to twice the amount by how much the attack roll passed the target's AC."
 					]
 				}
 			]
@@ -6953,7 +6953,7 @@
 			"entries": [
 				"You ignite the soul of a creature within range, and the combustion wreathes the target in flames. The target must make a Dexterity saving throw. On a failed save, it takes {@damage 2d6} fire damage, or half as much on a successful one. On a failed save, the target also burns for the spell's duration.",
 				"At the end of each of its turns, the burning target must repeat the Dexterity saving throw. It takes {@damage 1d4} fire damage on a failed save, and the effect ends on a successful one.",
-				"Any other creature that moves within 5 feet of a burning target or starts it's turn there must also make a Dexterity saving throw. On a failed save, the creature also catches fire and is subjected to the spells burn effect."
+				"Any other creature that moves within 5 feet of a burning target or starts its turn there must also make a Dexterity saving throw. On a failed save, the creature also catches fire and is subjected to the spell's burn effect."
 			],
 			"entriesHigherLevel": [
 				{
@@ -7112,7 +7112,7 @@
 				}
 			],
 			"entries": [
-				"You attempt to afflict a disease upon a creature that you can see within range which slowly eats away at it's body, and transfers some of that creatures life to you. The target must make a Constitution saving throw. On a successful save, the target is unaffected and the spell ends.",
+				"You attempt to afflict a disease upon a creature that you can see within range which slowly eats away at its body, and transfers some of that creature's life to you. The target must make a Constitution saving throw. On a successful save, the target is unaffected and the spell ends.",
 				"On a failed save, a plague begins to rapidly eat away at the flesh of the target. Once per turn, the plague deals {@damage 1d4} necrotic damage to the target when you hit it with an attack. If the die deals damage below the maximum amount, you also heal yourself for an amount equal to the missing amount on the die.",
 				"If the target drops to 0 hit points before this spell ends, you can use a bonus action on a following turn of yours to attempt to afflict the disease on to a new creature."
 			],
@@ -7175,7 +7175,7 @@
 			],
 			"entries": [
 				"As you hold your hands with thumbs touching and fingers spread, a shroud of darkness covers the area affected by the spell, as wailing voices and faces with expressions of terror accompany the dark magic. Each creature in a 15-foot cone must make a Wisdom saving throw.",
-				"On a failed save, a creature takes {@damage 1d8} psychic damage and becomes {@condition frightened} of you. The creature can repeat the saving throw at the end of each of it's turns, ending the effect on a success.",
+				"On a failed save, a creature takes {@damage 1d8} psychic damage and becomes {@condition frightened} of you. The creature can repeat the saving throw at the end of each of its turns, ending the effect on a success.",
 				"On a successful save, the creature takes half as much damage and is not {@condition frightened}."
 			],
 			"entriesHigherLevel": [
@@ -7415,7 +7415,7 @@
 				}
 			],
 			"entries": [
-				"You place a curse on a creature that you can see within range. At the beginning of each of the creatures turns, it must make a Constitution saving throw. On a failed save, the creature suffers {@damage 1d12} necrotic damage and one level of {@condition exhaustion}. On a successful save, the curse ends, and all levels of {@condition exhaustion} caused by this spell are removed.",
+				"You place a curse on a creature that you can see within range. At the beginning of each of the creature's turns, it must make a Constitution saving throw. On a failed save, the creature suffers {@damage 1d12} necrotic damage and one level of {@condition exhaustion}. On a successful save, the curse ends, and all levels of {@condition exhaustion} caused by this spell are removed.",
 				"A Remove Curse cast on the target ends this spell."
 			],
 			"damageInflict": [
@@ -7468,8 +7468,8 @@
 			],
 			"entries": [
 				"You let loose a terrifying howl which affects every creature within 20 feet that can hear you. Each creature must make a Wisdom saving throw. A target automatically succeeds on this saving throw if it can't be {@condition frightened}.",
-				"On a successful save, the creature shrugs off the effect, but it's speed is reduced by 10 feet until the end of it's next turn.",
-				"On a failed save, the creature becomes {@condition frightened} of you, and must immediately use its reaction, if available, to move as far as its speed allows away from you. The creature doesn't move into obviously dangerous ground, such as a fire or a pit. A {@condition frightened} creature can repeat the saving throw at the end of it's turns, ending the effect on a success. If a creature fails the saving throw by 10 or more, it also drops {@condition prone} after using it's reaction to move away from you."
+				"On a successful save, the creature shrugs off the effect, but its speed is reduced by 10 feet until the end of its next turn.",
+				"On a failed save, the creature becomes {@condition frightened} of you, and must immediately use its reaction, if available, to move as far as its speed allows away from you. The creature doesn't move into obviously dangerous ground, such as a fire or a pit. A {@condition frightened} creature can repeat the saving throw at the end of its turns, ending the effect on a success. If a creature fails the saving throw by 10 or more, it also drops {@condition prone} after using its reaction to move away from you."
 			],
 			"conditionInflict": [
 				"frightened",
@@ -7567,7 +7567,7 @@
 				}
 			],
 			"entries": [
-				"You conjure a large array of ammunition or thrown weapons as duplicates of the original and fire them high into the sky. The ammunition or thrown weapons then pelt a 20-foot radius, 40-foot-high cylinder within range. Each creature in the area must make a Dexterity savin throw, taking {@damage 1d6} damage on a failed save, and half as much on a successful one. The damage type is the same as that of the ammunition or weapon.",
+				"You conjure a large array of ammunition or thrown weapons as duplicates of the original and fire them high into the sky. The ammunition or thrown weapons then pelt a 20-foot radius, 40-foot-high cylinder within range. Each creature in the area must make a Dexterity saving throw, taking {@damage 1d6} damage on a failed save, and half as much on a successful one. The damage type is the same as that of the ammunition or weapon.",
 				"The pelted area on the ground also becomes difficult terrain until the beginning of your next turn, as the thrown weapons or ammunition linger for a moment before disappearing, stuck in the ground."
 			],
 			"entriesHigherLevel": [
@@ -13015,7 +13015,7 @@
 				}
 			],
 			"entries": [
-				"You harness the power of the soul shard used for the casting of this spell, and transform it into a dark, ethereal weapon which you propel at a target within range. The target must make a Wisdom saving throw as the ethereal weapon rips into the creatures body, ravaging it's mind.",
+				"You harness the power of the soul shard used for the casting of this spell, and transform it into a dark, ethereal weapon which you propel at a target within range. The target must make a Wisdom saving throw as the ethereal weapon rips into the creature's body, ravaging its mind.",
 				"On a failed save, the target takes {@damage 8d8} psychic damage, and the ethereal weapon can cascade onward to a new target of your choice within 30 feet of the original target. On a successful save, the target takes half as much damage, and the weapon does not fly on to attack a new target. If the creature dies from the damage, the weapon can attack a new target regardless of the result of the saving throw.",
 				"Each time the weapon flies to attack a new target after the original, the effect of the attack is the same, but the amount of dice rolled for the psychic damage is halved each time (rounded down). The weapon created by the spell can attack the same creature multiple times, and it can keep making attacks as long as it has dice remaining to deal damage with."
 			],
@@ -13087,7 +13087,7 @@
 			],
 			"entries": [
 				"You attempt to place a powerful curse on a creature that you can see within range. The target must make a Wisdom saving throw. On a successful save, the spell ends. On a failed save, the target is cursed with excruciating pain, taking {@damage 1d8} necrotic damage, which increases over time. As long as you maintain concentration on the spell, the target creature automatically suffers damage at the end of each of its turns. The damage of the curse increases by {@dice 1d8} every time the target suffers damage after the first time.",
-				"The curse can last for a maximum of 5 rounds, and deal damage 5 times, after which it ends. If the target of the curse dies before the 5 rounds have passed, you can use your action on your turn to attempt to continue the curse on a different target. The new target must make the same saving throw, and on a failed save, the curse and it's progression is moved to the new target, dealing it's damage and maintaining it's damage progression on the new target.",
+				"The curse can last for a maximum of 5 rounds, and deal damage 5 times, after which it ends. If the target of the curse dies before the 5 rounds have passed, you can use your action on your turn to attempt to continue the curse on a different target. The new target must make the same saving throw, and on a failed save, the curse and its progression is moved to the new target, dealing its damage and maintaining its damage progression on the new target.",
 				"A {@spell Remove Curse|farover} cast on the target ends this spell."
 			],
 			"entriesHigherLevel": [
@@ -13156,7 +13156,7 @@
 				]
 			},
 			"entries": [
-				"By magically reaching out for the mind of a creature in range, you attempt to drain the creatures spellcasting capabilities and augment your own through a tether of dark magic. The target must make an Intelligence saving throw. On a successful save the spell ends. On a failed save, it takes {@damage 1d6} psychic damage.",
+				"By magically reaching out for the mind of a creature in range, you attempt to drain the creature's spellcasting capabilities and augment your own through a tether of dark magic. The target must make an Intelligence saving throw. On a successful save the spell ends. On a failed save, it takes {@damage 1d6} psychic damage.",
 				"Additionally on a failed save, the target loses one prepared spell of up to 2nd level that it currently has the capability to cast, or if the target does not prepare spells, it simply loses the ability to cast the spell until it finishes a short rest. The spell is randomly chosen, but highest level spells are always selected.",
 				"If the target uses a spellcasting resource, such as spell slots, it is also drained of a corresponding amount of its spellcasting resource, which is then transferred to you in the form of an equal level and amount of spell slots, but only if you are below your maximum amount. Drain magic can not grant you a spell slot above a level which you can cast. If it would do so, it instead gives you a spell slot of the highest level you can cast which you are missing.",
 				"On each of your turns for the duration, you can use your action to repeat the saving throw and, on a failed save, the effect on the target creature as long as you are within range and line of sight when doing so. If you do not spend an action continuing this spell every turn, it ends. The spell also ends if the target is ever outside the spells range or if it has total cover from you."
@@ -17240,8 +17240,8 @@
 				{
 					"type": "list",
 					"items": [
-						"When you successfully muddle the mind of a creature or creatures, you can also force one creature to use it's reaction to take one attack at a target of your choice that is within its range. The disadvantage to the targets next attack roll is not applied to this attack.",
-						"When you beguile a creature, the sign becomes a concentration spell, and it lasts for 1 hour, but the sign can not be used on a target if it is hostile toward you, or if you or creatures that are friendly to you are fighting it. When initially casting the sign on a target successfully, you can issue a verbal command to the target, which it will follow to the best of it's ability on it's next turn. You can keep issuing commands to the target for the duration of the spell with your actions, but before each command after the initial one, the target can repeat the saving throw, ending the effect on a successful one."
+						"When you successfully muddle the mind of a creature or creatures, you can also force one creature to use its reaction to take one attack at a target of your choice that is within its range. The disadvantage to the target's next attack roll is not applied to this attack.",
+						"When you beguile a creature, the sign becomes a concentration spell, and it lasts for 1 hour, but the sign can not be used on a target if it is hostile toward you, or if you or creatures that are friendly to you are fighting it. When initially casting the sign on a target successfully, you can issue a verbal command to the target, which it will follow to the best of its ability on its next turn. You can keep issuing commands to the target for the duration of the spell with your actions, but before each command after the initial one, the target can repeat the saving throw, ending the effect on a successful one."
 					]
 				}
 			]
@@ -17747,13 +17747,13 @@
 				{
 					"name": "Bound in Servitude",
 					"entries": [
-						"The imp is a native of the plane of shadow, and has been summoned from that plane against it's will to serve a master. The summoning creates a binding contract, where the imp must obey the commands of it's master, or turn to ash and die."
+						"The imp is a native of the plane of shadow, and has been summoned from that plane against its will to serve a master. The summoning creates a binding contract, where the imp must obey the commands of its master, or turn to ash and die."
 					]
 				},
 				{
 					"name": "Vulnerable Contract",
 					"entries": [
-						"If the imp is banished, the contract between the imp and it's master immediately ends, and the imp is sent back to the plane of shadow."
+						"If the imp is banished, the contract between the imp and its master immediately ends, and the imp is sent back to the plane of shadow."
 					]
 				}
 			],
@@ -17846,13 +17846,13 @@
 				{
 					"name": "Bound in Servitude",
 					"entries": [
-						"The hell hound is a native of the plane of shadow, and has been summoned from that plane against it's will to serve a master. The summoning creates a binding contract, where the hell hound must obey the commands of it's master, or turn to ash and die."
+						"The hell hound is a native of the plane of shadow, and has been summoned from that plane against its will to serve a master. The summoning creates a binding contract, where the hell hound must obey the commands of its master, or turn to ash and die."
 					]
 				},
 				{
 					"name": "Vulnerable Contract",
 					"entries": [
-						"If the hell hound is banished, the contract between the hell hound and it's master immediately ends, and the hell hound is sent back to the plane of shadow."
+						"If the hell hound is banished, the contract between the hell hound and its master immediately ends, and the hell hound is sent back to the plane of shadow."
 					]
 				},
 				{
@@ -17962,13 +17962,13 @@
 				{
 					"name": "Bound in Servitude",
 					"entries": [
-						"The quasit is a native of the plane of shadow, and has been summoned from that plane against it's will to serve a master. The summoning creates a binding contract, where the quasit must obey the commands of it's master, or turn to ash and die."
+						"The quasit is a native of the plane of shadow, and has been summoned from that plane against its will to serve a master. The summoning creates a binding contract, where the quasit must obey the commands of its master, or turn to ash and die."
 					]
 				},
 				{
 					"name": "Vulnerable Contract",
 					"entries": [
-						"If the quasit is banished, the contract between the quasit and it's master immediately ends, and the quasit is sent back to the plane of shadow."
+						"If the quasit is banished, the contract between the quasit and its master immediately ends, and the quasit is sent back to the plane of shadow."
 					]
 				},
 				{
@@ -18087,13 +18087,13 @@
 				{
 					"name": "Bound in Servitude",
 					"entries": [
-						"The armanite is a native of the plane of shadow, and has been summoned from that plane against it's will to serve a master. The summoning creates a binding contract, where the armanite must obey the commands of it's master, or turn to ash and die."
+						"The armanite is a native of the plane of shadow, and has been summoned from that plane against its will to serve a master. The summoning creates a binding contract, where the armanite must obey the commands of its master, or turn to ash and die."
 					]
 				},
 				{
 					"name": "Vulnerable Contract",
 					"entries": [
-						"If the armanite is banished, the contract between the armanite and it's master immediately ends, and the armanite is sent back to the plane of shadow."
+						"If the armanite is banished, the contract between the armanite and its master immediately ends, and the armanite is sent back to the plane of shadow."
 					]
 				},
 				{
@@ -19869,7 +19869,7 @@
 				]
 			},
 			"multiclassing": {
-                "requirementsSpecial": "When multiclassing into the slayer class, your character must endure a process of rigorous mutations which are extremely lethal. Roll {@dice 1d100} when multiclassing into the Slayer class. The result of the dice is the amount of poison damage you suffer. If you have resistance or immunity to poison damage when doing so, the multiclassing is unsuccessful.",
+                "requirementsSpecial": "When multiclassing into the slayer class, your character must endure a process of rigorous mutations which are extremely lethal. Roll {@dice 1d100} when multiclassing into the Slayer class. The result of the dice is the amount of poison damage you suffer. You can not multiclass into Slayer if you currently have resistance or immunity to poison damage.",
 				"requirements": {
                     "or": [
 						{
@@ -20880,7 +20880,7 @@
 				"Beginning at 1st level, you have significant experience studying, tracking, and hunting a certain type of enemy encountered in the wilds.",
                 "Choose a type of favored enemy: aberrations, beasts, elementals, fey, fiends, monstrosities, oozes, plants, or undead.",
                 "You have advantage on Wisdom (Survival) checks to track your favored enemies, as well as on Intelligence checks to recall information about them.",
-                "In addition, while you see a creature that is your favored enemy and it is within 120 feet of you, you can use an action to quietly observe and learn the creatures movement speed, its Strength, Dexterity, and Constitution scores, and any immunities it might have.",
+                "In addition, while you see a creature that is your favored enemy and it is within 120 feet of you, you can use an action to quietly observe and learn the creature's movement speed, its Strength, Dexterity, and Constitution scores, and any immunities it might have.",
                 "You can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain one use of it when you finish a short rest, and all uses of it when you finish a long rest."
 			]
 		},
@@ -21311,7 +21311,7 @@
 			"level": 2,
             "entries": [
 				"At 2nd level, your intricate knowledge of life, death and souls has granted you the ability to harvest fragments of souls from the enemies that you slay. Soul shards are physical objects that you carry, resembling small, white crystals.",
-                "Once per short rest, when a creature you can see and have damaged within one round of combat dies, you can use your reaction to harvest a fragment of the soul from the creature, creating a soul shard. You can also do this later with an action within 5 feet and 1 hour of the creature dying, before it's soul parts ways with it's body. Creatures that are either constructs, undead, or have a CR of 0 can not give you soul shards.",
+                "Once per short rest, when a creature you can see and have damaged within one round of combat dies, you can use your reaction to harvest a fragment of the soul from the creature, creating a soul shard. You can also do this later with an action within 5 feet and 1 hour of the creature dying, before its soul parts ways with its body. Creatures that are either constructs, undead, or have a CR of 0 can not give you soul shards.",
 				"In addition to this, you also gain one soul shard every short rest, and all soul shards up to your total maximum on a long rest. You can store a maximum amount of soul shards as indicated on the warlock table.",
 				"You can use one soul shard for one of the following two effects:",
 				{
@@ -21331,7 +21331,7 @@
 			"level": 2,
             "entries": [
                 "At 2nd level, you align yourself with one of the secret, widespread cults specializing in a certain dark practice. Your choice grants you features at 2nd level and again at 6th, 10th, and 14th level.",
-				"Different warlocks choose different dark arts to follow and practice. All of these arts are practiced by a widespread, specialized cult that shares it's secrets with it's members. The cult pledge you choose to follow reflects your approach."
+				"Different warlocks choose different dark arts to follow and practice. All of these arts are practiced by a widespread, specialized cult that shares its secrets with its members. The cult pledge you choose to follow reflects your approach."
             ]
 		},
         {
@@ -21363,8 +21363,8 @@
 			"classSource": "Farover",
 			"level": 5,
             "entries": [
-                "At 5th level, your knowledge grants you insight on how to interact with the plane of shadow, and summon a fiend from it to your plane of existence. By spending a Soul Shard and 10 minutes casting a ritual, you can force a fiend to be summoned within 10 feet of you, and bind it to serve you under the threat of death. The fiend summoned will arrive against it's will, but will follow your commands in hopes of either being released, or falling in battle, which would both return it to the plane of shadow. Disobeying your commands would cause the fiend to turn to dust, and truly die.",
-                "You can issue commands telepathically to your summoned fiend, and in general interact with it only while you are within 500 feet of it. Even if you and your summon don't share a language, it will understand simple commands from you. Your summon can not communicate information back to you unless it shares a language with you. If it does not have any active commands, it will simply return to you. In combat your summon takes it's turn immediately after yours, and will act based on your commands. If your summon is beyond 500 feet of you, it will still follow your last command to the best of it's ability, and in combat it will otherwise simply take the dodge action.",
+                "At 5th level, your knowledge grants you insight on how to interact with the plane of shadow, and summon a fiend from it to your plane of existence. By spending a Soul Shard and 10 minutes casting a ritual, you can force a fiend to be summoned within 10 feet of you, and bind it to serve you under the threat of death. The fiend summoned will arrive against its will, but will follow your commands in hopes of either being released, or falling in battle, which would both return it to the plane of shadow. Disobeying your commands would cause the fiend to turn to dust, and truly die.",
+                "You can issue commands telepathically to your summoned fiend, and in general interact with it only while you are within 500 feet of it. Even if you and your summon don't share a language, it will understand simple commands from you. Your summon can not communicate information back to you unless it shares a language with you. If it does not have any active commands, it will simply return to you. In combat your summon takes its turn immediately after yours, and will act based on your commands. If your summon is beyond 500 feet from you, it will still follow your last command to the best of its ability, and in combat it will otherwise simply take the dodge action.",
                 "You can release your summon at any time back to the plane of shadow as an action. You can also dismiss your summon into a pocket dimension as an action, where it will await your summon. Retrieving your summon from the pocket dimension requires a 10 minute ritual.",
                 "Your summon recovers all of its hit points when you complete a short rest. If you fall unconscious, your summon is sent to the pocket dimension. If you die, your summon is released. You can only have one summon active at a time.",
                 "Your summoned fiends use {@filter different stat blocks|bestiary|search=summoned}, unlike their normal counterparts.",
@@ -21394,7 +21394,7 @@
 					"type": "list",
 					"items": [
 						"{@bold {@italic Soul Bond}}: The warlock can power the soulstone and create a bond between the souls of two characters, giving the soulstone to one of them to keep. While bonded, whenever one of the two characters suffer damage, they only suffer half of that damage, and the other bonded character suffers the rest. The effect has no maximum range, and affects the characters as long as they are both on the same plane of existence.",
-						"{@bold {@italic Soul Revive}}: The warlock can power the soulstone and connect the life force of two characters together, giving the soulstone to one of them to keep. When either of the two characters would then fall below 1 hit point from damage, the soulstone causes that character to mitigate any of the excess damage suffered beyond 1 hit point, at the cost of the other connected characters hit points. The effect converts an amount of hit points equal to how many points of damage is mitigated, but it can not bring the hit points of the character whos hit points are converted below 1. When this effect happens, the soulstone breaks and is destroyed."
+						"{@bold {@italic Soul Revive}}: The warlock can power the soulstone and connect the life force of two characters together, giving the soulstone to one of them to keep. When either of the two characters would then fall below 1 hit point from damage, the soulstone causes that character to mitigate any of the excess damage suffered beyond 1 hit point, at the cost of the other connected characters hit points. The effect converts an amount of hit points equal to how many points of damage is mitigated, but it can not bring the hit points of the character who's hit points are converted below 1. When this effect happens, the soulstone breaks and is destroyed."
 					]
 				},
                 "Both effects persist until the soulstone is destroyed, or if the soulstone is not in possession of one of the two characters. If a soulstone is not in possession of one of the two characters, the soulstone decays and is destroyed."
@@ -21555,7 +21555,7 @@
 			"classSource": "Farover",
 			"level": 1,
             "entries": [
-                "Starting at 1st level, the rigorous, inhumane mutations you have been subjected to begin to manifest. Your reflexes, strength, and senses all trump those of a normal humanoids. You gain the following benefits:",
+                "Starting at 1st level, the rigorous, inhumane mutations you have been subjected to begin to manifest. Your reflexes, strength, and senses all trump those of normal humanoids. You gain the following benefits:",
                 {
 					"type": "list",
 					"items": [
@@ -21575,7 +21575,7 @@
 			"classSource": "Farover",
 			"level": 2,
             "entries": [
-                "Starting at 2nd level, you learn to cast simple arcane magic called {@filter signs|optionalfeatures|feature type=ss}. Though they are not wizards who employ powerful magic, slayers can cast simple magic spells that can prove effective when used properly. Slayers call these spells signs and usually use them in combat, though they also have non-combat applications. Because of the signs, slayers prefer single weapons since they need a free hand to cast them. Some of the signs are cast by arranging the fingers in specific way, while others have to be drawn on a surface or in the air. Signs are very subtle, only requiring a somatic component, and most people do not even realize when a sign has been cast. Slayers do not need to hold a spellcasting focus for their signs, instead they simply channel the magic through their {@item slayer medallion|farover}, which they wear around their neck.",
+                "Starting at 2nd level, you learn to cast simple arcane magic called {@filter signs|optionalfeatures|feature type=ss}. Though they are not wizards who employ powerful magic, slayers can cast simple magic spells that can prove effective when used properly. Slayers call these spells signs and usually use them in combat, though they also have non-combat applications. Because of the signs, slayers prefer single weapons since they need a free hand to cast them. Some of the signs are cast by arranging the fingers in a specific way, while others have to be drawn on a surface or in the air. Signs are very subtle, only requiring a somatic component, and most people do not even realize when a sign has been cast. Slayers do not need to hold a spellcasting focus for their signs, instead they simply channel the magic through their {@item slayer medallion|farover}, which they wear around their neck.",
                 "At 2nd level, you know two signs of your choice from the list of {@filter signs|optionalfeatures|feature type=ss}. You learn additional signs of your choice at higher levels, as shown in the Signs Known column of the Slayer table. You can cast your signs using vigor points.",
                 {
 					"type": "entries",
@@ -21609,7 +21609,7 @@
 			"classSource": "Farover",
 			"level": 3,
             "entries": [
-                "Starting at 3rd level, slayers decide which school they want to follow. Each school offers a variety of skills, techniques and knowledge, which reflects the approach of it's members.",
+                "Starting at 3rd level, slayers decide which school they want to follow. Each school offers a variety of skills, techniques and knowledge, which reflects the approach of its members.",
                 "Your choice grants you features at 3rd level and again at 9th, 13th, and 17th level."
 			]
 		},
@@ -21680,7 +21680,7 @@
 					"items": [
 						"You gain immunity to the negative effects of magical and non-magical {@table aging effects|farover|aging}, disease, and the {@condition poisoned} condition. Your mind still ages with time, but your body remains at the age at which you reached level 7. You can not die of old age.",
 						"You gain expertise in the {@skill Perception} skill.",
-                        "You no longer need to sleep normally, and you can instead meditate, remaining semiconscious. A nights rest which is normally 8 hours requires you to only meditate for 4 hours."
+                        "You no longer need to sleep normally, and you can instead meditate, remaining semiconscious. A night's rest which is normally 8 hours requires you to only meditate for 4 hours."
 					]
 				}
 			]
@@ -21715,7 +21715,7 @@
             "entries": [
                 "At 11th level, your increased knowledge and developed mutations allow you to craft and digest incredibly poisonous Slayer Alchemy items called decoctions. Decoctions are made using the remains or the essence of monsters you slay as their main ingredient with your {@classFeature slayer alchemy|Slayer|farover|3} feature.",
                 "When you slay a monster, you can spend 1 minute harvesting an ingredient from it's remains. Using your {@item Alchemist's Supplies|phb}, you can craft a decoction from this ingredient. This is done as part of your normal {@classFeature slayer alchemy|Slayer|farover|3} crafting during a rest.",
-                "When you craft a decoction, you decide which one attribute from the slain monster you wish to encapsulate in the decoction, which can be {@bold an ability score, natural AC, damage resistance, damage immunity, condition immunity, or sense}. The attribute can be any specific one you are aware of, or a general one such as {@italic whatever is the creatures highest ability score}. Work with your DM to determine the attribute, since your DM might not reveal unknown attributes of a creature.",
+                "When you craft a decoction, you decide which one attribute from the slain monster you wish to encapsulate in the decoction, which can be {@bold an ability score, natural AC, damage resistance, damage immunity, condition immunity, or sense}. The attribute can be any specific one you are aware of, or a general one such as {@italic whatever is the creature's highest ability score}. Work with your DM to determine the attribute, since your DM might not reveal unknown attributes of a creature.",
                 "You can only have one decoction at a time. To harvest the ingredient for a second decoction means you have to consume or discard the first decoction.",
                 "You can consume a decoction as an action, and it's effects last for 10 minutes. For the duration, you gain the attribute of the monster from which the decoction was made. Consuming a decoction increases your toxicity by 5."
 			]
@@ -21797,7 +21797,7 @@
 			"classSource": "Farover",
 			"level": 15,
             "entries": [
-                "Starting at 15th level, when an enemy hits you with a melee attack, you can use your reaction to cause the enemy to suffer poison damage. The attacking creature must make a Consitution saving throw against your sign save DC, suffering poison damage equal to your current toxicity level on a failed save, or half as much on a successful one."
+                "Starting at 15th level, when an enemy hits you with a melee attack, you can use your reaction to cause the enemy to suffer poison damage. The attacking creature must make a Constitution saving throw against your sign save DC, suffering poison damage equal to your current toxicity level on a failed save, or half as much on a successful one."
 			]
 		},
         {
