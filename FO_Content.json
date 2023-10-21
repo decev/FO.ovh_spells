@@ -381,7 +381,7 @@
 			"subclassShortName": "Moon",
 			"level": 3,
 			"entries": [
-				"You gain the ability to transform between all of your different available {@classFeature Channel Nature|Druid (reworked)|Farover|1||Wild Shape} forms while the feature is active. The size of the form you chose initially stays the same. You can switch between your forms using a bonus action, without having to revert back to a humanoid first.",
+				"You gain the ability to transform between all of your different available {@classFeature Channel Nature|Druid (reworked)|Farover|1||Wild Shape} forms while the feature is active. The size of the form you chose initially stays the same. You can switch between your forms by first transforming back into a humanoid as a bonus action, and then assuming a different wild shape form by using another bonus action.",
 				"Additionally, you can use an unarmed strike as a bonus action while in a Wild Shape form. You can use either Strength or Dexterity for the attack and damage rolls, and the attack deals {@dice 1d2} + modifier damage."
 			]
 		},
@@ -537,7 +537,7 @@
             "level": 3,
             "entries": [
                 "Your mystical connection to the land infuses you with the ability to cast certain spells. At 3rd, 5th, 7th, and 9th level you gain access to spells connected to the domain where your druidic circle is located. Choose the domain—arctic, coast, desert, forest, grassland, mountain, subterranean, or swamp—and consult the associated list of spells.",
-				"Once you gain access to a circle spell, you always have it prepared, and it doesn’t count against the number of spells you can prepare each day. Spell that don’t appear on the druid spell list are considered druid spells for you.",
+				"Once you gain access to a circle spell, you always have it prepared, and it doesn’t count against the number of spells you can prepare each day. Spells that don’t appear on the druid spell list are considered druid spells for you.",
                 {
 					"source": "Farover",
 					"type": "tableGroup",
@@ -813,7 +813,7 @@
 			"level": 6,
 			"entries": [
 				"At 6th level, you gain the ability to sow your spells into small seedlings. When you complete the casting of a spell, you can decide to hold its potential by planting it in the ground within 5 feet of you, and the spell sprouts as a small magical seedling. You must make all decisions regarding the spell at the time you cast it. The spell can not have a range of only self, nor can it affect only yourself.",
-				"Within the next 10 minutes, you can direct your sown spell to bloom and produce the spell’s effects as a reaction, as long as you can see it. The spell works normally, but its point of origin is the seedling, instead of you. You can have only have one sown spell at a time, and if you don’t trigger the spell within 10 minutes, it withers and the spell is lost. A creature can notice the clearly magical seedling with a successful {@skill Perception} check against your spell save DC."
+				"Within the next 10 minutes, you can direct your sown spell to bloom and produce the spell’s effects as a reaction, as long as you can see it. The spell works normally, but its point of origin is the seedling, instead of you. You can only have one sown spell at a time, and if you don’t trigger the spell within 10 minutes, it withers and the spell is lost. A creature can notice the clearly magical seedling with a successful {@skill Perception} check against your spell save DC."
 			]
 		},
 		{
@@ -18579,7 +18579,7 @@
 				{
 					"name": "Surge",
 					"entries": [
-						"When you move at least 20 feet into reach of another creature, and your movement speed is over twice as high as that creatures, you can add your Wisdom modifier to all your melee attack rolls against that creature this turn."
+						"When you move at least 20 feet into reach of another creature, and your movement speed is over twice as high as that creature's, you can add your Wisdom modifier to all your melee attack rolls against that creature this turn."
 					]
 				},
 				{
@@ -20530,7 +20530,7 @@
 					"name": "Wild Shape",
 					"entries": [
                         "As a bonus action, you transform into a form that you have learned for this feature. You start by knowing the {@link Beasts of the Land forms|https://5e.tools/bestiary.html#agile%20beast%20of%20the%20land_farover,fbsr:wild%20shapes}. Choose one of the stat blocks available to you for the wild shape. The magic of the wild shape lasts for up to an amount of hours equal to your druid level, during which you can revert out and in of the form you chose using a bonus action for as long as the effect remains active. The effect ends early if you fall unconscious, drop to 0 hit points, or die.",
-                        "While in a Wild Shape form, many of its game statistics replace yours, and your ability to handle objects is determined by the forms limbs, rather than your own. You retain your personality and memories, but lose the ability to speak. While transformed into the form, you lose access to the following class features: {@classFeature Spellcasting|Druid (reworked)|Farover|1} (you can continue to concentrate on spells), and {@italic Channel Nature}.",
+                        "While in a Wild Shape form, many of its game statistics replace yours, and your ability to handle objects is determined by the form's limbs, rather than your own. You retain your personality and memories, but lose the ability to speak. While transformed into the form, you lose access to the following class features: {@classFeature Spellcasting|Druid (reworked)|Farover|1} (you can continue to concentrate on spells), and {@italic Channel Nature}.",
 						"While in a Wild Shape form, you have resistance to all types of damage. This resistance represents the symbiosis between your true form, and the exterior animal form you take which bears the brunt of most harm done to you.",
                         "When you transform in or out of the form, you are freed from any effects causing you to be {@condition grappled}. You also choose whether your equipment falls to the ground in your space or merges into your new form. Any unworn or unequipped equipment you have that merges with the form when you transform has no effect until you leave the form, and neither does any mundane armor, weapons, or worn equipment.",
 						"Magical armor, weapons, and other magical equipment you wear when you transform do retain all of their magical benefits, but not their mundane ones. For example, if you transform while wearing a set of +1 leather armor, you retain the magical +1 AC benefit, but not the AC of the leather armor itself. If you wield magical weapons, you can benefit from the magical property of one weapon when attacking in your wild shape form (if you’re wielding two weapons, you decide which one of the two to benefit from when you transform)."
@@ -20631,7 +20631,7 @@
 					"entries": [
                         "As a free action, you summon an ethereal fey spirit to aid you for 1 minute. The spirit is untargetable and immune to all damage, and it hovers in the air for the duration, closely following you around. While the spirit is active, it can shoulder some of the burdens of your spellcasting by being able to concentrate on a spell on your behalf. This means that if you cast a {@condition concentration} spell while the spirit is active, the spell does not require concentration on it from you, and the spirit does it instead. You can also cast a second concentration spell while the spirit is already concentrating on one, and concentrate on the second spell yourself.",
 						"Your magic is closely linked with that of the fey spirit, meaning that upon taking damage, you must make Constitution saving throws on behalf of the spirit so it can maintain concentration, but you do so at advantage when you are not concentrating on a spell and only the spirit is. If both of you are concentrating on a spell, you roll normally, and on a failed save, both spells being concentrated on end.",
-						"After a minute has passed the fey spirit disappears, and any spell it was concentrating on ends, regardless of the spells duration.",
+						"After a minute has passed the fey spirit disappears, and any spell it was concentrating on ends, regardless of the spell's duration.",
 						"While the nature spirit is active, you can not use your {@classFeature Channel Nature|Druid (reworked)|Farover|1||Wild Shape} feature."
 					]
 				}
@@ -20712,7 +20712,7 @@
 					"entries": [
                         "Similarly to your {@classFeature Channel Nature|Druid (reworked)|Farover|1||Wild Shape}, you assume a half-humanoid, half-animal hybrid form. When assuming a hybrid form, you can choose any {@link wild shape statblock|https://5e.tools/bestiary.html#agile%20beast%20of%20the%20land_farover,fbsr:wild%20shapes} you have access to. Since you only partially transform into the animal, you can only receive some of the features of the stat block, which are the {@bold passive features, senses, and speeds}. You choose which of these features to gain. You do not gain resistance to all damage in the hybrid form.",
 						"By only partially transforming, you do not lose access to any of your other druid features like you normally do while in a wild shape form. You can decide if you lose access to your limbs or ability to speak.",
-						"As with wild shape, you choose the animal to base the transformation on, and it does not affect on the form’s capabilities. You can choose any appropriate animal to mimic, and which features of that animal you wish to visually adopt."
+						"As with wild shape, you choose the animal to base the transformation on, and it does not affect the form’s capabilities. You can choose any appropriate animal to mimic, and which features of that animal you wish to visually adopt."
 					]
 				}
 			]
@@ -20841,7 +20841,7 @@
                 "At 18th level, you can turn nature in its rawest elements into deadly weapons no matter your form. Once each turn, you can use a bonus action to choose a target point within 30 feet and one of the following element options. If the element you choose is not present at or near the target point, any damage dealt by this feature is halved, you have disadvantage on your spell attack, and creatures have advantage on any saving throws made to resist it.",
 				"{@bold {@italic Air.}} Each creature within 20 feet of the point must make a Strength saving throw. On a failed save, a target takes bludgeoning damage equal to {@dice 3d8} + your Wisdom modifier and is flung up 20 feet away from the target point in a random direction (determined by the roll of the first {@dice d8}) and knocked prone.",
 				"If a thrown target strikes an object, such as a wall or floor, the target takes an additional {@dice 1d8} bludgeoning damage. If a target is thrown at another creature, that creature must succeed on a Dexterity saving throw or it also takes {@dice 1d8} bludgeoning damage and is knocked prone. If the saving throw is successful, the target takes half the bludgeoning damage and isn’t flung away or knocked prone.",
-				"{@bold {@italic Earth.}} Clumps of dirt and stone explode outward. Creatures within 10 feet of the point must make a Strength saving throw, or take {@dice 4d8} bludgeoning damage and are knocked prone. On a successful save a creature takes half damage is not knocked prone.",
+				"{@bold {@italic Earth.}} Clumps of dirt and stone explode outward. Creatures within 10 feet of the point must make a Strength saving throw, or take {@dice 4d8} bludgeoning damage and are knocked prone. On a successful save a creature takes half damage and is not knocked prone.",
 				"{@bold {@italic Fire.}} Flames roil outward in a burst of inferno. Creatures within 15 feet of the point must make a Dexterity saving throw, taking {@dice 6d6} fire damage on a failed save, or half as much on a successful one.",
 				"{@bold {@italic Ice.}} You condense and flash freeze the water from a vast area above you into a massive boulder to drop down with immense force. Make a ranged spell attack against a creature at least 30 feet below the target point. On a hit, the creature takes {@dice 4d6} bludgeoning damage and {@dice 4d6} cold damage.",
 				"{@bold {@italic Water.}} You create a 20-foot tall, 20-foot wide wave that travels 30 feet in one direction and then crashes down. Any Large or smaller creatures and objects in the wave’s path must make a Strength saving throw. On a failure, a creature takes {@dice 4d8} bludgeoning damage and is carried with the wave. A creature that succeeds on its saving throw takes no damage and is not moved.",
