@@ -21,6 +21,7 @@
 			"SWP": "Special Weapon Property",
 			"SS": "Slayer Sign",
 			"SP": "Slayer Potion",
+			"KA": "Ki Ability",
 			"SM": "Slayer Mutagen"
 		}
 	},
@@ -17613,6 +17614,16 @@
 				"When you use the Attack action, you can make an additional weapon attack as a bonus action. While this mutagen is active your toxicity is increased by {@bold 7}.",
 				"{@bold {@italic Side Effect}}. You have disadvantage on Intelligence and Wisdom saving throws."
 			]
+		},
+		{
+			"name": "Cause Pain",
+			"source": "Farover",
+			"featureType": [
+				"KA"
+			],
+			"entries": [
+				"You can spend 2 ki points as an action to employ your psionic power and cause great pain to a creature within 60 feet. The target must make a Wisdom saving throw. On a failed save, the target loses any damage resistances it has until the beginning of its next turn, and then takes {@dice 1d8} × your proficiency bonus psychic damage. On a success, it takes half as much damage and doesn’t lose its resistances."
+			]
 		}
 	],
 	"action": [
@@ -19449,6 +19460,266 @@
                 "Feral Senses|Ranger (reworked)|Farover|18",
                 "Ability Score Improvement|Ranger (reworked)|Farover|19",
                 "Foe Slayer|Ranger (reworked)|Farover|20"
+            ]
+        },
+		{
+			"name": "Monk (reworked)",
+			"source": "Farover",
+            "fluff": [
+				{
+					"name": "The Monk",
+					"source": "Farover",
+					"entries": [
+						"In the blink of an eye, a half-elf performs a pirouette, as she catches an incoming arrow and throws it back toward the archer, all in one motion. She springs into motion as deftly and quickly as a tiger, gliding across a river and throwing herself into the fray of a band of hobgoblins. An impending hobgoblin morningstar looming over her head, she nimbly strikes the attacking hobgoblin in the chest with her palm, pushing the creature away as the morningstar swings down into the dirt below. Her fists a blur, she unleashes a whirlwind of punches, striking the hobgoblins in vulnerable cracks in their armor and sends them stumbling.",
+						"Surrounded by bandits on all sides, a human man covered in tattoos closes his eyes, raises his hands, and unleashes an invisible repelling force all around him. The bandits are sent flying back as if caught in a hurricane, and the man slowly rises from the ground, hovering a few feet in the air. He locks eyes with a remaining bandit, who turns tail and runs. By the clench of a fist, the tattooed man restrains the fleeing bandit in place, as if held in place by invisible chains. The tattooed man swiftly hovers over to the immobile bandit, and delivers a knock-out strike to the head with a club, as he gracefully lands on the ground.",
+                        "A robed halfling wielding a staff nimbly kicks up from lying on his back to face the ogre who knocked him down. Even while still, the halfling performs feints, ducks, and dodges when the ogres greatclub rips through the air around him. Seeing an opening, the halfling vaults up into the air, jumping from the ogres club that just slammed by him into the ground. The halfling strikes the ogre twice in quick succession with the end of his staff, and aided by his great speed, he lands a third, critical strike in the throat of the ogre, dealing a lethal blow.",
+                        "Having trained both their bodies and minds alike, monks are devotees to ancient monastic temples and monasteries, along with the practices and traditions they teach. Monks aspire to attain enlightenment and tranquility through awakening their ki, the mystical vital force of the body powering all living things. Monks who have awakened their ki use it to enhance their physical capabilities, help or hinder other living creatures, and most significantly awaken the inner capabilities of their minds to employ psionic powers. As they gain experience, their rigorous martial training and their mastery of their mind and body gives them power over themselves, as well as the bodies of others.",
+                        "Be it among others at an ancient monastery or alone in a hut in the wilderness, monks train their bodies to be as quick as the wind and their minds to be as sharp as a needle, all in isolation from the hassle and distractions of ordinary life. Some monks prefer to hone their techniques in isolation, and some prefer to belong to the order of a monastery, under the guidance of the wisest and most capable grand master monks. Regardless of where they conduct their training, monks commonly visit civilization to offer their knowledge, guidance, and fighting capabilities. They can often be seen serving as counselors and teachers, or even as spies and assassins in some situations. Regardless, a monk on the road approaches their adventures as a journey of physical and spiritual growth."
+					],
+					"type": "section"
+				}
+			],
+			"hd": {
+				"number": 1,
+				"faces": 8
+			},
+			"proficiency": [
+				"dex",
+				"str"
+			],
+			"startingProficiencies": {
+				"armor": [
+					"none"
+				],
+				"weapons": [
+					"simple"
+				],
+				"tools": [
+					"any one type of artisan’s tools or any one musical instrument of your choice"
+				],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"athletics",
+								"acrobatics",
+								"history",
+								"insight",
+								"medicine",
+                                "stealth"
+							],
+							"count": 2
+						}
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"any {@table farover weapons|farover|simple weapon}",
+					"(a) a {@item dungeoneer's pack|PHB} or (b) an {@item explorer's pack|PHB}",
+                    "(a) {@table farover weapons|farover|10 darts}, or {@table farover weapons|farover|5 daggers}"
+				],
+                "goldAlternative": "{@dice 5d4|5d4|Starting Gold}",
+				"defaultData": [
+					{
+						"a": [
+							{
+								"equipmentType": "weaponSimple",
+								"quantity": 1
+							}
+						]
+					},
+					{
+						"a": [
+							"dungeoneer's pack|phb"
+						],
+						"b": [
+							"explorer's pack|phb"
+						]
+                    },
+					{
+						"a": [
+							"dart|phb|Darts (5)"
+						],
+						"b":[
+							"dagger|phb|Daggers (5)"
+						]
+                    }
+				]
+			},
+			"multiclassing": {
+				"requirements": {
+							"dex": 13,
+							"wis": 13
+				},
+				"proficienciesGained": {
+					"armor": [
+						"none"
+					],
+					"weapons": [
+						"simple"
+                    ]
+				}
+			},
+            "classTableGroups": [
+				{
+                    "colLabels": [
+                        "Martial Arts",
+                        "Ki Points",
+                        "Unarmored Movement"
+                    ],
+                    "colStyles": [
+                        "text-center col-5",
+                        "text-center col-1",
+                        "text-center col-1"
+                    ],
+                    "rows": [
+                        [
+                            "{@dice 1d2}",
+                            "\u2014",
+                            "\u2014"
+                        ],
+                        [
+                            "{@dice 1d2}",
+                            "3",
+                            "\u2014"
+                        ],
+                        [
+                            "{@dice 1d2}",
+                            "4",
+                            "\u2014"
+                        ],
+                        [
+                            "{@dice 1d2}",
+                            "5",
+                            "\u2014"
+                        ],
+                        [
+                            "{@dice 1d4}",
+                            "6",
+                            "+10 ft."
+                        ],
+                        [
+                            "{@dice 1d4}",
+                            "7",
+                            "+10 ft."
+                        ],
+                        [
+                            "{@dice 1d4}",
+                            "8",
+                            "+10 ft."
+                        ],
+                        [
+                            "{@dice 1d4}",
+                            "9",
+                            "+10 ft."
+                        ],
+                        [
+                            "{@dice 1d4}",
+                            "10",
+                            "+10 ft."
+                        ],
+                        [
+                            "{@dice 1d4}",
+                            "11",
+                            "+20 ft."
+                        ],
+                        [
+                            "{@dice 1d6}",
+                            "12",
+                            "+20 ft."
+                        ],
+                        [
+                            "{@dice 1d6}",
+                            "13",
+                            "+20 ft."
+                        ],
+                        [
+                            "{@dice 1d6}",
+                            "14",
+                            "+20 ft."
+                        ],
+                        [
+                            "{@dice 1d6}",
+                            "15",
+                            "+20 ft."
+                        ],
+                        [
+                            "{@dice 1d6}",
+                            "16",
+                            "+30 ft."
+                        ],
+                        [
+                            "{@dice 1d6}",
+                            "17",
+                            "+30 ft."
+                        ],
+                        [
+                            "{@dice 1d8}",
+                            "18",
+                            "+30 ft."
+                        ],
+                        [
+                            "{@dice 1d8}",
+                            "19",
+                            "+30 ft."
+                        ],
+                        [
+                            "{@dice 1d8}",
+                            "20",
+                            "+30 ft."
+                        ],
+                        [
+                            "{@dice 1d8}",
+                            "21",
+                            "+40 ft."
+                        ]
+                    ]
+                }
+            ],
+            "classFeatures": [
+                "Martial Arts|Monk (reworked)|Farover|1",
+                "Unarmored Combatant|Monk (reworked)|Farover|1",
+                "Ki|Monk (reworked)|Farover|2",
+                "Mobility Techniques|Monk (reworked)|Farover|2",
+                {
+					"classFeature": "Monastic Tradition|Monk (reworked)|Farover|3",
+					"gainSubclassFeature": true
+				},
+                "Ability Score Improvement|Monk (reworked)|Farover|4",
+                "Graceful Setbacks|Monk (reworked)|Farover|4",
+				"Disabling Combo|Monk (reworked)|Farover|5",
+                "Extra Attack|Monk (reworked)|Farover|5",
+                "Evasion|Monk (reworked)|Farover|6",
+                {
+					"classFeature": "Monastic Tradition feature|Monk (reworked)|Farover|6",
+					"gainSubclassFeature": true
+				},
+				"Anatomy Expert|Monk (reworked)|Farover|7",
+				"Wholeness of Body|Monk (reworked)|Farover|7",
+                "Ability Score Improvement|Monk (reworked)|Farover|8",
+                "Acrobatic Movement|Monk (reworked)|Farover|8",
+                "Fast of Enlightenment|Monk (reworked)|Farover|9",
+                "Combo of Threes|Monk (reworked)|Farover|10",
+				"Mystical Ascendance|Monk (reworked)|Farover|10",
+                {
+					"classFeature": "Monastic Tradition feature|Monk (reworked)|Farover|11",
+					"gainSubclassFeature": true
+				},
+                "Ability Score Improvement|Monk (reworked)|Farover|12",
+				"Self-Restoration|Monk (reworked)|Farover|12",
+                "The Mind's Eye|Monk (reworked)|Farover|13",
+                "Transcendent Mobility|Monk (reworked)|Farover|14",
+				"Improved Disabling Combo|Monk (reworked)|Farover|15",
+				"Ability Score Improvement|Monk (reworked)|Farover|16",
+                {
+					"classFeature": "Monastic Tradition feature|Monk (reworked)|Farover|17",
+					"gainSubclassFeature": true
+				},
+                "Disciplined Mind|Monk (reworked)|Farover|18",
+                "Ability Score Improvement|Monk (reworked)|Farover|19",
+                "Sage of Life and Death|Monk (reworked)|Farover|20"
             ]
         },
 		{
@@ -21846,6 +22117,364 @@
 						"You learn to fully utilize your superhuman senses, granting you {@sense truesight} out to the same range as your {@sense darkvision}.",
 						"You can now sense creatures you can't see by smell within 60 feet, and if you do, you immediately know their location and type.",
                         "Whenever you score a critical hit with a weapon attack, you can cast one sign as a free action."
+					]
+				}
+			]
+		},
+		{
+			"name": "Martial Arts",
+			"source": "Farover",
+			"className": "Monk (reworked)",
+			"classSource": "Farover",
+			"level": 1,
+            "entries": [
+                "Your practice of martial arts gives you mastery of combat styles that use unarmed strikes and simple weapons. You gain the following benefits while you are unarmed or wielding only simple weapons and you aren’t wearing armor or wielding a shield:",
+				{
+					"type": "list",
+					"items": [
+						"You can use Dexterity instead of Strength for the attack and damage rolls of your {@table farover weapons|farover|simple weapons}, except those that have the Two-Handed property.",
+						"You can use Dexterity instead of Strength for the attack and damage rolls of your unarmed strikes. You can roll a {@dice d2} in place of the normal damage of your unarmed strike. This die changes as you gain monk levels, as shown in the Martial Arts column of the Monk class table.",
+                        "You can use a bonus action to make one unarmed strike."
+					]
+				}
+			]
+		},
+		{
+			"name": "Unarmored Combatant",
+			"source": "Farover",
+			"className": "Monk (reworked)",
+			"classSource": "Farover",
+			"level": 1,
+            "entries": [
+                "Beginning at 1st level, while you are wearing no armor and not wielding a shield, your AC equals either 10 + your Dexterity modifier added twice, or 10 + your Dexterity modifier + your Wisdom modifier, whichever is higher.",
+				"In addition, your base walking speed becomes 40, regardless of the speed granted to you by your race. Your speed also increases while you are not wearing armor or wielding a shield when you reach certain monk levels. This bonus is shown on the Monk class table in the Unarmored Movement column."
+			]
+		},
+		{
+			"name": "Mobility Techniques",
+			"source": "Farover",
+			"className": "Monk (reworked)",
+			"classSource": "Farover",
+			"level": 2,
+            "entries": [
+                "Beginning at 2nd level, your quick speed allows you to utilize your potential movement for benefits other than just moving from one place to another. Your mobility techniques use your unspent movement to grant you benefits, in increments of 20 or 40 feet.",
+				"You can use one of the following mobility techniques once per turn:",
+				{
+					"type": "list",
+					"items": [
+						"{@bold {@italic Momentum Barrage.}} You can spend movement, and make one unarmed strike for every 40 feet of unspent movement you decide to spend.",
+						"{@bold {@italic Momentum Attack.}} You can spend movement, and gain a +2 to either the next attack or damage roll you make this turn for every 20 feet of unspent movement you decide to spend.",
+                        "{@bold {@italic Momentum Buffer.}} You can spend movement, and reduce the damage of the next attack that hits you by 2 for every 20 feet of unspent movement you decide to spend until the beginning of your next turn."
+					]
+				}
+			]
+		},
+		{
+			"name": "Ki",
+			"source": "Farover",
+			"className": "Monk (reworked)",
+			"classSource": "Farover",
+			"level": 2,
+            "entries": [
+                "When you reach 2nd level, your training allows you to harness the mystic energy of ki; the power which flows through each living thing. Your access to this energy is represented by a number of ki points. The usage of ki allows you to surpass your physical limitations, and also awaken your mind to psionic powers. Unlike spells, ki abilities do not require any components. Their power is channeled solely through your body and mind.",
+				"Your monk level determines the number of points you have, as shown in the Ki Points column of the Monk table. You can spend these points to fuel various ki abilities. You start knowing four such abilities, which you can select from the {@filter list of Ki Abilities|optionalfeatures|feature type=ka}. You can learn one new ki ability each time you gain a level in the monk class.",
+				"When you spend a ki point, it is unavailable until you finish a short or long rest, at the end of which you draw all of your expended ki back into yourself. You must spend at least 30 minutes of the rest meditating to regain your ki points.",
+				{
+					"type": "entries",
+					"name": "Saving Throws",
+					"entries": [
+                        "Some of your ki abilities and other monk features require your target to make a saving throw to resist the feature’s effects. The saving throw DC is calculated as follows:",
+                        {
+							"type": "abilityDc",
+							"name": "Ki",
+							"attributes": [
+								"wis"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Monastic Tradition",
+			"source": "Farover",
+			"className": "Monk (reworked)",
+			"classSource": "Farover",
+			"level": 3,
+            "entries": [
+				"When you reach 3rd level, you commit yourself to a monastic tradition, chosen from the list of available traditions. Your tradition grants you features at 3rd level and again at 6th, 11th, and 17th level."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "Farover",
+			"className": "Monk (reworked)",
+			"classSource": "Farover",
+			"level": 4,
+            "entries": [
+				"When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Graceful Setbacks",
+			"source": "Farover",
+			"className": "Monk (reworked)",
+			"classSource": "Farover",
+			"level": 4,
+            "entries": [
+				"Beginning at 4th level, you take reduced falling damage equal to five times your monk level.",
+				"In addition, you can acrobatically kick up from being {@condition prone}, costing you only 10 feet of movement to stand up."
+			]
+		},
+		{
+			"name": "Extra Attack",
+			"source": "Farover",
+			"className": "Monk (reworked)",
+			"classSource": "Farover",
+			"level": 5,
+            "entries": [
+				"Beginning at 5th level, you can attack twice, instead of once, whenever you take the {@action Attack} action on your turn.",
+				"In addition, your unarmed strikes count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage."
+			]
+		},
+		{
+			"name": "Disabling Combo",
+			"source": "Farover",
+			"className": "Monk (reworked)",
+			"classSource": "Farover",
+			"level": 5,
+            "entries": [
+				"Starting at 5th level, if you’ve hit a creature with three separate attacks on your turn, you can force the creature to succeed on a Constitution saving throw against your ki save DC, or be {@condition blinded} until the end of its next turn. If you’ve hit a creature with five attacks, you can instead attempt to {@condition stunned|phb|stun} it similarly. You can only force one of these saving throws per turn."
+			]
+		},
+		{
+			"name": "Evasion",
+			"source": "Farover",
+			"className": "Monk (reworked)",
+			"classSource": "Farover",
+			"level": 6,
+            "entries": [
+				"At 6th level, your instinctive agility lets you dodge out of the way of certain area effects, such as a blue dragon’s lightning breath or a {@spell fireball|farover} spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail."
+			]
+		},
+		{
+			"name": "Monastic Tradition feature",
+			"source": "Farover",
+			"className": "Monk (reworked)",
+			"classSource": "Farover",
+			"level": 6,
+            "entries": [
+				"At 6th level, you gain one feature granted by your Monastic Tradition."
+			]
+		},
+		{
+			"name": "Anatomy Expert",
+			"source": "Farover",
+			"className": "Monk (reworked)",
+			"classSource": "Farover",
+			"level": 7,
+            "entries": [
+				"At 7th level, your knowledge of living things and their dormant ki lets you take advantage of the weak points in their bodies. You can always tell when a creature’s current hit points are equal to or less than twice your monk level.",
+				"When a humanoid creature’s current hit points are equal to or less than twice your monk level, you can perform a {@bold Knife Hand Strike} in place of an unarmed strike to cause that creature to fall {@condition unconscious} instead of taking damage on a hit. The target remains unconscious for 1 hour, or until it takes any damage.",
+				"When any kind of creature’s current hit points are equal to or less than your monk level, you can perform a {@bold Touch of Death} when you hit it with a weapon attack or unarmed strike to jab at a vulnerable nerve or point with lethal force and instantly kill that creature."
+			]
+		},
+		{
+			"name": "Wholeness of Body",
+			"source": "Farover",
+			"className": "Monk (reworked)",
+			"classSource": "Farover",
+			"level": 7,
+            "entries": [
+				"Beginning at 7th level, you can draw upon even your most dormant inner ki for respite. As an action, you recover hit points equal to two times your monk level + your Wisdom modifier, and up to half of your ki points (rounded down). After using this feature, you can not use it again until you complete a long rest."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "Farover",
+			"className": "Monk (reworked)",
+			"classSource": "Farover",
+			"level": 8,
+            "entries": [
+				"When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Acrobatic Movement",
+			"source": "Farover",
+			"className": "Monk (reworked)",
+			"classSource": "Farover",
+			"level": 8,
+            "entries": [
+				"At 8th level, while you aren’t wearing armor or wielding a shield, you gain the ability to move along vertical surfaces and across liquids on your turn without falling until the end of your turn."
+			]
+		},
+		{
+			"name": "Fast of Enlightenment",
+			"source": "Farover",
+			"className": "Monk (reworked)",
+			"classSource": "Farover",
+			"level": 9,
+            "entries": [
+				"Starting at 9th level, you can spend a long rest fasting by meditating at least 8 hours every day, and not performing any physically or mentally stressful tasks. If you do so, you do not require food or water during your long rest, and your ability scores are modified. At the end of a fasted long rest, your Strength score is decreased to 5, and your Wisdom score is increased by as many points as your Strength score was decreased, up to a maximum of 20. If your Wisdom score would go over 20 with this change, your Strength score is then not decreased to 5, but instead only to an amount of equivalent exchange. This change in ability scores lasts until you eat food for the first time. A character can {@book go without food|PHB|8|The Environment|0} for a number of days equal to 3 + their Constitution modifier before suffering {@condition exhaustion}."
+			]
+		},
+		{
+			"name": "Combo of Threes",
+			"source": "Farover",
+			"className": "Monk (reworked)",
+			"classSource": "Farover",
+			"level": 10,
+            "entries": [
+				"Starting at 10th level, every third successful attack you hit against the same creature on a turn is a critical hit."
+			]
+		},
+		{
+			"name": "Mystical Ascendance",
+			"source": "Farover",
+			"className": "Monk (reworked)",
+			"classSource": "Farover",
+			"level": 10,
+            "entries": [
+				"At 10th level, your psionic abilities have developed to an extent that you are able to defy gravity. On your turn, you can hover in the air and fly by spending 1 foot of extra movement for each foot that you move. Your flying requires great focus, which means you can not take any actions until you have landed back on ground, and at the end of your turn, your flight ends and you fall."
+			]
+		},
+		{
+			"name": "Monastic Tradition feature",
+			"source": "Farover",
+			"className": "Monk (reworked)",
+			"classSource": "Farover",
+			"level": 11,
+            "entries": [
+				"At 11th level, you gain one feature granted by your Monastic Tradition."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "Farover",
+			"className": "Monk (reworked)",
+			"classSource": "Farover",
+			"level": 12,
+            "entries": [
+				"When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Self-Restoration",
+			"source": "Farover",
+			"className": "Monk (reworked)",
+			"classSource": "Farover",
+			"level": 12,
+            "entries": [
+				"Starting at 12th level, your ki empowered tranquil mind can ignore stress and aging. You gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"You can use a bonus action to remove one effect on yourself that is causing you to be {@condition charmed}, {@condition frightened}, or {@condition poisoned}.",
+                        "Your lifespan is increased by an amount of years equal to your monk level, and you don’t suffer the {@table Aging Effects|farover|negative drawbacks of aging}."
+					]
+				}
+			]
+		},
+		{
+			"name": "The Mind's Eye",
+			"source": "Farover",
+			"className": "Monk (reworked)",
+			"classSource": "Farover",
+			"level": 13,
+            "entries": [
+				"At 13th level, your increased enlightenment awakens the mystical power in you known as the mind’s eye, or the third eye. You gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"You can use an action to observe a creature within 120 feet for weak points to learn one vulnerability it might have.",
+                        "Within 30 feet of you, you see {@condition invisible} creatures and objects as if they were visible, and you can see into the Ethereal Plane.",
+						"You can speak telepathically to any creature you can see within 60 feet of you in a language you know. Your communication doesn’t give the creature the ability to respond to you telepathically.",
+						"By meditating for 10 minutes, you can have an out-of-body experience. Your body is left behind by your conscious spirit, which can be invisible or ethereal, depending on your choice. Your spirit retains your senses and speeds, can fly using your speed, but can not perform any actions other than speaking. If either your spirit or body are harmed, the feature ends immediately and your spirit returns to your body. You can also end the feature at any time. There is no limit to how far away from your body your spirit can move, but it can’t enter another plane of existence. A solid barrier blocks your spirit’s movement, but your spirit can pass through an opening as small as 1 inch in diameter."
+					]
+				}
+			]
+		},
+		{
+			"name": "Transcendent Mobility",
+			"source": "Farover",
+			"className": "Monk (reworked)",
+			"classSource": "Farover",
+			"level": 14,
+            "entries": [
+				"Beginning at 14th level, whenever you use either your {@classFeature Mobility Techniques|Monk (reworked)|farover|2||Momentum Attack or Buffer}, you also gain the benefits of the other one for an equal amount of movement spent."
+			]
+		},
+		{
+			"name": "Improved Disabling Combo",
+			"source": "Farover",
+			"className": "Monk (reworked)",
+			"classSource": "Farover",
+			"level": 15,
+            "entries": [
+				"Starting at 15th level, your {@classFeature Disabling Combo|Monk (reworked)|farover|5} can {@condition stunned|phb|stun} a creature hit by three separate attacks, or {@condition paralyzed|phb|paralyze} one hit by five."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "Farover",
+			"className": "Monk (reworked)",
+			"classSource": "Farover",
+			"level": 16,
+            "entries": [
+				"When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Monastic Tradition feature",
+			"source": "Farover",
+			"className": "Monk (reworked)",
+			"classSource": "Farover",
+			"level": 17,
+            "entries": [
+				"At 17th level, you gain one feature granted by your Monastic Tradition."
+			]
+		},
+		{
+			"name": "Disciplined Mind",
+			"source": "Farover",
+			"className": "Monk (reworked)",
+			"classSource": "Farover",
+			"level": 18,
+            "entries": [
+				"At 18th level, your great mental and physical discipline grants you the ability to add half your proficiency bonus to any saving throw you aren’t proficient in.",
+				"Additionally, whenever you make a saving throw and fail, you can spend 1 ki point to reroll it and take the second result."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "Farover",
+			"className": "Monk (reworked)",
+			"classSource": "Farover",
+			"level": 19,
+            "entries": [
+				"When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Sage of Life and Death",
+			"source": "Farover",
+			"className": "Monk (reworked)",
+			"classSource": "Farover",
+			"level": 20,
+            "entries": [
+				"At 20th level, you become a master monk; a legendary sage with unrivaled ability to control life and death.",
+				"Once per long rest, you can use one of the following features:",
+				{
+					"type": "list",
+					"items": [
+						"You can spend 4 ki points as an action to have you or an ally you touch regain all of their hit points.",
+						"If you drop to 0 hit points, you can spend 4 ki points, roll 4 martial arts dice, and add the dice together. Your number of hit points instead changes to that amount."
 					]
 				}
 			]
