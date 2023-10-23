@@ -17624,6 +17624,184 @@
 			"entries": [
 				"You can spend 2 ki points as an action to employ your psionic power and cause great pain to a creature within 60 feet. The target must make a Wisdom saving throw. On a failed save, the target loses any damage resistances it has until the beginning of its next turn, and then takes {@dice 1d8} × your proficiency bonus psychic damage. On a success, it takes half as much damage and doesn’t lose its resistances."
 			]
+		},
+		{
+			"name": "Deflect Missile",
+			"source": "Farover",
+			"featureType": [
+				"KA"
+			],
+			"entries": [
+				"You can spend 1 ki point as a reaction to telekinetically slow down a ranged weapon or spell attack made against you. When you do so, the damage you take from the attack is reduced by {@dice 1d10} + your Wisdom modifier + your monk level. If you reduce the damage to 0, you can redirect the attack toward another creature as a part of the same reaction. If you do so, choose another creature within 60 feet of yourself that isn’t behind full cover. That creature must succeed on a Dexterity saving throw or be hit by the original attack."
+			]
+		},
+		{
+			"name": "Flurry of Blows",
+			"source": "Farover",
+			"featureType": [
+				"KA"
+			],
+			"entries": [
+				"You can spend 1 ki point to make either two unarmed strikes, or one weapon attack as a bonus action."
+			]
+		},
+		{
+			"name": "Force of Will",
+			"source": "Farover",
+			"featureType": [
+				"KA"
+			],
+			"entries": [
+				"You can spend 2 ki points as an action to employ your psionic power and attempt to telekinetically {@action grapple} a creature within 30 feet. The creature must succeed on either a Strength ({@skill Athletics}) or Dexterity ({@skill Acrobatics}) check against your Ki save DC, or be {@condition grappled} by you. While grappling a creature in this way, your movement speed is halved. You can only hold one creature in a grapple with this feature at a time, and the grapple ends if you ever move more than 30 feet away from the target. On its turn, a target grappled in this way can use an action to attempt to escape the grapple by making a check against your ki save DC."
+			]
+		},
+		{
+			"name": "Guidance of the Wind",
+			"source": "Farover",
+			"featureType": [
+				"KA"
+			],
+			"entries": [
+				"You can spend 1 ki point as a bonus action to guide an ally within 30 feet forth, increasing their movement speed until the end of their next turn by an amount equal to your base movement speed."
+			]
+		},
+		{
+			"name": "Ignore Pain",
+			"source": "Farover",
+			"featureType": [
+				"KA"
+			],
+			"entries": [
+				"Whenever you take damage, you can spend 1 ki point as a reaction to make a Wisdom check and attempt to ignore it. The DC is 5 + the amount of damage you would take. If you succeed, you take only half of the damage."
+			]
+		},
+		{
+			"name": "Mending Palm",
+			"source": "Farover",
+			"featureType": [
+				"KA"
+			],
+			"entries": [
+				"You can spend 2 ki points as an action to awaken the ki of a creature you touch, and accelerate its natural healing. The target creature can spend and roll one Hit Die to recover hit points, and add your Wisdom modifier to the healing."
+			]
+		},
+		{
+			"name": "Mental Repulsion",
+			"source": "Farover",
+			"featureType": [
+				"KA"
+			],
+			"entries": [
+				"You can spend 2 ki points as an action to employ your psionic power and forcefully push back everything around you. Each creature within 10 feet of you must make a Strength saving throw. On a failed save, a creature takes {@dice 1d6} × your proficiency bonus force damage and is pushed 10 feet away from you. On a successful save, the creature takes half as much damage and isn’t pushed. In addition, unsecured objects that are completely within the area of effect are automatically pushed 10 feet away from you."
+			]
+		},
+		{
+			"name": "Patient Defense",
+			"source": "Farover",
+			"featureType": [
+				"KA"
+			],
+			"entries": [
+				"You can spend 1 ki point to take both the {@action Dodge} and {@action Disengage} actions as a bonus action on your turn."
+			]
+		},
+		{
+			"name": "Step of the Wind",
+			"source": "Farover",
+			"featureType": [
+				"KA"
+			],
+			"entries": [
+				"You can spend 1 ki point to take both the {@action Dash} and {@action Disengage} actions as a bonus action on your turn, and your {@quickref Jumping|PHB|4|0|jump distance} is doubled for the turn."
+			]
+		},
+		{
+			"name": "Suppressing Force",
+			"source": "Farover",
+			"featureType": [
+				"KA"
+			],
+			"entries": [
+				"You can spend 2 ki points as an action to employ your psionic power and attempt to hamper a creature within 60 feet. The target must succeed on a Constitution saving throw. On a failed save, it takes {@dice 1d8} × your proficiency bonus force damage, and its speed is reduced by 20 feet until the end of its next turn. On a success, the target takes half as much damage and is not slowed."
+			]
+		},
+		{
+			"name": "Telekinetic Move",
+			"source": "Farover",
+			"featureType": [
+				"KA"
+			],
+			"entries": [
+				"You can spend 2 ki points as an action to employ your psionic power and attempt to telekinetically move a creature within 30 feet. The creature must succeed on a Strength ({@skill Athletics}) or Dexterity ({@skill Acrobatics}) against your ki save DC, or be moved in any direction of your choice by up to an amount of feet equal to 5 × your proficiency bonus. You can also use this feature to move an object up to 60 feet that isn’t being worn or carried by another creature and that isn’t secured in place. The object can weigh up to an amount of pounds equal to your monk level × your Wisdom score."
+			]
+		},
+		{
+			"name": "Corporeal Balance",
+			"source": "Farover",
+			"featureType": [
+				"KA"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 6
+					}
+				}
+			],
+			"entries": [
+				"You can spend 2 ki points as an action to regulate your body temperature drastically. For 10 minutes, you gain resistance to either cold or fire damage, and until you take a short rest, you also ignore the effects of either {@hazard extreme cold} or {@hazard extreme heat}, depending on which damage type you chose."
+			]
+		},
+		{
+			"name": "Physician's Touch",
+			"source": "Farover",
+			"featureType": [
+				"KA"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 6
+					}
+				}
+			],
+			"entries": [
+				"You can spend 2 ki points as an action to touch a creature and end one of the following conditions affecting it: {@condition blinded}, {@condition deafened}, {@condition paralyzed}, {@condition poisoned}, or {@condition stunned}."
+			]
+		},
+		{
+			"name": "Force of the Wind",
+			"source": "Farover",
+			"featureType": [
+				"KA"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 8
+					}
+				}
+			],
+			"entries": [
+				"You can spend 1 ki point on your turn to increase the reach of your unarmed strikes and melee weapon attacks to 30 feet and cause them to deal force damage until the end of your turn."
+			]
+		},
+		{
+			"name": "Iron Body",
+			"source": "Farover",
+			"featureType": [
+				"KA"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 10
+					}
+				}
+			],
+			"entries": [
+				"At the beginning of your turn, before you take any actions or movement, you can spend 3 ki points to forgo your turn and make your body as hard as iron. Until the beginning of your next turn, you can not be moved or displaced against your will, you are immune to all bludgeoning, piercing, and slashing damage, and you are resistant to all other forms of damage."
+			]
 		}
 	],
 	"action": [
