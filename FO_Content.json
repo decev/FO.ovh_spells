@@ -357,9 +357,264 @@
                 "Premeditated Murder|Slayer|Farover|Viper|Farover|13",
 				"Assiduous Duelist|Slayer|Farover|Viper|Farover|17"
 			]
+		},
+		{
+			"name": "Way of the Kensei",
+			"source": "Farover",
+			"className": "Monk (reworked)",
+			"classSource": "Farover",
+			"shortName": "Kensei",
+			"subclassFeatures": [
+				"Way of the Kensei|Monk (reworked)|Farover|Kensei|Farover|3",
+				"Art of the Kensei|Monk (reworked)|Farover|Kensei|Farover|3",
+				"Whirlwind Strike|Monk (reworked)|Farover|Kensei|Farover|6",
+                "Sharpen the Blade|Monk (reworked)|Farover|Kensei|Farover|11",
+				"Mind-Weapon Connection|Monk (reworked)|Farover|Kensei|Farover|17"
+			]
+		},
+		{
+			"name": "Way of the Open Hand",
+			"source": "Farover",
+			"className": "Monk (reworked)",
+			"classSource": "Farover",
+			"shortName": "Open Hand",
+			"subclassFeatures": [
+				"Way of the Open Hand|Monk (reworked)|Farover|Open Hand|Farover|3",
+				"Observant Technique|Monk (reworked)|Farover|Open Hand|Farover|3",
+				"Flying Dragon Kick|Monk (reworked)|Farover|Open Hand|Farover|6",
+				"Magic Empowered Fists|Monk (reworked)|Farover|Open Hand|Farover|6",
+                "Repelling Palm|Monk (reworked)|Farover|Open Hand|Farover|11",
+				"Quivering Palm|Monk (reworked)|Farover|Open Hand|Farover|17"
+			]
+		},
+		{
+			"name": "Way of the Psion",
+			"source": "Farover",
+			"className": "Monk (reworked)",
+			"classSource": "Farover",
+			"shortName": "Psion",
+			"subclassFeatures": [
+				"Way of the Psion|Monk (reworked)|Farover|Psion|Farover|3",
+				"Potent Psionics|Monk (reworked)|Farover|Psion|Farover|3",
+				"Cube of Force|Monk (reworked)|Farover|Psion|Farover|6",
+                "Adaptive Psyche|Monk (reworked)|Farover|Psion|Farover|11",
+				"Psionic Flight|Monk (reworked)|Farover|Psion|Farover|17"
+			]
 		}
 	],
 	"subclassFeature": [
+		{
+			"name": "Way of the Kensei",
+			"source": "Farover",
+			"className": "Monk (reworked)",
+			"classSource": "Farover",
+			"subclassSource": "Farover",
+			"subclassShortName": "Kensei",
+			"level": 3,
+			"entries": [
+				"Monks of the Way of the Kensei train relentlessly with their weapons, to the point where the weapon becomes an extension of the body. Founded on a mastery of sword fighting, the tradition has expanded to include many different weapons.",
+				"A kensei sees a weapon in much the same way a calligrapher or painter regards a pen or brush. Whatever the weapon, the kensei views it as a tool used to express the beauty and precision of the martial arts. That such mastery makes a kensei a peerless warrior is but a side effect of intense devotion, practice, and study."
+			]
+		},
+		{
+			"name": "Art of the Kensei",
+			"source": "Farover",
+			"className": "Monk (reworked)",
+			"classSource": "Farover",
+			"subclassSource": "Farover",
+			"subclassShortName": "Kensei",
+			"level": 3,
+			"entries": [
+				"When you choose this tradition at 3rd level, your special martial arts training leads you to master the use of certain weapons.",
+				"You gain proficiency with martial melee weapons that don’t have the Two-Handed property, and you can use those weapons with your {@classFeature Martial Arts|Monk (reworked)|Farover|1} feature. {@italic (FO: You learn one martial weapon category from the following categories: Adaptable, Deft, One-Handed, Quick)}",
+				"Additionally, once during your turn when you hit a creature with a kensei weapon, you can either deal extra damage equal to two rolls of your martial arts die, or increase your AC by an amount equal to one roll until the beginning of your next turn."
+			]
+		},
+		{
+			"name": "Whirlwind Strike",
+			"source": "Farover",
+			"className": "Monk (reworked)",
+			"classSource": "Farover",
+			"subclassSource": "Farover",
+			"subclassShortName": "Kensei",
+			"level": 6,
+			"entries": [
+				"Beginning at 6th level, you can perform a skillful spinning maneuver to attack multiple foes while outnumbered.",
+				"As an action, you make one attack roll with a kensei weapon, which can target any amount of creatures of your choice within your reach. The attack deals damage as normal to each creature hit, and for every creature you hit, you gain 20 movement speed until the end of your turn.",
+				"Once you use this feature, you can not use it again until you finish a short or long rest, unless you spend 2 ki points to use it again."
+			]
+		},
+		{
+			"name": "Sharpen the Blade",
+			"source": "Farover",
+			"className": "Monk (reworked)",
+			"classSource": "Farover",
+			"subclassSource": "Farover",
+			"subclassShortName": "Kensei",
+			"level": 11,
+			"entries": [
+				"At 11th level, you gain the ability to augment your weapons further with your ki. As a bonus action, you can spend 2 ki points to grant one kensei weapon you touch a +2 bonus to attack and damage rolls when you attack with it. This bonus lasts for 1 minute or until you use this feature again."
+			]
+		},
+		{
+			"name": "Mind-Weapon Connection",
+			"source": "Farover",
+			"className": "Monk (reworked)",
+			"classSource": "Farover",
+			"subclassSource": "Farover",
+			"subclassShortName": "Kensei",
+			"level": 17,
+			"entries": [
+				"At 17th level, your kensei weapons become not just an extension of your body, but of your mind as well. You can spend a short rest attuning to any kensei weapon, and create a psionic bond between your mind and it. The weapon hovers in your space when you draw it, and it functions as an additional off-hand weapon for the purposes of two-weapon fighting, regardless of what weapons you are holding in your hands."
+			]
+		},
+		{
+			"name": "Way of the Open Hand",
+			"source": "Farover",
+			"className": "Monk (reworked)",
+			"classSource": "Farover",
+			"subclassSource": "Farover",
+			"subclassShortName": "Open Hand",
+			"level": 3,
+			"entries": [
+				"Monks of the Way of the Open Hand are the ultimate masters of unarmed martial arts combat. By manipulating the ki of their opponents bodies, they learn techniques to push, trip, and deal devastating injuries sometimes with nothing more than the palm of their hand, or a single finger."
+			]
+		},
+		{
+			"name": "Observant Technique",
+			"source": "Farover",
+			"className": "Monk (reworked)",
+			"classSource": "Farover",
+			"subclassSource": "Farover",
+			"subclassShortName": "Open Hand",
+			"level": 3,
+			"entries": [
+				"When you choose this tradition at 3rd level, you become a student of the open hand. As a student of the open hand, you are acutely aware of the various pressure points on the bodies of creatures, and you are trained in finding them even in the midst of combat.",
+				"On your turn, you can make either a Wisdom ({@skill Insight}) or Wisdom ({@skill Medicine}) check once as a free action to observe a creature within 30 feet. This check is contested by the target creature’s AC, and it can not be used on creatures wearing heavy armor.",
+				"On a successful check, all unarmed strikes you make against the creature for the rest of your turn have advantage. Additionally, any critical hits you score against the creature with unarmed strikes can either knock it {@condition prone}, or push it 5 feet away from you if it fails a Strength saving throw against your ki save DC.",
+				"You can use this feature a number of times equal to your Wisdom modifier (a minimum of 1). You regain one use of this feature when you complete a short rest, and all uses of it when you complete a long rest."
+			]
+		},
+		{
+			"name": "Flying Dragon Kick",
+			"source": "Farover",
+			"className": "Monk (reworked)",
+			"classSource": "Farover",
+			"subclassSource": "Farover",
+			"subclassShortName": "Open Hand",
+			"level": 6,
+			"entries": [
+				"Starting at 6th level, you can perform a gliding kick maneouver resembling the wrath of a flying dragon.",
+				"As an action, you can launch yourself in a direction with the momentum of a powerful kick, and soar forward; moving in a straight line to an unoccupied space you can see within a distance equal to or less than your movement speed. You can move through other creatures, but not objects or terrain.",
+				"While soaring, you don’t provoke {@action opportunity attack|phb|opportunity attacks}, and each creature you move through along the way must succeed on a Strength saving throw, or be pushed 10 feet to the side. When you land, your kick slams into the ground, and each creature within 10 feet of you must succeed on a Dexterity saving throw, or take force damage equal to four rolls of your martial arts die + your Dexterity modifier.",
+				"Once you use this feature, you can not use it again until you finish a short or long rest, unless you spend 2 ki points to use it again."
+			]
+		},
+		{
+			"name": "Magic Empowered Fists",
+			"source": "Farover",
+			"className": "Monk (reworked)",
+			"classSource": "Farover",
+			"subclassSource": "Farover",
+			"subclassShortName": "Open Hand",
+			"level": 6,
+			"entries": [
+				"At 6th level, you can now bind your ki to one magical melee weapon that you carry with you and are proficient with. You can perform this meditative ritual during a short rest. You can then benefit from any magical properties the weapon might have when using your unarmed strikes, as long as you carry the weapon with you. If you ever lose the weapon, or if you bind your ki to a different weapon, the connection is lost."
+			]
+		},
+		{
+			"name": "Repelling Palm",
+			"source": "Farover",
+			"className": "Monk (reworked)",
+			"classSource": "Farover",
+			"subclassSource": "Farover",
+			"subclassShortName": "Open Hand",
+			"level": 11,
+			"entries": [
+				"Starting at 11th level, when you are hit with a melee attack, you can use your reaction to make an unarmed strike against the attacking creature if it is within your reach. If your attack hits, it deals damage, and if the creature is size Large or smaller, it is also pushed 5 feet away from you, potentially causing it to be outside its reach for the attack that hit you. If it is pushed outside of its reach, the creatures attack then instead misses you."
+			]
+		},
+		{
+			"name": "Quivering Palm",
+			"source": "Farover",
+			"className": "Monk (reworked)",
+			"classSource": "Farover",
+			"subclassSource": "Farover",
+			"subclassShortName": "Open Hand",
+			"level": 17,
+			"entries": [
+				"At 17th level, you gain the ability to set up lethal vibrations in someone’s body. When you hit a creature with an unarmed strike, you can spend 3 ki points to start these imperceptible vibrations, which last for a number of days equal to your monk level. The vibrations are harmless unless you use your action to trigger them. To do so, you and the target must be on the same plane of existence. When you use this action, the creature must make a Constitution saving throw, taking {@dice 10d12} force damage on a failed save, or half as much on a successful one. You can have only one creature under the effect of this feature at a time. You can choose to end the vibrations harmlessly without using an action."
+			]
+		},
+		{
+			"name": "Way of the Psion",
+			"source": "Farover",
+			"className": "Monk (reworked)",
+			"classSource": "Farover",
+			"subclassSource": "Farover",
+			"subclassShortName": "Psion",
+			"level": 3,
+			"entries": [
+				"Monks of the Way of the Psion focus more of their training on their minds to further unlock their psionic powers through rigorous channeling of the ki within. Psion monks are expert psychics and telekinetics, and their psionic capabilities grant them utility on par with even some of the most potent spellcasters of the world."
+			]
+		},
+		{
+			"name": "Potent Psionics",
+			"source": "Farover",
+			"className": "Monk (reworked)",
+			"classSource": "Farover",
+			"subclassSource": "Farover",
+			"subclassShortName": "Psion",
+			"level": 3,
+			"entries": [
+				"Starting at 3rd level when you select this tradition, your trained psychic mind grants you the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"You gain 1 additional ki point.",
+						"Whenever you successfully hit or affect a creature with one of the following {@filter ki abilities|optionalfeatures|feature type=ka} {@italic (Cause Pain, Deflect Missile, Force of Will, Mental Repulsion, Suppressing Force, Telekinetic Move)}, you deal additional damage equal to your martial arts die × your proficiency bonus. If the ki ability normally doesn’t deal damage, the damage you deal with this feature is psychic.",
+						"After using a ki ability that costs an action, you can use a ki ability that costs a bonus action without spending any ki."
+					]
+				}
+			]
+		},
+		{
+			"name": "Cube of Force",
+			"source": "Farover",
+			"className": "Monk (reworked)",
+			"classSource": "Farover",
+			"subclassSource": "Farover",
+			"subclassShortName": "Psion",
+			"level": 6,
+			"entries": [
+				"Starting at 6th level, you can create a cube of force in a spot you can see within 30 feet. The cube is 10 feet per side, and can be either opaque or transparent. Nothing can physically pass through the cube, and it can only be destroyed by a {@spell Disintegrate} spell. If the cube is in a creature’s space when it appears, the creature is pushed to the closest square outside of the cube. The cube can not be created if creatures pushed out of it don’t have enough free space. You can create the cube as an action, or as a reaction when you or an ally would be hit by a weapon or spell attack to block that attack. The cube lasts for an amount of minutes equal to your Wisdom modifier. You can only have one cube active at a time.",
+				"Once you use this feature, you must finish a short or long rest before you can use it again, unless you use 2 ki points to use it again."
+			]
+		},
+		{
+			"name": "Adaptive Psyche",
+			"source": "Farover",
+			"className": "Monk (reworked)",
+			"classSource": "Farover",
+			"subclassSource": "Farover",
+			"subclassShortName": "Psion",
+			"level": 11,
+			"entries": [
+				"At 11th level, you gain resistance to psychic damage. Also, when you succeed on a saving throw against a spell or magical effect that deals damage, you gain temporary hit points equal to your Constitution + Wisdom modifiers. You gain these temporary hit points before taking any potential damage from the spell or magical effect."
+			]
+		},
+		{
+			"name": "Psionic Flight",
+			"source": "Farover",
+			"className": "Monk (reworked)",
+			"classSource": "Farover",
+			"subclassSource": "Farover",
+			"subclassShortName": "Psion",
+			"level": 17,
+			"entries": [
+				"Beginning at 17th level, when you fly with your {@classFeature Mystical Ascendance|Monk (reworked)|Farover|10} feature, you don’t spend extra movement to fly, you can use actions as normal while flying, and you don’t fall at the end of your turns."
+			]
+		},
 		{
 			"name": "Affinity of the Moon",
 			"source": "Farover",
