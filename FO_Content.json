@@ -465,7 +465,7 @@
 			"subclassShortName": "Kensei",
 			"level": 17,
 			"entries": [
-				"At 17th level, your kensei weapons become not just an extension of your body, but of your mind as well. You can spend a short rest attuning to any kensei weapon, and create a psionic bond between your mind and it. The weapon hovers in your space when you draw it, and it functions as an additional off-hand weapon for the purposes of two-weapon fighting, regardless of what weapons you are holding in your hands."
+				"At 17th level, your kensei weapons become not just an extension of your body, but of your mind as well. You can spend a short rest attuning to any kensei weapon, and create a psionic bond between your mind and it. The weapon hovers in your space when you draw it, and it functions as an additional off-hand weapon for the purposes of {@variantrule two-weapon fighting|farover|two-weapon fighting}, regardless of what weapons you are holding in your hands."
 			]
 		},
 		{
@@ -1121,7 +1121,7 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"Starting when you choose this path at 3rd level, you can use two-weapon fighting even when the melee weapons you are wielding aren't light.",
+				"Starting when you choose this path at 3rd level, you can use {@variantrule two-weapon fighting|farover|two-weapon fighting} even when the melee weapons you are wielding aren't light.",
                 "Additionally, when you roll for damage with a weapon that has the versatile property that you are wielding in one hand, you treat it as if you are wielding it with two hands.",
                 "You can now also draw or stow two weapons when you would normally be able to draw or stow one."
 			]
@@ -1150,7 +1150,7 @@
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"Starting at 10th level, you can now use two-weapon fighting even when the melee weapons you are wielding have the heavy or the two-handed properties.",
+				"Starting at 10th level, you can now use {@variantrule two-weapon fighting|farover|two-weapon fighting} even when the melee weapons you are wielding have the heavy or the two-handed properties.",
                 "In addition, due to your immense grip strength, you have advantage on Strength based rolls to maintain possession of your weapons against disarming effects, and you gain a climbing speed equal to half your base movement speed."
 			]
 		},
@@ -2762,7 +2762,7 @@
 				{
 					"type": "list",
 					"items": [
-						"When you engage in two-weapon fighting, you can add your ability modifier to the damage of your off-hand attack.",
+						"When you engage in {@variantrule two-weapon fighting|farover|two-weapon fighting}, you can add your ability modifier to the damage of your off-hand attack.",
                         "You can perform the somatic components of your slayer signs even while wielding a weapon in the same hand.",
 						"When you attack a creature that is considered surprised, you can expend 1 vigor point to deal an additional {@dice 2d4} weapon damage to the target.",
 						"You gain proficiency in the {@skill Stealth} skill if you don't already have it."
@@ -15381,6 +15381,13 @@
 			"entries": [
 				"Weapon oils are specialized chemical compounds that are effective against different types of creatures. One oil exists for every creature type (humanoid, beast, dragon, etc.), and they all have the same effect on their target. Weapon oil vials can be bought in most major towns/cities, and they cost 40g per dose, weigh 1 lb, and they last for either 5 successful weapon attacks or 24 hours, dealing 1d4 extra damage to the type of creature its meant for. Coating a weapon in oil is an action.",
 				"Characters with a proficiency with the {@item Poisoner's Kit|phb} can craft weapon oils for a cheaper price."
+			]
+		},
+		{
+			"name": "Two-Weapon Fighting",
+			"source": "Farover",
+			"entries": [
+				"When you take the {@action Attack} action on your turn and attack with a light weapon in one hand, you can make one extra attack as part of the same action. That extra attack must be made with a different light weapon in the other hand, and you dont add your ability modifier to the extra attack’s damage. You can make this extra attack only once on each of your turns. For example, if you take the attack action on your turn and have a shortsword in one hand and a dagger in the other, each of which has the light property, you can make one attack with each weapon, but you don’t add your Strength or Dexterity modifier to the damage roll of the second weapon."
 			]
 		},
 		{
