@@ -41,6 +41,20 @@
 			]
 		},
 		{
+			"name": "Path of the Bloodthirster",
+			"source": "Farover",
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"shortName": "Bloodthirster",
+			"subclassFeatures": [
+				"Path of the Bloodthirster|Barbarian||Bloodthirster|Farover|3",
+				"Bloodthirst|Barbarian||Bloodthirster|Farover|3",
+				"Bloody Regeneration|Barbarian||Bloodthirster|Farover|6",
+				"Savage Executioner|Barbarian||Bloodthirster|Farover|10",
+				"Insatiable Thirst|Barbarian||Bloodthirster|Farover|14"
+			]
+		},
+		{
 			"name": "Affinity of the Moon",
 			"source": "Farover",
 			"className": "Druid (reworked)",
@@ -1108,7 +1122,7 @@
 			"subclassShortName": "Titan",
 			"level": 3,
 			"entries": [
-				"The titan barbarian brandishes inhuman strength and massive weapons to overpower mere mortals."
+				"The titan barbarian brandishes inhuman strength and massive weapons to overpower mere mortals. Wielding weapons like no others can, the Path of the Titan is a path in pursuit of martial dominance."
 			]
 		},
 		{
@@ -1166,6 +1180,68 @@
 			"entries": [
 				"Starting at 14th level, your physical prowess resembles that of an imposing titan avatar.",
                 "Once per short rest when you enter your rage, you gain temporary hit points equal to your barbarian level, and each creature of your choice that you can see within 30 feet of you must succeed on a Wisdom saving throw (DC equal to 8 + your proficiency bonus + your Charisma modifier) or be frightened of you until the end of your next turn."
+			]
+		},
+		{
+			"name": "Path of the Bloodthirster",
+			"source": "Farover",
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassSource": "Farover",
+			"subclassShortName": "Bloodthirster",
+			"level": 3,
+			"entries": [
+				"For the bloodthirster, only the savagery of violence and the scent of blood brings out their true nature, which is that of a primal beast hungry for battle. The Path of the Bloodthirster is a path that relishes in the carnage of battle, and thrives when those battles extend for longer periods of time, allowing for the spilling of blood to truly occur."
+			]
+		},
+		{
+			"name": "Bloodthirst",
+			"source": "Farover",
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassSource": "Farover",
+			"subclassShortName": "Bloodthirster",
+			"level": 3,
+			"entries": [
+				"When you choose this path at 3rd level, your prolonged bloodshed awakens your primal instincts for violence.",
+				"While {@classFeature Rage|Barbarian||1||raging}, every successful melee attack you make against a creature gives you a charge of bloodthirst. You can have up to six charges at a time, and you lose all your charges when your rage ends.",
+				"At any point during your rage when you hit a creature with a melee attack, you can spend all your bloodthirst charges to cause that creature to begin bleeding at the beginning of each of its turns. The damage is necrotic, and the amount the target bleeds for is a die amount equal to twice your bloodthirst charges. For example, if you had four bloodthirst charges, the target bleeds for {@dice 1d8} necrotic damage. The affected creature, or another within 5 feet of it, can attempt to end the bleeding effect by using an action to make a Wisdom ({@skill Medicine}) check against the following DC: 8 + your proficiency bonus + your Strength modifier."
+			]
+		},
+		{
+			"name": "Bloody Regeneration",
+			"source": "Farover",
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassSource": "Farover",
+			"subclassShortName": "Bloodthirster",
+			"level": 6,
+			"entries": [
+				"Starting at 6th level, if you end your {@classFeature Rage|Barbarian||1} as a bonus action prematurely before it ends in any other way, you become sated and gain hit points equal to three times your bloodthirst charges."
+			]
+		},
+		{
+			"name": "Savage Executioner",
+			"source": "Farover",
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassSource": "Farover",
+			"subclassShortName": "Bloodthirster",
+			"level": 10,
+			"entries": [
+				"Starting at 10th level, your lust for violence is at its greatest when striking injured foes. Whenever you hit a {@condition wounded|farover} creature with a melee attack, you deal extra damage equal to your bloodthirst charges."
+			]
+		},
+		{
+			"name": "Insatiable Thirst",
+			"source": "Farover",
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassSource": "Farover",
+			"subclassShortName": "Bloodthirster",
+			"level": 14,
+			"entries": [
+				"Once you reach 14th level, you can now have an unlimited amount of bloodthirst charges while {@classFeature Rage|Barbarian||1||raging}."
 			]
 		},
 		{
@@ -19143,7 +19219,7 @@
 				{
 					"name": "Taste for Blood",
 					"entries": [
-						"You have advantage on melee attack rolls against any {@condition grappled} or {@condition wounded|farover} (below 25% hit points) creature."
+						"You have advantage on melee attack rolls against any {@condition grappled} or {@condition wounded|farover} creature."
 					]
 				}
 			],
