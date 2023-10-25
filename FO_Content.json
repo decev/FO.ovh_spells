@@ -13708,7 +13708,7 @@
 			],
 			"entries": [
 				"You invoke the surrounding forces of magic and loudly call the words to this spell, unleashing forth a blast of pure arcane energy. Before casting this spell, you can decide to expend up to two additional spell slots of 3rd level or higher (for a maximum of 3 spell slots in total) to increase the damage of the spell.",
-				"Roll {@dice 6d10} dice. Each additional spell slot of 3rd level or higher you decide to expend for the spell adds an additional {@dice 1d10} to the roll, up to a maximum of {@dice 8d10} with 2 additional spell slots.",
+				"Roll {@dice 5d12} dice. Each additional spell slot of 3rd level or higher you decide to expend for the spell adds an additional {@dice 1d12} to the roll, up to a maximum of {@dice 7d12} with 2 additional spell slots.",
 				"The blast hits a creature of your choice that you can see within range. The amount rolled by the dice determines how much force damage the blast deals, but it is reduced by an amount equal to the targets AC."
 			],
 			"damageInflict": [
