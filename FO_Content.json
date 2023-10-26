@@ -1205,7 +1205,7 @@
 			"entries": [
 				"When you choose this path at 3rd level, your prolonged bloodshed awakens your primal instincts for violence.",
 				"While {@classFeature Rage|Barbarian||1||raging}, every successful melee attack you make against a creature gives you a charge of bloodthirst. You can have up to six charges at a time, and you lose all your charges when your rage ends.",
-				"At any point during your rage when you hit a creature with a melee attack, you can spend all your bloodthirst charges to cause that creature to begin bleeding at the beginning of each of its turns. The damage is necrotic, and the amount the target bleeds for is a die amount equal to twice your bloodthirst charges. For example, if you had four bloodthirst charges, the target bleeds for {@dice 1d8} necrotic damage. The affected creature, or another within 5 feet of it, can attempt to end the bleeding effect by using an action to make a Wisdom ({@skill Medicine}) check against the following DC: 8 + your proficiency bonus + your Strength modifier."
+				"At any point during your rage when you damage a creature with a melee attack, you can spend all your bloodthirst charges to cause that creature to begin bleeding. The damage is necrotic, and the amount the target bleeds for is a die amount equal to twice your bloodthirst charges. For example, if you had four bloodthirst charges, the target bleeds for {@dice 1d8} necrotic damage. The target suffers this damage from the melee attack that causes the bleeding to begin, and again at the beginning of each of its turns. The affected creature, or another within 5 feet of it, can attempt to end the bleeding by using an action to make a Wisdom ({@skill Medicine}) check against the following DC: 8 + your proficiency bonus + your Strength modifier."
 			]
 		},
 		{
@@ -1217,7 +1217,7 @@
 			"subclassShortName": "Bloodthirster",
 			"level": 6,
 			"entries": [
-				"Starting at 6th level, if you end your {@classFeature Rage|Barbarian||1} as a bonus action prematurely before it ends in any other way, you become sated and gain hit points equal to three times your bloodthirst charges."
+				"Starting at 6th level, if you end your {@classFeature Rage|Barbarian||1} as a bonus action prematurely before it ends in any other way, you sate your lust for blood and gain hit points equal to three times your current bloodthirst charges."
 			]
 		},
 		{
@@ -1229,7 +1229,7 @@
 			"subclassShortName": "Bloodthirster",
 			"level": 10,
 			"entries": [
-				"Starting at 10th level, your lust for violence is at its greatest when striking injured foes. Whenever you hit a {@condition wounded|farover} creature with a melee attack, you deal extra damage equal to your bloodthirst charges."
+				"Starting at 10th level, your lust for violence is at its greatest when lives are on the line. Whenever you hit a creature with a melee attack while {@condition wounded|farover}, or if the target creature is {@condition wounded|farover}, you gain two bloodthirst charges instead of one, and you deal extra damage equal to half your barbarian level."
 			]
 		},
 		{
@@ -1241,7 +1241,8 @@
 			"subclassShortName": "Bloodthirster",
 			"level": 14,
 			"entries": [
-				"Once you reach 14th level, you can now have an unlimited amount of bloodthirst charges while {@classFeature Rage|Barbarian||1||raging}."
+				"Once you reach 14th level, you can now have an unlimited amount of bloodthirst charges while {@classFeature Rage|Barbarian||1||raging}. Bleeding caused by your {@subclassFeature Bloodthirst|Barbarian||Bloodthirster|Farover|3} feature that exceeds six charges adds an additional die for its damage following the same rule for every charge over six.",
+				"In addition, your allies are invigorated by your thirst for blood and battle. While within 60 feet of you, your allies can use the {@classFeature Reckless Attack|Barbarian||2||Reckless Attack} feature when attacking {@condition wounded|farover} creatures."
 			]
 		},
 		{
