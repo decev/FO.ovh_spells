@@ -324,7 +324,7 @@
 			"subclassFeatures": [
 				"School of the Manticore|Slayer|Farover|Manticore|Farover|3",
 				"Heightened Tolerance|Slayer|Farover|Manticore|Farover|3",
-				"Undying Mutant|Slayer|Farover|Manticore|Farover|9",
+				"Undying Mutant|Slayer|Farover|Manticore|Farover|7",
                 "Venomous Blades|Slayer|Farover|Manticore|Farover|13",
 				"Mutated Deviant|Slayer|Farover|Manticore|Farover|17"
 			]
@@ -338,7 +338,7 @@
 			"subclassFeatures": [
 				"School of the Griffon|Slayer|Farover|Griffon|Farover|3",
 				"Arcane Repertoire|Slayer|Farover|Griffon|Farover|3",
-				"Improved Sign Magic|Slayer|Farover|Griffon|Farover|9",
+				"Improved Sign Magic|Slayer|Farover|Griffon|Farover|7",
                 "Supercharge|Slayer|Farover|Griffon|Farover|13",
 				"Hastened Reflexes|Slayer|Farover|Griffon|Farover|17"
 			]
@@ -353,7 +353,7 @@
 				"School of the Bear|Slayer|Farover|Bear|Farover|3",
 				"Weapon Prowess|Slayer|Farover|Bear|Farover|3",
 				"Martial Reflexes|Slayer|Farover|Bear|Farover|3",
-				"Sharpened Technique|Slayer|Farover|Bear|Farover|9",
+				"Sharpened Technique|Slayer|Farover|Bear|Farover|7",
                 "Cruel Onslaught|Slayer|Farover|Bear|Farover|13",
 				"Devastating Strikes|Slayer|Farover|Bear|Farover|17"
 			]
@@ -367,7 +367,7 @@
 			"subclassFeatures": [
 				"School of the Viper|Slayer|Farover|Viper|Farover|3",
 				"Twin Fangs Fighting Style|Slayer|Farover|Viper|Farover|3",
-				"Viper's Mark|Slayer|Farover|Viper|Farover|9",
+				"Viper's Mark|Slayer|Farover|Viper|Farover|7",
                 "Premeditated Murder|Slayer|Farover|Viper|Farover|13",
 				"Assiduous Duelist|Slayer|Farover|Viper|Farover|17"
 			]
@@ -2576,9 +2576,9 @@
 			"classSource": "Farover",
 			"subclassSource": "Farover",
 			"subclassShortName": "Manticore",
-			"level": 9,
+			"level": 7,
 			"entries": [
-                "Starting at 9th level, your venomous blood can fortify you even against lethal damage. When you suffer damage that would reduce you to below 1 hit point, the toxicity in your veins can rush through and cauterize the wound, if you choose to.",
+                "Starting at 7th level, your venomous blood can fortify you even against lethal damage. When you suffer damage that would reduce you to below 1 hit point, the toxicity in your veins can rush through and cauterize the wound, if you choose to.",
 				"If you drop to 0 hit points and you use this feature, your current toxicity level is fully depleted, you lose any currently active {@classFeature slayer alchemy|Slayer|farover|3} effects, and you drop to 1 hit point instead.",
 				"In addition, each point of excess damage that would have brought you below 1 hit point is subtracted from the amount of toxicity points you had prior to using this feature, and you gain the sum of that calculation in the form of temporary hit points.",
 				"You can use this feature twice, and you regain all expended uses when you finish a long rest."
@@ -2630,11 +2630,9 @@
 			"subclassShortName": "Griffon",
 			"level": 3,
 			"entries": [
-                "Starting at 3rd level when you choose this subclass, your education in the arcane arts grants you an increased arsenal of low level magic. If any spells require a spell save DC or spell attack rolls, Wisdom is your spellcasting modifier. You can use your slayer medallion as a spellcasting focus for these spells.",
-				"You can learn cantrips and 1st-level spells at 3rd level, 2nd-level spells at 5th level, and 3rd-level spells at 9th level.",
-				"Casting a cantrip costs no vigor points, a 1st-level spell costs 3 vigor points, a 2nd-level spell costs 4 vigor points, and a 3rd-level spell costs 6 vigor points. These spells can be upcast to higher levels.",
-				"When you choose this subclass, you learn one additional sign or cantrip, and one spell. Your maximum vigor points are also increased by 3.",
-				"You also now learn one additional spell each time you gain a level in this class, and each time you would learn a sign, you can choose to learn a cantrip instead. You also continue learning signs or cantrips past 10th level as well, learning one every even level.",
+                "Starting at 3rd level when you choose this subclass, your education in the arcane arts grants you an increased arsenal of low level magic. If any spells require a spell save DC or spell attack rolls, Wisdom is your spellcasting modifier. You can use your {@item slayer medallion|farover} as a spellcasting focus for these spells.",
+				"When you select this subclass, your maximum vigor points are increased by 2. You also learn two cantrips, and one spell. You also learn one additional spell each time you gain a further level in this class.",
+				"You can learn 1st-level spells at 3rd level, 2nd-level spells starting at 5th level, and 3rd-level spells starting at 9th level. Casting a cantrip costs no vigor points, a 1st-level spell costs 3 vigor points, a 2nd-level spell costs 4 vigor points, and a 3rd-level spell costs 5 vigor points. These spells can be upcast to higher levels.",
 				{
                     "type": "table",
                     "caption": "School of the Griffon Spells",
@@ -2674,14 +2672,15 @@
 			"classSource": "Farover",
 			"subclassSource": "Farover",
 			"subclassShortName": "Griffon",
-			"level": 9,
+			"level": 7,
 			"entries": [
-				"Starting at 9th level, all of your {@filter signs|optionalfeatures|feature type=ss}, and each of their versions become more potent:",
-				"{@bold {@italic Barrier.}} Now also grants resistance to acid, force, thunder, and lightning damage as well.",
+				"At 7th level, you learn two additional cantrips of your choice.",
+				"Additionally, all of your {@filter signs|optionalfeatures|feature type=ss}, and both of their versions become more potent:",
+				"{@bold {@italic Barrier.}} In addition to granting resistance, bludgeoning, piercing, and slashing damage that you take is reduced by an amount equal to your proficiency bonus.",
 				"{@bold {@italic Blast.}} The range of the sign is increased by 15 feet, and the pushback distance is increased by 5 feet.",
 				"{@bold {@italic Hone.}} The reach of your honed weapon attacks is increased by 5 feet.",
-				"{@bold {@italic Ignite.}} The flames now spread around corners, so that affected creatures do not benefit from 1/2 or 3/4 cover.",
-				"{@bold {@italic Manipulate.}} The range of the sign is increased by 30 feet.",
+				"{@bold {@italic Ignite.}} You can change the area of effect of the sign to a 5-foot wide line, and double its range.",
+				"{@bold {@italic Manipulate.}} Affected creatures who miss with the attack that has disadvantage take {@dice 1d10} psychic damage.",
 				"{@bold {@italic Ring.}} The radius of the ring is increased by 5 feet."
 			]
 		},
@@ -2696,12 +2695,12 @@
 			"entries": [
 				"Starting at 13th level, you can now cast the basic versions of your basic signs without expending any vigor points.",
 				"In addition, you can now supercharge all of your signs to deal extra damage by spending additional vigor points when casting a sign. When casting any sign, you can spend up to 5 additional vigor points to supercharge the sign. Each additional vigor point used gives the sign {@dice 1d6} extra damage. The supercharged sign deals this damage when varying circumstances are met, based on the sign:",
-				"{@bold {@italic Barrier.}} When a creature's attack is resisted by the barrier for the first time for that enemy, they must make a Constitution saving throw, suffering the supercharge damage on a failed save, and half as much on a success. The damage is thunder damage.",
-				"{@bold {@italic Blast.}} When a creature makes a saving throw against your blast, they suffer the additional supercharge damage on a failed save, and half as much on a success. The damage is force damage.",
+				"{@bold {@italic Barrier.}} When a creature’s attack is resisted by the barrier, it must make a Constitution saving throw, suffering the supercharge damage on a failed save. The damage is thunder damage.",
+				"{@bold {@italic Blast.}} When a creature fails the saving throw against your blast, it suffers the additional supercharge damage, which is force damage.",
 				"{@bold {@italic Hone.}} If a weapon attack affected by your Hone hits a target, they suffer the additional supercharge damage, which is determined by the weapons damage type.",
 				"{@bold {@italic Ignite.}} The supercharge damage of ignite, which is fire, is added to the damage roll for the sign.",
-				"{@bold {@italic Manipulate.}} When a creature fails the saving throw against your manipulate, they suffer the additional supercharge damage, which is psychic damage.",
-				"{@bold {@italic Ring.}} When an enemy fails the saving throw against your ring, they suffer the supercharge damage, which is lightning damage."
+				"{@bold {@italic Manipulate.}} When a creature fails the saving throw against your manipulate, it suffers the additional supercharge damage, which is psychic damage.",
+				"{@bold {@italic Ring.}} When a creature fails the saving throw against your ring, it suffers the supercharge damage, which is lightning damage."
 			]
 		},
 		{
@@ -2768,9 +2767,10 @@
 			"classSource": "Farover",
 			"subclassSource": "Farover",
 			"subclassShortName": "Bear",
-			"level": 9,
+			"level": 7,
 			"entries": [
-				"Starting at 9th level, each version of the {@optfeature Hone|farover} sign is now a free action for you, instead of a bonus action. You can only cast Hone once per turn. The vigor point costs of the sign remain the same."
+				"Starting at 7th level, each version of the {@optfeature Hone|farover} sign is now a free action for you, instead of a bonus action. You can only cast Hone once per turn. The vigor point costs of the sign remain the same.",
+				"In addition, you can double the amount of vigor points you spend on a Hone to cause your honed attacks to cleave. Each melee attack you make affected by such a Hone targets one additional creature within your reach and 10 feet of the primary target."
 			]
 		},
 		{
@@ -2801,7 +2801,7 @@
 					"name": "Hemorrhage",
 					"entries": [
 						"You can make this attack only if you are wielding a weapon with the Versatile property.",
-                        "You make a well placed weapon attack with advantage at a weak spot of your target. If the attack hits, the weapons damage dice is doubled, and the target will begin bleeding for {@dice 1d8} necrotic damage at the beginning of each of its turns. The effect will only end if the affected creature, or another within 5 feet of it uses an action to staunch the bleeding and end the effect."
+                        "You make a well placed weapon attack with advantage at a weak spot of your target. If the attack hits, the weapons damage dice is doubled, and the target will begin bleeding for {@dice 1d8} necrotic damage at the beginning of each of its turns. The effect will only end if the affected creature, or another within 5 feet of it, uses an action to staunch the bleeding and end the effect."
 					]
 				},
 				{
@@ -2841,7 +2841,7 @@
 					"items": [
 						"When you engage in {@variantrule two-weapon fighting|farover|two-weapon fighting}, you can add your ability modifier to the damage of your off-hand attack.",
                         "You can perform the somatic components of your slayer signs even while wielding a weapon in the same hand.",
-						"When you attack a creature that is considered surprised, you can expend 1 vigor point to deal an additional {@dice 2d4} weapon damage to the target.",
+						"Whenever you attack a creature with a melee weapon attack that is either surprised, or has not yet acted in combat, you can expend 1 vigor point to deal an additional {@dice 2d4} weapon damage to the target.",
 						"You gain proficiency in the {@skill Stealth} skill if you don't already have it."
 					]
 				}
@@ -2854,9 +2854,9 @@
 			"classSource": "Farover",
 			"subclassSource": "Farover",
 			"subclassShortName": "Viper",
-			"level": 9,
+			"level": 7,
 			"entries": [
-				"At 9th level, you can silently mark a target for death as your designated prey. As a bonus action, choose one creature you can see within 120 feet of you. The target is marked for 1 minute. The mark ends early if the target dies, you die, or you are incapacitated. Until the mark ends, you gain the following benefits:",
+				"At 7th level, you can silently mark a target for death as your designated prey. As a bonus action, choose one creature you can see within 120 feet of you. The target is marked for 1 minute. The mark ends early if the target dies, you die, or you are incapacitated. Until the mark ends, you gain the following benefits:",
 				{
 					"type": "list",
 					"items": [
@@ -17577,8 +17577,7 @@
 			],
 			"entries": [
 				"As a bonus action, or as a reaction when you take damage, you draw the sign of Barrier with your fingers in the air, and a protective shield of static energy appears around you. Until the start of your next turn, the shield grants you resistance against the first time you take bludgeoning, piercing, or slashing damage.",
-				"{@bold {@italic Enhanced Barrier}}. When you cast the enhanced version of this sign, the barrier also reduces the damage you take the first time you take bludgeoning, piercing, or slashing damage by an amount equal to your proficiency modifier.",
-				"{@bold {@italic Superior Barrier}}. When you cast the superior version of this sign, the barrier lasts until the beginning of your next turn, granting resistance and damage reduction against all bludgeoning, piercing, and slashing damage until then."
+				"{@bold {@italic Enhanced Barrier}}. When you cast the enhanced version of this sign, the barrier lasts until the beginning of your next turn, granting resistance against all bludgeoning, piercing, and slashing damage until then."
 			]
 		},
 		{
@@ -17589,8 +17588,7 @@
 			],
 			"entries": [
 				"As a bonus action, you extend your hand outwards, arranging your fingers in the formation of Blast, and unleash a telekinetic shockwave. You can choose to attempt to knock creatures prone, or push them away. Each creature in a 15-foot cone must succeed on a Strength saving throw. On a failed save, you can choose to have them either pushed back 10 feet, or knocked prone.",
-				"{@bold {@italic Enhanced Blast}}. When you cast the enhanced version of this sign, creatures who fail the saving throw are subjected to both effects of the sign, knocking them prone and pushing them back.",
-				"{@bold {@italic Superior Blast}}. When you cast the superior version of this sign, the area of the sign becomes a radius centered on you with the same range, instead of a cone. You can also designate any number of creatures you can see to be unaffected by it. In addition, any creature hit by your blast suffers force damage equal to twice your Wisdom modifier."
+				"{@bold {@italic Enhanced Blast}}. When you cast the enhanced version of this sign, the area of the sign becomes a radius centered on you with the same range, instead of a cone. You can also designate any number of creatures you can see to be unaffected by it. In addition, creatures who fail the saving throw are subjected to both effects of the sign, knocking them prone and pushing them back."
 			]
 		},
 		{
@@ -17601,8 +17599,7 @@
 			],
 			"entries": [
 				"As a bonus action, you draw the sign of Hone on the hilt or guard of your weapon, and magically empower your next attack. Until the start of your next turn, you have advantage on your next weapon attack.",
-				"{@bold {@italic Enhanced Hone}}. When you cast the enhanced version of this sign, your next weapon attack until the start of your next turn will be made at advantage, and it can also hit one additional creature of your choice within your reach and within 10 feet of the primary target at disadvantage.",
-				"{@bold {@italic Superior Hone}}. When you cast the superior version of this sign, all of your weapon attacks will be made at advantage until the start of your next turn, and your next weapon attack can also hit one additional creature of your choice within your reach and within 10 feet of the primary target also at advantage."
+				"{@bold {@italic Enhanced Hone}}. When you cast the enhanced version of this sign, all of your weapon attacks will be made at advantage until the start of your next turn."
 			]
 		},
 		{
@@ -17612,9 +17609,8 @@
 				"SS"
 			],
 			"entries": [
-				"As a bonus action, you extend your hand outwards, arranging your fingers in the formation of Ignite, and unleash a gush of flames. Each creature in a 15-foot cone must make a Dexterity saving throw, or take {@dice 1d6} fire damage. The damage of this sign increases by {@dice 1d6} when you reach 5th, 9th, 13th, and 17th level.",
-				"{@bold {@italic Enhanced Ignite}}. When you cast the enhanced version of this sign, the affected targets also take half as much damage on a successful save.",
-				"{@bold {@italic Superior Ignite}}. When you cast the superior version of this sign, the sign deals maximum damage, instead of rolling."
+				"As a bonus action, you extend your hand outwards, arranging your fingers in the formation of Ignite, and unleash a gush of flames. Each creature in a 15-foot cone must make a Dexterity saving throw. A creature takes {@dice 1d6} fire damage on a failed save, or half as much damage on a successful one. The damage of this sign increases by {@dice 1d6} when you reach 5th, 9th, 13th, and 17th level.",
+				"{@bold {@italic Enhanced Ignite}}. When you cast the enhanced version of this sign, the range of the sign is increased to a 30-foot cone, and creatures who fail the saving throw are set on fire. At the end of each of its turns, a burning target repeats the saving throw, taking {@dice 1d8} fire damage on a failed save, or ending the effect on a successful one."
 			]
 		},
 		{
@@ -17629,22 +17625,14 @@
 					"type": "list",
 					"items": [
 						"You attempt to muddle the mind of one creature that can hear you and you can see within 60 feet. The target must make a Wisdom saving throw. On a failed save, it has disadvantage on the next attack roll it makes before the end of its next turn.",
-						"You attempt to beguile a creature that can hear you and you can see within 30 feet. The target must make a Wisdom saving throw. On a failed save, for the next 10 minutes, you have advantage on all Charisma checks directed at the creature as long as it isn't hostile toward you."
+						"You attempt to beguile a creature that can hear you and you can see within 30 feet. The target must make a Wisdom saving throw. For the next 10 minutes on a failed save, as long as it isn’t hostile toward you, you have advantage on all Charisma checks directed at the creature, and it has disadvantage on any Wisdom checks it makes directed at you."
 					]
 				},
 				"{@bold {@italic Enhanced Manipulate}}. When you cast the enhanced version of this sign, both of the two uses gain additional effects:",
 				{
 					"type": "list",
 					"items": [
-						"When you attempt to muddle the mind of a creature, you can target one additional creature that can hear you and you can see within 60 feet.",
-						"When you successfully beguile a creature, it also has disadvantage on any Wisdom checks and saving throws it makes for the duration, as long as it isn't hostile toward you."
-					]
-				},
-				"{@bold {@italic Superior Manipulate}}. When you cast the superior version of this sign, both of the two uses gain additional effects, in addition to the effects granted by the enhanced version:",
-				{
-					"type": "list",
-					"items": [
-						"When you successfully muddle the mind of a creature or creatures, you can also force one creature to use its reaction to take one attack at a target of your choice that is within its range. The disadvantage to the target's next attack roll is not applied to this attack.",
+						"When you successfully muddle the mind of a creature, you can also force it to use its reaction to make one attack at a target of your choice that is within its range. The disadvantage to the target’s next attack roll is not applied to this attack.",
 						"When you beguile a creature, the sign becomes a concentration spell, and it lasts for 1 hour, but the sign can not be used on a target if it is hostile toward you, or if you or creatures that are friendly to you are fighting it. When initially casting the sign on a target successfully, you can issue a verbal command to the target, which it will follow to the best of its ability on its next turn. You can keep issuing commands to the target for the duration of the spell with your actions, but before each command after the initial one, the target can repeat the saving throw, ending the effect on a successful one."
 					]
 				}
@@ -17659,9 +17647,8 @@
 			"entries": [
 				"As a bonus action, you draw a magical ring on the ground with a 15-foot radius centered on you. The ring lasts until the start of your next turn.",
 				"For the duration of the sign, the area inside the ring is considered difficult terrain for your enemies, and all invisible creatures are revealed while they are inside.",
-				"In addition, enemies inside the ring when it is cast must make a Wisdom saving throw. On a failed save, they cannot take reactions while standing inside the ring. Leaving the area of the ring ends this effect, but re-entering it resumes them.",
-				"{@bold {@italic Enhanced Ring}}. When you cast the enhanced version of this sign, ranged attacks made from outside the ring against you or any of your allies inside are made at disadvantage.",
-				"{@bold {@italic Superior Ring}}. When you cast the superior version of this sign, the ring lasts for as long as you remain inside it."
+				"In addition, enemies who attempt to take reactions while inside the ring must make a Wisdom saving throw. On a failed save, they waste their reaction doing nothing.",
+				"{@bold {@italic Enhanced Ring}}. When you cast the enhanced version of this sign, ranged attacks made from outside the ring against you or any of your allies inside are made at disadvantage, and the ring lasts for as long as you remain inside it."
 			]
 		},
 		{
@@ -17688,7 +17675,7 @@
 				}
 			],
 			"entries": [
-				"This sign costs {@bold 10} vigor points.",
+				"This sign costs {@bold 8} vigor points.",
 				"As a bonus action, you draw the sign of Expediate in the air, magically hastening your reflexes and movements for a moment.",
 				"This sign lasts for 10 minutes. The next time you roll initiative, you roll twice, making the second roll with a -10 modifier. You can take your turn twice on this round."
 			]
@@ -17788,7 +17775,7 @@
 				"SP"
 			],
 			"entries": [
-				"You gain {@dice 1d6+3} temporary hit points. This is increased by {@dice 1d6} at 8th, 13th, and 18th levels. This potion lasts for 1 hour.",
+				"You gain {@dice 2d6+3} temporary hit points. This is increased by {@dice 1d6} at 8th, 13th, and 18th levels. This potion lasts for 1 hour.",
 				"Drinking this potion increases your toxicity by {@bold 3}."
 			]
 		},
@@ -17812,6 +17799,28 @@
 			"entries": [
 				"Your weapon attacks deal an additional {@dice 1d4} thunder damage. This is increased to {@dice 1d6} at 13th level. This potion lasts for 1 minute.",
 				"Drinking this potion increases your toxicity by {@dice 3}."
+			]
+		},
+		{
+			"name": "Ember",
+			"source": "Farover",
+			"featureType": [
+				"SP"
+			],
+			"entries": [
+				"You gain resistance to fire damage. This potion lasts for 1 minute.",
+				"Drinking this potion increases your toxicity by {@dice 4}."
+			]
+		},
+		{
+			"name": "Gelid",
+			"source": "Farover",
+			"featureType": [
+				"SP"
+			],
+			"entries": [
+				"You gain resistance to cold damage. This potion lasts for 1 minute.",
+				"Drinking this potion increases your toxicity by {@dice 4}."
 			]
 		},
 		{
@@ -17843,19 +17852,8 @@
 				"SM"
 			],
 			"entries": [
-				"You have advantage on Wisdom ability checks and saving throws. While this mutagen is active your toxicity is increased by {@bold 3}.",
+				"You have advantage on Wisdom ability checks and saving throws. While this mutagen is active your toxicity is increased by {@bold 2}.",
 				"{@bold {@italic Side Effect}}. You have disadvantage on initiative rolls."
-			]
-		},
-		{
-			"name": "Impermeable",
-			"source": "Farover",
-			"featureType": [
-				"SM"
-			],
-			"entries": [
-				"You gain resistance to piercing damage. While this mutagen is active your toxicity is increased by {@bold 4}.",
-				"{@bold {@italic Side Effect}}. You gain vulnerability to slashing damage."
 			]
 		},
 		{
@@ -17865,7 +17863,7 @@
 				"SM"
 			],
 			"entries": [
-				"You have advantage on Constitution ability checks and saving throws. While this mutagen is active your toxicity is increased by {@bold 4}.",
+				"You have advantage on Constitution ability checks and saving throws. While this mutagen is active your toxicity is increased by {@bold 3}.",
 				"{@bold {@italic Side Effect}}. Your movement speed is decreased by 10 feet."
 			]
 		},
@@ -17881,14 +17879,14 @@
 			]
 		},
 		{
-			"name": "Shielded",
+			"name": "Reconstruction",
 			"source": "Farover",
 			"featureType": [
 				"SM"
 			],
 			"entries": [
-				"You gain resistance to slashing damage. While this mutagen is active your toxicity is increased by {@bold 4}.",
-				"{@bold {@italic Side Effect}}. You gain vulnerability to bludgeoning damage."
+				"Whenever you are {@condition wounded|farover}, you regain hit points equal to your Constitution modifier every round at the beginning of your turn, provided that you have at least 1 hit point. While this mutagen is active your toxicity is increased by {@bold 4}.",
+				"{@bold {@italic Side Effect}}. While you are {@condition wounded|farover}, attack rolls made against you have advantage."
 			]
 		},
 		{
@@ -17903,17 +17901,6 @@
 			]
 		},
 		{
-			"name": "Unbreakable",
-			"source": "Farover",
-			"featureType": [
-				"SM"
-			],
-			"entries": [
-				"You gain resistance to bludgeoning damage. While this mutagen is active your toxicity is increased by {@bold 4}.",
-				"{@bold {@italic Side Effect}}. You gain vulnerability to piercing damage."
-			]
-		},
-		{
 			"name": "Wise",
 			"source": "Farover",
 			"featureType": [
@@ -17921,7 +17908,7 @@
 			],
 			"entries": [
 				"Your Wisdom score increases by 3, as does your Wisdom maximum. While this mutagen is active your toxicity is increased by {@bold 4}.",
-				"{@bold {@italic Side Effect}}. You have disadvantage on Death saving throws."
+				"{@bold {@italic Side Effect}}. Your Intelligence score decreases by 3."
 			]
 		},
 		{
@@ -17932,40 +17919,7 @@
 			],
 			"entries": [
 				"Your gain a +3 to damage rolls with your weapons. While this mutagen is active your toxicity is increased by {@bold 5}.",
-				"{@bold {@italic Side Effect}}. Your Armor Class is decreased by 2."
-			]
-		},
-		{
-			"name": "Embers",
-			"source": "Farover",
-			"featureType": [
-				"SM"
-			],
-			"entries": [
-				"You gain resistance to fire damage. While this mutagen is active your toxicity is increased by {@bold 5}.",
-				"{@bold {@italic Side Effect}}. You gain vulnerability to cold damage."
-			]
-		},
-		{
-			"name": "Gelid",
-			"source": "Farover",
-			"featureType": [
-				"SM"
-			],
-			"entries": [
-				"You gain resistance to cold damage. While this mutagen is active your toxicity is increased by {@bold 5}.",
-				"{@bold {@italic Side Effect}}. You gain vulnerability to fire damage."
-			]
-		},
-		{
-			"name": "Reconstruction",
-			"source": "Farover",
-			"featureType": [
-				"SM"
-			],
-			"entries": [
-				"While you are {@condition wounded|farover}, you regain hit points equal to your Constitution modifier every 1 hour, provided that you have at least 1 hit point. While this mutagen is active your toxicity is increased by {@bold 5}.",
-				"{@bold {@italic Side Effect}}. If you are {@condition wounded|farover} and you roll initiative to enter combat, you are automatically {@book surprised|PHB|9|Surprise} on your first turn of the combat."
+				"{@bold {@italic Side Effect}}. Your AC decreases by 2."
 			]
 		},
 		{
@@ -17976,7 +17930,7 @@
 			],
 			"entries": [
 				"Your Dexterity score increases by 2, as does your Dexterity maximum. While this mutagen is active your toxicity is increased by {@bold 6}.",
-				"{@bold {@italic Side Effect}}. You have disadvantage on Wisdom ability checks and saving throws."
+				"{@bold {@italic Side Effect}}. Your Strength score decreases by 2."
 			]
 		},
 		{
@@ -17987,7 +17941,7 @@
 			],
 			"entries": [
 				"Your Strength score increases by 2, as does your Strength maximum. While this mutagen is active your toxicity is increased by {@bold 6}.",
-				"{@bold {@italic Side Effect}}. You have disadvantage on Dexterity ability checks and saving throws."
+				"{@bold {@italic Side Effect}}. Your Dexterity score decreases by 2."
 			]
 		},
 		{
@@ -18014,7 +17968,7 @@
 				}
 			],
 			"entries": [
-				"When you use the Attack action, you can make an additional weapon attack as a bonus action. While this mutagen is active your toxicity is increased by {@bold 7}.",
+				"When you use the Attack action, you can make an additional weapon attack as a bonus action. While this mutagen is active your toxicity is increased by {@bold 6}.",
 				"{@bold {@italic Side Effect}}. You have disadvantage on Intelligence and Wisdom saving throws."
 			]
 		},
@@ -20721,7 +20675,7 @@
 				]
 			},
 			"multiclassing": {
-                "requirementsSpecial": "When multiclassing into the slayer class, your character must endure a process of rigorous mutations which are extremely lethal. Roll {@dice 1d100} when multiclassing into the Slayer class. The result of the dice is the amount of poison damage you suffer. You can not multiclass into Slayer if you currently have resistance or immunity to poison damage.",
+                "requirementsSpecial": "When multiclassing into the slayer class, your character must endure a process of rigorous mutations which are extremely lethal. Roll {@dice 2d50} when multiclassing into the Slayer class. The result of the dice is the amount of poison damage you suffer. You can not multiclass into Slayer if you currently have resistance or immunity to poison damage.",
 				"requirements": {
                     "or": [
 						{
@@ -20777,7 +20731,7 @@
                             "2",
                             "8",
                             "8",
-                            "4"
+                            "5"
                         ],
                         [
                             "3",
@@ -20789,97 +20743,97 @@
                             "3",
                             "9",
                             "9",
+                            "7"
+                        ],
+                        [
+                            "4",
+                            "9",
+                            "9",
                             "8"
                         ],
                         [
                             "4",
-                            "9",
-                            "9",
+                            "10",
+                            "10",
+                            "9"
+                        ],
+                        [
+                            "5",
+                            "10",
+                            "10",
                             "10"
                         ],
                         [
-                            "4",
-                            "10",
-                            "10",
+                            "5",
+                            "11",
+                            "11",
+                            "11"
+                        ],
+                        [
+                            "6",
+                            "11",
+                            "11",
                             "12"
                         ],
                         [
-                            "5",
-                            "10",
-                            "10",
+                            "6",
+                            "12",
+                            "12",
+                            "13"
+                        ],
+                        [
+                            "6",
+                            "12",
+                            "12",
                             "14"
                         ],
                         [
-                            "5",
-                            "11",
-                            "11",
+                            "6",
+                            "13",
+                            "13",
+                            "15"
+                        ],
+                        [
+                            "6",
+                            "13",
+                            "13",
                             "16"
                         ],
                         [
                             "6",
-                            "11",
-                            "11",
+                            "15",
+                            "15",
                             "18"
                         ],
                         [
                             "6",
-                            "12",
-                            "12",
+                            "15",
+                            "15",
+                            "19"
+                        ],
+                        [
+                            "6",
+                            "16",
+                            "16",
                             "20"
                         ],
                         [
                             "6",
-                            "12",
-                            "12",
+                            "16",
+                            "16",
+                            "21"
+                        ],
+                        [
+                            "6",
+                            "17",
+                            "17",
                             "22"
                         ],
                         [
                             "6",
-                            "13",
-                            "13",
-                            "24"
-                        ],
-                        [
-                            "6",
-                            "13",
-                            "13",
-                            "26"
-                        ],
-                        [
-                            "6",
-                            "14",
-                            "14",
-                            "28"
-                        ],
-                        [
-                            "6",
-                            "14",
-                            "14",
-                            "30"
-                        ],
-                        [
-                            "6",
-                            "15",
-                            "15",
-                            "32"
-                        ],
-                        [
-                            "6",
                             "17",
                             "17",
-                            "34"
-                        ],
-                        [
-                            "6",
-                            "18",
-                            "18",
-                            "36"
-                        ],
-                        [
-                            "6",
-                            "18",
-                            "18",
-                            "All"
+                            "23"
                         ]
                     ]
                 }
@@ -20894,28 +20848,27 @@
                 "Slayer Alchemy|Slayer|Farover|3",
                 "Ability Score Improvement|Slayer|Farover|4",
                 "Extra Attack|Slayer|Farover|5",
-                "Enhanced Signs|Slayer|Farover|6",
-                "Improved Mutations|Slayer|Farover|7",
-                "Heightened Observation|Slayer|Farover|7",
-                "Ability Score Improvement|Slayer|Farover|8",
-                {
-					"classFeature": "Slayer School Feature|Slayer|Farover|9",
+                "Decoctions|Slayer|Farover|6",
+				{
+					"classFeature": "Slayer School Feature|Slayer|Farover|7",
 					"gainSubclassFeature": true
 				},
-                "Superior Signs|Slayer|Farover|10",
-                "Decoctions|Slayer|Farover|11",
+                "Ability Score Improvement|Slayer|Farover|8",
+                "Heightened Observation|Slayer|Farover|9",
+                "Enhanced Signs|Slayer|Farover|10",
+                "Improved Mutations|Slayer|Farover|11",
                 "Ability Score Improvement|Slayer|Farover|12",
                 {
 					"classFeature": "Slayer School Feature|Slayer|Farover|13",
 					"gainSubclassFeature": true
 				},
-                "Finalized Mutations|Slayer|Farover|14",
-                "Venomous Body|Slayer|Farover|15",
+                "Venomous Body|Slayer|Farover|14",
                 "Ability Score Improvement|Slayer|Farover|16",
                 {
 					"classFeature": "Slayer School Feature|Slayer|Farover|17",
 					"gainSubclassFeature": true
 				},
+				"Finalized Mutations|Slayer|Farover|18",
                 "Ability Score Improvement|Slayer|Farover|19",
                 "Master Slayer|Slayer|Farover|20"
             ]
@@ -22417,7 +22370,7 @@
                         "When making checks to track or recall general information about any non-humanoid creature, you have advantage on the roll."
 					]
 				},
-                "Your mutations will continue to develop, granting you additional benefits at 7th and 14th levels."
+                "Your mutations will continue to develop, granting you additional benefits at 11th and 18th levels."
 			]
 		},
         {
@@ -22434,8 +22387,7 @@
 					"name": "Vigor Points",
 					"entries": [
                         "Casting your signs costs you vigor points. Vigor points are an expendable resource, and the amount of vigor points you have is shown in the Vigor Points column of the Slayer table. On a short rest, you regain an amount of vigor points equal to your proficiency bonus, and on a long rest, you regain all of your vigor points.",
-                        "A basic sign costs 2 vigor points. At later levels, you learn how to cast empowered versions of your signs. When casting a sign of a higher version, the sign retains its effects and benefits from all of the lesser versions.",
-                        "At 6th level, you learn how to cast enhanced signs, which cost 3 vigor points. At 10th level, you learn how to cast superior signs, which cost 5 vigor points."
+                        "A basic sign costs 2 vigor points to cast. At 10th level, you learn how to cast enhanced signs, which cost 4 vigor points."
 					]
 				},
                 {
@@ -22462,7 +22414,7 @@
 			"level": 3,
             "entries": [
                 "Starting at 3rd level, slayers decide which school they want to follow. Each school offers a variety of skills, techniques and knowledge, which reflects the approach of its members.",
-                "Your choice grants you features at 3rd level and again at 9th, 13th, and 17th level."
+                "Your choice grants you features at 3rd level and again at 7th, 13th, and 17th level."
 			]
 		},
         {
@@ -22473,7 +22425,7 @@
 			"level": 3,
             "entries": [
                 "Starting at 3rd level, you learn how to craft {@filter special consumable items|optionalfeatures|feature type=sp;sm} with your {@item Alchemist's Supplies|phb} made specifically for slayers. These potent consumables are poisonous for normal humanoids, but your mutations allow your body to digest them only at the cost of some side effects. If a non-slayer consumes a product of slayer alchemy, the item's effects are not applied, but they must succeed on a DC 18 Constitution saving throw, or be poisoned until they finish a long rest.",
-                "At 3rd level, you can craft both {@filter potions|optionalfeatures|feature type=sp} and {@filter mutagens|optionalfeatures|feature type=sm}, and you know the formulae to create four potions and/or mutagens. You learn two additional formulae each time you gain a level in this class.",
+                "At 3rd level, you can craft both {@filter potions|optionalfeatures|feature type=sp} and {@filter mutagens|optionalfeatures|feature type=sm}, and you know the formulae to create five potions and/or mutagens. You learn one additional formulae each time you gain a level in this class.",
                 "Crafting your consumable items with your Slayer Alchemy is done when you finish a short or long rest. Each item crafted takes 1 minute. You can create a number of items up to an amount equal to your {@bold {@italic Wisdom modifier + your proficiency bonus}}. You can craft multiples of one kind of item. Unconsumed items created by your slayer alchemy only last until you finish your next short rest, after which they lose their potency and become inert, which means unused items must be remade each short rest.",
                 "{@bold {@italic Potions.}} Slayer {@filter potions|optionalfeatures|feature type=sp} can be consumed with a bonus action, and they last for varied amounts of time.",
                 "{@bold {@italic Mutagens.}} Slayer {@filter mutagens|optionalfeatures|feature type=sm} can be consmued with an action, and they last until you finish a long rest. You gain toxicity when you consume a mutagen, and toxicity gained from a mutagen can not be lost by resting while the mutagen remains active. While one or more mutagens are affecting you, you can use an action to focus and flush them from your system, ending the effects and side effects of all mutagens. Toxicity from mutagens is not removed when doing so.",
@@ -22483,7 +22435,7 @@
 					"entries": [
                         "With your Slayer Alchemy ability, one side effect for the consumable items is toxicity. As the resource that limits your ability to consume these items, your toxicity level rises each time you consume a toxic slayer alchemy item. Doing so, your veins and your blood become darker, turning into a black liquid when you near your toxicity limit.",
                         "The limit of your toxicity level is shown in the Toxicity Limit column of the Slayer table, and this limit increases as you gain levels in this class. If a consumable item would bring you above your toxicity limit, you can not consume that item.",
-                        "Your toxicity level is completely depleted on a long rest, bringing you back to 0 toxicity. In addition, you can voluntarily lose toxicity points equal to your proficiency bonus each time you finish a short rest. If you are under the effects of a {@filter mutagen|optionalfeatures|feature type=sm}, you can not lose any toxicity points being caused by the mutagen in this way."
+                        "Your toxicity level is completely depleted on a long rest, bringing you back to 0 toxicity. In addition, you can voluntarily lose up to 2 toxicity points each time you finish a short rest. If you are under the effects of a {@filter mutagen|optionalfeatures|feature type=sm}, you can not lose any toxicity points being caused by the mutagen in this way."
 					]
 				}
 			]
@@ -22510,31 +22462,38 @@
 			]
 		},
         {
-			"name": "Enhanced Signs",
+			"name": "Decoctions",
 			"source": "Farover",
 			"className": "Slayer",
 			"classSource": "Farover",
 			"level": 6,
             "entries": [
-                "Starting at 6th level, you unlock the ability to cast stronger versions of your {@filter signs|optionalfeatures|feature type=ss}, called enhanced signs. Enhanced signs cost 3 vigor points to cast instead of 2."
+                "At 6th level, your increased knowledge and developed mutations allow you to craft and digest incredibly poisonous Slayer Alchemy items called decoctions. Decoctions are made using the remains or the essence of monsters you slay as their main ingredient with your {@classFeature slayer alchemy|Slayer|farover|3} feature.",
+                "When you slay a monster, you can spend 1 minute harvesting an ingredient from it's remains. Using your {@item Alchemist's Supplies|phb}, you can craft a decoction from this ingredient. This is done as part of your normal {@classFeature slayer alchemy|Slayer|farover|3} crafting during a rest.",
+                "When you craft a decoction, you decide which one attribute from the slain monster you wish to encapsulate in the decoction, which can be {@bold an ability score, natural AC, damage resistance, damage immunity, condition immunity, or sense}. The attribute can be any specific one you are aware of, or a general one such as {@italic whatever is the creature's highest ability score}. Work with your DM to determine the attribute, since your DM might not reveal unknown attributes of a creature.",
+                "You can only have one decoction at a time. To harvest the ingredient for a second decoction means you have to consume or discard the first decoction.",
+                "You can consume a decoction as an action, and it's effects last for 10 minutes. For the duration, you gain the attribute of the monster from which the decoction was made. Consuming a decoction increases your toxicity by 5."
 			]
 		},
-        {
-			"name": "Improved Mutations",
+		{
+			"name": "Slayer School Feature",
 			"source": "Farover",
 			"className": "Slayer",
 			"classSource": "Farover",
 			"level": 7,
             "entries": [
-                "At 7th level, your slayer mutations develop even further, granting you additional benefits:",
-                {
-					"type": "list",
-					"items": [
-						"You gain immunity to the negative effects of magical and non-magical {@table aging effects|farover|aging}, disease, and the {@condition poisoned} condition. Your mind still ages with time, but your body remains at the age at which you reached level 7. You can not die of old age.",
-						"You gain expertise in the {@skill Perception} skill.",
-                        "You no longer need to sleep normally, and you can instead meditate, remaining semiconscious. A night's rest which is normally 8 hours requires you to only meditate for 4 hours."
-					]
-				}
+                "At 7th level, you gain a feature granted to you by your Slayer School."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "Farover",
+			"className": "Slayer",
+			"classSource": "Farover",
+			"level": 8,
+            "entries": [
+                "When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+                "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
 			]
 		},
 		{
@@ -22542,9 +22501,9 @@
 			"source": "Farover",
 			"className": "Slayer",
 			"classSource": "Farover",
-			"level": 7,
+			"level": 9,
 			"entries": [
-				"At 7th level, your inhuman senses and vast experience allows you to learn some features about your non-humanoid enemies. By observing a monster for at least 1 minute outside of combat, you learn information about its capabilities. You can only do this to a specific creature once a day. After 1 minute of successfully observing, roll 2d6, rerolling duplicates. The result of the dice indicates the information you are able to glean, as follows:",
+				"At 9th level, your inhuman senses and vast experience allows you to learn some features about your non-humanoid enemies. By observing a monster for at least 1 minute outside of combat, you learn information about its capabilities. You can only do this to a specific creature once a day. After 1 minute of successfully observing, roll 2d6, rerolling duplicates. The result of the dice indicates the information you are able to glean, as follows:",
 				{
 					"type": "list",
 					"items": [
@@ -22558,49 +22517,32 @@
 				}
 			]
 		},
-        {
-			"name": "Decoctions",
-			"source": "Farover",
-			"className": "Slayer",
-			"classSource": "Farover",
-			"level": 11,
-            "entries": [
-                "At 11th level, your increased knowledge and developed mutations allow you to craft and digest incredibly poisonous Slayer Alchemy items called decoctions. Decoctions are made using the remains or the essence of monsters you slay as their main ingredient with your {@classFeature slayer alchemy|Slayer|farover|3} feature.",
-                "When you slay a monster, you can spend 1 minute harvesting an ingredient from it's remains. Using your {@item Alchemist's Supplies|phb}, you can craft a decoction from this ingredient. This is done as part of your normal {@classFeature slayer alchemy|Slayer|farover|3} crafting during a rest.",
-                "When you craft a decoction, you decide which one attribute from the slain monster you wish to encapsulate in the decoction, which can be {@bold an ability score, natural AC, damage resistance, damage immunity, condition immunity, or sense}. The attribute can be any specific one you are aware of, or a general one such as {@italic whatever is the creature's highest ability score}. Work with your DM to determine the attribute, since your DM might not reveal unknown attributes of a creature.",
-                "You can only have one decoction at a time. To harvest the ingredient for a second decoction means you have to consume or discard the first decoction.",
-                "You can consume a decoction as an action, and it's effects last for 10 minutes. For the duration, you gain the attribute of the monster from which the decoction was made. Consuming a decoction increases your toxicity by 5."
-			]
-		},
-        {
-			"name": "Ability Score Improvement",
-			"source": "Farover",
-			"className": "Slayer",
-			"classSource": "Farover",
-			"level": 8,
-            "entries": [
-                "When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-                "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
-			]
-		},
-        {
-			"name": "Slayer School Feature",
-			"source": "Farover",
-			"className": "Slayer",
-			"classSource": "Farover",
-			"level": 9,
-            "entries": [
-                "At 9th level, you gain a feature granted to you by your Slayer School."
-			]
-		},
-        {
-			"name": "Superior Signs",
+		{
+			"name": "Enhanced Signs",
 			"source": "Farover",
 			"className": "Slayer",
 			"classSource": "Farover",
 			"level": 10,
             "entries": [
-                "Starting at 10th level, you unlock the ability to cast the strongest versions of your {@filter signs|optionalfeatures|feature type=ss}, called superior signs. Superior signs cost 5 vigor points."
+                "Starting at 10th level, you unlock the ability to cast stronger versions of your {@filter signs|optionalfeatures|feature type=ss}, called enhanced signs. Enhanced signs cost 4 vigor points."
+			]
+		},
+        {
+			"name": "Improved Mutations",
+			"source": "Farover",
+			"className": "Slayer",
+			"classSource": "Farover",
+			"level": 11,
+            "entries": [
+                "At 11th level, your slayer mutations develop even further, granting you additional benefits:",
+                {
+					"type": "list",
+					"items": [
+						"You gain immunity to the negative effects of magical and non-magical {@table aging effects|farover|aging}, disease, and the {@condition poisoned} condition. Your mind still ages with time, but your body remains at the age at which you reached level 7. You can not die of old age.",
+						"You gain expertise in the {@skill Perception} skill.",
+                        "You no longer need to sleep normally, and you can instead meditate, remaining semiconscious. A night's rest which is normally 8 hours requires you to only meditate for 4 hours."
+					]
+				}
 			]
 		},
         {
@@ -22624,35 +22566,17 @@
                 "At 13th level, you gain a feature granted to you by your Slayer School."
 			]
 		},
-        {
-			"name": "Finalized Mutations",
+		{
+			"name": "Venomous Body",
 			"source": "Farover",
 			"className": "Slayer",
 			"classSource": "Farover",
 			"level": 14,
             "entries": [
-                "At 14th level, your slayer mutations begin to complete themselves into their perfected form. You gain the following benefits:",
-                {
-					"type": "list",
-					"items": [
-						"You can't be surprised, unless you are meditating.",
-						"You gain resistance to poison damage.",
-                        "You gain proficiency in Constitution saving throws."
-					]
-				}
+                "Starting at 14th level, when an enemy hits you with a melee attack, you can use your reaction to cause the enemy to suffer poison damage. The attacking creature must make a Constitution saving throw against your sign save DC, suffering poison damage equal to your current toxicity level on a failed save, or half as much on a successful one."
 			]
 		},
-        {
-			"name": "Venomous Body",
-			"source": "Farover",
-			"className": "Slayer",
-			"classSource": "Farover",
-			"level": 15,
-            "entries": [
-                "Starting at 15th level, when an enemy hits you with a melee attack, you can use your reaction to cause the enemy to suffer poison damage. The attacking creature must make a Constitution saving throw against your sign save DC, suffering poison damage equal to your current toxicity level on a failed save, or half as much on a successful one."
-			]
-		},
-        {
+		{
 			"name": "Ability Score Improvement",
 			"source": "Farover",
 			"className": "Slayer",
@@ -22663,7 +22587,7 @@
                 "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
 			]
 		},
-        {
+		{
 			"name": "Slayer School Feature",
 			"source": "Farover",
 			"className": "Slayer",
@@ -22671,6 +22595,24 @@
 			"level": 17,
             "entries": [
                 "At 17th level, you gain a feature granted to you by your Slayer School."
+			]
+		},
+        {
+			"name": "Finalized Mutations",
+			"source": "Farover",
+			"className": "Slayer",
+			"classSource": "Farover",
+			"level": 18,
+            "entries": [
+                "At 18th level, your slayer mutations begin to complete themselves into their perfected form. You gain the following benefits:",
+                {
+					"type": "list",
+					"items": [
+						"You can't be surprised, unless you are meditating.",
+						"You gain resistance to poison damage.",
+                        "You gain proficiency in Constitution saving throws."
+					]
+				}
 			]
 		},
         {
