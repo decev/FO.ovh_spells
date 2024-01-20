@@ -4675,8 +4675,8 @@
 			},
 			"entries": [
 				"This spell can either enchant a non-magical item into a magical item of common quality, or move an enchantment from one magical item of uncommon or lower quality into a non-magical item.",
-				"Creating a magical item from a non-magical item: The item being created can be an item in an official sourcebook, or a custom one of similar strength/usefulness, but either way the enchantment is done at the DM's discretion.",
-				"Moving an enchantment to a non-magical item: The item being created can be one with the same enchantment as the original item (for example moving a +1 enchantment from a longsword to a greataxe), or it can change to a different enchantment of similar strength when moving it (for example making Goggles of Night out of a Cloak of the Manta Ray), but either way the enchantment is done at the DM's discretion."
+				"{@bold {@italic Creating a magical item from a non-magical item.}} The item being created can be an item in an official sourcebook, or a custom one of similar strength/usefulness, but either way the enchantment is done at the DM's discretion.",
+				"{@bold {@italic Moving an enchantment to a non-magical item.}} The item being created can be one with the same enchantment as the original item (for example moving a +1 enchantment from a longsword to a greataxe), or it can change to a different enchantment of similar strength when moving it (for example making {@item Goggles of Night} out of a {@item Cloak of the Manta Ray}), but either way the enchantment is done at the DM's discretion."
 			],
 			"classes": {
 				"fromClassList": [
@@ -5047,8 +5047,8 @@
 			},
 			"entries": [
 				"This spell can either enchant a non-magical item into a magical item of uncommon quality, or move an enchantment from one magical item of rare or lower quality into a non-magical item.",
-				"Creating a magical item from a non-magical item: The item being created can be an item in an official sourcebook, or a custom one of similar strength/usefulness, but either way the enchantment is done at the DM's discretion.",
-				"Moving an enchantment to a non-magical item: The item being created can be one with the same enchantment as the original item (for example moving a +2 enchantment from a longsword to a greataxe), or it can change to a different enchantment of similar strength when moving it (for example making an Amulet of Health out of a pair of Boots of Speed), but either way the enchantment is done at the DM's discretion."
+				"{@bold {@italic Creating a magical item from a non-magical item.}} The item being created can be an item in an official sourcebook, or a custom one of similar strength/usefulness, but either way the enchantment is done at the DM's discretion.",
+				"{@bold {@italic Moving an enchantment to a non-magical item.}} The item being created can be one with the same enchantment as the original item (for example moving a +2 enchantment from a longsword to a greataxe), or it can change to a different enchantment of similar strength when moving it (for example making an {@item Amulet of Health} out of a pair of {@item Boots of Speed}), but either way the enchantment is done at the DM's discretion."
 			],
 			"miscTags": [
 				"HL"
@@ -5890,8 +5890,8 @@
 			},
 			"entries": [
 				"This spell can either enchant a non-magical item into a magical item of rare quality, or move an enchantment from one magical item of very rare or lower quality into a non-magical item.",
-				"Creating a magical item from a non-magical item: The item being created can be an item in an official sourcebook, or a custom one of similar strength/usefulness, but either way the enchantment is done at the DM's discretion.",
-				"Moving an enchantment to a non-magical item: The item being created can be one with the same enchantment as the original item (for example moving a +3 enchantment from a longsword to a greataxe), or it can change to a different enchantment of similar strength when moving it (for example making an Animated Shield out of a Carpet of Flying), but either way the enchantment is done at the DM's discretion."
+				"{@bold {@italic Creating a magical item from a non-magical item.}} The item being created can be an item in an official sourcebook, or a custom one of similar strength/usefulness, but either way the enchantment is done at the DM's discretion.",
+				"{@bold {@italic Moving an enchantment to a non-magical item.}} The item being created can be one with the same enchantment as the original item (for example moving a +3 enchantment from a longsword to a greataxe), or it can change to a different enchantment of similar strength when moving it (for example making an {@item Animated Shield} out of a {@item Carpet of Flying}), but either way the enchantment is done at the DM's discretion."
 			],
 			"classes": {
 				"fromClassList": [
