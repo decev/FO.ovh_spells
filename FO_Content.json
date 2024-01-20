@@ -2850,7 +2850,7 @@
 					"items": [
 						"When you engage in {@variantrule two-weapon fighting|farover|two-weapon fighting}, you can add your ability modifier to the damage of your off-hand attack.",
                         "You can perform the somatic components of your slayer signs even while wielding a weapon in the same hand.",
-						"Whenever you attack a creature with a melee weapon attack that is either surprised, or has not yet acted in combat, you can expend 1 vigor point to deal an additional {@dice 2d4} weapon damage to the target.",
+						"Whenever you hit a creature with a melee weapon attack that is either surprised, or has not yet acted in combat, you can expend 1 vigor point to deal an additional {@dice 2d4} weapon damage to the target.",
 						"You gain proficiency in the {@skill Stealth} skill if you don't already have it."
 					]
 				}
