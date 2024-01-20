@@ -2660,6 +2660,14 @@
                         [
                             "3rd",
                             "{@spell ashardalon's stride|ftd}, {@spell cloak of flies|farover}, {@spell darklight|farover}, {@spell elemental weapon}, {@spell enemies abound|xge}, {@spell glyph of warding}, {@spell identify curse|farover}, {@spell magic circle}, {@spell poison skin|farover}, {@spell remove curse|farover}, {@spell wind wall}"
+                        ],
+						[
+                            "4th",
+                            "{@spell arcane eye}, {@spell banishment}, {@spell charm monster|xge}, {@spell compulsion}, {@spell confusion}, {@spell dimensional anchor|farover}, {@spell fire shield}, {@spell locate creature}, {@spell shadow of moil|xge}, {@spell stoneskin|farover}, {@spell unfailing endurance|farover}"
+                        ],
+						[
+                            "5th",
+                            "{@spell banishing smite}, {@spell control winds|xge}, {@spell dominate person}, {@spell geas}, {@spell hold monster}, {@spell mislead}, {@spell modify memory}, {@spell planar binding}"
                         ]
                     ]
                 }
