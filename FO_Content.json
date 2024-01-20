@@ -2632,7 +2632,8 @@
 			"entries": [
                 "Starting at 3rd level when you choose this subclass, your education in the arcane arts grants you an increased arsenal of low level magic. If any spells require a spell save DC or spell attack rolls, Wisdom is your spellcasting modifier. You can use your {@item slayer medallion|farover} as a spellcasting focus for these spells.",
 				"When you select this subclass, your maximum vigor points are increased by 2. You also learn two cantrips, and one spell. You also learn one additional spell each time you gain a further level in this class.",
-				"You can learn 1st-level spells at 3rd level, 2nd-level spells starting at 5th level, and 3rd-level spells starting at 9th level. Casting a cantrip costs no vigor points, a 1st-level spell costs 3 vigor points, a 2nd-level spell costs 4 vigor points, and a 3rd-level spell costs 5 vigor points. These spells can be upcast to higher levels.",
+				"You can learn 1st-level spells at 3rd level, 2nd-level spells starting at 5th level, 3rd-level spells at 9th level, 4th-level spells at 13th level, and 5th-level spells at 17th level.",
+				"Casting a cantrip costs no vigor points. A 1st-level spell costs 3 vigor points, a 2nd-level costs 4, a 3rd-level costs 5, a 4th-level costs 6, and a 5th-level costs 7. These spells can be upcast to higher levels.",
 				{
                     "type": "table",
                     "caption": "School of the Griffon Spells",
