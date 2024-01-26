@@ -160,22 +160,6 @@
 			]
 		},
 		{
-            "name": "Elemental Magic",
-            "source": "Farover",
-            "className": "Sorcerer",
-            "classSource": "PHB",
-            "shortName": "Elemental",
-            "subclassFeatures": [
-                "Elemental Magic|Sorcerer||Elemental|Farover|1",
-                "Nature's Arsenal|Sorcerer||Elemental|Farover|1",
-                "Transmuted Spell|Sorcerer||Elemental|Farover|1",
-                "Curse of the Elements|Sorcerer||Elemental|Farover|1",
-                "Liquid Defense|Sorcerer||Elemental|Farover|6",
-                "Interplanar Trigger|Sorcerer||Elemental|Farover|14",
-                "Cauterization|Sorcerer||Elemental|Farover|18"
-            ]
-        },
-		{
 			"name": "Beast Conclave",
 			"source": "Farover",
 			"className": "Ranger (reworked)",
@@ -190,6 +174,22 @@
 				"Superior Beast's Defense|Ranger (reworked)|Farover|Beast|Farover|15"
 			]
 		},
+		{
+        	"name": "Elemental Magic",
+        	"source": "Farover",
+        	"className": "Sorcerer",
+        	"classSource": "PHB",
+        	"shortName": "Elemental",
+        	"subclassFeatures": [
+            	"Elemental Magic|Sorcerer||Elemental|Farover|1",
+            	"Nature's Arsenal|Sorcerer||Elemental|Farover|1",
+            	"Transmuted Spell|Sorcerer||Elemental|Farover|1",
+            	"Curse of the Elements|Sorcerer||Elemental|Farover|1",
+            	"Liquid Defense|Sorcerer||Elemental|Farover|6",
+            	"Interplanar Trigger|Sorcerer||Elemental|Farover|14",
+            	"Cauterization|Sorcerer||Elemental|Farover|18"
+        	]
+        },
         {
 			"name": "Deep Stalker Conclave",
 			"source": "Farover",
@@ -4772,7 +4772,7 @@
 				"ritual": true
 			},
 			"entries": [
-				"This spell can identify the properties of any curse afflicting any creature or item."
+				"This spell can identify the potency and properties of any curse afflicting a creature or item."
 			],
 			"classes": {
 				"fromClassList": [
@@ -4829,68 +4829,6 @@
 			],
 			"classes": {
 				"fromClassList": [
-					{
-						"name": "Wizard",
-						"source": "PHB"
-					}
-				]
-			}
-		},
-		{
-			"name": "Time Pool",
-			"source": "Farover",
-			"page": 0,
-			"level": 6,
-			"school": "D",
-			"time": [
-				{
-					"number": 1,
-					"unit": "minute"
-				}
-			],
-			"range": {
-				"type": "point",
-				"distance": {
-					"type": "touch"
-				}
-			},
-			"components": {
-				"v": true,
-				"s": true,
-				"m": {
-					"text": "a pinch of powdered quartz worth 200g, which the spell consumes",
-					"consume": true
-				}
-			},
-			"duration": [
-				{
-					"type": "timed",
-					"duration": {
-						"type": "minute",
-						"amount": 10
-					}
-				}
-			],
-			"entries": [
-				"This spell allows the caster to cause a mirror, a pool of water, or any other reflective surface to reveal a specific event from the past. The image provides a perfectly clear picture with normal sounds, as if the caster were present at the scene. The image continues for the duration of the spell.",
-				"The spell's success is not automatic. The caster must know the general nature of the event he wishes to view (i.e., \"Show me the murder of King Thamak\"). The caster's base chance of viewing the desired scene is 50%, modified as follows, to a maximum of 90%:",
-				"Add 20% if the caster has successfully used time pool to observe the same event before.",
-				"Only one of the following may apply:",
-				"Add 20% if the event is one in which the caster participated.",
-				"Add 10% if the caster is well informed about the event.",
-				"Add 5% if the caster is slightly informed about the event.",
-				"Time pool will not reveal images from other planes of existence. The caster cannot communicate or otherwise interact with the time pool image. Spells cannot be cast into the time pool. If the casting of the spell fails, the image on the reflective surface will simply fizzle out."
-			],
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Cleric",
-						"source": "PHB"
-					},
-					{
-						"name": "Druid",
-						"source": "PHB"
-					},
 					{
 						"name": "Wizard",
 						"source": "PHB"
@@ -6797,47 +6735,6 @@
 			}
 		},
 		{
-			"name": "Thoughtwave",
-			"source": "Farover",
-			"page": 0,
-			"level": 5,
-			"school": "D",
-			"time": [
-				{
-					"number": 1,
-					"unit": "action"
-				}
-			],
-			"range": {
-				"type": "point",
-				"distance": {
-					"type": "plane"
-				}
-			},
-			"components": {
-				"v": true,
-				"s": true
-			},
-			"duration": [
-				{
-					"type": "instant"
-				}
-			],
-			"entries": [
-				"Thoughtwave allows the cleric to send a short but powerful message to one or more specific individuals anywhere on the same plane of existence, informing them of the casters situation and general location. The spell instantly generates a powerful mental impulse indicative of the caster's general mental state--anger, fear, pain, despair, etc., in addition to a message up to twenty-five words in length.",
-				"The caster can designate as many as ten people to receive this message, provided they can all be specifically named or grouped in a general category. If more than ten individuals are in a designated group, those closest to the source will receive the impulse.",
-				"Creatures receiving the impulse automatically know who sent it (even if they have never met the cleric before) and gain a clear indication of the mood and situation of the caster. Recipients also intuitively know the general source of the spell, although they are unable to pinpoint rooms, dungeon levels, or landmarks."
-			],
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Cleric",
-						"source": "PHB"
-					}
-				]
-			}
-		},
-		{
 			"name": "Creeping Shadow",
 			"source": "Farover",
 			"page": 0,
@@ -7022,7 +6919,7 @@
 		},
 		{
 			"name": "Sending",
-			"source": "Farover",
+			"source": "",
 			"level": 3,
 			"school": "V",
 			"time": [
@@ -7034,14 +6931,17 @@
 			"range": {
 				"type": "point",
 				"distance": {
-					"type": "unlimited"
+					"type": "miles",
+					"amount": 30
 				}
 			},
 			"components": {
 				"v": true,
 				"s": true,
 				"m": {
-					"text": "a silver ingot worth at least 10 gp, which the spell consumes"
+					"text": "{@item silver|phb} worth at least 10 gp, which the spell consumes",
+					"consume": true,
+					"cost": 500
 				}
 			},
 			"duration": [
@@ -7054,8 +6954,7 @@
 				}
 			],
 			"entries": [
-				"You send a short message of twenty-five words or less to a creature with which you are familiar. The creature hears the message in its mind, recognizes you as the sender if it knows you, and can answer in a like manner immediately. The spell enables creatures with Intelligence scores of at least 1 to understand the meaning of your message.",
-				"You can send the message across any distance and even to other planes of existence, but if the target is on a different plane than you, there is a {@chance 5|||Message lost!|Message arrives} chance that the message doesn't arrive."
+				"You send a short message of twenty-five words or less to a creature with which you are familiar. If the creature is within 30 miles (50 km), it hears the message in its mind; otherwise, the spell fails. The target recognizes you as the sender if it knows you, and can answer in a like manner within a few moments after receiving the message. A target of this spell can mentally block out an incoming message if it is unwilling to hear it."
 			],
 			"classes": {
 				"fromClassList": [
@@ -7075,9 +6974,10 @@
 			},
 			"entriesHigherLevel": [
 				{
+					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"When you cast this spell using a spell slot of 4th level or higher, the amount of words that can be sent in the message is doubled for each slot level above 3rd, up to a maximum of 1600 words at 9th level."
+						"When you cast this spell using a spell slot of 4th level or higher, the amount of words that can be sent in the message is increased by 25, and the range of the spell is increased by 30 miles (50 km) for each slot level above 3rd, up to a maximum of 175 words and 210 miles (350 km) at 9th level."
 					]
 				}
 			]
@@ -8513,8 +8413,6 @@
 		{
 			"name": "Detect Magic",
 			"source": "Farover",
-			"page": 231,
-			"basicRules": true,
 			"level": 1,
 			"school": "D",
 			"time": [
@@ -8547,8 +8445,7 @@
 				"ritual": true
 			},
 			"entries": [
-				"For the duration, you sense the presence of magic within 30 feet of you. If you sense magic in this way, you can use your action to see a faint aura around any visible creature or object in the area that bears magic, and you learn its school of magic, if any.",
-				"The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt."
+				"For the duration, you can see the presence of magic within 30 feet of you. If you sense magic in this way, you see a faint aura around any visible area, creature, or object within range that bears magic."
 			],
 			"classes": {
 				"fromClassList": [
@@ -8581,37 +8478,11 @@
 						"source": "PHB"
 					},
 					{
-						"name": "Artificer (Revisited)",
-						"source": "UAArtificerRevisited"
-					},
-					{
-						"name": "Artificer",
-						"source": "TCE"
-					},
-					{
 						"name": "Warlock (reworked)",
 						"source": "Farover"
 					}
 				]
-			},
-			"races": [
-				{
-					"name": "Firbolg",
-					"source": "VGM"
-				},
-				{
-					"name": "Half-Elf (Mark of Detection)",
-					"source": "ERLW",
-					"baseName": "Half-Elf",
-					"baseSource": "PHB"
-				}
-			],
-			"eldritchInvocations": [
-				{
-					"name": "Eldritch Sight",
-					"source": "PHB"
-				}
-			]
+			}
 		},
 		{
 			"name": "False Life",
@@ -10434,7 +10305,6 @@
 		{
 			"name": "Identify",
 			"source": "Farover",
-			"page": 252,
 			"basicRules": true,
 			"level": 1,
 			"school": "D",
@@ -10467,10 +10337,9 @@
 				"ritual": true
 			},
 			"entries": [
-				"You choose one object that you must touch throughout the casting of the spell. Make an {@skill Arcana} check when casting the spell. The DC to succeed is determined by the strength of the aura of the magical item (Faint: DC 13, Moderate: DC 16, Strong: DC 19, Overwhelming: DC 22). If you roll a natural 1 on the {@skill Arcana} check, the pearl used as the material component for the spell explodes into dust.",
-				"If the item is a magic item or some other magic-imbued object with an aura of faint strength, and you succeed on the {@skill Arcana} check, you learn its properties and how to use them, whether it requires attunement to use, and how many charges it has, if any. You learn whether any spells are affecting the item and what they are. If the item was created by a spell, you learn which spell created it. ",
-				"Powerful magical items may have properties that are unidentifiable.",
-				"If you instead touch a creature throughout the casting, you similarly learn what spells, if any, are currently affecting it."
+				"You choose one area, creature, or object that you must touch throughout the casting of the spell. If magic is present in the area, creature, or object, you learn its {@book school of magic|PHB|10|The Schools of Magic}, and the strength of the magic, which can be faint, moderate, strong, or overwhelming.",
+				"You also learn if the area, creature, or object grants a flat magical bonus to ability checks, attack rolls, damage rolls, saving throws, or spell save DC. You learn how large this magical bonus is, and who it affects.",
+				"If the area, creature, or object has other magical properties, your DM might give you additional information about it in the form of a hint or incomplete truth, depending on how strong the magic present is. If the strength of the magic present is great, your DM might not reveal anything additional."
 			],
 			"areaTags": [
 				"ST"
@@ -10486,15 +10355,7 @@
 						"source": "PHB"
 					}
 				]
-			},
-			"entriesHigherLevel": [
-				{
-					"name": "At Higher Levels",
-					"entries": [
-						"If you cast this spell using a spell slot of at least 3rd level, the spell can divine the properties of moderate magical items. If you cast this spell using a spell slot of at least 5th level, the spell can divine the properties of strong magical items. If you cast this spell using a spell slot of at least 7th level, the spell can divine the properties of overwhelming magical items."
-					]
-				}
-			]
+			}
 		},
 		{
 			"name": "Inflict Wounds",
@@ -11999,7 +11860,6 @@
 		{
 			"name": "Remove Curse",
 			"source": "Farover",
-			"page": 271,
 			"basicRules": true,
 			"level": 3,
 			"school": "A",
@@ -12025,7 +11885,7 @@
 				}
 			],
 			"entries": [
-				"At your touch, all curses of faint and moderate potency affecting one creature or object end."
+				"At your touch, all curses of faint and moderate potency affecting one creature or object end. A more potent curse may require more powerful magic, such as the {@spell greater restoration|farover} spell."
 			],
 			"areaTags": [
 				"ST"
@@ -12046,6 +11906,54 @@
 					},
 					{
 						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Divination",
+			"source": "Farover",
+			"basicRules": true,
+			"level": 4,
+			"school": "D",
+			"time": [
+				{
+					"number": 10,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "incense and valuable herbs worth at least 25 gp, which the spell consumes",
+					"consume": true,
+					"cost": 2500
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"Your magic and an offering put you in contact with your deity. During the casting of the spell you must make a Wisdom check, with a bonus equal to your cleric level. The DC to succeed is 20.",
+				"On a successful check, your deity deems your devotion sufficient. You may ask a single question concerning a specific goal, event, or activity to occur within a day. The DM offers a truthful reply. The reply might be a short phrase, a cryptic rhyme, or an omen. The spell doesn't take into account any possible circumstances that might change the outcome, such as the casting of additional spells or the loss or gain of a companion.",
+				"On a failed check, your deity deems your devotion lacking, and demands a sacrifice to prove your devotion. To not fail the spell, you must sacrifice either an arm, leg, or both of your eyes to continue the spell, which you can momentarily pause the casting of the spell to do, but must resume within the 10 minutes of the spells casting time. If you successfully sacrifice one of these body parts, you may reroll your Wisdom check with a cumulative +5 bonus. On a failed check, you must repeat this step.",
+				"If the spell fails due to a failed check and no sacrifice, you lose the ability to cast this spell again forever.",
+				"Body parts sacrificed during the casting of this spell may be regrown with powerful magic such as the {@spell greater restoration|farover} or {@spell regenerate} spell."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
 						"source": "PHB"
 					}
 				]
@@ -12452,14 +12360,13 @@
 		{
 			"name": "Commune",
 			"source": "Farover",
-			"page": 223,
 			"basicRules": true,
 			"level": 5,
 			"school": "D",
 			"time": [
 				{
 					"number": 1,
-					"unit": "minute"
+					"unit": "hour"
 				}
 			],
 			"range": {
@@ -12472,7 +12379,7 @@
 				"v": true,
 				"s": true,
 				"m": {
-					"text": "incense and a vial of holy or unholy water worth at least 50gp, which the spell consumes",
+					"text": "a willing human sacrifice, and some incense with a vial of holy or unholy water worth at least 50gp, which the spell consumes",
 					"consume": true,
 					"cost": 5000
 				}
@@ -12486,13 +12393,11 @@
 					}
 				}
 			],
-			"meta": {
-				"ritual": true
-			},
 			"entries": [
-				"You contact your deity or a divine proxy with one question that can be answered with a yes or no. You must ask your question before the spell ends. You receive a correct answer for the question.",
-				"Divine beings aren't necessarily omniscient, so you might receive \"unclear\" as an answer if a question pertains to information that lies beyond the deity's knowledge. In a case where a one-word answer could be misleading or contrary to the deity's interests, the DM might offer a short phrase as an answer instead.",
-				"If you cast the spell two or more times before finishing your next long rest, there is a cumulative {@chance 75|25 percent} chance for each casting after the first that you get no answer. The DM makes this roll in secret."
+				"By casting this spell, you contact your deity or a divine proxy directly with a question. This spell can only be cast at a location dedicated to or strongly linked to your deity, such as a temple or shrine. ",
+				"As an ultimate act of worship, zeal, and to show the significance of your question, an ally of yours must sacrifice a willing humanoid creature within 30 feet of you during the casting of this spell. The creature must know and be willing to the fact that it will die during the process.",
+				"Upon finishing the casting the spell, you must ask your question before the spell ends. You receive a subjectively correct answer for the question. Divine beings aren't necessarily omniscient, so you might receive \"unclear\" as an answer if a question pertains to information that the deity deems to be beyond its knowledge. In a case where a one-word answer could be misleading or contrary to the deity's interests, the DM might offer a short phrase as an answer instead.",
+				"This spell cannot be cast more than once until you finish your next long rest. "
 			],
 			"classes": {
 				"fromClassList": [
@@ -12506,12 +12411,11 @@
 		{
 			"name": "Contact Other Plane",
 			"source": "Farover",
-			"page": 226,
 			"level": 5,
 			"school": "D",
 			"time": [
 				{
-					"number": 1,
+					"number": 10,
 					"unit": "minute"
 				}
 			],
@@ -12522,7 +12426,8 @@
 				}
 			},
 			"components": {
-				"v": true
+				"v": true,
+				"s": true
 			},
 			"duration": [
 				{
@@ -12533,12 +12438,11 @@
 					}
 				}
 			],
-			"meta": {
-				"ritual": true
-			},
 			"entries": [
-				"You mentally contact a demigod, the spirit of a long-dead sage, or some other mysterious entity from another plane. Contacting this extraplanar intelligence can strain or even break your mind. When you cast this spell, make a DC 15 Intelligence saving throw. On a failure, you take {@damage 6d6} psychic damage and are insane until you finish a long rest. While insane, you can't take actions, can't understand what other creatures say, can't read, and speak only in gibberish. A {@spell greater restoration} spell cast on you ends this effect.",
-				"On a successful save, you can ask the entity one question. You must ask your question before the spell ends. The DM answers the question with one word, such as \"yes,\" \"no,\" \"maybe,\" \"never,\" \"irrelevant,\" or \"unclear\" (if the entity doesn't know the answer to the question). If a one-word answer would be misleading, the DM might instead offer a short phrase as an answer."
+				"You mentally contact a demigod, a powerful demon, or some other mysterious entity either on your plane, or another. You can decide on a specific entity if you know of its existence, or have your DM choose one for you. ",
+				"Contacting this otherworldly being can strain or even break your mind. When you cast this spell, make a DC 20 Intelligence saving throw. On a failure, you take {@damage 6d6} psychic damage and are insane until you finish a long rest. While insane, you can't take actions, can't understand what other creatures say, can't read, and speak only in gibberish. A {@spell greater restoration|farover} spell cast on you ends this effect.",
+				"On a successful save, you can ask the entity one question. You must ask your question before the spell ends. The entity is probably very knowledgeable, but not omniscient, and its knowledge may be limited in certain areas. The DM answers the question with one word, such as \"yes,\" \"no,\" \"maybe,\" \"never,\" \"irrelevant,\" or \"unclear\" (if the entity doesn't know the answer to the question). If a one-word answer would be misleading, the DM might instead offer a short phrase as an answer.",
+				"If you cast this spell more than once before finishing your next long rest, the DC for the Intelligence saving throw is increased by a cumulative 5 for each casting after the first one."
 			],
 			"damageInflict": [
 				"psychic"
@@ -12627,9 +12531,103 @@
 			}
 		},
 		{
+			"name": "Tongues",
+			"source": "Farover",
+			"level": 3,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"m": "a small clay model of a ziggurat"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"This spell grants a willing creature you touch the ability to speak in any language. When the target speaks for the first time after casting the spell, it can speak up to 10 words in any language of its choosing."
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Eldritch Knight",
+							"shortName": "Eldritch Knight",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcane Trickster",
+							"shortName": "Arcane Trickster",
+							"source": "PHB"
+						}
+					}
+				]
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, the amount of words the target can speak is increased by 10 for each slot level above 3rd."
+					]
+				}
+			]
+		},
+		{
 			"name": "Scrying",
 			"source": "Farover",
-			"page": 273,
 			"level": 5,
 			"school": "D",
 			"time": [
@@ -12657,16 +12655,16 @@
 					"type": "timed",
 					"duration": {
 						"type": "minute",
-						"amount": 10
+						"amount": 1
 					},
 					"concentration": true
 				}
 			],
 			"entries": [
-				"You can see and hear a particular creature you choose that is on the same plane of existence as you. Make an ability check using your spellcasting ability. The base DC for succeeding is 10 + the target creature's level (or 3/4 of its challenge rating). The DC is also modified by how well you know the target and the sort of physical connection you have to it. If a target knows you're casting this spell, it can let you automatically succeed on the ability check.",
+				"This spell allows you to observe and listen to a particular location you choose that is on the same plane of existence as you. Describe the location to your DM, and make an ability check using your spellcasting ability. The base DC for succeeding is 10. The DC is modified by how well you know the location and the sort of physical connection you have to it.",
 				{
 					"type": "table",
-					"caption": "Knowledge of Target",
+					"caption": "Knowledge of Location",
 					"colLabels": [
 						"Knowledge",
 						"Check Modifier"
@@ -12677,15 +12675,19 @@
 					],
 					"rows": [
 						[
-							"Secondhand (you have heard of the target)",
+							"Vague (you have heard of the location)",
+							"-10"
+						],
+						[
+							"Secondhand (you have heard a detailed description of the location)",
 							"-5"
 						],
 						[
-							"Firsthand (you have met the target)",
+							"Firsthand (you have seen the location with your own eyes)",
 							"+0"
 						],
 						[
-							"Familiar (you know the target well)",
+							"Familiar (you have been to the location)",
 							"+5"
 						]
 					]
@@ -12703,22 +12705,13 @@
 					],
 					"rows": [
 						[
-							"Likeness or picture",
-							"+2"
-						],
-						[
-							"Personal possession or garment",
-							"+4"
-						],
-						[
-							"Body part, lock of hair, bit of nail, or the like",
-							"+10"
+							"Associated Object (you possess an object taken from the location within the last six months)",
+							"+5"
 						]
 					]
 				},
-				"On a failed ability check, the target isn't affected, and you can't use this spell against it again for 24 hours.",
-				"On a successful ability check, the spell creates an {@condition invisible} sensor within 10 feet of the target. You can see and hear through the sensor as if you were there. The sensor moves with the target, remaining within 10 feet of it for the duration. A creature that can see {@condition invisible} objects sees the sensor as a luminous orb about the size of your fist.",
-				"Instead of targeting a creature, you can also choose a location or object as the target of this spell. The base DC for this is 10 + any of the knowledge and connection modifiers listed above. When you do, the sensor appears at that location and doesn't move."
+				"On a failed ability check, the spell fails, and you can't use this spell again for 24 hours.",
+				"On a successful ability check, the spell creates an {@condition invisible} sensor at the location 10 feet above the ground. You can see and hear through the sensor as if you were there. The sensor is stationary and it remains there for the duration of the spell. A creature that can see {@condition invisible} objects sees the sensor as a luminous orb about the size of your fist."
 			],
 			"savingThrow": [
 				"wisdom"
@@ -14513,7 +14506,7 @@
 				}
 			],
 			"entries": [
-				"Upon casting this spell, your eyes glow blue and you are able to see the magical auras of spellcasters and enchanted objects within 60 feet of you. This means wizard sight grants you the features of the {@spell detect magic} spell, but it also has additional features.",
+				"Upon casting this spell, your eyes glow blue and you are able to see the magical auras of spellcasters and enchanted objects within 120 feet of you. This means wizard sight grants you the features of the {@spell detect magic|farover} spell, but it also has additional features.",
 				"While wizard sight is in effect, you are able to see if someone is a spellcaster and whether that person is able to cast divine or arcane magic (or both). You are also able to sense if a person is a specialist in a certain wizard spell school, and you can also sense if a spellcaster has the capability of casting spells that are of a higher, equal, or lower level than what you can cast."
 			],
 			"classes": {
