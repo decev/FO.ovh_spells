@@ -7041,7 +7041,6 @@
 		{
 			"name": "Drain Life",
 			"source": "Farover",
-			"page": 0,
 			"level": 1,
 			"school": "N",
 			"time": [
@@ -7073,7 +7072,7 @@
 				}
 			],
 			"entries": [
-				"You extend your hand, and attempt to draw the life energy from a creature within range. The target must make a Constitution saving throw. On a successful save, the spell ends. On a failed save, you begin siphoning life energy from the target, dealing damage and healing you. Roll {@dice 3d6}, and choose which of the dice heal you, and which of the dice deal necrotic damage to the target. You must heal with at least one die, and you can not heal with more dice than what you deal damage with.",
+				"You extend your hand, and attempt to draw the life energy from a creature within range. The target must make a Constitution saving throw. On a successful save, the spell ends. On a failed save, you begin siphoning life energy from the target, dealing damage and healing you. Roll {@dice 3d6}, and choose which of the dice heal you, and which of the dice deal necrotic damage to the target. You must both heal and deal damage with at least one die.",
 				"On each of your turns for the duration, you can use your action to automatically repeat the effect on the target creature as long as you are within range and line of sight when doing so. If you do not spend an action continuing this spell every turn, it ends. The spell also ends if the target ever has total cover from you."
 			],
 			"entriesHigherLevel": [
@@ -7631,7 +7630,6 @@
 		{
 			"name": "Curse of Exhaustion",
 			"source": "Farover",
-			"page": 0,
 			"level": 4,
 			"school": "N",
 			"time": [
@@ -7644,7 +7642,7 @@
 				"type": "point",
 				"distance": {
 					"type": "feet",
-					"amount": 30
+					"amount": 60
 				}
 			},
 			"components": {
