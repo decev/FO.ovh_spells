@@ -1204,7 +1204,7 @@
 			"level": 3,
 			"entries": [
 				"When you choose this path at 3rd level, your prolonged bloodshed awakens your primal instincts for violence.",
-				"While {@classFeature Rage|Barbarian||1||raging}, every successful melee attack you make against a creature gives you a charge of bloodthirst. You can have up to six charges at a time, and you lose all your charges when your rage ends.",
+				"While {@classFeature Rage|Barbarian||1||raging}, every successful melee attack you hit against a creature gives you a charge of bloodthirst. You can have up to six charges at a time, and you lose all your charges when your rage ends.",
 				"At any point during your rage after you damage a creature with a melee attack, you can spend all your bloodthirst charges to cause that creature to begin bleeding. The damage is necrotic, and the amount the target bleeds for is a die amount equal to twice your bloodthirst charges. For example, if you had four bloodthirst charges, the target bleeds for {@dice 1d8} necrotic damage. The target suffers this damage immediately, and then again at the beginning of each of its turns. The affected creature, or another within 5 feet of it, can attempt to end the bleeding by using an action to make a Wisdom {@skill (Medicine)} check against the following DC: 8 + your proficiency bonus + your Strength modifier."
 			]
 		},
@@ -2869,7 +2869,7 @@
 				{
 					"type": "list",
 					"items": [
-						"Your movement speed is doubled and your jump distance is tripled for the duration, as long as you are moving towards your marked target.",
+						"Your movement speed is doubled and your {@quickref Jumping|PHB|4|0|jump distance} is tripled for the duration, as long as you are moving towards your marked target.",
 						"The first time you attack the target on your turn after marking it, you have advantage on attack rolls on that turn against the marked target.",
                         "Once per turn for the duration, you can deal an extra {@dice 1d8} poison damage to the marked target with a weapon attack."
 					]
@@ -3083,6 +3083,21 @@
 	],
 	"feat": [
 		{
+			"name": "Actor",
+			"source": "Farover",
+			"entries": [
+				"Skilled at mimicry and dramatics, you gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"You have advantage on Charisma ({@skill Deception}) and Charisma ({@skill Performance}) checks.",
+						"You can mimic the speech of another person, or the sounds made by other creatures. You must have heard the person speaking, or heard the creature make the sound, for at least 1 minute. A successful Wisdom ({@skill Insight}) check contested by your Charisma ({@skill Deception}) check allows a listener to determine that the effect is faked.",
+						"You are adept at feigning death in the eyes of others, which you can do by falling prone and then not moving or taking any actions. A successful Wisdom ({@skill Insight}) check contested by your Charisma ({@skill Performance}) check allows an observer to see through your facade."
+					]
+				}
+			]
+		},
+		{
 			"name": "Arcane Adept",
 			"source": "Farover",
 			"prerequisite": [
@@ -3105,6 +3120,21 @@
 		{
 			"name": "Armor Expert",
 			"source": "Farover",
+			"entries": [
+				"Great physical fortitude and strength has made wearing armor easier for you. You gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"Any armor you wear is less of a burden for you. While wearing a set of armor, you treat the armor as if it weighs less in pounds equal to your Strength score (to a minimum of 1 pound), for the purposes of carrying capacity.",
+						"Wearing heavy or medium armor doesn’t impose disadvantage on your Dexterity ({@skill Stealth}) checks.",
+						"You are able to don or doff any set of armor immediately by spending an action."
+					]
+				}
+			]
+		},
+		{
+			"name": "Athlete",
+			"source": "Farover",
 			"prerequisite": [
 				{
 					"ability": [
@@ -3114,17 +3144,14 @@
 					]
 				}
 			],
-			"ability": [
-				{
-					"str": 1
-				}
-			],
 			"entries": [
-				"Great physical fortitude and strength has made wearing armor easier for you. You gain the following benefits:",
+				"You have undergone extensive physical training to gain the following benefits:",
 				{
 					"type": "list",
 					"items": [
-						"Any armor you wear is less of a burden for you. While wearing a set of armor, you treat the armor as if it weighs less in pounds equal to your Strength score (to a minimum of 1 pound), for the purposes of carrying capacity."
+						"You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.",
+						"{@quickref Climbing, Swimming, and Crawling|PHB|4|0|Climbing and swimming} don’t cost you extra movement.",
+						"Your {@quickref Jumping|PHB|4|0|jump distance} is doubled."
 					]
 				}
 			]
@@ -3175,28 +3202,39 @@
 			]
 		},
 		{
-			"name": "Crafty Duelist",
+			"name": "Durable",
+			"source": "Farover",
+			"entries": [
+				"Hardy and resilient, you gain the following benefit:",
+				{
+					"type": "list",
+					"items": [
+						"When you spend a Hit Die to regain hit points, you always gain the maximum possible amount from the die, instead of rolling."
+					]
+				}
+			]
+		},
+		{
+			"name": "Elven Accuracy",
 			"source": "Farover",
 			"prerequisite": [
 				{
-					"ability": [
+					"race": [
 						{
-							"dex": 13
+							"name": "Elf"
+						},
+						{
+							"name": "Half-elf"
 						}
 					]
 				}
 			],
-			"ability": [
-				{
-					"dex": 1
-				}
-			],
 			"entries": [
-				"Your quick hands allow you to attempt to disarm targets with speed rather than brute force. You gain the following benefits:",
+				"The accuracy of elves is legendary, especially that of elf archers and spellcasters. You have uncanny aim with attacks that rely on precision rather than brute force. You gain the following benefit:",
 				{
 					"type": "list",
 					"items": [
-						"When attempting to disarm enemy creatures, you can roll a Sleight of Hand skill check in place of the normal weapon attack roll. If you would normally have advantage on an attack roll against the target, you make the Sleight of Hand roll at advantage."
+						"Whenever you have advantage on an attack roll you make with a ranged weapon or spell attack, you can reroll one of the dice once."
 					]
 				}
 			]
@@ -3204,17 +3242,37 @@
 		{
 			"name": "Enhanced Reflexes",
 			"source": "Farover",
-			"ability": [
-				{
-					"dex": 1
-				}
-			],
 			"entries": [
 				"Your reflexes are honed to a razor's edge. You gain the following benefits:",
 				{
 					"type": "list",
 					"items": [
-						"At the start of a combat, after all initiatives have been rolled but before anyone has acted, you may switch places in the initiative order with another creature that you can see, as long as that creature is not at the top of the initiative order. You may not use this feature again until you have completed a short or long rest."
+						"At the start of a combat, after all initiatives have been rolled but before anyone has acted, you may switch places in the initiative order with another creature that you can see, as long as that creature is not at the top of the initiative order. You may not use this feature again until you have completed a short or long rest.",
+						"You can add your proficiency bonus to your initiative rolls."
+					]
+				}
+			]
+		},
+		{
+			"name": "Fade Away",
+			"source": "Farover",
+			"prerequisite": [
+				{	
+					"race": [
+						{
+							"name": "Gnome"
+						}
+					],
+					"spellcasting": true,
+					"level": 4
+				}
+			],
+			"entries": [
+				"Fortune favors you when someone tries to strike you. You gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"When a creature you can see hits you with an attack roll, you can use your reaction to force that creature to reroll. Once you use this ability, you can't use it again until you finish a short or long rest."
 					]
 				}
 			]
