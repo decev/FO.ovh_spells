@@ -15738,7 +15738,7 @@
 					"type": "list",
 					"items": [
 						"When you fall below 25% hit points, you become wounded.",
-						"When you are wounded, you gain one level of {@condition exhaustion}.",
+						"While you are wounded, certain other game mechanics can affect you adversely.",
 						"This {@condition exhaustion} level can only be lost by removing the wounded condition, which is done by healing to at least 25% hit points."
 					]
 				}
