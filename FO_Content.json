@@ -3268,11 +3268,12 @@
 				}
 			],
 			"entries": [
-				"Fortune favors you when someone tries to strike you. You gain the following benefits:",
+				"Your people are clever, with a knack for illusion magic. You gain the following benefits:",
 				{
 					"type": "list",
 					"items": [
-						"When a creature you can see hits you with an attack roll, you can use your reaction to force that creature to reroll. Once you use this ability, you can't use it again until you finish a short or long rest."
+						"You learn the {@spell Invisibility|farover} spell and can cast it once without expending a spell slot. You regain the ability to cast it in this way when you finish a short or long rest. Intelligence is your spellcasting ability for this spell.",
+						"Immediately after you take damage, you can use a reaction to magically become invisible until the end of your next turn or until you attack, deal damage, or force someone to make a saving throw. Once you use this ability, you can’t do so again until you finish a short or long rest."
 					]
 				}
 			]
@@ -3280,17 +3281,38 @@
 		{
 			"name": "Feisty Combatant",
 			"source": "Farover",
-			"ability": [
-				{
-					"cha": 1
-				}
-			],
 			"entries": [
 				"Your rhetorical skills can allow you to shift the tide of battle by manipulating enemies. You gain the following benefits:",
 				{
 					"type": "list",
 					"items": [
-						"As an action, you can attempt to taunt an enemy that can hear and understand you within 60 feet into attacking you. Make a Persuasion check, and the target must make a contested Wisdom saving throw. If you win, the target creature has disadvantage on attack rolls against any other creature than you until the end of its next turn."
+						"As an action, you can attempt to intimidate an enemy that can hear and understand you within 60 feet into not attacking you. Make a Charisma ({@skill Intimidation}) check, and the target must make a contested Wisdom saving throw. If you win, the target creature has disadvantage on attack rolls against you until the end of its next turn. If the target loses the contest by 10 or more, it is also {@condition frightened} of you until the end of its next turn.",
+						"As an action, you can attempt to taunt an enemy that can hear and understand you within 60 feet into attacking you. Make a Charisma ({@skill Persuasion}) check, and the target must make a contested Wisdom saving throw. If you win, the target creature has disadvantage on attack rolls against any other creature than you until the end of its next turn."
+					]
+				}
+			]
+		},
+		{
+			"name": "Fey Teleportation",
+			"source": "Farover",
+			"prerequisite": [
+				{	
+					"race": [
+						{
+							"name": "Elf"
+						}
+					],
+					"spellcasting": true,
+					"level": 4
+				}
+			],
+			"entries": [
+				"Your study of high elven lore has unlocked fey power that few other elves possess, except your eladrin cousins. Drawing on your fey ancestry, you can momentarily stride through the Feywild to shorten your path from one place to another. You gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"You learn the {@spell Misty Step} spell and can cast it once without expending a spell slot. You regain the ability to cast it in this way when you finish a short or long rest. Intelligence is your spellcasting ability for this spell.",
+						"Immediately after you take damage, you can use a reaction to magically teleport up to 30 feet to an unoccupied space that you can see. Once you use this ability, you can’t do so again until you finish a short or long rest."
 					]
 				}
 			]
@@ -3310,49 +3332,146 @@
 			]
 		},
 		{
-			"name": "Insightful Precision",
+			"name": "Healer",
 			"source": "Farover",
-			"ability": [
-				{
-					"choose": {
-						"from": [
-							"dex",
-							"wis"
-						],
-						"amount": 1
-					}
-				}
-			],
 			"entries": [
-				"Your keen eye in combat allows you to spot the weak spots of your enemies. You gain the following benefits:",
+				"You are an able physician, allowing you to mend wounds quickly and get your allies back in the fight. You gain the following benefits:",
 				{
 					"type": "list",
 					"items": [
-						"Before making an attack roll with either a Finesse or ranged weapon, you can choose to make an Insight check as a bonus action. If the Insight check passes the targets AC, the next Finesse or ranged weapon attack roll you make against the target on the same turn is made at advantage, and if the attack hits, the target also suffers additional weapon damage equal to half your Insight modifier (rounded down). Once you use this feature, you can't use it again until you finish a short or long rest."
+						"When you use a {@item healer's kit|phb} to stabilize a dying creature, that creature also regains 1 hit point.",
+						"As an action, you can spend two uses of a {@item healer's kit|phb} to tend to a creature and restore hit points to it, equal to {@dice 1d6} + twice the creature's level. The creature can't regain hit points from this feat again until it finishes a long rest."
 					]
 				}
 			]
 		},
 		{
-			"name": "Oracle",
+			"name": "Heavily Armored",
 			"source": "Farover",
-			"ability": [
+			"prerequisite": [
 				{
-					"choose": {
-						"from": [
-							"int",
-							"wis"
-						],
-						"amount": 1
-					}
+					"proficiency": [
+						{
+							"armor": "medium"
+						}
+					]
 				}
 			],
 			"entries": [
-				"Glimpses of the future begin to press in on your awareness, allowing you to potentially change fate. You gain the following benefits:",
+				"You have trained to master the use of heavy armor, gaining the following benefits:",
 				{
 					"type": "list",
 					"items": [
-						"When you finish a long rest, you can decide to roll a d20. Record the number rolled, and then assign this number to either yourself, or a nearby willing creature. The next time the assigned creature rolls that number on a d20, they must reroll the d20. This effect happens only once. When you finish a long rest, the creature with the foretelling roll loses it if it has not yet been used."
+						"You gain proficiency with heavy armor. If you select this feat while already having proficiency with heavy armor, you instead gain a +1 to AC while wearing heavy armor.",
+						"While you are wearing heavy armor, bludgeoning, piercing, and slashing damage that you take from attacks is reduced by 1. This reduction stacks with any reduction you get from your armor."
+					]
+				}
+			]
+		},
+		{
+			"name": "Insightful Precision",
+			"source": "Farover",
+			"entries": [
+				"Your keen eye in combat allows you to spot the weak spots of your enemies. You gain the following benefit:",
+				{
+					"type": "list",
+					"items": [
+						"Before making an attack roll with either a Finesse or ranged weapon, you can choose to make a Wisdom ({@skill Insight}) check as a bonus action. If the check passes the target’s AC, the next Finesse or ranged weapon attack roll you make against the target on the same turn is made at advantage, and if the attack hits, the target also suffers additional weapon damage equal to your Wisdom ({@skill Insight}) modifier. Once you use this feature, you can’t use it again until you finish a short or long rest."
+					]
+				}
+			]
+		},
+		{
+			"name": "Keen Mind",
+			"source": "Farover",
+			"prerequisite": [
+				{
+					"ability": [
+						{
+							"int": 13
+						},
+						{
+							"wis": 13
+						}
+					]
+				}
+			],
+			"entries": [
+				"You have a mind that can track time and detail with uncanny precision. You gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"You always know exactly what time of day it is, and you can precisely count time in your head.",
+						"You can accurately recall anything you have seen or heard within the past month.",
+						"Whenever you make an Intelligence or Wisdom based check to learn something, such as a new spell, you have advantage on the roll.",
+						"Whenever you make a Constitution saving throw to maintain your {@status concentration} on a spell, you can make an Intelligence or Wisdom saving throw instead."
+					]
+				}
+			]
+		},
+		{
+			"name": "Lightly Armored",
+			"source": "Farover",
+			"entries": [
+				"You have trained to master the use of light armor, gaining the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"You gain proficiency with light armor. If you select this feat while already having proficiency with light armor, you instead gain a +1 to AC while wearing light armor.",
+						"While you are wearing light armor, bludgeoning, piercing, and slashing damage that you take from attacks is reduced by 1."
+					]
+				}
+			]
+		},
+		{
+			"name": "Linguist",
+			"source": "Farover",
+			"entries": [
+				"You have studied languages and codes, gaining the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"You learn three languages of your choice, which can be either exotic or standard languages.",
+						"You are able to decipher the meaning of any language you hear or see, given enough time. The time spent is determined by the DM, based on factors such as previous experience with the language, its difficulty, and the amount of speech or text available.",
+						"You can ably create written ciphers. Others can’t decipher a code you create unless you teach them, they succeed on an Intelligence check (DC equal to your Intelligence score + your proficiency bonus), or they use magic to decipher it."
+					]
+				}
+			]
+		},
+		{
+			"name": "Moderately Armored",
+			"source": "Farover",
+			"prerequisite": [
+				{
+					"proficiency": [
+						{
+							"armor": "light"
+						}
+					]
+				}
+			],
+			"entries": [
+				"You have trained to master the use of medium armor, gaining the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"You gain proficiency with medium armor. If you select this feat while already having proficiency with medium armor, you instead gain a +1 to AC while wearing medium armor.",
+						"While you are wearing medium armor, bludgeoning, piercing, and slashing damage that you take from attacks is reduced by 1. This reduction stacks with any reduction you get from your armor."
+					]
+				}
+			]
+		},
+		{
+			"name": "Observant",
+			"source": "Farover",
+			"entries": [
+				"Quick to notice details of your environment, you gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"You can see {@condition invisible} creatures as long as they have moved during the current or previous round. They still retain their advantage on attack rolls against you, and you still have disadvantage on attack rolls against them.",
+						"If you can see a creature’s mouth while it is speaking a language you understand, you can interpret what it’s saying by reading its lips.",
+						"You have a +5 bonus to your Wisdom ({@skill Perception}) and Intelligence ({@skill Investigation}) scores."
 					]
 				}
 			]
@@ -3368,6 +3487,19 @@
 						"You gain resistance to poison damage.",
 						"You have advantage on saving throws against poison.",
 						"As a bonus action, you may lick a weapon. For the next minute, that weapon does an additional point of poison damage whenever it deals damage. You may not lick another weapon until you have completed a short or long rest."
+					]
+				}
+			]
+		},
+		{
+			"name": "Polarized",
+			"source": "Farover",
+			"entries": [
+				"The luck of the draw presses in on your awareness, allowing you to even the odds of fate. You gain the following benefit:",
+				{
+					"type": "list",
+					"items": [
+						"Before you, or a willing creature within 60 feet of you rolls a {@dice d20}, you can decide to even the odds between a fortunate and unfortunate outcome. Instead of rolling a {@dice d20}, you or the target rolls a {@dice d2}. On a result of 1, the roll is treated as a natural 1 on the {@dice d20}, and on a result of 2, the roll is treated as a natural 20 on the {@dice d20}. If the affected roll has advantage or disadvantage, two {@dice d2}'s are rolled. Once you use this feature you can’t use it again until you finish a short or long rest."
 					]
 				}
 			]
@@ -3389,11 +3521,6 @@
 		{
 			"name": "Punisher",
 			"source": "Farover",
-			"ability": [
-				{
-					"str": 1
-				}
-			],
 			"entries": [
 				{
 					"type": "quote",
@@ -3406,25 +3533,21 @@
 				{
 					"type": "list",
 					"items": [
-						"You can make one {@action Opportunity Attack} per round without using your reaction."
+						"Making {@action Opportunity Attack||opportunity attacks} does not cost you your reaction. You can make up to three opportunity attacks each round."
 					]
 				}
 			]
 		},
 		{
-			"name": "Restful Sleeper",
+			"name": "Resilient",
 			"source": "Farover",
-			"ability": [
-				{
-					"con": 1
-				}
-			],
 			"entries": [
-				"You are one of the gifted people able to sleep well no matter the conditions. You gain the following benefits:",
+				"Choose one ability score. You gain the following benefit:",
 				{
 					"type": "list",
 					"items": [
-						"If you finish a short rest without expending hit dice, you regain an amount of hit points equal to your proficiency bonus."
+						"You gain proficiency in one skill of your choice using the chosen ability.",
+						"You gain proficiency in saving throws using the chosen ability."
 					]
 				}
 			]
@@ -3441,24 +3564,27 @@
 					]
 				}
 			],
-			"ability": [
-				{
-					"choose": {
-						"from": [
-							"dex",
-							"con",
-							"cha"
-						],
-						"amount": 1
-					}
-				}
-			],
 			"entries": [
-				"Fortune favors you when someone tries to strike you. You gain the following benefits:",
+				"Fortune, as well as your small stature, favors you when someone tries to strike you. You gain the following benefits:",
 				{
 					"type": "list",
 					"items": [
-						"When a creature you can see hits you with an attack roll, you can use your reaction to force that creature to reroll. Once you use this ability, you can't use it again until you finish a short or long rest."
+						"Whenever a creature larger than you but smaller than size Gargantuan misses you with a melee weapon attack, you can immediately move to any unoccupied square within 5 feet of the creature. This movement can take you through the space of that creature.",
+						"When a creature you can see hits you with an attack roll, you can use your reaction to force that creature to reroll. Once you use this ability, you can’t use it again until you finish a short or long rest."
+					]
+				}
+			]
+		},
+		{
+			"name": "Sentinel",
+			"source": "Farover",
+			"entries": [
+				"You have mastered techniques to take advantage of every drop in any enemy’s guard, gaining the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"Creatures provoke opportunity attacks from you even if they take the {@action Disengage} action before leaving your reach.",
+						"When a creature within 5 feet of you makes an attack against a target other than you, you can use your reaction to make a melee weapon attack against the attacking creature."
 					]
 				}
 			]
@@ -3477,54 +3603,46 @@
 				}
 			]
 		},
-        {
-			"name": "Thick Build",
+		{
+			"name": "Squat Nimbleness",
 			"source": "Farover",
 			"prerequisite": [
 				{
-					"ability": [
+					"race": [
 						{
-							"con": 13
+							"name": "Dwarf"
+						},
+						{
+							"name": "Small race"
 						}
 					]
 				}
 			],
-			"ability": [
-				{
-					"con": 1
-				}
-			],
 			"entries": [
-				"You have been well fed and you have maintained your mass during your life, granting you the following benefits:",
+				"You are uncommonly nimble for your race. You gain the following benefits:",
 				{
 					"type": "list",
 					"items": [
-						"When any attack or effect would either shove you or knock you prone, you have advantage on any Constitution or Strength saving throws to stand your ground."
+						"Crawling while prone does not cost you additional movement.",
+						"Increase your walking speed by 10 feet.",
+						"You gain proficiency in either the {@skill Acrobatics} or {@skill Athletics} skill (your choice).",
+						"You have advantage on any Strength ({@skill Athletics}) or Dexterity ({@skill Acrobatics}) check you make to both prevent yourself and escape from being {@condition grappled}."
 					]
 				}
 			]
 		},
 		{
-			"name": "Unspoken",
+			"name": "Tavern Brawler",
 			"source": "Farover",
-			"ability": [
-				{
-					"choose": {
-						"from": [
-							"cha",
-							"wis"
-						],
-						"amount": 1
-					}
-				}
-			],
 			"entries": [
-				"You have extensive experience conveying emotions and ideas through expressions and gestures, granting you the following benefits:",
+				"Accustomed to rough-and-tumble fighting using whatever weapons happen to be at hand, you gain the following benefits:",
 				{
 					"type": "list",
 					"items": [
-						"You can convey simple ideas or emotions limited to one word through subtle facial expressions or signs to anyone who can see you, and they understand the meaning as long as they have an Intelligence score of at least 6. The time it takes to do so is one round.",
-						"Even when in a form in which you cannot naturally speak (such as an animal), you are able to speak normally in any language you know."
+						"You are proficient with improvised weapons, and they use a {@dice d6} for damage.",
+						"Your unarmed strike uses a {@dice d4} for damage.",
+						"When you hit a creature with an unarmed strike or an improvised weapon on your turn, you can use a bonus action to attempt to {@action grapple} the target.",
+						"If you take the {@action Shove} action on a creature while {@condition grappled||grappling} it, you can attempt to throw it instead of shoving. The creature must be of a size equal to or smaller than you. If you win the ability check contest, you can throw the creature up to 10 feet away in any direction. If you win by 10 or more, you can throw the creature up to 30 feet. A thrown creature suffers {@dice 1d6} falling damage for every 10 feet it is thrown."
 					]
 				}
 			]
@@ -3549,8 +3667,13 @@
 			]
 		},
 		{
-			"name": "Weapon Specialist",
+			"name": "Weapon Master",
 			"source": "Farover",
+			"prerequisite": [
+				{
+					"level": 4
+				}
+			],
 			"entries": [
 				"Extensive training has granted you mastery with one type of weapon:",
 				{
@@ -3560,20 +3683,6 @@
 					]
 				},
 				"You can select this feat multiple times, and if you choose the same weapon, you are granted an extra use of this feature per short rest when giving yourself advantage on an attack roll you make with the specialized weapon."
-			]
-		},
-		{
-			"name": "Healer",
-			"source": "Farover",
-			"entries": [
-				"You are an able physician, allowing you to mend wounds quickly and get your allies back in the fight. You gain the following benefits:",
-				{
-					"type": "list",
-					"items": [
-						"When you use a {@item healer's kit|phb} to stabilize a dying creature, that creature also regains 1 hit point.",
-						"As an action, you can spend two uses of a {@item healer's kit|phb} to tend to a creature and restore hit points to it, equal to {@dice 1d6} + twice the creature's level. The creature can't regain hit points from this feat again until it finishes a long rest."
-					]
-				}
 			]
 		}
 	],
