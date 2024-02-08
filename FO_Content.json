@@ -2385,8 +2385,8 @@
 			"subclassShortName": "Destruction",
 			"level": 6,
 			"entries": [
-                "Starting at 6th level, your dread spells and soul control cantrips explode with destructive energy when they deal damage.",
-                "Whenever you deal damage to a creature with a dread spell, you can choose to have the spell's damage explode in a 10-foot radius around the target, causing each other creature in the area to suffer damage of the spell's type equal to your spellcasting modifier. If the dread spell deals multiple types of damage, you can decide which of its types the explosion deals.",
+                "Starting at 6th level, your dread spells can explode with destructive energy when they deal damage.",
+                "Whenever you deal damage to a creature with a dread spell, you can choose to have the spell’s damage explode in a 10-foot radius around the target, causing each other creature in the area to suffer damage of the spells type equal to your spellcasting modifier. If the dread spell deals multiple types of damage, you can decide which of its types the explosion deals.",
                 "A spell which deals damage multiple times can only explode once, and this feature can only affect a creature once per turn."
 			]
 		},
@@ -15738,8 +15738,7 @@
 					"type": "list",
 					"items": [
 						"When you fall below 25% hit points, you become wounded.",
-						"While you are wounded, certain other game mechanics can affect you adversely.",
-						"This {@condition exhaustion} level can only be lost by removing the wounded condition, which is done by healing to at least 25% hit points."
+						"While you are wounded, certain other game mechanics can affect you adversely."
 					]
 				}
 			],
