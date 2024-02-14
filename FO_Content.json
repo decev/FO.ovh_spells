@@ -3326,7 +3326,7 @@
 					"type": "list",
 					"items": [
 						"On your turn, when you score a natural 20 critical hit with a melee weapon or reduce a creature to 0 hit points with one, you can make one melee weapon attack as a bonus action.",
-						"Before you make a melee attack with a heavy weapon that you are proficient with, you can choose to take a -5 penalty to the attack roll. If the attack hits, you add +5 to the attack's damage."
+						"Before you make a melee attack with a heavy weapon that you are proficient with, you can choose to take a -5 penalty to the attack roll. If the attack hits, you add one additional weapon damage die to the attack's damage."
 					]
 				}
 			]
@@ -3598,7 +3598,7 @@
 					"type": "list",
 					"items": [
 						"Your ranged weapon attacks ignore half cover and three-quarters cover.",
-						"Before you make an attack with a ranged weapon that you are proficient with, you can choose to take a -5 penalty to the attack roll. If the attack hits, you add +5 to the attack's damage."
+						"Before you make an attack with a ranged weapon that you are proficient with, you can choose to take a -5 penalty to the attack roll. If the attack hits, you add one additional weapon damage die to the attack's damage."
 					]
 				}
 			]
