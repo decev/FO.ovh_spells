@@ -15454,6 +15454,72 @@
 			}
 		},
 		{
+			"name": "Wall of Force",
+			"source": "Farover",
+			"level": 5,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a pinch of powder made by crushing a clear gemstone"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"An {@condition invisible} wall of force springs into existence at a point you choose within range. The wall appears in any orientation you choose, as a horizontal or vertical barrier or at an angle. It can be free floating or resting on a solid surface. You can form it into a hemispherical dome or a sphere with a radius of up to 10 feet, or you can shape a flat surface made up of ten 10-foot-by-10-foot panels. Each panel must be contiguous with another panel. In any form, the wall is 1/4 inch thick. It lasts for the duration.",
+				"If the wall cuts through a creature's space when it appears, the creature is pushed to one side of the wall (your choice which side). The wall cannot trap unwilling creatures inside it when cast, if the spell is used to create a closed shape such as a sphere. An unwilling creature that would be caught inside is pushed to one side outside of the wall (your choice which side).",
+				"Nothing can physically pass through the wall. It is immune to all damage and can't be dispelled by {@spell dispel magic}. A {@spell disintegrate} spell destroys the wall instantly, however. The wall also extends into the Ethereal Plane, blocking ethereal travel through the wall."
+			],
+			"damageImmune": [
+				"force"
+			],
+			"areaTags": [
+				"W"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Paladin",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Oath of Redemption",
+							"shortName": "Redemption",
+							"source": "XGE"
+						}
+					}
+				]
+			}
+		},
+		{
 			"name": "Wall of Stone",
 			"source": "Farover",
 			"basicRules": true,
@@ -15492,7 +15558,7 @@
 				"If the wall cuts through a creature's space when it appears, the creature is pushed to one side of the wall (your choice). If a creature would be surrounded on all sides by the wall (or the wall and another solid surface), that creature can make a Dexterity saving throw. On a success, it can use its reaction to move up to its speed so that it is no longer enclosed by the wall.",
 				"The wall can have any shape you desire, though it can't occupy the same space as a creature or object. The wall doesn't need to be vertical or rest on any firm foundation. It must, however, merge with and be solidly supported by existing stone. Thus, you can use this spell to bridge a chasm or create a ramp.",
 				"If you create a span greater than 20 feet in length, you must halve the size of each panel to create supports. You can crudely shape the wall to create crenellations, battlements, and so on.",
-				"The wall is an object made of stone that can be damaged and thus breached. Each panel has AC 15 and 30 hit points. Reducing a panel to 0 hit points destroys it and might cause connected panels to collapse at the DM's discretion.",
+				"The wall is an object made of stone that can be damaged and thus breached. Each panel has AC 15 and 50 hit points. Reducing a panel to 0 hit points destroys it and might cause connected panels to collapse at the DM's discretion.",
 				"If you maintain your {@status concentration} on this spell for its whole duration, the wall becomes permanent and can't be dispelled. Otherwise, the wall disappears when the spell ends."
 			],
 			"savingThrow": [
