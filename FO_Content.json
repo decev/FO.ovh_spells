@@ -11999,7 +11999,6 @@
 		{
 			"name": "Nondetection",
 			"source": "Farover",
-			"page": 263,
 			"level": 3,
 			"school": "A",
 			"time": [
@@ -12020,7 +12019,7 @@
 				"m": {
 					"text": "a pinch of diamond dust worth 10 gp sprinkled over the target, which the spell consumes",
 					"consume": true,
-					"cost": 2500
+					"cost": 100
 				}
 			},
 			"duration": [
@@ -12033,7 +12032,8 @@
 				}
 			],
 			"entries": [
-				"For the duration, you hide a target that you touch from divination magic. The target can be a willing creature or a place or an object no larger than 10 feet in any dimension. For the spells duration, the target can't be communicated with telepathically, or targeted by any divination magic or perceived through magical scrying sensors."
+				"You hide a target that you touch from various sorts of divination and communication magic. The target can be a willing creature, place, or an object no larger than 20 feet in any dimension.",
+				"For the spells duration, the target can't be targeted by divination magic, perceived through magical scrying sensors, or communicated with magically (such as with the {@spell message} or {@spell dream} spells)."
 			],
 			"areaTags": [
 				"ST"
@@ -12058,7 +12058,6 @@
 		{
 			"name": "Phantom Steed",
 			"source": "Farover",
-			"page": 265,
 			"level": 3,
 			"school": "I",
 			"time": [
@@ -15792,6 +15791,55 @@
 					{
 						"name": "Warlock (reworked)",
 						"source": "Farover"
+					}
+				]
+			}
+		},
+		{
+			"name": "Dimensional Weapon",
+			"source": "Farover",
+			"basicRules": true,
+			"level": 5,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"A non-magical weapon you touch becomes incredibly sharp by reducing one of its physical dimensions to an infinitesimal measurement. A dimensional weapon can slash through matter with as much effort as it takes to wave a stick through the air.",
+				"Until the spell ends, the dimensional weapon ignores the AC of targets granted to them by physical armor or natural armor. This means that their AC against attacks made by the dimensional weapon is 10 + their Dexterity modifier, unless they have some other form of armor, magical or otherwise."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
 					}
 				]
 			}
