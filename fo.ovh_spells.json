@@ -7349,7 +7349,7 @@
 		},
 		{
 			"name": "Healing Spirit",
-			"source": "Farover",
+			"source": "XGE",
 			"page": 157,
 			"level": 2,
 			"school": "C",
@@ -7382,18 +7382,31 @@
 			],
 			"entries": [
 				"You call forth a nature spirit to soothe the wounded. The intangible spirit appears in a space that is a 5-foot cube you can see within range. The spirit looks like a transparent beast or fey (your choice).",
-				"Until the spell ends, whenever you or a creature you can see moves into the spirit's space for the first time on a turn or starts its turn there, you can cause the spirit to restore {@dice 1d6} hit points to that creature (no action required). The spirit can't heal constructs or undead. The spirit can heal a number of times equal to your spellcasting ability modifier (minimum of once). After healing that number of times, the spirit disappears.",
+				"Until the spell ends, whenever you or a creature you can see moves into the spirit's space for the first time on a turn or starts its turn there, you can cause the spirit to restore {@dice 1d6} hit points to that creature (no action required). The spirit can't heal constructs or undead. The spirit can heal a number of times equal to 1 + your spellcasting ability modifier (minimum of twice). After healing that number of times, the spirit disappears.",
 				"As a bonus action on your turn, you can move the spirit up to 30 feet to a space you can see.",
 				"{@italic Concentration Points: 2}"
 			],
 			"entriesHigherLevel": [
 				{
+					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"When you cast this spell using a spell slot of 3rd level or higher, the die size of the healing increases by one for every slot level above 2nd, up to {@dice 1d12} at 5th level."
+						"When you cast this spell using a spell slot of 3rd level or higher, the healing increases by {@scaledice 1d6|2-9|1d6} for each slot level above 2nd."
 					]
 				}
 			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid (reworked)",
+						"source": "farover"
+					},
+					{
+						"name": "Ranger (reworked)",
+						"source": "farover"
+					}
+				]
+			},
 			"affectsCreatureType": [
 				"aberration",
 				"beast",
@@ -7410,23 +7423,12 @@
 			],
 			"miscTags": [
 				"HL",
-				"SGT"
+				"SGT",
+				"UBA"
 			],
 			"areaTags": [
 				"C"
-			],
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Druid (reworked)",
-						"source": "farover"
-					},
-					{
-						"name": "Ranger (reworked)",
-						"source": "farover"
-					}
-				]
-			}
+			]
 		},
 		{
 			"name": "Heat Metal",
@@ -7739,8 +7741,8 @@
 			"school": "V",
 			"time": [
 				{
-					"number": 10,
-					"unit": "minute"
+					"number": 1,
+					"unit": "action"
 				}
 			],
 			"range": {
@@ -11574,7 +11576,7 @@
 			"entries": [
 				"You create a mote of latent magic to attach on to a creature within range. The target must succeed on a Wisdom saving throw or be affected by the spell. An affected creature can take an action to snuff out the mote. The mote harmlessly lasts for the duration of the spell, unless you use either a bonus action or reaction to cause it to explode, dealing {@damage 1d8} thunder damage to the target and removing the mote.",
 				"The spell creates additional motes when you reach 5th level (2 motes), 11th level (3 motes), and 17th level (4 motes). Multiple motes can be cast at one or multiple targets, with a separate saving throw for each one.",
-				"{@italic Concentration Points: 1}"
+				"{@italic Concentration Points: 1, 2 at 5th level, 3 at 11th level, 4 at 17th level}"
 			],
 			"areaTags": [
 				"ST",
@@ -15068,7 +15070,7 @@
 				"You create a bonfire on ground that you can see within range. Until the spell ends, the magic bonfire fills a 5-foot cube. Any creature in the bonfire's space when you cast the spell must succeed on a Dexterity saving throw or take {@damage 1d8} fire damage. A creature must also make the saving throw when it moves into the bonfire's space for the first time on a turn or ends its turn there.",
 				"The bonfire ignites flammable objects in its area that aren't being worn or carried.",
 				"The spell's damage increases by {@dice 1d8} when you reach 5th level ({@damage 2d8}), 11th level ({@damage 3d8}), and 17th level ({@damage 4d8}).",
-				"{@italic Concentration Points: 1}"
+				"{@italic Concentration Points: 1, 2 at 5th level, 3 at 11th level, 4 at 17th level}"
 			],
 			"scalingLevelDice": {
 				"label": "fire damage",
@@ -19800,66 +19802,6 @@
 			]
 		},
 		{
-			"name": "Aid",
-			"source": "PHB",
-			"page": 211,
-			"srd": true,
-			"basicRules": true,
-			"otherSources": [
-				{
-					"source": "RMR",
-					"page": 50
-				}
-			],
-			"level": 2,
-			"school": "A",
-			"time": [
-				{
-					"number": 1,
-					"unit": "action"
-				}
-			],
-			"range": {
-				"type": "point",
-				"distance": {
-					"type": "feet",
-					"amount": 30
-				}
-			},
-			"components": {
-				"v": true,
-				"s": true,
-				"m": "a tiny strip of white cloth"
-			},
-			"duration": [
-				{
-					"type": "timed",
-					"duration": {
-						"type": "hour",
-						"amount": 8
-					}
-				}
-			],
-			"entries": [
-				"Your spell bolsters your allies with toughness and resolve. Choose up to three creatures within range. Each target's hit point maximum and current hit points increase by 5 for the duration."
-			],
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "At Higher Levels",
-					"entries": [
-						"When you cast this spell using a spell slot of 3rd level or higher, a target's hit points increase by an additional 5 for each slot level above 2nd."
-					]
-				}
-			],
-			"miscTags": [
-				"HL"
-			],
-			"areaTags": [
-				"MT"
-			]
-		},
-		{
 			"name": "Alter Self",
 			"source": "PHB",
 			"page": 211,
@@ -23755,17 +23697,73 @@
 			]
 		},
 		{
-			"name": "Cure Wounds",
-			"source": "PHB",
-			"page": 230,
-			"srd": true,
+			"name": "Aid",
+			"source": "Farover",
 			"basicRules": true,
-			"otherSources": [
+			"level": 2,
+			"school": "A",
+			"time": [
 				{
-					"source": "RMR",
-					"page": 52
+					"number": 1,
+					"unit": "action"
 				}
 			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a tiny strip of white cloth"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"Your spell bolsters your allies with toughness and resolve. Choose up to three creatures within range. Each creature gains {@dice 1d6 + 2} temporary hit points for the duration."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, a target gains {@dice 1d6} additional temporary hit points for each slot level above 2nd."
+					]
+				}
+			],
+			"areaTags": [
+				"MT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					}
+				]
+			},
+			"miscTags": [
+				"THP"
+			]
+		},
+		{
+			"name": "Cure Wounds",
+			"source": "Farover",
+			"basicRules": true,
 			"classes": {
 				"fromClassList": [
 					{
@@ -23775,6 +23773,18 @@
 					{
 						"name": "Ranger (reworked)",
 						"source": "farover"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
 					}
 				]
 			},
@@ -23802,14 +23812,14 @@
 				}
 			],
 			"entries": [
-				"A creature you touch regains a number of hit points equal to {@dice 1d8} + your spellcasting ability modifier. This spell has no effect on undead or constructs."
+				"A creature you touch regains a number of hit points equal to {@dice 1d10} + your spellcasting ability modifier. This spell has no effect on undead or constructs."
 			],
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"When you cast this spell using a spell slot of 2nd level or higher, the healing increases by {@scaledice 1d8|1-9|1d8} for each slot level above 1st."
+						"When you cast this spell using a spell slot of 2nd level or higher, the healing increases by {@scaledice 1d10|1-9|1d10} for each slot level above 1st."
 					]
 				}
 			],
@@ -23832,6 +23842,12 @@
 			],
 			"areaTags": [
 				"ST"
+			],
+			"feats": [
+				{
+					"name": "Magic Initiate",
+					"source": "PHB"
+				}
 			]
 		},
 		{
