@@ -1477,10 +1477,6 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Warlock (reworked)",
-						"source": "farover"
-					},
-					{
 						"name": "Wizard",
 						"source": "PHB"
 					}
