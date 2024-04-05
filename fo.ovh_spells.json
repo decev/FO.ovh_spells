@@ -5404,7 +5404,7 @@
 		},
 		{
 			"name": "Evard's Black Tentacles",
-			"source": "Farover",
+			"source": "PHB",
 			"page": 238,
 			"level": 4,
 			"school": "C",
@@ -5464,10 +5464,6 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Wizard",
-						"source": "PHB"
-					},
-					{
 						"name": "Warlock (reworked)",
 						"source": "Farover"
 					}
@@ -5476,7 +5472,7 @@
 		},
 		{
 			"name": "Symbol",
-			"source": "Farover",
+			"source": "PHB",
 			"page": 280,
 			"level": 7,
 			"school": "A",
@@ -5594,18 +5590,6 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
-						"source": "PHB"
-					},
-					{
-						"name": "Cleric",
-						"source": "PHB"
-					},
-					{
-						"name": "Wizard",
-						"source": "PHB"
-					},
-					{
 						"name": "Warlock (reworked)",
 						"source": "Farover"
 					}
@@ -5614,7 +5598,7 @@
 		},
 		{
 			"name": "Abi-Dalzim's Horrid Wilting",
-			"source": "Farover",
+			"source": "XGE",
 			"page": 150,
 			"otherSources": [
 				{
@@ -5663,14 +5647,6 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Sorcerer",
-						"source": "PHB"
-					},
-					{
-						"name": "Wizard",
-						"source": "PHB"
-					},
-					{
 						"name": "Warlock (reworked)",
 						"source": "Farover"
 					}
@@ -5679,7 +5655,7 @@
 		},
 		{
 			"name": "Clone",
-			"source": "Farover",
+			"source": "PHB",
 			"page": 222,
 			"level": 8,
 			"school": "N",
@@ -5719,10 +5695,6 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Wizard",
-						"source": "PHB"
-					},
-					{
 						"name": "Warlock (reworked)",
 						"source": "Farover"
 					}
@@ -5731,7 +5703,7 @@
 		},
 		{
 			"name": "Maze",
-			"source": "Farover",
+			"source": "PHB",
 			"page": 258,
 			"basicRules": true,
 			"level": 8,
@@ -5776,10 +5748,6 @@
 			],
 			"classes": {
 				"fromClassList": [
-					{
-						"name": "Wizard",
-						"source": "PHB"
-					},
 					{
 						"name": "Warlock (reworked)",
 						"source": "Farover"
@@ -11070,7 +11038,7 @@
 		},
 		{
 			"name": "Magic Jar",
-			"source": "Farover",
+			"source": "PHB",
 			"level": 6,
 			"school": "N",
 			"time": [
@@ -11121,10 +11089,6 @@
 			],
 			"classes": {
 				"fromClassList": [
-					{
-						"name": "Wizard",
-						"source": "PHB"
-					},
 					{
 						"name": "Warlock (reworked)",
 						"source": "Farover"
