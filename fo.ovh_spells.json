@@ -6970,8 +6970,8 @@
 				{
 					"type": "timed",
 					"duration": {
-						"type": "minute",
-						"amount": 10
+						"type": "hour",
+						"amount": 1
 					}
 				}
 			],
@@ -12434,7 +12434,7 @@
 				}
 			],
 			"entries": [
-				"All nonmagical food and drink within a 5-foot-radius sphere centered on a point of your choice within range is purified and rendered free of poison and disease. Anyone who eats even a bite of the purified food has their stomach filled for a day."
+				"All nonmagical food and drink within a 5-foot-radius sphere centered on a point of your choice within range is purified and rendered free of poison and disease. Anyone who eats the purified food also has advantage on saving throws against disease for the next 24 hours."
 			],
 			"areaTags": [
 				"S"
