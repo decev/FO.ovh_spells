@@ -11535,7 +11535,7 @@
 			],
 			"entries": [
 				"You create a mote of latent magic to attach on to a creature within range. The target must succeed on a Wisdom saving throw or be affected by the spell. An affected creature can take an action to snuff out the mote. The mote harmlessly lasts for the duration of the spell, unless you use either a bonus action or reaction to cause it to explode, dealing {@damage 1d8} thunder damage to the target and removing the mote.",
-				"The spell creates additional motes when you reach 5th level (2 motes), 11th level (3 motes), and 17th level (4 motes). Multiple motes can be cast at one or multiple targets, with a separate saving throw for each one.",
+				"The damage of the mote increases by {@dice 1d8} when you reach 5th level ({@dice 2d8}), 11th level ({@dice 3d8}), and 17th level ({@dice 4d8}).",
 				"{@italic Concentration Points: 1, 2 at 5th level, 3 at 11th level, 4 at 17th level}"
 			],
 			"areaTags": [
