@@ -7190,7 +7190,7 @@
 		},
 		{
 			"name": "Arcane Lock",
-			"source": "Farover",
+			"source": "PHB",
 			"page": 215,
 			"basicRules": true,
 			"level": 2,
@@ -7225,22 +7225,15 @@
 				}
 			],
 			"entries": [
-				"You touch a closed door, window, gate, chest, or other entryway, and it becomes locked for the duration. The arcane lock serves as a \"Hard Lock\" for the purposes of lockpicking. You and the creatures you designate when you cast this spell can open the object normally. You can also set a password that, when spoken within 5 feet of the object, suppresses this spell for 1 minute.",
-				"Casting a {@spell knock|farover} spell on the object suppresses {@spell arcane lock|farover} for 10 minutes."
+				"You touch a closed door, window, gate, chest, or other entryway, and it becomes locked for the duration. {@color The arcane lock serves as a \"hard lock\" for the purposes of|30d5c8} {@variantrule opening locks|farover|lockpicking.} You and the creatures you designate when you cast this spell can open the object normally. You can also set a password that, when spoken within 5 feet of the object, suppresses this spell for 1 minute.",
+				"Casting a {@spell knock} spell {@color at a higher spell level than the arcane lock on the object|30d5c8} suppresses {@spell arcane lock} for 10 minutes."
 			],
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Wizard",
-						"source": "PHB"
-					}
-				]
-			},
 			"entriesHigherLevel": [
 				{
 					"name": "At Higher Levels",
 					"entries": [
-						"When you cast this spell using a spell slot of at least 4th level, the arcane lock serves as an \"Unbreakable Lock\" for the purpose of lockpicking. When you cast this spell using a spell slot of 3rd level or higher, the arcane lock is immune to a {@spell knock|farover} spell if the arcane lock was cast with a higher level spell slot than the {@spell knock|farover}."
+						"{@color When you cast this spell using a spell slot of 3rd level or higher, the arcane lock is immune to a|30d5c8} {@spell knock} {@color spell if the arcane lock was cast with an equal or higher level spell slot than the|30d5c8} {@spell knock}.",
+						"{@color When you cast this spell using a spell slot of 3rd level, the arcane lock serves as a \"very hard lock\" for the purpose of lockpicking. When cast with a spell slot of 4th level or higher, the lock serves as an \"unbreakable lock\".|30d5c8}"
 					]
 				}
 			]
@@ -7561,7 +7554,7 @@
 		},
 		{
 			"name": "Knock",
-			"source": "Farover",
+			"source": "PHB",
 			"page": 254,
 			"basicRules": true,
 			"level": 2,
@@ -7588,36 +7581,20 @@
 				}
 			],
 			"entries": [
-				"Choose an object that you can see within range. The object can be a door, a box, a {@item chest|phb}, a set of {@item manacles|phb}, a padlock, or another object that contains a mundane or magical means that prevents access. The lock must be the quality of an \"Easy Lock\" when it comes to lockpicking.",
+				"Choose an object that you can see within range. The object can be a door, a box, a {@item chest|phb}, a set of {@item manacles|phb}, a padlock, or another object that contains a mundane or magical means that prevents access. {@color The lock can not be of a quality higher than a \"medium lock\" when it comes to|30d5c8} {@variantrule opening locks|farover|lockpicking.}",
 				"A target that is held shut by a easy lock or that is stuck or barred becomes unlocked, unstuck, or unbarred. If the object has multiple locks, only one of them is unlocked.",
-				"If you choose a target that is held shut with an {@spell arcane lock|farover} spell cast at equal or lower level than the knock, the {@spell arcane lock|farover} is suppressed for 10 minutes, during which time the target can be opened and shut normally.",
+				"If you choose a target that is held shut with an {@spell arcane lock} spell {@color cast at a lower spell level than the knock|30d5c8}, the {@spell arcane lock} is suppressed for 10 minutes, during which time the target can be opened and shut normally.",
 				"When you cast the spell, a loud knock, audible from as far away as 300 feet, emanates from the target object."
 			],
 			"miscTags": [
 				"SGT"
 			],
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Bard",
-						"source": "PHB"
-					},
-					{
-						"name": "Sorcerer",
-						"source": "PHB"
-					},
-					{
-						"name": "Wizard",
-						"source": "PHB"
-					}
-				]
-			},
 			"entriesHigherLevel": [
 				{
 					"name": "At Higher Levels",
 					"entries": [
-						"When you cast this spell using a spell slot of of 3rd level or higher, the spell can suppress an {@spell arcane lock|farover} if the knock is cast at an equal or higher level.",
-						"When you cast this spell using a spell slot of at least 4th level, the spell can unlock medium locks. When you cast this spell using a spell slot of at least 6th level, the spell can unlock hard locks. When you cast this spell using a spell slot of at least 8th level, the spell can unlock \"unbreakable\" locks."
+						"{@color When you cast this spell using a spell slot of 3rd level or higher, the spell can suppress an|30d5c8} {@spell arcane lock} {@color if the knock is cast at a higher spell level than the|30d5c8} {@spell arcane lock}{@color .|30d5c8}",
+						"{@color When you cast this spell using a spell slot of 3rd level, the spell can unlock \"hard locks\". When cast at 4th level, the spell can unlock \"very hard locks\". When cast using a spell slot of at least 5th level, the spell can unlock \"unbreakable locks\".|30d5c8}"
 					]
 				}
 			]
