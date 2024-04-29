@@ -8468,7 +8468,7 @@
 		},
 		{
 			"name": "Slow",
-			"source": "Farover",
+			"source": "PHB",
 			"page": 277,
 			"level": 3,
 			"school": "T",
@@ -8501,8 +8501,8 @@
 				}
 			],
 			"entries": [
-				"You alter time around creatures of your choice in a 30-foot cube within range. Each target must succeed on a Wisdom saving throw or be affected by this spell for the duration.",
-				"An affected target's speed is halved, it takes a −2 penalty to AC and Dexterity saving throws, and it can't use reactions. On its turn, it can use either an action or a bonus action, not both. If the creature is normally able to make more than one attack per turn, it can take one less attack.",
+				"You alter time around up to six creatures of your choice in a 40-foot cube within range. Each target must succeed on a Wisdom saving throw or be affected by this spell for the duration.",
+				"{@color An affected target is|30d5c8} {@condition Dazed|farover}{@color , it has disadvantage on Dexterity saving throws,|30d5c8} and it can't use reactions.",
 				"If the creature attempts to cast a spell with a casting time of 1 action, roll a {@dice d20}. On an 11 or higher, the spell doesn't take effect until the creature's next turn, and the creature must use its action on that turn to complete the spell. If it can't, the spell is wasted.",
 				"A creature affected by this spell makes another Wisdom saving throw at the end of each of its turns. On a successful save, the effect ends for it.",
 				"{@italic Concentration Points: 3}"
@@ -8516,24 +8516,6 @@
 			"areaTags": [
 				"MT",
 				"C"
-			],
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Sorcerer",
-						"source": "PHB"
-					},
-					{
-						"name": "Wizard",
-						"source": "PHB"
-					}
-				]
-			},
-			"eldritchInvocations": [
-				{
-					"name": "Mire the Mind",
-					"source": "PHB"
-				}
 			]
 		},
 		{
@@ -25998,7 +25980,7 @@
 				"type": "point",
 				"distance": {
 					"type": "feet",
-					"amount": 120
+					"amount": 90
 				}
 			},
 			"components": {
@@ -26011,8 +25993,8 @@
 				}
 			],
 			"entries": [
-				"You sense the presence of any trap within range that is within line of sight. A trap, for the purpose of this spell, includes anything that would inflict a sudden or unexpected effect you consider harmful or undesirable, which was specifically intended as such by its creator. Thus, the spell would sense an area affected by the {@spell alarm} spell, a {@spell glyph of warding}, or a mechanical pit trap, but it would not reveal a natural weakness in the floor, an unstable ceiling, or a hidden sinkhole.",
-				"This spell merely reveals that a trap is present. You don't learn the location of each trap, but you do learn the general nature of the danger posed by a trap you sense."
+				"When you cast this spell, you reveal the presence of all traps within range that are within your line of sight {@color and not behind full cover. If a trap is revealed, you see the general area that the trap affects in a faint red glow, which lasts for 1 minute.|30d5c8} A trap, for the purpose of this spell, includes anything that would inflict a sudden or unexpected effect you consider harmful or undesirable, which was specifically intended as such by its creator. Thus, the spell would sense an area affected by the {@spell alarm} spell, a {@spell glyph of warding}, or a mechanical pit trap, but it would not reveal a natural weakness in the floor, an unstable ceiling, or a hidden sinkhole.",
+				"{@color This spell does not reveal any information about the nature of the danger posed by a trap you sense.|30d5c8}"
 			]
 		},
 		{
