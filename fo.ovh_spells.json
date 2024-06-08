@@ -35571,6 +35571,69 @@
 			]
 		},
 		{
+	"name": "Ice Barrage",
+	"level": 3,
+	"school": "V",
+	"time": [
+		{
+			"number": 1,
+			"unit": "action"
+		}
+	],
+	"range": {
+		"type": "point",
+		"distance": {
+			"type": "feet",
+			"amount": 60
+		}
+	},
+	"duration": [
+		{
+			"type": "instant"
+		}
+	],
+	"classes": {
+		"fromClassList": [
+			{
+				"name": "Wizard",
+				"source": "PHB"
+			},
+			{
+				"name": "Sorcerer",
+				"source": "PHB"
+			}
+		]
+	},
+	"entries": [
+		"By manipulating the moisture and temperature of a small area, you cause a violent and sudden flash freeze to occur in a 15-foot cube within range. Each creature in the area must make a Constitution saving throw.",
+		"On a failed save, a creature takes {@damage 4d8} cold damage and is then encased in a block of ice. While encased, the creature is {@condition stunned} and it gains {@dice 1d4 + 3} temporary hit points. If the creature already has temporary hit points, the temporary hit points from this effect are calculated separately. This condition ends if the creatures temporary hit points are removed, if another creature within 5 feet uses an action to thaw away the ice, or after 1 minute has passed.",
+		"On a successful save, a creature takes half as much damage and its speed is halved until the end of its next turn."
+	],
+	"source": "Farover",
+	"components": {
+		"v": true,
+		"s": true
+	},
+	"conditionInflict": [
+		"stunned"
+	],
+	"entriesHigherLevel": [
+		{
+			"type": "entries",
+			"name": "At Higher Levels",
+			"entries": [
+				"When you cast this spell using a spell slot of 4th level or higher, the damage increases by {@dice 1d8}, and the temporary hit points increase by {@dice 1d4} for each slot level above 3rd."
+			]
+		}
+	],
+	"damageInflict": [
+		"cold"
+	],
+	"miscTags": [
+		"THP"
+		]
+		},
+		{
 			"name": "Wrathful Smite",
 			"source": "PHB",
 			"page": 289,
