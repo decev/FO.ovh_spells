@@ -12216,7 +12216,7 @@
 		},
 		{
 			"name": "Detect Poison and Disease",
-			"source": "Farover",
+			"source": "PHB",
 			"level": 1,
 			"school": "D",
 			"time": [
@@ -12234,14 +12234,6 @@
 					{
 						"name": "Ranger (reworked)",
 						"source": "farover"
-					},
-					{
-						"name": "Cleric",
-						"source": "PHB"
-					},
-					{
-						"name": "Paladin",
-						"source": "PHB"
 					}
 				]
 			},
@@ -12266,7 +12258,7 @@
 				}
 			],
 			"entries": [
-				"For the duration, you can sense the presence and location of poisons, poisonous creatures, and diseases within 30 feet of you. You also identify the kind of poison, poisonous creature, or disease in each case.",
+				"For the duration, you can sense the presence and location of poisons, poisonous creatures, and {@color acute and/or conventionally curable diseases (those that can be cured by either conventional medicine or the|30d5c8} {@link restoration spells|https://farover.ovh/spells.html#flmtclasses:b1,fbsr:restoration}{@color )|30d5c8} within 30 feet of you. You also identify the kind of poison, poisonous creature, or disease in each case.",
 				"The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt."
 			],
 			"feats": [
