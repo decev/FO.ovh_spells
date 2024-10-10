@@ -3498,9 +3498,9 @@
 		},
 		{
 			"name": "Sending",
-			"source": "Farover",
+			"source": "PHB",
 			"level": 3,
-			"school": "V",
+			"school": "D",
 			"time": [
 				{
 					"number": 1,
@@ -3533,30 +3533,15 @@
 				}
 			],
 			"entries": [
-				"You send a short message of twenty-five words or less to a creature with which you are familiar. If the creature is within 30 miles (50 km), it hears the message in its mind; otherwise, the spell fails. The target recognizes you as the sender if it knows you, and can answer in a like manner within a few moments after receiving the message. A target of this spell can mentally block out an incoming message if it is unwilling to hear it."
+				"You send a short message of twenty-five words or less to a creature with which you are familiar. {@color If the creature is within 30 miles (50 km), it hears the message in its mind; otherwise, the spell fails.|30d5c8} The target hears the message in its mind, recognizes you as the sender if it knows you, and can answer in a like manner within a few moments after receiving the message.",
+				 "{@color A target of this spell can mentally block out an incoming message if it is unwilling to hear it. If this happens, you are made aware of it, and the spell fails.|30d5c8}"
 			],
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Bard",
-						"source": "PHB"
-					},
-					{
-						"name": "Cleric",
-						"source": "PHB"
-					},
-					{
-						"name": "Wizard",
-						"source": "PHB"
-					}
-				]
-			},
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"When you cast this spell using a spell slot of 4th level or higher, the amount of words that can be sent in the message is increased by 25, and the range of the spell is increased by 30 miles (50 km) for each slot level above 3rd, up to a maximum of 175 words and 210 miles (350 km) at 9th level."
+						"{@color When you cast this spell using a spell slot of 4th level or higher, the amount of words that can be sent in the message is increased by 25, and the range of the spell is increased by 30 miles (50 km) for each slot level above 3rd, up to a maximum of 175 words and 210 miles (350 km) at 9th level.|30d5c8}"
 					]
 				}
 			]
@@ -7675,7 +7660,7 @@
 		},
 		{
 			"name": "Prayer of Healing",
-			"source": "Farover",
+			"source": "PHB",
 			"page": 267,
 			"basicRules": true,
 			"level": 2,
@@ -7702,7 +7687,7 @@
 				}
 			],
 			"entries": [
-				"Up to six creatures of your choice that you can see within range each regain hit points equal to {@dice 1d6} + your spellcasting ability modifier. This spell has no effect on undead or constructs."
+				"{@color Up to six creatures of your choice that you can see within range each regain hit points equal to|30d5c8} {@dice 2d6} {@color + your spellcasting ability modifier. This spell has no effect on undead or constructs.|30d5c8}"
 			],
 			"entriesHigherLevel": [
 				{
@@ -7732,27 +7717,7 @@
 			],
 			"areaTags": [
 				"MT"
-			],
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Cleric",
-						"source": "PHB"
-					}
-				],
-				"fromClassListVariant": [
-					{
-						"name": "Paladin",
-						"source": "PHB",
-						"definedInSource": "UAClassFeatureVariants"
-					},
-					{
-						"name": "Paladin",
-						"source": "PHB",
-						"definedInSource": "TCE"
-					}
-				]
-			}
+			]
 		},
 		{
 			"name": "Snilloc's Snowball Swarm",
@@ -20534,7 +20499,7 @@
 				}
 			],
 			"entries": [
-				"Healing energy radiates from you in an aura with a 30-foot radius. Until the spell ends, the aura moves with you, centered on you. You can use a bonus action to cause one creature in the aura (including you) to regain {@dice 2d6} hit points.",
+				"Healing energy radiates from you in an aura with a 30-foot radius. When you create the aura and at the start of each of your turns while it persists, you can restore {@dice 2d6} hit points to one creature in it.",
 				"{@italic Concentration Points: 3}"
 			],
 			"miscTags": [
@@ -23673,7 +23638,7 @@
 		},
 		{
 			"name": "Cure Wounds",
-			"source": "Farover",
+			"source": "PHB",
 			"basicRules": true,
 			"classes": {
 				"fromClassList": [
@@ -23684,18 +23649,6 @@
 					{
 						"name": "Ranger (reworked)",
 						"source": "farover"
-					},
-					{
-						"name": "Bard",
-						"source": "PHB"
-					},
-					{
-						"name": "Cleric",
-						"source": "PHB"
-					},
-					{
-						"name": "Paladin",
-						"source": "PHB"
 					}
 				]
 			},
@@ -23723,14 +23676,14 @@
 				}
 			],
 			"entries": [
-				"A creature you touch regains a number of hit points equal to {@dice 1d10} + your spellcasting ability modifier. This spell has no effect on undead or constructs."
+				"A creature you touch regains a number of hit points equal to {@dice 2d8} + your spellcasting ability modifier. This spell has no effect on undead or constructs."
 			],
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"When you cast this spell using a spell slot of 2nd level or higher, the healing increases by {@scaledice 1d10|1-9|1d10} for each slot level above 1st."
+						"When you cast this spell using a spell slot of 2nd level or higher, the healing {@color increases by|30d5c8} {@scaledice 1d8|1-9|1d8} for each slot level above 1st."
 					]
 				}
 			],
@@ -24540,13 +24493,11 @@
 					"duration": {
 						"type": "minute",
 						"amount": 1
-					},
-					"concentration": true
+					}
 				}
 			],
 			"entries": [
-				"Your prayer empowers you with divine radiance. Until the spell ends, your weapon attacks deal an extra {@damage 1d4} radiant damage on a hit.",
-				"{@italic Concentration Points: 1}"
+				"Your prayer empowers you with divine radiance. Until the spell ends, your weapon attacks deal an extra {@damage 1d4} radiant damage on a hit."
 			],
 			"damageInflict": [
 				"radiant"
@@ -27981,14 +27932,14 @@
 				}
 			],
 			"entries": [
-				"A creature of your choice that you can see within range regains hit points equal to {@dice 1d4} + your spellcasting ability modifier. This spell has no effect on undead or constructs."
+				"A creature of your choice that you can see within range regains hit points equal to {@dice 2d4} + your spellcasting ability modifier. This spell has no effect on undead or constructs."
 			],
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"When you cast this spell using a spell slot of 2nd level or higher, the healing increases by {@scaledice 1d4|1-9|1d4} for each slot level above 1st."
+						"When you cast this spell using a spell slot of 2nd level or higher, the healing {@color increases by|30d5c8} {@scaledice 1d4|1-9|1d4} for each slot level above 1st."
 					]
 				}
 			],
@@ -29460,14 +29411,14 @@
 				}
 			],
 			"entries": [
-				"A wave of healing energy washes out from a point of your choice within range. Choose up to six creatures in a 30-foot-radius sphere centered on that point. Each target regains hit points equal to {@dice 3d8} + your spellcasting ability modifier. This spell has no effect on undead or constructs."
+				"A wave of healing energy washes out from a point of your choice within range. Choose up to six creatures in a 30-foot-radius sphere centered on that point. Each target regains hit points {@color equal to|30d5c8} {@dice 4d8} + your spellcasting ability modifier. This spell has no effect on undead or constructs."
 			],
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"When you cast this spell using a spell slot of 6th level or higher, the healing increases by {@scaledice 3d8|5-9|1d8} for each slot level above 5th."
+						"When you cast this spell using a spell slot of 6th level or higher, the healing increases by {@scaledice 4d8|5-9|1d8} for each slot level above 5th."
 					]
 				}
 			],
@@ -29568,6 +29519,14 @@
 					"unit": "bonus"
 				}
 			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					}
+				]
+			},
 			"range": {
 				"type": "point",
 				"distance": {
@@ -29584,7 +29543,7 @@
 				}
 			],
 			"entries": [
-				"As you call out words of restoration, up to six creatures of your choice that you can see within range regain hit points equal to {@dice 1d4} + your spellcasting ability modifier. This spell has no effect on undead or constructs."
+				"As you call out words of restoration, up to six creatures of your choice that you can see within range regain hit points equal to {@dice 2d4} + your spellcasting ability modifier. This spell has no effect on undead or constructs."
 			],
 			"entriesHigherLevel": [
 				{
@@ -35624,6 +35583,474 @@
 			"miscTags": [
 				"THP"
 			]
+		},
+		{
+			"name": "Sorcerous Burst",
+			"source": "PHB",
+			"level": 0,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You cast sorcerous energy at one creature or object within range. Make a ranged attack roll against the target. On a hit, the target takes {@damage 1d8} damage of a type you choose: Acid, Cold, Fire, Lightning, Poison, Psychic, or Thunder.",
+				"If you roll an 8 on a {@dice d8} for this spell, you can roll another {@dice d8}, and add it to the damage. When you cast this spell, the maximum number of these d8s you can add to the spell's damage equals your spellcasting ability modifier."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Cantrip Upgrade",
+					"entries": [
+						"The damage increases by {@dice 1d8} when you reach levels 5 ({@damage 2d8}), 11 ({@damage 3d8}), and 17 ({@damage 4d8})."
+					]
+				}
+			],
+			"scalingLevelDice": {
+				"label": "damage",
+				"scaling": {
+					"1": "1d8",
+					"5": "2d8",
+					"11": "3d8",
+					"17": "4d8"
+				}
+			},
+			"damageInflict": [
+				"acid",
+				"cold",
+				"fire",
+				"lightning",
+				"poison",
+				"psychic",
+				"thunder"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			},
+			"miscTags": [
+				"OBJ",
+				"SCL"
+			],
+			"areaTags": [
+				"ST"
+			]
+		},
+		{
+			"name": "Fount of Moonlight",
+			"source": "PHB",
+			"level": 4,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid (reworked)",
+						"source": "Farover"
+					}
+				]
+			},
+			"entries": [
+				"A cool light wreathes your body for the duration, emitting bright light in a 20-foot radius and dim light for an additional 20 feet.",
+				"Until the spell ends, you have resistance to Radiant damage, and your melee attacks deal an extra {@damage 2d6} Radiant damage on a hit.",
+				"In addition, immediately after you take damage from a creature you can see within 60 feet of yourself, you can use your reaction to force the creature to make a Constitution saving throw. On a failed save, the creature has the {@condition blinded} condition until the end of your next turn."
+			],
+			"damageResist": [
+				"radiant"
+			],
+			"damageInflict": [
+				"radiant"
+			],
+			"conditionInflict": [
+				"blinded"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"AAD",
+				"LGT",
+				"SGT"
+			]
+		},
+		{
+			"name": "Power Word Fortify",
+			"source": "PHB",
+			"level": 7,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					}
+				]
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You fortify up to six creatures you can see within range. The spell bestows 120 temporary hit points, which you divide among the spell's recipients."
+			],
+			"miscTags": [
+				"SGT",
+				"THP"
+			],
+			"areaTags": [
+				"MT"
+			]
+		},
+		{
+			"name": "Elementalism",
+			"source": "PHB",
+			"level": 0,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You exert control over the elements, creating one of the following effects within range.",
+				{
+					"type": "entries",
+					"name": "Beckon Air",
+					"entries": [
+						"You create a breeze strong enough to ripple cloth, stir dust, rustle leaves, and close open doors and shutters, all in a 5-foot Cube. Doors and shutters being held open by someone or something aren't affected."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Beckon Earth",
+					"entries": [
+						"You create a thin shroud of dust or sand that covers surfaces in a 5-foot-square area, or you cause a single word to appear in your handwriting in a patch of dirt or sand."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Beckon Fire",
+					"entries": [
+						"You create a thin cloud of harmless embers and colored, scented smoke in a 5-foot Cube. You choose the color and scent, and the embers can light candles, torches, or lamps in that area. The smoke's scent lingers for 1 minute."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Beckon Water",
+					"entries": [
+						"You create a spray of cool mist that lightly dampens creatures and objects in a 5-foot Cube. Alternatively, you create 1 cup of clean water either in an open container or on a surface, and the water evaporates in 1 minute."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Sculpt Element",
+					"entries": [
+						"You cause dirt, sand, fire, smoke, mist, or water that can fit in a 1-foot Cube to assume a crude shape (such as that of a creature) for 1 hour."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid (reworked)",
+						"source": "Farover"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"miscTags": [
+				"OBJ"
+			],
+			"areaTags": [
+				"C",
+				"Q"
+			]
+		},
+		{
+			"name": "Arcane Vigor",
+			"source": "PHB",
+			"level": 2,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You tap into your life force to heal yourself. Roll {@color one|30d5c8} of your unexpended hit dice, and regain a number of hit points equal to the roll's total plus your spellcasting ability modifier. That hit die is then expended."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Warlock (reworked)",
+						"source": "Farover"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"The number of unexpended Hit Dice you can roll increases by one for each spell slot level above 2."
+					]
+				}
+			],
+			"miscTags": [
+				"HL"
+			]
+		},
+		{
+			"name": "Jallarzi's Storm of Radiance",
+			"source": "PHB",
+			"level": 5,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a pinch of phosphorus"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Warlock (reworked)",
+						"source": "Farover"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You unleash a storm of flashing light and raging thunder in a 10-foot-radius, 40-foot-high Cylinder centered on a point you can see within range. While in this area, creatures have the {@condition Blinded|PHB} and {@condition Deafened|PHB} conditions, and they can't cast spells with a Verbal component.",
+				"When the storm appears, each creature in it makes a Constitution saving throw, taking {@damage 2d10} Radiant damage and {@damage 2d10} Thunder damage on a failed save or half as much damage on a successful one. A creature also makes this save when it enters the spell's area for the first time on a turn or ends its turn there. A creature makes this save only once per turn."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"The Radiant and Thunder damage increase by {@scaledamage 2d10|5-9|1d10} for each spell slot level above 5."
+					]
+				}
+			],
+			"damageInflict": [
+				"radiant",
+				"thunder"
+			],
+			"conditionInflict": [
+				"blinded",
+				"deafened"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"areaTags": [
+				"Y"
+			],
+			"hasFluffImages": true
+		},
+		{
+			"name": "Tasha's Bubbling Cauldron",
+			"source": "PHB",
+			"level": 6,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 5
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a gilded ladle worth 500 + GP"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					}
+				}
+			],
+			"entries": [
+				"You conjure a claw-footed cauldron filled with bubbling liquid. The cauldron appears in an unoccupied space on the ground within 5 feet of you and lasts for the duration. The cauldron can't be moved and disappears when the spell ends, along with the bubbling liquid inside it.",
+				"The liquid in the cauldron duplicates the properties of a {@link Common or an Uncommon potion|https://docs.google.com/spreadsheets/d/1T2U0pbQsdxucsFfkzbNqSiRhFcT4-VcCX_udhlww9Tc/edit?gid=0#gid=0} of your choice (such as a Potion of Healing). As a bonus action, you or an ally can reach into the cauldron and withdraw one potion of that kind. The potion is contained in a vial that disappears when the potion is consumed. The cauldron can produce a number of these potions equal to your spellcasting ability modifier (minimum 1). When the last of these potions is withdrawn from the cauldron, the cauldron disappears, and the spell ends.",
+				"Potions obtained from the cauldron that aren't consumed disappear when you cast this spell again."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Warlock (reworked)",
+						"source": "Farover"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"miscTags": [
+				"HL",
+				"UBA"
+			],
+			"hasFluffImages": true
 		},
 		{
 			"name": "Wrathful Smite",
