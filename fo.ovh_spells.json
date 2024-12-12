@@ -1625,8 +1625,8 @@
 				"v": true,
 				"s": true,
 				"m": {
-					"text": "an agate worth at least 1,000 gp, which the spell consumes",
-					"cost": 100000,
+					"text": "an agate worth at least 600 gp, which the spell consumes",
+					"cost": 60000,
 					"consume": true
 				}
 			},
@@ -7605,9 +7605,8 @@
 				"v": true,
 				"s": true,
 				"m": {
-					"text": "ruby dust worth 1,500 gp",
-					"cost": 150000,
-					"consume": true
+					"text": "a ruby worth at least 1,500 gp",
+					"cost": 150000
 				}
 			},
 			"duration": [
@@ -8440,8 +8439,8 @@
 				"v": true,
 				"s": true,
 				"m": {
-					"text": "burning incense, a small measure of brimstone and oil, a knotted string, a small amount of umber hulk blood, and a small silver rod worth at least 10 gp",
-					"cost": 1000
+					"text": "burning incense, a small measure of brimstone and oil, a knotted string, a small amount of umber hulk blood, and a platinum rod worth at least 1,000 gp",
+					"consume": "optional"
 				}
 			},
 			"duration": [
@@ -8468,7 +8467,7 @@
 					"type": "entries",
 					"name": "Doors",
 					"entries": [
-						"All doors in the warded area are magically locked, as if sealed by an {@spell arcane lock} spell. In addition, you can cover up to ten doors with an illusion (equivalent to the illusory object function of the {@spell minor illusion} spell) to make them appear as plain sections of wall."
+						"All doors in the warded area are magically locked, as if sealed by an {@spell arcane lock} spell (cast at 3rd level). In addition, you can cover up to ten doors with an illusion (equivalent to the illusory object function of the {@spell minor illusion} spell) to make them appear as plain sections of wall."
 					]
 				},
 				{
@@ -8496,7 +8495,7 @@
 					]
 				},
 				"The whole warded area radiates magic. A {@spell dispel magic} cast on a specific effect, if successful, removes only that effect.",
-				"You can create a permanently guarded and warded structure by casting this spell there every day for one year."
+				"{@color If you cast this spell and consume the material component of the spell, the spell lasts until it is dispelled.|30d5c8}"
 			],
 			"miscTags": [
 				"OBS",
@@ -9114,8 +9113,8 @@
 				"v": true,
 				"s": true,
 				"m": {
-					"text": "a gem-encrusted bowl worth at least 1,000 gp, which the spell consumes",
-					"cost": 100000,
+					"text": "a gem-encrusted bowl worth at least 500 gp, which the spell consumes",
+					"cost": 50000,
 					"consume": true
 				}
 			},
@@ -9846,7 +9845,7 @@
 				"v": true,
 				"s": true,
 				"m": {
-					"text": "incense worth at least 250 gp, which the spell consumes, and four ivory strips worth at least 50 gp each",
+					"text": "incense worth at least 250 gp, which the spell consumes",
 					"cost": 25000,
 					"consume": true
 				}
@@ -10390,7 +10389,7 @@
 					"type": "timed",
 					"duration": {
 						"type": "hour",
-						"amount": 1
+						"amount": 8
 					}
 				}
 			],
@@ -11706,7 +11705,10 @@
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "a thin sheet of lead, a piece of opaque glass, a wad of cotton or cloth, and powdered chrysolite"
+				"m": {
+					"text": "powdered chrysolite worth at least 400 gp",
+					"consume": "optional"
+				}
 			},
 			"duration": [
 				{
@@ -11731,7 +11733,7 @@
 						"Planar travel is blocked within the warded area."
 					]
 				},
-				"Casting this spell on the same spot every day for a year makes this effect permanent."
+				"{@color If you cast this spell and consume the material component of the spell, the spell lasts until it is dispelled.|30d5c8}"
 			],
 			"entriesHigherLevel": [
 				{
@@ -12420,8 +12422,8 @@
 				"v": true,
 				"s": true,
 				"m": {
-					"text": "a jewel worth at least 1,000 gp, which the spell consumes",
-					"cost": 100000,
+					"text": "a jewel worth at least 500 gp, which the spell consumes",
+					"cost": 50000,
 					"consume": true
 				}
 			},
@@ -13329,11 +13331,7 @@
 			},
 			"components": {
 				"v": true,
-				"s": true,
-				"m": {
-					"text": "holy water or powdered silver and iron, which the spell consumes",
-					"consume": true
-				}
+				"s": true
 			},
 			"duration": [
 				{
@@ -14347,8 +14345,8 @@
 				"v": true,
 				"s": true,
 				"m": {
-					"text": "a powder composed of diamond, emerald, ruby, and sapphire dust worth at least 5,000 gp, which the spell consumes",
-					"cost": 500000,
+					"text": "a powder composed of diamond, emerald, ruby, and sapphire dust worth at least 2,000 gp, which the spell consumes",
+					"cost": 200000,
 					"consume": true
 				}
 			},
@@ -17949,6 +17947,67 @@
 			}
 		},
 		{
+			"name": "Steel Wind Strike",
+			"source": "XGE",
+			"page": 166,
+			"level": 3,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"s": true,
+				"m": {
+					"text": "a melee weapon worth at least 1 sp",
+					"cost": 10
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You flourish the weapon used in the casting and then vanish to strike like the wind. Choose up to five creatures you can see within range. Make a melee spell attack against each target. On a hit, a target {@color takes|30d5c8} {@damage 6d6} {@color force damage.|30d5c8}",
+				"You can then teleport to an unoccupied space you can see within 5 feet of one of the targets you hit or missed."
+			],
+			"damageInflict": [
+				"force"
+			],
+			"spellAttack": [
+				"M"
+			],
+			"miscTags": [
+				"SGT",
+				"TP"
+			],
+			"areaTags": [
+				"MT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Ranger (reworked)",
+						"source": "farover"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
 			"name": "Witch Bolt",
 			"source": "PHB",
 			"page": 289,
@@ -19929,7 +19988,7 @@
 				"v": true,
 				"s": true,
 				"m": {
-					"text": "a pinch of diamond dust worth 10 gp sprinkled over the target, which the spell consumes",
+					"text": "a pinch of gold dust worth 10 gp sprinkled over the target, which the spell consumes",
 					"consume": true,
 					"cost": 100
 				}
@@ -22025,8 +22084,7 @@
 				"s": true,
 				"m": {
 					"text": "a sprinkling of holy water, rare incense, and powdered ruby worth at least 1,000 gp",
-					"consume": true,
-					"cost": 100000
+					"consume": "optional"
 				}
 			},
 			"duration": [
@@ -22412,9 +22470,9 @@
 				"v": true,
 				"s": true,
 				"m": {
-					"text": "a pinch of powdered ruby worth at least 10gp, which the spell consumes",
+					"text": "powdered ruby worth at least 100gp, which the spell consumes",
 					"consume": true,
-					"cost": 1000
+					"cost": 10000
 				}
 			},
 			"duration": [
@@ -24405,8 +24463,8 @@
 				"v": true,
 				"s": true,
 				"m": {
-					"text": "gold dust worth 80 gp, which the spell consumes",
-					"cost": 8000,
+					"text": "gold dust worth 70 gp, which the spell consumes",
+					"cost": 7000,
 					"consume": true
 				}
 			},
@@ -26570,9 +26628,9 @@
 				"v": true,
 				"s": true,
 				"m": {
-					"text": "ten meteorite stones set in a ring, and at least 100 gp which the spell consumes",
+					"text": "ten meteorite stones worth at least 500 gp set in a ring, which the spell consumes",
 					"consume": true,
-					"cost": 100
+					"cost": 50000
 				}
 			},
 			"duration": [
@@ -30599,8 +30657,8 @@
 				"v": true,
 				"s": true,
 				"m": {
-					"text": "a white pearl worth at least 100 gp, which the spell consumes",
-					"cost": 10000,
+					"text": "a white pearl worth at least 50 gp, which the spell consumes",
+					"cost": 5000,
 					"consume": true
 				}
 			},
@@ -32123,8 +32181,8 @@
 				"v": true,
 				"s": true,
 				"m": {
-					"text": "clay, ash, and mandrake root, all of which the spell consumes, and a jewel-encrusted dagger worth at least 1,000 gp",
-					"cost": 100000,
+					"text": "clay, ash, and mandrake root, all of which the spell consumes, and a jewel-encrusted dagger worth at least 200 gp",
+					"cost": 20000,
 					"consume": true
 				}
 			},
@@ -32420,8 +32478,8 @@
 				"v": true,
 				"s": true,
 				"m": {
-					"text": "mistletoe, which the spell consumes, that was harvested with a golden sickle under the light of a full moon",
-					"consume": true
+					"text": "mistletoe ornamented with gems worth at least 1,000 gp",
+					"consume": "optional"
 				}
 			},
 			"duration": [
@@ -32434,7 +32492,7 @@
 				}
 			],
 			"entries": [
-				"You invoke the spirits of nature to protect an area outdoors or underground. The area can be as small as a 30-foot cube or as large as a 90-foot cube. Buildings and other structures are excluded from the affected area. If you cast this spell in the same area every day for a year, the spell lasts until dispelled.",
+				"You invoke the spirits of nature to protect an area outdoors or underground. The area can be as small as a 30-foot cube or as large as a 90-foot cube. Buildings and other structures are excluded from the affected area. {@color If you cast this spell and consume the material component of the spell, the spell lasts until it is dispelled.|30d5c8}",
 				"The spell creates the following effects within the area. When you cast this spell, you can specify creatures as friends who are immune to the effects. You can also specify a password that, when spoken aloud, makes the speaker immune to these effects.",
 				"The entire warded area radiates magic. A {@spell dispel magic} cast on the area, if successful, removes only one of the following effects, not the entire area. That spell's caster chooses which effect to end. Only when all its effects are gone is this spell dispelled.",
 				{
