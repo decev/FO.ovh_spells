@@ -1583,8 +1583,8 @@
 				}
 			],
 			"entries": [
-				"Healing energy radiates from you in an aura with a 30-foot radius. When you create the aura and at the start of each of your turns while it persists, you can restore {@dice 2d6} hit points to one creature in it.",
-				"{@italic Concentration Points: 3}"
+				"Healing energy radiates from you in an aura with a 30-foot radius. When you create the aura, {@color you can restore|30d5c8} {@dice 3d6} {@color hit points to one creature in it.|30d5c8} At the start of each of your turns while the aura persists, you can {@color restore|30d5c8} {@dice 1d6} {@color hit points|30d5c8} to one creature in it.",
+				"{@italic Concentration Points: 2}"
 			],
 			"miscTags": [
 				"HL",
@@ -9845,8 +9845,8 @@
 				"v": true,
 				"s": true,
 				"m": {
-					"text": "incense worth at least 250 gp, which the spell consumes",
-					"cost": 25000,
+					"text": "incense worth at least 100 gp, which the spell consumes",
+					"cost": 10000,
 					"consume": true
 				}
 			},
@@ -9856,8 +9856,8 @@
 				}
 			],
 			"entries": [
-				"Name or describe a famous person, place, or object. The spell brings to your mind a brief summary of the significant lore about that famous thing, as described by the DM.",
-				"The lore might consist of important details, amusing revelations, or even secret lore that has never been widely known. The more information you already know about the thing, the more precise and detailed the information you receive is. That information is accurate but might be couched in figurative language or poetry, as determined by the DM.",
+				"Name or describe a famous person, place, or object. The spell brings to your mind {@color a summary|30d5c8} of the significant lore about that famous thing, as described by the DM.",
+				"The lore might consist of important details, amusing revelations, or even {@color obscure lore|30d5c8} that has never been widely known. {@color The spell does not reveal distinctly secret information.|30d5c8} The more information you already know about the thing, the more precise and detailed the information you receive is. That information is accurate but might be couched in figurative language or poetry, as determined by the DM.",
 				"If the famous thing you chose isn't actually famous, you hear sad musical notes played on a trombone, and the spell fails."
 			],
 			"miscTags": [
