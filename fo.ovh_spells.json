@@ -28876,7 +28876,7 @@
 				"v": true,
 				"s": true,
 				"m": {
-					"text": "a musical instrument worth at least 2 gp",
+					"text": "a {@item musical instrument|phb} worth at least 2 gp",
 					"cost": 200
 				}
 			},
@@ -29090,6 +29090,57 @@
 			],
 			"areaTags": [
 				"ST"
+			]
+		},
+		{
+			"name": "Tearful Sonnet",
+			"level": 3,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 15
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					}
+				]
+			},
+			"source": "Farover",
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a {@item musical instrument|phb} worth at least 2 gp"
+			},
+			"entries": [
+				"You play a tragic song that fills others with pity and sorrow. When you cast this spell, you can choose any number of creatures, including yourself, to benefit from its effects. While {@status concentration|PHB|concentrating} on this spell, you can only use either an action or a bonus action on each of your turns, but not both.",
+				"Any creature that targets you or a chosen creature within the spell's area with an attack roll or a damaging spell must succeed on a Charisma saving throw. On a failed save, the attacker feels overwhelming remorse for its actions, loses the attack or spell, and spends the rest of its turn crying. Creatures that are {@condition deafened} or immune to the {@condition charmed} condition automatically succeed on this saving throw.",
+				"{@italic Concentration Points: 2}"
+			],
+			"savingThrow": [
+				"charisma"
 			]
 		},
         {
