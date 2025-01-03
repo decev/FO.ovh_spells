@@ -28820,6 +28820,278 @@
 				}
 			]
 		},
+		{
+			"name": "Accelerando",
+			"level": 4,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 6,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You play a complex and quick up-tempo piece that gradually gets faster and more complex, instilling up to six willing creatures with speed. While {@status concentration|PHB|concentrating} on this spell, you can only use either an action or a bonus action on each of your turns, but not both.",
+				"Until the spell ends, targets gain cumulative benefits the longer you maintain {@status concentration|PHB} on this spell (including the turn you cast it).",
+				{
+					"type": "list",
+					"items": [
+						"{@bold 1 Round.} A target's speed is increased by an amount equal to its base movement speed.",
+						"{@bold 2 Rounds.} Advantage on Dexterity saving throws.",
+						"{@bold 3 Rounds.} +2 bonus to AC.",
+						"{@bold 4 Rounds.} An additional action on each turn. That action can be used only to take the {@action Attack} (one weapon attack only), {@action Dash}, {@action Disengage}, {@action Hide}, or {@action Use an Object} action."
+					]
+				},
+				"When the spell ends, a target can’t move or take actions until after its next turn as the impact of their frenetic speed catches up to it.",
+				"{@italic Concentration Points: 3}"
+			],
+			"source": "Farover",
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a musical instrument worth at least 2 gp",
+					"cost": 200
+				}
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"You can maintain {@status concentration|PHB} on this spell for an additional 2 rounds for each slot level above 4th."
+					]
+				}
+			],
+			"miscTags": [
+				"MAC"
+			],
+			"areaTags": [
+				"MT"
+			]
+		},
+		{
+			"name": "Harmonic Resonance",
+			"level": 1,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You harmonize with the rhythm of those around you until you’re perfectly in sync. You may take the {@action Help} action as a bonus action. Additionally, when a creature within range uses a Bardic Inspiration die, you may choose to reroll the die after it is rolled but before the outcome is determined.",
+				"{@italic Concentration Points: 1}"
+			],
+			"source": "Farover",
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "the written lyrics of a duet"
+			},
+			"miscTags": [
+				"ADV"
+			],
+			"areaTags": [
+				"ST"
+			]
+		},
+		{
+			"name": "Instant Window",
+			"level": 2,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You create a window roughly 4 inches square, centered on the point that you touch. If the surface is more than 1 foot thick or made of materials other than wood, dirt, or stone, the spell fails. The window is sufficiently braced to prevent any structural weakening to the surrounding structure, but otherwise is just a small hole you can look through. The hole lasts for 1 minute, then vanishes. The hole can also be dismissed by the caster as a bonus action. Creatures in this space when the window vanishes are immediately shunted to the nearest unoccupied space and take {@damage 1d6} force damage for every square moved.",
+				"{@italic Concentration Points: 1}"
+			],
+			"source": "Farover",
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a small chisel and a piece of glass"
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"For each slot level beyond 2nd, you can choose one of the following features:",
+						{
+							"type": "list",
+							"items": [
+								"{@bold Glass pane.} The window comes with a pane of glass (AC 5, 2 hit points), which functions as a normal window pane, keeping rain, outside air, etc. out and inside air in.",
+								"{@bold Small-sized.} The window is of sufficient diameter for a Small-sized creature to squeeze through as an action.",
+								"{@bold Medium-sized (counts as two features).} The window is of sufficient diameter for a Medium creature to squeeze through as an action. Small creatures can pass through as part of their normal movement.",
+								"{@bold Barred.} The window has heavy iron bars (AC 19, 50 hit points) covering it, granting three-quarters cover.",
+								"{@bold Increased duration.} The window lasts for an additional minute. This feature can be chosen multiple times, increasing the duration by 1 minute each time."
+							]
+						}
+					]
+				}
+			],
+			"miscTags": [
+				"OBJ"
+			]
+		},
+		{
+			"name": "Dissociation",
+			"level": 1,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 10
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You cause a willing creature's mind to conveniently disconnect from reality when faced with stress. For the duration, if the creature fails a saving throw against an effect that would cause it to become {@condition charmed}, {@condition frightened}, {@condition paralyzed}, or {@condition stunned}, it can choose to become {@condition dazed|farover} instead of the other condition for the same duration. When Dissociation ends, if the target has benefited from the spell's effects, it must succeed on a DC 10 Wisdom saving throw or suffer one level of {@condition exhaustion}.",
+				"{@italic Concentration Points: 1}"
+			],
+			"source": "Farover",
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st."
+					]
+				}
+			],
+			"conditionInflict": [
+				"exhaustion"
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"areaTags": [
+				"ST"
+			]
+		},
         {
 			"name": "Ashardalon's Stride",
 			"source": "FTD",
