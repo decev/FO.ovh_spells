@@ -29143,6 +29143,126 @@
 				"charisma"
 			]
 		},
+		{
+			"name": "Cathartic Motif",
+			"level": 2,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					}
+				]
+			},
+			"source": "Farover",
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a {@item musical instrument|phb} worth at least 2 gp",
+					"cost": 200
+				}
+			},
+			"entries": [
+				"You play a short and uplifting succession of notes. Choose any number of creatures within range that can hear you to be affected by this spell.",
+				"Until the end of each affected creature's turn, they recover {@dice 2d6} hit points the first time they succeed on an ability check, attack roll, or saving throw. They also recover an additional {@dice 1d6} hit points each subsequent time they succeed after the first."
+			],
+			"entriesHigherLevel": [
+				{
+			"type": "entries",
+			"name": "At Higher Levels",
+			"entries": [
+				"When you cast this spell using a spell slot of 3rd level or higher, the amount healed by the first successful roll increases by {@dice 1d6} for each slot level above 2nd."
+					]
+				}
+			],
+			"miscTags": [
+				"HL"
+			],
+			"areaTags": [
+				"MT"
+			]
+		},
+		{
+			"name": "Atychiphobia",
+			"level": 2,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					}
+				]
+			},
+			"source": "Farover",
+			"srd": "Stage Fright",
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entries": [
+				"You evoke intense anxiety in a creature you can see within range. The target must make a Wisdom saving throw. On a failed save, the target takes {@damage 2d6} psychic damage and becomes affected by a fear of failure for the duration. On a successful save, the target takes half as much damage and is not affected by the fear of failure. A creature that is immune to the {@condition frightened} condition automatically succeeds on this saving throw.",
+				"A creature affected by a fear of failure has disadvantage on its attack rolls. Each time the creature misses with an attack roll, it takes {@damage 2d6} psychic damage. After taking this damage, the creature can repeat the saving throw to end the spell. If the creature succeeds on an attack roll, the spell ends."
+			],
+			"entriesHigherLevel": [
+				{
+			"type": "entries",
+			"name": "At Higher Levels",
+			"entries": [
+				"When you cast this spell using a spell slot of 3rd level or higher, the damage increases by {@dice 1d6} for each slot level above 2nd."
+					]
+				}
+			],
+			"savingThrow": [
+				"wisdom"
+			]
+		},
         {
 			"name": "Ashardalon's Stride",
 			"source": "FTD",
