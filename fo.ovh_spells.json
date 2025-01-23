@@ -1276,7 +1276,7 @@
 			"name": "Arcane Gate",
 			"source": "PHB",
 			"page": 214,
-			"level": 6,
+			"level": 5,
 			"school": "C",
 			"time": [
 				{
@@ -1308,7 +1308,7 @@
 					"type": "timed",
 					"duration": {
 						"type": "minute",
-						"amount": 10
+						"amount": 1
 					},
 					"concentration": true
 				}
@@ -1317,7 +1317,15 @@
 				"You create linked teleportation portals that remain open for the duration. Choose two points on the ground that you can see, one point within 10 feet of you and one point within 500 feet of you. A circular portal, 10 feet in diameter, opens over each point. If the portal would open in the space occupied by a creature, the spell fails, and the casting is lost.",
 				"The portals are two-dimensional glowing rings filled with mist, hovering inches from the ground and perpendicular to it at the points you choose. A ring is visible only from one side (your choice), which is the side that functions as a portal.",
 				"Any creature or object entering the portal exits from the other portal as if the two were adjacent to each other; passing through a portal from the nonportal side has no effect. The mist that fills each portal is opaque and blocks vision through it. On your turn, you can rotate the rings as a bonus action so that the active side faces in a different direction.",
-				"{@italic Concentration Points: 3}"
+				"{@italic Concentration Points: 4}"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "{@color At Higher Levels|30d5c8}",
+					"entries": [
+						"{@color If you cast this spell using a spell slot of 6th level, the duration becomes up to 8 hours, and the range is increased to 5000 feet. If you use a spell slot of 7th level or higher, the duration becomes up to 24 hours, and the range is increased to sight.|30d5c8}"
+					]
+				}
 			],
 			"miscTags": [
 				"OBJ",
@@ -5174,8 +5182,11 @@
 			],
 			"entries": [
 				"You teleport yourself from your current location to any other spot within range. You arrive at exactly the spot desired. It can be a place you can see, one you can visualize, or one you can describe by stating distance and direction, such as \"200 feet straight downward\" or \"upward to the northwest at a 45-degree angle, 300 feet.\"",
-				"You can bring along objects as long as their weight doesn't exceed what you can carry. You can also bring one willing creature of your size or smaller who is carrying gear up to its carrying capacity. The creature must be within 5 feet of you when you cast this spell.",
+				"You can bring along objects as long as their weight doesn't exceed what you can carry. You can also bring one creature of your size or smaller who is carrying gear up to its carrying capacity. The creature must be within 5 feet of you when you cast this spell. {@color If the creature is unwilling, it can make a Charisma saving throw to attempt to resist the teleportation.|30d5c8}",
 				"If you would arrive in a place already occupied by an object or a creature, you and any creature traveling with you each take {@damage 4d6} force damage, and the spell fails to teleport you."
+			],
+			"savingThrow": [
+				"charisma"
 			],
 			"damageInflict": [
 				"force"
@@ -6723,7 +6734,7 @@
 				}
 			],
 			"entries": [
-				"You blast the mind of a creature that you can see within range, attempting to shatter its intellect and personality. The target takes {@damage 4d6} psychic damage and must make an Intelligence saving throw.",
+				"You blast the mind of a creature that you can see within range, attempting to shatter its intellect and personality. The target takes {@damage 4d6} psychic damage and must make an Intelligence saving throw. {@color A creature that has an Intelligence score of 4 or lower is unaffected.|30d5c8}",
 				"On a failed save, the creature's Intelligence and Charisma scores become 1. The creature can't cast spells, activate magic items, understand language, or communicate in any intelligible way. The creature can, however, identify its friends, follow them, and even protect them.",
 				"At the end of every 30 days, the creature can repeat its saving throw against this spell. If it succeeds on its saving throw, the spell ends.",
 				"The spell can also be ended by {@spell greater restoration}, {@spell heal}, or {@spell wish}."
@@ -7266,14 +7277,15 @@
 				}
 			],
 			"entries": [
-				"A vertical column of divine fire roars down from the heavens in a location you specify. Each creature in a 10-foot-radius, 40-foot-high cylinder centered on a point within range must make a Dexterity saving throw. A creature takes {@damage 4d6} fire damage and {@damage 4d6} radiant damage on a failed save, or half as much damage on a successful one."
+				"A vertical column of divine fire roars down from the heavens in a location you specify. Each creature in a 10-foot-radius, 40-foot-high cylinder centered on a point within range must make a Dexterity saving throw. A creature takes {@damage 4d6} fire damage and {@damage 5d6} radiant damage on a failed save, or half as much damage on a successful one.",
+				"{@color A creature in the center of the column that fails the saving throw also begins to burn with holy fire. At the beginning of each of its turns, it takes|30d5c8} {@dice 1d6} {@color fire damage and|30d5c8} {@dice 1d6} {@color radiant damage. At the end of each of its turns, the creature makes a Constitution saving throw, ending the effect on itself on a successful save.|30d5c8}"
 			],
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"When you cast this spell using a spell slot of 6th level or higher, the fire damage or the radiant damage (your choice) increases by {@scaledamage 4d6|5-9|1d6} for each slot level above 5th."
+						"When you cast this spell using a spell slot of 6th level or higher, the {@color initial|30d5c8} fire and radiant damage both increase by {@scaledamage 4d6|5-9|1d6} for each slot level above 5th."
 					]
 				}
 			],
@@ -9438,7 +9450,7 @@
 			],
 			"entries": [
 				"You open a gateway to the dark between the stars, a region infested with unknown horrors. A 20-foot-radius sphere of blackness and bitter cold appears, centered on a point within range and lasting for the duration. This void is filled with a cacophony of soft whispers and slurping noises that can be heard up to 30 feet away. No light, magical or otherwise, can illuminate the area, and creatures fully within the area are {@condition blinded}.",
-				"The void creates a warp in the fabric of space, and the area is {@quickref difficult terrain||3}. Any creature that starts its turn in the area takes {@damage 2d6} cold damage. Any creature that ends its turn in the area must succeed on a Dexterity saving throw or take {@damage 2d6} acid damage as milky, otherworldly tentacles rub against it.",
+				"The void creates a warp in the fabric of space, and the area is {@quickref difficult terrain||3}. Any creature that starts its turn in the area takes {@damage 2d6} cold damage. Any creature that ends its turn in the area must succeed on a {@color Strength|30d5c8} saving throw or take {@damage 2d6} acid damage as milky, otherworldly tentacles rub against it.",
 				"{@italic Concentration Points: 2}"
 			],
 			"damageInflict": [
@@ -9449,7 +9461,7 @@
 				"blinded"
 			],
 			"savingThrow": [
-				"dexterity"
+				"strength"
 			],
 			"miscTags": [
 				"DFT"
@@ -9942,13 +9954,13 @@
 				}
 			],
 			"entries": [
-				"One creature or loose object of your choice that you can see within range rises vertically, up to 20 feet, and remains suspended there for the duration. The spell can levitate a target that weighs up to 500 pounds. An unwilling creature that succeeds on a Constitution saving throw is unaffected.",
+				"One creature or loose object of your choice that you can see within range rises vertically, up to 20 feet, and remains suspended there for the duration. The spell can levitate a target that weighs up to 500 pounds. An unwilling creature that succeeds on a {@color Strength|30d5c8} saving throw is unaffected.",
 				"The target can move only by pushing or pulling against a fixed object or surface within reach (such as a wall or a ceiling), which allows it to move as if it were climbing. You can change the target's altitude by up to 20 feet in either direction on your turn. If you are the target, you can move up or down as part of your move. Otherwise, you can use your action to move the target, which must remain within the spell's range.",
 				"When the spell ends, the target floats gently to the ground if it is still aloft.",
 				"{@italic Concentration Points: 1}"
 			],
 			"savingThrow": [
-				"constitution"
+				"strength"
 			],
 			"miscTags": [
 				"OBJ",
@@ -12026,7 +12038,7 @@
 				}
 			],
 			"entries": [
-				"A sphere of shimmering force encloses a creature or object of Large size or smaller within range. An unwilling creature must make a Dexterity saving throw. On a failed save, the creature is enclosed for the duration.",
+				"A sphere of shimmering force encloses a creature or object of Large size or smaller within range. An unwilling creature must make a {@color Strength|30d5c8} saving throw. On a failed save, the creature is enclosed for the duration.",
 				"Nothing\u2014not physical objects, energy, or other spell effects\u2014can pass through the barrier, in or out, though a creature in the sphere can breathe there. The sphere is immune to all damage, and a creature or object inside can't be damaged by attacks or effects originating from outside, nor can a creature inside the sphere damage anything outside it.",
 				"The sphere is weightless and just large enough to contain the creature or object inside. An enclosed creature can use its action to push against the sphere's walls and thus roll the sphere at up to half the creature's speed. Similarly, the globe can be picked up and moved by other creatures.",
 				"A {@spell disintegrate} spell targeting the globe destroys it without harming anything inside it.",
@@ -12048,7 +12060,7 @@
 				"thunder"
 			],
 			"savingThrow": [
-				"dexterity"
+				"strength"
 			],
 			"miscTags": [
 				"OBJ"
@@ -12239,7 +12251,7 @@
 				}
 			],
 			"entries": [
-				"You craft an illusion that takes root in the mind of a creature that you can see within range. The target must make an Intelligence saving throw. On a failed save, you create a phantasmal object, creature, or other visible phenomenon of your choice that is no larger than a 10-foot cube and that is perceivable only to the target for the duration. This spell has no effect on undead or constructs.",
+				"You craft an illusion that takes root in the mind of a creature that you can see within range. The target must make an Intelligence saving throw. {@color A creature that has an Intelligence score of 4 or lower is unaffected.|30d5c8} On a failed save, you create a phantasmal object, creature, or other visible phenomenon of your choice that is no larger than a 10-foot cube and that is perceivable only to the target for the duration. This spell has no effect on undead or constructs.",
 				"{@color The nature of the phantasm can be various things, but it can not completely surround the target creature and block its senses.|30d5c8} The phantasm includes sound, temperature, and other stimuli, also evident only to the creature. {@color The DM has the final say if the nature of the phantasm is appropriate.|30d5c8}",
 				"The target can use its action to examine the phantasm with an Intelligence ({@skill Investigation}) check against your spell save DC. If the check succeeds, the target realizes that the phantasm is an illusion, and the spell ends.",
 				"While a target is affected by the spell, the target treats the phantasm as if it were real. The target rationalizes any illogical outcomes from interacting with the phantasm. For example, a target attempting to walk across a phantasmal bridge that spans a chasm falls once it steps onto the bridge. If the target survives the fall, it still believes that the bridge exists and comes up with some other explanation for its fall\u2014it was pushed, it slipped, or a strong wind might have knocked it off.",
@@ -14007,6 +14019,14 @@
 			"entries": [
 				"You touch a rope. One end of it hovers upward until the rope hangs perpendicular to the ground or the rope reaches a ceiling. At the rope's upper end, an {@condition Invisible} 3-foot-by-5-foot portal opens to an extradimensional space that lasts until the spell ends. That space can be reached by climbing the rope, which can be pulled into or dropped out of it.",
 				"The space can hold up to eight Medium or smaller creatures. Attacks, spells, and other effects can't pass into or out of the space, but creatures inside it can see through the portal. Anything inside the space drops out when the spell ends."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "{@color At Higher Levels|30d5c8}",
+					"entries": [
+						"{@color If you cast this spell using a spell slot of 4th level or higher, the duration is 8 hours. If you use a spell slot of 6th level or higher, the duration is 24 hours.|30d5c8}"
+					]
+				}
 			]
 		},
 		{
@@ -15767,7 +15787,7 @@
 					"type": "entries",
 					"name": "Insanity",
 					"entries": [
-						"Each target must make an Intelligence saving throw. On a failed save, the target is driven insane for 1 minute. An insane creature can't take actions, can't understand what other creatures say, can't read, and speaks only in gibberish. The DM controls its movement, which is erratic."
+						"Each target must make an Intelligence saving throw. {@color Creatures that have an Intelligence score of 4 or lower are unaffected.|30d5c8} On a failed save, the target is driven insane for 1 minute. An insane creature can't take actions, can't understand what other creatures say, can't read, and speaks only in gibberish. The DM controls its movement, which is erratic."
 					]
 				},
 				{
@@ -16406,7 +16426,7 @@
 				}
 			],
 			"entries": [
-				"A wave of thunderous force sweeps out from you. Each creature in a 15-foot cube originating from you must make a Constitution saving throw. On a failed save, a creature takes {@damage 2d8} thunder damage and is pushed 10 feet away from you. On a successful save, the creature takes half as much damage and isn't pushed.",
+				"A wave of thunderous force sweeps out from you. Each creature in a 15-foot cube originating from you must make a {@color Strength|30d5c8} saving throw. On a failed save, a creature takes {@damage 2d8} thunder damage and is pushed 10 feet away from you. On a successful save, the creature takes half as much damage and isn't pushed.",
 				"In addition, unsecured objects that are completely within the area of effect are automatically pushed 10 feet away from you by the spell's effect, and the spell emits a thunderous boom audible out to 300 feet."
 			],
 			"entriesHigherLevel": [
@@ -16422,7 +16442,7 @@
 				"thunder"
 			],
 			"savingThrow": [
-				"constitution"
+				"strength"
 			],
 			"miscTags": [
 				"FMV",
@@ -17252,7 +17272,7 @@
 			"entries": [
 				"You conjure a mass of thick, sticky webbing at a point of your choice within range. The webs fill a 20-foot cube from that point for the duration. The webs are {@quickref difficult terrain||3} and lightly obscure their area.",
 				"If the webs aren't anchored between two solid masses (such as walls or trees) or layered across a floor, wall, or ceiling, the conjured web collapses on itself, and the spell ends at the start of your next turn. Webs layered over a flat surface have a depth of 5 feet.",
-				"Each creature that starts its turn in the webs or that enters them during its turn must make a Dexterity saving throw. On a failed save, the creature is {@condition restrained} as long as it remains in the webs or until it breaks free.",
+				"Each creature that starts its turn in the webs or that enters them during its turn must make a {@color Strength|30d5c8} saving throw. On a failed save, the creature is {@condition restrained} as long as it remains in the webs or until it breaks free.",
 				"A creature {@condition restrained} by the webs can use its action to make a Strength ({@skill Athletics}) check against your spell save DC. If it succeeds, it is no longer {@condition restrained}.",
 				"The webs are flammable. Any 5-foot cube of webs exposed to fire burns away in 1 round, dealing {@damage 2d4} fire damage to any creature that starts its turn in the fire.",
 				"{@italic Concentration Points: 2}"
@@ -17264,7 +17284,7 @@
 				"restrained"
 			],
 			"savingThrow": [
-				"dexterity"
+				"strength"
 			],
 			"abilityCheck": [
 				"strength"
@@ -17772,7 +17792,7 @@
 				"restrained"
 			],
 			"savingThrow": [
-				"dexterity"
+				"strength"
 			],
 			"abilityCheck": [
 				"strength"
@@ -18924,12 +18944,12 @@
 			],
 			"entries": [
 				"Until the spell ends, freezing rain and sleet fall in a 20-foot-tall cylinder with a {@color 20-foot radius|30d5c8} centered on a point you choose within range. The area is {@quickref Vision and Light|PHB|2||heavily obscured}, and exposed flames in the area are doused.",
-				"The ground in the area is covered with slick ice, making it {@quickref difficult terrain||3}. When a creature enters the spell's area for the first time on a turn or starts its turn there, it must make a Dexterity saving throw. On a failed save, it falls {@condition prone}.",
+				"The ground in the area is covered with slick ice, making it {@quickref difficult terrain||3}. When a creature enters the spell's area for the first time on a turn or starts its turn there, it must make a {@color Strength|30d5c8} saving throw. On a failed save, it falls {@condition prone}.",
 				"If a creature starts its turn in the spell's area and is {@status concentration||concentrating} on a spell, the creature must make a successful Constitution saving throw against your spell save DC or lose {@status concentration}.",
 				"{@italic Concentration Points: 3}"
 			],
 			"savingThrow": [
-				"dexterity",
+				"strength",
 				"constitution"
 			],
 			"miscTags": [
@@ -20655,9 +20675,6 @@
 				"On a failed {@color ability check|30d5c8}, the spell fails, and you can't use this spell again for 24 hours.",
 				"On a successful ability check, the spell creates an {@condition invisible} sensor at the location 10 feet above the ground. You can see and hear through the sensor as if you were there. The sensor is stationary and it remains there for the duration of the spell. A creature that can see {@condition invisible} objects sees the sensor as a luminous orb about the size of your fist.",
 				"{@italic Concentration Points: 0}"
-			],
-			"savingThrow": [
-				"wisdom"
 			],
 			"classes": {
 				"fromClassList": [
@@ -22433,9 +22450,6 @@
 					]
 				}
 			],
-			"savingThrow": [
-				"constitution"
-			],
 			"miscTags": [
 				"THP"
 			],
@@ -22510,8 +22524,7 @@
 					"name": "Kiss of Mephistopheles",
 					"source": "UAWarlockAndWizard"
 				}
-			],
-			"hasFluffImages": true
+			]
 		},
 		{
 			"name": "Crushing Walls",
@@ -22650,8 +22663,7 @@
 					"name": "Kiss of Mephistopheles",
 					"source": "UAWarlockAndWizard"
 				}
-			],
-			"hasFluffImages": true
+			]
 		},
 		{
 			"name": "Entropy Shield",
@@ -22700,9 +22712,6 @@
 			"damageInflict": [
 				"fire"
 			],
-			"savingThrow": [
-				"dexterity"
-			],
 			"areaTags": [
 				"S"
 			],
@@ -22721,14 +22730,7 @@
 						"source": "PHB"
 					}
 				]
-			},
-			"eldritchInvocations": [
-				{
-					"name": "Kiss of Mephistopheles",
-					"source": "UAWarlockAndWizard"
-				}
-			],
-			"hasFluffImages": true
+			}
 		},
 		{
 			"name": "Fool's Speech",
@@ -22955,8 +22957,7 @@
 					"name": "Kiss of Mephistopheles",
 					"source": "UAWarlockAndWizard"
 				}
-			],
-			"hasFluffImages": true
+			]
 		},
 		{
 			"name": "Malignant Missile",
@@ -23004,9 +23005,6 @@
 			],
 			"damageInflict": [
 				"necrotic"
-			],
-			"savingThrow": [
-				"wisdom"
 			],
 			"miscTags": [
 				"SCL",
@@ -23257,14 +23255,7 @@
 						"source": "PHB"
 					}
 				]
-			},
-			"eldritchInvocations": [
-				{
-					"name": "Kiss of Mephistopheles",
-					"source": "UAWarlockAndWizard"
-				}
-			],
-			"hasFluffImages": true
+			}
 		},
 		{
 			"name": "Spectral Hand",
@@ -23787,7 +23778,6 @@
 		{
 			"name": "Malakai's Teleportation Circle",
 			"source": "Farover",
-			"page": 0,
 			"level": 5,
 			"school": "C",
 			"time": [
@@ -24969,9 +24959,6 @@
 					]
 				}
 			],
-			"savingThrow": [
-				"dexterity"
-			],
 			"classes": {
 				"fromClassList": [
 					{
@@ -25309,9 +25296,6 @@
 			],
 			"conditionInflict": [
 				"exhaustion"
-			],
-			"savingThrow": [
-				"constitution"
 			],
 			"classes": {
 				"fromClassList": [
@@ -27355,7 +27339,7 @@
 				]
 			},
 			"entries": [
-				"By magically reaching out for the mind of a creature in range, you attempt to drain the creature's spellcasting capabilities and augment your own through a tether of dark magic. The target must make an Intelligence saving throw. On a successful save the spell ends. On a failed save, it takes {@damage 1d6} psychic damage.",
+				"By magically reaching out for the mind of a creature in range, you attempt to drain the creature's spellcasting capabilities and augment your own through a tether of dark magic. The target must make an Intelligence saving throw. A creature with an Intelligence score of 4 or lower can't be affected by this spell. On a successful save the spell ends. On a failed save, it takes {@damage 1d6} psychic damage.",
 				"Additionally on a failed save, the target loses one prepared spell of up to 2nd level that it currently has the capability to cast, or if the target does not prepare spells, it simply loses the ability to cast the spell until it finishes a short rest. The spell is randomly chosen, but highest level spells are always selected.",
 				"If the target uses a spellcasting resource, such as spell slots, it is also drained of a corresponding amount of its spellcasting resource, which is then transferred to you in the form of an equal level and amount of spell slots, but only if you are below your maximum amount. Drain magic can not grant you a spell slot above a level which you can cast. If it would do so, it instead gives you a spell slot of the highest level you can cast which you are missing.",
 				"On each of your turns for the duration, you can use your action to repeat the saving throw and, on a failed save, the effect on the target creature as long as you are within range and line of sight when doing so. If you do not spend an action continuing this spell every turn, it ends. The spell also ends if the target is ever outside the spells range or if it has total cover from you.",
@@ -27598,9 +27582,6 @@
 			],
 			"damageInflict": [
 				"force"
-			],
-			"savingThrow": [
-				"dexterity"
 			],
 			"classes": {
 				"fromClassList": [
@@ -29132,11 +29113,14 @@
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "a {@item musical instrument|phb} worth at least 2 gp"
+				"m": {
+					"text": "a {@item musical instrument|phb} worth at least 2 gp",
+					"cost": 200
+				}
 			},
 			"entries": [
 				"You play a tragic song that fills others with pity and sorrow. When you cast this spell, you can choose any number of creatures, including yourself, to benefit from its effects. While {@status concentration|PHB|concentrating} on this spell, you can only use either an action or a bonus action on each of your turns, but not both.",
-				"Any creature that targets you or a chosen creature within the spell's area with an attack roll or a damaging spell must succeed on a Charisma saving throw. On a failed save, the attacker feels overwhelming remorse for its actions, loses the attack or spell, and spends the rest of its turn crying. Creatures that are {@condition deafened} or immune to the {@condition charmed} condition automatically succeed on this saving throw.",
+				"Any creature that targets you or a chosen creature within the spell's area with an attack roll or a damaging spell must succeed on a Charisma saving throw. On a failed save, the attacker feels overwhelming remorse for its actions, loses the attack or spell, and spends the rest of its turn crying. A creature that succeeds on this saving throw is immune to the effect for the rest of the turn. Creatures that are {@condition deafened} or immune to the {@condition charmed} condition automatically succeed on the saving throw.",
 				"{@italic Concentration Points: 2}"
 			],
 			"savingThrow": [
@@ -29263,7 +29247,7 @@
 				"wisdom"
 			]
 		},
-        {
+		{
 			"name": "Ashardalon's Stride",
 			"source": "FTD",
 			"page": 19,
@@ -29631,7 +29615,7 @@
 				}
 			],
 			"entries": [
-				"A burst of cold energy emanates from you in a 30-foot cone. Each creature in that area must make a Constitution saving throw. On a failed save, a creature takes {@damage 3d8} cold damage and is hindered by ice formations for 1 minute, or until it or another creature within reach of it uses an action to break away the ice. A creature hindered by ice has its speed reduced to 0. On a successful save, a creature takes half as much damage and isn't hindered by ice."
+				"A burst of cold energy emanates from you in a 30-foot cone. Each creature in that area must make a {@color Strength|30d5c8} saving throw. On a failed save, a creature takes {@damage 3d8} cold damage and is hindered by ice formations for 1 minute, or until it or another creature within reach of it uses an action to break away the ice. A creature hindered by ice has its speed reduced to 0. On a successful save, a creature takes half as much damage and isn't hindered by ice."
 			],
 			"entriesHigherLevel": [
 				{
@@ -29646,7 +29630,7 @@
 				"cold"
 			],
 			"savingThrow": [
-				"constitution"
+				"strength"
 			],
 			"areaTags": [
 				"N"
@@ -30089,7 +30073,7 @@
 				}
 			],
 			"entries": [
-				"You drive a disorienting spike of psychic energy into the mind of one creature you can see within range. The target must succeed on an Intelligence saving throw or {@color take|30d5c8} {@damage 1d4} {@color psychic damage|30d5c8} and subtract {@dice 1d4} from the next saving throw it makes before the end of your next turn.",
+				"You drive a disorienting spike of psychic energy into the mind of one creature you can see within range. {@color A creature that has an Intelligence score of 4 or lower is unaffected.|30d5c8} The target must succeed on an Intelligence saving throw or {@color take|30d5c8} {@damage 1d4} {@color psychic damage|30d5c8} and subtract {@dice 1d4} from the next saving throw it makes before the end of your next turn.",
 				"This spell's damage increases by {@dice 1d4} when you reach certain levels: 5th level ({@dice 2d4}), 11th level ({@dice 3d4}), and 17th level ({@dice 4d4})."
 			],
 			"scalingLevelDice": {
@@ -30855,7 +30839,7 @@
 				}
 			],
 			"entries": [
-				"You psychically lash out at one creature you can see within range. The target must make an Intelligence saving throw. On a failed save, the target takes {@damage 3d6} psychic damage, {@color and it is|30d5c8} {@condition Dazed|farover} {@color until the end of its next turn. On a successful save, the target takes half as much damage and is not|30d5c8} {@condition Dazed|farover}."
+				"You psychically lash out at one creature you can see within range. The target must make an Intelligence saving throw. {@color A creature that has an Intelligence score of 4 or lower is unaffected.|30d5c8} On a failed save, the target takes {@damage 3d6} psychic damage, {@color and it is|30d5c8} {@condition Dazed|farover} {@color until the end of its next turn. On a successful save, the target takes half as much damage and is not|30d5c8} {@condition Dazed|farover}."
 			],
 			"entriesHigherLevel": [
 				{
@@ -31017,7 +31001,7 @@
 				]
 			}
 		},
-        {
+		{
 			"name": "Dark Star",
 			"source": "EGW",
 			"page": 186,
@@ -31316,7 +31300,7 @@
 				}
 			],
 			"entries": [
-				"The gravity in a 10-foot-radius sphere centered on a point you can see within range increases for a moment. Each creature in the sphere on the turn when you cast the spell must make a Constitution saving throw. On a failed save, a creature takes {@damage 2d8} force damage, and its speed is halved until the end of its next turn. On a successful save, a creature takes half as much damage and suffers no reduction to its speed.",
+				"The gravity in a 10-foot-radius sphere centered on a point you can see within range increases for a moment. Each creature in the sphere on the turn when you cast the spell must make a {@color Strength|30d5c8} saving throw. On a failed save, a creature takes {@damage 2d8} force damage, and its speed is halved until the end of its next turn. On a successful save, a creature takes half as much damage and suffers no reduction to its speed.",
 				"Until the start of your next turn, any object that isn't being worn or carried in the sphere requires a successful Strength check against your spell save DC to pick up or move."
 			],
 			"entriesHigherLevel": [
@@ -31332,7 +31316,7 @@
 				"force"
 			],
 			"savingThrow": [
-				"constitution"
+				"strength"
 			],
 			"miscTags": [
 				"OBJ",
@@ -31371,7 +31355,7 @@
 				}
 			],
 			"entries": [
-				"You create intense pressure, unleash it in a 30-foot cone, and decide whether the pressure pulls or pushes creatures and objects. Each creature in that cone must make a Constitution saving throw. A creature takes {@damage 6d6} force damage on a failed save, or half as much damage on a successful one. And every creature that fails the save is either pulled 15 feet toward you or pushed 15 feet away from you, depending on the choice you made for the spell.",
+				"You create intense pressure, unleash it in a 30-foot cone, and decide whether the pressure pulls or pushes creatures and objects. Each creature in that cone must make a {@color Strength|30d5c8} saving throw. A creature takes {@damage 6d6} force damage on a failed save, or half as much damage on a successful one. And every creature that fails the save is either pulled 15 feet toward you or pushed 15 feet away from you, depending on the choice you made for the spell.",
 				"In addition, unsecured objects that are completely within the cone are likewise pulled or pushed 15 feet."
 			],
 			"entriesHigherLevel": [
@@ -31387,7 +31371,7 @@
 				"force"
 			],
 			"savingThrow": [
-				"constitution"
+				"strength"
 			],
 			"miscTags": [
 				"FMV",
@@ -31773,7 +31757,7 @@
 				}
 			],
 			"entries": [
-				"A 20-foot-radius sphere of crushing force forms at a point you can see within range and tugs at the creatures there. Each creature in the sphere must make a Constitution saving throw. On a failed save, the creature {@color takes|30d5c8} {@damage 4d10} {@color force damage|30d5c8} and is pulled in a straight line toward the center of the sphere, ending in an unoccupied space as close to the center as possible (even if that space is in the air). On a successful save, the creature takes half as much damage and isn't pulled."
+				"A 20-foot-radius sphere of crushing force forms at a point you can see within range and tugs at the creatures there. Each creature in the sphere must make a {@color Strength|30d5c8} saving throw. On a failed save, the creature {@color takes|30d5c8} {@damage 4d10} {@color force damage|30d5c8} and is pulled in a straight line toward the center of the sphere, ending in an unoccupied space as close to the center as possible (even if that space is in the air). On a successful save, the creature takes half as much damage and isn't pulled."
 			],
 			"entriesHigherLevel": [
 				{
@@ -31787,7 +31771,7 @@
 				"force"
 			],
 			"savingThrow": [
-				"constitution"
+				"strength"
 			],
 			"miscTags": [
 				"SGT"
@@ -33248,7 +33232,7 @@
 				}
 			],
 			"entries": [
-				"You reach into the mind of one creature you can see and force it to make an Intelligence saving throw. A creature automatically succeeds if it is immune to being {@condition frightened}. On a failed save, the target loses the ability to distinguish friend from foe, regarding all creatures it can see as enemies until the spell ends. Each time the target takes damage, it can repeat the saving throw, ending the effect on itself on a success.",
+				"You reach into the mind of one creature you can see and force it to make an Intelligence saving throw. A creature automatically succeeds if it is immune to being {@condition frightened}, {@color or if it has an Intelligence score of 4 or lower|30d5c8}. On a failed save, the target loses the ability to distinguish friend from foe, regarding all creatures it can see as enemies until the spell ends. Each time the target takes damage, it can repeat the saving throw, ending the effect on itself on a success.",
 				"Whenever the affected creature chooses another creature as a target, it must choose the target at random from among the creatures it can see within range of the attack, spell, or other ability it's using. If an enemy provokes an opportunity attack from the affected creature, the creature must make that attack if it is able to.",
 				"{@italic Concentration Points: 3}"
 			],
@@ -33304,7 +33288,7 @@
 				}
 			],
 			"entries": [
-				"A tendril of inky darkness reaches out from you, touching a creature you can see within range to drain life from it. The target must make a Dexterity saving throw. On a successful save, the target takes {@damage 2d8} necrotic damage, and the spell ends. On a failed save, the target takes {@damage 4d8} necrotic damage, and until the spell ends, you can use your action on each of your turns to automatically deal {@damage 4d8} necrotic damage to the target. The spell ends if you use your action to do anything else, if the target is ever outside the spell's range, or if the target has total cover from you.",
+				"A tendril of inky darkness reaches out from you, touching a creature you can see within range to drain life from it. The target must make a {@color Constitution|30d5c8} saving throw. On a successful save, the target takes {@damage 2d8} necrotic damage, and the spell ends. On a failed save, the target takes {@damage 4d8} necrotic damage, and until the spell ends, you can use your action on each of your turns to automatically deal {@damage 4d8} necrotic damage to the target. The spell ends if you use your action to do anything else, if the target is ever outside the spell's range, or if the target has total cover from you.",
 				"Whenever the spell deals damage to a target, you regain hit points equal to half the amount of necrotic damage the target takes.",
 				"{@italic Concentration Points: 4}"
 			],
@@ -33321,7 +33305,7 @@
 				"necrotic"
 			],
 			"savingThrow": [
-				"dexterity"
+				"constitution"
 			],
 			"miscTags": [
 				"HL",
@@ -33375,7 +33359,7 @@
 				}
 			],
 			"entries": [
-				"Choose a point you can see on the ground within range. A fountain of churned earth and stone erupts in a 20-foot cube centered on that point. Each creature in that area must make a Dexterity saving throw. A creature takes {@damage 3d12} bludgeoning damage on a failed save, or half as much damage on a successful one. Additionally, the ground in that area becomes {@quickref difficult terrain||3} until cleared. Each 5-foot-square portion of the area requires at least 1 minute to clear by hand."
+				"Choose a point you can see on the ground within range. A fountain of churned earth and stone erupts in a 20-foot cube centered on that point. Each creature in that area must make a {@color Strength|30d5c8} saving throw. A creature takes {@damage 3d12} bludgeoning damage on a failed save, or half as much damage on a successful one. Additionally, the ground in that area becomes {@quickref difficult terrain||3} until cleared. Each 5-foot-square portion of the area requires at least 1 minute to clear by hand."
 			],
 			"entriesHigherLevel": [
 				{
@@ -33390,7 +33374,7 @@
 				"bludgeoning"
 			],
 			"savingThrow": [
-				"dexterity"
+				"strength"
 			],
 			"miscTags": [
 				"DFT",
@@ -34039,7 +34023,7 @@
 			"entries": [
 				"By gathering threads of shadow material from the Shadowfell, you create a Huge shadowy dragon in an unoccupied space that you can see within range. The illusion lasts for the spell's duration and occupies its space, as if it were a creature.",
 				"When the illusion appears, any of your enemies that can see it must succeed on a Wisdom saving throw or become {@condition frightened} of it for 1 minute. If a {@condition frightened} creature ends its turn in a location where it doesn't have line of sight to the illusion, it can repeat the saving throw, ending the effect on itself on a success.",
-				"As a bonus action on your turn, you can move the illusion up to 60 feet. At any point during its movement, you can cause it to exhale a blast of energy in a 60-foot cone originating from its space. When you create the dragon, choose a damage type: acid, cold, fire, lightning, necrotic, or poison. Each creature in the cone must make an Intelligence saving throw, taking {@damage 7d6} damage of the chosen damage type on a failed save, or half as much damage on a successful one.",
+				"As a bonus action on your turn, you can move the illusion up to 60 feet. At any point during its movement, you can cause it to exhale a blast of energy in a 60-foot cone originating from its space. When you create the dragon, choose a damage type: acid, cold, fire, lightning, necrotic, or poison. Each creature in the cone must make a {@color Dexterity|30d5c8} saving throw, taking {@damage 7d6} damage of the chosen damage type on a failed save, or half as much damage on a successful one.",
 				"The illusion is tangible because of the shadow stuff used to create it, but attacks miss it automatically, it succeeds on all saving throws, and it is immune to all damage and conditions. A creature that uses an action to examine the dragon can determine that it is an illusion by succeeding on an Intelligence ({@skill Investigation}) check against your spell save DC. If a creature discerns the illusion for what it is, the creature can see through it and has advantage on saving throws against its breath."
 			],
 			"damageInflict": [
@@ -34054,8 +34038,8 @@
 				"frightened"
 			],
 			"savingThrow": [
-				"wisdom",
-				"intelligence"
+				"dexterity",
+				"wisdom"
 			],
 			"abilityCheck": [
 				"intelligence"
@@ -35080,7 +35064,7 @@
 				}
 			],
 			"entries": [
-				"You attempt to bind a creature within an illusory cell that only it perceives. One creature you can see within range must make an Intelligence saving throw. The target succeeds automatically if it is immune to being {@condition charmed}. On a successful save, the target takes {@damage 5d10} psychic damage, and the spell ends. On a failed save, the target takes {@damage 5d10} psychic damage, and you make the area immediately around the target's space appear dangerous to it in some way. You might cause the target to perceive itself as being surrounded by fire, floating razors, or hideous maws filled with dripping teeth. Whatever form the illusion takes, the target can't see or hear anything beyond it and is {@condition restrained} for the spell's duration. If the target is moved out of the illusion, makes a melee attack through it, or reaches any part of its body through it, the target takes {@damage 10d10} psychic damage, and the spell ends.",
+				"You attempt to bind a creature within an illusory cell that only it perceives. One creature you can see within range must make an Intelligence saving throw. Creatures that have an Intelligence score {@color of 4 or lower|30d5c8} and those immune to being {@condition charmed} are unaffected. On a successful save, the target takes {@damage 5d10} psychic damage, and the spell ends. On a failed save, the target takes {@damage 5d10} psychic damage, and you make the area immediately around the target's space appear dangerous to it in some way. You might cause the target to perceive itself as being surrounded by fire, floating razors, or hideous maws filled with dripping teeth. Whatever form the illusion takes, the target can't see or hear anything beyond it and is {@condition restrained} for the spell's duration. If the target is moved out of the illusion, makes a melee attack through it, or reaches any part of its body through it, the target takes {@damage 10d10} psychic damage, and the spell ends.",
 				"{@italic Concentration Points: 4}"
 			],
 			"damageInflict": [
@@ -35504,7 +35488,7 @@
 				}
 			],
 			"entries": [
-				"You unleash the power of your mind to blast the intellect of up to ten creatures of your choice that you can see within range. Creatures that have an Intelligence score of 2 or lower are unaffected.",
+				"You unleash the power of your mind to blast the intellect of up to ten creatures of your choice that you can see within range. Creatures that have an Intelligence score {@color of 4 or lower|30d5c8} are unaffected.",
 				"Each target must make an Intelligence saving throw. On a failed save, a target takes {@damage 14d6} psychic damage and is {@condition stunned}. On a successful save, a target takes half as much damage and isn't {@condition stunned}. If a target is killed by this damage, its head explodes, assuming it has one.",
 				"A {@condition stunned} target can make an Intelligence saving throw at the end of each of its turns. On a successful save, the stunning effect ends."
 			],
@@ -36302,7 +36286,7 @@
 				}
 			],
 			"entries": [
-				"You choose a point within range and cause psychic energy to explode there. Each creature in a 20-foot-radius sphere centered on that point must make an Intelligence saving throw. A creature with an Intelligence score of 2 or lower can't be affected by this spell. A target takes {@damage 8d6} psychic damage on a failed save, or half as much damage on a successful one.",
+				"You choose a point within range and cause psychic energy to explode there. Each creature in a 20-foot-radius sphere centered on that point must make an Intelligence saving throw. Creatures that have an Intelligence score {@color of 4 or lower|30d5c8} are unaffected. A target takes {@damage 8d6} psychic damage on a failed save, or half as much damage on a successful one.",
 				"After a failed save, a target has muddled thoughts for 1 minute. During that time, it rolls a {@dice d6} and subtracts the number rolled from all its attack rolls and ability checks, as well as its Constitution saving throws to maintain {@status concentration}. The target can make an Intelligence saving throw at the end of each of its turns, ending the effect on itself on a success."
 			],
 			"damageInflict": [
@@ -36620,7 +36604,7 @@
 				}
 			],
 			"entries": [
-				"You conjure up a wave of water that crashes down on an area within range. The area can be up to 30 feet long, up to 10 feet wide, and up to 10 feet tall. Each creature in that area must make a Dexterity saving throw. On a failed save, a creature takes {@damage 4d8} bludgeoning damage and is knocked {@condition prone}. On a successful save, a creature takes half as much damage and isn't knocked {@condition prone}. The water then spreads out across the ground in all directions, extinguishing unprotected flames in its area and within 30 feet of it, and then it vanishes."
+				"You conjure up a wave of water that crashes down on an area within range. The area can be up to 30 feet long, up to 10 feet wide, and up to 10 feet tall. Each creature in that area must make a {@color Strength|30d5c8} saving throw. On a failed save, a creature takes {@damage 4d8} bludgeoning damage and is knocked {@condition prone}. On a successful save, a creature takes half as much damage and isn't knocked {@condition prone}. The water then spreads out across the ground in all directions, extinguishing unprotected flames in its area and within 30 feet of it, and then it vanishes."
 			],
 			"damageInflict": [
 				"bludgeoning"
@@ -36629,7 +36613,7 @@
 				"prone"
 			],
 			"savingThrow": [
-				"dexterity"
+				"strength"
 			],
 			"areaTags": [
 				"W"
@@ -37703,7 +37687,7 @@
 				}
 			],
 			"entries": [
-				"You cause a tremor in the ground within 10 feet of you. Each creature other than you in the area must make a Dexterity saving throw. On a failed save, a creature {@color takes|30d5c8} {@damage 2d6} {@color bludgeoning damage|30d5c8} and is knocked {@condition prone}. {@color On a successful save, a creature takes half as much damage and is not knocked|30d5c8} {@condition prone}. If the ground in that area is loose earth or stone, it becomes difficult terrain until cleared, with each 5-foot-diameter portion requiring at least 1 minute to clear by hand."
+				"You cause a tremor in the ground within 10 feet of you. Each creature other than you in the area must make a {@color Strength|30d5c8} saving throw. On a failed save, a creature {@color takes|30d5c8} {@damage 2d6} {@color bludgeoning damage|30d5c8} and is knocked {@condition prone}. {@color On a successful save, a creature takes half as much damage and is not knocked|30d5c8} {@condition prone}. If the ground in that area is loose earth or stone, it becomes difficult terrain until cleared, with each 5-foot-diameter portion requiring at least 1 minute to clear by hand."
 			],
 			"entriesHigherLevel": [
 				{
@@ -37721,7 +37705,7 @@
 				"prone"
 			],
 			"savingThrow": [
-				"dexterity"
+				"strength"
 			],
 			"areaTags": [
 				"R"
