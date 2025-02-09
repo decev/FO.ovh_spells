@@ -27796,7 +27796,9 @@
 				}
 			],
 			"entries": [
-				"The target object’s weight is greatly increased. Any creature holding the object must succeed on a Strength saving throw or drop it. A creature which doesn’t drop the object has disadvantage on attack rolls until the start of your next turn as it figures out the object’s new balance.",
+				"The target object's weight increases significantly. Any creature holding or wearing the object must make a Strength saving throw.",
+				"{@bold {@italic Held Object.}} On a failed save, the creature must drop the object if it can, and it has disadvantage on attack rolls with it for the duration of the spell. On a successful save, the creature does not need to drop the object but has disadvantage on attack rolls with it until the end of its next turn as it figures out the object’s new balance.",
+				"{@bold {@italic Worn Object.}} On a failed save, the creature has disadvantage on Dexterity checks and saving throws, and its speed is halved for the duration of the spell or until it removes the object. On a successful save, its speed is reduced by 10 feet until the end of its next turn.",
 				"Creatures that attempt to push, drag, or lift the object must succeed on a Strength check against your spell save DC to do so.",
 				"{@italic Concentration Points: 1}"
 			],
