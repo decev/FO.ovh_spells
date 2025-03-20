@@ -279,7 +279,7 @@
 			"entries": [
 				"A cool light wreathes your body for the duration, emitting bright light in a 20-foot radius and dim light for an additional 20 feet.",
 				"Until the spell ends, you have resistance to Radiant damage, and your melee attacks deal an extra {@damage 2d6} Radiant damage on a hit.",
-				"In addition, immediately after you take damage from a creature you can see within 60 feet of yourself, you can use your reaction to force the creature to make a Constitution saving throw. On a failed save, the creature has the {@condition blinded} condition until the end of your next turn.",
+				"In addition, immediately after you take damage from a creature you can see within 60 feet of yourself, you can use your reaction to force the creature to make a {@color Dexterity|30d5c8} saving throw. On a failed save, the creature has the {@condition blinded} condition until the end of your next turn.",
 				"{@italic Concentration Points: 2}"
 			],
 			"damageResist": [
@@ -292,7 +292,7 @@
 				"blinded"
 			],
 			"savingThrow": [
-				"constitution"
+				"dexterity"
 			],
 			"miscTags": [
 				"AAD",
@@ -740,7 +740,7 @@
 				}
 			],
 			"entries": [
-				"This spell lets you convince a beast that you mean it no harm. Choose a beast that you can see within range. It must see and hear you. If the beast's Intelligence is 4 or higher, the spell fails. Otherwise, the beast must succeed on a Wisdom saving throw or be {@condition charmed} by you for the spell's duration. If you or one of your companions harms the target, the spell ends."
+				"This spell lets you convince a beast that you mean it no harm. Choose a beast that you can see within range. It must see and hear you. If the beast's Intelligence is 4 or higher, the spell fails. Otherwise, the beast must succeed on a {@color Charisma|30d5c8} saving throw or be {@condition charmed} by you for the spell's duration. If you or one of your companions harms the target, the spell ends."
 			],
 			"entriesHigherLevel": [
 				{
@@ -755,7 +755,7 @@
 				"charmed"
 			],
 			"savingThrow": [
-				"wisdom"
+				"charisma"
 			],
 			"affectsCreatureType": [
 				"beast"
@@ -1702,7 +1702,7 @@
 				}
 			],
 			"entries": [
-				"Up to three creatures of your choice that you can see within range must make Charisma saving throws. Whenever a target that fails this saving throw makes an attack roll or a saving throw before the spell ends, the target must roll a {@dice d4} and subtract the number rolled from the attack roll or saving throw.",
+				"Up to three creatures of your choice that you can see within range must make {@color Wisdom|30d5c8} saving throws. Whenever a target that fails this saving throw makes an attack roll or a saving throw before the spell ends, the target must roll a {@dice d4} and subtract the number rolled from the attack roll or saving throw.",
 				"{@italic Concentration Points: 1}"
 			],
 			"entriesHigherLevel": [
@@ -1715,7 +1715,7 @@
 				}
 			],
 			"savingThrow": [
-				"charisma"
+				"wisdom"
 			],
 			"miscTags": [
 				"SGT"
@@ -1757,11 +1757,14 @@
 				}
 			],
 			"entries": [
-				"As you hit the target, your weapon crackles with force, and the attack deals an extra {@damage 5d10} force damage to the target. Additionally, if this attack reduces the target to 50 hit points or fewer, it must succeed on a Charisma saving throw, or be banished. On a failed save, if the target is native to a different plane of existence than the one you're on, the target disappears, returning to its home plane. If the target is native to the plane you're on, the creature vanishes into a harmless demiplane. While there, the target is {@condition incapacitated}. It remains there until the spell ends, at which point the target reappears in the space it left or in the nearest unoccupied space if that space is occupied.",
+				"As you hit the target, your weapon crackles with force, and the attack deals an extra {@damage 5d10} force damage to the target. Additionally, if this attack reduces the target to 50 hit points or fewer, it must succeed on a {@color Wisdom|30d5c8} saving throw, or be banished. On a failed save, if the target is native to a different plane of existence than the one you're on, the target disappears, returning to its home plane. If the target is native to the plane you're on, the creature vanishes into a harmless demiplane. While there, the target is {@condition incapacitated}. It remains there until the spell ends, at which point the target reappears in the space it left or in the nearest unoccupied space if that space is occupied.",
 				"{@italic Concentration Points: 4}"
 			],
 			"damageInflict": [
 				"force"
+			],
+			"savingThrow": [
+				"wisdom"
 			],
 			"conditionInflict": [
 				"incapacitated"
@@ -1814,7 +1817,7 @@
 				}
 			],
 			"entries": [
-				"You attempt to send one creature that you can see within range to another plane of existence. The target must succeed on a Charisma saving throw or be banished.",
+				"You attempt to send one creature that you can see within range to another plane of existence. The target must succeed on a {@color Wisdom|30d5c8} saving throw or be banished.",
 				"If the target is native to the plane of existence you're on, you banish the target to a harmless demiplane. While there, the target is {@condition incapacitated}. The target remains there until the spell ends, at which point the target reappears in the space it left or in the nearest unoccupied space if that space is occupied.",
 				"If the target is native to a different plane of existence than the one you're on, the target is banished with a faint popping noise, returning to its home plane. If the spell ends before 1 minute has passed, the target reappears in the space it left or in the nearest unoccupied space if that space is occupied. Otherwise, the target doesn't return.",
 				"{@italic Concentration Points: 3}"
@@ -1832,7 +1835,7 @@
 				"incapacitated"
 			],
 			"savingThrow": [
-				"charisma"
+				"wisdom"
 			],
 			"miscTags": [
 				"SGT"
@@ -2644,7 +2647,7 @@
 				}
 			],
 			"entries": [
-				"You attempt to charm a humanoid you can see within range. It must make a Wisdom saving throw, and does so with advantage if you or your companions are fighting it. If it fails the saving throw, it is {@condition charmed} by you until the spell ends or until you or your companions do anything harmful to it. The {@condition charmed} creature regards you as a friendly acquaintance. When the spell ends, the creature knows it was {@condition charmed} by you."
+				"You attempt to charm a humanoid you can see within range. It must make a {@color Charisma|30d5c8} saving throw, and does so with advantage if you or your companions are fighting it. If it fails the saving throw, it is {@condition charmed} by you until the spell ends or until you or your companions do anything harmful to it. The {@condition charmed} creature regards you as a friendly acquaintance. When the spell ends, the creature knows it was {@condition charmed} by you."
 			],
 			"entriesHigherLevel": [
 				{
@@ -2659,7 +2662,7 @@
 				"charmed"
 			],
 			"savingThrow": [
-				"wisdom"
+				"charisma"
 			],
 			"affectsCreatureType": [
 				"humanoid"
@@ -2843,7 +2846,7 @@
 				}
 			],
 			"entries": [
-				"A sphere of negative energy ripples out in a 60-foot-radius sphere from a point within range. Each creature in that area must make a Constitution saving throw. A target takes {@damage 8d8} necrotic damage on a failed save, or half as much damage on a successful one."
+				"A sphere of negative energy ripples out in a 60-foot-radius sphere from a point within range. Each creature in that area must make a {@color Wisdom|30d5c8} saving throw. A target takes {@damage 8d8} necrotic damage on a failed save, or half as much damage on a successful one."
 			],
 			"entriesHigherLevel": [
 				{
@@ -2858,7 +2861,7 @@
 				"necrotic"
 			],
 			"savingThrow": [
-				"constitution"
+				"wisdom"
 			],
 			"areaTags": [
 				"S"
@@ -3213,12 +3216,12 @@
 				}
 			],
 			"entries": [
-				"You attempt to compel a creature into a duel. One creature that you can see within range must make a Wisdom saving throw. On a failed save, the creature is drawn to you, compelled by your divine demand. For the duration, it has disadvantage on attack rolls against creatures other than you, and must make a Wisdom saving throw each time it attempts to move to a space that is more than 30 feet away from you; if it succeeds on this saving throw, this spell doesn't restrict the target's movement for that turn.",
+				"You attempt to compel a creature into a duel. One creature that you can see within range must make a {@color Charisma|30d5c8} saving throw. On a failed save, the creature is drawn to you, compelled by your divine demand. For the duration, it has disadvantage on attack rolls against creatures other than you, and must make a Wisdom saving throw each time it attempts to move to a space that is more than 30 feet away from you; if it succeeds on this saving throw, this spell doesn't restrict the target's movement for that turn.",
 				"The spell ends if you attack any other creature, if you cast a spell that targets a hostile creature other than the target, if a creature friendly to you damages the target or casts a harmful spell on it, or if you end your turn more than 30 feet away from the target.",
 				"{@italic Concentration Points: 1}"
 			],
 			"savingThrow": [
-				"wisdom"
+				"charisma"
 			],
 			"miscTags": [
 				"SGT"
@@ -3262,12 +3265,12 @@
 				}
 			],
 			"entries": [
-				"Each creature of your choice that you can see within range must succeed on a Wisdom saving throw or be {@condition charmed} until the spell ends.",
+				"Each creature of your choice that you can see within range must succeed on a {@color Charisma|30d5c8} saving throw or be {@condition charmed} until the spell ends.",
 				"For the duration, you can take a Bonus Action to designate a direction that is horizontal to you. Each {@condition charmed} target must use as much of its movement as possible to move in that direction on its next turn, taking the safest route. After moving in this way, a target repeats the save, ending the spell on itself on a success.",
 				"{@italic Concentration Points: 3}"
 			],
 			"savingThrow": [
-				"wisdom"
+				"charisma"
 			],
 			"miscTags": [
 				"SGT",
@@ -5132,14 +5135,14 @@
 			],
 			"entries": [
 				"For the duration, you can read the thoughts of certain creatures. When you cast the spell and as your action on each turn until the spell ends, you can focus your mind on any one creature that you can see within 30 feet of you. If the creature you choose has an Intelligence of 3 or lower or doesn't speak any language, the creature is unaffected.",
-				"You initially learn the surface thoughts of the creature\u2014what is most on its mind in that moment. As an action, you can either shift your attention to another creature's thoughts or attempt to probe deeper into the same creature's mind. If you probe deeper, the target must make a Wisdom saving throw. If it fails, you gain insight into its reasoning (if any), its emotional state, and something that looms large in its mind (such as something it worries over, loves, or hates). If it succeeds, the spell ends. Either way, the target knows that you are probing into its mind, and unless you shift your attention to another creature's thoughts, the creature can use its action on its turn to make an Intelligence check contested by your Intelligence check; if it succeeds, the spell ends.",
+				"You initially learn the surface thoughts of the creature\u2014what is most on its mind in that moment. As an action, you can either shift your attention to another creature's thoughts or attempt to probe deeper into the same creature's mind. If you probe deeper, the target must make a {@color Intelligence|30d5c8} saving throw. If it fails, you gain insight into its reasoning (if any), its emotional state, and something that looms large in its mind (such as something it worries over, loves, or hates). If it succeeds, the spell ends. Either way, the target knows that you are probing into its mind, and unless you shift your attention to another creature's thoughts, the creature can use its action on its turn to make an Intelligence check contested by your Intelligence check; if it succeeds, the spell ends.",
 				"Questions verbally directed at the target creature naturally shape the course of its thoughts, so this spell is particularly effective as part of an interrogation.",
 				"You can also use this spell to detect the presence of thinking creatures you can't see. When you cast the spell or as your action during the duration, you can search for thoughts within 30 feet of you. The spell can penetrate barriers, but 2 feet of rock, 2 inches of any metal other than lead, or a thin sheet of lead blocks you. You can't detect a creature with an Intelligence of 3 or lower or one that doesn't speak any language.",
 				"Once you detect the presence of a creature in this way, you can read its thoughts for the rest of the duration as described above, even if you can't see it, but it must still be within range.",
 				"{@italic Concentration Points: 0}"
 			],
 			"savingThrow": [
-				"wisdom"
+				"intelligence"
 			],
 			"abilityCheck": [
 				"intelligence"
@@ -5187,11 +5190,11 @@
 			],
 			"entries": [
 				"You teleport yourself from your current location to any other spot within range. You arrive at exactly the spot desired. It can be a place you can see, one you can visualize, or one you can describe by stating distance and direction, such as \"200 feet straight downward\" or \"upward to the northwest at a 45-degree angle, 300 feet.\"",
-				"You can bring along objects as long as their weight doesn't exceed what you can carry. You can also bring one creature of your size or smaller who is carrying gear up to its carrying capacity. The creature must be within 5 feet of you when you cast this spell. {@color If the creature is unwilling, it can make a Charisma saving throw to attempt to resist the teleportation.|30d5c8}",
+				"You can bring along objects as long as their weight doesn't exceed what you can carry. You can also bring one creature of your size or smaller who is carrying gear up to its carrying capacity. The creature must be within 5 feet of you when you cast this spell. {@color If the creature is unwilling, it can make a Wisdom saving throw to attempt to resist the teleportation.|30d5c8}",
 				"If you would arrive in a place already occupied by an object or a creature, you and any creature traveling with you each take {@damage 4d6} force damage, and the spell fails to teleport you."
 			],
 			"savingThrow": [
-				"charisma"
+				"wisdom"
 			],
 			"damageInflict": [
 				"force"
@@ -5521,7 +5524,7 @@
 				}
 			],
 			"entries": [
-				"You attempt to beguile a beast that you can see within range. It must succeed on a Wisdom saving throw or be {@condition charmed} by you for the duration. If you or creatures that are friendly to you are fighting it, it has advantage on the saving throw.",
+				"You attempt to beguile a beast that you can see within range. It must succeed on a {@color Charisma|30d5c8} saving throw or be {@condition charmed} by you for the duration. If you or creatures that are friendly to you are fighting it, it has advantage on the saving throw.",
 				"While the beast is {@condition charmed}, you have a telepathic link with it as long as the two of you are on the same plane of existence. You can use this telepathic link to issue commands to the creature while you are conscious (no action required), which it does its best to obey. You can specify a simple and general course of action, such as \"Attack that creature,\" \"Run over there,\" or \"Fetch that object.\" If the creature completes the order and doesn't receive further direction from you, it defends and preserves itself to the best of its ability.",
 				"You can use your action to take total and precise control of the target. Until the end of your next turn, the creature takes only the actions you choose, and doesn't do anything that you don't allow it to do. During this time, you can also cause the creature to use a reaction, but this requires you to use your own reaction as well.",
 				"Each time the target takes damage, it makes a new Wisdom saving throw against the spell. If the saving throw succeeds, the spell ends.",
@@ -5540,7 +5543,7 @@
 				"charmed"
 			],
 			"savingThrow": [
-				"wisdom"
+				"charisma"
 			],
 			"affectsCreatureType": [
 				"beast"
@@ -5658,8 +5661,8 @@
 				}
 			],
 			"entries": [
-				"One Humanoid you can see within range must succeed on a Wisdom saving throw or have the {@condition Charmed} condition for the duration. The target has advantage on the save if you or your allies are fighting it. Whenever the target takes damage, it repeats the save, ending the spell on itself on a success.",
-				"You have a telepathic link with the {@condition Charmed} target while the two of you are on the same plane of existence. On your turn, you can use this link to issue commands to the target (no action required), such as \"{@action Attack} that creature,\" \"Move over there,\" or \"Fetch that object.\" The target does its best to obey on its turn. If it completes an order and doesn't receive further direction from you, it acts and moves as it likes, focusing on protecting itself.",
+				"One Humanoid you can see within range must succeed on a {@color Charisma|30d5c8} saving throw or have the {@condition charmed} condition for the duration. The target has advantage on the save if you or your allies are fighting it. Whenever the target takes damage, it repeats the save, ending the spell on itself on a success.",
+				"You have a telepathic link with the {@condition charmed} target while the two of you are on the same plane of existence. On your turn, you can use this link to issue commands to the target (no action required), such as \"{@action Attack} that creature,\" \"Move over there,\" or \"Fetch that object.\" The target does its best to obey on its turn. If it completes an order and doesn't receive further direction from you, it acts and moves as it likes, focusing on protecting itself.",
 				"You can command the target to take a reaction but must take your own reaction to do so.",
 				"{@italic Concentration Points: 4}"
 			],
@@ -5676,7 +5679,7 @@
 				"charmed"
 			],
 			"savingThrow": [
-				"wisdom"
+				"charisma"
 			],
 			"affectsCreatureType": [
 				"humanoid"
@@ -6345,10 +6348,10 @@
 				}
 			],
 			"entries": [
-				"You weave a distracting string of words, causing creatures of your choice that you can see within range to make a Wisdom saving throw. Any creature you or your companions are fighting automatically succeeds on this save. On a failed save, a target has a -10 penalty to Wisdom ({@skill Perception}) checks and Passive {@skill Perception} until the spell ends."
+				"You weave a distracting string of words, causing creatures of your choice that you can see within range to make an {@color Intelligence|30d5c8} saving throw. Any creature you or your companions are fighting automatically succeeds on this save. On a failed save, a target has a -10 penalty to Wisdom ({@skill Perception}) checks and Passive {@skill Perception} until the spell ends."
 			],
 			"savingThrow": [
-				"wisdom"
+				"intelligence"
 			],
 			"miscTags": [
 				"SGT"
@@ -7989,7 +7992,7 @@
 				}
 			],
 			"entries": [
-				"You place a magical command on a creature that you can see within range, forcing it to carry out some service or refrain from some action or course of activity as you decide. If the creature can understand you, it must succeed on a Wisdom saving throw or become {@condition charmed} by you for the duration. While the creature is {@condition charmed} by you, it takes {@damage 5d10} psychic damage each time it acts in a manner directly counter to your instructions, but no more than once each day. A creature that can't understand you is unaffected by the spell.",
+				"You place a magical command on a creature that you can see within range, forcing it to carry out some service or refrain from some action or course of activity as you decide. If the creature can understand you, it must succeed on a {@color Charisma|30d5c8} saving throw or become {@condition charmed} by you for the duration. While the creature is {@condition charmed} by you, it takes {@damage 5d10} psychic damage each time it acts in a manner directly counter to your instructions, but no more than once each day. A creature that can't understand you is unaffected by the spell.",
 				"You can issue any command you choose, short of an activity that would result in certain death. Should you issue a suicidal command, the spell ends.",
 				"You can end the spell early by using an action to dismiss it. A {@spell remove curse}, {@spell greater restoration}, or {@spell wish} spell also ends it."
 			],
@@ -8009,7 +8012,7 @@
 				"charmed"
 			],
 			"savingThrow": [
-				"wisdom"
+				"charisma"
 			],
 			"miscTags": [
 				"SGT"
@@ -10948,7 +10951,7 @@
 				"You suggest a course of activity—described in no more than 25 words—to twelve or fewer creatures you can see within range that can hear and understand you. {@color The targets can not be ones you are actively fighting.|30d5c8}",
 				"{@color The target creatures become more naive and illogical when it comes to listening to your suggestion. Still, the suggestion must be for a reasonable course of action that would be in-character for the target creatures to possibly take,|30d5c8} and it can not involve anything that would obviously lead them or their allies to harm.",
 				"{@color For example, a guard with orders to protect a town would not open the gates to a band of unknown armed combatants, but would open it to a caravan that poses no obvious outward threat. A soldier would not drop its weapon and flee from a winning battle, but it would attack a different target or change its strategy for the battle. A merchant overlooking a stall would not give you its goods for free, but it would turn its back to speak to a friend nearby. Ultimately, the DM has the final say on whether the suggestion is reasonable.|30d5c8}",
-				"Each target must succeed on a Wisdom saving throw or have the {@condition Charmed} condition for the duration or until you or your allies deal damage to the target. Each {@condition Charmed} target pursues the suggestion to the best of its ability. The suggested activity can continue for the entire duration, but if the suggested activity can be completed in a shorter time, the spell ends for a target upon completing it."
+				"Each target must succeed on an {@color Intelligence|30d5c8} saving throw or have the {@condition Charmed} condition for the duration or until you or your allies deal damage to the target. Each {@condition Charmed} target pursues the suggestion to the best of its ability. The suggested activity can continue for the entire duration, but if the suggested activity can be completed in a shorter time, the spell ends for a target upon completing it."
 			],
 			"entriesHigherLevel": [
 				{
@@ -10960,7 +10963,7 @@
 				}
 			],
 			"savingThrow": [
-				"wisdom"
+				"intelligence"
 			],
 			"miscTags": [
 				"SGT"
@@ -11496,7 +11499,7 @@
 				}
 			],
 			"entries": [
-				"You attempt to reshape another creature's memories. One creature that you can see must make a Wisdom saving throw. If you are fighting the creature, it has advantage on the saving throw. On a failed save, the target becomes {@condition charmed} by you for the duration. The {@condition charmed} target is {@condition incapacitated} and unaware of its surroundings, though it can still hear you. If it takes any damage or is targeted by another spell, this spell ends, and none of the target's memories are modified.",
+				"You attempt to reshape another creature's memories. One creature that you can see must make an {@color Intelligence|30d5c8} saving throw. If you are fighting the creature, it has advantage on the saving throw. On a failed save, the target becomes {@condition charmed} by you for the duration. The {@condition charmed} target is {@condition incapacitated} and unaware of its surroundings, though it can still hear you. If it takes any damage or is targeted by another spell, this spell ends, and none of the target's memories are modified.",
 				"While this charm lasts, you can affect the target's memory of an event that it experienced within the last 24 hours and that lasted no more than 10 minutes. You can permanently eliminate all memory of the event, allow the target to recall the event with perfect clarity and exacting detail, change its memory of the details of the event, or create a memory of some other event.",
 				"You must speak to the target to describe how its memories are affected, and it must be able to understand your language for the modified memories to take root. Its mind fills in any gaps in the details of your description. If the spell ends before you have finished describing the modified memories, the creature's memory isn't altered. Otherwise, the modified memories take hold when the spell ends.",
 				"A modified memory doesn't necessarily affect how a creature behaves, particularly if the memory contradicts the creature's natural inclinations, alignment, or beliefs. An illogical modified memory, such as implanting a memory of how much the creature enjoyed dousing itself in acid, is dismissed, perhaps as a bad dream. The DM might deem a modified memory too nonsensical to affect a creature in a significant manner.",
@@ -11529,7 +11532,7 @@
 				"incapacitated"
 			],
 			"savingThrow": [
-				"wisdom"
+				"intelligence"
 			],
 			"miscTags": [
 				"PRM",
@@ -12116,12 +12119,12 @@
 				}
 			],
 			"entries": [
-				"One creature that you can see within range must make a Wisdom saving throw. On a successful save, the target dances comically until the end of its next turn, during which it must spend all its movement to dance in place.",
+				"One creature that you can see within range must make a {@color Charisma|30d5c8} saving throw. On a successful save, the target dances comically until the end of its next turn, during which it must spend all its movement to dance in place.",
 				"On a failed save, the target has the {@condition Charmed} condition for the duration. While {@condition Charmed}, the target dances comically, must use all its movement to dance in place, and has disadvantage on Dexterity saving throws and attack rolls, and other creatures have advantage on attack rolls against it. On each of its turns, the target can take an action to collect itself and repeat the save, ending the spell on itself on a success.",
 				"{@italic Concentration Points: 4}"
 			],
 			"savingThrow": [
-				"wisdom"
+				"charisma"
 			],
 			"miscTags": [
 				"SGT"
@@ -15534,14 +15537,14 @@
 				"You suggest a course of activity—described in no more than 25 words—to one creature you can see within range that can hear and understand you. {@color The target can not be one you are actively fighting.|30d5c8}",
 				"{@color The target creature becomes more naive and illogical when it comes to listening to your suggestion. Still, the suggestion must be for a reasonable course of action that would be in-character for the target to possibly take,|30d5c8} and it can not involve anything that would obviously lead the target or its allies to harm.",
 				"{@color For example, a guard with orders to protect a town would not open the gates to a band of unknown armed combatants, but would open it to a caravan that poses no obvious outward threat. A soldier would not drop its weapon and flee from a winning battle, but it would attack a different target or change its strategy for the battle. A merchant overlooking a stall would not give you its goods for free, but it would turn its back to speak to a friend nearby. Ultimately, the DM has the final say on whether the suggestion is reasonable.|30d5c8}",
-				"The target must succeed on a Wisdom saving throw or have the {@condition Charmed} condition for the duration or until you or your allies deal damage to the target or its allies. The {@condition Charmed} target pursues the suggestion to the best of its ability. The suggested activity can continue for the entire duration, but if the suggested activity can be completed in a shorter time, the spell ends for the target upon completing it.",
+				"The target must succeed on an {@color Intelligence|30d5c8} saving throw or have the {@condition Charmed} condition for the duration or until you or your allies deal damage to the target or its allies. The {@condition Charmed} target pursues the suggestion to the best of its ability. The suggested activity can continue for the entire duration, but if the suggested activity can be completed in a shorter time, the spell ends for the target upon completing it.",
 				"{@italic Concentration Points: 0}"
 			],
 			"conditionInflict": [
 				"charmed"
 			],
 			"savingThrow": [
-				"wisdom"
+				"intelligence"
 			],
 			"miscTags": [
 				"SGT"
@@ -17979,67 +17982,6 @@
 			}
 		},
 		{
-			"name": "Steel Wind Strike",
-			"source": "XGE",
-			"page": 166,
-			"level": 3,
-			"school": "C",
-			"time": [
-				{
-					"number": 1,
-					"unit": "action"
-				}
-			],
-			"range": {
-				"type": "point",
-				"distance": {
-					"type": "feet",
-					"amount": 30
-				}
-			},
-			"components": {
-				"s": true,
-				"m": {
-					"text": "a melee weapon worth at least 1 sp",
-					"cost": 10
-				}
-			},
-			"duration": [
-				{
-					"type": "instant"
-				}
-			],
-			"entries": [
-				"You flourish the weapon used in the casting and then vanish to strike like the wind. Choose up to five creatures you can see within range. Make a melee spell attack against each target. On a hit, a target {@color takes|30d5c8} {@damage 6d6} {@color force damage.|30d5c8}",
-				"You can then teleport to an unoccupied space you can see within 5 feet of one of the targets you hit or missed."
-			],
-			"damageInflict": [
-				"force"
-			],
-			"spellAttack": [
-				"M"
-			],
-			"miscTags": [
-				"SGT",
-				"TP"
-			],
-			"areaTags": [
-				"MT"
-			],
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Ranger (reworked)",
-						"source": "farover"
-					},
-					{
-						"name": "Wizard",
-						"source": "PHB"
-					}
-				]
-			}
-		},
-		{
 			"name": "Witch Bolt",
 			"source": "PHB",
 			"page": 289,
@@ -18136,7 +18078,7 @@
 				}
 			],
 			"entries": [
-				"You create a twisting pattern of colors that weaves through the air inside a 30-foot cube within range. The pattern appears for a moment and vanishes. Each creature in the area who sees the pattern must make a Wisdom saving throw. On a failed save, the creature becomes {@condition charmed} for the duration. While {@condition charmed} by this spell, the creature is {@condition incapacitated} and has a speed of 0.",
+				"You create a twisting pattern of colors that weaves through the air inside a 30-foot cube within range. The pattern appears for a moment and vanishes. Each creature in the area who sees the pattern must make an {@color Intelligence|30d5c8} saving throw. {@color A creature that has an Intelligence score of 4 or lower is unaffected.|30d5c8} On a failed save, the creature becomes {@condition charmed} for the duration. While {@condition charmed} by this spell, the creature is {@condition incapacitated} and has a speed of 0.",
 				"The spell ends for an affected creature if it takes any damage or if someone else uses an action to shake the creature out of its stupor. {@color Creatures can also repeat the saving throw to end the effect at the end of their turns.|30d5c8}",
 				"{@italic Concentration Points: 3}"
 			],
@@ -18145,7 +18087,7 @@
 				"incapacitated"
 			],
 			"savingThrow": [
-				"wisdom"
+				"intelligence"
 			],
 			"areaTags": [
 				"C"
@@ -18188,7 +18130,7 @@
 				}
 			],
 			"entries": [
-				"Necromantic energy washes over a creature of your choice that you can see within range, draining moisture and vitality from it. The target must make a Constitution saving throw. The target takes {@damage 8d8} necrotic damage on a failed save, or half as much damage on a successful one. This spell has no effect on undead or constructs.",
+				"Necromantic energy washes over a creature of your choice that you can see within range, draining moisture and vitality from it. The target must make a {@color Wisdom|30d5c8} saving throw. The target takes {@damage 8d8} necrotic damage on a failed save, or half as much damage on a successful one. This spell has no effect on undead or constructs.",
 				"If you target a plant creature or a magical plant, it makes the saving throw with disadvantage, and the spell deals maximum damage to it.",
 				"If you target a nonmagical plant that isn't a creature, such as a tree or shrub, it doesn't make a saving throw, it simply withers and dies."
 			],
@@ -18205,7 +18147,7 @@
 				"necrotic"
 			],
 			"savingThrow": [
-				"constitution"
+				"wisdom"
 			],
 			"affectsCreatureType": [
 				"aberration",
@@ -19429,7 +19371,7 @@
 			],
 			"entries": [
 				"Choose a manufactured metal object, such as a metal weapon or a suit of heavy or medium metal armor, that you can see within range. You cause the object to glow red-hot. Any creature in physical contact with the object takes {@damage 2d8} fire damage when you cast the spell. Until the spell ends, you can use a bonus action on each of your subsequent turns to cause this damage again.",
-				"If a creature is holding or wearing the object and takes the damage from it, the creature must succeed on a Constitution saving throw or drop the object if it can. If it doesn't drop the object, it has disadvantage on attack rolls and ability checks until the start of your next turn. {@color If a creature succeeds on this saving throw, they can no longer have disadvantage caused from this casting of heat metal.|30d5c8}",
+				"If a creature is holding or wearing the object and takes the damage from it, the creature must succeed on a {@color Wisdom|30d5c8} saving throw or drop the object if it can. If it doesn't drop the object, it has disadvantage on attack rolls and ability checks until the start of your next turn. {@color If a creature succeeds on this saving throw, they can no longer have disadvantage caused from this casting of heat metal.|30d5c8}",
 				"{@italic Concentration Points: 2}"
 			],
 			"entriesHigherLevel": [
@@ -19445,7 +19387,7 @@
 				"fire"
 			],
 			"savingThrow": [
-				"constitution"
+				"wisdom"
 			],
 			"miscTags": [
 				"SGT"
@@ -20302,7 +20244,7 @@
 				}
 			],
 			"entries": [
-				"This spell transforms a creature that you can see within range into a new form. An unwilling creature must make a Wisdom saving throw to avoid the effect. The spell has no effect on a shapechanger or a creature with 0 hit points.",
+				"This spell transforms a creature that you can see within range into a new form. An unwilling creature must make a {@color Constitution|30d5c8} saving throw to avoid the effect. The spell has no effect on a shapechanger or a creature with 0 hit points.",
 				"{@color The new form can be|30d5c8} {@filter any beast|bestiary|type=beast|miscellaneous=!swarm} {@color whose challenge rating is equal to or less than the target's (or the target's level, if it doesn't have a challenge rating). The target retains its alignment and personality. The target's game statistics, including mental ability scores, are replaced by the statistics of the chosen beast, with the exception of hit points (if the creature is a willing one).|30d5c8}",
 				"{@color If the target is a willing creature, it retains and uses the hit points of its normal form when transformed. If the willing target is dropped to 0 hit points while in the polymorphed form, the spell ends and the target is returned to its normal form with 1 hit point.|30d5c8}",
 				"{@color If the target is an unwilling creature, it assumes the hit points of its new form. If the unwilling target is dropped to 0 hit points while transformed, or when the spell otherwise ends, the target is returned to the number of hit points it had before it transformed.|30d5c8}",
@@ -20310,7 +20252,7 @@
 				"{@italic Concentration Points: 3}"
 			],
 			"savingThrow": [
-				"wisdom"
+				"constitution"
 			],
 			"miscTags": [
 				"SGT"
@@ -22308,7 +22250,7 @@
 				}
 			],
 			"entries": [
-				"You speak a one-word command to a creature you can see within range. The target must succeed on a Wisdom saving throw or follow the command on its next turn. The spell has no effect if the target is undead, if it doesn't understand your language, or if your command is directly harmful to it.",
+				"You speak a one-word command to a creature you can see within range. The target must succeed on a {@color Charisma|30d5c8} saving throw or follow the command on its next turn. The spell has no effect if the target is undead, if it doesn't understand your language, or if your command is directly harmful to it.",
 				"Some typical commands and their effects follow. You might issue a command other than one described here. If you do so, the DM determines how the target behaves. If the target can't follow your command, the spell ends.",
 				{
 					"type": "entries",
@@ -22356,7 +22298,7 @@
 				}
 			],
 			"savingThrow": [
-				"wisdom"
+				"charisma"
 			],
 			"affectsCreatureType": [
 				"aberration",
@@ -22507,7 +22449,7 @@
 				}
 			],
 			"entries": [
-				"This spell {@table Aging Effects|farover|ages} the targeted creature by up to 12 years. Unwilling creatures are allowed a Wisdom saving throw to resist the spell.",
+				"This spell {@table Aging Effects|farover|ages} the targeted creature by up to 12 years. Unwilling creatures are allowed a Constitution saving throw to resist the spell.",
 				"Subjects cannot be aged beyond their natural life spans. If the spell would cause a creature would be aged beyond this age, the creature is aged to one year short of their maximum age. The spell cannot cause a subject to die. Humanoid creatures affected by the spell experience changes in appearance associated with increased age, such as gray hair and wrinkles. More significantly, they may suffer the negative effects of {@table Aging Effects|farover|aging} in stats, which are optional rules depending on your DM.",
 				"Nonmagical monsters can be affected by age creature. The DM determines a monster's current age and natural life span based on the DM's own judgment or information. An aged monster abides by the same stages of aging as humanoid creatures, and thus suffers the same changes to stats.",
 				"The reverse of this spell, restore youth, permanently restores age that has been lost as a result of magic (such as an age creature spell). Restore youth reduces the age of the targeted creature by up to 12 years. Subjects who's youth is restored regain any lost ability scores. A subject cannot become younger than their actual age as a result of this spell."
@@ -22521,7 +22463,7 @@
 				}
 			],
 			"savingThrow": [
-				"wisdom"
+				"constitution"
 			],
 			"classes": {
 				"fromClassList": [
@@ -22573,13 +22515,13 @@
 				"A creature with sufficient Strength (minimum score of 20) stops the enchanted surface from moving by succeeding on a Strength check contested by the casters spell save DC. Such a creature suffers no damage from the enchanted surface. If the creature prevents the enchanted surface from moving for three consecutive rounds, the wall returns to its original position and the spell is negated. If multiple creatures attempt to stop the wall, the Strength check is rolled at advantage, the highest strength score is used as a base score, and one point is added to that score for every creature assisting. Thus, a creature with 17 Strength assisted by three creatures could attempt to stop the wall.",
 				"A strong or heavy object made of stone, wood, or metal is placed in the path of the wall. If the item survives {@damage 2d10} bludgeoning damage, the object successfully braces the wall (Use appropriate object hit points as explained in the \"Statistics for Objects\" section of the DMG). If the object holds for three consecutive rounds, the surface returns to its original position and the spell is negated. The DM must use discretion in determining the types of objects that will brace the wall.",
 				"{@spell Dispel magic} or a similar spell or magical item is used to cancel the crushing wall.",
-				"The crushing wall almost never touches the opposite wall, usually being stopped by debris. A gap of two inches or more usually remains between the walls. If the wall is not stopped, it causes crushing damage to everyone in the room. All affected creatures must make a Constitution saving throw. Those who fail suffer {@damage 16d10} bludgeoning damage, and those who pass suffer half. When the wall can move no farther, it returns to its original position and the spell ends."
+				"The crushing wall almost never touches the opposite wall, usually being stopped by debris. A gap of two inches or more usually remains between the walls. If the wall is not stopped, it causes crushing damage to everyone in the room. All affected creatures must make a Strength saving throw. Those who fail suffer {@damage 16d10} bludgeoning damage, and those who pass suffer half. When the wall can move no farther, it returns to its original position and the spell ends."
 			],
 			"damageInflict": [
 				"bludgeoning"
 			],
 			"savingThrow": [
-				"constitution"
+				"strength"
 			],
 			"abilityCheck": [
 				"strength"
@@ -22950,11 +22892,11 @@
 			"entries": [
 				"A cleric casting this spell forces the victim of the spell to follow one specific law. The cleric may choose any legitimate law prevalent in the area in which the cleric and the victim currently reside. Thus, if a city has no laws about murder, the cleric cannot command the target not to kill.",
 				"The victim of the spell is forced to obey the letter of the law to the best of its ability. Thus, if a victim were commanded not to commit murder, the victim would go to any length to avoid murdering someone. Since the essence of this spell is tied to legal (and not moral) interpretation, characters may find loopholes that will allow them to work around the law in specific cases or to ignore the law in light of extenuating circumstances.",
-				"When casting the spell, the cleric must speak the law to the recipient in such a way that they can hear it. The victim is allowed a Wisdom saving throw to avoid the effect. If the save is failed, the victim will never willingly violate the stated law as long as the spell is in effect.",
-				"Legal thoughts can be negated by dispel magic. The victim of this spell never perceives anything wrong with adhering to the law, and therefore never seeks to have the spell removed."
+				"When casting the spell, the cleric must speak the law to the recipient in such a way that they can hear it. The victim is allowed a Charisma saving throw to avoid the effect. If the save is failed, the victim will never willingly violate the stated law as long as the spell is in effect.",
+				"Legal thoughts can be negated by {@spell dispel magic}. The victim of this spell never perceives anything wrong with adhering to the law, and therefore never seeks to have the spell removed."
 			],
 			"savingThrow": [
-				"wisdom"
+				"charisma"
 			],
 			"classes": {
 				"fromClassList": [
@@ -23662,13 +23604,13 @@
 				}
 			],
 			"entries": [
-				"This spell creates a rift in the nature of cause and effect. The target of the spell must make a Wisdom saving throw. On a failed save, the spell is cast upon an opponent's weapon. When the weapon is used, it hits and causes damage normally, but the damage is not applied to the creature struck by the weapon. Instead, the person wielding the weapon or one of his companions suffers the damage. When this effect happens, the target can repeat the saving throw, ending the effect on a successful one. If the weapon misses its target on any round, no damage is caused in that round.",
+				"This spell creates a rift in the nature of cause and effect. The target of the spell must make a Charisma saving throw. On a failed save, the spell is cast upon an opponent's weapon. When the weapon is used, it hits and causes damage normally, but the damage is not applied to the creature struck by the weapon. Instead, the person wielding the weapon or one of his companions suffers the damage. When this effect happens, the target can repeat the saving throw, ending the effect on a successful one. If the weapon misses its target on any round, no damage is caused in that round.",
 				"Using a die roll, the DM randomly determines the victim of the damage. The DM selects a die with a value nearest the number of eligible creatures (the wielder of the weapon and his companions). If the number of creatures does not equate to highest value of a die, the wielder of the enchanted weapon takes the extra chances to be hit. For example, if a goblin wields a sword affected by this spell, he and his six companions are eligible to receive the damage. The DM rolls {@dice 1d8}. On a roll of 1-6, one of the goblin's companions suffers the damage; on a roll of 7 or 8, the goblin with the affected weapon suffers the damage.",
 				"If the wielder of the weapon changes weapons while the spell is in effect, the discarded weapon remains enchanted.",
 				"{@italic Concentration Points: 3}"
 			],
 			"savingThrow": [
-				"wisdom"
+				"charisma"
 			],
 			"classes": {
 				"fromClassList": [
@@ -23717,13 +23659,13 @@
 				}
 			],
 			"entries": [
-				"Miscast magic can be cast on any spellcaster. The target spellcaster must make a Wisdom saving throw. On a fail, it causes the spells cast by the affected spellcaster to be chosen randomly from their prepared spells of the same or lower level. Thus, if a spellcaster affected by miscast magic had four 1st-level spells prepared ({@spell mage armor}, {@spell feather fall}, {@spell jump}, and {@spell magic missile}) and they attempted to cast the {@spell magic missile} spell, the DM would determine the resulting spell randomly from the spellcasters four prepared spells. The spellcaster would only have a 25% chance of casting the {@spell magic missile} spell. Only spells currently prepared are eligible to be exchanged with the desired spell. If a spellcaster had only one spell prepared, the miscast magic would have no effect and the spellcasters spell would be cast normally. If the spell is cast on a spellcaster that doesn't prepare spells, the spell is chosen from amongst all the spells that the spellcaster currently could cast.",
+				"Miscast magic can be cast on any spellcaster. The target spellcaster must make an Intelligence saving throw. On a fail, it causes the spells cast by the affected spellcaster to be chosen randomly from their prepared spells of the same or lower level. Thus, if a spellcaster affected by miscast magic had four 1st-level spells prepared ({@spell mage armor}, {@spell feather fall}, {@spell jump}, and {@spell magic missile}) and they attempted to cast the {@spell magic missile} spell, the DM would determine the resulting spell randomly from the spellcasters four prepared spells. The spellcaster would only have a 25% chance of casting the {@spell magic missile} spell. Only spells currently prepared are eligible to be exchanged with the desired spell. If a spellcaster had only one spell prepared, the miscast magic would have no effect and the spellcasters spell would be cast normally. If the spell is cast on a spellcaster that doesn't prepare spells, the spell is chosen from amongst all the spells that the spellcaster currently could cast.",
 				"The miscast spell operates normally. If a spellcaster tried to {@spell feather fall} a companion but a {@spell web} spell resulted, the companion would be targeted by the webs and subject to all resulting effects. If the target of the spell were in range of the {@spell feather fall} spell but not in range of the web, the spell would be lost in a fizzle of energy. If a spell such as {@spell sending} was the intended spell to be cast on a target hundreds of miles away, the {@spell sending} spell would be lost in a fizzle of energy, unless the random result spell would have an equal or greater range and could be cast on a target in the same way {@spell sending} could.",
-				"The spellcaster who casts the spell performs the proper components of the spell they wish to cast, but they do not discover the altered results until the wrong spell takes effect. The spellcaster will also discover that, if either the intended spell or the resulting spell required consumable material components, they will both be consumed. Once an affected spellcaster casts a random spell, they can repeat the Wisdom saving throw to attempt to end the effect.",
+				"The spellcaster who casts the spell performs the proper components of the spell they wish to cast, but they do not discover the altered results until the wrong spell takes effect. The spellcaster will also discover that, if either the intended spell or the resulting spell required consumable material components, they will both be consumed. Once an affected spellcaster casts a random spell, they can repeat the Intelligence saving throw to attempt to end the effect.",
 				"{@italic Concentration Points: 3}"
 			],
 			"savingThrow": [
-				"wisdom"
+				"intelligence"
 			],
 			"classes": {
 				"fromClassList": [
@@ -24255,7 +24197,7 @@
 				}
 			],
 			"entries": [
-				"Creatures affected by this spell hesitate before executing their intended actions. Each creature of the casters choice in a 20-foot radius sphere centered on a point within range must make a Wisdom saving throw. On a failed save, the spell causes them to modify their next initiative roll by -10, and on a successful save by -5. The initiative modifier occurs in the round following the round in which Hesitation is cast."
+				"Creatures affected by this spell hesitate before executing their intended actions. Each creature of the casters choice in a 20-foot radius sphere centered on a point within range must make a Charisma saving throw. On a failed save, the spell causes them to modify their next initiative roll by -10, and on a successful save by -5. The initiative modifier occurs in the round following the round in which Hesitation is cast."
 			],
 			"entriesHigherLevel": [
 				{
@@ -24267,7 +24209,7 @@
 				}
 			],
 			"savingThrow": [
-				"wisdom"
+				"charisma"
 			],
 			"classes": {
 				"fromClassList": [
@@ -24650,7 +24592,7 @@
 			],
 			"entries": [
 				"This spell allows the caster to read the memory of a single subject. The caster experiences the memory with the same intensity as the subject. The time required to view a memory is 1/50 of the time that the actual event lasted. Thus, the caster can view the memory of an event that lasted for 5 minutes in roughly one round. When cast at 3rd level, the spell allows the caster to view a memory lasting up to 5 minutes in length, or one round in real time. The subject experiences the memory at the same time the caster reads it.",
-				"The subject must have an Intelligence score of 5 or more and must remain within range of the caster throughout the time it takes to read the desired memory. Casters can cast this spell on {@condition unconscious}, sleeping, held, or {@condition paralyzed} creatures. The subject receives a Wisdom saving throw when the caster casts the spell (this saving throw is allowed even if the subject is asleep or otherwise unaware of the attempt). The target has advantage on the saving throw if it is engaged in combat with the caster or its allies.",
+				"The subject must have an Intelligence score of 5 or more and must remain within range of the caster throughout the time it takes to read the desired memory. Casters can cast this spell on {@condition unconscious}, sleeping, held, or {@condition paralyzed} creatures. The subject receives an Intelligence saving throw when the caster casts the spell (this saving throw is allowed even if the subject is asleep or otherwise unaware of the attempt). The target has advantage on the saving throw if it is engaged in combat with the caster or its allies.",
 				"In addition, if the memory that the caster wants to view concerns something the subject wants to keep secret, or is something that the subject is trying to suppress, the subject receives a +5 bonus to the saving throw. If the memory the caster wishes to view is more than six months old, the subject receives a second saving throw, with bonuses depending on the age of the memory as follows:",
 				{
 					"type": "entries",
@@ -24675,7 +24617,7 @@
 				"unconscious"
 			],
 			"savingThrow": [
-				"wisdom"
+				"intelligence"
 			],
 			"classes": {
 				"fromClassList": [
@@ -24728,7 +24670,7 @@
 				}
 			],
 			"entries": [
-				"Rigid Thinking can be cast only upon a creature with an Intelligence score of 3 or higher. The target creature must succeed on a Wisdom saving throw, or be subjected to the following effect.",
+				"Rigid Thinking can be cast only upon a creature with an Intelligence score of 3 or higher. The target creature must succeed on an Intelligence saving throw, or be subjected to the following effect.",
 				"A creature affected by Rigid Thinking is incapable of performing any action other than the activity they are involved in when the spell takes effect. The creature's mind simply cannot decide on another course of action--it becomes frozen into a single thought and cannot change even if new circumstances would suggest otherwise. Thus, a fighter fighting a kobold will ignore the arrival of a beholder, and a rogue picking a lock will pay no heed to the arrival of three guards.",
 				"An affected creature will not continue to fire their bow at a dragon if they run out of arrows, but will choose another means of attacking the dragon to the exclusion of all other activities.",
 				"A spellcaster in the process of casting a spell when Rigid Thinking takes effect will attempt to repeat the spell at the same target if possible, and if they don't have the resources to do so, they will then attempt to continue working towards their goal with other appropriate means.",
@@ -24736,7 +24678,7 @@
 				"{@italic Concentration Points: 3}"
 			],
 			"savingThrow": [
-				"wisdom"
+				"intelligence"
 			],
 			"classes": {
 				"fromClassList": [
@@ -24785,11 +24727,11 @@
 				}
 			],
 			"entries": [
-				"You create a telepathic link between yourself and a creature within range with an Intelligence score of at least 5. If the creature is unwilling, it can make a Wisdom saving throw to resist the effect.",
+				"You create a telepathic link between yourself and a creature within range with an Intelligence score of at least 5. If the creature is unwilling, it can make a Intelligence saving throw to resist the effect.",
 				"Until the spell ends, you and the target can can communicate silently and rapidly. Telepathy does not give either participant access to the other's thoughts, memories, or emotions. Participants can only \"hear\" the thoughts that the other participant actively \"sends.\" Mind-to-mind communication is approximately four times faster than verbal communication. The level of complexity that can be communicated is only that which can be expressed through language. Gestures, expressions, and body language cannot be conveyed."
 			],
 			"savingThrow": [
-				"wisdom"
+				"intelligence"
 			],
 			"classes": {
 				"fromClassList": [
@@ -25129,13 +25071,13 @@
 				}
 			],
 			"entries": [
-				"When you cast this spell, a green ray springs from your outstretched hand and it unerringly strikes a creature within line of sight and the range of the spell. The target must make a Charisma saving throw. On a failed save, the spell covers the subject with a shimmering emerald field that tethers the subject to that physical location for the duration of the spell.",
+				"When you cast this spell, a green ray springs from your outstretched hand and it unerringly strikes a creature within line of sight and the range of the spell. The target must make a Wisdom saving throw. On a failed save, the spell covers the subject with a shimmering emerald field that tethers the subject to that physical location for the duration of the spell.",
 				"The spell has two effects. Firstly, it completely blocks bodily extradimensional travel. Forms of movement barred by the dimensional anchor include {@spell blink|phb|blinking}, {@spell dimension door}, {@spell etherealness}, {@spell gate}, {@spell misty step}, {@spell plane shift}, and any other similar teleportation or psionic abilities.",
 				"Secondly, the spell tethers the target to the location it is in. If by any means the target moves over 30 feet away from the location where it was subjected to the spell, it is then pulled back to that location by the green tethers of the spell at the end of the turn on which is moved. When this effect occurs, the target can repeat the Charisma saving throw, ending the spell on a successful save.",
 				"{@italic Concentration Points: 3}"
 			],
 			"savingThrow": [
-				"charisma"
+				"wisdom"
 			],
 			"classes": {
 				"fromClassList": [
@@ -25192,12 +25134,12 @@
 				}
 			],
 			"entries": [
-				"This spell reverses the ethics of a person or group of people. Each creature in a 20-foot-radius sphere centered on a point you choose within range must succeed on a Wisdom saving throw when you cast this spell or be affected by it.",
+				"This spell reverses the ethics of a person or group of people. Each creature in a 20-foot-radius sphere centered on a point you choose within range must succeed on a Charisma saving throw when you cast this spell or be affected by it.",
 				"While under the influence of this spell, a creature behaves in a manner opposite to the way they normally would behave. Thus, a shopkeeper influenced by inverted ethics will think it perfectly normal for someone to pick up an item from the shop and walk out the door without paying for it. If someone tried to pay for an item, the shopkeeper would be insulted. If the spell is cast on a shopper in a store, they would find it natural to steal the item, thinking that they are behaving in a proper way. If the spell is cast on a professed thief, they will no longer steal, choosing to pay for the goods instead.",
 				"Inverted ethics does not cause a creature to actively commit evil deeds (or good deeds). Thus, an affected creature will not go on a shoplifting rampage; it will steal only as the opportunity presents itself."
 			],
 			"savingThrow": [
-				"wisdom"
+				"charisma"
 			],
 			"classes": {
 				"fromClassList": [
@@ -25404,10 +25346,10 @@
 				}
 			],
 			"entries": [
-				"This spell \"disconnects\" the subject's short-term and long-term memory. When affected by this spell, the target must make a Wisdom saving throw. On a failed save, the target is incapable of storing information in long-term memory for the duration of the spell.",
+				"This spell \"disconnects\" the subject's short-term and long-term memory. When affected by this spell, the target must make an Intelligence saving throw. On a failed save, the target is incapable of storing information in long-term memory for the duration of the spell.",
 				"Every moment is virtually an independent event for the target; it can remember recent events, thoughts, and sensations for no more than one round. Memories of events that happened before the onset of the spell are not affected at all; these are safely stored in long-term memory.",
 				"While the spell is active, the subjected target is forced to concentrate, as if on a spell, to be able to act. Spellcasters already concentrating on a spell when Memory Wrack takes effect are forced to drop that spell, and they can not cast a concentration spell for the duration of Memory Wrack's effect.",
-				"If the target takes damage and is forced to make a Constitution saving throw to maintain concentration, on a failed save the target is {@condition stunned} until the end of their next turn, at which point they can repeat the Wisdom saving throw to attempt to end Memory Wrack.",
+				"If the target takes damage and is forced to make a Constitution saving throw to maintain concentration, on a failed save the target is {@condition stunned} until the end of their next turn, at which point they can repeat the Intelligence saving throw to attempt to end Memory Wrack.",
 				"When the spell ends, the target remembers nothing that happened while the spell was in effect.",
 				"{@italic Concentration Points: 4}"
 			],
@@ -25425,7 +25367,7 @@
 			],
 			"savingThrow": [
 				"constitution",
-				"wisdom"
+				"intelligence"
 			],
 			"classes": {
 				"fromClassList": [
@@ -25903,7 +25845,7 @@
 				}
 			],
 			"entries": [
-				"You ignite the soul of a creature within range, and the combustion wreathes the target in flames. The target must make a Dexterity saving throw. On a failed save, it takes {@damage 2d6} fire damage, or half as much on a successful one. On a failed save, the target also burns for the spell's duration.",
+				"You ignite the soul of a creature within range, and the combustion wreathes the target in flames. The target must make a Wisdom saving throw. On a failed save, it takes {@damage 2d6} fire damage, or half as much on a successful one. On a failed save, the target also burns for the spell's duration.",
 				"At the end of each of its turns, the burning target must repeat the Dexterity saving throw. It takes {@damage 1d4} fire damage on a failed save, and the effect ends on a successful one.",
 				"Any other creature that moves within 5 feet of a burning target or starts its turn there must also make a Dexterity saving throw. On a failed save, the creature also catches fire and is subjected to the spell's burn effect.",
 				"{@italic Concentration Points: 2}"
@@ -25921,7 +25863,7 @@
 				"fire"
 			],
 			"savingThrow": [
-				"dexterity"
+				"wisdom"
 			],
 			"classes": {
 				"fromClassList": [
@@ -26257,7 +26199,7 @@
 				}
 			],
 			"entries": [
-				"A cloud of life draining necrotic energy the size of one square emanates from you towards a direction, travelling in a 5 foot wide line up to 30 feet away, striking all creatures in its path. Each creature affected must make a Dexterity saving throw. Creatures who fail the saving throw take {@damage 2d8} necrotic damage, or half as much on a successful one.",
+				"A cloud of life draining necrotic energy the size of one square emanates from you towards a direction, travelling in a 5 foot wide line up to 30 feet away, striking all creatures in its path. Each creature affected must make a Constitution saving throw. Creatures who fail the saving throw take {@damage 2d8} necrotic damage, or half as much on a successful one.",
 				"After traveling, the cloud persists at its destination until the beginning of your next turn. During this time, any creature that comes into contact with the cloud is subjected to its effect.",
 				"At the beginning of your next turn, the cloud travels back to you in a 5 foot wide line, as long as you are within 60 feet of it at the time, striking all creatures in its path once again. The cloud can not move through impassable terrain. If the cloud returns to you, you regain {@dice 2d4} hit points for each unique creature that failed the saving throw which the spell damaged.",
 				"{@italic Concentration Points: 2}"
@@ -26275,7 +26217,7 @@
 				"necrotic"
 			],
 			"savingThrow": [
-				"dexterity"
+				"constitution"
 			],
 			"miscTags": [
 				"HL"
@@ -26370,7 +26312,7 @@
 				}
 			],
 			"entries": [
-				"You place a curse on a creature that you can see within range. At the beginning of each of the creature's turns, it must make a Constitution saving throw. On a failed save, the creature suffers {@damage 1d12} necrotic damage and one level of {@condition exhaustion}. On a successful save, the curse ends, and all levels of {@condition exhaustion} caused by this spell are removed.",
+				"You place a curse on a creature that you can see within range. At the beginning of each of the creature's turns, it must make a Wisdom saving throw. On a failed save, the creature suffers {@damage 1d12} necrotic damage and one level of {@condition exhaustion}. On a successful save, the curse ends, and all levels of {@condition exhaustion} caused by this spell are removed.",
 				"A Remove Curse cast on the target ends this spell."
 			],
 			"damageInflict": [
@@ -26380,7 +26322,7 @@
 				"exhaustion"
 			],
 			"savingThrow": [
-				"constitution"
+				"wisdom"
 			],
 			"miscTags": [
 				"SGT"
@@ -27876,6 +27818,9 @@
 				"When a divination attempt by any of the listed spells is detected, the diviner must immediately make an Intelligence saving throw. On a fail, the identity and general location of the diviner immediately becomes known to you. The general location is a direction and significant landmark close to the diviner. Thus, you might learn, \"The wizard Sniggel spies on us from east, under the stairs\", or, \"You are watched by Asquil in the city of Samarquol.\"",
 				"{@italic Concentration Points: 0}"
 			],
+			"savingThrow": [
+				"intelligence"
+			],
 			"classes": {
 				"fromClassList": [
 					{
@@ -29134,11 +29079,11 @@
 			},
 			"entries": [
 				"You play a tragic song that fills others with pity and sorrow. When you cast this spell, you can choose any number of creatures, including yourself, to benefit from its effects. While {@status concentration|PHB|concentrating} on this spell, you can only use either an action or a bonus action on each of your turns, but not both.",
-				"Any creature that targets you or a chosen creature within the spell's area with an attack roll or a damaging spell must succeed on a Charisma saving throw. On a failed save, the attacker feels overwhelming remorse for its actions, loses the attack or spell, and spends the rest of its turn crying. A creature that succeeds on this saving throw is immune to the effect for the rest of the turn. Creatures that are {@condition deafened} or immune to the {@condition charmed} condition automatically succeed on the saving throw.",
+				"Any creature that targets you or a chosen creature within the spell's area with an attack roll or a damaging spell must succeed on a Wisdom saving throw. On a failed save, the attacker feels overwhelming remorse for its actions, loses the attack or spell, and spends the rest of its turn crying. A creature that succeeds on this saving throw is immune to the effect for the rest of the turn. Creatures that are {@condition deafened} or immune to the {@condition charmed} condition automatically succeed on the saving throw.",
 				"{@italic Concentration Points: 2}"
 			],
 			"savingThrow": [
-				"charisma"
+				"wisdom"
 			]
 		},
 		{
@@ -31201,7 +31146,7 @@
 			],
 			"entries": [
 				"You manifest a ravine of gravitational energy in a line originating from you that is 100 feet long and 5 feet wide. Each creature in that line must make a Constitution saving throw, taking {@damage 8d8} force damage on a failed save, or half as much damage on a successful one.",
-				"Each creature within 10 feet of the line but not in it must succeed on a Constitution saving throw or take {@damage 8d8} force damage and be pulled toward the line until the creature is in its area."
+				"Each creature within {@color 20|30d5c8} feet of the line but not in it must succeed on a {@color Strength|30d5c8} saving throw or be pulled toward the line until the creature is in its area, {@color and then be subjected to the same effect as those already in it mentioned above.|30d5c8}"
 			],
 			"entriesHigherLevel": [
 				{
@@ -31216,7 +31161,8 @@
 				"force"
 			],
 			"savingThrow": [
-				"constitution"
+				"constitution",
+				"strength"
 			],
 			"areaTags": [
 				"L"
@@ -32352,7 +32298,7 @@
 				}
 			],
 			"entries": [
-				"You attempt to charm a creature you can see within range. It must make a Wisdom saving throw, and it does so with advantage if you or your companions are fighting it. If it fails the saving throw, it is {@condition charmed} by you until the spell ends or until you or your companions do anything harmful to it. The {@condition charmed} creature is friendly to you. When the spell ends, the creature knows it was {@condition charmed} by you."
+				"You attempt to charm a creature you can see within range. It must make a {@color Charisma|30d5c8} saving throw, and it does so with advantage if you or your companions are fighting it. If it fails the saving throw, it is {@condition charmed} by you until the spell ends or until you or your companions do anything harmful to it. The {@condition charmed} creature is friendly to you. When the spell ends, the creature knows it was {@condition charmed} by you."
 			],
 			"entriesHigherLevel": [
 				{
@@ -32367,7 +32313,7 @@
 				"charmed"
 			],
 			"savingThrow": [
-				"wisdom"
+				"charisma"
 			],
 			"miscTags": [
 				"SGT"
@@ -35197,7 +35143,7 @@
 				}
 			],
 			"entries": [
-				"You reach into the mind of one creature you can see within range. The target must make a Wisdom saving throw, taking {@damage 3d8} psychic damage on a failed save, or half as much damage on a successful one. On a failed save, you also always know the target's location until the spell ends, but only while the two of you are on the same plane of existence. While you have this knowledge, the target can't become hidden from you, and if it's {@condition invisible}, it gains no benefit from that condition against you.",
+				"You reach into the mind of one creature you can see within range. The target must make an {@color Intelligence|30d5c8} saving throw, taking {@damage 3d8} psychic damage on a failed save, or half as much damage on a successful one. On a failed save, you also always know the target's location until the spell ends, but only while the two of you are on the same plane of existence. While you have this knowledge, the target can't become hidden from you, and if it's {@condition invisible}, it gains no benefit from that condition against you.",
 				"{@italic Concentration Points: 1}"
 			],
 			"entriesHigherLevel": [
@@ -35213,7 +35159,7 @@
 				"psychic"
 			],
 			"savingThrow": [
-				"wisdom"
+				"intelligence"
 			],
 			"miscTags": [
 				"SGT"
@@ -35562,7 +35508,7 @@
 					"type": "entries",
 					"name": "Fireworks",
 					"entries": [
-						"The target explodes with a dazzling display of colors. Each creature within 10 feet of the target must succeed on a Constitution saving throw or become {@condition blinded} until the end of your next turn."
+						"The target explodes with a dazzling display of colors. Each creature within 10 feet of the target must succeed on a {@color Dexterity|30d5c8} saving throw or become {@condition blinded} until the end of your next turn."
 					]
 				},
 				{
@@ -35577,7 +35523,7 @@
 				"blinded"
 			],
 			"savingThrow": [
-				"constitution"
+				"dexterity"
 			],
 			"miscTags": [
 				"OBS",
@@ -37990,7 +37936,7 @@
 				}
 			],
 			"entries": [
-				"You send ribbons of negative energy at one creature you can see within range. Unless the target is undead, it must make a Constitution saving throw, {@color taking|30d5c8} {@damage 5d8} {@color necrotic damage|30d5c8} on a failed save, or half as much damage on a successful one. ",
+				"You send ribbons of negative energy at one creature you can see within range. Unless the target is undead, it must make a {@color Wisdom|30d5c8} saving throw, {@color taking|30d5c8} {@damage 5d8} {@color necrotic damage|30d5c8} on a failed save, or half as much damage on a successful one. ",
 				"A target killed by this damage rises up {@color as a|30d5c8} {@creature husk zombie|egw} {@color at the start of your next turn. The zombie takes its turn immediately after yours, and it obeys your verbal commands. Any humanoids the zombie slays with its {@italic Curse of the Husk} feature revive at the start of your next turn and obey your commands too. All zombies under your control with this spell remain in your control until the end of your next short or long rest, after which they crumble and die. Statistics for the|30d5c8} {@creature husk zombie|egw} {@color are in the EGW book.|30d5c8}",
 				"Alternatively, if you target an undead with this spell, the target doesn't make a saving throw. Instead, roll {@dice 5d12}. The target gains half the total as temporary hit points."
 			],
@@ -37998,7 +37944,7 @@
 				"necrotic"
 			],
 			"savingThrow": [
-				"constitution"
+				"wisdom"
 			],
 			"miscTags": [
 				"SGT",
@@ -38207,6 +38153,92 @@
 			]
 		},
 		{
+			"name": "Kinetic Jaunt",
+			"source": "SCC",
+			"page": 37,
+			"level": 2,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You magically empower your movement with dance-like steps, giving yourself the following benefits for the duration.",
+				{
+					"type": "list",
+					"items": [
+						"Your walking speed increases by 10 feet.",
+						"You don't provoke opportunity attacks.",
+						"You can move through the space of another creature, and it doesn't count as {@quickref difficult terrain||3}. If you end your turn in another creature's space, you are shunted to the last unoccupied space you occupied, and you take {@damage 1d8} force damage."
+					]
+				}
+			],
+			"damageInflict": [
+				"force"
+			]
+		},
+		{
+			"name": "Silvery Barbs",
+			"source": "SCC",
+			"page": 38,
+			"level": 1,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "which you take when a creature you can see within 60 feet of yourself succeeds on an attack roll, an ability check, or a saving throw"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You magically distract the triggering creature and turn its momentary uncertainty into encouragement for another creature. The triggering creature must reroll the {@dice d20} and use the lower roll.",
+				"You can then choose a different creature you can see within range (you can choose yourself). The chosen creature has advantage on the next attack roll, ability check, or saving throw it makes within 1 minute. A creature can be empowered by only one use of this spell at a time."
+			],
+			"miscTags": [
+				"ADV",
+				"SGT"
+			],
+			"areaTags": [
+				"ST"
+			]
+		},
+		{
 			"name": "Vortex Warp",
 			"source": "SCC",
 			"page": 38,
@@ -38235,7 +38267,7 @@
 				}
 			],
 			"entries": [
-				"You magically twist space around another creature you can see within range. The target must succeed on a Constitution saving throw (the target can choose to fail), or the target is teleported to an unoccupied space of your choice that you can see within range. The chosen space must be on a surface or in a liquid that can support the target without the target having to squeeze."
+				"You magically twist space around another creature you can see within range. The target must succeed on a {@color Wisdom|30d5c8} saving throw (the target can choose to fail), or the target is teleported to an unoccupied space of your choice that you can see within range. The chosen space must be on a surface or in a liquid that can support the target without the target having to squeeze."
 			],
 			"entriesHigherLevel": [
 				{
@@ -38246,7 +38278,7 @@
 				}
 			],
 			"savingThrow": [
-				"constitution"
+				"wisdom"
 			],
 			"miscTags": [
 				"SGT",
@@ -38282,7 +38314,7 @@
 				}
 			],
 			"entries": [
-				"You invoke both death and life upon a 10-foot-radius sphere centered on a point within range. Each creature of your choice in that area must make a Constitution saving throw, taking {@damage 2d6} necrotic damage on a failed save, or half as much damage on a successful one. Nonmagical vegetation in that area withers.",
+				"You invoke both death and life upon a 10-foot-radius sphere centered on a point within range. Each creature of your choice in that area must make a {@color Wisdom|30d5c8} saving throw, taking {@damage 2d6} necrotic damage on a failed save, or half as much damage on a successful one. Nonmagical vegetation in that area withers.",
 				"In addition, one creature of your choice in that area can spend and roll one of its unspent Hit Dice and regain a number of hit points equal to the roll plus your spellcasting ability modifier."
 			],
 			"entriesHigherLevel": [
@@ -38298,7 +38330,7 @@
 				"necrotic"
 			],
 			"savingThrow": [
-				"constitution"
+				"wisdom"
 			],
 			"miscTags": [
 				"HL"
