@@ -7661,7 +7661,7 @@
 			"page": 244,
 			"srd": true,
 			"basicRules": true,
-			"level": 9,
+			"level": 5,
 			"school": "D",
 			"time": [
 				{
@@ -7673,10 +7673,6 @@
 				"fromClassList": [
 					{
 						"name": "Druid (reworked)",
-						"source": "farover"
-					},
-					{
-						"name": "Warlock (reworked)",
 						"source": "farover"
 					}
 				]
@@ -7696,14 +7692,24 @@
 				{
 					"type": "timed",
 					"duration": {
-						"type": "hour",
-						"amount": 8
-					}
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
 				}
 			],
 			"entries": [
-				"You touch a willing creature and bestow a limited ability to see into the immediate future. For the duration, the target can't be {@quickref Surprise|PHB|3|0|surprised} and has advantage on attack rolls, ability checks, and saving throws. Additionally, other creatures have disadvantage on attack rolls against the target for the duration.",
-				"This spell immediately ends if you cast it again before its duration ends."
+				"You touch a willing creature and bestow a limited ability to see into the immediate future. For the duration, it gains the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"The target can not be {@condition surprised|farover}.",
+						"{@color The target has a +10 bonus to its initiative rolls.|30d5c8}",
+						"{@color The target automatically succeeds on Dexterity saving throws, unless it is|30d5c8} {@condition dazed|farover}{@color ,|30d5c8} {@condition incapacitated}{@color , or if its speed is 0.|30d5c8}",
+						"The target has advantage on attack rolls, and other creatures have disadvantage on attack rolls against the target."
+					]
+				},
+				"{@italic Concentration Points: 4}"
 			],
 			"miscTags": [
 				"ADV"
