@@ -8380,9 +8380,18 @@
 				}
 			],
 			"entries": [
-				"Slick grease covers the ground in a 10-foot square centered on a point within range and turns it into {@quickref difficult terrain||3} for the duration.",
-				"When the grease appears, each creature standing in its area must succeed on a Dexterity saving throw or fall {@condition prone}. A creature that enters the area or ends its turn there must also succeed on a Dexterity saving throw or fall {@condition prone}.",
-				"{@color The grease is flammable. If an attack that deals fire damage is targeted at the grease, or if fire that affects an area hits it, the grease disappears and each flammable object and creature in the area gets the|30d5c8} {@condition burning|farover} {@color condition.|30d5c8}"
+				"Slippery grease covers the ground in a {@color 15|30d5c8}-foot square centered on a point within range.",
+				"Any creature that {@color attempts to move within the area, is moved within it, or enters it|30d5c8} must succeed on a Dexterity saving throw or fall {@condition prone}. {@color Additionally, any creature that is pushed while in the area continues moving until it exits the grease.|30d5c8}",
+				"{@color The grease is flammable. If it is hit by an attack that deals fire damage or affected by an area of fire, the grease is destroyed, and each flammable object and creature in the area gains the|30d5c8} {@condition burning|farover} {@color condition.|30d5c8}"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"{@color When you cast this spell using a spell slot of 2nd level or higher, the size of the square increases by 5 feet for each slot level above 1st.|30d5c8}"
+					]
+				}
 			],
 			"conditionInflict": [
 				"prone"
