@@ -8381,7 +8381,7 @@
 			],
 			"entries": [
 				"Slippery grease covers the ground in a {@color 15|30d5c8}-foot square centered on a point within range.",
-				"Any creature that {@color attempts to move within the area, is moved within it, or enters it|30d5c8} must succeed on a Dexterity saving throw or fall {@condition prone}. {@color Additionally, any creature that is pushed while in the area continues moving until it exits the grease.|30d5c8}",
+				"Any creature that {@color attempts to move within the area, is moved within it, or enters it|30d5c8} must succeed on a Dexterity saving throw or fall {@condition prone}. A creature can only make this saving throw once per turn. {@color Additionally, any creature that is pushed while in the area continues moving until it exits the grease.|30d5c8}",
 				"{@color The grease is flammable. If it is hit by an attack that deals fire damage or affected by an area of fire, the grease is destroyed, and each flammable object and creature in the area gains the|30d5c8} {@condition burning|farover} {@color condition.|30d5c8}"
 			],
 			"entriesHigherLevel": [
@@ -12195,7 +12195,7 @@
 				}
 			],
 			"entries": [
-				"You radiate a concealing aura in a 30-foot radius for the duration. While in the aura, you and each creature you choose have a +10 bonus to Dexterity ({@skill Stealth}) checks and leave no tracks.",
+				"You radiate a concealing aura in a 30-foot radius for the duration, preventing any tracks from being left. {@color Also while in the aura, whenever you or a creature you choose makes a Dexterity ({@skill Stealth}) check, it can treat a|30d5c8} {@dice d20} {@color roll of 9 or lower as a 10.|30d5c8}",
 				"{@italic Concentration Points: 2}"
 			],
 			"areaTags": [
@@ -12512,7 +12512,7 @@
 			"source": "PHB",
 			"page": 266,
 			"srd": true,
-			"level": 7,
+			"level": 6,
 			"school": "C",
 			"time": [
 				{
@@ -12552,8 +12552,8 @@
 				}
 			],
 			"entries": [
-				"You and up to eight willing creatures who link hands in a circle are transported to a different plane of existence. You can specify a target destination in general terms, such as the City of Brass on the Elemental Plane of Fire or the palace of Dispater on the second level of the Nine Hells, and you appear in or near that destination, as determined by the DM.",
-				"Alternatively, if you know the sigil sequence of a teleportation circle on another plane of existence, this spell can take you to that circle. If the teleportation circle is too small to hold all the creatures you transported, they appear in the closest unoccupied spaces next to the circle."
+				"You and up to eight willing creatures who link hands in a circle are transported to a different plane of existence. You can specify a target destination in general terms, such as the Salamander Kingdom on the Elemental Plane of Fire or the palace of the Raven Queen in the Shadow Plane, and you appear in or near that destination, as determined by the DM.",
+				"Alternatively, if you know the keyword of a {@spell Malakai's Teleportation Circle|farover|teleportation circle} on another plane of existence, this spell can take you to that circle. If the teleportation circle is too small to hold all the creatures you transported, they appear in the closest unoccupied spaces next to the circle."
 			],
 			"spellAttack": [
 				"M"
@@ -13231,7 +13231,7 @@
 			"source": "PHB",
 			"page": 270,
 			"srd": true,
-			"level": 7,
+			"level": 5,
 			"school": "I",
 			"time": [
 				{
@@ -13243,7 +13243,7 @@
 				"type": "point",
 				"distance": {
 					"type": "miles",
-					"amount": 500
+					"amount": 100
 				}
 			},
 			"components": {
@@ -13258,8 +13258,8 @@
 				{
 					"type": "timed",
 					"duration": {
-						"type": "day",
-						"amount": 1
+						"type": "hour",
+						"amount": 8
 					},
 					"concentration": true
 				}
@@ -13270,6 +13270,14 @@
 				"You can see through its eyes and hear through its ears as if you were in its space. On your turn as a bonus action, you can switch from using its senses to using your own, or back again. While you are using its senses, you are {@condition blinded} and {@condition deafened} in regard to your own surroundings.",
 				"Physical interaction with the image reveals it to be an illusion, because things can pass through it. A creature that uses its action to examine the image can determine that it is an illusion with a successful Intelligence ({@skill Investigation}) check against your spell save DC. If a creature discerns the illusion for what it is, the creature can see through the image, and any noise it makes sounds hollow to the creature.",
 				"{@italic Concentration Points: 2}"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "{@color At Higher Levels|30d5c8}",
+					"entries": [
+						"{@color If you cast this spell using a spell slot of 6th level or higher, both the duration and the range of the spell are doubled for each slot level above 5th.|30d5c8}"
+					]
+				}
 			],
 			"conditionInflict": [
 				"blinded",
@@ -23791,7 +23799,7 @@
 			"source": "Farover",
 			"page": 0,
 			"level": 1,
-			"school": "T",
+			"school": "D",
 			"time": [
 				{
 					"number": 1,
@@ -23876,7 +23884,7 @@
 			"source": "Farover",
 			"page": 0,
 			"level": 1,
-			"school": "T",
+			"school": "D",
 			"time": [
 				{
 					"number": 1,
@@ -24031,7 +24039,7 @@
 			"source": "Farover",
 			"page": 0,
 			"level": 1,
-			"school": "E",
+			"school": "D",
 			"time": [
 				{
 					"number": 1,
@@ -24059,7 +24067,7 @@
 				}
 			],
 			"entries": [
-				"By use of this spell, a cleric becomes instantly aware when the recipient of the spell is in danger, regardless of the distance between the priest and the recipient. The recipient may be on a different plane of existence than the cleric. When this spell is cast by a cleric of at least 3rd level, they receive a mental image of the endangered person's situation. At no time, however, does the cleric know the person's location through the use of this spell."
+				"After you touch a willing creature, you form a protective bond that lasts for the duration. While the spell is active, you are instantly aware whenever the target is in danger, and you receive a brief mental image of the target’s situation at that moment. The target can be on a different plane of existence, and the spell functions regardless of the distance between you. However, this spell does not reveal the target’s exact location."
 			],
 			"entriesHigherLevel": [
 				{
@@ -25739,8 +25747,8 @@
 				}
 			],
 			"entries": [
-				"You extend your hand, and attempt to draw the life energy from a creature within range. The target must make a Constitution saving throw. On a successful save, the spell ends. On a failed save, you begin siphoning life energy from the target, dealing damage and healing you. Roll {@dice 3d6}, and choose which of the dice heal you, and which of the dice deal necrotic damage to the target. You must both heal and deal damage with at least one die.",
-				"On each of your turns for the duration, you can use your action to automatically repeat the effect on the target creature as long as you are within range and line of sight when doing so. If you do not spend an action continuing this spell every turn, it ends. The spell also ends if the target ever has total cover from you.",
+				"You extend your hand and attempt to siphon the life energy from a creature within range, damaging it and healing yourself. The target must make a Constitution saving throw. On a successful save, the spell ends, but the target takes necrotic damage equal to your spellcasting modifier, and you regain an equal amount of hit points. On a failed save, roll {@dice 3d6}. Then, assign each die individually, choosing which dice deal necrotic damage to the target and which dice restore hit points to you. You must both heal and deal damage with at least one die.",
+				"For the duration, you can use your action on each of your turns to repeat the effect against the same target, provided it remains within range and you can see it. The spell ends early if you do not use your action to sustain it or if the target gains total cover from you.",
 				"{@italic Concentration Points: 2}"
 			],
 			"entriesHigherLevel": [
@@ -27595,7 +27603,7 @@
 			"entries": [
 				"This spell creates a pact which is enforced by celestial or fiendish forces. You and another willing creature commit to a mutual agreement, clearly declaring your parts of the agreement during the casting.",
 				"Until the spell ends, if for any reason either participant breaks the agreement or fails to uphold their part of the bargain, beings of celestial or fiendish origin appear within unoccupied spaces as close as possible to the participant who broke the bargain. The beings are hostile to the deal-breaking participant and attempt to kill them, as well as any creatures that defend them. When the deal-breaking participant is killed, or the spell’s duration ends, the beings disappear in a flash of smoke.",
-				"The appearing creatures can be celestial or fiendish, depending on the caster who cast the spell. The DM chooses the exact {@filter creatures|bestiary|challenge rating=[&0;&6]|type=fiend;celestial} summoned (such as a {@creature vrock} or three {@creature pegasus|mm|pegasi}). There may be any number of beings, but their combined CR can’t exceed 6."
+				"The appearing creatures can be celestial or fiendish, depending on the caster who cast the spell. The DM chooses the exact {@filter creatures|bestiary|challenge rating=[&0;&8]|type=fiend;celestial} summoned (such as a {@creature vrock} or three {@creature pegasus|mm|pegasi}). There may be any number of beings, but their combined CR can’t exceed 8."
 			],
 			"entriesHigherLevel": [
 				{
@@ -28887,7 +28895,7 @@
 				]
 			},
 			"entries": [
-				"You harmonize with the rhythm of those around you until you’re perfectly in sync. You may take the {@action Help} action as a bonus action. Additionally, when a creature within range uses a Bardic Inspiration die, you may choose to reroll the die after it is rolled but before the outcome is determined.",
+				"You harmonize with the rhythm of those around you until you’re perfectly in sync. You may take the {@action Help} action as a bonus action. Additionally, when a creature within 60 feet uses a Bardic Inspiration die, you may choose to reroll the die after it is rolled but before the outcome is determined.",
 				"{@italic Concentration Points: 1}"
 			],
 			"source": "Farover",
@@ -29219,6 +29227,126 @@
 			],
 			"savingThrow": [
 				"wisdom"
+			]
+		},
+		{
+			"name": "Immolation Trap",
+			"source": "Farover",
+			"level": 2,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "a shard of flint and steel soaked in oil"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 24
+					}
+				}
+			],
+			"entries": [
+				"When you cast this spell, you create a magical trap on the ground in an unoccupied square within 5 feet of you.",
+				"This trap is nearly {@condition invisible}, requiring a successful Intelligence ({@skill Investigation}) check against your spell save DC to be discerned.",
+				"The trap triggers and ignites when a Small or larger creature moves onto the ground in the spell's area. That creature must succeed on a Dexterity saving throw. It takes {@damage 2d10} fire damage on a failed save, or half as much damage on a successful one. On a failed save, the target also begins {@condition burning|farover} for 1 minute, or until the condition is removed.",
+				"The {@condition burning|farover} target also sheds bright light in a 20-foot radius and dim light for an additional 20 feet, and attack rolls against it have advantage.",
+				"After the trap is triggered, the spell ends."
+			],
+			"miscTags": [
+				"LGT",
+				"ADV"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Ranger (reworked)",
+						"source": "farover"
+					}
+				]
+			},
+			"conditionInflict": [
+				"burning|farover"
+			],
+			"damageInflict": [
+				"fire"
+			],
+			"savingThrow": [
+				"dexterity"
+			]
+		},
+		{
+			"name": "Snake Trap",
+			"source": "Farover",
+			"level": 3,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+			"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "one snake scale"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 24
+					}
+				}
+			],
+			"entries": [
+				"When you cast this spell, you imbue magical snakes into a trap on the ground in an unoccupied square within 5 feet of you.",
+				"This trap is nearly {@condition invisible}, requiring a successful Intelligence ({@skill Investigation}) check against your spell save DC to be discerned.",
+				"The trap triggers when a Small or larger creature moves onto the ground in the spell's area. That creature must succeed on a Dexterity saving throw, or be {@condition restrained} until the end of the turn.",
+				"When the trap is triggered, a {@creature Swarm of Venomous Snakes|mm} is released in the closest unoccupied space.",
+				"Starting next round, roll initiative for the swarm, which has its own turns. The swarm is primarily hostile towards the creature that triggered the trap, and secondarily towards its allies. The swarm is controlled by the DM, and it disappears when it drops to 0 hit points or after 1 minute has passed."
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Ranger (reworked)",
+						"source": "farover"
+					}
+				]
+			},
+			"savingThrow": [
+				"dexterity"
+			],
+			"conditionInflict": [
+				"restrained"
+			],
+			"miscTags": [
+				"SMN"
 			]
 		},
 		{
@@ -37723,10 +37851,10 @@
 				}
 			],
 			"entries": [
-				"{@color When you cast this spell, you use the rope to create a circle with a 5-foot radius on the ground or the floor, which turns into a magic trap. When the spell ends, the rope reappears at the same location.|30d5c8}",
+				"When you cast this spell, you create a magical trap on the ground in an unoccupied square within 5 feet of you.",
 				"This trap is nearly invisible, requiring a successful Intelligence ({@skill Investigation}) check against your spell save DC to be discerned.",
-				"The trap triggers when a Small, Medium, or Large creature moves onto the ground or the floor in the spell's radius. That creature must succeed on a Dexterity saving throw or be magically hoisted into the air, leaving it hanging upside down 3 feet above the ground or the floor. The creature is {@condition restrained} there until the spell ends.",
-				"A {@condition restrained} creature can make a Dexterity saving throw at the end of each of its turns, ending the effect on itself on a success. Alternatively, the creature or someone else who can reach it can use an action to make an Intelligence ({@skill Arcana}) check against your spell save DC. On a success, the {@condition restrained} effect ends.",
+				"The trap triggers when a Small, Medium, or Large creature moves onto the ground in the spell's area. That creature must succeed on a Dexterity saving throw or be magically hoisted into the air, leaving it hanging upside down 3 feet above the ground or the floor. The creature is {@condition restrained} there until the spell ends.",
+				"A {@condition restrained} creature can make a Dexterity saving throw at the end of each of its turns, ending the effect on itself on a success. Alternatively, the creature or someone else who can reach it can use an action to make an Intelligence ({@skill Arcana}) {@color or Dexterity ({@skill Sleight of Hand})|30d5c8} check against your spell save DC. {@color A creature without an advanced rope use|30d5c8} {@variantrule non-combat skills|farover|non-combat skill} {@color makes this check at disadvantage.|30d5c8} On a success, the {@condition restrained} effect ends.",
 				"After the trap is triggered, the spell ends when no creature is {@condition restrained} by it."
 			],
 			"conditionInflict": [
