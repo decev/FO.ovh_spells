@@ -25159,7 +25159,7 @@
 			"entries": [
 				"When you cast this spell, a green ray springs from your outstretched hand and it unerringly strikes a creature within line of sight and the range of the spell. The target must make a Wisdom saving throw. On a failed save, the spell covers the subject with a shimmering emerald field that tethers the subject to that physical location for the duration of the spell.",
 				"The spell has two effects. Firstly, it completely blocks bodily extradimensional travel. Forms of movement barred by the dimensional anchor include {@spell blink|phb|blinking}, {@spell dimension door}, {@spell etherealness}, {@spell gate}, {@spell misty step}, {@spell plane shift}, and any other similar teleportation or psionic abilities.",
-				"Secondly, the spell tethers the target to the location it is in. If by any means the target moves over 30 feet away from the location where it was subjected to the spell, it is then pulled back to that location by the green tethers of the spell at the end of the turn on which is moved. When this effect occurs, the target can repeat the Charisma saving throw, ending the spell on a successful save.",
+				"Secondly, the spell tethers the target to the location it is in. If by any means the target moves over 30 feet away from the location where it was subjected to the spell, it is then pulled back to that location by the green tethers of the spell at the end of the turn on which is moved. When this effect occurs, the target can repeat the Wisdom saving throw, ending the spell on a successful save.",
 				"{@italic Concentration Points: 3}"
 			],
 			"savingThrow": [
