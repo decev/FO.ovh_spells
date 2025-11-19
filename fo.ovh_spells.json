@@ -1454,7 +1454,7 @@
 			"page": 215,
 			"srd": true,
 			"basicRules": true,
-			"level": 9,
+			"level": 8,
 			"school": "N",
 			"time": [
 				{
@@ -4299,7 +4299,7 @@
 				}
 			],
 			"entries": [
-				"You create 45 pounds of food and 30 gallons of fresh water on the ground or in containers within range—both useful in fending off the hazards of malnutrition and dehydration. The food is bland but nourishing and looks like a food of your choice, and the water is clean. The food spoils after 24 hours if uneaten."
+				"You create 45 pounds of food, {@color in the form of|30d5c8} {@item Fresh Provision|farover|Fresh Provisions}, and 30 gallons of fresh water on the ground or in containers within range—both useful in fending off the hazards of malnutrition and dehydration. The food is bland but nourishing and looks like a food of your choice, and the water is clean. The food spoils after 24 hours if uneaten."
 			]
 		},
 		{
@@ -6367,7 +6367,7 @@
 			"page": 238,
 			"srd": true,
 			"basicRules": true,
-			"level": 7,
+			"level": 6,
 			"school": "T",
 			"time": [
 				{
@@ -7905,7 +7905,7 @@
 			"page": 244,
 			"srd": true,
 			"basicRules": true,
-			"level": 9,
+			"level": 8,
 			"school": "C",
 			"time": [
 				{
@@ -9168,7 +9168,7 @@
 			],
 			"entries": [
 				"You bring forth a great feast, including magnificent food and drink. The feast takes 1 hour to consume and disappears at the end of that time, and the beneficial effects don't set in until this hour is over. Up to twelve creatures can partake of the feast.",
-				"A creature that partakes of the feast gains several benefits. The creature is cured of all diseases and poison, becomes immune to poison and being {@condition frightened}, and makes all Wisdom saving throws with advantage. Its hit point maximum also increases by {@dice 2d10}, and it gains the same number of hit points. These benefits last for 24 hours."
+				"A creature that partakes of the feast gains several benefits, {@color including the benefits of a|30d5c8} {@quickref Food and Water|phb|2|0|normal Feast}. The creature is cured of all diseases and poison, becomes immune to poison and being {@condition frightened}, and makes all Wisdom saving throws with advantage. Its hit point maximum also increases by {@dice 2d10}, and it gains the same number of hit points. These benefits last for 24 hours."
 			],
 			"damageImmune": [
 				"poison"
@@ -10160,8 +10160,10 @@
 				}
 			],
 			"entries": [
-				"Describe or name a creature that is familiar to you. You sense the direction to the creature's location, as long as that creature is within 1,000 feet of you. If the creature is moving, you know the direction of its movement.",
-				"The spell can locate a specific creature known to you, or the nearest creature of a specific kind (such as a human or a {@creature unicorn}), so long as you have seen such a creature up close\u2014within 30 feet\u2014at least once. If the creature you described or named is in a different form, such as being under the effects of a {@spell polymorph} spell, this spell doesn't locate the creature.",
+				"Describe or name a creature that is familiar to you. ",
+				"If the creature is within 1,000 feet of you, you sense the direction to the creature's location, and if it is moving, you know the direction of its movement.",
+				"{@color If the creature is within 30 miles (50 km) of you, you sense the direction of the creature's location the moment you cast the spell, but then the spell ends.|30d5c8}",
+				"The spell can locate a specific creature known to you, or the nearest creature of a specific kind (such as a human or a {@creature unicorn}), so long as you have seen such a creature up close—within 30 feet—at least once. If the creature you described or named is in a different form, such as being under the effects of a {@spell polymorph} spell, this spell doesn't locate the creature.",
 				"This spell can't locate a creature if any thickness of lead blocks a direct path between you and the creature.",
 				"{@italic Concentration Points: 0}"
 			]
@@ -11719,7 +11721,7 @@
 			"entries": [
 				"You conjure an extradimensional dwelling in range that lasts for the duration. You choose where its one entrance is located. The entrance shimmers faintly and is 5 feet wide and 10 feet tall. You and any creature you designate when you cast the spell can enter the extradimensional dwelling as long as the portal remains open. You can open or close the portal if you are within 30 feet of it. While closed, the portal is invisible.",
 				"Beyond the portal is a magnificent foyer with numerous chambers beyond. The atmosphere is clean, fresh, and warm.",
-				"You can create any floor plan you like, but the space can't exceed 50 cubes, each cube being 10 feet on each side. The place is furnished and decorated as you choose. It contains sufficient food to serve a nine course banquet for up to 100 people. A staff of 100 near-transparent servants attends all who enter. You decide the visual appearance of these servants and their attire. They are completely obedient to your orders. Each servant can perform any task a normal human servant could perform, but they can't attack or take any action that would directly harm another creature. Thus the servants can fetch things, clean, mend, fold clothes, light fires, serve food, pour wine, and so on. The servants can go anywhere in the mansion but can't leave it. Furnishings and other objects created by this spell dissipate into smoke if removed from the mansion. When the spell ends, any creatures or objects left inside the extradimensional space are expelled into the open spaces nearest to the entrance."
+				"You can create any floor plan you like, but the space can't exceed 50 cubes, each cube being 10 feet on each side. The place is furnished and decorated as you choose. It contains sufficient food to serve a nine course banquet for up to 100 people, {@color granting the benefits of a|30d5c8} {@quickref Food and Water|phb|2|0|normal Feast}. A staff of 100 near-transparent servants attends all who enter. You decide the visual appearance of these servants and their attire. They are completely obedient to your orders. Each servant can perform any task a normal human servant could perform, but they can't attack or take any action that would directly harm another creature. Thus the servants can fetch things, clean, mend, fold clothes, light fires, serve food, pour wine, and so on. The servants can go anywhere in the mansion but can't leave it. Furnishings and other objects created by this spell dissipate into smoke if removed from the mansion. When the spell ends, any creatures or objects left inside the extradimensional space are expelled into the open spaces nearest to the entrance."
 			],
 			"miscTags": [
 				"OBJ"
@@ -12514,7 +12516,7 @@
 			"source": "PHB",
 			"page": 266,
 			"srd": true,
-			"level": 6,
+			"level": 5,
 			"school": "C",
 			"time": [
 				{
@@ -12544,8 +12546,9 @@
 				"v": true,
 				"s": true,
 				"m": {
-					"text": "a forked, metal rod worth at least 250 gp, attuned to a particular plane of existence",
-					"cost": 25000
+					"text": "a metal rod worth at least 100 gp, attuned to a particular plane of existence, which the spell consumes",
+					"consume": true,
+					"cost": 1000
 				}
 			},
 			"duration": [
@@ -12554,14 +12557,17 @@
 				}
 			],
 			"entries": [
-				"You and up to eight willing creatures who link hands in a circle are transported to a different plane of existence. You can specify a target destination in general terms, such as the Salamander Kingdom on the Elemental Plane of Fire or the palace of the Raven Queen in the Shadow Plane, and you appear in or near that destination, as determined by the DM.",
+				"You and up to {@color four|30d5c8} willing creatures who link hands in a circle are transported to a different plane of existence. You can specify a target destination in general terms, such as the Salamander Kingdom on the Elemental Plane of Fire or the palace of the Raven Queen in the Shadow Plane, and you appear in or near that destination, as determined by the DM.",
 				"Alternatively, if you know the keyword of a {@spell Malakai's Teleportation Circle|farover|teleportation circle} on another plane of existence, this spell can take you to that circle. If the teleportation circle is too small to hold all the creatures you transported, they appear in the closest unoccupied spaces next to the circle."
 			],
-			"spellAttack": [
-				"M"
-			],
-			"savingThrow": [
-				"charisma"
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"{@color When you cast this spell using a spell slot of a higher level, the amount of creatures you can affect is doubled for each slot level above 5th.|30d5c8}"
+					]
+				}
 			],
 			"miscTags": [
 				"PS",
@@ -18617,7 +18623,7 @@
 				}
 			],
 			"entries": [
-				"Up to {@color five berries|30d5c8} appear in your hand and are infused with magic for the duration. A creature can use its bonus action to eat one berry. Eating a berry restores 1 hit point, and the berry provides enough nourishment to sustain a creature for one day.",
+				"Up to {@color five berries|30d5c8} appear in your hand and are infused with magic for the duration. A creature can use its bonus action to eat one berry. Eating a berry restores 1 hit point, and the berry provides nourishment {@color equal to a|30d5c8} {@quickref Food and Water|phb|2|0|Preserved Fare}{@color .|30d5c8}",
 				"The berries lose their potency if they have not been consumed within 24 hours of the casting of this spell."
 			],
 			"miscTags": [
@@ -20669,7 +20675,7 @@
 					"caption": "Knowledge of Location",
 					"colLabels": [
 						"{@color Knowledge|30d5c8}",
-						"{@color Check Modifier|30d5c8}"
+						"{@color DC Modifier|30d5c8}"
 					],
 					"colStyles": [
 						"col-11",
@@ -20678,11 +20684,11 @@
 					"rows": [
 						[
 							"{@color Vague (you have heard of the location)|30d5c8}",
-							"{@color -10|30d5c8}"
+							"{@color +10|30d5c8}"
 						],
 						[
 							"{@color Secondhand (you have heard a detailed description of the location)|30d5c8}",
-							"{@color -5|30d5c8}"
+							"{@color +5|30d5c8}"
 						],
 						[
 							"{@color Firsthand (you have seen the location with your own eyes)|30d5c8}",
@@ -20690,7 +20696,7 @@
 						],
 						[
 							"{@color Familiar (you have been to the location)|30d5c8}",
-							"{@color +5|30d5c8}"
+							"{@color -5|30d5c8}"
 						]
 					]
 				},
@@ -20699,7 +20705,7 @@
 					"caption": "Connection to Target",
 					"colLabels": [
 						"{@color Connection|30d5c8}",
-						"{@color Check Modifier|30d5c8}"
+						"{@color DC Modifier|30d5c8}"
 					],
 					"colStyles": [
 						"col-11",
@@ -20708,7 +20714,7 @@
 					"rows": [
 						[
 							"{@color Associated Object (you possess an object taken from the location within the last six months)|30d5c8}",
-							"{@color +5|30d5c8}"
+							"{@color -5|30d5c8}"
 						]
 					]
 				},
@@ -22920,7 +22926,7 @@
 			],
 			"entries": [
 				"An irritation spell affects the epidermis of a targeted creature. Creatures with no visible skin or a hide which is very thick (such as buffalo, elephants, scaled creatures, etc.) are not affected.",
-				"Choose one creature that you can see within range to make a Constitution saving throw. If it fails, the target begins to feel an itching sensation on a portion of its body at which the spell was cast. On each of the creatures turns thereafter, it must use either its action or all of its movement to scratch vehemently at the itch, which causes a stacking -2 penalty to the targets AC. If for any reason the target is unable to scratch the itch (such as being bound in rope), the target does not suffer the penalty to its AC, but simply does nothing on its turn and spends it writhing in irritation.",
+				"Choose one creature that you can see within range to make a Constitution saving throw. On a successful save, the next attack roll made against the target until the end of its next turn has advantage. On a failed save, the target begins to feel an itching sensation on a portion of its body at which the spell was cast. On each of the creatures turns thereafter, it must use either its action or all of its movement to scratch vehemently at the itch, which causes a stacking -2 penalty to the targets AC. If for any reason the target is unable to scratch the itch (such as being bound in rope), the target does not suffer the penalty to its AC, but simply does nothing on its turn and spends it writhing in irritation.",
 				"At the end of each of its turns, the target can make a Constitution saving throw. On a success, the spell ends, and the targets AC is restored to normal.",
 				"{@italic Concentration Points: 2}"
 			],
@@ -23691,6 +23697,7 @@
 			],
 			"entries": [
 				"This spell creates a rift in the nature of cause and effect. The target of the spell must make a Charisma saving throw. On a failed save, the spell is cast upon an opponent's weapon. When the weapon is used, it hits and causes damage normally, but the damage is not applied to the creature struck by the weapon. Instead, the person wielding the weapon or one of his companions suffers the damage. When this effect happens, the target can repeat the saving throw, ending the effect on a successful one. If the weapon misses its target on any round, no damage is caused in that round.",
+				"On a successful save, the spell ends, but the next attack the target makes before the end of its next turn is affected by Random Causality.",
 				"Using a die roll, the DM randomly determines the victim of the damage. The DM selects a die with a value nearest the number of eligible creatures (the wielder of the weapon and his companions). If the number of creatures does not equate to highest value of a die, the wielder of the enchanted weapon takes the extra chances to be hit. For example, if a goblin wields a sword affected by this spell, he and his six companions are eligible to receive the damage. The DM rolls {@dice 1d8}. On a roll of 1-6, one of the goblin's companions suffers the damage; on a roll of 7 or 8, the goblin with the affected weapon suffers the damage.",
 				"If the wielder of the weapon changes weapons while the spell is in effect, the discarded weapon remains enchanted.",
 				"{@italic Concentration Points: 3}"
@@ -23745,9 +23752,11 @@
 				}
 			],
 			"entries": [
-				"Miscast magic can be cast on any spellcaster. The target spellcaster must make an Intelligence saving throw. On a fail, it causes the spells cast by the affected spellcaster to be chosen randomly from their prepared spells of the same or lower level. Thus, if a spellcaster affected by miscast magic had four 1st-level spells prepared ({@spell mage armor}, {@spell feather fall}, {@spell jump}, and {@spell magic missile}) and they attempted to cast the {@spell magic missile} spell, the DM would determine the resulting spell randomly from the spellcasters four prepared spells. The spellcaster would only have a 25% chance of casting the {@spell magic missile} spell. Only spells currently prepared are eligible to be exchanged with the desired spell. If a spellcaster had only one spell prepared, the miscast magic would have no effect and the spellcasters spell would be cast normally. If the spell is cast on a spellcaster that doesn't prepare spells, the spell is chosen from amongst all the spells that the spellcaster currently could cast.",
-				"The miscast spell operates normally. If a spellcaster tried to {@spell feather fall} a companion but a {@spell web} spell resulted, the companion would be targeted by the webs and subject to all resulting effects. If the target of the spell were in range of the {@spell feather fall} spell but not in range of the web, the spell would be lost in a fizzle of energy. If a spell such as {@spell sending} was the intended spell to be cast on a target hundreds of miles away, the {@spell sending} spell would be lost in a fizzle of energy, unless the random result spell would have an equal or greater range and could be cast on a target in the same way {@spell sending} could.",
-				"The spellcaster who casts the spell performs the proper components of the spell they wish to cast, but they do not discover the altered results until the wrong spell takes effect. The spellcaster will also discover that, if either the intended spell or the resulting spell required consumable material components, they will both be consumed. Once an affected spellcaster casts a random spell, they can repeat the Intelligence saving throw to attempt to end the effect.",
+				"Miscast magic can be cast on any spellcaster. The target spellcaster must make an Intelligence saving throw. On a failed save, it causes the spells cast by the affected spellcaster to be chosen randomly from their prepared spells of the same or lower level. Thus, if a spellcaster affected by miscast magic had four 1st-level spells prepared ({@spell mage armor}, {@spell feather fall}, {@spell jump}, and {@spell magic missile}) and they attempted to cast the {@spell magic missile} spell, the DM would determine the resulting spell randomly from the spellcasters four prepared spells. The spellcaster would only have a 25% chance of casting the {@spell magic missile} spell. Only spells currently prepared are eligible to be exchanged with the desired spell. If a spellcaster had only one spell prepared, the miscast magic would have no effect and the spellcasters spell would be cast normally. If the spell is cast on a spellcaster that doesn't prepare spells, the spell is chosen from amongst all the spells that the spellcaster currently could cast.",
+				"On a successful save, the spell ends, but the next spell the target attempts to cast within 1 minute is affected by Miscast Magic.",
+				"If a spellcaster tried to {@spell feather fall} a companion but a {@spell web} spell resulted, the companion would be targeted by the webs and subject to all resulting effects. If the target of the spell were in range of the {@spell feather fall} spell but not in range of the web, the spell would be lost in a fizzle of energy. If a spell such as {@spell sending} was the intended spell to be cast on a target hundreds of miles away, the {@spell sending} spell would be lost in a fizzle of energy, unless the random result spell would have an equal or greater range and could be cast on a target in the same way {@spell sending} could.",
+				"The spellcaster who casts the spell performs the proper components of the spell they wish to cast, but they do not discover the altered results until the wrong spell takes effect. The spellcaster will also discover that, if either the intended spell or the resulting spell required consumable material components, they will both be consumed.",
+				"Once an affected spellcaster casts a random spell, they can repeat the Intelligence saving throw to attempt to end the effect.",
 				"{@italic Concentration Points: 3}"
 			],
 			"savingThrow": [
@@ -23918,10 +23927,10 @@
 					"type": "entries",
 					"name": "4",
 					"entries": [
-						"Bonus to Damage rolls",
-						"For the duration of the spell, you can reroll the {@dice 1d4} on your turn as a bonus action to attempt to change the combat benefit to another."
+						"Bonus to Damage rolls"
 					]
 				},
+				"For the duration of the spell, you can reroll the {@dice 1d4} on your turn as a bonus action to attempt to change the combat benefit to another.",
 				"{@italic Concentration Points: 1}"
 			],
 			"entriesHigherLevel": [
@@ -24130,14 +24139,14 @@
 				}
 			],
 			"entries": [
-				"After you touch a willing creature, you form a protective bond that lasts for the duration. While the spell is active, you are instantly aware whenever the target is in danger, and you receive a brief mental image of the target’s situation at that moment. The target can be on a different plane of existence, and the spell functions regardless of the distance between you. However, this spell does not reveal the target’s exact location."
+				"You touch a willing creature and form a protective bond that lasts for the duration. While the spell is active, you are instantly aware whenever the target is in danger, and you receive a brief mental image of the target’s situation at that moment. The target can be on a different plane of existence, and the spell functions regardless of the distance between you. However, this spell does not reveal the target’s exact location."
 			],
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"When you cast this spell using a spell slot of 2nd-level or higher, the spell lasts 1 day longer for each slot above 1st."
+						"When you cast this spell using a spell slot of 2nd level or higher, the spell lasts 1 day longer for each slot above 1st. Additionally, if you cast this spell at 3rd level or higher, you learn the target's location when you receive the mental image of them."
 					]
 				}
 			],
@@ -24210,7 +24219,7 @@
 				"type": "radius",
 				"distance": {
 					"type": "feet",
-					"amount": 20
+					"amount": 15
 				}
 			},
 			"components": {
@@ -24581,6 +24590,9 @@
 					]
 				}
 			],
+			"miscTags": [
+				"PS"
+			],
 			"classes": {
 				"fromClassList": [
 					{
@@ -24756,7 +24768,7 @@
 				}
 			],
 			"entries": [
-				"Rigid Thinking can be cast only upon a creature with an Intelligence score of 3 or higher. The target creature must succeed on an Intelligence saving throw, or be subjected to the following effect.",
+				"When you cast this spell, the target creature must make an Intelligence saving throw. On a failed save, the target is subjected to the following effect for its full duration. On a successful save, the spell ends, but the target is affected until the end of its next turn. A creature that has an Intelligence score of 4 or lower is unaffected.",
 				"A creature affected by Rigid Thinking is incapable of performing any action other than the activity they are involved in when the spell takes effect. The creature's mind simply cannot decide on another course of action--it becomes frozen into a single thought and cannot change even if new circumstances would suggest otherwise. Thus, a fighter fighting a kobold will ignore the arrival of a beholder, and a rogue picking a lock will pay no heed to the arrival of three guards.",
 				"An affected creature will not continue to fire their bow at a dragon if they run out of arrows, but will choose another means of attacking the dragon to the exclusion of all other activities.",
 				"A spellcaster in the process of casting a spell when Rigid Thinking takes effect will attempt to repeat the spell at the same target if possible, and if they don't have the resources to do so, they will then attempt to continue working towards their goal with other appropriate means.",
@@ -25157,7 +25169,7 @@
 				}
 			],
 			"entries": [
-				"When you cast this spell, a green ray springs from your outstretched hand and it unerringly strikes a creature within line of sight and the range of the spell. The target must make a Wisdom saving throw. On a failed save, the spell covers the subject with a shimmering emerald field that tethers the subject to that physical location for the duration of the spell.",
+				"When you cast this spell, a green ray springs from your outstretched hand and it unerringly strikes a creature within line of sight and the range of the spell. The target must make a Wisdom saving throw. On a failed save, the spell covers the subject with a shimmering emerald field that tethers the subject to that physical location for the duration of the spell. On a successful save, the spell ends, but the target is affected by it until the end of its next turn.",
 				"The spell has two effects. Firstly, it completely blocks bodily extradimensional travel. Forms of movement barred by the dimensional anchor include {@spell blink|phb|blinking}, {@spell dimension door}, {@spell etherealness}, {@spell gate}, {@spell misty step}, {@spell plane shift}, and any other similar teleportation or psionic abilities.",
 				"Secondly, the spell tethers the target to the location it is in. If by any means the target moves over 30 feet away from the location where it was subjected to the spell, it is then pulled back to that location by the green tethers of the spell at the end of the turn on which is moved. When this effect occurs, the target can repeat the Wisdom saving throw, ending the spell on a successful save.",
 				"{@italic Concentration Points: 3}"
@@ -25432,7 +25444,7 @@
 				}
 			],
 			"entries": [
-				"This spell \"disconnects\" the subject's short-term and long-term memory. When affected by this spell, the target must make an Intelligence saving throw. On a failed save, the target is incapable of storing information in long-term memory for the duration of the spell.",
+				"This spell \"disconnects\" the subject's short-term and long-term memory. When affected by this spell, the target must make an Intelligence saving throw. On a failed save, the target is incapable of storing information in long-term memory for the duration of the spell. A creature that has an Intelligence score of 4 or lower is unaffected.",
 				"Every moment is virtually an independent event for the target; it can remember recent events, thoughts, and sensations for no more than one round. Memories of events that happened before the onset of the spell are not affected at all; these are safely stored in long-term memory.",
 				"While the spell is active, the subjected target is forced to concentrate, as if on a spell, to be able to act. Spellcasters already concentrating on a spell when Memory Wrack takes effect are forced to drop that spell, and they can not cast a concentration spell for the duration of Memory Wrack's effect.",
 				"If the target takes damage and is forced to make a Constitution saving throw to maintain concentration, on a failed save the target is {@condition stunned} until the end of their next turn, at which point they can repeat the Intelligence saving throw to attempt to end Memory Wrack.",
@@ -26398,8 +26410,17 @@
 				}
 			],
 			"entries": [
-				"You place a curse on a creature that you can see within range. At the beginning of each of the creature's turns, it must make a Wisdom saving throw. On a failed save, the creature suffers {@damage 1d12} necrotic damage and one level of {@condition exhaustion}. On a successful save, the curse ends, and all levels of {@condition exhaustion} caused by this spell are removed.",
+				"You place a curse on a creature that you can see within range. At the beginning of each of the creature's turns, it must make a Wisdom saving throw. On a failed save, the creature suffers {@damage 1d12} necrotic damage and gains one level of {@condition exhaustion}. On a successful save, the creature suffers half as much damage, the curse ends, and all levels of {@condition exhaustion} caused by this spell are removed.",
 				"A Remove Curse cast on the target ends this spell."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 5th level or higher, the damage increases by {@dice 1d12} for each slot level above 4th."
+					]
+				}
 			],
 			"damageInflict": [
 				"necrotic"
@@ -27045,7 +27066,7 @@
 				}
 			],
 			"entries": [
-				"You attempt to place a powerful curse on a creature that you can see within range. The target must make a Wisdom saving throw. On a failed save, the creature is cursed with impending doom. Once the target creature has had two turns after being cursed, at the end of the second turn the creature takes {@damage 6d12} necrotic damage, and the curse ends.",
+				"You attempt to place a powerful curse on a creature that you can see within range. The target must make a Wisdom saving throw. On a successful save, the target is unaffected, but you do not take any soul shard damage. On a failed save, the creature is cursed with impending doom. Once the target creature has had two turns after being cursed, at the end of the second turn the creature takes {@damage 6d12} necrotic damage, and the curse ends.",
 				"A {@spell remove curse} cast on the target harmlessly ends this spell."
 			],
 			"entriesHigherLevel": [
@@ -27379,7 +27400,7 @@
 				]
 			},
 			"entries": [
-				"By magically reaching out for the mind of a creature in range, you attempt to drain the creature's spellcasting capabilities and augment your own through a tether of dark magic. The target must make an Intelligence saving throw. A creature with an Intelligence score of 4 or lower can't be affected by this spell. On a successful save the spell ends. On a failed save, it takes {@damage 1d6} psychic damage.",
+				"By magically reaching out for the mind of a creature in range, you attempt to drain the creature's spellcasting capabilities and augment your own through a tether of dark magic. The target must make an Intelligence saving throw. A creature with an Intelligence score of 4 or lower can't be affected by this spell. The target takes {@damage 1d6} psychic damage on a failed save, or half as much on a success.",
 				"Additionally on a failed save, the target loses one prepared spell of up to 2nd level that it currently has the capability to cast, or if the target does not prepare spells, it simply loses the ability to cast the spell until it finishes a short rest. The spell is randomly chosen, but highest level spells are always selected.",
 				"If the target uses a spellcasting resource, such as spell slots, it is also drained of a corresponding amount of its spellcasting resource, which is then transferred to you in the form of an equal level and amount of spell slots, but only if you are below your maximum amount. Drain magic can not grant you a spell slot above a level which you can cast. If it would do so, it instead gives you a spell slot of the highest level you can cast which you are missing.",
 				"On each of your turns for the duration, you can use your action to repeat the saving throw and, on a failed save, the effect on the target creature as long as you are within range and line of sight when doing so. If you do not spend an action continuing this spell every turn, it ends. The spell also ends if the target is ever outside the spells range or if it has total cover from you.",
@@ -27866,7 +27887,7 @@
 			}
 		},
 		{
-			"name": "Detect Divination",
+			"name": "Antidivination",
 			"source": "Farover",
 			"level": 4,
 			"school": "D",
@@ -27877,10 +27898,9 @@
 				}
 			],
 			"range": {
-				"type": "radius",
+				"type": "point",
 				"distance": {
-					"type": "feet",
-					"amount": 120
+					"type": "self"
 				}
 			},
 			"components": {
@@ -27892,17 +27912,25 @@
 				{
 					"type": "timed",
 					"duration": {
-						"type": "minute",
-						"amount": 10,
+						"type": "hour",
+						"amount": 1,
 						"upTo": true
 					},
 					"concentration": true
 				}
 			],
 			"entries": [
-				"By means of this spell, you immediately become aware of any outside divination attempt to observe you or anyone else within the range of the spell. Any activity of the following spells is revealed to you: {@spell arcane eye}, {@spell clairvoyance}, {@spell locate animals or plants|farover}, {@spell locate creature}, {@spell locate object}, or {@spell scrying}. The spell also reveals the use of {@item crystal ball|dmg|crystal balls} or other magical scrying devices, provided their target is within the area of effect of the spell. Since the spell is centered on the caster, it moves with you, enabling you to \"sweep\" areas for the duration of the spell.",
-				"When a divination attempt by any of the listed spells is detected, the diviner must immediately make an Intelligence saving throw. On a fail, the identity and general location of the diviner immediately becomes known to you. The general location is a direction and significant landmark close to the diviner. Thus, you might learn, \"The wizard Sniggel spies on us from east, under the stairs\", or, \"You are watched by Asquil in the city of Samarquol.\"",
-				"{@italic Concentration Points: 0}"
+				"By casting this spell, you create a 120-foot radius sphere of anti-magic around you. The spell suppresses any outside divination magic used to observe you or anyone else, and you are made aware of such attempts. Any activity of the following spells is suppressed and revealed to you: {@spell arcane eye}, {@spell clairvoyance}, {@spell locate animals or plants|farover}, {@spell locate creature}, {@spell locate object}, or {@spell scrying}. This also applies to the use of {@item crystal ball|dmg|crystal balls} or other magical scrying devices, provided their target is within the area of effect of the spell. The spell lasts for the duration, and you can learn information from it as long as you remain on the same plane of existence.",
+				"If a divination attempt by any of the listed spells is attempted within the spells area, the diviner must immediately make an Intelligence saving throw. On a fail, the identity and general location of the diviner immediately becomes known to you. The general location is a direction and significant landmark close to the diviner. Thus, you might learn, \"The wizard Sniggel spies on us from east, under the stairs\", or, \"You are watched by Asquil in the city of Samarquol.\"",
+				"{@italic Concentration Points: 1}"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 5th level or higher, the duration of the spell is increased to 24 hours."
+					]
+				}
 			],
 			"savingThrow": [
 				"intelligence"
@@ -29306,7 +29334,8 @@
 			"range": {
 				"type": "point",
 				"distance": {
-					"type": "touch"
+					"type": "feet",
+					"amount": 5
 				}
 			},
 			"components": {
@@ -29368,7 +29397,8 @@
 			"range": {
 				"type": "point",
 				"distance": {
-					"type": "touch"
+					"type": "feet",
+					"amount": 5
 				}
 			},
 			"components": {
@@ -29411,6 +29441,73 @@
 			"miscTags": [
 				"SMN"
 			]
+		},
+		{
+			"name": "Gate Seal",
+			"source": "Farover",
+			"page": 12,
+			"level": 3,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 150
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a broken portal key"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+							"amount": 24
+					}
+				}
+			],
+			"entries": [
+				"You fortify the fabric of the planes in a 30-foot cube you can see within range. Within that area, portals, rifts, and other extradimensional anomalies close and can't be opened for the duration. Spells and other effects that allow planar travel or open portals, such as {@spell gate} or {@spell plane shift}, fail if used to enter or leave the area. The cube is stationary."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level, the spell lasts for 1 week. If you cast it using a spell slot of 5th level or higher, it lasts until dispelled."
+					]
+				}
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock (reworked)",
+						"source": "farover"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
 		},
 		{
 			"name": "Ashardalon's Stride",
@@ -37897,7 +37994,8 @@
 			"range": {
 				"type": "point",
 				"distance": {
-					"type": "touch"
+					"type": "feet",
+					"amount": 5
 				}
 			},
 			"components": {
