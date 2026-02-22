@@ -2522,7 +2522,7 @@
 			],
 			"entries": [
 				"You attempt to suppress strong emotions in a group of people. Each humanoid in a 20-foot-radius sphere centered on a point you choose within range must make a Charisma saving throw; a creature can choose to fail this saving throw if it wishes. If a creature fails its saving throw, choose one of the following two effects.",
-				"You can suppress any effect causing a target to be {@condition charmed} or {@condition frightened}. When this spell ends, any suppressed effect resumes, provided that its duration has not expired in the meantime.",
+				"You can suppress any effect causing a target to be {@condition charmed}, {@condition frightened}, {@color or otherwise in a heightened emotional state (such as a barbarian’s|30d5c8} {@classFeature Rage|Barbarian||1||rage}{@color )|30d5c8}. When this spell ends, any suppressed effect resumes, provided that its duration has not expired in the meantime.",
 				"Alternatively, you can make a target indifferent about creatures of your choice that it is hostile toward. This indifference ends if the target is attacked or harmed by a spell or if it witnesses any of its friends being harmed. When the spell ends, the creature becomes hostile again, unless the DM rules otherwise.",
 				"{@italic Concentration Points: 1}"
 			],
@@ -12557,7 +12557,7 @@
 				}
 			],
 			"entries": [
-				"You and up to {@color four|30d5c8} willing creatures who link hands in a circle are transported to {@color a random location|30d5c8} on a different plane of existence. {@color If you are native to the plane of existence you are being transported to|30d5c8}, you can specify a target destination in general terms, such as the Salamander Kingdom on the Elemental Plane of Fire or the palace of the Raven Queen in the Shadow Plane, and you appear in or near that destination, as determined by the DM.",
+				"You and up to {@color four|30d5c8} willing creatures who link hands in a circle are transported to {@color a random location|30d5c8} on a different plane of existence that you choose. {@color If you are native to the plane of existence you are being transported to|30d5c8}, you can specify a target destination in general terms, such as the Salamander Kingdom on the Elemental Plane of Fire or the palace of the Raven Queen in the Shadow Plane, and you appear in or near that destination, as determined by the DM.",
 				"Alternatively, if you know the keyword of a {@spell Malakai's Teleportation Circle|farover|teleportation circle} on another plane of existence, this spell can take you to that circle. If the teleportation circle is too small to hold all the creatures you transported, they appear in the closest unoccupied spaces next to the circle."
 			],
 			"entriesHigherLevel": [
@@ -21098,7 +21098,7 @@
 				"This spell channels vitality into plants within a specific area. There are two possible uses for the spell, granting either immediate or long-term benefits.",
 				"If you cast this spell {@color for 1 minute|30d5c8}, choose a point within range. All normal plants in a 100-foot radius centered on that point become thick and overgrown. A creature moving through the area must spend 4 feet of movement for every 1 foot it moves.",
 				"You can exclude one or more areas of any size within the spell's area from being affected.",
-				"If you cast this spell over 8 hours, you enrich the land. All plants in a {@color 500 foot|30d5c8} radius centered on a point within range become enriched for 1 year. The plants yield twice the normal amount of food when harvested."
+				"If you cast this spell over 8 hours, you enrich the land. All plants in a {@color 500 foot|30d5c8} radius centered on a point within range become enriched for {@color 1 week|30d5c8}. The plants yield twice the normal amount of food when harvested."
 			],
 			"classes": {
 				"fromClassList": [
@@ -23908,7 +23908,7 @@
 				}
 			],
 			"entries": [
-				"This spell alters probability to favor one character or creature locked in battle. The spell provides a combat benefit for the duration of the spell, which is a +2 to the affected stat. When the spell is cast on a target, roll a {@dice 1d4}. The result of the die indicates the resulting combat benefit as follows:",
+				"You alter probability to favor one creature locked in battle by providing a combat benefit for the duration of the spell, which is a +2 to the affected stat. When the spell is cast on a target, roll a {@dice 1d4}. The result of the die indicates the resulting combat benefit as follows:",
 				{
 					"type": "entries",
 					"name": "1",
@@ -23990,10 +23990,10 @@
 				}
 			],
 			"entries": [
-				"By casting this spell, the caster confers exceptional powers of observation and alertness to one creature for the duration of the spell. While blessed watchfulness is in effect, the designated sentinel remains alert, awake and vigilant for the 8 hour duration of the spell. For the duration of the spell, the target cannot fall asleep, and it does not need to sleep.",
-				"The target creature also gains advantage to saving throws against the first time they are affected by any spell or effect that would lower their guard or force them to abandon their watch, including charm, fear, or similar mind-affecting spells.",
-				"Once the spell is cast, the day and night cycle the target was on is also delayed by one day, meaning the target delays the need or want for sleep until the time at which it would sleep on the day after.",
-				"A creature can not benefit from Blessed Watchfulness again until it has finished at least one nights rest."
+				"You touch one willing creature. For the duration, the target can’t fall asleep and doesn’t need to sleep, and it is immune to magical sleep.",
+				"The first time during the spell’s duration that the target is subjected to a spell or other effect that would cause it to become {@condition charmed}, {@condition frightened}, or otherwise compel it to lower its guard or abandon its watch, the target has advantage on the saving throw against that effect (if any).",
+				"When you cast the spell, the target’s normal sleep schedule is delayed by 1 day; it doesn’t feel the need to sleep again until the time it would normally sleep on the following day.",
+				"A creature can’t benefit from Blessed Watchfulness again until it finishes a short rest."
 			],
 			"classes": {
 				"fromClassList": [
@@ -24040,15 +24040,16 @@
 				}
 			],
 			"entries": [
-				"The creature receiving this spell is protected from normal extremes of cold or heat (depending on which application the priest selects at the time of casting). The creature can stand unprotected in temperatures as low as -30 C°, or as high as 50 C° (depending on application) with no ill effect. Temperatures beyond these limits inflict 1 point of damage per hour of exposure for every degree beyond the limit. The spell is immediately cancelled if the recipient is affected by any non-normal heat or cold, such as magic, breath weapons, and so on. The cancellation occurs regardless of the application and regardless of whether a heat or cold effect hits the character (for example, an endure cold spell is cancelled by magical heat or fire as well as by magical cold).",
-				"The recipient of the spell does not suffer the first 10 points of damage (before any applicable saving throws) from the heat or cold during the round in which the spell is broken."
+				"You touch one willing creature and choose cold or heat for the spell’s duration.",
+				"For the duration, the target is protected from nonmagical environmental extremes of the chosen type. The target can withstand temperatures as low as −30°C (cold) or as high as 50°C (heat) without ill effect. For each degree beyond the applicable limit, the target takes 1 point of damage per hour of exposure.",
+				"The spell ends early if the target is subjected to magical or otherwise non-natural heat or cold (such as fire, magical cold, breath weapons, and similar effects), regardless of the type you chose. When the spell ends in this way, the target reduces the damage from the triggering effect by 10 (before any saving throw is applied)."
 			],
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"When you cast this spell using a spell slot of 2nd-level or higher, the amount of damage mitigated is increased by 5 points, and the duration of the spell is increased by 4 hours for each slot above 1st."
+						"When you cast this spell using a spell slot of 2nd level or higher, the damage reduction increases by 5 for each slot level above 1st, and the duration increases by 4 hours for each slot level above 1st."
 					]
 				}
 			],
@@ -24089,11 +24090,10 @@
 				"type": "point",
 				"distance": {
 					"type": "feet",
-					"amount": 30
+					"amount": 60
 				}
 			},
 			"components": {
-				"v": true,
 				"s": true
 			},
 			"duration": [
@@ -24102,7 +24102,14 @@
 				}
 			],
 			"entries": [
-				"This spell enables the caster to know one of two things. The caster can instantly know the age of any single person, creature, or object on which they concentrate within range, to the nearest year. Alternatively, the caster can instantly know the precise time of day to the nearest minute, including the current hour, day, month, and year."
+				"Choose one of the following effects:",
+				{
+					"type": "list",
+					"items": [
+						"{@bold {@italic Age.}} You learn the approximate age of one creature or object you can see within range, to the nearest year.",
+						"{@bold {@italic Time.}} You learn the exact current time and date in your present location, to the nearest minute."
+					]
+				}
 			],
 			"classes": {
 				"fromClassList": [
@@ -24146,14 +24153,14 @@
 				}
 			],
 			"entries": [
-				"You touch a willing creature and form a protective bond that lasts for the duration. While the spell is active, you are instantly aware whenever the target is in danger, and you receive a brief mental image of the target’s situation at that moment. The target can be on a different plane of existence, and the spell functions regardless of the distance between you. However, this spell does not reveal the target’s exact location."
+				"You touch one willing creature and forge a protective bond with it for the duration. While the spell lasts, you are immediately aware when the target is in danger, and you receive a brief mental image of the target’s situation at that moment. This awareness functions regardless of the distance between you and the target, even if you are on different planes of existence. The spell doesn’t reveal the target’s exact location."
 			],
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"When you cast this spell using a spell slot of 2nd level or higher, the spell lasts 1 day longer for each slot above 1st. Additionally, if you cast this spell at 3rd level or higher, you learn the target's location when you receive the mental image of them."
+						"When you cast this spell using a spell slot of 2nd level or higher, the duration increases by 1 day for each slot level above 1st. If you cast this spell using a spell slot of 3rd level or higher, you also learn the target’s location when you receive the mental image."
 					]
 				}
 			],
@@ -24196,10 +24203,8 @@
 				}
 			],
 			"entries": [
-				"This spell makes the clerics brain something of a magnet that attracts thought objects in close proximity. The cleric can sense strong thoughts and emotions and can sometimes even see momentary visions of creatures who died or suffered some powerful emotion in the immediate vicinity. Thought objects are always attracted to the cleric in the order of the strongest (those attached to powerful emotions or significant events) to the weakest.",
-				"Thus, if several thought objects share the same vicinity, the cleric will perceive information about the most interesting or significant event. The cleric might pick up images of a battle from the point of view of a warrior who died there, or he might gain information about the victor of the battle.",
-				"The DM dictates the information provided to the cleric, and thus can use this spell to provide players with important background information or can add texture to a campaign world. The information provided might be highly cryptic or symbolic, perhaps in the form of a rhyme or riddle.",
-				"The cleric gains one thought object per casting of the spell. The spell may be cast a number of times in the same locale, with the cleric gaining a different thought object with each casting. A locale contains a finite number of thoughts, however, and once the cleric has gained all of them (per the DM), the spell will fail in that locale."
+				"You attune your mind to lingering psychic impressions in a nearby area. Choose a point within range. You sense the strongest residual thought or emotion tied to a significant creature, event, or moment that occurred within 30 feet of that point (as determined by the DM). You learn a brief impression of that thought—such as an image, sound, sensation, emotion, or fragmentary vision—which may be cryptic or symbolic.",
+				"If multiple impressions are present, you perceive the strongest one first (typically the one bound to the most intense emotion or most significant event). Each time you cast this spell, you can draw out one such impression. Once you have perceived all significant impressions in a location, further castings of the spell there reveal nothing."
 			],
 			"classes": {
 				"fromClassList": [
@@ -24246,9 +24251,8 @@
 				}
 			],
 			"entries": [
-				"By means of the chant spell, the cleric brings special favor upon themself and their party, and causes harm to their enemies. When the Chant spell is active, all attack rolls and saving throws made by those in the area of effect who are friendly to the cleric gain a {@dice d4} bonus, while those of the clerics enemies suffer a {@dice d4} penalty.",
-				"This bonus/penalty continues as long as the caster continues to chant the mystic syllables. This means that while chanting, the cleric must spend time continuing the chant each turn, meaning the cleric can only use either an action or a bonus action, but not both.",
-				"A {@spell Silence} spell, or any effect that would even momentarily restrict the clerics voice from being heard also ends the spell.",
+				"You begin chanting mystical syllables, invoking divine favor upon yourself and your allies while unsettling your foes. Until the spell ends, you and friendly creatures within 15 feet of you gain a {@dice 1d4} bonus to attack rolls and saving throws, and hostile creatures within 15 feet of you take a {@dice 1d4} penalty to attack rolls and saving throws.",
+				"On each of your turns, you must use a bonus action to continue chanting, or the spell ends. The spell also ends if you are silenced or otherwise unable to speak loudly enough to be heard.",
 				"{@italic Concentration Points: 2}"
 			],
 			"entriesHigherLevel": [
@@ -24256,7 +24260,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"When you cast this spell using a spell slot of 3rd level or higher, the radius of the spell is increased by 10 feet for each slot level above 2nd."
+						"When you cast this spell using a spell slot of 3rd level or higher, the radius increases by 10 feet for each slot level above 2nd."
 					]
 				}
 			],
@@ -24331,7 +24335,7 @@
 			"source": "Farover",
 			"page": 0,
 			"level": 2,
-			"school": "C",
+			"school": "A",
 			"time": [
 				{
 					"number": 1,
@@ -24339,7 +24343,7 @@
 				}
 			],
 			"range": {
-				"type": "point",
+				"type": "radius",
 				"distance": {
 					"type": "feet",
 					"amount": 30
@@ -24355,14 +24359,26 @@
 					"type": "timed",
 					"duration": {
 						"type": "hour",
-						"amount": 8
+						"amount": 8,
+						"upTo": true
 					}
 				}
 			],
 			"entries": [
-				"The cleric conjures an insubstantial haze brought forth by the spells casting at a point within range. The spell creates a thin haze at the edges of a 20-foot radius centered on that point. Any creature not indicated by the cleric at the time of the spells casting that comes into contact with the haze is affected by the spell. Any creature entering the guarded area must make a Wisdom saving throw. On a failed save, the creature is {@condition paralyzed} for 1 minute. At the end of each of its turns, the creature can make another Wisdom saving throw. On a success, the spell ends.",
-				"A successful saving throw indicates that the subject creature was unaffected by the haze, and the spell remains in place. As soon as a subject creature is successfully {@condition paralyzed} by the haze, the paralysis takes effect and the spell dissipates. The spell also dissipates if no intruder is struck by the haze for 8 hours after the spell is cast.",
-				"Any creature approaching the area affected by the haze may be able to detect its presence with a successful {@skill Perception} check against your spell save DC, before coming close enough to be affected."
+				"You call forth a thin, nearly transparent haze at the edges of a 30-foot radius around you, which remains in the area. When you cast the spell, choose any number of creatures you can see to be unaffected by the haze.",
+				"Whenever a creature enters the area of the spell or starts its turn there, it must make a Wisdom saving throw. On a failed save, the haze crackles with a visible jolt of energy, the creature is {@condition paralyzed} for 1 minute, and the haze disappears. At the end of each of its turns, and whenever the creature takes damage, it can make another Wisdom saving throw. On a success, the effect ends on the creature.",
+				"On a successful save, the haze flashes, but the creature is unaffected.",
+				"The haze also disappears after 8 hours if no creatures have been affected.",
+				"The haze is nearly invisible, requiring a successful Intelligence ({@skill Investigation}) check against your spell save DC to be discerned."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the amount of creatures that can fail the saving throw against the application of the haze until the haze disappears is increased by one for each slot level above 2nd."
+					]
+				}
 			],
 			"conditionInflict": [
 				"paralyzed"
@@ -29360,7 +29376,7 @@
 			],
 			"entries": [
 				"When you cast this spell, you create a magical trap on the ground in an unoccupied square within 5 feet of you.",
-				"This trap is nearly {@condition invisible}, requiring a successful Intelligence ({@skill Investigation}) check against your spell save DC to be discerned.",
+				"This trap is nearly {@condition invisible}, requiring a successful Wisdom ({@skill Perception}) check against your spell save DC to be discerned.",
 				"The trap triggers and ignites when a Small or larger creature moves onto the ground in the spell's area. That creature must succeed on a Dexterity saving throw. It takes {@damage 2d10} fire damage on a failed save, or half as much damage on a successful one. On a failed save, the target also begins {@condition burning|farover} for 1 minute, or until the condition is removed.",
 				"The {@condition burning|farover} target also sheds bright light in a 20-foot radius and dim light for an additional 20 feet, and attack rolls against it have advantage.",
 				"After the trap is triggered, the spell ends."
@@ -29423,9 +29439,9 @@
 			],
 			"entries": [
 				"When you cast this spell, you imbue magical snakes into a trap on the ground in an unoccupied square within 5 feet of you.",
-				"This trap is nearly {@condition invisible}, requiring a successful Intelligence ({@skill Investigation}) check against your spell save DC to be discerned.",
+				"This trap is nearly {@condition invisible}, requiring a successful Wisdom ({@skill Perception}) check against your spell save DC to be discerned.",
 				"The trap triggers when a Small or larger creature moves onto the ground in the spell's area. That creature must succeed on a Dexterity saving throw, or be {@condition restrained} until the end of the turn.",
-				"When the trap is triggered, a {@creature Swarm of Venomous Snakes|mm} is released in the closest unoccupied space.",
+				"When the trap is triggered, a {@creature Swarm of Poisonous Snakes|mm} is released in the closest unoccupied space.",
 				"Starting next round, roll initiative for the swarm, which has its own turns. The swarm is primarily hostile towards the creature that triggered the trap, and secondarily towards its allies. The swarm is controlled by the DM, and it disappears when it drops to 0 hit points or after 1 minute has passed."
 			],
 			"areaTags": [
@@ -29490,7 +29506,7 @@
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
-					"name": "Using a Higher-Level Spell Slot",
+					"name": "At Higher Levels",
 					"entries": [
 						"When you cast this spell using a spell slot of 4th level, the spell lasts for 1 week. If you cast it using a spell slot of 5th level or higher, it lasts until dispelled."
 					]
@@ -29515,6 +29531,278 @@
 					}
 				]
 			}
+		},
+		{
+			"name": "Whispering Wind",
+			"source": "Farover",
+			"level": 1,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "miles",
+					"amount": 5
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You cup your hands and whisper a message into them, then open your hands and release the whisper to be carried on the wind. Choose a creature you are familiar with as the target. The message can be up to twenty-five words long. You must be outdoors to cast this spell.",
+				"The whispering wind travels with a speed of 80, covering a distance of 5km in 30 minutes. It can’t pass through solid objects, and it dissipates if it encounters a barrier or enters an area of magical silence. If the target is within range (5 miles or 10km), the wind travels to the target, after which it dissipates and delivers the message into the target's ear, which only the target can hear. If the target is not within range, the wind travels aimlessly for the duration before dissipating."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger (reworked)",
+						"source": "farover"
+					}
+				]
+			}
+		},
+		{
+			"name": "Thorn Armor",
+			"source": "Farover",
+			"level": 1,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a rose"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					}
+				}
+			],
+			"entries": [
+				"When you cast this spell, a flexible exoskeleton covered in thorns appears around a willing target within range. The target gains {@dice 3d4} temporary hit points. If a creature hits the target with a melee attack roll before the spell ends, that creature takes Piercing damage equal to the number of temporary hit points lost as a result of the attack. This spell ends early if the target has no remaining temporary hit points granted by this spell."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"The target gains an additional {@dice 2d4} temporary hit points for each spell slot level above 1."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid (reworked)",
+						"source": "Farover"
+					},
+					{
+						"name": "Ranger (reworked)",
+						"source": "Farover"
+					}
+				]
+			},
+			"miscTags": [
+				"THP"
+			]
+		},
+		{
+			"name": "Preserve",
+			"source": "Farover",
+			"level": 0,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a sack containing a pinch of salt"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 24
+					}
+				}
+			],
+			"entries": [
+				"Food and other perishable items weighing 5 pounds or less that you place in a sack don't age or decay for the duration.",
+				"You can only cast this cantrip once on a specific item."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid (reworked)",
+						"source": "Farover"
+					}
+				]
+			}
+		},
+		{
+			"name": "Binding Pledge",
+			"source": "Farover",
+			"level": 1,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a book of religious or legal importance"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "day",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"When you cast the spell, a willing creature within range makes a promise, swears an oath, or enters into a contract. A creature can in no way be coerced to have this spell cast on them. For the duration of the spell, you immediately know if the creature breaks that promise, oath, or contract. If this happens, for the remainder of the duration of the spell, you know the direction to the creature. If this spell is dispelled, you immediately know it but don't learn the distance and direction to the creature."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of a higher level, the duration increases to 3 days with a 2nd-level slot, to 1 week with a 3rd-level slot, to 2 weeks with a 4th-level slot, to 4 weeks with a 5th-level slot, to 1 year with a 6th-level slot, and it lasts until dispelled if cast with a 7th-level or higher slot."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Bloat",
+			"source": "Farover",
+			"level": 2,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a bean"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You cause the gases within a creature you can see within range to expand rapidly. The target makes a Constitution saving throw, taking {@damage 3d10} Necrotic damage on a failed save or half as much damage on a successful one. If the damage that the creature takes equals or exceeds its Constitution ability score, the creature floats vertically 5 feet and remains suspended until the start of your next turn. The target can move only by pushing or pulling against a fixed object or surface within reach (such as a wall or a ceiling), which allows it to move as if it were climbing. When the spell ends, the target floats gently to the ground."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid (reworked)",
+						"source": "Farover"
+					},
+					{
+						"name": "Warlock (reworked)",
+						"source": "Farover"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"damageInflict": [
+				"necrotic"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"SGT"
+			]
 		},
 		{
 			"name": "Ashardalon's Stride",
