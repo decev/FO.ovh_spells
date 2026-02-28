@@ -29805,6 +29805,185 @@
 			]
 		},
 		{
+			"name": "Quill Burst",
+			"source": "Farover",
+			"level": 2,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "which you take in response to being {@condition grappled} or swallowed by a creature"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You extend your fingers, causing sharp quills to erupt from your body. The creature that {@condition grappled} or swallowed you must make a Constitution saving throw. On a failed save, the creature takes {@damage 4d6} piercing damage and must immediately release you (ending the grapple), or if you are swallowed, it must immediately regurgitate you into an unoccupied space within 5 feet of it. On a successful save, the creature takes half as much damage and isn’t forced to release or regurgitate you."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the damage increases by {@dice 2d6} for each slot level above 2nd."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid (reworked)",
+						"source": "Farover"
+					}
+				]
+			},
+			"savingThrow": [
+				"constitution"
+			],
+			"damageInflict": [
+				"piercing"
+			]
+		},
+		{
+			"name": "Disrupting Resonance",
+			"source": "Farover",
+			"level": 3,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a {@item musical instrument|phb} worth at least 2 gp",
+					"cost": 200
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You play a magical chord, unleashing a soundwave of screeching resonance that surrounds one creature you can see within range. The target must make an Intelligence saving throw. It automatically succeeds on this saving throw if it is {@condition deafened}. ",
+				"On a failed save, the resonance clings to the target for the duration. While affected, the target can’t provide verbal components for spells, and it takes {@damage 2d8} thunder damage at the start of each of its turns. At the end of each of its turns, the target can repeat the saving throw, ending the spell on itself on a success.",
+				"{@italic Concentration Points: 3}"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, the damage increases by {@dice 1d8} for each slot level above 3rd."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					}
+				]
+			},
+			"damageInflict": [
+				"thunder"
+			],
+			"savingThrow": [
+				"intelligence"
+			],
+			"areaTags": [
+				"ST"
+			]
+		},
+		{
+			"name": "Recall",
+			"source": "Farover",
+			"level": 2,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"Record your location when you cast this spell. Until the end of your next turn, you can take a reaction in response to an attack roll, a creature casting a spell, or a creature moving within 5 feet of you to teleport back to that location, or to the nearest unoccupied space if that space is occupied. This teleportation precedes the triggering attack or spell. The spell then ends."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"miscTags": [
+				"TP"
+			]
+		},
+		{
 			"name": "Ashardalon's Stride",
 			"source": "FTD",
 			"page": 19,
