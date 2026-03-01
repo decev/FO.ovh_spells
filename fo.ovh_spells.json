@@ -1070,7 +1070,7 @@
 			"page": 213,
 			"srd": true,
 			"basicRules": true,
-			"level": 8,
+			"level": 6,
 			"school": "A",
 			"time": [
 				{
@@ -1079,16 +1079,16 @@
 				}
 			],
 			"range": {
-				"type": "sphere",
+				"type": "point",
 				"distance": {
 					"type": "feet",
-					"amount": 10
+					"amount": 30
 				}
 			},
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "a pinch of powdered iron or iron filings"
+				"m": "a pinch of powdered deep iron"
 			},
 			"duration": [
 				{
@@ -1101,7 +1101,7 @@
 				}
 			],
 			"entries": [
-				"A 10-foot-radius invisible sphere of antimagic surrounds you. This area is divorced from the magical energy that suffuses the multiverse. Within the sphere, spells can't be cast, summoned creatures disappear, and even magic items become mundane. Until the spell ends, the sphere moves with you, centered on you.",
+				"A 10-foot-radius sphere of antimagic appears {@color at a point you can see within range.|30d5c8} This area is divorced from the magical energy that suffuses the multiverse. Within the sphere, spells can't be cast, summoned creatures disappear, and even magic items become mundane.",
 				"Spells and other magical effects, except those created by an artifact or a deity, are suppressed in the sphere and can't protrude into it. A slot expended to cast a suppressed spell is consumed. While an effect is suppressed, it doesn't function, but the time it spends suppressed counts against its duration.",
 				{
 					"type": "entries",
@@ -1151,6 +1151,16 @@
 					"name": "Dispel Magic",
 					"entries": [
 						"Spells and magical effects such as {@spell dispel magic} have no effect on the sphere. Likewise, the spheres created by different {@spell antimagic field} spells don't nullify each other."
+					]
+				},
+				"{@italic Concentration Points: 3}"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"{@color If you cast this spell using a spell slot of 7th level or higher, you can have the antimagic shell move with you, centered on you.|30d5c8}"
 					]
 				}
 			],
@@ -2542,7 +2552,7 @@
 			"page": 221,
 			"srd": true,
 			"basicRules": true,
-			"level": 6,
+			"level": 4,
 			"school": "V",
 			"time": [
 				{
@@ -2554,7 +2564,7 @@
 				"type": "point",
 				"distance": {
 					"type": "feet",
-					"amount": 150
+					"amount": 120
 				}
 			},
 			"components": {
@@ -2568,15 +2578,17 @@
 				}
 			],
 			"entries": [
-				"You create a bolt of lightning that arcs toward a target of your choice that you can see within range. Three bolts then leap from that target to as many as three other targets, each of which must be within 30 feet of the first target. A target can be a creature or an object and can be targeted by only one of the bolts.",
-				"A target must make a Dexterity saving throw. The target takes {@damage 10d8} lightning damage on a failed save, or half as much damage on a successful one."
+				"{@color You create a bolt of lightning that arcs toward a target you can see within range, then conducts from foe to foe.|30d5c8}",
+				"{@color The target must make a Dexterity saving throw. On a failed save, the target takes|30d5c8} {@damage 6d8} {@color lightning damage, or half as much damage on a successful one. Additionally, on a failed save, the lightning bolt arcs to the closest creature within 15 feet of the target, and the new target is subjected to the spell’s effects.|30d5c8}",
+				"{@color The spell can arc to a maximum of three additional targets. If no other creatures are within 15 feet of a target, the spell doesn’t arc to any more targets. A creature can be targeted by this spell only once.|30d5c8}",
+				"{@color Creatures wearing metal armor are prioritized as targets for the spell over those not wearing it, even if they are farther away.|30d5c8}"
 			],
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"When you cast this spell using a spell slot of 7th level or higher, one additional bolt leaps from the first target to another target for each slot level above 6th."
+						"{@color When you cast this spell using a spell slot of 5th level or higher, the damage increases by|30d5c8} {@dice 1d8} {@color and the spell can arc to one additional target for each slot level above 4th.|30d5c8}"
 					]
 				}
 			],
@@ -2960,7 +2972,7 @@
 			"name": "Clone",
 			"source": "PHB",
 			"page": 222,
-			"level": 8,
+			"level": 7,
 			"school": "N",
 			"time": [
 				{
@@ -4119,7 +4131,7 @@
 			"source": "PHB",
 			"page": 228,
 			"srd": true,
-			"level": 8,
+			"level": 6,
 			"school": "T",
 			"time": [
 				{
@@ -4158,9 +4170,10 @@
 				}
 			],
 			"entries": [
-				"You take control of the weather within 5 {@color kilometers|30d5c8} of you for the duration. You must be outdoors to cast this spell. Moving to a place where you don't have a clear path to the sky ends the spell early.",
-				"When you cast the spell, you change the current weather conditions, which are determined by the DM based on the climate and season. You can change precipitation, temperature, and wind. It takes {@dice 1d4 × 10} minutes for the new conditions to take effect. Once they do so, you can change the conditions again. When the spell ends, the weather gradually returns to normal.",
+				"You take control of the weather within a 5 {@color kilometer|30d5c8} radius of you for the duration. You must be outdoors to cast this spell. Moving to a place where you don't have a clear path to the sky ends the spell early.",
+				"When you cast the spell, you change the current weather conditions, which are determined by the DM based on the climate and season. You can change precipitation, temperature, wind, {@color and instability. Instability requires other conditions to align as well.|30d5c8} It takes {@dice 1d4 × 10} minutes for the new conditions to take effect. Once they do so, you can change the conditions again. When the spell ends, the weather gradually returns to normal.",
 				"When you change the weather conditions, find a current condition on the following tables and change its stage by one, up or down. When changing the wind, you can change its direction.",
+				"{@italic Concentration Points: 2}",
 				{
 					"type": "table",
 					"caption": "Precipitation",
@@ -4179,19 +4192,23 @@
 						],
 						[
 							"2",
-							"Light clouds"
+							"Light Clouds"
 						],
 						[
 							"3",
-							"Overcast or ground fog"
+							"Overcast"
 						],
 						[
 							"4",
-							"Rain, hail, or snow"
+							"Light Rain or Fog (>300 ft. lightly obscured, >500 ft. heavily obscured)"
 						],
 						[
 							"5",
-							"Torrential rain, driving hail, or blizzard"
+							"Heavy Rain or Fog; Hail, or Snow (>100 ft. lightly obscured, >200 ft. heavily obscured)"
+						],
+						[
+							"6",
+							"Torrential rain, driving hail, or blizzard (varied effects)"
 						]
 					]
 				},
@@ -4209,27 +4226,27 @@
 					"rows": [
 						[
 							"1",
-							"Unbearable heat"
+							"Unbearable Heat (≥ 40°C)"
 						],
 						[
 							"2",
-							"Hot"
+							"Hot (26 to 39°C)"
 						],
 						[
 							"3",
-							"Warm"
+							"Warm (15 to 25°C)"
 						],
 						[
 							"4",
-							"Cool"
+							"Cool (5–14°C)"
 						],
 						[
 							"5",
-							"Cold"
+							"Cold (−14 to 4°C)"
 						],
 						[
 							"6",
-							"Arctic cold"
+							"Arctic Cold (≤ −15°C)"
 						]
 					]
 				},
@@ -4247,24 +4264,67 @@
 					"rows": [
 						[
 							"1",
-							"Calm"
+							"Calm (0-1 mph)"
 						],
 						[
 							"2",
-							"Moderate wind"
+							"Light Breeze (4-7 mph)"
 						],
 						[
 							"3",
-							"Strong wind"
+							"Moderate Breeze (13-18 mph)"
 						],
 						[
 							"4",
-							"Gale"
+							"Strong Breeze (25-31 mph)"
 						],
 						[
 							"5",
-							"Storm"
+							"Fresh Gale (39-46 mph)"
+						],
+						[
+							"6",
+							"Storm (64-72 mph)"
 						]
+					]
+				},
+				{
+					"type": "table",
+					"caption": "Instability",
+					"colLabels": [
+						"Stage",
+						"Condition"
+					],
+					"colStyles": [
+						"col-1 text-center",
+						"col-11"
+					],
+					"rows": [
+						[
+							"1",
+							"{@color None (Either Precipitation or Wind Stage must be 1)|30d5c8}"
+						],
+						[
+							"2",
+							"{@color Low (Precipitation and Wind Stages must be 2-3)|30d5c8}"
+						],
+						[
+							"3",
+							"{@color Medium (Precipitation and Wind Stages must be 3-4)|30d5c8}"
+						],
+						[
+							"4",
+							"{@color Thunderstorm (Precipitation and Wind Stages must be at least 4)|30d5c8}"
+						]
+					]
+				}
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"{@color If you cast this spell using a spell slot of 7th level, the range of the spell is increased to a 20 kilometer radius. If you cast this spell using a spell slot of at least 8th level, the range of the spell is increased to a 100 kilometer radius.|30d5c8}"
 					]
 				}
 			]
@@ -16022,7 +16082,7 @@
 			"name": "Telepathy",
 			"source": "PHB",
 			"page": 281,
-			"level": 8,
+			"level": 6,
 			"school": "D",
 			"time": [
 				{
@@ -22042,7 +22102,7 @@
 			"name": "Rary's Telepathic Bond",
 			"source": "PHB",
 			"page": 270,
-			"level": 5,
+			"level": 4,
 			"school": "D",
 			"time": [
 				{
@@ -22072,8 +22132,8 @@
 				}
 			],
 			"entries": [
-				"You forge a telepathic link among up to eight willing creatures of your choice within range, psychically linking each creature to all the others for the duration. Creatures with Intelligence scores of 2 or less aren't affected by this spell.",
-				"Until the spell ends, the targets can communicate telepathically through the bond whether or not they have a common language. The communication is possible over any distance, though it can't extend to other planes of existence."
+				"You forge a telepathic link among up to {@color four|30d5c8} willing creatures of your choice within range, psychically linking each creature to all the others for the duration. Creatures with Intelligence scores of {@color 3|30d5c8} or less aren't affected by this spell.",
+				"Until the spell ends, the targets can communicate telepathically through the bond {@color if they have a common language|30d5c8}. The communication is possible over any distance, though it can't extend to other planes of existence."
 			],
 			"areaTags": [
 				"MT"
@@ -24818,7 +24878,7 @@
 			"name": "Lesser Telepathy",
 			"source": "Farover",
 			"page": 0,
-			"level": 3,
+			"level": 2,
 			"school": "D",
 			"time": [
 				{
@@ -24830,7 +24890,7 @@
 				"type": "point",
 				"distance": {
 					"type": "feet",
-					"amount": 120
+					"amount": 30
 				}
 			},
 			"components": {
@@ -24842,14 +24902,14 @@
 				{
 					"type": "timed",
 					"duration": {
-						"type": "minute",
+						"type": "hour",
 						"amount": 1
 					}
 				}
 			],
 			"entries": [
 				"You create a telepathic link between yourself and a creature within range with an Intelligence score of at least 5. If the creature is unwilling, it can make a Intelligence saving throw to resist the effect.",
-				"Until the spell ends, you and the target can can communicate silently and rapidly. Telepathy does not give either participant access to the other's thoughts, memories, or emotions. Participants can only \"hear\" the thoughts that the other participant actively \"sends.\" Mind-to-mind communication is approximately four times faster than verbal communication. The level of complexity that can be communicated is only that which can be expressed through language. Gestures, expressions, and body language cannot be conveyed."
+				"Until the spell ends, you and the target can instantaneously share words with one another through the link, as long as you share a common language. The target recognizes you as the creature it is communicating with."
 			],
 			"savingThrow": [
 				"intelligence"
@@ -29984,6 +30044,142 @@
 			]
 		},
 		{
+			"name": "Bitter Wind",
+			"source": "Farover",
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "line",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a birch wood fan"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"Freezing wind, forming a line 120 feet long and 20 feet wide, blasts from you in a direction you choose for the spell's duration. Each creature that starts its turn in the line must succeed on a Strength saving throw or be pushed 30 feet away from you in a direction following the line. Creatures that fail the saving throw also take {@damage 1d12} cold damage and are knocked {@condition prone}. Any creature in the line must spend 2 feet of movement for every 1 foot it moves when moving closer to you.",
+				"As a bonus action on each of your turns before the spell ends, you can change the direction in which the line blasts from you.",
+				"The bitter wind disperses gas or vapor, and it extinguishes candles, torches, lanterns, and similar flames in the area.",
+				"{@italic Concentration Points: 2}"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, the damage increases by {@dice 1d12} for each slot level above 3rd."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid (reworked)",
+						"source": "Farover"
+					}
+				]
+			},
+			"damageInflict": [
+				"cold"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"miscTags": [
+				"DFT",
+				"FMV",
+				"UBA"
+			]
+		},
+		{
+			"name": "Ethereal Path",
+			"source": "Farover",
+			"level": 5,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 300
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a length of silver chain worth 300 gp, which the spell consumes",
+					"consume": true,
+					"cost": 30000
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "day",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You speak a keyword and conjure a 5-foot-wide path that begins at a point you can see within range. The path exists on the Ethereal Plane. While {@status Concentration|PHB|Concentrating}, you can use an action to extend the path by choosing a point you can see within range; the path extends in a straight line from its current end to that point. The path can be up to 5 km long in total and can move through the air, but it can’t rise or fall more than 1 foot for every 3 feet of horizontal distance. When your {@status Concentration|PHB} ends, the path remains until dispelled.",
+				"The path can be perceived and interacted with only by creatures and objects on the Ethereal Plane, unless a creature on a plane other than the Ethereal speaks the keyword while at the path’s starting point. When it does, the entire path manifests on that creature’s current plane as a visible, solid surface only for that creature and the objects it is wearing or carrying. It remains solid for that creature while it is on the path; if it leaves the path or doesn’t touch it for more than 1 round, the path becomes intangible to it and it falls if unsupported.",
+				"The path is indestructible. It can be ended early by {@spell dispel magic} or similar effects.",
+				"{@italic Concentration Points: 1}"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"miscTags": [
+				"PRM",
+				"PS"
+			]
+		},
+		{
 			"name": "Ashardalon's Stride",
 			"source": "FTD",
 			"page": 19,
@@ -32446,15 +32642,12 @@
 				{
 					"type": "timed",
 					"duration": {
-						"type": "hour",
+						"type": "day",
 						"amount": 1
 					},
 					"concentration": true
 				}
 			],
-			"meta": {
-				"ritual": true
-			},
 			"entries": [
 				"You flick your wrist, causing one object in your hand to vanish. The object, which only you can be holding and can weigh no more than 5 pounds, is transported to an extradimensional space, where it remains for the duration.",
 				"Until the spell ends, you can use your action to summon the object to your free hand, and you can use your action to return the object to the extradimensional space. An object still in the pocket plane when the spell ends appears in your space, at your feet.",
