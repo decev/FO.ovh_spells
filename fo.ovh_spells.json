@@ -6995,7 +6995,7 @@
 				"type": "point",
 				"distance": {
 					"type": "feet",
-					"amount": 90
+					"amount": 30
 				}
 			},
 			"components": {
@@ -7008,7 +7008,7 @@
 				}
 			],
 			"entries": [
-				"When you cast this spell, you reveal the presence of all traps within range that are within your line of sight {@color and not behind full cover. If a trap is revealed, you see the general area that the trap affects in a faint red glow, which lasts for 1 minute.|30d5c8} A trap, for the purpose of this spell, includes anything that would inflict a sudden or unexpected effect you consider harmful or undesirable, which was specifically intended as such by its creator. Thus, the spell would sense an area affected by the {@spell alarm} spell, a {@spell glyph of warding}, or a mechanical pit trap, but it would not reveal a natural weakness in the floor, an unstable ceiling, or a hidden sinkhole.",
+				"When you cast this spell, you reveal the presence of {@color all traps within range, even those that are hidden or behind full cover. If a trap is revealed, you see the general area that the trap affects in a faint red glow, which lasts for 1 minute.|30d5c8} A trap, for the purpose of this spell, includes anything that would inflict a sudden or unexpected effect you consider harmful or undesirable, which was specifically intended as such by its creator. Thus, the spell would sense an area affected by the {@spell alarm} spell, a {@spell glyph of warding}, or a mechanical pit trap, but it would not reveal a natural weakness in the floor, an unstable ceiling, or a hidden sinkhole.",
 				"{@color This spell does not reveal any information about the nature of the danger posed by a trap you sense.|30d5c8}"
 			]
 		},
@@ -7727,7 +7727,7 @@
 			"time": [
 				{
 					"number": 1,
-					"unit": "hour"
+					"unit": "minute"
 				}
 			],
 			"classes": {
@@ -7753,7 +7753,7 @@
 				{
 					"type": "timed",
 					"duration": {
-						"type": "minute",
+						"type": "hour",
 						"amount": 1
 					},
 					"concentration": true
@@ -7770,7 +7770,7 @@
 						"The target has advantage on attack rolls, and other creatures have disadvantage on attack rolls against the target."
 					]
 				},
-				"{@italic Concentration Points: 3}"
+				"{@italic Concentration Points: 4}"
 			],
 			"miscTags": [
 				"ADV"
@@ -18057,6 +18057,15 @@
 			"entries": [
 				"You throw a nonmagical weapon or fire a piece of nonmagical ammunition into the air to create a cone of identical weapons that shoot forward and then disappear. Each creature in a 60-foot cone must succeed on a Dexterity saving throw. A creature takes {@damage 3d8} damage on a failed save, or half as much damage on a successful one. The damage type is the same as that of the weapon or ammunition used as a component."
 			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the damage increases by {@dice 1d8} for each slot level above 1st."
+					]
+				}
+			],
 			"savingThrow": [
 				"dexterity"
 			],
@@ -23153,7 +23162,6 @@
 				}
 			},
 			"components": {
-				"v": true,
 				"s": true
 			},
 			"duration": [
@@ -31914,7 +31922,7 @@
 			],
 			"entries": [
 				"For the duration, you or one willing creature you can see within range has resistance to psychic damage, as well as advantage on Intelligence, Wisdom, and Charisma saving throws.",
-				"{@italic Concentration Points: 2}"
+				"{@italic Concentration Points: 3}"
 			],
 			"entriesHigherLevel": [
 				{
